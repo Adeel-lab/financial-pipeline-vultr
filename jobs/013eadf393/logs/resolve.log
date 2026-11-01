@@ -1,0 +1,14 @@
+
+===== 2026-11-01 18:24:49  resolve: resolve.py --input C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news\triage_0abe595585a4\selected_for_resolution.json --base C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news
+input: C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news\triage_0abe595585a4\selected_for_resolution.json (40 events)
+round 0: resolved so far 40/40
+resolving 55 alternate articles ...
+
+resolved 40/40 (failed 0)
+by method   : {'rpc': 40}
+used alt    : {0: 40}
+by company  : {'Ford': 40}
+fail reasons: {}
+top domains : [('www.detroitnews.com', 4), ('fordauthority.com', 3), ('www.bloomberg.com', 2), ('www.cnbc.com', 2), ('www.autonews.com', 2), ('www.caranddriver.com', 2), ('www.motor1.com', 2), ('www.wsj.com', 1)]
+events with extra publisher URLs: 32
+saved -> C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news\triage_0abe595585a4\resolved.json

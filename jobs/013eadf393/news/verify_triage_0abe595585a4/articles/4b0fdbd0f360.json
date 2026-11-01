@@ -1,0 +1,83 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "4b0fdbd0f360",
+  "bucket": "30d",
+  "score": 0.5569,
+  "label": {
+    "topic": "supply_chain_ops",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "031ad714753f3f67",
+    "title": "Ford CEO says the next generation of EVs have a trick up their sleeve to help prevent assembly mistakes",
+    "source": "Business Insider",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SVDFjdXBvTnpFR1EyV2JtNnItTWNHRXdRdHluQ09zZHRlaTRZRXJRTk5ydmVIQWI0NURQejhPbnNQbHFrRk0zOG1kb0p0NEQzZHZSVWpPZzc1bG1nbVB3RU1rYlZLWlVPNXRTVVE3QXNBaGVuTEM3TUNzaXE4ZHc?oc=5",
+    "published_at": "2026-10-07T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.businessinsider.com/ford-ceo-ev-assembly-fathom-pickup-2026-10",
+    "domain": "www.businessinsider.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford CEO says the next generation of EVs have a trick up their sleeve to help prevent assembly mistakes",
+    "source_item_id": "031ad714753f3f67",
+    "resolved_at": "2026-11-01T17:27:29.613128+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.businessinsider.com/ford-ceo-ev-assembly-fathom-pickup-2026-10",
+    "attempts": 1,
+    "final_url": "https://www.businessinsider.com/ford-ceo-ev-assembly-fathom-pickup-2026-10",
+    "attempt_details": [
+      {
+        "url": "https://www.businessinsider.com/ford-ceo-ev-assembly-fathom-pickup-2026-10",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.375,
+        "final_url": "https://www.businessinsider.com/ford-ceo-ev-assembly-fathom-pickup-2026-10"
+      }
+    ],
+    "title": "Ford CEO: Next-Gen EVs Will Verify They're Built Correctly - Business Insider",
+    "published_at_page": "2026-10-07",
+    "title_score": 0.375,
+    "text_chars": 3368,
+    "content_hash": "358fd8be358c7899",
+    "screenshot": "4b0fdbd0f360.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:43.742606+00:00"
+  },
+  "text": "The computer inside Ford's next generation EVs will have a job to do before customers ever get the keys.\nDuring a roundtable interview at Ford's Accelerate conference, CEO Jim Farley said vehicles built on the automaker's coming Universal Electric Vehicle platform, or UEV, will use their onboard computers to verify assembly connections.\n\"The vehicle diagnoses itself,\" he said during the interview, attended by Business Insider. \"Most of our plants, with vision systems looking over people's shoulder to make sure they attach something right? We don't have that in UEV.\"\nFord isn't doing away with factory cameras and other external quality checks, a representative told Business Insider. Cameras will remain part of the assembly process.\nWhat is new is the vehicle's internal verification: Once the vehicle has power, right after the painting process, its computer tells workers if the car's internal connections are correct.\nThat's a wildly different approach to vehicle manufacturing. Historically, car companies, including Ford, have relied on off-the-line inspections and scanners to check if connections are properly paired.\nNow, Ford says it's bringing part of the manufacturing confirmation into the car's own brain.\n\"The computer determines if the connections are done right, and tells the worker immediately,\" Farley said.\nFord has previously talked to Business Insider about how it's turning to tech for quality control at its assembly plants. Since 2024, the company has been deploying internally-developed scanners — called AiTriz and MAIVs — which match machine learning and video streaming to catch minuscule misalignments. The systems can be especially useful when workers wearing gloves cannot easily feel whether two components are properly connected.\nFord told BI that those external checks are not going away on UEV — but the internal verification will be new for the platform.\nThe company has an obvious incentive to find more problems before vehicles reach customers. Last year, the company easily set a US auto industry record, issuing more than 150 vehicle recalls. The previous record was set by General Motors in 2014 when they issued 77. So far, Ford has posted another 78 this year, per NHTSA data.\nThe company is showing some confidence that its newer vehicles are turning the issue around. In June, the company topped JD Power's initial quality study, and Ford said much of its improvement came after it hired a batch of engineers, including rehiring some experienced technical specialists.\nSimplification is another important element. Ford has reiterated that the coming Fathom pickup truck, the first vehicle built on the EV platform, has 20% fewer parts, 25% fewer fasteners, and 40% fewer workstations compared to the automaker's previous EV efforts.\nThe truck's Louisville plant will also move away from the company's traditional single-stream assembly line. Instead, three major sections of the truck will be built separately before being brought together in a central \"marriage.\" Ford has dubbed the new approach an \"assembly tree.\"\nFord has not released several details about UEV's assembly approach — it expects to raise the curtain on those developments in January.\nWork at Ford? We want to hear from you. Contact Ben Shimkus at bshimkus@insider.com or Signal at bshimkus.41. Use a personal email address and a nonwork device."
+}

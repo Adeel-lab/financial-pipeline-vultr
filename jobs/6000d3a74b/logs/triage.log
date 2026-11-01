@@ -1,0 +1,4 @@
+
+===== 2026-11-01 19:06:09  triage: triage.py --input C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\6000d3a74b\news\03d8b13aee32 --base C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\6000d3a74b\news
+embedding model: none found -> TF-IDF fallback
+chat model: openai/gpt-oss-120b  base: https://api.groq.com/openai/v1

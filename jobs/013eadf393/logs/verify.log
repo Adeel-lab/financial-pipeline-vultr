@@ -1,0 +1,35 @@
+
+===== 2026-11-01 18:31:06  verify: verify.py --input C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news\triage_0abe595585a4 --base C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news
+2026-11-01 18:31:19,648 WARNING discarding data: None
+  10/40 done
+  20/40 done
+  30/40 done
+  40/40 done
+{
+  "stage": "verification",
+  "generated_at": "2026-11-01T17:32:03.459826+00:00",
+  "input": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr - Copy\\jobs\\013eadf393\\news\\triage_0abe595585a4",
+  "n_events": 40,
+  "statuses": {
+    "thin_content": 1,
+    "ok": 33,
+    "consent_wall": 1,
+    "title_mismatch": 2,
+    "blocked": 3
+  },
+  "duplicates_removed": 0,
+  "by_company": {
+    "Ford": {
+      "thin_content": 1,
+      "ok": 33,
+      "consent_wall": 1,
+      "title_mismatch": 2,
+      "blocked": 3
+    }
+  },
+  "avg_text_chars": 4666,
+  "screenshots": 33,
+  "min_title_score": 0.34,
+  "require_location": false
+}
+saved -> C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news\verify_triage_0abe595585a4

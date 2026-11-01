@@ -1,0 +1,13 @@
+
+===== 2026-11-01 18:12:08  discovery: discovery.py --company=Ford --engagement-id=013eadf393 --outdir C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news --days 30 --location global --ticker=F --exclude=tom ford
+
+=== Ford ===
+scope: global (whole company) | search: "Ford"
+feeds ok/failed/capped: 174/0/16  (extra-query feeds still capped: 0)
+raw 5096 | undated 0 | old 0 | off-topic 1534 | location-filtered 0 | passed 3562 | unique 2098
+unique per window: {'24h': 97, '7d': 822, '30d': 2098}
+by source tier: {'other': 1789, 'major': 109, 'financial_aggregator': 200}
+entity in title: 2098 of 2098
+days that hit the feed cap (expanded with extra queries): 2026-10-03, 2026-10-07, 2026-10-08, 2026-10-11, 2026-10-12, 2026-10-13, 2026-10-14, 2026-10-16, 2026-10-19, 2026-10-24, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31
+
+Saved to C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news\0abe595585a4

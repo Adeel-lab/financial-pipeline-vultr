@@ -1,0 +1,83 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "66d3b2ba246f",
+  "bucket": "7d",
+  "score": 0.6001,
+  "label": {
+    "topic": "recalls_safety",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 5,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "59cac761c5490607",
+    "title": "Ford F-150 Raptor Was Almost Killed Six Times. Now Ford Is Celebrating It.",
+    "source": "MotorTrend",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYWhWbTdwc05aV1hpUS0ybGlpMlhRcUVrOFA2N2ZQdFE3LVJxbWNqSDUwRU9oMW1QeWc0OHJrSlh2eEJaU0t0el9ydXRwVF83anh2Vm9tcllweVdvTlVUYnBLa0FvVEJGTlQtZ3JtanRVekhPb1JrOXpZSTZtbEZMVzNUbV9tQ3M?oc=5",
+    "published_at": "2026-10-23T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.motortrend.com/news/ford-f-150-raptor-history-ben-affleck-commercial",
+    "domain": "www.motortrend.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford F-150 Raptor Was Almost Killed Six Times. Now Ford Is Celebrating It.",
+    "source_item_id": "59cac761c5490607",
+    "resolved_at": "2026-11-01T17:27:29.613098+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.motortrend.com/news/ford-f-150-raptor-history-ben-affleck-commercial",
+    "attempts": 1,
+    "final_url": "https://www.motortrend.com/news/ford-f-150-raptor-history-ben-affleck-commercial",
+    "attempt_details": [
+      {
+        "url": "https://www.motortrend.com/news/ford-f-150-raptor-history-ben-affleck-commercial",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://www.motortrend.com/news/ford-f-150-raptor-history-ben-affleck-commercial"
+      }
+    ],
+    "title": "Ford F-150 Raptor Origin Story Celebrated in New Ad Campaign With Ben Affleck",
+    "published_at_page": "2026-10-23T10:00:00Z",
+    "title_score": 1.0,
+    "text_chars": 3310,
+    "content_hash": "44355cf3057ba873",
+    "screenshot": "66d3b2ba246f.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:26.667674+00:00"
+  },
+  "text": "Ford F-150 Raptor Was Almost Killed Six Times. Now Ford Is Celebrating It.\nJon Bernthal, Ben Affleck help tell the story of how the Ford F-150 Raptor became a legend.\nRight about now, you will see some high-production ads for the Ford F-150 Raptor with celebrity involvement as well as real Ford engineers from the high-performance desert racing truck’s inception. It’s an unusual move by Ford, which has largely let the Raptor sell itself.\nBut Ford is celebrating 125 years of Ford racing and decided the Raptor is the best way to showcase how the racing program translates to customer vehicles.\nThe first ads will air on Saturday on Apple TV during the Ole Miss vs. Texas college football game and also be featured during coverage of the Austin Grand Prix.\nThe spots feature actor Jon Bernthal, who has been a Raptor enthusiast and owner for years. On the set of The Accountant, he gave actor Ben Affleck a ride and got his fellow actor hooked. Affleck now owns two of them, and directed the commercials featuring his friend. The team used a Raptor with a Russian camera arm and stabilizer to chase and film the Raptor in the commercial.\nTelling the Raptor Origin Story\nThe campaign, by Artists Equity, delves into the Raptor’s origin story and a few of the main players are still at Ford, although SVT’s then-leader, Jamal Hameedi, moved on in 2018. Still working at Ford Racing are general manager Will Ford, vehicle architecture manager Tim Smith, vehicle dynamics manager Chris Paiva, and powertrain manager Brad Lammers.\nThe project was canceled six times before the Ford F-150 SVT Raptor was revealed to the world in 2008 and went on sale the following year, creating a new category of full-size pickup that was roadworthy but could credibly act as a trophy truck, gliding over the desert at high speeds. The Raptor was born from the Baja 1000 and remained true to its roots over the years, with little competition until Ram added the 1500 TRX. The Raptor is now sold in 125 markets.\nWhen Lightning Fizzled, Raptor Took the Mantle\nArchitecture manager Smith, who was with the program since the start, said the SRT team had the Mustang and the F-150 Lightning and they were trying to figure out where to take a third-generation Lightning. They were speccing it out and testing prototypes, but the truck was not enough; it appeared to have come to the end of the line. The team took a step back to rethink, Smith said. It was suggested they play up off-roading and the idea of a high-speed racer was born, a nod to a history of Baja racing that dated back to Rod Hall winning in 1969 in a Ford Bronco.\nThe team worked and learned. They partnered with Fox Racing Shox for the off-road suspension. They built a demonstration truck with huge tires and kept testing. They pushed components to the limits, breaking many of them along the way. The result is still thrilling enthusiasts today, and has even leveled up with the F-150 Raptor R. And beyond that, Raptor has become a brand in its own right, with the Bronco Raptor—a.k.a. the Braptor—and Ranger Raptor now roaming American roads and trails. Pretty good for a truck that had to survive six cancelations.\nStay Ahead of the Curve.\nGet the newest car reviews, hottest auto news, and expert analysis of the latest trends delivered straight to your inbox!"
+}

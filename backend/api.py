@@ -23,6 +23,7 @@ Units = Literal["unknown", "units", "thousands", "millions", "billions"]
 Frequency = Literal["auto", "annual", "quarterly"]
 CONTROL = re.compile(r"[\x00-\x1f\x7f]")
 ITEM_ID = re.compile(r"^[A-Za-z0-9_:.\-]{1,80}$")
+TICKER = re.compile(r"^[A-Za-z0-9.\-]{1,12}$")
 EXTRA_TYPES = {".md": "text/markdown; charset=utf-8", ".json": "application/json", ".png": "image/png", ".html": "text/html"}
 
 
@@ -72,6 +73,16 @@ def split_items(name: str, value: str, pattern: str = r"[;\n]") -> list:
         if part.startswith("-"):
             raise JobError(422, f"{name}: a value cannot start with '-'")
         out.append(part)
+    return out[:10]
+
+
+def clean_tickers(value: str) -> list:
+    """Tickers of listed companies to compare with (any company). Their numbers are read from SEC filings."""
+    out = []
+    for t in split_items("compare with", value, r"[,;\s]+"):
+        if not TICKER.match(t):
+            raise JobError(422, f"compare with: '{t[:20]}' does not look like a ticker")
+        out.append(t.upper())
     return out[:10]
 
 
@@ -145,6 +156,7 @@ def create_app() -> FastAPI:
         objective: str = Form(""),
         location: str = Form("", description="places, separated by ';' (empty = worldwide)"),
         ticker: str = Form("", description="stock tickers, separated by ',' or ';'"),
+        peers_tickers: str = Form("", description="tickers of listed companies to compare with, separated by ',' or ';'"),
         alias: str = Form("", description="other names used in headlines, separated by ';'"),
         exclude: str = Form("", description="phrases that mean 'wrong company', separated by ';'"),
         days: int = Form(30, ge=1, le=90),
@@ -166,6 +178,7 @@ def create_app() -> FastAPI:
             "objective": clean("objective", objective, 500),
             "locations": split_items("location", location),
             "tickers": split_items("ticker", ticker, r"[,;\s]+"),
+            "peer_tickers": clean_tickers(peers_tickers),
             "aliases": split_items("alias", alias),
             "excludes": split_items("exclude", exclude),
             "days": days, "strict_location": strict_location, "edition": clean("edition", edition, 200),

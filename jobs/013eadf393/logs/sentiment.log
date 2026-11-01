@@ -1,0 +1,18 @@
+
+===== 2026-11-01 18:32:03  sentiment: sentiment.py --input C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news\verify_triage_0abe595585a4 --base C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news
+guard: 33 ok articles -> 33 kept (0 consent pages, 0 duplicate texts dropped)
+33 articles | mode: LLM openai/gpt-oss-120b
+[1/33] Ford               +0.20 llm     2027 Ford Fiesta WRC Hatch Spotted Up Close Ahead Of New Sea
+[2/33] Ford               -0.20 llm     Exclusive: Rivian's startup Mind Robotics hires former Ford 
+[3/33] Ford               +0.00 llm     WWE and Montez Ford Facing Lawsuit Over 'Lap Dance' Entrance
+[4/33] Ford               +0.20 llm     Ford wins appeal in Maryland case challenging right of first
+[5/33] Ford               +0.60 llm     Ford launches affordable EV chargers enabling i...
+
+===== 2026-11-01 19:20:05  sentiment: sentiment.py --input C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news\verify_triage_0abe595585a4 --base C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news
+guard: 33 ok articles -> 33 kept (0 consent pages, 0 duplicate texts dropped)
+33 articles | mode: LLM openai/gpt-oss-120b
+[1/33] Ford               +0.20 llm     2027 Ford Fiesta WRC Hatch Spotted Up Close Ahead Of New Sea
+[2/33] Ford               -0.20 llm     Exclusive: Rivian's startup Mind Robotics hires former Ford 
+[3/33] Ford               +0.00 llm     WWE and Montez Ford Facing Lawsuit Over 'Lap Dance' Entrance
+[4/33] Ford               +0.20 llm     Ford wins appeal in Maryland case challenging right of first
+[5/33] Ford               +0.60 llm     Ford launches affordable EV chargers enabling i...

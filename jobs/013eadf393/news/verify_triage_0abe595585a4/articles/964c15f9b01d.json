@@ -1,0 +1,90 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "964c15f9b01d",
+  "bucket": "7d",
+  "score": 0.7552,
+  "label": {
+    "topic": "earnings_financials",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "5979929f127091e7",
+    "title": "Ford Raises Outlook Even as War, Inflation Exact Mounting Toll",
+    "source": "Bloomberg.com",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNVzZYTHAzUHh0S3NIdXBhZVhHWW1fWDZXRjNFM3RZMGppUEtMdWdtd1ViN096UDgxNWZjNGdUcEVqRlhfX1ZDeVpucnFxeWpYZ3dmLUJETFVNR3J6emtlcHA1czJrMndMVXFWWk4tTzFvWHhyZHRBMnUwVzY1TVNpbXNzWnZqM1YwLUt3OElzV3EwazkzNmdfZndRZXlvd2VUeHBvcmkyN1dEUWg0OW1CeEpyWklIenJ1QXJyQmpYWHc3Y3JlSWpRRlUyT2ltblE?oc=5",
+    "published_at": "2026-10-28T20:07:41+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-28/ford-raises-outlook-even-as-war-inflation-exact-mounting-toll?srnd=phx-economics-v2",
+    "domain": "www.bloomberg.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford Raises Outlook Even as War, Inflation Exact Mounting Toll",
+    "source_item_id": "5979929f127091e7",
+    "resolved_at": "2026-11-01T17:27:29.612828+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.cnbctv18.com/market/ford-sees-profit-flattening-as-inflation-war-take-mounting-toll-on-american-car-giant-20022008.htm",
+    "attempts": 2,
+    "final_url": "https://www.cnbctv18.com/market/ford-sees-profit-flattening-as-inflation-war-take-mounting-toll-on-american-car-giant-20022008.htm",
+    "attempt_details": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-10-28/ford-raises-outlook-even-as-war-inflation-exact-mounting-toll?srnd=phx-economics-v2",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null,
+        "final_url": "https://www.bloomberg.com/news/articles/2026-10-28/ford-raises-outlook-even-as-war-inflation-exact-mounting-toll?srnd=phx-economics-v2"
+      },
+      {
+        "url": "https://www.cnbctv18.com/market/ford-sees-profit-flattening-as-inflation-war-take-mounting-toll-on-american-car-giant-20022008.htm",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.429,
+        "final_url": "https://www.cnbctv18.com/market/ford-sees-profit-flattening-as-inflation-war-take-mounting-toll-on-american-car-giant-20022008.htm"
+      }
+    ],
+    "title": "Ford sees profit flattening as inflation, war take mounting toll on American car giant - CNBC TV18",
+    "published_at_page": "2026-10-29T07:48:05+05:30",
+    "title_score": 0.429,
+    "text_chars": 5766,
+    "content_hash": "6db9d40a1a3d2821",
+    "screenshot": "964c15f9b01d.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:57.363679+00:00"
+  },
+  "text": "Ford sees profit flattening as inflation, war take mounting toll on American car giant\n- Published OnOct 29, 2026 | 07:48 IST\n- Last Updated OnOct 29, 2026 | 07:48 IST\nFord Motor Co. expects profits to plateau next year as inflation, driven by the war in Iran, creates a multi-billion dollar headwind affecting logistics and raw materials.\nFord Motor Co. expects profits to plateau next year as inflation threatens to erode gains from its pickup and sport utility vehicle business. Adjusted earnings before interest and taxes in 2027 will be roughly in line with this year’s expectation for as much as $11 billion, Chief Executive Officer Jim Farley said Wednesday on the company’s third-quarter earnings call.\nInflation stoked by the war in Iran has pushed up the cost of logistics, raw materials and chips, which the company sees as a $2 billion headwind next year. Ford plans to offset those expenses in part by wringing more costs out of the business, Farley said.\n“We’re not expecting relief any time soon” from commodity inflation, Chief Financial Officer Sherry House said in a Bloomberg TV interview.\nRising costs risk taking some of the shine off sales of high-margin pickups and SUVs that have propelled earnings this year. Demand for those models helped Ford report a third-quarter profit that topped Wall Street estimates. Ford also raised the low end of its full-year profit forecast.\nFarley said Ford is making structural changes to sustain that momentum by controlling costs through quality improvements and tapping new sources of growth from energy storage batteries, software and services. Those initiatives will help Ford achieve its goal of an 8% adjusted EBIT margin by 2029, Farley said, compared with 6.1% through the first nine months of this year.\nFord’s shares fell 1.5% in after-hours trading. The stock had declined 8.9% this year through Wednesday’s close while the S&P 500 Index gained 13%.\nThe war in Iran has pushed up the price of fuel and key auto industry commodities such as metals and chips and the cost to ship those goods. General Motors Co. last week said that worsening inflation will add about $400 million in additional expenses this year, citing record copper prices and key steel products at a four-year high.\nFord said commodity inflation will be a nearly $2.5 billion headwind in 2026, up from its previous forecast for just above $2 billion. It cited the ongoing conflict for lower earnings at its division that sells gasoline-powered vehicles to retail customers.\n“There’s just so many commodity issues right now because of the war and it’s not looking like it’s going to get better,” David Whiston, an analyst with Morningstar Inc., said in an interview before Ford’s results were released.\nFord Blue, the automaker’s traditional business that includes internal-combustion engine vehicles and gas-electric hybrids, earned about $1.4 billion before interest and taxes in the most recent quarter, down 10% from the prior year. Ford cited lower sales tied to discontinued models such as the Escape compact SUV and the impact from the war. The war in Iran is causing delays in vehicle transport and pushing up shipping costs because of the spike in diesel prices, House said.\nFord Pro, its most profitable division, saw earnings decline 16% due to higher commodity costs as well and preparations to begin building Super Duty pickups at its plant in Oakville, Ontario. Ford’s work-vehicle unit will expand its global lineup of Transit vans and Ranger pickups to defend market share in places like Southeast Asia and South America, where Chinese competition is fierce, Farley said.\nStrong demand for SUVs such as the Explorer and Expedition has helped the Dearborn-based automaker offset a nearly 10% decline in F-Series pickup sales. Availability of the trucks have been held in check after fires last year at the Novelis Inc. plant that supplies the aluminum used to make the truck’s body panels.\nFarley in September said fourth-quarter F-150 output was on track after a brief interruption due to a different supplier issue.\nFarley is also pursuing new sources of growth, including a $2 billion bet on a new energy storage business that could take years to generate returns. The CEO expects that unit’s 2028 capacity to be fully spoken for by next year’s first quarter.\nThe shift is part of a broader pivot in Ford’s EV strategy after the company announced $19.5 billion in charges on underperforming EV assets last year. The automaker’s EV sales plunged 80% in the third quarter as it discontinued its F-150 Lightning plug-in pickup. The company is now focused on less-expensive models, starting with a $30,000 electric pickup slated to begin production next year.\nFord executives expressed optimism that they will find demand for the new model, pointing to rising EV prices and a lack of affordable options on the market. Ford Model e, the EV unit, narrowed its third-quarter loss to $1.1 billion from a $1.4 billion deficit the prior year.\nHouse cautioned that progress on EV losses will “not be linear” as it seeks to break even in 2029. Expenses will rise next year with the launch of the Fathom pickup before a major profit improvement in 2028, she said, as production of the new pickup and Ford’s stationary storage business grows.\nFarley has said several affordable EVs will eventually be built on its universal electric vehicle platform, which are to be produced at a separate factory in Kentucky. Those models will be critical to Ford’s ability to eventually compete with Chinese automakers that are gaining ground worldwide with cheap, high-tech EVs.\nFor now, China’s automakers are currently blocked from the US market by formidable trade barriers.\nAlso Read: Samsung posts record profit in Q3 on AI chip boom"
+}

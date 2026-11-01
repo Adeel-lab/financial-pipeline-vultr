@@ -1,0 +1,83 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "0204fc6b9548",
+  "bucket": "24h",
+  "score": 0.4676,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "6fc058759d43fea7",
+    "title": "2027 Ford Fiesta WRC Hatch Spotted Up Close Ahead Of New Season: Video",
+    "source": "Ford Authority",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS2pIa0VDSFVMWW1kOWFfcllHajVfeEpxZ05hZmdlM1ZURVZOX0l3R3A0TFFoRGtSeFNkaEhpeFZXOEEwQ0NfQ0hrdTZ5dnJhSVh3T2lLUjJ4bWlUTWJmZnFFUVhlOUZXdVhialBEYUxMNmNERHNhRHhUNGxLc2h0eWVpQzdfZDJrdWZlT2dFbDFOaEZfZTI3WVVkMWk5dHB5R0ZCaE4xcw?oc=5",
+    "published_at": "2026-11-01T09:37:19+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://fordauthority.com/2026/11/2027-ford-fiesta-wrc-hatch-spotted-up-close-ahead-of-new-season-video/",
+    "domain": "fordauthority.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "2027 Ford Fiesta WRC Hatch Spotted Up Close Ahead Of New Season: Video",
+    "source_item_id": "6fc058759d43fea7",
+    "resolved_at": "2026-11-01T17:27:29.613429+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://fordauthority.com/2026/11/2027-ford-fiesta-wrc-hatch-spotted-up-close-ahead-of-new-season-video/",
+    "attempts": 1,
+    "final_url": "https://fordauthority.com/2026/11/2027-ford-fiesta-wrc-hatch-spotted-up-close-ahead-of-new-season-video/",
+    "attempt_details": [
+      {
+        "url": "https://fordauthority.com/2026/11/2027-ford-fiesta-wrc-hatch-spotted-up-close-ahead-of-new-season-video/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://fordauthority.com/2026/11/2027-ford-fiesta-wrc-hatch-spotted-up-close-ahead-of-new-season-video/"
+      }
+    ],
+    "title": "2027 Ford Fiesta WRC Hatch Spotted Up Close Ahead Of New Season: Video",
+    "published_at_page": "2026-11-01T04:32:52-05:00",
+    "title_score": 1.0,
+    "text_chars": 1920,
+    "content_hash": "38226601d7040b69",
+    "screenshot": "0204fc6b9548.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:26.279534+00:00"
+  },
+  "text": "The Blue Oval is dusting off its Ford Fiesta racer for the 2027 FIA World Rally Championship (WRC), and that means updates for the tried-and-true rally car. The hatch was recently spotted undergoing testing ahead of its competition debut, giving a better look at what's headed for next year's contest.\nThe Ford Fiesta was on-course at the 2026 European Rally Championship (ERC) Rally Portugal, which took place on October 23rd through 25th. Its rear-quarter window shows that Josh McErlean and Eoin Treacy, both Irishmen, were behind the wheel of the updated race car, putting it through its paces ahead of its 2027 WRC debut.\nThis Ford Fiesta was fitted with an updated WRC kit that makes it compliant with the new WRC27 FIA regulations. That entails a new aero package, an updated front bumper, wings, and rear wing. Mechanically, that translates to a revised engine restrictor, plus updated electrical components that give the race car the extra umph it needs to keep up.\nThose updated Ford Fiesta racers will be fielded by M-Sport, which has represented The Blue Oval in the WRC for decades. It was already seen testing on-track, showing off its updated aero pack, including its ventilated hood, giant fender flares, and massive rear diffuser and rear wing. It's not clear if that race car is the exact example seen here in Portugal.\nAs a reminder, WRC is pulling the plug on its hybrid power requirements for the forthcoming season, and the Ford Fiesta will arrive as a brand new, non-electrified rally machine with traditional gas power. It will run on synthetic fuels, making it more environmentally friendly without the need for electric assist. It's taking the place of the Ford Puma Rally1, which has been retired from WRC competition upon conclusion of the 2026 racing season.\nThe Ford Fiesta will compete in 2027 and 2028 before giving way to an all-new Ford rally car, which will compete in 2029 and beyond."
+}

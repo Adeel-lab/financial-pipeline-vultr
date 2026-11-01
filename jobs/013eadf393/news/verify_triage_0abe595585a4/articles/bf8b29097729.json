@@ -1,0 +1,90 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "bf8b29097729",
+  "bucket": "7d",
+  "score": 0.5241,
+  "label": {
+    "topic": "recalls_safety",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "bcf9cc22961d91fe",
+    "title": "Ford Recalls 30,000 F-Series Pickups for Tailgate Issue",
+    "source": "Cars.com",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUkt3WEt4VmQ1Mi1XOXozYlJEZFlnTnNXdktCWE1HUlU1Nlk4bmltWkZZaVNNWUNOaVlzRW9ueWxWM1M1OG5ab1JNWUdzaFd5M21HUjVNMlVpSENyR2V2aWtGbVhydzJqdkVmS0ZWc0lwVjF3Zms2TVZpcnZBU1RrbXhYNzdMV19RdlpHVEllRUt4WFk0c09R?oc=5",
+    "published_at": "2026-10-27T18:50:21+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.cars.com/articles/ford-recalls-30000-f-series-pickups-for-tailgate-issue-530558/",
+    "domain": "www.cars.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford Recalls 30,000 F-Series Pickups for Tailgate Issue",
+    "source_item_id": "bcf9cc22961d91fe",
+    "resolved_at": "2026-11-01T17:27:29.613242+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://carbuzz.com/ford-f-150-tailgate-cable-recall-october-2026/",
+    "attempts": 2,
+    "final_url": "https://carbuzz.com/ford-f-150-tailgate-cable-recall-october-2026/",
+    "attempt_details": [
+      {
+        "url": "https://www.cars.com/articles/ford-recalls-30000-f-series-pickups-for-tailgate-issue-530558/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null,
+        "final_url": "https://www.cars.com/articles/ford-recalls-30000-f-series-pickups-for-tailgate-issue-530558/"
+      },
+      {
+        "url": "https://carbuzz.com/ford-f-150-tailgate-cable-recall-october-2026/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://carbuzz.com/ford-f-150-tailgate-cable-recall-october-2026/"
+      }
+    ],
+    "title": "Ford Recalls 30,000 F-Series Trucks For A Simple Tailgate Problem",
+    "published_at_page": "2026-10-30T17:30:11Z",
+    "title_score": 1.0,
+    "text_chars": 4478,
+    "content_hash": "098707a2d48745ff",
+    "screenshot": "bf8b29097729.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:57.117664+00:00"
+  },
+  "text": "Despite ongoing claims that \"quality is improving,\" Ford can't seem to shake its predilection for recalls. The automaker's latest voluntary repair campaign has to do with its best-selling product, and although only about 30,000 units are affected – a drop in the bucket compared to the 500,000-plus F-150 and Super Duty trucks sold so far this year – the repair is still rather important to anyone who uses their truck beds.\nThat's because it pertains to a seemingly simple piece of equipment that could suddenly fail: the cable.\nThat's One Way To Ruin A Tailgate Party\nAccording to the recall announcement, one of the tailgate's support cables, which extend when the tailgate is open to hold it level with the bed, could fail under certain heavy-load conditions. The eyelet crimp, which allows the cable to be detached from the body in situations where the tailgate needs to be removed, is the problematic component. Curiously, only the left-side tailgate cable is affected by the recall, which will go out to 30,000 total owners of the 2026–2027 F-150 and 2026 F-Series Super Duty (including F-250, F-350, and F-450 variants).\nIn the event that the left-side cable eyelet breaks, the right-side cable may not be enough to keep the tailgate from folding down completely, which could damage the hinge mechanism, the sheetmetal, the rear bumper, and/or any cargo sitting on the tailgate at the time of failure. It could also cause injury if there's a person standing up there – something Ford actively courts with its convenient optional tailgate step.\nNot every 2026 or 2027-model F-Series truck is being recalled. The problematic cable may not even have been installed in specific VIN sequences, meaning the only way someone knows their pickup is affected is if they check their VIN on the NHTSA website or contact their local Ford or Lincoln dealer. Owners of affected vehicles will also receive two notifications in the mail; one of which should arrive presently, informing customers of the recall, while another should show up in January once new parts are available for installation.\nHas Ford Quality Improved In Recent Months?\nThe Blue Oval issued the most recalls of any auto manufacturer in 2025, and it came in second place to Stellantis in 2024. Ford CEO Jim Farley insists that the staggering pace of recall campaigns is proof that the company's quality control team is doing its job, proactively finding and correcting issues with the brand's older vehicles.\nHowever, despite that increased emphasis on reliability – underscored by Ford's hiring push for engineering specialists and a new quality executive – hasn't reduced the number of recalls in the past year or so. Through the first nine months of 2026, Ford was still the manufacturer that had issued the most voluntary safety or reliability repair campaigns. And not all of them were relatively simple repairs like the aforementioned tailgate cable. One notable Bronco recall was for more than 10,000 SUVs with incorrectly installed piston domes.\nAnother half-milion off-roaders were recalled for engine wiring that could short-circuit and cause a fire. A variety of Blue Oval vehicles, including the Bronco, Bronco Sport, Edge, Explorer, and their Lincoln equivalents, were recalled for issues with the rear camera display, while others suffered from potential seat latch failures that could cause an accident or result in serious injuries.\nThat said, of the more than 12 million Ford and Lincoln vehicles recalled in 2026, the automaker says that 6.3 million of them can be remedied by a simple over-the-air software update, reducing the impact on owners' personal time.\n- Base Trim Engine\n- 3.0-liter Twin-Turbo V6\n- Base Trim Transmission\n- 10-speed automatic\n- Base Trim Drivetrain\n- Rear-Wheel Drive\n- Base Trim Horsepower\n- 325 HP\n- Base Trim Torque\n- 400 lb.-ft.\n- Base Trim Fuel Economy (city/highway/combined)\n- 16/24/19 MPG\n- Make\n- Ford\nCarBuzz Insight – Why This Matters:\nThe F-Series' most recent recall for tailgate cables isn't nearly as serious as some of its others, but in recent weeks, CEO Farley has been frank in saying that there's still a lot of work to do regarding quality and durability.\nAnd despite the number of recalls this year, Ford still came out on top of JD Power's recent Initial Quality Study, which quantifies the number and type of issues that owners face in the first 90 days of ownership. That means there are some signs of life within Ford's quality control strategy."
+}

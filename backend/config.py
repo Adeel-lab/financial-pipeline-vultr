@@ -28,6 +28,7 @@ SCRIPTS = {
     "sentiment": INFO_DIR / "sentiment.py",
     "swot_builder": INFO_DIR / "swot_builder.py",
     "rca": INFO_DIR / "rca.py",
+    "sec_peers": INFO_DIR / "sec_peers.py",
     "financial_gate": PLAN_DIR / "financial_gate.py",
 }
 
@@ -39,7 +40,7 @@ MAX_UPLOAD_BYTES = _int("FINANALYST_MAX_UPLOAD_BYTES", 10 * 1024 * 1024)
 TIMEOUTS = {
     "finance_preview": 300, "finance_approve": 600, "discovery": 1800, "triage": 1200,
     "resolve": 1800, "verify": 3000, "sentiment": 3600, "swot_build": 1800,
-    "swot_review": 120, "rca": 2400,
+    "swot_review": 120, "rca": 2400, "peers": 300,
 }
 
 

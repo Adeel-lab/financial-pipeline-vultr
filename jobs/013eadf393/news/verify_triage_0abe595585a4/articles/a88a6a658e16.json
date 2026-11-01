@@ -1,0 +1,83 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "a88a6a658e16",
+  "bucket": "24h",
+  "score": 0.6869,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "e1a80546cb90cbdd",
+    "title": "Ford calls the Escape's exit a 'breather' as report points to a 2029 electric comeback",
+    "source": "Yahoo Autos",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPd3FpZ3VVMXhTQlhhMkpBZjI0bXRWY2M2VmZadWhXcFIwTlJ0SzlSUE1vaGlFOG9MdzAyWU44NFNXMGg0dEhQSDN3M0F5bHdsTlhnUEpaRUZPMWxkcmpCY3cyQXNCOE52VldSTkhlanlrOUxvVGtxZnVIeWJpTGkyOFk4VElQNmdnN0V4NU9SalBXRWFMOUJXems2bk9iakR0?oc=5",
+    "published_at": "2026-11-01T05:45:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://autos.yahoo.com/ev-and-future-tech/articles/ford-calls-escapes-exit-breather-054500246.html",
+    "domain": "autos.yahoo.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford calls the Escape's exit a 'breather' as report points to a 2029 electric comeback",
+    "source_item_id": "e1a80546cb90cbdd",
+    "resolved_at": "2026-11-01T17:27:29.612961+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://autos.yahoo.com/ev-and-future-tech/articles/ford-calls-escapes-exit-breather-054500246.html",
+    "attempts": 1,
+    "final_url": "https://autos.yahoo.com/ev-and-future-tech/articles/ford-calls-escapes-exit-breather-054500246.html",
+    "attempt_details": [
+      {
+        "url": "https://autos.yahoo.com/ev-and-future-tech/articles/ford-calls-escapes-exit-breather-054500246.html",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://autos.yahoo.com/ev-and-future-tech/articles/ford-calls-escapes-exit-breather-054500246.html"
+      }
+    ],
+    "title": "Ford calls the Escape's exit a 'breather' as report points to a 2029 electric comeback",
+    "published_at_page": "2026-11-01T05:45:00Z",
+    "title_score": 1.0,
+    "text_chars": 3295,
+    "content_hash": "29cee34655cb1eda",
+    "screenshot": "a88a6a658e16.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:17.598153+00:00"
+  },
+  "text": "Ford calls the Escape's exit a 'breather' as report points to a 2029 electric comeback\nFord's Escape SUV may be getting a second chance as an electric vehicle after the automaker ended production of the gas-powered model.\nA new report points to 2029 as a possible return date for the SUV, whose gas-powered run lasted 25 years. Ford has left the door open, saying the \"SUV may be taking a breather for now,\" after ending production.\nHere's what to know\nLouisville Assembly Plant is the proposed production site for the electric Escape, with manufacturing expected to begin in 2029, Electrek reported. The crossover would use Ford's Universal Electric Vehicle platform, per Ford Authority.\nWith the Fathom electric pickup scheduled to launch in 2027, the Escape could be next in line to use the platform.\nThe electric model is expected to have dimensions similar to the outgoing Escape, which Electrek lists as having a 106.7-inch wheelbase, a length of 180.1 inches, a width of 74.1 inches without mirrors, and a height of 66.1 inches.\nHyundai's Tucson and Toyota's RAV4 would therefore remain compact-SUV peers for an Escape of that size.\nMore background\nShoppers visiting the Escape's page on Ford's website are currently directed to other Ford vehicles. The Edge's page, by contrast, describes that model's run as over.\nThe reported Escape revival would give Louisville another EV to build after the Fathom pickup. Electrek says the factory's conversion for Fathom manufacturing coincided with the end of gasoline Escape production.\nFor Escape shoppers considering an EV as their next car, potential benefits include lower fuel costs and reduced routine maintenance. However, the report provides no Escape EV price, driving range, or charging specifications.\nWhat's being done?\nFord's more immediate effort to offer an affordable electric vehicle centers on the Fathom.\nA $1,595 delivery fee brings the starting cost to $29,945, keeping it below $30,000. Preorders are scheduled to open in early 2027, with the standard-range version starting at $28,350.\nThe pickup's standard equipment will include Apple CarPlay, Android Auto, and bidirectional charging. Electrek also says the vehicle will be BlueCruise-capable for hands-free driving and will debut Apple Maps integration in its navigation system.\nDuring Ford's third-quarter earnings call, CEO Jim Farley described the pickup as \"a breakthrough product.\"\nWhere can I learn more?\nThese stories explore Ford's European SUV plans, the pressures facing electric pickups, automakers' quieter EV messaging, and the practicalities of home charging.\n• Ford's new European SUV pairs rally styling with underpinnings from Geely, the Chinese automaker.\n• Ford's EV sales plunged 80%, raising the stakes for its under-$30,000 Fathom pickup.\n• US automakers' once-heavy flow of EV announcements has slowed, leaving a noticeably quieter inbox.\n• Ford discontinued the F-150 Lightning, leaving Chevrolet's Silverado EV the cheapest full-size electric pickup in America.\n• An F-150 owner spending $357 monthly on gas considers a Lightning, as drivers emphasize home charging.\nGet TCD's free newsletters for easy tips, smart advice, and a chance to earn $5,000 toward home upgrades. To see more stories like this one, change your Google preferences here."
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""rca.py - evidence-bound 5 Whys on a SWOT item.  (v1.2)
+"""rca.py - evidence-bound 5 Whys on a SWOT item.  (v1.2 + evidence strength + financial facts)
 
   python rca.py list --draft output\\swot_X\\swot_draft.json
   python rca.py run  --draft output\\swot_X\\swot_draft.json --item fin_operating_margin
@@ -30,11 +30,18 @@ except ImportError:
     HAVE_ARTICLES = False
 
 
+try:
+    from evidence_financials import FactIndex
+    HAVE_FACTS = True
+except ImportError:
+    HAVE_FACTS = False
+
 PROMPT_VERSION = "rca-v1.2"
 DELAY = float(os.getenv("SWOT_DELAY", "0"))
 NON_PCT = {"quick_ratio", "current_ratio", "cash_ratio"}
 SYSTEM = "You are a careful root-cause analyst. You return only valid JSON."
 REPEAT_AT = 0.6          # a new answer this similar to the last one counts as a repeat
+FIX_FACT_CUES = "what if would have been lever sensitivity cost of sales share of revenue operating income"
 
 
 
@@ -251,6 +258,25 @@ def add_passages(pool, index, query, aliases, company, k, seen, counter, links):
 
 
 
+def add_facts(pool, facts, query, k, seen, counter):
+    """Computed financial facts (from the approved statements) that match the question, added as F1, F2..."""
+    added = []
+    if facts is None:
+        return added
+    for h in facts.search(query, k=k, exclude={(i, 0) for i in seen}):
+        if h["id"] in seen:
+            continue
+        seen.add(h["id"])
+        counter[0] += 1
+        eid = f"F{counter[0]}"
+        pseudo = {"id": h["id"], "kind": "financial", "fact": True, "computed": True, "data_caution": h.get("caution"),
+                  "evidence": [{"type": "financial", "file": str(facts.path), "file_sha256": facts.sha256, "quote": h["text"]}]}
+        pool[eid] = (pseudo, f"[{eid}] FINANCIAL FACT (computed from the approved statements: numbers only, not causes) | {h['text']}")
+        added.append(eid)
+    return added
+
+
+
 # ---------- LLM ----------
 def call_llm(prompt, tries=5):
 
@@ -287,7 +313,7 @@ ANALYST NOTES (context from the human reviewer):
 {note_txt}
 
 
-EVIDENCE POOL (the only facts you may use). Items E* are SWOT draft items. Items P* are word-for-word passages from the full text of verified articles:
+EVIDENCE POOL (the only facts you may use). Items E* are SWOT draft items. Items P* are word-for-word passages from the full text of verified articles. Items F* are facts computed by code from the approved financial statements: numbers only. They show THAT a number changed, never WHY:
 {pool_text}
 
 
@@ -310,6 +336,7 @@ RULES:
 8. "support" quotes must be copied exactly from the cited item (max 300 characters) with that item's id. A quote that states only the effect, not the cause, does not count.
 9. "competing_explanations": list any other explanation the pool points to (id plus one line). If a competing explanation is better supported than your answer, use it as your answer instead.
 10. The item marked (PROBLEM EVIDENCE) restates the problem. Do not use it as the cause.
+11. F* items never prove a cause. Join a number to a cause only with a news item or passage that states the cause, and word the link "consistent with". If an F* item carries a data caution, repeat the caution.
 
 
 Return JSON: {{"answer": str, "evidence_ids": [str], "basis": "reported|inference|unknown", "support": [{{"id": str, "quote": str}}], "competing_explanations": [str], "is_root_cause": bool, "why_stop": str}}"""
@@ -369,21 +396,97 @@ def _clean_support(raw):
 
 
 
+
+# ---------- evidence strength (a label, never a gate) ----------
+STRENGTH_ORDER = ["None", "Weak", "Limited", "Good", "Strong"]
+
+
+
+def _domain(url):
+    try:
+        return urlparse(url or "").netloc.lower().removeprefix("www.")
+    except Exception:
+        return ""
+
+
+
+def sources_of(it):
+    """(type, key) pairs for the independent sources behind one pool item. Same site = one source."""
+    kind = it.get("kind")
+    if kind == "financial":
+        return [("financial", "financial statements")]
+    if kind == "filing":
+        evs = ev_list(it)
+        return [("filing", _domain((evs[0] if evs else {}).get("url")) or "filing")]
+    evs = ev_list(it) if kind == "passage" else ev_list(it)[:3]
+    out = []
+    for e in evs:
+        key = _domain(e.get("url")) or str(e.get("source") or "").strip().lower() or str(it.get("id"))
+        out.append(("news", key))
+    return out or [("news", str(it.get("id")))]
+
+
+
+def rate_evidence(ids, pool, verified):
+    """Label how well a claim is backed. Counts independent sources (different sites; financial statements and
+    filings count as their own source types) and verified quotes. The problem's own item (E0) is not counted."""
+    srcs = {}
+    for i in ids:
+        if i == "E0" or i not in pool:
+            continue
+        for typ, key in sources_of(pool[i][0]):
+            srcs.setdefault((typ, key), i)
+    n, types, q = len(srcs), sorted({t for t, _ in srcs}), len(verified or [])
+    if n == 0:
+        label = "None"
+    elif q >= 1 and (n >= 3 or (n >= 2 and len(types) >= 2)):
+        label = "Strong"
+    elif n >= 2:
+        label = "Good"
+    elif q >= 1:
+        label = "Limited"
+    else:
+        label = "Weak"
+    score = 0 if n == 0 else {1: 30, 2: 55}.get(n, 70) + 10 * min(2, len(types) - 1) + (15 if q else 0)
+    return {"label": label, "score": min(100, score), "sources": n, "types": types, "verified_quotes": q,
+            "sites": sorted({k for (t, k) in srcs if t == "news"}),
+            "items": sorted(set(srcs.values()), key=_eid_key)}
+
+
+
+def strength_summary(chain, pool):
+    steps = []
+    for s in chain:
+        if s["status"] != "supported":
+            continue
+        steps.append({"step": s["step"], **rate_evidence(s["evidence_ids"], pool, s.get("support_verified"))})
+    if not steps:
+        return {"version": 1, "overall": {"label": "None", "score": 0}, "steps": []}
+    weakest = min(steps, key=lambda x: STRENGTH_ORDER.index(x["label"]))
+    return {"version": 1,
+            "overall": {"label": weakest["label"], "score": round(sum(x["score"] for x in steps) / len(steps)),
+                        "weakest_step": weakest["step"], "root_cause_step": steps[-1]["step"]},
+            "steps": steps,
+            "how": "Strong: 3+ independent sources, or 2 sources of different types, plus a verified quote. "
+                   "Good: 2+ independent sources. Limited: 1 source with a verified quote. Weak: 1 source, no verified quote. "
+                   "Same site counts once. This is a label, not a rule: nothing is blocked because of it."}
+
+
+
 # ---------- core ----------
 def run_rca(item, items, company, objective, notes, max_whys, draft_sha, model,
-            index=None, aliases=None, per_step=4, verify_dir=None):
+            index=None, aliases=None, per_step=4, verify_dir=None, facts=None):
     pool = build_pool(items, item)
     links = hash_links(items)
     problem = statement(item)
     seen, counter = set(), [0]
+    fseen, fcounter = set(), [0]
     chain, outcome = [], "max_depth_reached"
     for n in range(1, max_whys + 1):
         premise = chain[-1]["answer"] if chain else problem
-        if index is not None:
-            added = add_passages(pool, index, premise, aliases, company, per_step, seen, counter, links)
-            print(f"  Why {n} ... (+{len(added)} article passages)")
-        else:
-            print(f"  Why {n} ...")
+        added = add_passages(pool, index, premise, aliases, company, per_step, seen, counter, links) if index is not None else []
+        fadded = add_facts(pool, facts, premise, 3, fseen, fcounter)
+        print(f"  Why {n} ... (+{len(added)} article passages, +{len(fadded)} financial facts)")
         r = call_llm(step_prompt(problem, chain, pool, notes, n, max_whys))
         ans = (r.get("answer") or "").strip()
         if chain and ans and HAVE_ARTICLES and similar(ans, chain[-1]["answer"]) >= REPEAT_AT:
@@ -428,6 +531,9 @@ def run_rca(item, items, company, objective, notes, max_whys, draft_sha, model,
             q = f"{supported[-1]['answer']} company response plan strategy actions announced"
             added = add_passages(pool, index, q, aliases, company, 5, seen, counter, links)
             print(f"  Fix evidence: +{len(added)} article passages")
+        fadded = add_facts(pool, facts, f"{supported[-1]['answer']} {FIX_FACT_CUES}", 3, fseen, fcounter)
+        if fadded:
+            print(f"  Fix evidence: +{len(fadded)} financial facts")
         print("  Summarising ...")
         summary = call_llm(final_prompt(problem, chain, pool, notes))
     action_ids = set()
@@ -443,6 +549,7 @@ def run_rca(item, items, company, objective, notes, max_whys, draft_sha, model,
         act["support_verified"], act["support_rejected"] = g["verified"], g["rejected"]
         act["evidence_status"] = ("supported" if g["verified"] else
                                   "cited_unverified" if act["evidence_ids"] else "hypothesis")
+        act["strength"] = rate_evidence(act["evidence_ids"], pool, g["verified"])
         action_ids.update(act["evidence_ids"])
     used = sorted({i for s in chain for i in s["evidence_ids"]} | action_ids | {"E0"}, key=_eid_key)
     evidence_used = {}
@@ -472,16 +579,30 @@ def run_rca(item, items, company, objective, notes, max_whys, draft_sha, model,
                       "passages_retrieved": counter[0]},
         "evidence_depth": {"items_cited": len(used),
                            "passages_cited": sum(1 for i in used if i.startswith("P")),
+                           "facts_cited": sum(1 for i in used if i.startswith("F")),
                            "distinct_links_cited": len(urls), "distinct_domains_cited": len(domains),
                            "quotes_verified": sum(len(s["support_verified"]) for s in chain),
                            "quotes_rejected": sum(len(s["support_rejected"]) for s in chain)},
         "evidence_used": evidence_used,
+        "evidence_strength": strength_summary(chain, pool),
         "warnings": ["Analysis rests on the SWOT draft items plus passages retrieved from verified article texts; it is not a complete causal study.",
                      "Inference steps are the model's reasoning over cited facts, not source claims.",
                      "A verified quote proves the words are in the saved article text, not that the source proves the cause. Read the quotes and open the links.",
                      "Passages marked 'link not confirmed' may come from a different page than the link shown.",
+                     "Financial facts (F items) are numbers calculated from the approved statements. They show that something changed, not why, and statements only say they were approved, not that they are correct.",
                      "Corrective actions are recommendations, not evidence. Only actions marked supported have a verified quote."],
     }
+
+
+
+def _strength_line(r):
+    es = r.get("evidence_strength") or {}
+    o = es.get("overall") or {}
+    if not o:
+        return "- Evidence strength: n/a"
+    return (f"- Evidence strength: **{o.get('label')}** ({o.get('score')}/100, weakest step {o.get('weakest_step', '-')}); "
+            f"Strong = 3+ independent sources or 2 different types with a verified quote, Good = 2+ sources, "
+            f"Limited = 1 source with a quote, Weak = 1 source, no quote")
 
 
 
@@ -494,13 +615,17 @@ def to_md(r):
          f"- Generated: {r['generated_at']}",
          f"- Evidence depth: {d['items_cited']} items cited, {d['passages_cited']} article passages, "
          f"{d['distinct_domains_cited']} distinct sites, {d['quotes_verified']} quotes verified, "
-         f"{d['quotes_rejected']} rejected", "",
+         f"{d['quotes_rejected']} rejected, {d.get('facts_cited', 0)} financial facts",
+         _strength_line(r), "",
          "| # | Question | Answer | Evidence | Basis | Check |", "|---|---|---|---|---|---|"]
     for s in r["chain"]:
         chk = s["status"] + (f"; unverified numbers: {', '.join(s['unverified_numbers'])}"
                              if s["unverified_numbers"] else "")
         if s.get("downgraded_from_reported"):
             chk += "; claimed 'reported' but no verbatim supporting quote, downgraded to inference"
+        st_ = next((x for x in (r.get("evidence_strength") or {}).get("steps", []) if x["step"] == s["step"]), None)
+        if st_:
+            chk += f"; strength: {st_['label']} ({st_['sources']} source{'s' if st_['sources'] != 1 else ''}, {', '.join(st_['types']) or 'none'})"
         L.append(f"| {s['step']} | {esc(s['question'])} | {esc(s['answer'])} | "
                  f"{', '.join(s['evidence_ids'])} | {s['basis']} | {esc(chk)} |")
     L += ["", "## Supporting quotes (checked word for word)", ""]
@@ -531,7 +656,8 @@ def to_md(r):
                "hypothesis": " (hypothesis: no cited support)"}
         for a in sm.get("corrective_actions", []):
             L.append(f"- {a.get('action')} - {a.get('rationale')} [{', '.join(a.get('evidence_ids') or [])}]"
-                     + tag.get(a.get("evidence_status"), ""))
+                     + tag.get(a.get("evidence_status"), "")
+                     + (f" [strength: {a['strength']['label']}, {a['strength']['sources']} source(s)]" if a.get("strength") else ""))
             for q in a.get("support_verified", []):
                 L.append(f"  - evidence [{q['id']}]: \"{q['quote']}\"")
         if sm.get("evidence_gaps"):
@@ -573,6 +699,7 @@ def main():
     r.add_argument("--verify-dir", help="verify_triage_<id> folder (auto-detected from the draft if omitted)")
     r.add_argument("--passages-per-step", type=int, default=4)
     r.add_argument("--no-passages", action="store_true", help="run without article passages")
+    r.add_argument("--no-facts", action="store_true", help="run without computed financial facts")
     a = ap.parse_args()
 
 
@@ -611,6 +738,12 @@ def main():
                 print(f"Article passages: {len(index.passages)} from {vdir.name} | aliases: {aliases}")
 
 
+    facts = None
+    if not a.no_facts and HAVE_FACTS:
+        facts = FactIndex.from_items(items, a.draft)
+        print(f"Financial facts: {len(facts.facts)} from {facts.path.name}" if facts else "Financial facts: none (no approved statements found)")
+
+
     import importlib.util
     _llm_path = os.path.join(
         os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
@@ -628,7 +761,7 @@ def main():
             print(f"NOTE: {it.get('id')} is still 'proposed' (not human-approved).")
         print(f"RCA: {it.get('id')}")
         res = run_rca(it, items, company, draft.get("objective", ""), a.note, a.max_whys, sha, llm_client.MODEL,
-                      index=index, aliases=aliases, per_step=a.passages_per_step, verify_dir=vdir)
+                      index=index, aliases=aliases, per_step=a.passages_per_step, verify_dir=vdir, facts=facts)
         safe_id = str(it.get('id')).replace(":", "_")
         base = out_dir / f"rca_{safe_id}"
         base.with_suffix(".json").write_text(json.dumps(res, indent=2, ensure_ascii=False), encoding="utf-8")

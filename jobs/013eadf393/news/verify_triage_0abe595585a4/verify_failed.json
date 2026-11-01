@@ -1,0 +1,149 @@
+[
+  {
+    "company": "Ford",
+    "event_id": "c4e06be41e9a",
+    "title": "Ford killed its electric truck. Then demand surged",
+    "status": "thin_content",
+    "attempts": [
+      {
+        "url": "https://www.detroitnews.com/story/business/autos/2026/10/11/ford-electric-truck-sales-surge-f-150-lightning-used/92207829007/",
+        "status": "thin_content",
+        "http_status": 402,
+        "title_score": null,
+        "final_url": "https://www.detroitnews.com/story/business/autos/2026/10/11/ford-electric-truck-sales-surge-f-150-lightning-used/92207829007/"
+      }
+    ]
+  },
+  {
+    "company": "Ford",
+    "event_id": "b9c5c247ef5f",
+    "title": "RECALL WATCH LIST: Major brands announce recalls on highchairs, toys and Ford trucks",
+    "status": "consent_wall",
+    "attempts": [
+      {
+        "url": "https://www.41nbc.com/recall-watch-list-major-brands-announce-recalls-on-highchairs-toys-and-ford-trucks/",
+        "status": "consent_wall",
+        "http_status": 200,
+        "title_score": null,
+        "final_url": "https://www.41nbc.com/recall-watch-list-major-brands-announce-recalls-on-highchairs-toys-and-ford-trucks/"
+      }
+    ]
+  },
+  {
+    "company": "Ford",
+    "event_id": "6c9b38f30e38",
+    "title": "North Carolina dealership group acquires Ford, Toyota and Honda stores",
+    "status": "title_mismatch",
+    "attempts": [
+      {
+        "url": "https://www.autonews.com/retail/mergers-acquisitions/an-capital-acquires-cloninger-carolina-six-stores-1005/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null,
+        "final_url": "https://www.autonews.com/retail/mergers-acquisitions/an-capital-acquires-cloninger-carolina-six-stores-1005/"
+      },
+      {
+        "url": "https://uncabulldogs.com/news/2026/10/5/general-sheila-ford-duncan-pete-mcdaniel-inducted-into-western-north-carolina-hall-of-fame",
+        "status": "title_mismatch",
+        "http_status": 200,
+        "title_score": 0.25,
+        "final_url": "https://uncabulldogs.com/news/2026/10/5/general-sheila-ford-duncan-pete-mcdaniel-inducted-into-western-north-carolina-hall-of-fame"
+      }
+    ]
+  },
+  {
+    "company": "Ford",
+    "event_id": "7b6bd9440311",
+    "title": "Supplier to lay off 150 with loss of Ford business",
+    "status": "blocked",
+    "attempts": [
+      {
+        "url": "https://www.freep.com/story/money/cars/ford/2026/10/15/local-supplier-said-to-be-doomed-as-ford-ends-its-relationship/92249782007/",
+        "status": "thin_content",
+        "http_status": 402,
+        "title_score": null,
+        "final_url": "https://www.freep.com/story/money/cars/ford/2026/10/15/local-supplier-said-to-be-doomed-as-ford-ends-its-relationship/92249782007/"
+      },
+      {
+        "url": "https://www.crainsdetroit.com/manufacturing-logistics/cdb-jg-kern-layoff-20261016/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null,
+        "final_url": "https://www.crainsdetroit.com/manufacturing-logistics/cdb-jg-kern-layoff-20261016/"
+      }
+    ]
+  },
+  {
+    "company": "Ford",
+    "event_id": "821b0f48f301",
+    "title": "Ford CEO Jim Farley Says Drive Season 5 Premiers This Month: Video",
+    "status": "title_mismatch",
+    "attempts": [
+      {
+        "url": "https://fordauthority.com/2026/11/ford-ceo-jim-farley-says-drive-season-5-premiers-this-month-video/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null,
+        "final_url": "https://fordauthority.com/2026/11/ford-ceo-jim-farley-says-drive-season-5-premiers-this-month-video/"
+      },
+      {
+        "url": "https://www.benzinga.com/markets/earnings/26/10/62682644/ford-ceo-jim-farley-says-28k-fathom-ev-completely-blew-me-away-like-something-ive-never-experienced",
+        "status": "title_mismatch",
+        "http_status": 200,
+        "title_score": 0.167,
+        "final_url": "https://www.benzinga.com/markets/earnings/26/10/62682644/ford-ceo-jim-farley-says-28k-fathom-ev-completely-blew-me-away-like-something-ive-never-experienced"
+      }
+    ]
+  },
+  {
+    "company": "Ford",
+    "event_id": "9102180b8d18",
+    "title": "Red Bull Ford Powertrains in Formula One",
+    "status": "blocked",
+    "attempts": [
+      {
+        "url": "https://www.detroitnews.com/picture-gallery/sports/motor/2026/10/07/red-bull-ford-powertrains-in-formula-one/92121285007/",
+        "status": "thin_content",
+        "http_status": 402,
+        "title_score": null,
+        "final_url": "https://www.detroitnews.com/picture-gallery/sports/motor/2026/10/07/red-bull-ford-powertrains-in-formula-one/92121285007/"
+      },
+      {
+        "url": "https://fordauthority.com/2026/10/red-bull-ford-powertrains-shrugs-off-engine-issues-at-baku/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null,
+        "final_url": "https://fordauthority.com/2026/10/red-bull-ford-powertrains-shrugs-off-engine-issues-at-baku/"
+      }
+    ]
+  },
+  {
+    "company": "Ford",
+    "event_id": "52939d4fd5db",
+    "title": "Watch Ford CFO on Earnings, AI, Gas Prices, Going Off-Road",
+    "status": "blocked",
+    "attempts": [
+      {
+        "url": "https://www.bloomberg.com/news/videos/2026-10-28/ford-cfo-on-earnings-ai-gas-prices-going-off-road-video",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null,
+        "final_url": "https://www.bloomberg.com/news/videos/2026-10-28/ford-cfo-on-earnings-ai-gas-prices-going-off-road-video"
+      },
+      {
+        "url": "https://www.autonews.com/ford/an-ford-q3-earnings-1028/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null,
+        "final_url": "https://www.autonews.com/ford/an-ford-q3-earnings-1028/"
+      },
+      {
+        "url": "https://fordauthority.com/2026/10/off-road-ford-lineup-still-attracting-buyers-despite-high-gas-prices/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null,
+        "final_url": "https://fordauthority.com/2026/10/off-road-ford-lineup-still-attracting-buyers-despite-high-gas-prices/"
+      }
+    ]
+  }
+]

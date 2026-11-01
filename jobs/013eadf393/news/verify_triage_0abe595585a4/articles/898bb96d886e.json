@@ -1,0 +1,83 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "898bb96d886e",
+  "bucket": "24h",
+  "score": 0.4402,
+  "label": {
+    "topic": "labor_org",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 4,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "a618030c9528d81b",
+    "title": "Ford CEO Says Its New EV Tech Is 30% More Efficient Than BYD's",
+    "source": "inkl",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNT3dHUkpGWTBRNlBVLVRGZGVVdUw4Y1dEd2ZuZEp5Tm41ckR2Smw1TFJmcUpkd0xreTFKdVp1d0hScnJmQnBiU3g0R3ppOWpFc1R6Uy1OenpkYUoySlRtaW9LUW1feGVRMkZVRkZvbFZYNDZmZFdBZmJ0Vi1rQ3IzeW9MYzdES3NVTjh5ZEdwYw?oc=5",
+    "published_at": "2026-10-29T21:11:40+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.inkl.com/news/ford-ceo-says-its-new-ev-tech-is-30-more-efficient-than-byds",
+    "domain": "www.inkl.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford CEO Says Its New EV Tech Is 30% More Efficient Than BYD's",
+    "source_item_id": "a618030c9528d81b",
+    "resolved_at": "2026-11-01T17:27:29.613517+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.inkl.com/news/ford-ceo-says-its-new-ev-tech-is-30-more-efficient-than-byds",
+    "attempts": 1,
+    "final_url": "https://www.inkl.com/news/ford-ceo-says-its-new-ev-tech-is-30-more-efficient-than-byds",
+    "attempt_details": [
+      {
+        "url": "https://www.inkl.com/news/ford-ceo-says-its-new-ev-tech-is-30-more-efficient-than-byds",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://www.inkl.com/news/ford-ceo-says-its-new-ev-tech-is-30-more-efficient-than-byds"
+      }
+    ],
+    "title": "Ford CEO Says Its New EV Tech Is 30% More Efficient…",
+    "published_at_page": "2026-10-29T21:11:40.000Z",
+    "title_score": 1.0,
+    "text_chars": 571,
+    "content_hash": "edf0f6edba28d9bf",
+    "screenshot": "898bb96d886e.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:16.508195+00:00"
+  },
+  "text": "Ford has explicitly framed its Universal Electric Vehicle platform as a way to compete with Chinese cars on cost and technology. According to Ford CEO Jim Farley, the company has succeeded in at least one way: efficiency.\n\"There's another area that we really found to be quite advantaged relative to a BYD. And that is the efficiency of our motors, gearbox and inverters, which are about 30% more efficient than theirs and allows us to design a battery that's much less,\" Farley said today on the automaker's third-quarter earnings call. \"I think that's really critical.\""
+}

@@ -1,0 +1,90 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "3b6a2a54b259",
+  "bucket": "24h",
+  "score": 0.6668,
+  "label": {
+    "topic": "earnings_financials",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "72fd9b6550c6c074",
+    "title": "Ford raises lower end 2026 EBIT target despite Q3 profit slip",
+    "source": "Just Auto",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9XUS10NHBPN0IwWXJwT3RzTmtyOUNVLThwVG44aWI4SlZXM1duOG81WW1kbEJTcUgzYnBEV3RCNGZWTkNEQ3BwQ3FJVXhFRUVQQndBYkhPUGJVVHBUUG84S3lmVlF0RU5nZHoyWG9EakJYM0kzeWJQT1dB?oc=5",
+    "published_at": "2026-10-29T10:02:29+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.just-auto.com/news/ford-raises-lower-end-2026-ebit-target/",
+    "domain": "www.just-auto.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford raises lower end 2026 EBIT target despite Q3 profit slip",
+    "source_item_id": "72fd9b6550c6c074",
+    "resolved_at": "2026-11-01T17:27:29.613037+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://foro3d.com/en/2026/octubre/ford-eleva-su-prevision-anual-de-ebit-pese-al-aumento-de-costes.html",
+    "attempts": 2,
+    "final_url": "https://foro3d.com/en/2026/octubre/ford-eleva-su-prevision-anual-de-ebit-pese-al-aumento-de-costes.html",
+    "attempt_details": [
+      {
+        "url": "https://www.just-auto.com/news/ford-raises-lower-end-2026-ebit-target/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null,
+        "final_url": "https://www.just-auto.com/news/ford-raises-lower-end-2026-ebit-target/"
+      },
+      {
+        "url": "https://foro3d.com/en/2026/octubre/ford-eleva-su-prevision-anual-de-ebit-pese-al-aumento-de-costes.html",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.571,
+        "final_url": "https://foro3d.com/en/2026/octubre/ford-eleva-su-prevision-anual-de-ebit-pese-al-aumento-de-costes.html"
+      }
+    ],
+    "title": "Ford raises its annual Ebit forecast despite rising costs",
+    "published_at_page": "2026-10-31T22:25:48Z",
+    "title_score": 0.571,
+    "text_chars": 1275,
+    "content_hash": "53da3819a8c665a1",
+    "screenshot": "3b6a2a54b259.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:48.630298+00:00"
+  },
+  "text": "Ford beat analysts' expectations for the quarter with an adjusted operating profit of $2.7 billion and earnings per share of 49 cents versus the 40 expected, with revenue of $49.5 billion. The company raised the floor of its annual Ebit forecast by $500 million to $10.5 billion, although it kept the ceiling at $11 billion.\nF-150 production and pressure on the supply chain 🏭\nThe manufacturer faces rising costs for copper, steel, fuel and chips, and raised its estimate of raw material cost overruns from $2 billion to almost $2.5 billion. F-150 production suffered disruptions due to a supplier, while the fire at Novelis is now almost resolved. The bottom line is that Ford is improving its numbers despite cost pressure and tariff uncertainty in North America.\nFord's secret formula: pay more for everything and still smile 😅\nIt turns out the recipe for earning more consists of spending more on copper, steel, fuel and chips, and along the way dealing with an F-150 supplier that takes vacations without warning. The almost-resolved fire at Novelis adds that touch of excitement that no business plan should include. Even so, Ford raises the floor of its forecast and keeps the ceiling: textbook prudence or simply that no one wants to overpromise with tariffs lurking."
+}

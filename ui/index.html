@@ -262,6 +262,7 @@ function showNew() {
       field("Company *", "company", "e.g. General Motors", { required: true, maxlength: 120 }),
       field("Question this analysis should answer", "objective", "e.g. Assess expansion readiness", { maxlength: 500 }),
       field("Stock ticker", "ticker", "optional, e.g. GM"),
+      field("Compare with (listed companies)", "peers_tickers", "optional; tickers separated by commas, e.g. AMZN, MSFT. Their numbers come from their SEC filings", { maxlength: 120 }),
       field("Places to focus on", "location", "optional; separate several with ;  (empty = worldwide)"),
       field("Other names used in headlines", "alias", "optional; separate with ;"),
       field("Ignore headlines containing", "exclude", "optional; helps with look-alike names; separate with ;"),
@@ -305,7 +306,7 @@ function showNew() {
 }
 
 /* ---------- job page ---------- */
-const TABS = [["progress", "Progress"], ["finance", "Financials"], ["news", "News"], ["swot", "SWOT"], ["rca", "Root causes"]];
+const TABS = [["progress", "Progress"], ["finance", "Financials"], ["news", "News"], ["swot", "SWOT"], ["compare", "Comparison"], ["rca", "Root causes"]];
 const NEWS_STAGES = ["discovery", "triage", "resolve", "verify", "sentiment"];
 const J = {};
 const card = (...k) => h("div", { class: "card" }, ...k);
@@ -345,6 +346,7 @@ function tabKey(t) {
     case "finance": return st.finance_preview.status + "|" + st.finance_approve.status;
     case "news": return st.sentiment.status;
     case "swot": return st.swot_build.status + "|" + st.swot_review.status;
+    case "compare": return st.swot_build.status;
     case "rca": return st.swot_build.status + "|" + J.job.stages.filter(s => s.name.startsWith("rca_")).map(s => s.name + s.status).join(",");
     default: return Math.random().toString();
   }
@@ -422,6 +424,7 @@ async function renderBody() {
     else if (J.tab === "finance") await renderFinance(box, tok);
     else if (J.tab === "news") await renderNews(box, tok);
     else if (J.tab === "swot") await renderSwot(box, tok);
+    else if (J.tab === "compare") await renderCompare(box, tok);
     else if (J.tab === "rca") await renderRca(box, tok);
   } catch (e) { if (tok === J.bodyTok) box.replaceChildren(h("div", { class: "err-banner" }, e.message)); }
 }
@@ -704,22 +707,88 @@ async function renderSwot(box, tok) {
   if (done && !J.reviewing) renderFinal(box); else renderBoard(box);
 }
 
+/* ---------- evidence strength ---------- */
+const STRENGTH_CLASS = { Strong: "strength", Good: "opportunity", Limited: "threat", Weak: "weakness", None: "weakness" };
+function strengthChip(s, prefix) {
+  if (!s || !s.label) return null;
+  const head = prefix === undefined ? "Evidence: " : (prefix ? prefix + ": " : "");
+  const tip = s.sources !== undefined
+    ? `${s.sources} independent source(s); ${(s.types || []).join(" + ") || "none"}; ${s.verified_quotes || 0} verified quote(s)`
+    : "the weakest step of this analysis";
+  return h("span", { class: "chip " + (STRENGTH_CLASS[s.label] || ""), title: tip, style: "margin-left:6px" },
+    head + s.label + (s.score !== undefined ? " \u00b7 " + s.score + "/100" : ""));
+}
+function quoteBlock(r, s) {
+  const ev = r.evidence_used || {}, lines = [];
+  (s.support_verified || []).forEach(q => {
+    const e = ev[q.id] || {};
+    lines.push(h("div", { class: "ev" }, h("b", {}, q.id + ": "), h("q", {}, q.quote), " ",
+      (e.links || []).slice(0, 1).map(u => link(u, e.source || "source")),
+      e.link_confirmed === false ? h("span", { class: "muted small" }, " (link not confirmed)") : null,
+      q.model_cited && q.model_cited !== q.id ? h("span", { class: "muted small" }, " (model cited " + q.model_cited + ")") : null));
+  });
+  (s.support_rejected || []).forEach(q => lines.push(h("div", { class: "ev", style: "color:var(--bad)" },
+    "Rejected quote: ", h("q", {}, q.quote), h("span", { class: "small" }, " (" + (q.reason || "not found") + ")"))));
+  (s.competing_explanations || []).forEach(c => lines.push(h("div", { class: "ev muted" }, "Other explanation considered: " + c)));
+  return lines;
+}
+const ACTION_TAG = { supported: "supported by a verified quote", cited_unverified: "cited, no verified quote", hypothesis: "hypothesis" };
+
+/* ---------- comparison with peers ---------- */
+const POS_LABEL = { above_peers: "above peers", below_peers: "below peers", in_line: "in line with peers" };
+async function renderCompare(box, tok) {
+  let c = null;
+  try { c = await api(`/jobs/${J.id}/files/peers/peer_comparison.json`); }
+  catch (e) { if (!(e instanceof ApiError && e.status === 404)) throw e; }
+  if (tok !== J.bodyTok) return;
+  const stSwot = stageMap(J.job).swot_build.status;
+  if (!c) {
+    box.replaceChildren(card(h("h3", {}, "Comparison with peers"),
+      h("p", { class: "muted" }, stSwot === "succeeded" || stSwot === "failed"
+        ? "This analysis has no peer comparison. When you start an analysis, enter the tickers of listed companies under “Compare with”. Their numbers come from their SEC filings and are set against this company’s statements."
+        : "The comparison appears once the peer numbers have been read from the SEC filings.")));
+    return;
+  }
+  const peers = (c.peers || []).filter(p => p.values_used), tm = (c.target && c.target.metrics) || {};
+  const who = (c.target && c.target.company) || J.job.company;
+  const metrics = (Object.keys(tm).length ? Object.keys(tm) : [...new Set(peers.flatMap(p => Object.keys(p.values_used || {})))])
+    .filter(m => peers.some(p => (p.values_used || {})[m] !== undefined));
+  const head = ["Ratio", ...(Object.keys(tm).length ? [who] : []),
+    ...peers.map(p => h("span", {}, p.name, h("div", { class: "muted small" }, "year ending " + p.period_used + (p.aligned === false ? " (different year-end)" : "")))), "Peer median"];
+  const rows = metrics.map(m => {
+    const t = tm[m], med = (c.median || {})[m], vm = t && t.vs_median;
+    const chipCls = vm ? (vm.favourable === true ? "strength" : vm.favourable === false ? "weakness" : "") : "";
+    return h("tr", {}, h("td", {}, humanize(m)),
+      Object.keys(tm).length ? h("td", {}, t && t.latest !== null && t.latest !== undefined ? fmtMetric(m, t.latest) : "—", vm ? h("span", { class: "chip " + chipCls, style: "margin-left:6px" }, POS_LABEL[vm.position] || vm.position) : null) : null,
+      peers.map(p => h("td", {}, (p.values_used || {})[m] !== undefined ? fmtMetric(m, p.values_used[m]) : "—")),
+      h("td", {}, med ? fmtMetric(m, med.value) : "—"));
+  });
+  const bad = (c.status || []).filter(s => s.status !== "ok");
+  box.replaceChildren(
+    card(h("h3", {}, "Comparison with peers"),
+      h("p", { class: "muted small" }, `${who} against ${peers.map(p => p.name).join(", ") || "no peers"}. Peer numbers come from each company's filings with the SEC; every figure is calculated by code with the same definitions.`),
+      bad.length ? h("div", { class: "banner warn" }, h("div", { class: "grow" }, "Not read: " + bad.map(s => `${s.ticker} (${s.message || s.status})`).join("; "))) : null,
+      rows.length ? h("table", {}, h("thead", {}, h("tr", {}, head.map(x => h("th", {}, x)))), h("tbody", {}, rows)) : h("p", { class: "muted" }, "No ratio could be compared.")),
+    card(h("h3", {}, "Read with care"), h("ul", {}, (c.caveats || []).map(x => h("li", { class: "small" }, x)))));
+}
+
 /* ---------- root cause tab ---------- */
 async function openRca(name) {
   try {
     const r = await api(`/jobs/${J.id}/rca/${name}`), sm = r.summary || {};
     modal("Five Whys: " + r.item_id,
-      h("p", {}, h("b", {}, "Problem: "), r.problem), h("p", {}, badge(r.outcome === "root_cause_reached" ? "ok" : "waiting", humanize(r.outcome)), r.has_inference ? h("span", { class: "chip", style: "margin-left:8px" }, "contains inference") : null),
-      h("table", {}, h("thead", {}, h("tr", {}, ["#", "Why?", "Answer", "Evidence", "Basis"].map(x => h("th", {}, x)))),
-        h("tbody", {}, r.chain.map(s => h("tr", {}, h("td", {}, s.step), h("td", { class: "small" }, s.question), h("td", {}, s.answer, s.unverified_numbers && s.unverified_numbers.length ? h("div", { class: "small", style: "color:var(--bad)" }, "Unverified numbers: " + s.unverified_numbers.join(", ")) : null),
-          h("td", { class: "small" }, (s.evidence_ids || []).join(", ")), h("td", {}, h("span", { class: "chip" }, s.basis), s.status !== "supported" ? h("span", { class: "chip blocking" }, s.status) : null))))),
+      h("p", {}, h("b", {}, "Problem: "), r.problem), h("p", {}, badge(r.outcome === "root_cause_reached" ? "ok" : "waiting", humanize(r.outcome)), r.has_inference ? h("span", { class: "chip", style: "margin-left:8px" }, "contains inference") : null, strengthChip(r.evidence_strength && r.evidence_strength.overall, "Evidence strength")),
+      r.evidence_strength && r.evidence_strength.how ? h("p", { class: "muted small" }, r.evidence_strength.how) : null,
+      h("table", {}, h("thead", {}, h("tr", {}, ["#", "Why?", "Answer", "Evidence", "Basis", "Strength"].map(x => h("th", {}, x)))),
+        h("tbody", {}, r.chain.map(s => h("tr", {}, h("td", {}, s.step), h("td", { class: "small" }, s.question), h("td", {}, s.answer, s.unverified_numbers && s.unverified_numbers.length ? h("div", { class: "small", style: "color:var(--bad)" }, "Unverified numbers: " + s.unverified_numbers.join(", ")) : null, quoteBlock(r, s)),
+          h("td", { class: "small" }, (s.evidence_ids || []).join(", ")), h("td", {}, h("span", { class: "chip" }, s.basis), s.status !== "supported" ? h("span", { class: "chip blocking" }, s.status) : null), h("td", {}, strengthChip(((r.evidence_strength || {}).steps || []).find(x => x.step === s.step), "")))))),
       h("h3", { style: "margin-top:16px" }, "Root cause"), h("p", {}, r.root_cause || "Not determined from the evidence."),
       sm.root_cause_type ? h("p", { class: "small" }, h("b", {}, "Type: "), humanize(sm.root_cause_type)) : null,
       sm.validation_test ? h("p", { class: "small" }, h("b", {}, "Would fixing it solve the problem? "), sm.validation_test) : null,
-      (sm.corrective_actions || []).length ? [h("h3", {}, "Suggested actions (recommendations, not facts)"), h("ul", {}, sm.corrective_actions.map(a => h("li", {}, h("b", {}, a.action), " — ", a.rationale, a.evidence_ids && a.evidence_ids.length ? h("span", { class: "muted small" }, " [" + a.evidence_ids.join(", ") + "]") : null)))] : null,
+      (sm.corrective_actions || []).length ? [h("h3", {}, "Suggested actions (recommendations, not facts)"), h("ul", {}, sm.corrective_actions.map(a => h("li", {}, h("b", {}, a.action), " — ", a.rationale, a.evidence_ids && a.evidence_ids.length ? h("span", { class: "muted small" }, " [" + a.evidence_ids.join(", ") + "]") : null, a.evidence_status ? h("span", { class: "chip", style: "margin-left:6px" }, ACTION_TAG[a.evidence_status] || a.evidence_status) : null, strengthChip(a.strength), quoteBlock(r, a))))] : null,
       (sm.evidence_gaps || []).length ? [h("h3", {}, "What is missing"), h("ul", {}, sm.evidence_gaps.map(g => h("li", { class: "small" }, g)))] : null,
       (sm.caveats || []).length ? [h("h3", {}, "Caveats"), h("ul", {}, sm.caveats.map(g => h("li", { class: "small" }, g)))] : null,
-      h("details", { style: "margin-top:12px" }, h("summary", {}, "Evidence used"), Object.entries(r.evidence_used || {}).map(([k, e]) => h("div", { class: "ev" }, h("b", {}, k + ": "), e.text, (e.links || []).map(u => h("span", {}, " ", link(u, "source")))))),
+      h("details", { style: "margin-top:12px" }, h("summary", {}, "Evidence used"), Object.entries(r.evidence_used || {}).map(([k, e]) => h("div", { class: "ev" }, h("b", {}, k + ": "), e.text, e.link_confirmed === false ? h("span", { class: "muted small" }, " (link not confirmed) ") : null, (e.links || []).map(u => h("span", {}, " ", link(u, "source")))))),
       h("p", { class: "muted small" }, (r.warnings || []).join(" ")));
   } catch (e) { fail(e); }
 }
@@ -742,8 +811,8 @@ async function renderRca(box, tok) {
       h("div", { class: "row", style: "margin-top:10px" }, h("button", { class: "btn primary", onclick: () => { if (!J.rcaSel.size) return toast("Pick at least one item.", "bad"); startRca([...J.rcaSel].slice(0, 10), notes.value.split("\n").map(x => x.trim()).filter(Boolean), parseInt(whys.value, 10)); } }, "Run Five Whys"))),
     running.length ? card(h("h3", {}, "Runs"), running.map(s => h("div", { class: "stage" }, h("div", { class: "sdot " + s.status }), h("div", {}, h("b", {}, stageLabel(s.name))),
       h("div", { class: "row" }, badge(s.status), s.started_at ? h("button", { class: "btn small", onclick: () => openLog(s.name) }, "Log") : null), s.error ? h("pre", { class: "err" }, s.error) : null))) : null,
-    card(h("h3", {}, "Results"), J.rca.length ? h("table", {}, h("thead", {}, h("tr", {}, ["Item", "Outcome", "Root cause", ""].map(x => h("th", {}, x)))),
-      h("tbody", {}, J.rca.map(r => h("tr", {}, h("td", { class: "small mono" }, r.item_id), h("td", {}, badge(r.outcome === "root_cause_reached" ? "ok" : "waiting", humanize(r.outcome))), h("td", { class: "small" }, r.root_cause || "—"),
+    card(h("h3", {}, "Results"), J.rca.length ? h("table", {}, h("thead", {}, h("tr", {}, ["Item", "Outcome", "Evidence", "Root cause", ""].map(x => h("th", {}, x)))),
+      h("tbody", {}, J.rca.map(r => h("tr", {}, h("td", { class: "small mono" }, r.item_id), h("td", {}, badge(r.outcome === "root_cause_reached" ? "ok" : "waiting", humanize(r.outcome))), h("td", {}, strengthChip(r.strength, "") || h("span", { class: "muted small" }, "—")), h("td", { class: "small" }, r.root_cause || "—"),
         h("td", {}, h("button", { class: "btn small", onclick: () => openRca(r.name) }, "Open")))))) : h("p", { class: "muted" }, "No analysis yet.")));
 }
 

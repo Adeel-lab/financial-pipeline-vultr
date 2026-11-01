@@ -1,0 +1,83 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "9ad95fa87543",
+  "bucket": "7d",
+  "score": 0.6796,
+  "label": {
+    "topic": "earnings_financials",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 7,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "9ef41f443cfaebdb",
+    "title": "Ford reports mixed third-quarter results, says 2027 earnings will be in line with this year",
+    "source": "CNBC",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1jNGN0WWRjR2NmRmk2ZDc2clVGZjdFZ2ZyRnpZclI4bk9mbzFwalBfcUJwbU05V0FUVEx3ekZSMVlmTV9lNUN0NEFtcFZXbXV0QUJ4YVhzZjlNekZCTFFkejdZb1FMZ3UzemVNTDRMTm93SXo40gF6QVVfeXFMTUNkMW1GWlIwM19PSGxNNV9id3BFTUFQTTdEQnpHV210dmNNWk95YkxaV0k3cmkwUmZzMHJIaGd0Y2RpMGlBZGZESS10RlpiSVFKWW96Ti1lNExJcDg0RFc5dTc3cC1YazM1RHFkRVIyOW9JeVRWTHBwaUE?oc=5",
+    "published_at": "2026-10-28T16:00:01+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.cnbc.com/2026/10/28/ford-motor-f-earnings-q3-2026.html",
+    "domain": "www.cnbc.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford reports mixed third-quarter results, says 2027 earnings will be in line with this year",
+    "source_item_id": "9ef41f443cfaebdb",
+    "resolved_at": "2026-11-01T17:27:29.612992+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.cnbc.com/2026/10/28/ford-motor-f-earnings-q3-2026.html",
+    "attempts": 1,
+    "final_url": "https://www.cnbc.com/2026/10/28/ford-motor-f-earnings-q3-2026.html",
+    "attempt_details": [
+      {
+        "url": "https://www.cnbc.com/2026/10/28/ford-motor-f-earnings-q3-2026.html",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://www.cnbc.com/2026/10/28/ford-motor-f-earnings-q3-2026.html"
+      }
+    ],
+    "title": "Ford Motor (F) earnings Q3 2026",
+    "published_at_page": "2026-10-28T16:00:01+0000",
+    "title_score": 1.0,
+    "text_chars": 4284,
+    "content_hash": "7a2ac07f8171dbf0",
+    "screenshot": "9ad95fa87543.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:24.003526+00:00"
+  },
+  "text": "Ford Motor reported earnings that beat Wall Street’s estimates but slightly missed on revenue.\nThe Detroit automaker also narrowed its 2026 guidance, raising it at the low end, and said earnings next year will be in line with its results from this year.\nFord has been working to recover production of its F-Series pickup trucks after dealing with supplier issues for much of the past year.\nDETROIT — Ford Motor expects earnings next year will be roughly in line with the automaker's anticipated results this year, the company said Wednesday as it reported mixed results for the third quarter.\nThe Detroit automaker beat Wall Street's third-quarter earnings expectations but slightly missed revenue estimates. The company has been working to stabilize production of its F-Series pickup trucks after dealing with supplier issues for much of the past year.\n\"This quarter's results reflect deliberate actions to improve profitability and deliver consistent financial returns,\" Ford CFO Sherry House told reporters during a call Wednesday.\nFord reported third-quarter adjusted free cash flow of $4.7 billion, roughly $2 billion higher than what analysts were anticipating, according to StreetAccount.\nHere's how Ford performed in the third quarter, compared with average estimates compiled by LSEG:\nEarnings per share: 49 cents adjusted vs. 40 cents expected\nAutomotive revenue: $46.08 billion vs. $46.24 billion expected\nThe Detroit automaker also narrowed its 2026 guidance to adjusted earnings before interest and taxes of between $10.5 billion and $11 billion, compared with a previous outlook of $10 billion to $11 billion. Ford maintained its adjusted free cash flow guidance for this year of between $6 billion and $7 billion.\nHouse said the company expects 2027 earnings to be roughly in line with this year's results, citing several offsetting factors in production issues this year as well as rising commodity costs.\nHouse noted a $1.3 billion tariff refund during the first quarter of this year was largely offset by additional costs from alternative aluminum sourcing that the company does not expect to have next year, leveling out the year-over-year comparison.\nShe also said production of its F-Series Super Duty trucks in Canada in 2027 will make up for lost production it's expecting at its F-150 factories to retool for new models.\n\"Next year will be the third year on our journey of increasing and improving our warranty and material cost savings, and that's getting extended to structural costs throughout the company as well in terms of savings,\" House said.\nFord CEO Jim Farley called 2027 a \"foundational year\" for the company on its way to a previously announced target of an 8% adjusted EBIT margin by 2029. The company reported a 5.4% margin during the third quarter.\nAhead of the results, Wall Street analysts were mixed about whether Ford would be able to maintain profits in 2027.\nThe company has multiple efforts that will add to costs next year: It's rolling out several new or redesigned models, including its next-generation EV and Canada-produced pickups, and is enhancing its energy business that it announced earlier this year.\nThe missed revenue for the third quarter was a result of each of the automaker's main business units – which are broken into Blue traditional operations, Pro fleet and Model e electric vehicle segments – underperforming compared with Wall Street's expectations, according to StreetAccount.\nAs part of its modified guidance, Ford said it now expects pre-tax earnings of its Ford Blue unit to be $5.5 billion, which is at the high end of a previous guidance.\nIt's also anticipating EBIT of about $7 billion for the year for Ford Pro and Ford Model e losses of about $4 billion. Its Ford Credit unit is expected to record about $2.8 billion in EBIT for 2026.\nFord's overall revenue, which includes its credit segment, was off roughly 2% compared with the third quarter of last year, to $49.5 billion.\nIts net income also was off $400 million from a year earlier to $2 billion, while adjusted earnings before interest and taxes were up slightly year-over-year to $2.7 billion.\nFord's 2025 third-quarter results included $47.19 billion in automotive revenue, net income of $2.4 billion and earnings per share of 45 cents adjusted."
+}

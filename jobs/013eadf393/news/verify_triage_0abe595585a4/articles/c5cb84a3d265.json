@@ -1,0 +1,83 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "c5cb84a3d265",
+  "bucket": "24h",
+  "score": 0.4673,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "458c3309a07a992b",
+    "title": "I Drove Ford's 300-HP Maverick. It Feels Like A Hot Hatch",
+    "source": "Motor1.com",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNmdOQXhWTUVXVmNXX3lNeGRHLTRHNWxDZk5JdkEzaUNFVzh4d0JHY2puNWl5Z3hCYVJQSFBZN1VuS2ptcU4zeUVVOC1ub2xHMFZkZXFCTzB3Sk9UeTNIV0tCQ19qQ2FDNUNPYlNJd3RDd0lQNHFmMno0b2tpQVZBMk5XWTFMSUV3RXNOSnl3MWQ?oc=5",
+    "published_at": "2026-11-01T09:17:43+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.motor1.com/reviews/802667/ford-maverick-sv300t-package-driven-specs-review/",
+    "domain": "www.motor1.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "I Drove Ford's 300-HP Maverick. It Feels Like A Hot Hatch",
+    "source_item_id": "458c3309a07a992b",
+    "resolved_at": "2026-11-01T17:27:29.613444+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.motor1.com/reviews/802667/ford-maverick-sv300t-package-driven-specs-review/",
+    "attempts": 1,
+    "final_url": "https://www.motor1.com/reviews/802667/ford-maverick-sv300t-package-driven-specs-review/",
+    "attempt_details": [
+      {
+        "url": "https://www.motor1.com/reviews/802667/ford-maverick-sv300t-package-driven-specs-review/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://www.motor1.com/reviews/802667/ford-maverick-sv300t-package-driven-specs-review/"
+      }
+    ],
+    "title": "I Drove Ford's 300-HP Maverick. It Feels Like A Hot Hatch",
+    "published_at_page": "2026-07-24T16:30:00Z",
+    "title_score": 1.0,
+    "text_chars": 3005,
+    "content_hash": "8cc9593da50c57cf",
+    "screenshot": "c5cb84a3d265.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:13.700429+00:00"
+  },
+  "text": "I Drove Ford's 300-HP Maverick. It Feels Like A Hot Hatch\nFord's new SV300T pack for the Maverick ups output to 300 horsepower and turns the truck into an autocross monster for just $5,000.\nThe Michelin Pilot Sport 4S tires bite into the parking lot pavement as I accelerate out of the last corner. I can hear a faint bit of tire scrub before the burble of the Ford Racing exhaust crescendoes as I fly through the last pair of cones.\nEven with traction control turned off and track mode engaged, the sticky tires and all-wheel-drive system offer up plenty of grip. The steering feels precise, and the handling is alive through the short autocross course Ford has set up for us at Michigan International Speedway.\nBut I’m not driving a Mustang—not even a Mach-E. I’m actually behind the wheel of a Maverick. A very special Maverick that you’ll be able to buy soon.\nThe Maverick Gets Even More Fun\nThe Maverick in question sports Ford’s new SV300T package, which goes on sale soon. It takes the turbocharger from the 2.3-liter Mustang EcoBoost, adds a performance intercooler and some slick graphics, and slaps on 20-inch bronze or black wheels.\nThe upgraded exhaust and powertrain help boost the Maverick’s output to a hearty 300 horsepower. That’s a 50-hp jump for the base truck’s turbocharged 2.0-liter four-cylinder engine. The Mustang EcoBoost makes 315 hp, by comparison.\nThe extra power is noticeable, and the transmission keeps the engine revs high, providing thrust with the blip of the accelerator. If I’m being honest, it feels like a spiritual successor to the Focus ST. And it provides a much livelier, more engaging experience than the Maverick XL I drove just a few minutes earlier, which was equipped with the same kit.\nEasy Upgrades\nThe XL’s Sport mode isn’t nearly as enthusiastic as the Lobo is. The XL feels more sluggish through the course, compared to the Lobo’s eagerness to end up in four-wheel drift if pushed hard enough.\nThe kit also includes lowering springs, upgraded stabilizer bars, and Lobo shock absorbers. Many of these goodies are already standard on the Maverick Lobo, but the package is also available for the XLT and Lariat trims for $5,000 and does not include installation or tires.\nThe Lobo SV300T also had an upgraded brake package that is also available from Ford Custom Garage, the automaker’s aftermarket division that was established in November 2024. The Blue Oval teased this package at last year's SEMA Show. It’s a dedicated business unit within the automaker designed to offer factory-backed aftermarket upgrades to customers new and old.\nFord wants to make it as easy as possible for customers to customize and accessorize their vehicles, even after the purchase. If installed at a certified Ford dealer, the parts come with a three-year, 36,000-mile warranty like the rest of the vehicle.\nFord will begin selling the SV300T kit this fall. It’s available as a complete pack, or you can buy the parts individually and build your Maverick the way you want."
+}

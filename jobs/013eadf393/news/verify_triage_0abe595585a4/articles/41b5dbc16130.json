@@ -1,0 +1,97 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "41b5dbc16130",
+  "bucket": "30d",
+  "score": 0.6038,
+  "label": {
+    "topic": "labor_org",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 10,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "7535e9023c6ac39f",
+    "title": "Henry Ford Genesys nurses approve contract after 411-day strike",
+    "source": "The Detroit News",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOU0UyQnJyQ09nR0xLWjFzTjUwN1l0REkzQ3JRbEU1MWROWUNrcndTVDR2a1N0cWV0alBKRnVuaU5KUDVYZGpJUUlzdTRrQnNFVEpFeVVCaDIyMGF3YVl5Xzh6TFl0NnBIbHE2bnZUVDVBOVRseUItRENVYWxQMHd5NjkyZmZUcUFhdmRuWU10eXc0TVNNVElKYWQxM3d1eWc0NFdOV1E0ZThSOVlVdmNoMzJpTXcydkNQdGt5ZlREM1hoQmhMX2NXeUs3dDh5ME03YnlvSl9la3VpQzZl?oc=5",
+    "published_at": "2026-10-16T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.detroitnews.com/story/news/local/michigan/2026/10/16/nurses-at-michigan-hospital-approve-contract-ending-411-day-strike/92291558007/",
+    "domain": "www.detroitnews.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Henry Ford Genesys nurses approve contract after 411-day strike",
+    "source_item_id": "7535e9023c6ac39f",
+    "resolved_at": "2026-11-01T17:27:29.613084+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.cbsnews.com/detroit/video/henry-ford-genesys-nurses-approve-contract/",
+    "attempts": 3,
+    "final_url": "https://www.cbsnews.com/detroit/video/henry-ford-genesys-nurses-approve-contract/",
+    "attempt_details": [
+      {
+        "url": "https://www.detroitnews.com/story/news/local/michigan/2026/10/16/nurses-at-michigan-hospital-approve-contract-ending-411-day-strike/92291558007/",
+        "status": "thin_content",
+        "http_status": 402,
+        "title_score": null,
+        "final_url": "https://www.detroitnews.com/story/news/local/michigan/2026/10/16/nurses-at-michigan-hospital-approve-contract-ending-411-day-strike/92291558007/"
+      },
+      {
+        "url": "https://www.freep.com/story/news/health/2026/10/20/henry-ford-genesys-hospital-teamsters-local-332-nurses-strike-grand-blanc/92328285007/",
+        "status": "thin_content",
+        "http_status": 402,
+        "title_score": null,
+        "final_url": "https://www.freep.com/story/news/health/2026/10/20/henry-ford-genesys-hospital-teamsters-local-332-nurses-strike-grand-blanc/92328285007/"
+      },
+      {
+        "url": "https://www.cbsnews.com/detroit/video/henry-ford-genesys-nurses-approve-contract/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.833,
+        "final_url": "https://www.cbsnews.com/detroit/video/henry-ford-genesys-nurses-approve-contract/"
+      }
+    ],
+    "title": "Henry Ford Genesys nurses approve contract - CBS Detroit",
+    "published_at_page": null,
+    "title_score": 0.833,
+    "text_chars": 1887,
+    "content_hash": "8ef2ca14a594ac55",
+    "screenshot": "41b5dbc16130.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:32:02.095444+00:00"
+  },
+  "text": "We and third parties use cookies and similar technologies (\"Cookies\") on the site. Some Cookies are necessary to make this site and our content available to you; these Cookies fire automatically and are not subject to your preference settings. If you click \"Accept All,\" you consent to us and our advertisers, ad-tech providers, including 317 IAB TCF Framework vendors (\"Vendors\") and other third-party vendors (\"Non-IAB Vendors\"), using additional Cookies and processing your personal data (such as unique identifiers, browsing data) stored on or accessed from your device or browser.\nSelecting the \"Manage Cookies\" button lets you access and manage Cookies used by both Vendors and Non-IAB Vendors, and shows where we and our partners may process your personal data based on legitimate interests. \nFor more information refer to our Privacy Policy.\nYou can adjust your Cookie preferences, object to legitimate interests, or revoke your consent at any time by clicking \"Manage Cookies\" in the footer or settings menu. If you do not consent to these Cookies and the processing of your personal data for these purposes, click \"Essential only.\" Your preferences apply to this site only and are browser and device-specific.\nWe and our partners process data to provide:\nStore and/or access information on a device. Use limited data to select advertising. Create profiles for personalised advertising. Use profiles to select personalised advertising. Create profiles to personalise content. Use profiles to select personalised content. Measure advertising performance. Measure content performance. Understand audiences through statistics or combinations of data from different sources. Develop and improve services. Use limited data to select content. Ensure security, prevent and detect fraud, and fix errors. Deliver and present advertising and content. Save and communicate privacy choices."
+}

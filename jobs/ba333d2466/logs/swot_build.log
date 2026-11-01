@@ -1,8 +1,0 @@
-
-===== 2026-10-30 20:50:28  swot_build: swot_builder.py build --sentiment C:\Users\adeel\Desktop\notebooks\vultr\jobs\ba333d2466\news\sentiment_triage_6f789c0b910d --outdir C:\Users\adeel\Desktop\notebooks\vultr\jobs\ba333d2466\swot --objective=Where in the Financial and market relations does ford lack the most --financial C:\Users\adeel\Desktop\notebooks\vultr\jobs\ba333d2466\finance\financial_ford_20261030T194927\approved_financials.json
-  (HTTP 429, waiting 15s)
-  Ford (Hungary): 8/10 items classified by the model
-  Ford (Hungary): 10/10 items classified by the model
-Ford (Hungary): {'strength': 2, 'weakness': 5, 'opportunity': 0, 'threat': 0}, unclassified 0, not relevant 3
-Saved -> C:\Users\adeel\Desktop\notebooks\vultr\jobs\ba333d2466\swot\swot_20261030T195047\swot_draft.json 
-Next: python swot_builder.py review --draft C:\Users\adeel\Desktop\notebooks\vultr\jobs\ba333d2466\swot\swot_20261030T195047\swot_draft.json

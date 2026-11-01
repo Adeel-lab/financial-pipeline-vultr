@@ -1,0 +1,2440 @@
+{
+  "stage": "triage",
+  "generated_at": "2026-11-01T17:24:49.521594+00:00",
+  "llm_batches_ok": 10,
+  "llm_batches_failed": 56,
+  "items": [
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "964c15f9b01d",
+      "bucket": "7d",
+      "score": 0.7552,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "5979929f127091e7",
+        "title": "Ford Raises Outlook Even as War, Inflation Exact Mounting Toll",
+        "source": "Bloomberg.com",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNVzZYTHAzUHh0S3NIdXBhZVhHWW1fWDZXRjNFM3RZMGppUEtMdWdtd1ViN096UDgxNWZjNGdUcEVqRlhfX1ZDeVpucnFxeWpYZ3dmLUJETFVNR3J6emtlcHA1czJrMndMVXFWWk4tTzFvWHhyZHRBMnUwVzY1TVNpbXNzWnZqM1YwLUt3OElzV3EwazkzNmdfZndRZXlvd2VUeHBvcmkyN1dEUWg0OW1CeEpyWklIenJ1QXJyQmpYWHc3Y3JlSWpRRlUyT2ltblE?oc=5",
+        "published_at": "2026-10-28T20:07:41+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "f4442e8ad4ff3120",
+          "title": "Ford sees profit flattening as inflation, war take mounting toll on American car giant",
+          "source": "CNBC TV18",
+          "source_tier": "major",
+          "google_link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPOGNXRkN4bzFubGVaZmM0YTd0MjBWSnlwd3E4aE0ta2Y3NGI5YlZOOFNEMVc3S0g2SFFEaXJ6MWwwcGlDaDRrc3dTZGVoNHNTOW85N1kyYm9pSjdVNVRpYTBtWUh3WnJIUkd5UnVMX2hmOFpGQUg4WktmTkdPM1NkckNCZElyNVRvQnFDZGFHNnZUdl9fdVJycmRfMWkyc3U4R3VHaXcyNGVGTnJabVhhcGNId0hMV0hFb3I4T0p1Z3lXc3dfOTFmNGx30gHPAUFVX3lxTE41T2JmMjduQlJIZFpUNGhkVEhJODVTRmlCMzA5M0hhSEZSdmcwdFBqWTRFLW1qS25zQWtJZWJ1NDFGLVFZLVRhM1hUSVprQmdKZC1uRmt0WHB4ZWlrUUQtLUV4U3d6a0NFanZPSmpFcC02d1dPNl9FVGY3dk5xc243S0FhZ3hWZWxFWS02czdDUU9faU5CSk9pZmdPbUNRdzM2TTFpWHRCQllCVXpXejVvRGNiUnNzUEc4TVM4bFJYZmg3VU5fNy00ZGs4NUI3cw?oc=5",
+          "published_at": "2026-10-29T02:18:05+00:00"
+        },
+        {
+          "item_id": "58d728f2f2d63ff4",
+          "title": "Ford expects profit to plateau as cost inflation takes toll",
+          "source": "Transport Topics",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1SNHFPVklITzFfbXUtZHlaa19DbG51MTdFUkloRFFYUlZjcVJRMkQwZkFNTEU3cjNOSTVMNW5kSHl0TnRtVzBuMWxfR1d5MDQ1VDByWUR1UmdCdWQ1NnN6X2RoYw?oc=5",
+          "published_at": "2026-10-29T15:27:23+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "c4e06be41e9a",
+      "bucket": "30d",
+      "score": 0.7424,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 4,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "3b71af65a374338c",
+        "title": "Ford killed its electric truck. Then demand surged",
+        "source": "The Detroit News",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcFVVcFBFOXdVcFEyR0NtckpsVm5VXzctSnBfWHhSUlNKV3ExcHZ6c3c0cDIzSVJVRWVpVzJPNjBZNUtyTGNiaDRsWDdzaU9HR0ZrdW41X1lEeG9JR0oyY01xTDdFTXJZc1dBbEhHbXlQWHVWc1ctYzQ3VUItTjYtSlFENlVINGxnRXBmNWZDUzZUM0hYeElvTzZIM1A5SlJyalpfTm5xR181cGN6M3FDQjJqQ1BQUzU5VlFocWRXRlB6aFE?oc=5",
+        "published_at": "2026-10-11T07:00:00+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "3beb9c085596",
+      "bucket": "7d",
+      "score": 0.7297,
+      "label": {
+        "topic": "labor_org",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 9,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "3e41f9d817f3098e",
+        "title": "Exclusive | Ford CEO Aims for a 20% Sales Jump by 2032",
+        "source": "WSJ",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTXY3QjUtckNTLThsaDdhWWduVGloOExqbG11aU05WHJsQmVoNFI2TFpTYUpfbWNGSGg3MUcxdEhMdGs4UGRicGFMeG5rSDA4VnlySnlxTHZuczNVcGlFdXhZQ081XzlQVld4TlUtekYyR05kX21hMmxVRWpONkxqSE1FNkJBeFVkQk03ZFN3?oc=5",
+        "published_at": "2026-10-30T17:18:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "2762046cbef3455f",
+          "title": "Ford said to target 20% sales growth by 2032",
+          "source": "Breakingthenews.net",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeEN1aUJtaWN2QWxWYXlBajFFTVZaMjZraDExYmxoQ3ZLRF9ndTAxdWlwLXRGeWxJemgyQnlIdkJFNWtVRU1YcFpZdGVuTkc5MzNOUVZBSHNCME5KUDVmclplSUdIRUxjT3l4Zm1oamljbktTbDI2RkpqQkhHQzhpQmNRdzJQQVp2OFh1WEpjaFk3QQ?oc=5",
+          "published_at": "2026-10-30T18:14:00+00:00"
+        },
+        {
+          "item_id": "9f599e646f7d0c60",
+          "title": "Market Chatter: Ford Targets 20% Sales Jump by 2032, CEO Says",
+          "source": "Yahoo Finance",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMnJzaVhFZmItalVfcEhDZ1FhUnBzQk0xei1yU2lhMmNKejFSZFlKYTlaTHZ0eEVDQnZlcXpPNU5UcEdUU0MtWHd1VW8xbjVxMmJ1b2lEeVNiVXZCajRJNU02STE2WV9hQTJvUEFCRjBKRGo1S1Azcm5mQ3hPeFhkXzNQUEduWGtmT1pLVVQ3MVNGRUlwNkc0MjlkVQ?oc=5",
+          "published_at": "2026-10-30T17:38:35+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "4bf8deec3ddb",
+      "bucket": "7d",
+      "score": 0.7035,
+      "label": {
+        "topic": "recalls_safety",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 5,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "af5b478de233c631",
+        "title": "New DART CEO Nathaniel Ford takes over amid Florida investigation into former transit agency",
+        "source": "CBS News",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSzc5eW1WaHhZRW5DOTA5cWlWN1AwT2tLbTRJaVhDc3VteDNDNTdPYjlCbXlNSWRBcWZYdWp6UzRzd29GeDBKMHVVZm9MckwwZkF4Zk9mVTc3el9vS2JsMmFndi16SEg4Um80cmpTVy1GWVJvdDBQS1QwMFZsSW9HYWU5NEM2aWp1UGNuVUJjTVlDUQ?oc=5",
+        "published_at": "2026-10-26T16:52:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "0c20cf26f02ac2d6",
+          "title": "Nat Ford begins as DART CEO amid investigation into previous agency",
+          "source": "FOX 4 News Dallas-Fort Worth",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE44Rk91eHo4QXBnTU9OV2x3T0tPRnJZdHZYSTlxLTNxQmdmY0xZdVVqMFpaX0RnYzl5UF9OdjcwTHZBVTkwV1YzUXB3ai1JX21PeDhOZE9acWlVVFhDbTFDbdIBZkFVX3lxTE1hUEhSN0RVV3JuaXBpQlZRdFVtaDlJaGhMTDYyNXFzMkxPcDRWVzFUNnF2WGl6OEYtVUpTQjh2R3hWQlJIcWp1X3JoMXpaNnVqc0ZUV2cyZGhiT0xBT3lSRWJXWjRmdw?oc=5",
+          "published_at": "2026-10-26T17:56:21+00:00"
+        },
+        {
+          "item_id": "f5a28c60e46e6183",
+          "title": "New DART CEO Nat Ford responds to Florida investigation in first Dallas address",
+          "source": "Dallas News",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdUlCdTJIN0I2dDJnaEdBOGhnSEdXUE9tUlJ1YkI2QS13aGZSNmRPcEhWVVR0UC03VmhlNWdQOXRCb2FkcVhudktLQzdRYmFrS0hlTTFTX0FaVHY4UTNmMzc0VEYwX2xhaVpCRF9BdWpBUURXRDkyWE9jMmVIck05emJwRE9hV3JHOFJZb09yclBtYzNLdWJ0US1BTTkySXRpSlNKb25jLVJ3WWlLeTkyZnlEWlM?oc=5",
+          "published_at": "2026-10-26T21:49:27+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "3232c366620f",
+      "bucket": "7d",
+      "score": 0.6955,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 7,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "ee716411283ccc75",
+        "title": "Ford (F) Q3 2026 Earnings Call Transcript",
+        "source": "The Globe and Mail",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNU15QTA2OVRTai1uZ1RMSEJVZGJyMnpuY3FhOXNOVzd2Z2NsSFV6RVkyeDFmYUtwd2JUWjhzTEVfRjBmVmp3dXRMRU0tVGdZUzRlNGYwdkpvUGlmNGVMR1A4dnZLTFcwVWNRV1pYX2xoMlJpVFZLVzRLV3Rpcl8xMktEblhNWVd3aWRVSDhNaVlqeEVleXIxbVZ4dTZnRTBHMkRpTGxIbVh1T0hZQXJPQ05jT2tCXzExcU9MQnZB?oc=5",
+        "published_at": "2026-10-29T05:52:23+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "ca48ce8394d1c5ee",
+          "title": "FORD MOTOR ($F) Releases Q3 2026 Earnings",
+          "source": "Quiver Quantitative",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNd2xVWkxSbXJOcWN5elJhUXNpZXpUTm8yWUwxSXhGTi1NdXpKZ1ZnalJOVlVrajFINDZpOE9tYW5iZWlSUGI1S2hQTnVGYjdHSkZtUGh5a0RZSTNoV2dpclNlbC00NjFrTW5LSzlydkhrVW0tYmdfN21TRmFSTTNFWm9pU0ZyaFE?oc=5",
+          "published_at": "2026-10-28T20:35:00+00:00"
+        },
+        {
+          "item_id": "bdd38492454f1e15",
+          "title": "Ford Motor Q3 2026 Earnings Results and Report",
+          "source": "MarketBeat",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8zeWprMTlGNzhjSFpmYTVjdnF2NDBWYW85cFRqUTdfQjFHYlg3ZFNGeEpyWG5KLVpOYVZOWW5XYmRLVHZYck9kNTk1NHpGV0l1Y19rV3FRdTJWWUZKd0pfSklEMWNINUU1VDEyNzlsclJ2YUthMXRvWV9yeU0?oc=5",
+          "published_at": "2026-10-28T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "a88a6a658e16",
+      "bucket": "24h",
+      "score": 0.6869,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "e1a80546cb90cbdd",
+        "title": "Ford calls the Escape's exit a 'breather' as report points to a 2029 electric comeback",
+        "source": "Yahoo Autos",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPd3FpZ3VVMXhTQlhhMkpBZjI0bXRWY2M2VmZadWhXcFIwTlJ0SzlSUE1vaGlFOG9MdzAyWU44NFNXMGg0dEhQSDN3M0F5bHdsTlhnUEpaRUZPMWxkcmpCY3cyQXNCOE52VldSTkhlanlrOUxvVGtxZnVIeWJpTGkyOFk4VElQNmdnN0V4NU9SalBXRWFMOUJXems2bk9iakR0?oc=5",
+        "published_at": "2026-11-01T05:45:00+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "a5db9cde7284",
+      "bucket": "7d",
+      "score": 0.6801,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 6,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "e959b17a4b7e5956",
+        "title": "Ford Motor Co (F) (Q3 2026) Earnings Call Highlights: Raised Guidance, Record Software Revenue, ... By GuruFocus",
+        "source": "Investing.com Canada",
+        "source_tier": "financial_aggregator",
+        "google_link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaEJzU3BoY1djRWR2Ml9SNkFuZHRNNFNSaldBcjg1anhsZHdncm5BMzhKODE3TFhhZUhKLUphUDlHZlVmdmpvNUpBTDJiN014VWlpbngzVjVIUlJuM1l4ME91aUdVNGhTSVVXeGpZRWxzREtoVnZTX0V2bTR4VWtEZnBxUVJkQXlYNjBUaFdfMzdIa1dIZkxfLTR5dE9GRkdrSXlfUGtoM1JoSmtmNktjak9ReFZBOW9GOUs0Ui1TUzBOZDZJY1VOQ0Fva0oyWEYwNm1IVGlqUQ?oc=5",
+        "published_at": "2026-10-28T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "c70aa423e16a7747",
+          "title": "Ford Motor Q3 Earnings Call Highlights",
+          "source": "TradingView",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVkl4NVE1VEZMT1V6Sll5ZGdzSl9tazFUNmxac0NISWhha1pxSWt3dUJhUS1tUmZNN0VtS2lfRmxlVnY0MUhGenlyUERzbENyRkZyMDlOaEZ4VG9SNndpaEowc21nMWJTTi03UkU2N2xfZ3JjUlFtdGh4S2Izdl9IRmx6ZC1qZ2lBWTA5Q2lKZjB0N3gweURWRzlrbmNfYS1u?oc=5",
+          "published_at": "2026-10-29T04:04:00+00:00"
+        },
+        {
+          "item_id": "a8c48aef590902f6",
+          "title": "Ford Motor Co (F) (Q3 2026) Earnings Call Highlights: Raised Gui",
+          "source": "GuruFocus",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxPQlZodXlzQmNaako0bkthNUlkOGt2OVVFLVIyR01INzZ5bnF4ZEV4NXJHS2hrVk9KR3lfNFBmZy1ZU3Ria2JqS0lWN0dfRTc3R0ltUFdHNkJ3VV9nV245eUxGbEt1emRBcnp2WUF4dWtaVWoycFk1VV9XTGcyZXo1X2NkUDkzc1l4VUY3UERkem1LY09HX2xMeDVOZmQycWxhXzJQWGtJMktWUFZtNkFuZVdyMTR5QzJzNkF5b1FvZ05nTzVpd3JUM0R5NTFiVlJpRWt1Y3JHWndHcktyLXJHWFY5TEJmanhVcjVmeUhubVJtdnlNa3I2Q3pLMHlxYWFSdlZ4d0dBd1g0VFB4OWd5SmlaaVpRNDdoazNFVnRVekJXaTBRM0Q0ZktrUlRyVFRYMElHU0g0eGIzZk1vWmFrWTVBc1NYZlpzdHFoVmZZTlBsbERRRXQtQUtBMTZuWTdNaXhHS2JKSEYtQnVtU1ZfWEUwN25MbXNKUl9wN0QzcklMRHppU3Z4WFFORQ?oc=5",
+          "published_at": "2026-10-29T08:31:44+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "9ad95fa87543",
+      "bucket": "7d",
+      "score": 0.6796,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 7,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "9ef41f443cfaebdb",
+        "title": "Ford reports mixed third-quarter results, says 2027 earnings will be in line with this year",
+        "source": "CNBC",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1jNGN0WWRjR2NmRmk2ZDc2clVGZjdFZ2ZyRnpZclI4bk9mbzFwalBfcUJwbU05V0FUVEx3ekZSMVlmTV9lNUN0NEFtcFZXbXV0QUJ4YVhzZjlNekZCTFFkejdZb1FMZ3UzemVNTDRMTm93SXo40gF6QVVfeXFMTUNkMW1GWlIwM19PSGxNNV9id3BFTUFQTTdEQnpHV210dmNNWk95YkxaV0k3cmkwUmZzMHJIaGd0Y2RpMGlBZGZESS10RlpiSVFKWW96Ti1lNExJcDg0RFc5dTc3cC1YazM1RHFkRVIyOW9JeVRWTHBwaUE?oc=5",
+        "published_at": "2026-10-28T16:00:01+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "fd85fb3831b88fac",
+          "title": "Ford Faces F150 Supply Disruption Ahead of Third Quarter Results",
+          "source": "Cirebon Times",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9jYTN0X0NiSTJXRElxRk9oYlJpc3JYQmdIdGh3d2Ewa1hNWXRweVZkUkVobjdBdU4wSDEySG16cmtyQXRCa0s3V2szWFVybWp6MmViQ3lod0dyV0M0ZHhoWm1VQ1NXTmFjbXNGa19mOGoxM2cwZzVF?oc=5",
+          "published_at": "2026-10-28T16:50:36+00:00"
+        },
+        {
+          "item_id": "4667740dc0027a69",
+          "title": "Ford reports third-quarter financial results",
+          "source": "USA Today",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUThJcXZXZVQzXzBJZTNfWW55UFdzdGFaM2lGZFYwUVhWZDF4RkhRQTUtcnhjWFloc3dLZ1VPeVpRS3pRYS1ZUWx6c0JLVjdYdGVwVWFWcjVyTzF6TXBWRXpMUjViVkF0OEs4UXpPeHNFeXVqeVlUQWpCWDBMbEc1Vmp4NU9NRWZvVWlxdS1USnI3NnFuM1lNT0o2eDlNWG9ZQnhHUG4zdGk?oc=5",
+          "published_at": "2026-10-28T20:13:54+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "69f26d5f3ade",
+      "bucket": "7d",
+      "score": 0.6754,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 7,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "8fcab0115e2e1a2f",
+        "title": "Stellantis, Ford Q3 earnings: Here's what you need to know",
+        "source": "CNBC",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQT0NvdE5pZk1RNThncWFucHVGUGk4MzRnRmYta05oVlR2UjBHVHl2MDVOQkk5a2FFLU9ld1JvZjBVb0J5TWRtMi00MFBxdmZrTVNWQkE3RzQ4cW5OcVRERzRtWVozZXJtc1hZczdvSnZWMVlBNEJpS2RJMW40TFlISUZZaVVhdDN5bXM2S3praUt0SEpZTkFTQVd6Skhtcmc?oc=5",
+        "published_at": "2026-10-28T15:35:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "773200b207339d04",
+          "title": "Wall Street Lowers the Bar: Why Ford's Q3 Earnings on Oct. 28 Could Trigger a Surprise October Breakout",
+          "source": "24/7 Wall St.",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZlU3TF9CbXJKdWpQVTdITk85eElEYlNVT3EtU1laQ1J2NGVDb0x0Y01ESnBHbHlydHNLY0VjY3Z6dmFlMWk5enhpRkwyYzF1bHBFcU9xSkR5a0JuOHNMMXVxeTVubVd5OTl4alBlVnlZZ1RWLVpuSi03bVU4cno3RWtGWmhjNTRzNi1HZzdaWE9rWWo5YUhHUWZhS05hQ3Y5S1RpSmwyQnE5YTczWjFNa2ZhMmxZLVpBSWw1ZklIZDVyTnZnU0VKSVlxZFhhcERaUW9JdWkwTEFFMWJM?oc=5",
+          "published_at": "2026-10-24T07:00:00+00:00"
+        },
+        {
+          "item_id": "ed6ba36e0d2a0704",
+          "title": "Ford's Q3 earnings on Oct 28 could surprise as expectations are low after recent stock decline.",
+          "source": "Pluang",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOeVpKQXhYWTVFVktRQTlhcDRtcWM0eTFOR2NpUHhzc0FxWW1MNkw2ZnQ2dmJJTjFOVEk1U2hyc1RpcDUySmtHQ1FsLUg4SXpHb0NSVXdaazc4cHNWN2Rwc0JMVU9OYnJtYi1pXzZ1RTk4NXdkSEZQUEJDWXZuRHZHU0dXUENwMFJyajlON1kzRTBfNE9UX2dfdjk0Q0s0Qjh6UThV?oc=5",
+          "published_at": "2026-10-24T15:24:36+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "52939d4fd5db",
+      "bucket": "7d",
+      "score": 0.6706,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 6,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "afec747d55dc74bb",
+        "title": "Watch Ford CFO on Earnings, AI, Gas Prices, Going Off-Road",
+        "source": "Bloomberg.com",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUk13SzItbVdMUXZFQ1FybTBlaDRSa3RGam1wNEFhbHNtYTVkVENxSERjSVpkOXJXZ3pLNmUzblg4U1pfSTlHZ0dIQm52eWJEYnBDNWloa3FybXdtbHVqX2VpNE84Z2dsTnZDR1VWR0tYQ3RQZVJuTXE4YUoza1VyRTVQY2VGLXk4NnBKMUlaNURRaGRGaHpHcGFOVFlBdEYxWVZvd0JtUQ?oc=5",
+        "published_at": "2026-10-28T00:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "9874c5dc1c95409c",
+          "title": "Ford shrugs off high gas prices with $2 billion in net income, resilient F-150 sales",
+          "source": "Automotive News",
+          "source_tier": "major",
+          "google_link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9EdVV2Zlc3R3hPTXBZd1RSWVIwWEF6V25YamNqT2V5QVB0bHJvdWd3ekU1cFBKNjllZXNvSXhpTExrRXVXRU5nTDMzODZ1SHJrSWVlZUZJWjZUTWxLcEx3NW5WY2Ztdw?oc=5",
+          "published_at": "2026-10-28T20:05:00+00:00"
+        },
+        {
+          "item_id": "100898da5c97bf44",
+          "title": "Off-Road Ford Lineup Still Attracting Buyers Despite High Gas Prices",
+          "source": "Ford Authority",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYW9qampzRUJKZXhxYUMzdThhVkRDSHp4Y0JaaGRHVlVUVm1ab0ttbVl3MXpDY0I0WElsOWJ1V2hzUm9aUEhHVkJBY3RqaFNFSzF5WkcwdW5Ua3NzdzR1cWZKenJGUVd6VUNIWkxmQ000N1NRZElySWhqR251aVM5Q29kbHgydWxOR0JrcldDbzdFejRndGFjS2NPekdmcEVPMUZxcGNB?oc=5",
+          "published_at": "2026-10-26T14:36:41+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "3b6a2a54b259",
+      "bucket": "24h",
+      "score": 0.6668,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "72fd9b6550c6c074",
+        "title": "Ford raises lower end 2026 EBIT target despite Q3 profit slip",
+        "source": "Just Auto",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9XUS10NHBPN0IwWXJwT3RzTmtyOUNVLThwVG44aWI4SlZXM1duOG81WW1kbEJTcUgzYnBEV3RCNGZWTkNEQ3BwQ3FJVXhFRUVQQndBYkhPUGJVVHBUUG84S3lmVlF0RU5nZHoyWG9EakJYM0kzeWJQT1dB?oc=5",
+        "published_at": "2026-10-29T10:02:29+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "c7124b68ea93c6c5",
+          "title": "Ford raises its annual Ebit forecast despite rising costs",
+          "source": "Foro3D",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZXc1T19OMlpZbnVWdWhTUEVmOXNha3habmRjN3prOHlnb1I1Q1QyUVJzTnRtU2w2NjdlRGhnbFI1bWFsVXE0QmZCbmUzMUVXY1A0SjVJNFEzdkNGN2kyTmlNOUJyWEFrdUEzLWlDU2w3bFJBcFZHQVItNGF0dnBIRWNycTZHenVmZkZneFl2clhNXy1IZXZ0OWxfZ3ZEZEo0ZWdGWklR?oc=5",
+          "published_at": "2026-10-31T23:45:20+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "28b6bebc7532",
+      "bucket": "30d",
+      "score": 0.6455,
+      "label": {
+        "topic": "regulation_legal",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "48f157846c3d31d1",
+        "title": "Ford wins appeal in Maryland case challenging right of first refusal",
+        "source": "Automotive News",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPME9DZC1VWDFCcFhaeEdKV0ZsUUJWVmhYXzZPUXAxZGxSNkVlSWZSVEJ4RDBuamtxZ09uZ2JkbDhERXlKZThlV1hfdlR3ZDVXd0hYZ0d6bENzc3FteGVvLUpTWGZMUFJ1bDJKS3lxWm4ydUxtTERVMmxjRlFvN3JJSE45VmVIWFU4dU11dll0djkwVlE?oc=5",
+        "published_at": "2026-10-06T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "d6aea4112f6e7ad0",
+          "title": "Ford Wins Appeal, Wiping Out $5.8 Million Dealership Judgment",
+          "source": "Autoblog",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUVhlMWE4bnJIcUVpdmhQQzFtalJvZHFzY1l4YnkyNFFIaW5Dd1d5REtROWl4ZzNERl9VTlJkamxvdlF0TGdFcFBpRDJqaUFZRVhLQmpxWUxHdmE3SnFlbDN3S01IcDF0RmZIY25qV1VzbmllMVF3ZHVxS21ibjV0VXV6eHRyZkhDU1FfdkJCc29kOWs?oc=5",
+          "published_at": "2026-10-07T07:00:00+00:00"
+        },
+        {
+          "item_id": "d8913ee80303fc1c",
+          "title": "Ford Prevails On Appeal In Right Of First Refusal Case",
+          "source": "Ford Authority",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcjBlVndERHhucWhjcENxYzc5UGRrWDAyN2N4cHkweGdzV3diejNMbVZ2MmdTQjgtY283eFBjcnRNbDJUQlV6MmhPeWhXS3pFdjAwVXkyUERzZDd6OC05cldRNzYzY1I3akp0REZzV25TLUNBSUc2NWN5UVVsMGtmeFBRSkFfMnpDd05pTEUxZkpLM3M?oc=5",
+          "published_at": "2026-10-07T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "92f57a55b02f",
+      "bucket": "24h",
+      "score": 0.6133,
+      "label": {
+        "topic": "recalls_safety",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "2dfdafe95e4ec6e5",
+        "title": "Ford Recalls 102,159 F-150 and Super Duty Trucks over Faulty Gauges",
+        "source": "Car and Driver",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVFVLTGZ1ZTZRem5PckZJWkRHUktGemhIYzVscXZwdFljYlU5VDYtMEVrWmpaLTJrRG42UGRIVVlNOXF4ejhXN1ZObGQyMmRka09Ha204ZXRUMEVSM2xPTW5nd1RKVHlxSGdlb0UyYlNtWmlmNEp2SXZkemlIRlpDcU1YaEQtVEdMRVZOSlVIZWViX1I2N0tZWWNMbw?oc=5",
+        "published_at": "2026-10-28T19:34:54+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "7b51e97e2ba1d6ff",
+          "title": "Ford Recalls More Than 102,000 Trucks for Malfunctioning Gauges",
+          "source": "The Fast Lane Truck",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5tX0lXZERxSUhheTUwRjFwem4xWmJ5RVg0T0stcXhmNm9SUVVpMlVjRlhxbnBKZENPWGxXenQ4YzlBdDZOSFFLNzdQWWsxaGM5aGFCQi1VWDU3a18tX21XeFBaVkhBU2ZXbG5tZThOYXFZdmFIVUR5RURPMzE?oc=5",
+          "published_at": "2026-10-29T13:00:00+00:00"
+        },
+        {
+          "item_id": "f83261a99bd6565d",
+          "title": "Ford Recalls 102,000 F-Series Trucks Over A Strange Gauge Issue",
+          "source": "Motor1.com",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9iUVR1aF9obkVDMjk5cnk4MWd0M09FZDJpWDJqdFJXX2lCcEt5V3lyYlZLcHV4MFgzd04xSTNDVzgyU1UzOTVUR3RRV1JrcDBVdE9tVzRvS0oyVEh0N0JnT3VXbURSLURVWVdPWi1R?oc=5",
+          "published_at": "2026-11-01T12:38:01+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "41b5dbc16130",
+      "bucket": "30d",
+      "score": 0.6038,
+      "label": {
+        "topic": "labor_org",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 10,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "7535e9023c6ac39f",
+        "title": "Henry Ford Genesys nurses approve contract after 411-day strike",
+        "source": "The Detroit News",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOU0UyQnJyQ09nR0xLWjFzTjUwN1l0REkzQ3JRbEU1MWROWUNrcndTVDR2a1N0cWV0alBKRnVuaU5KUDVYZGpJUUlzdTRrQnNFVEpFeVVCaDIyMGF3YVl5Xzh6TFl0NnBIbHE2bnZUVDVBOVRseUItRENVYWxQMHd5NjkyZmZUcUFhdmRuWU10eXc0TVNNVElKYWQxM3d1eWc0NFdOV1E0ZThSOVlVdmNoMzJpTXcydkNQdGt5ZlREM1hoQmhMX2NXeUs3dDh5ME03YnlvSl9la3VpQzZl?oc=5",
+        "published_at": "2026-10-16T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "4d9b9692b96dfc5b",
+          "title": "Strike ends at Henry Ford Genesys Hospital. Nurses ratify new contract",
+          "source": "Detroit Free Press",
+          "source_tier": "major",
+          "google_link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRnpRWTRzVTJDbWpBMUhxMW1YQk9wWHF1V2RMd3Z3WVJoVkNNMjdLME1qcDBTZzF6ZFJCT0ZoZjZUeVFvTjlEbEhyMVNoLTZERno0NWpPa2FxTnJpbHNjcTNFcE5tYUpCUTNoVDNZanVqZnRZSlRCVW9ERVhPOEFpdDVnZHllb01OOWQwRDQ0VDVIV09LVGx0QUZOQkJHYVRmN1I3MzhacUdGTUFreEZheTF5dm50QlA4Nm0yR1dXV3BqOU5MbjZ4V0JIYlozRi13TEJF?oc=5",
+          "published_at": "2026-10-20T07:00:00+00:00"
+        },
+        {
+          "item_id": "2b5fa5ea25167253",
+          "title": "Henry Ford Genesys nurses approve contract",
+          "source": "CBS News",
+          "source_tier": "major",
+          "google_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPb0dOTzlUR1ZjbzdfU2ZRZWgtazdDeXBGb29nMEw5YUJWVUkwcWg5bEJXZngyWXI2TjZoMzZpSGhtVV9FSmNBM1RYeUZtSVlSalh2LVc5M2RaekpUMWVCV1V5WHB3VUhDbl82b2tlQUxOeW1iYzlyQzhYLUhhaWxYNnM4TWsxdThI?oc=5",
+          "published_at": "2026-10-20T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "66d3b2ba246f",
+      "bucket": "7d",
+      "score": 0.6001,
+      "label": {
+        "topic": "recalls_safety",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 5,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "59cac761c5490607",
+        "title": "Ford F-150 Raptor Was Almost Killed Six Times. Now Ford Is Celebrating It.",
+        "source": "MotorTrend",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYWhWbTdwc05aV1hpUS0ybGlpMlhRcUVrOFA2N2ZQdFE3LVJxbWNqSDUwRU9oMW1QeWc0OHJrSlh2eEJaU0t0el9ydXRwVF83anh2Vm9tcllweVdvTlVUYnBLa0FvVEJGTlQtZ3JtanRVekhPb1JrOXpZSTZtbEZMVzNUbV9tQ3M?oc=5",
+        "published_at": "2026-10-23T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "6a17980ebeb5aae9",
+          "title": "Watch Jon Bernthal Explain the Ford F-150 Raptor\u2019s Origin Story",
+          "source": "Road & Track",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdXZ6aXA0TXNtY2t3bEdEcWJmWUdOOVh0ZDBCcUptREs2NmZ4MFZndzRCczJwT1p1blNaZWR3eHN0Z0lsbG1FMFZleXZXM3ZqQ0RUOUNpdHVCZ0stSXNXVXZTRmNiOTBfc3Vsd0FKeEdabE9TQUMyVy1mel9lbWJBLXE5U1psUG1vQ0tZcjdmaGpLRldyRHZJNTJmSWxUenVuWmc?oc=5",
+          "published_at": "2026-10-23T16:13:00+00:00"
+        },
+        {
+          "item_id": "c8ad3cccf9f5793f",
+          "title": "Ford\u2019s F-150 Raptor Started With a Crazy Idea and Broken Trucks",
+          "source": "Autoblog",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQVRPVF9WdEw3Yy1XN3B0dW1lWUxWckJXcC1kQUNneGFkV05ZaG5WRFJUWVdSc0Q1VWpqNmF2cEJSZmdhR3ZwVU9HcDk3dkxVRjhEbC1OaDFTblRmaWRMZTVYTGt2YmtWNlBIMEZ4MDB1NVk5dlFjYXVfVkNZNE5FaV9WOVRaLXQ2N3JWSUhuWGR4clhNT3Rv?oc=5",
+          "published_at": "2026-10-25T14:45:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "9946a77edde0",
+      "bucket": "30d",
+      "score": 0.5572,
+      "label": {
+        "topic": "supply_chain_ops",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "de37f7340370e80f",
+        "title": "Ford supplier cuts jobs in Sterling Heights as some work sent to India",
+        "source": "The Detroit News",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVzhiT1FKbXRRTW41bXFYeHB1YUZ6TzBlZXBubS1YU0lOSGNOTzE0Z253ZVZxZk5NVl9WTlQwTTNVR2QwOFRJUHFXNkg4RlkycDBEVTcxbE9nckMwM3R2ck5MbGwzRm90d2RUMHJkaC1qN2JBazNIRlpNVndFMWN3ZVdBSFN3cFZBVm4yNTVuRkRvQlNscnFKMnVtQ0JjbTZCcjAxYk9lZUgwN28ycGhZMEh0Z3hVdnJuallMU3laczZfN0ZfTURSUXdGRmtZWTZjcjhQNmFhZkVnWG9uTGc?oc=5",
+        "published_at": "2026-10-15T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "be1d1a07b9986d0c",
+          "title": "Sterling Heights Supplier Closes, Cuts 156 Jobs After Ford Exit",
+          "source": "Hoodline",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPc3NaRzlsenRreXEyWkJqWU9oWnlWMDhkNHVZNG42NS1wZ1BOc29Cc0pubkh2aXNWZ0IzLWhiWnZEdVQ1ZkJKdldEY1JNeG1fTjhuQjVlU1I2TGkyQ1pVZGxrM29aSEYwNWdVN1hFUmd6SE11eFptX0lqaGFFaUhtODRTb3VaMFlaVlpMNW0zQ2xkand2UmZJNEVJOW93Ymw4NjdNcW40SDRBdw?oc=5",
+          "published_at": "2026-10-15T07:00:00+00:00"
+        },
+        {
+          "item_id": "5182c13cb0623d7e",
+          "title": "Ford supplier cuts jobs in Michigan as some work sent to India",
+          "source": "Chicago Tribune",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1XZGpzNEwwTE43bFNvWHpDZkJoZG9Udi1DWjVFWnhjMDBEVTA5TG5pcTgwYTJzazhCNG40Ql9lOGJqYU5QbkxkU29pdGNubm5JV19HcVl1QXFHTWFQeVRwTExXaWwyU3k4T1pCYzNHbEF1S055OGRDVnlR?oc=5",
+          "published_at": "2026-10-19T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "4b0fdbd0f360",
+      "bucket": "30d",
+      "score": 0.5569,
+      "label": {
+        "topic": "supply_chain_ops",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "031ad714753f3f67",
+        "title": "Ford CEO says the next generation of EVs have a trick up their sleeve to help prevent assembly mistakes",
+        "source": "Business Insider",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SVDFjdXBvTnpFR1EyV2JtNnItTWNHRXdRdHluQ09zZHRlaTRZRXJRTk5ydmVIQWI0NURQejhPbnNQbHFrRk0zOG1kb0p0NEQzZHZSVWpPZzc1bG1nbVB3RU1rYlZLWlVPNXRTVVE3QXNBaGVuTEM3TUNzaXE4ZHc?oc=5",
+        "published_at": "2026-10-07T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "120abf7470fbb21a",
+          "title": "Ford says next-generation EVs will have self-diagnostics to catch assembly errors",
+          "source": "\ub514\uc9c0\ud138\ud22c\ub370\uc774",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVUU2R2ZpSlMtaGg3R1pmb0ZmWFRteW1jOTd4RVlVcHU5MS1sbmNNakVyb1FvN2ViWlZELUJtdUdyV1lOdjg0Uk0wSVB3UjNzdEJHOERzRHVLRTdxczNDbHpCbllLejlGM281aTNVSWVtNTg3b3JNSTl5aWRNWWVYME9nckhXaEV6LTg0ZHNPX0lYSzg4MWZNYURCX3ZKRVFOanR5bFdPaTM4d05mZHpKa2lWQ09yeUxZTFkwQ096QUk4aEJTNmc?oc=5",
+          "published_at": "2026-10-08T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "2115b6a9a1de",
+      "bucket": "30d",
+      "score": 0.5544,
+      "label": {
+        "topic": "regulation_legal",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 9,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "4e698b06a720d4e6",
+        "title": "WWE and Montez Ford Facing Lawsuit Over 'Lap Dance' Entrance",
+        "source": "Yahoo Sports",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQaGhCc3NocVlRTk9OalJuMW9EbWtYc1VGZUhqU25kTnJENWd1cGZKcGJKM1dNMmRPQUF2YXI2aXVvX3JnTFZsZFZENzh5d3pZN3p0QWFTMVhMdzd2bXVpMEp5U2EycWxLU0VEN2h2eU1qM0ZBaG1fLW9fRFdRQ0lycGVuYnFUZw?oc=5",
+        "published_at": "2026-10-15T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "a93bb4676f0f2638",
+          "title": "Report: WWE and Montez Ford face lawsuit over \u2018lap dance\u2019 on Raw",
+          "source": "Wrestleview.com",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZDB6TkZ1QzNkNWNNWkVfZXNLSzRVN3M3SHY2S1VkcmRIdFMwVkhqY0JMWlZaM2ZiX1ZrNWo5M1NvWUUyMmpkR2l2cFRKTGZ3OVlMNVpSbXZaOVJRRklGUjhad3d1MWJzZW1LZlRxaExMdy1UdnNTOG5COW9ySGtYc051NGF5TUU0OWc3TnVoYzN3RHZOTTdoalZ3T2dWU1RjTHdxX3JqMWJjOG8?oc=5",
+          "published_at": "2026-10-15T07:00:00+00:00"
+        },
+        {
+          "item_id": "f72886ddca6b62c1",
+          "title": "WWE And Montez Ford Facing Lawsuit Over Alleged Unwanted \u201cLap Dance\u201d On Raw",
+          "source": "Wrestling Headlines",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeURRdFhjZmZJY3I2R2FBenJEUDUxSDdlQzRWUkZsUk9CbGYtclNzMkE2S1Q3OUFyeDMyWDYxcWRhS1o1M2ZoR24tQnh1MEttUzFScDA2Zzlna25hRWhraTNfcHlNbURRcnZ6X0NwWVIwY0RiTmJqdUVfWldycjBYNzJRN1dVcndxRXF5RmVHNVNNS3Zwd1lDOEpZbHIzQTFhMWdPUnBGUmTSAa4BQVVfeXFMUHhXNU85U1NuQnBEVXpzYWVBcFNvRHdsZHo1UWJHanFKeXg5djB2R1djOFpIZ0l4cktiZUx0Q3VKV1ZpSWFHY3hlUl9ydFh2eVZrYVdudHRLZEVBYTM5a0lSZklXOHdnd2N3cDJkMGE5NllPLWZrOVdpRzU2REZkTWVkSENmd1BxTG9tN2hmdFBjdTV5UEZkUzBvZVQ1azBPRGRyYy1rV3FxOU9JM1p3?oc=5",
+          "published_at": "2026-10-15T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "412fd58127f0",
+      "bucket": "30d",
+      "score": 0.5472,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 5,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "eea6e8df99514b8d",
+        "title": "Ford CEO Jim Farley Says Six Affordable Vehicles In Development",
+        "source": "Ford Authority",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOS2hxV3QxZ01NdlBzNHJZVnNtWE1RR2ZQYnBEUTVaM21xcHBBeHdGejBxNDR4ejRnY01CUUo5WDBXVDd6OTlaS1l2YmV1Yk5wUmtqSF9vSHlmaU05RWViQmswTzBTWm5zX3psUnlhZUpCWVp5cDhqb3JqTWkweFNPLUVPNVgyVmdqNGZkbXFJbXg4ZVowRmtrYzRnWFNpX3c?oc=5",
+        "published_at": "2026-10-07T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "84045e9f175b50ff",
+          "title": "Ford CEO Jim Farley Says Camera Issue Fiasco Led To Zonal Architecture Pivot",
+          "source": "Ford Authority",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOFZhZHNBbjVpQ3lpbVVnOEdLZ09vV3hsckJXUzZwQklyZUpyd19ZMHU5ZHB2UTh5QnlXa2xhYng5VkdUV1pPRTNtUElfWE5VVFlBOTMxWmJGWUVDTnZOWHBjWnpIcy1jODB2Q2RLVTZRMnZ1dG1RTlZIejRPWjFfY1hWR0NVNHFkd0V3X1RtRFlsMnZzNXFiVkpSNWJxNEI3U01BM3RacGVvUDlDSS1STw?oc=5",
+          "published_at": "2026-10-09T07:00:00+00:00"
+        },
+        {
+          "item_id": "00fef96cf94a92ce",
+          "title": "Ford CEO Jim Farley says 'it's too late' for Europe to fend off Chinese automakers \u2014 and the U.S. may not be far behind",
+          "source": "MoneyWise.com",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5pYTFMMXdQX1N1WkYtSkhGZ3Jtc1RweUtteDBlM0t2Um1NdTQwbktzYlIwRG1jY3N6TkRjaENIczlnUTdONjVKNlJENlFIdTA0Z2F2REx6VnJCbGJQZGRNa3RET3RGZ1ZHOHUyR2NSX2Q3SXp1c0U0?oc=5",
+          "published_at": "2026-10-09T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "f53143b2911c",
+      "bucket": "30d",
+      "score": 0.5448,
+      "label": {
+        "topic": "regulation_legal",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 10,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "6058fa7cd01174a1",
+        "title": "Geely Approved to Acquire 34% of Ford Espa\u00f1a by China Regulator",
+        "source": "Global Banking & Finance Review",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRDN1Ty15WUhTOEZudXRtZVNLazR5cEhBcWlOLW9wNkVMQ3VIakFscno1MTRVdVVWMGc1cXJHcjhMU2JGY2pzRnFmU29LOWwwS2ZFclE4WTRNUGZreGlsQ1FCUkNYWGRpMG9SOF9sRGpiVFdGZk5weVVXM1dNREhfYkpLY01NV2FadXVv?oc=5",
+        "published_at": "2026-10-12T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "dda65172b55ed2c1",
+          "title": "China approves Geely's acquisition of Ford's Spanish plant",
+          "source": "Hiru News",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUUFkekhfYUphQzBxalM5dTZhenJOQkpvRzNYUS1xU19fYzJyNmFITE5oUG1MdEdFdkxUVzlsTEc3R0dmN05yWkltbzlOQS02UGxQTk5qR2pwTWo3cUF2UVlYRXFBNGtHU3hNTnR1Tk5xbXBuXzJGR0ZpbHVIMzJQWnIzV0lQSXR0TlBXZ2Q0ZFdvVlFzQTRBUjlXZ3AtOEFjT3c?oc=5",
+          "published_at": "2026-10-12T07:00:00+00:00"
+        },
+        {
+          "item_id": "fe1c689801705f2c",
+          "title": "China approves Geely acquisition of Ford Espa\u00f1a",
+          "source": "marketscreener.com",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZWwtTWxvU1ZrTDBDeWs3bkN2ODdrR21lQldWZFR2UEZGZEsxakEwc3hiLTltRjBfVHBWdG95ZVlndkJRbGx2bTlvNEJfQTRKbVpjQ1Z5QWFGZHhlZGZYWFE2a2V0Y3JJTXFOZGszWVZCdTUyZko1VWhNUHoyeEpGVnMyTU9uRkduU2xXSHp4bkdqUmgzblJlLXpHSU9raFVuZGc?oc=5",
+          "published_at": "2026-10-12T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "a5e3e361cb98",
+      "bucket": "24h",
+      "score": 0.5413,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 15,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "da541a65ec1dd32d",
+        "title": "The 2027 Ford Mustang Mach-E Has More Range As Standard",
+        "source": "InsideEVs",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObEkyc1M2LTU5V0lBaklHOTJrTUZlQllwYXpiNW9pY0VyOW82TXRoSGdwM1hZZHFkek42dVYydFVyamZRdkRndE84Z0pUb0F6dEZoa3dTLWlSUG1KRmtsU195X0N1QTY2c2UxZDhhd2FVVkRTMFFFRXB0OE5OVHg1YzNoY1FVdw?oc=5",
+        "published_at": "2026-10-22T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "bc6ab55240c00274",
+          "title": "View Exterior Photos of the 2027 Ford Mustang Mach-E Trail",
+          "source": "Car and Driver",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMHc4TklqUGNfczRiSmVQdWdidUlrX1pvMnNPdFR6T1V0RWdLbzVpUHpFZnBYc3pDOVFfZ0MwZ1M4OGo4aEM5UXZwWHNoVDJhZjd0NmJ1WmIyVW4xcTl0TFN1RGNlNjZ2dFNESzI1dldQTzZhM0szRlFBOFdrMThzcHJ6US1JeHhzdVRuSXZWekd4VjZTNGVsWXNfQkZTRFV2cG13TFpn?oc=5",
+          "published_at": "2026-10-22T07:00:00+00:00"
+        },
+        {
+          "item_id": "5e5aec24e5e96952",
+          "title": "2027 Ford Mustang Mach-E First Look: New Trail Model and Bigger Standard Battery",
+          "source": "MotorTrend",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPc1VHTVdYQUI5VGQ3YWRuZVpVUGRmQnJlcl9QbXZFRVlnM2dWeHl4YUtpOFRzZjdLS3N1eUlQcFJUSjJhWnRfMlExX2xPcGdBYnBiRDluTW15ZTJCTUZ3OFBNVjNDdlBTcVVKbzA1SWVXZHVOeVhCS2dUaEp0dXdrYnBCS2NxdTZGR253SlpsQWd0V1FUUWs5NlRqSGRBYVQ5Z2xtZTN0QmN3ZGZETVJaYw?oc=5",
+          "published_at": "2026-10-22T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "7b6bd9440311",
+      "bucket": "30d",
+      "score": 0.5396,
+      "label": {
+        "topic": "supply_chain_ops",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "59486c2438addcc9",
+        "title": "Supplier to lay off 150 with loss of Ford business",
+        "source": "Detroit Free Press",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYjFtVlJwczBfaEsxZW9yU2hkdDRfREtyN0I4Nkl0TWpkNDFZTzltOFF0dUduUUR6aDlhVmM3ZEJfWG10UDNjNEpNOXhhSHBFSU15NWgzcjZMRUlXMmMtNmp6c0FWaUhwN3FiU0d2VXR0ekZ1UnJtV3VaQ19ZSFpGWndIRUZJZ2RJWDRLVDFNMEljZHVIYUVhMUxOcXpUNVl1YU1HcWU2b04xY3FmdDVzN2s4NktlQVlzUWYwbnpXSGkzYVpEWXdWWFp3?oc=5",
+        "published_at": "2026-10-15T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "c273c47b740685be",
+          "title": "Longtime Ford supplier to lay off 156 in Sterling Heights",
+          "source": "Crain's Detroit",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNWZtdGpIUkZTc212c1k3cTNCLUFnWkc1a24tbFE4OUdDUXU4YVlfMl9nV3MtSlB1UTY1UlVhUmI3ZjQ3MERtVE5BTFhpdVUwQkJ0UFVBTEpIOURmTUJobVpYTUw4NFI1NGVpckxEeEdXX2F5RFhJOFY0MXM5SGw2YzQ4b2tMWXZhWVE?oc=5",
+          "published_at": "2026-10-16T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "bf8b29097729",
+      "bucket": "7d",
+      "score": 0.5241,
+      "label": {
+        "topic": "recalls_safety",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "bcf9cc22961d91fe",
+        "title": "Ford Recalls 30,000 F-Series Pickups for Tailgate Issue",
+        "source": "Cars.com",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUkt3WEt4VmQ1Mi1XOXozYlJEZFlnTnNXdktCWE1HUlU1Nlk4bmltWkZZaVNNWUNOaVlzRW9ueWxWM1M1OG5ab1JNWUdzaFd5M21HUjVNMlVpSENyR2V2aWtGbVhydzJqdkVmS0ZWc0lwVjF3Zms2TVZpcnZBU1RrbXhYNzdMV19RdlpHVEllRUt4WFk0c09R?oc=5",
+        "published_at": "2026-10-27T18:50:21+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "405c54118b8584ad",
+          "title": "Ford Recalls 30,000 F-Series Trucks For A Simple Tailgate Problem",
+          "source": "CarBuzz",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5QY1hxY2lfVURhWXE5ajcyNTIzUDZqWWpjaTdoQkVRZzNYZjZaYXBmZlpCWnR2Sk9MdWtCMVJZMlpXdDkxRG11ZmxibXdCZTRHRXpNcUZRanNMVlNSV3lRSEZsVG1IM3kxaHRFV053UENtUS0x?oc=5",
+          "published_at": "2026-10-30T17:30:11+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "2ae5b4dd0a4b",
+      "bucket": "7d",
+      "score": 0.5203,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "67cd673afcca58b7",
+        "title": "Ford launches affordable EV chargers enabling i...",
+        "source": "Pluang",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQzZ0TzhZNmEtbXVqTURWRHRkellGWUhnY2VQWHMyWFY3d2ZLT0RzLVVpNlI5ZkxDWFcwUlFZeXNJRXU3S1R3SDhfUEZOSnVHTjItM3lQam1fZWFHaFZwNk1HYlVFOWdZQ0RIZGU4SjV3NkVxUDAyZV9EaGp1RVFaQnhXaktoWTlCTHlHblhSY3l5S3M?oc=5",
+        "published_at": "2026-10-27T15:06:28+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "feba7caf0e68af4b",
+          "title": "Ford\u2019s Most Affordable EV Will Offer Built-in Bidirectional Home Charging",
+          "source": "CNET",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPY0tqTWNzMTFXaDNDR29uTEZTaGg3YTBfZkwwUkNUZG5tUTVTUDdGVWhtR29GOXJObzNjbUctQ042R05KeXEzUm9lNFdwdUk5bk1VVjlIUGIzdnpHdm5FVWtNdVVpSWJlTVlkSzMzTHpkR3cwR1A1T1YtSkhMNkhVU29YSk44MEEtNUcyMktldlFvZTZVMUl6NmZuUGduUGdMWnBrZTRTT2RDZ2VPX3lB?oc=5",
+          "published_at": "2026-10-27T19:31:21+00:00"
+        },
+        {
+          "item_id": "a5ec5f45e1b7acaa",
+          "title": "Ford unveils Fathom EV with built-in inverter for bidirectional home charging",
+          "source": "EV Infrastructure News",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRjdzVzUwTlRCdWdleGNUSHRMZ0pDamxDQ1BLYktwbXZpV2lRZFpXNnk5UDJUV3QyNDNlN0ZFVWREV0JUUUExeVp5bUFnQmpHaFFTbWx4X1d3OFBIbUg3cnk2ZWgyTFluRjkxcV8ybnVpb2EwVXppVzNKN0hSeVVyRUJ6RVVaYWFuekI1UlduU05Ec1d6YW53eGh4WTJYQkxFM082aGd5Zlp6d3BaV093TEJfc1lubTJ3dENmTDFQYUVDMnRCVHEw?oc=5",
+          "published_at": "2026-10-29T16:10:16+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "b9c5c247ef5f",
+      "bucket": "7d",
+      "score": 0.518,
+      "label": {
+        "topic": "recalls_safety",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "38a4516cae953da8",
+        "title": "RECALL WATCH LIST: Major brands announce recalls on highchairs, toys and Ford trucks",
+        "source": "41NBC News",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUmpsNVlmUGFKNEw4MGNyQnJmZy1OZVRaRVMzYm5OZ2x5aU9DczJRVl9QVmZlMWF3TlRtSDFxX3NTVnJHZktnYUFPSmxWdTZTWHB3NTJ0bjR0N1phRXpycHZzXzhYRWtDMTJ3RW1PeGNHZXFYUU1wTS1fZWIyTzdORXZFRVRZYjFUMEFYSlRaaTdUMXpKQWlCTm1VbllNVk93RWJvbkRVMGc?oc=5",
+        "published_at": "2026-10-26T19:31:19+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "7816ad630f4d",
+      "bucket": "7d",
+      "score": 0.5149,
+      "label": {
+        "topic": "recalls_safety",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "586b84b49490e805",
+        "title": "Ford 7.3L Godzilla V8 Under Federal Investigation Over Alleged Catastrophic Failures",
+        "source": "CarBuzz",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE95UGZJQ3JJR044ZEdrZ2Q4MVJoWGx1Qk1iQTdaaGJ1dHpCb0hLYy00RTduZ2trVHZMV3BDNGhraFRiY3ZCMzVzSTNpd1J5ZUdOQUUyZ2ZlSXdRLTZBMkh3cmVXWTJCc2N2UHdaa1c2d3IwYndQUEVjb25Nbw?oc=5",
+        "published_at": "2026-10-26T15:51:14+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "dde526ed558cf411",
+          "title": "Ford's 7.3L Godzilla V8 Is Under Federal Investigation Over Catastrophic Failure Complaints",
+          "source": "HotCars",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB3Z0pzUFkxRWlNY1prRkw1S1dnSk5ydzczTF91ZWFxWnNPZFItTVVjMlZvSnJrR2dUbjhUODNPNnN0Z1BYSE9qYWt1T3RyYWxZVjczaElfZm1iZ3Q2NUdJZkxJeTU2VEFrelhsNVl3?oc=5",
+          "published_at": "2026-10-27T13:01:15+00:00"
+        },
+        {
+          "item_id": "c7eaa6e6230d8383",
+          "title": "Ford 7.3L Godzilla V8 Under NHTSA Investigation For Engine Failures",
+          "source": "AOL.com",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5QZU9lSmFSNWdoSkhsTXpMRVVpQV96aDlQUXVBa3I5c2dDbEwzazJsYkVVb2VKbldLaEdpY2xwY1Y1eG9mQ2RhbWpKTXBYWURGQnJKZkFzYnkzQ014YXJQSG5OOTl1LTZDVXdDZkliZk5ySkE?oc=5",
+          "published_at": "2026-10-27T13:45:20+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "c08096b0cae5",
+      "bucket": "30d",
+      "score": 0.5127,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 8,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "6b6a4004d8965780",
+        "title": "2027 Ford Bronco Gets a Powerful New 380-HP V6 Engine and Interior Upgrades",
+        "source": "Autoblog",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1yMFNoZGpIczhKN3RKdzViVnBadWpobmhKX05rdjd6Uk81TWktWHNMa1NkQk5YU0xnSFNuaDNuNXV5MWpaRk92RXpKQ1FaLUlNUnk1NEstME4yY2p1TGtGTEN5VUZvdHBuNGRMQ25kNVpGc25r?oc=5",
+        "published_at": "2026-10-12T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "143854bef5f91dba",
+          "title": "The 2027 Ford Bronco Democratizes the Raptor\u2019s Twin-Turbo V-6, but It Has Been Detuned to 380 HP",
+          "source": "Car and Driver",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNX2d6QzV6dU4wZGxrMmJkVnBxbmRfY1M2R1c4NDA1ZkVGZ1ptLWdia1RQVTZ4UmpBcENaU1p2blZnSjR6NXJGeHJabFBrcHNhbWNYS1ZCY0tFa0E0VzRQeFlsTjl5bldLNy0xN1NIX0VmUFBzNk14TlBZdUxCS1JfSUdKd00?oc=5",
+          "published_at": "2026-10-13T07:00:00+00:00"
+        },
+        {
+          "item_id": "626622ecda342576",
+          "title": "2027 Ford Bronco Gains 380-HP 3.0L V6 Option and New Trims",
+          "source": "Autoguide.com",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdWg5czFvOWFxWXhnWDVFdC14NDNsTUxxZFlVSUlZNjJrSDRCcFQ3aUpHYVpZZWw1OGFQS0tnLU1zb2lrNXZweW11WHFOMHM0eEFKUjhHYUROMDZZWVo1X3dCUmFHUDF2TXgzcXFIc0g0U0pHSlJreUczWEF1VHlTUTNCSGxaaktGN3FQWnlwa2x6VEtsc0g1bm9GSk1GMzFLbHdiLWFyVmNTVmV6Nk5ndTY5S01HZS1G?oc=5",
+          "published_at": "2026-10-13T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "dec09fe8ee5d",
+      "bucket": "7d",
+      "score": 0.51,
+      "label": {
+        "topic": "regulation_legal",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "75c8194c447429ce",
+        "title": "Attorney & Former WWE Star David Otunga Comments On Montez Ford Lawsuit",
+        "source": "Wrestling Inc.",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdWpFa2w0dkMyb0UyOTBqV2ZyNGZaaFN6ZkhFNV9lNVJtWG4xSmNjRVl2eHhUOWROaktBRUVpaWl5VWVQTjY5em1UWGpsdzJybWJ6WlByV2s5VzVJODBBd2F2ckRLOUhzZjRKRWg1UDdPekFCVVpoZ283U0dpOC1idS1ONmpLUGZBVjBIY25UOXBpUXpxbWJfSXV4NVJEdmIxcVB3c0dzcw?oc=5",
+        "published_at": "2026-10-28T13:30:00+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "e75a42fb8a55",
+      "bucket": "24h",
+      "score": 0.5006,
+      "label": {
+        "topic": "recalls_safety",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "88b9898711b5eada",
+        "title": "Ford Just Issued Its 33rd Recall Of 2026\u2014This Time For The Bronco",
+        "source": "Motor1.com",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeDFZMElzajY5dGw2LU94OGZNckk5bnl2WGJlRVpubjU1U0NlN3AtR1Y0bFNEcnVnYW94dm83b2tjODhkY2QwdGo1NHpqRWRpZVMxNE14MWpETmppUjdIRG94UUgwRURvZ2NGdUNSb3dKa0R4NTE5YUJWQThFcHRsNzNJSWtUTjk1UnRiMVh3N1hKMGFO?oc=5",
+        "published_at": "2026-11-01T14:42:55+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "73b07b4d71ee",
+      "bucket": "24h",
+      "score": 0.4981,
+      "label": {
+        "topic": "recalls_safety",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "36525292191325ab",
+        "title": "Ford 7.3L V8 Petition: NHTSA Reviews Idle Oil Pressure Claim",
+        "source": "The Auto Wire",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOREVnQTVlZUxBY3RoQ3NraVpPa1B5eFpPTEZhS1ZWbkVGUTFSMXplVGMxTlNUdHh3Z1JyU3dPNmlmOE83cDFxS1NjUFRxNlZaMDQ3TjFlSktUX1dhSTVYRlRBaFloY2NpeXBscThpTHlCSUwxYWNJVXJMbzV5dHFld3FnMkxkVkgxaGZPLUpMbmF0YWdrLVFIbTJZZ1ljbzV3UGRBaHhndGR4WWNtZ1ZicFh6Rkw4dw?oc=5",
+        "published_at": "2026-11-01T12:31:11+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "9102180b8d18",
+      "bucket": "30d",
+      "score": 0.4875,
+      "label": {
+        "topic": "mna_partnerships",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "58c9f21c4e7b7d58",
+        "title": "Red Bull Ford Powertrains in Formula One",
+        "source": "The Detroit News",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTkhlQ3pucXVMckVFQW5FSjY0ZkhMaW1hZlRLMDdOekxaaEhzcFZLY0FzbUNEN0FpNFAyaFdTNkxOSmdabjNxSDJLdHpQZ3d1b19paTRtWVJLNURmOTdpMzBMZC05Nlc3cjlxNF80MkRUZVEzSzR0TFFQbFp2YUUxdE1UUnh2YjBMN2htY2tMdTZFR3QzTVRCYzBDR1dHeTFOMUhmVGRmYWg3czNuMi1NQ1dTV2hzdzFtMWI3UUVn?oc=5",
+        "published_at": "2026-10-07T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "2ac95e45b87ea5d6",
+          "title": "Red Bull Ford Powertrains Shrugs Off Engine Issues At Baku",
+          "source": "Ford Authority",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNa1h0ZzBkbENRcU1YWGd4UmZhMmxobFNoaGplVDh0VF93ZWFtaTlYT1pGYnE5OFk4LTF3RDJyUUJTUnZXRnV3S0txQUNWeVU4aGN1MUVSNV9TcVlZeVF4Tm5aWXlyWlFScGN4by1OenI2TDBSOWNia1QzV3FRaDRtZnRDemlncjkzdEg0R2p5dTI5M2ZNREQxTw?oc=5",
+          "published_at": "2026-10-03T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "3532ac2d071b",
+      "bucket": "7d",
+      "score": 0.4857,
+      "label": {
+        "topic": "regulation_legal",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "87190574e77a4019",
+        "title": "Trump Says Canada Tariff Deal Is Near. What It Means for Ford (F) and General Motors (GM)",
+        "source": "TipRanks",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcnl2cUllZElibGthM2xpNE96Q2J6YmNFZ2c3Q0FLMjVZWERsWWhxWjBsMGFjREMyOV9KdVNjMm9SX1ByZHhBYm8tci0ySlRMazdndVFiT20tN19xTmVEc3pDY25xdm04Nzd5RzdYWkh3ai1kWEhKZ3VIZEVJM0JCS3hqYUNsejltTW5YQUY0VlhPSXM1WHNrZ3p3bU1CcGxPT2J5bF9yUkVualNlSDRrV1QteXo?oc=5",
+        "published_at": "2026-10-26T08:51:26+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "936f10a07612ffbd",
+          "title": "Ford, General Motors stocks had this in common for week ending Oct. 30",
+          "source": "USA Today",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQlhDZFg4aUllVkhYSmZrNkZUaUxRdjUzcng0bkN0RzZibUN1TmYxeXhjY1NtVjhnLU5EZHZ0RVA1VU96dHpqMTNlRnY4UnBrd200RUhyU281TFJRbURzTG8tLTBCenNhc2I5Q0xnY1F3ckFqR1daUTJTQzNnRmVnNC1LX2MzY1dsM2llbGZ3SWdXNVViVzA2aDFFVFZ0SkNpUm80T1hXWDhkcV9FQUpCdjFoNTc4OHE3YXR3eE5ZUW5hbG1lNnc?oc=5",
+          "published_at": "2026-10-31T11:14:16+00:00"
+        },
+        {
+          "item_id": "8c17032e5637bf1c",
+          "title": "The Zacks Analyst Blog Highlights Ford, General Motors and Toyota",
+          "source": "Yahoo Finance",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYmVsdngtQlZfRGVPS2psSkwwVVlrTHJhMlhGQllNbFdEN2hHTm84QVk4cDI0RENyblNHQ3lmTDFPQlg1N0RZU3lwV1p6Ykw1a2FkOTJydVRiMUNlU2hCNXZlQUQzbkVPVU5rUTNoMGVyYkk2MkZmTFBBenBXZnc1TjBJSUtwMmF0YnJkaU9PbDhkTFU2NktXM0dNOFpld0Zw?oc=5",
+          "published_at": "2026-10-27T12:06:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "0204fc6b9548",
+      "bucket": "24h",
+      "score": 0.4676,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "6fc058759d43fea7",
+        "title": "2027 Ford Fiesta WRC Hatch Spotted Up Close Ahead Of New Season: Video",
+        "source": "Ford Authority",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS2pIa0VDSFVMWW1kOWFfcllHajVfeEpxZ05hZmdlM1ZURVZOX0l3R3A0TFFoRGtSeFNkaEhpeFZXOEEwQ0NfQ0hrdTZ5dnJhSVh3T2lLUjJ4bWlUTWJmZnFFUVhlOUZXdVhialBEYUxMNmNERHNhRHhUNGxLc2h0eWVpQzdfZDJrdWZlT2dFbDFOaEZfZTI3WVVkMWk5dHB5R0ZCaE4xcw?oc=5",
+        "published_at": "2026-11-01T09:37:19+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "c5cb84a3d265",
+      "bucket": "24h",
+      "score": 0.4673,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "458c3309a07a992b",
+        "title": "I Drove Ford's 300-HP Maverick. It Feels Like A Hot Hatch",
+        "source": "Motor1.com",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNmdOQXhWTUVXVmNXX3lNeGRHLTRHNWxDZk5JdkEzaUNFVzh4d0JHY2puNWl5Z3hCYVJQSFBZN1VuS2ptcU4zeUVVOC1ub2xHMFZkZXFCTzB3Sk9UeTNIV0tCQ19qQ2FDNUNPYlNJd3RDd0lQNHFmMno0b2tpQVZBMk5XWTFMSUV3RXNOSnl3MWQ?oc=5",
+        "published_at": "2026-11-01T09:17:43+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "6c9b38f30e38",
+      "bucket": "30d",
+      "score": 0.4581,
+      "label": {
+        "topic": "supply_chain_ops",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "60053fec82a820d3",
+        "title": "North Carolina dealership group acquires Ford, Toyota and Honda stores",
+        "source": "Automotive News",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbDZwa3hLYjFWckxTYWQ0OHp4UzdPSC1XQ2hjSk1HYmctTU1Pck1pT1h5UjVwRzFKS2JQSGswckh4a1UwNW9Qbng2U3JsQUF4LUtMcVkyNWRyaVBtWW5hOF9WYkJKMW82ZjBiMzZZVHZxbDZLQk9jVUVMVEl5aDlYeTVYVWJrSTY3Z3hfUzI3UVJOd0lkTDl6LVZSdFdsZmxGVWt3cGctWFpHXzBy?oc=5",
+        "published_at": "2026-10-05T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "46c7b47bf88f1b12",
+          "title": "Sheila Ford Duncan, Pete McDaniel Inducted into Western North Carolina Hall of Fame",
+          "source": "UNC Asheville Athletics",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTmU3Ti1pb0lIVWQtM0tacFhCZGtxaGZxdWM0UUR3TmVhT1lIY3FzVDVIeEwyckhUUnAzaHNHUXhUQk8zcmhMV2pVWm45MTcwTFJvM1BCZWF0d056UmFLQTdycVM3OWpTU3I1V1VOZ1hrVWJPeUtZaGVYQTBEV1lxVUR0MXE2RVJBem5ZZ2ZoNVBvbWZ1Uy1UZmsySnZDYks0U2dwNklMT0NlaW5FZEJIeWRoSHBNOTVkdTV0akxoeFZFbFN3Ym94OTdR?oc=5",
+          "published_at": "2026-10-05T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "6b9df413a151",
+      "bucket": "30d",
+      "score": 0.456,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 5,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "4aac8ad178f4cb2a",
+        "title": "No Mere Show Pony: We Test the 2026 Ford Mustang Dark Horse SC",
+        "source": "Car and Driver",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQXVnM0Q5ZVhiMXVYOVdZOUFkZS1vOWNTakRQYzNtZHJwYWUxTUFGSU4xMmVMakpTczZaZmxOazlQNEYteGdGMXNHYzNISjcycEdKeTZwRW9Mal9hNGR1djhGZkplQVRDek9FQWZVdlp4Wkg2dnhReWw3OUdVeUNodjdQdEJrOWlXbDFEdw?oc=5",
+        "published_at": "2026-10-06T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "7954412d6f921e28",
+          "title": "View Exterior Photos of the 2026 Ford Mustang Dark Horse SC",
+          "source": "Car and Driver",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWUVJZV9vTWdNWVlSa3hLS3dYZzJrTXM4dUxPMlo1bmdVanY0UVZKZlk5S0REY0RkV1A2ay04dHVXN3ozS2Y0elk0cWRGV1cwNzlBcnRwdHhJaFJGVnpOMFhqRmxDTEJoUjNpandNVHlWR1c5bzNpQnFvczFKVVd3WTljQUwzS04ybUx5akdLM3FJOERpUGlWUGF1S1lJY0VtVXc?oc=5",
+          "published_at": "2026-10-06T07:00:00+00:00"
+        },
+        {
+          "item_id": "433fa1675387bb8e",
+          "title": "Ford\u2019s Mustang Dark Horse SC Stomps the Shelby GT500 in Our 0\u201360 and Quarter-Mile Tests",
+          "source": "MotorTrend",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQN1AyMk9ScXVaY285ZFpuajhWNkRUVDlRR1RkMDVDOFJ6dktKSUlYUTFzSlpuaDdoRG5RSlJHak9xLUY4Z3lZSUwtRHFGUWtRbzJIM2FYTGh3cFNld1A1OERvZ1pmbERwWkRaYWdacDVuRHlfRnRkdURjZl9IVlZuWXF6M01GZktUUHdIUzVvOUM3V3ZZU2FWY0Rld3NyV2Ns?oc=5",
+          "published_at": "2026-10-06T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "821b0f48f301",
+      "bucket": "24h",
+      "score": 0.4527,
+      "label": {
+        "topic": "labor_org",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 4,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "ef146962fb1a73f5",
+        "title": "Ford CEO Jim Farley Says Drive Season 5 Premiers This Month: Video",
+        "source": "Ford Authority",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT0ZISUtYdGw1SXI3bmRMNExLc2FaSG5sVGljcWZlR1NDODRYeHVHQ3VMTjg2WG40amY1NTltdkhoRHVRUjd5a1g2SFR3M2lUNGg4a19GX3RGUkR0RHpCVFFHLWZWNGZtMlV5bGNBRTR0dTA2UHBydlZRV3V6aVVSal8wX3g2anA2X3J6TEZoRWdCRmVLV05xdHNDM2ZORW9jeVE?oc=5",
+        "published_at": "2026-11-01T13:09:03+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "c2321e2555fdfa1a",
+          "title": "Ford CEO Jim Farley Says $28K Fathom EV \u2018Completely Blew Me Away:\u2019 \u2018Like Something I\u2019ve Never Experienced",
+          "source": "Benzinga",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOYjd6aXViek8zdGc2SjVzZ3ZreE4xOHNuQktRV3liYVRSR2dGNG5BdUhVMWp0TmVxZEpnR2dGaGZYbnRhNDJfOEptcERTbmt3Tk5IZGNOQXNkRE9tM3hKUWs1MWQ2VUtKVmFiVmVSQWszdllTak5WSHVMa2tTbWhnb1N2S0RXNlBXRFN5SFJ0NVF1aDF4YVpxV2JiY253cjRoNllNcVBRNnhrc1VlRWhrMk0ta29fSGlHSGIwcTFhYXdWbUlid3VvLXZxeVRyb1dxVnJuWF9mWFdmUTZpdjRWWldFRmQ2TWhWYTdpQg?oc=5",
+          "published_at": "2026-10-29T05:34:44+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "153d2c98d649",
+      "bucket": "30d",
+      "score": 0.4441,
+      "label": {
+        "topic": "autonomy_ai",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 4,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "1d3722718ded0502",
+        "title": "Exclusive: Rivian's startup Mind Robotics hires former Ford EV chief Doug Field",
+        "source": "TechCrunch",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTEM2eU9TZDJ3d0pNWVJTZnhwMk5YaFZ5OUEzOHlfRXpnX1ZzTU9PYjZqeXhQUG1xQ3Z0RzdOeWZDcXV4WnpCUVRqVmV5bDVoRnM2cFpIalNWZlo3OFR5WGlUdGdZd0x3cTZXdmp4bThXaUx5MVppN3E5eTJ1OVFibE0xWTBrT1B0bDk1YWpEWGVqV1YteEpOZU1uN1dnRWV5WkN6Ng?oc=5",
+        "published_at": "2026-10-13T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "c85925ac1fcae78e",
+          "title": "Rivian\u2019s Mind Robotics snags Doug Field, ex-Tesla and Ford EV chief",
+          "source": "Electrek",
+          "source_tier": "major",
+          "google_link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNWWJkNWRrZkJLVzZjaFZEemc5ODNkTmoxekhnZGo1LTAyRm9wNkN2dXdWTmxzRk51ZFV5dXFHNFgtdW5JQVNFUko3a0VSNHVmellFY0l2SlByYXc1Y1FiVzM0cEtoa1NsMmRybEtQenhyUlN6dTZtWEtJVXZKaVVZYmFvYnlGOXFfRlF3Yw?oc=5",
+          "published_at": "2026-10-13T07:00:00+00:00"
+        },
+        {
+          "item_id": "e9bc576d5a7b26c6",
+          "title": "Rivian-backed Mind Robotics hires ex-Ford EV chief Doug Field",
+          "source": "Yahoo Finance",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaGlYaHVZQWRGazdudUgxbi0wV2Q4ZDZRTExKY3BSU2N5Y280T0liQnpLLUt3RS1TeGxwOThHT0ZGWFRHQ0R6N0dOZEJpNDU5c1JPd2kzbGwxSU5EZk1ocm1Md2pkQ251eWJBMG1DdVNuRExKcnVSd1lROG8tMGFlV1EtYVBfNnd0UFkyOWE3VXljZ0lJNklOaHl0Vl9KWlNLV3ltdkhvWU9aakIxVmFlVzJKT1lfc0pBY2c?oc=5",
+          "published_at": "2026-10-14T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "898bb96d886e",
+      "bucket": "24h",
+      "score": 0.4402,
+      "label": {
+        "topic": "labor_org",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 4,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "a618030c9528d81b",
+        "title": "Ford CEO Says Its New EV Tech Is 30% More Efficient Than BYD's",
+        "source": "inkl",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNT3dHUkpGWTBRNlBVLVRGZGVVdUw4Y1dEd2ZuZEp5Tm41ckR2Smw1TFJmcUpkd0xreTFKdVp1d0hScnJmQnBiU3g0R3ppOWpFc1R6Uy1OenpkYUoySlRtaW9LUW1feGVRMkZVRkZvbFZYNDZmZFdBZmJ0Vi1rQ3IzeW9MYzdES3NVTjh5ZEdwYw?oc=5",
+        "published_at": "2026-10-29T21:11:40+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "bc108de2be6bdcf1",
+          "title": "Tesla CEO Elon Musk Pushes Back After Ford CEO Calls BYD Best EV Rival \u2014 Points To Key 'Limiting Factor' In China",
+          "source": "Stocktwits",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPa1FXX3hONkdrYm5hbXRpcjlPWm9fTGtVR3hoNUpTbEVXamVTeVRZVkJkX0xDV0UwZGNPR3dCclA3Z3djbXBGN0Y1X3ZwYkwxV2xHTi1ka19UV0phd1VXSlQ4Ui1iR1FsbEd2MEpfekZWWmZkUjkwaDRsWjVlQXJYTEwwdDFqd3JNcHl0dEtaODVOYlI3cGlUUzRFNmlWUDU4SUoyUkQ2NFNSQTJrWF9BOUNXcUZ4cUVUNm1GNHJiX0J6M0ZRcGxCTGpmVzRZNW8?oc=5",
+          "published_at": "2026-10-31T19:16:50+00:00"
+        }
+      ]
+    },
+    {
+      "company": "Ford",
+      "profile": {
+        "name": "Ford",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "F"
+        ],
+        "aliases": [],
+        "exclude": [
+          "tom\\ ford"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "Ford",
+        "slug": "ford",
+        "query": "\"Ford\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "Ford"
+        ]
+      },
+      "event_id": "757604885b2f",
+      "bucket": "30d",
+      "score": 0.433,
+      "label": {
+        "topic": "regulation_legal",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "e624f3d924d6cacf",
+        "title": "WWE and 4-Time Tag Team Champion Montez Ford Hit With Lawsuit",
+        "source": "Heavy.com",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA5ZlVydUNRMGFUcm1abmZYQWdCYTZFTHdFNGcxeG5aaE9ocWJGWDV2TElsUncwajhFNzRPaDlSSXpmRkxqTEZtVmtGaGRzcWFmX0JKMmJGMktBWS1QYVlST0FDYmM3X29GUVd1ZUtteGpmVFp3UDk2eXR6UFE?oc=5",
+        "published_at": "2026-10-15T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "3ae70fd7af2fcdcd",
+          "title": "BREAKING: WWE And Montez Ford Hit With Lawsuit Over NSFW Approach With Counts Including Assault And Battery",
+          "source": "Sportskeeda",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWlNLbTZfZXNnN3lCZUg1ZFlSSnA4UjhQb3h3aDB4TWZWSmM1Y0kwTDlJV2s4WkFaZjFxVDlBR2lxX2Z3bHg2V2RCdGItQ2pJWE5vQk9wemw3cFBBN3lTMi15QThPREVTV182ci1YTk1SZEZXTFBJUmh3V0tCbDkzRjluVkhvTUhYN01pNnl2NDNFcmticVBoaHB4V1hHY3kzZDdWVWNlLTJDNHpnQVNuUEZ2dTVadmcySVpScm5WTGNVd1JYejVFZ1JHSWRaUUN6X25tdjZka2JGZE0?oc=5",
+          "published_at": "2026-10-16T07:00:00+00:00"
+        }
+      ]
+    }
+  ]
+}

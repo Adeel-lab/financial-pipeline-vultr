@@ -1,0 +1,83 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "e75a42fb8a55",
+  "bucket": "24h",
+  "score": 0.5006,
+  "label": {
+    "topic": "recalls_safety",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "88b9898711b5eada",
+    "title": "Ford Just Issued Its 33rd Recall Of 2026—This Time For The Bronco",
+    "source": "Motor1.com",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeDFZMElzajY5dGw2LU94OGZNckk5bnl2WGJlRVpubjU1U0NlN3AtR1Y0bFNEcnVnYW94dm83b2tjODhkY2QwdGo1NHpqRWRpZVMxNE14MWpETmppUjdIRG94UUgwRURvZ2NGdUNSb3dKa0R4NTE5YUJWQThFcHRsNzNJSWtUTjk1UnRiMVh3N1hKMGFO?oc=5",
+    "published_at": "2026-11-01T14:42:55+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.motor1.com/news/794604/ford-bronco-recall-rollaway-transmission-transfer-case/",
+    "domain": "www.motor1.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford Just Issued Its 33rd Recall Of 2026—This Time For The Bronco",
+    "source_item_id": "88b9898711b5eada",
+    "resolved_at": "2026-11-01T17:27:29.613371+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.motor1.com/news/794604/ford-bronco-recall-rollaway-transmission-transfer-case/",
+    "attempts": 1,
+    "final_url": "https://www.motor1.com/news/794604/ford-bronco-recall-rollaway-transmission-transfer-case/",
+    "attempt_details": [
+      {
+        "url": "https://www.motor1.com/news/794604/ford-bronco-recall-rollaway-transmission-transfer-case/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://www.motor1.com/news/794604/ford-bronco-recall-rollaway-transmission-transfer-case/"
+      }
+    ],
+    "title": "Ford Bronco Recall: 5,000 Models Affected",
+    "published_at_page": "2026-04-30T18:00:00Z",
+    "title_score": 1.0,
+    "text_chars": 1931,
+    "content_hash": "048ae716d4aa6145",
+    "screenshot": "e75a42fb8a55.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:20.237822+00:00"
+  },
+  "text": "Ford Just Issued Its 33rd Recall Of 2026—This Time For The Bronco\nThe affected Bronco SUVs had previous repairs that may have resulted in misaligned transmissions and transfer cases, damaging the splines.\nThe Breakdown:\n- Ford will recall 4,922 Bronco SUVs.\n- They underwent prior repairs that could have caused misalignment between the transfer case and transmission, damaging the splines.\n- This is Ford’s 33rd recall so far in 2026.\nFord has issued its 33rd recall this year, with this latest one affecting the Bronco. Nearly 5,000 SUVs may have misaligned transmissions and transfer cases due to incorrect repair work. This could result in the vehicle rolling away or losing motive power while driving.\nThe recall affects the 2021-2025 Bronco. According to the recall report, the affected vehicles may have misaligned transmission-to-transfer case joints that could lead to premature wear of the shaft splines. If this happens, the vehicle may fail to engage Drive, or the parking pawl function may fail, increasing the risk of a crash.\n2025 Ford Bronco Stroppe Special Edition\nFord began investigating the issue last November and, in January, discovered that the root cause was misalignment. The automaker updated its workshop manuals on February 26, 2026, to \"ensure that the transmission and transfer case are properly aligned when they are reassembled during service repairs.\"\nFord used warranty data to identify the affected Broncos. The automaker says it is aware of 25 warrant claims related to the issue, but is unaware of any accidents or injuries.\nThe automaker will fix the potential problem by inspecting vehicles for evidence of misaligned joints or excessive spline wear. Broncos exhibiting signs of damage will have their transmission and transfer case replaced.\nMotor1’s Take: This recall is a bit odd, but it is nice to see Ford truly correcting all of its mistakes, even ones made long after the car was sold."
+}

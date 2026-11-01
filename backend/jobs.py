@@ -497,6 +497,10 @@ class JobManager:
             args += ["--financial", self._abs(job_id, fin["meta"]["approved_path"])]
         if p.get("has_peers"):
             args += ["--peers", jd / "inputs" / "peers.json"]
+        elif p.get("peer_tickers"):
+            peers_path = self._run_peers(job_id, p)          # optional: a failure here never stops the SWOT
+            if peers_path:
+                args += ["--peers", peers_path]
         if p.get("no_llm"):
             args.append("--no-llm")
 
@@ -521,6 +525,41 @@ class JobManager:
 
         self._run_stage(job_id, "swot_build", script_key="swot_builder", args=args, cwd=config.INFO_DIR, validate=validate)
         self._event(job_id, "info", "SWOT draft is ready for review.")
+
+    def _run_peers(self, job_id: str, p: dict) -> Optional[Path]:
+        """Peer numbers from SEC filings for the tickers the user entered. Optional: it never fails the job.
+        Writes peers/peers.json (for the SWOT builder) and peers/peer_comparison.json (for the Comparison tab and the Five Whys)."""
+        jd = self.job_dir(job_id)
+        out = jd / "peers"
+        out.mkdir(parents=True, exist_ok=True)
+        args = ["--tickers", *p["peer_tickers"], "--outdir", out, "--cache-dir", config.JOBS_DIR / "_sec_cache",
+                "--target-name", p.get("company", "")]
+        fin = self._stage(job_id, "finance_approve")
+        if fin["status"] == "succeeded" and fin["meta"].get("approved_path"):
+            args += ["--target-approved", self._abs(job_id, fin["meta"]["approved_path"])]
+        spec = CommandSpec(stage="peers", script=config.SCRIPTS["sec_peers"], args=[str(a) for a in args], cwd=config.INFO_DIR,
+                           env=build_env(), timeout=config.timeout_for("peers"), job_dir=jd)
+        self._event(job_id, "info", "Reading peer numbers from SEC filings: " + ", ".join(p["peer_tickers"]))
+        try:
+            res = get_runner("peers").run(spec, jd / "logs" / "peers.log", self._cancel_event(job_id))
+        except Exception as e:
+            self._event(job_id, "warning", f"Peer comparison skipped: {type(e).__name__}: {e}")
+            return None
+        if res.cancelled:
+            raise StageCancelled()
+        try:
+            status = self._read_json(out / "peers_status.json")
+        except (OSError, ValueError):
+            status = []
+        ok = [s for s in status if s.get("status") == "ok"]
+        bad = [f"{s.get('ticker')}: {s.get('message') or s.get('status')}" for s in status if s.get("status") != "ok"]
+        if bad:
+            self._event(job_id, "warning", "Peer comparison: " + "; ".join(bad[:4]))
+        if res.timed_out or res.returncode != 0 or not ok:
+            self._event(job_id, "warning", "No peer numbers could be read, so the SWOT has no peer comparison. See logs/peers.log.")
+            return None
+        self._event(job_id, "info", f"Peer comparison ready for {len(ok)} of {len(status)} peers.")
+        return out / "peers.json"
 
     def _draft(self, job_id: str):
         st = self._stage(job_id, "swot_build")

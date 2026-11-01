@@ -1,0 +1,21 @@
+
+===== 2026-11-01 18:13:03  triage: triage.py --input C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news\0abe595585a4 --base C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news
+embedding model: none found -> TF-IDF fallback
+chat model: openai/gpt-oss-120b  base: https://api.groq.com/openai/v1
+
+=== Ford ===
+2098 articles -> 1350 events [tfidf, sim>=0.35]  singletons: 1001  chatter: 66  heuristic-labelled: 1107
+largest events:
+    64  Devon sheds Eagle Ford assets for $4.2 billion to deepen Permian bet
+    28  Ford Stock (NYSE:F) Ticks Up With Big Advantage Over Slate
+    27  Geely Approved to Acquire 34% of Ford España by China Regulator
+    27  The 2027 Ford Mustang Mach-E Has More Range As Standard
+    27  Tadd Ford Obituary Oct 4, 2026
+    25  Lita Ford Inks Record Deal for New Album, Teases New Single "Dracula"
+selected 40 of a 40-event budget: by bucket {'7d': 15, '30d': 15, '24h': 10}
+  by signal {'opportunity': 19, 'threat': 12, 'neutral': 9}
+  by topic  {'earnings_financials': 8, 'labor_org': 4, 'recalls_safety': 8, 'products_launch': 8, 'regulation_legal': 6, 'supply_chain_ops': 4, 'mna_partnerships': 1, 'autonomy_ai': 1}
+  by tier   {'major': 17, 'other': 22, 'financial_aggregator': 1}
+
+LLM batches ok/failed: 10/56
+40 events selected -> C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\013eadf393\news\triage_0abe595585a4\selected_for_resolution.json

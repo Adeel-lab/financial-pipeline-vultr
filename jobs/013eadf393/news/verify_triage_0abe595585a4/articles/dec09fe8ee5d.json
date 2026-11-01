@@ -1,0 +1,83 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "dec09fe8ee5d",
+  "bucket": "7d",
+  "score": 0.51,
+  "label": {
+    "topic": "regulation_legal",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "75c8194c447429ce",
+    "title": "Attorney & Former WWE Star David Otunga Comments On Montez Ford Lawsuit",
+    "source": "Wrestling Inc.",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdWpFa2w0dkMyb0UyOTBqV2ZyNGZaaFN6ZkhFNV9lNVJtWG4xSmNjRVl2eHhUOWROaktBRUVpaWl5VWVQTjY5em1UWGpsdzJybWJ6WlByV2s5VzVJODBBd2F2ckRLOUhzZjRKRWg1UDdPekFCVVpoZ283U0dpOC1idS1ONmpLUGZBVjBIY25UOXBpUXpxbWJfSXV4NVJEdmIxcVB3c0dzcw?oc=5",
+    "published_at": "2026-10-28T13:30:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.wrestlinginc.com/2299224/attorney-former-wwe-star-david-otunga-comments-montez-ford-lawsuit/",
+    "domain": "www.wrestlinginc.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Attorney & Former WWE Star David Otunga Comments On Montez Ford Lawsuit",
+    "source_item_id": "75c8194c447429ce",
+    "resolved_at": "2026-11-01T17:27:29.613354+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.wrestlinginc.com/2299224/attorney-former-wwe-star-david-otunga-comments-montez-ford-lawsuit/",
+    "attempts": 1,
+    "final_url": "https://www.wrestlinginc.com/2299224/attorney-former-wwe-star-david-otunga-comments-montez-ford-lawsuit/",
+    "attempt_details": [
+      {
+        "url": "https://www.wrestlinginc.com/2299224/attorney-former-wwe-star-david-otunga-comments-montez-ford-lawsuit/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://www.wrestlinginc.com/2299224/attorney-former-wwe-star-david-otunga-comments-montez-ford-lawsuit/"
+      }
+    ],
+    "title": "Attorney & Former WWE Star David Otunga Comments On Montez Ford Lawsuit",
+    "published_at_page": "2026-10-28T13:30:00+00:00",
+    "title_score": 1.0,
+    "text_chars": 2031,
+    "content_hash": "7ac0551fd829f582",
+    "screenshot": "dec09fe8ee5d.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:30.301179+00:00"
+  },
+  "text": "Attorney & Former WWE Star David Otunga Comments On Montez Ford Lawsuit\nFormer WWE star and attorney David Otunga has analyzed new footage of Montez Ford's allegedly \"sexually provocative dance\" toward a security guard during a previous episode of \"WWE Raw.\"\nFord is being sued by Noel Lucas, a security guard who alleges that he was given an \"unwanted lap dance\" during the July 6 episode of \"Raw.\" After watching footage of Ford's alleged assault from another angle, Otunga conceded that Lucas has a case.\n\"These are civil claims, so we're talking about liability and damages. They're not criminal. Now, I still think Montez was entertaining the crowd and trying to get Lucas to break that serious expression and trying to get him to laugh. But you can be trying to make somebody laugh and still cross a legal line,\" Otunga said on his YouTube channel. \"This new footage appears to show repeated contact. Lucas says he didn't consent, and a jury could reasonably find unwanted rubbing during a sexualized dance offensive. Now, you don't need a bruise or a broken bone for battery.\"\nOtunga presented arguments for both sides, noting that Lucas could claim Ford rubbed against him without permission, while the WWE star could argue that the \"contact was incidental to the dance.\" However, the former WWE wrestler pointed out that the repeated contact was significant and that the rules surrounding battery apply equally to men and women.\n\"A man shouldn't have to accept contact we'd immediately question if it happened to a woman. The basic battery rule is the same. Being male, being a security guard, or being physically capable doesn't mean that you have to laugh it off and just accept it,\" he said.\nOtunga concluded by suggesting that WWE could settle the case, noting that a settlement doesn't necessarily mean the accused has admitted guilt. This isn't the first time a wrestler has faced a lawsuit, as AEW's Jon Moxley was also recently sued by a production crew member who alleged that Moxley shoved him and caused injury."
+}

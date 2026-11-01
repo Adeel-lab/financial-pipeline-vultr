@@ -1,0 +1,83 @@
+{
+  "company": "Ford",
+  "profile": {
+    "name": "Ford",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford",
+    "slug": "ford",
+    "query": "\"Ford\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "73b07b4d71ee",
+  "bucket": "24h",
+  "score": 0.4981,
+  "label": {
+    "topic": "recalls_safety",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "36525292191325ab",
+    "title": "Ford 7.3L V8 Petition: NHTSA Reviews Idle Oil Pressure Claim",
+    "source": "The Auto Wire",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOREVnQTVlZUxBY3RoQ3NraVpPa1B5eFpPTEZhS1ZWbkVGUTFSMXplVGMxTlNUdHh3Z1JyU3dPNmlmOE83cDFxS1NjUFRxNlZaMDQ3TjFlSktUX1dhSTVYRlRBaFloY2NpeXBscThpTHlCSUwxYWNJVXJMbzV5dHFld3FnMkxkVkgxaGZPLUpMbmF0YWdrLVFIbTJZZ1ljbzV3UGRBaHhndGR4WWNtZ1ZicFh6Rkw4dw?oc=5",
+    "published_at": "2026-11-01T12:31:11+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://theautowire.com/2026/11/01/nhtsa-petition-ford-7-3l-godzilla-v8-oil-pressure-idle-software-patch-no-recall/",
+    "domain": "theautowire.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford 7.3L V8 Petition: NHTSA Reviews Idle Oil Pressure Claim",
+    "source_item_id": "36525292191325ab",
+    "resolved_at": "2026-11-01T17:27:29.613385+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://theautowire.com/2026/11/01/nhtsa-petition-ford-7-3l-godzilla-v8-oil-pressure-idle-software-patch-no-recall/",
+    "attempts": 1,
+    "final_url": "https://theautowire.com/2026/11/01/nhtsa-petition-ford-7-3l-godzilla-v8-oil-pressure-idle-software-patch-no-recall/",
+    "attempt_details": [
+      {
+        "url": "https://theautowire.com/2026/11/01/nhtsa-petition-ford-7-3l-godzilla-v8-oil-pressure-idle-software-patch-no-recall/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://theautowire.com/2026/11/01/nhtsa-petition-ford-7-3l-godzilla-v8-oil-pressure-idle-software-patch-no-recall/"
+      }
+    ],
+    "title": "Ford 7.3L V8 Petition: NHTSA Reviews Idle Oil Pressure Claim",
+    "published_at_page": "2026-11-01T12:30:00+00:00",
+    "title_score": 1.0,
+    "text_chars": 4643,
+    "content_hash": "750813d5915d27f2",
+    "screenshot": "73b07b4d71ee.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T17:31:29.468689+00:00"
+  },
+  "text": "Federal regulators opened a defect petition on Oct. 23 against the 7.3-liter gasoline V8 in some of Ford’s commercial trucks and vans, and the petitioner’s central claim is a number small enough to fit on a gauge: about 6 psi of oil pressure at low idle. The NHTSA resume for petition DP26011 covers an estimated 54,787 vehicles: the 2021-2022 E-350, the 2021 F-59 and the 2021 F-750.\nWhat the petition alleges\nThe Office of Defects Investigation received the petition on June 13. The resume does not name the petitioner; the full filing is listed on NHTSA.gov under ODI number 11764421. According to the resume, the petitioner says low oil pressure at low idle causes severe wear on lifter rollers and camshaft lobes, which can end in engine failure and a sudden loss of power at highway speeds with little or no warning. The petitioner also alleges that Ford knew the root cause, released a software calibration that raises idle speed to about 1,000 rpm, and started neither a recall nor an owner notification.\nThose are the petitioner’s claims, not NHTSA’s findings. ODI’s own count is one incident and zero crashes, fires, injuries or deaths, and zero early warning field reports. The resume does not include a response from Ford, does not name the software update, and does not cite a technical service bulletin. NHTSA opened the review to decide whether to grant or deny the petition.\nWhy idle speed matters on a pushrod V8\nFord’s 2026 Super Duty specification sheet describes the 7.3L as a 90-degree V8 with a single in-block cam and overhead valves, driven by pushrods and rocker arms, making 430 horsepower at 5,500 rpm. In that layout every valve is opened by a lifter riding a lobe on the one cam, so the roller on each lifter and the lobe it rolls over depend on a film of oil. An engine’s oil pump turns with the engine, which means it moves the least oil at idle. My reading of the petition is that a higher idle speed is meant to push the pump harder when the engine is at its weakest; the resume does not spell out how the patch is supposed to work, and Ford’s explanation is not in it.\nWhich Ford vehicles are covered\nNHTSA’s document lists the E-350, F-59 and F-750. It does not list the F-250 or F-350 Super Duty pickups, which also offer the 7.3L. The E-350 cutaway and the F-59 stripped chassis are platforms that outside builders finish into delivery vans, shuttles and work trucks, so the owners are often fleets and small businesses rather than individual drivers.\nThe 120-day clock and what a grant means\nUnder 49 CFR Part 552, NHTSA’s Administrator grants or denies a defect petition after a technical review, and the rule says the factors may include agency resources, agency priorities and the likelihood of success in litigation. The agency is to notify the petitioner within 120 days of receiving it. Counting from June 13, day 120 fell on Oct. 11. The resume is dated Oct. 23, which is day 132, and it does not explain the gap.\nA grant does not order a recall. For a defect petition, Section 552.9 says it starts a proceeding to determine whether a defect exists, through an investigation by ODI. A denial has to be explained in public: the rule requires a Federal Register notice with the reasons within 45 days of the decision.\nA software fix with no recall notice\nThe recall statute, 49 U.S.C. 30118, puts the duty on the manufacturer in subsection (c): when a company learns a vehicle has a defect and “decides in good faith” that it is related to safety, it must notify NHTSA, owners, purchasers and dealers. NHTSA can reach its own conclusion under subsection (b), but only after giving the manufacturer a chance to respond, and then it can order notification and a remedy. So the allegation that a software update shipped without an owner notice turns on one question the resume does not answer: whether Ford ever concluded this was a safety defect.\nWe’ve read this kind of file before: NHTSA’s probe of GM’s 6.2L V8 engine failures, and the class action Ford owners are in over the 6.7L Power Stroke CP4 pump. Here, ODI’s count of one incident is thin, and owner complaints filed with NHTSA are part of what builds that count.\nWhat happens next\nODI has to decide whether to grant or deny DP26011. If it grants, an investigation opens, and that is the stage where Ford’s own records on the oil system and the calibration would come into play. If it denies, a Federal Register notice follows within 45 days. Until then, no defect has been found and no recall has been ordered.\nIf you run an E-350 or F-59 with the 7.3L, has a Ford shop ever raised your idle to about 1,000 rpm, and did anyone tell you why?"
+}
