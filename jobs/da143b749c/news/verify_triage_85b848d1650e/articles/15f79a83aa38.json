@@ -1,0 +1,87 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "15f79a83aa38",
+  "bucket": "30d",
+  "score": 0.4205,
+  "label": {
+    "topic": "mna_partnerships",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 4,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "4506234967d61934",
+    "title": "Ford Motor drives another $1 billion investment into Kentucky Truck Plant",
+    "source": "Spectrum News",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8wc1djTlBBcWx4OThEbERVT2NTdjdTWGwxVHNfcDlHQmlCdjNLZUQwT3dQS3BZTVphY3V0a0ZXbzVGLUp1OGd6VWdESDZqdW1uVlM3WnhVR1V2dUszRk1xbm5TSnBCTkRoSW42aEVEMjNyM2FOTHVKVkpLSQ?oc=5",
+    "published_at": "2026-09-10T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://spectrumnews1.com/ky/louisville/news/2026/09/10/ford-paint-shop",
+    "domain": "spectrumnews1.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford Motor drives another $1 billion investment into Kentucky Truck Plant",
+    "source_item_id": "4506234967d61934",
+    "resolved_at": "2026-11-01T15:28:37.521396+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://spectrumnews1.com/ky/louisville/news/2026/09/10/ford-paint-shop",
+    "attempts": 1,
+    "final_url": "https://spectrumnews1.com/ky/louisville/news/2026/09/10/ford-paint-shop",
+    "attempt_details": [
+      {
+        "url": "https://spectrumnews1.com/ky/louisville/news/2026/09/10/ford-paint-shop",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.75,
+        "final_url": "https://spectrumnews1.com/ky/louisville/news/2026/09/10/ford-paint-shop"
+      }
+    ],
+    "title": "Ford builds new Kentucky Truck Plant paint shop",
+    "published_at_page": "2026-09-10T14:22:00.000-04:00",
+    "title_score": 0.75,
+    "text_chars": 2465,
+    "content_hash": "d9ffebe5b52623cc",
+    "screenshot": "15f79a83aa38.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:31:09.421461+00:00"
+  },
+  "text": "LOUISVILLE, Ky. — Ford Motor Company is investing $1 billion in its Kentucky Truck Plant in Louisville.\nThe company plans to build a new paint shop, replacing the facility’s existing paint shop and updating one of the company’s “most important manufacturing operations,” according to a news release.\n“So it’s been an incredible cultural transformation here at the Kentucky Truck Plant. The paint shop is a huge commitment to the workers here in the state of Kentucky. It retains a lot of jobs, and it’s for the future of the site,” said Joe Closurdo, director of manufacturing at the Kentucky Truck Plant.\nClosurdo has worked at Ford for 24 years.\n“Kentucky Truck Plant is one of the biggest manufacturing sites for Ford Motor Company. I think it brings a lot of longevity to the area. I think the excitement stems from the products we build here and the commitment to the workforce,” Closurdo said.\nMayor Craig Greenberg, D-Louisville, said he welcomes Ford’s continued growth in the community.\n“Louisville is America’s home for advanced manufacturing, and Ford just announced that it’s not just staying in Louisville, it’s going all in,” Greenberg said. “Ford’s announcement today is a vote of confidence in our city and shows the world that Louisville is an incredible place to grow a business. We’re proud to be Ford’s partner as they build the future of American manufacturing in Louisville.”\nFord said that it expects to break ground on the project late this year.\n“From our past to our present and our future, Ford is a central part of Kentucky’s story, which continues to show the world that American manufacturing remains strong,” said Gov. Andy Beshear, D-Ky.\nThe announcement follows recent investments statewide, such as around $2 billion to convert the Louisville Assembly Plant into the manufacturing hub for Ford’s new Universal Electric Vehicle Platform and roughly $2 billion at Ford Energy Systems in Glendale to make battery energy storage systems.\n“For more than a century, Ford and Kentucky have grown together, and we’re investing to ensure that relationship remains strong for generations to come,” said Jim Farley, Ford President and CEO. “These investments demonstrate our confidence in Kentucky’s workforce, our commitment to American manufacturing, and our belief that the future of mobility and energy will be built right here in the United States.”\nAccording to the release, Ford’s total economic impact in Kentucky exceeds $33 billion."
+}

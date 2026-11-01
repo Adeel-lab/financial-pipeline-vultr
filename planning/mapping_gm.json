@@ -1,0 +1,113 @@
+{
+  "aliases": {
+    "current_assets": [
+      "Assets, Current",
+      "Total Current Assets"
+    ],
+    "current_liabilities": [
+      "Liabilities, Current",
+      "Total Current Liabilities"
+    ],
+    "cash": [
+      "Cash and Cash Equivalents, at Carrying Value",
+      "Cash and Cash Equivalents"
+    ],
+    "short_investments": [
+      "Debt Securities, Available-for-sale, Current",
+      "Short-term Investments",
+      "Marketable Securities, Current"
+    ],
+    "inventory": [
+      "Inventory, Net",
+      "Inventories"
+    ],
+    "receivables": [
+      "Accounts Receivable, after Allowance for Credit Loss, Current",
+      "Accounts Receivable, Net, Current"
+    ],
+    "ppe": [
+      "Property, Plant and Equipment, Net",
+      "OperatingLeaseRightofuseAssetNoncurrent",
+      "Property, Plant, and Equipment and Finance Lease Right-of-Use Asset, after Accumulated Depreciation and Amortization"
+    ],
+    "total_assets": [
+      "Assets"
+    ],
+    "total_liabilities": [
+      "Liabilities"
+    ],
+    "equity": [
+      "Stockholders' Equity Attributable to Parent",
+      "Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest"
+    ],
+    "retained_earnings": [
+      "Retained Earnings (Accumulated Deficit)",
+      "Retained Earnings, Accumulated Deficit"
+    ],
+    "short_debt": [
+      "DebtCurrent",
+      "Debt, Current",
+      "LongTermDebtAndFinanceLeasesCurrent",
+      "Long-term Debt, Current Maturities"
+    ],
+    "long_debt": [
+      "LongTermDebtAndCapitalLeaseObligations",
+      "Long-term Debt, Excluding Current Maturities",
+      "LongTermDebtAndFinanceLeasesNoncurrent",
+      "Long-term Debt, Noncurrent"
+    ],
+    "revenue": [
+      "Revenues",
+      "Revenue from Contract with Customer, Excluding Assessed Tax",
+      "Revenue"
+    ],
+    "cogs": [
+      "Cost of Goods and Services Sold",
+      "Cost of Revenue"
+    ],
+    "gross_profit": [
+      "Gross Profit"
+    ],
+    "operating_income": [
+      "Operating Income (Loss)"
+    ],
+    "net_income": [
+      "Net Income (Loss) Attributable to Parent",
+      "Net Income (Loss)"
+    ],
+    "interest_expense": [
+      "Interest Expense",
+      "Interest Expense, Non-operating"
+    ]
+  },
+  "llm_decisions": [
+    {
+      "item": "short_investments",
+      "labels": [
+        "Debt Securities, Available-for-sale, Current"
+      ],
+      "reason": "Short\u2011term marketable securities listed as current debt securities"
+    },
+    {
+      "item": "ppe",
+      "labels": [
+        "Property, Plant and Equipment, Net",
+        "OperatingLeaseRightofuseAssetNoncurrent"
+      ],
+      "reason": "Net PPE and operating\u2011lease right\u2011of\u2011use asset (non\u2011current)"
+    },
+    {
+      "item": "cogs",
+      "labels": [
+        "Cost of Goods and Services Sold"
+      ],
+      "reason": "Exact label for cost of goods sold"
+    }
+  ],
+  "validation_errors": [
+    "total_debt changes by more than 70% in a year - debt rows may be incomplete or redefined"
+  ],
+  "unreliable_metrics": {
+    "debt_to_equity": "total_debt changes by more than 70% in a year - debt rows may be incomplete or redefined"
+  }
+}

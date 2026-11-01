@@ -1,0 +1,85 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "58caacdff132",
+  "bucket": "30d",
+  "score": 0.4152,
+  "label": {
+    "topic": "supply_chain_ops",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "d292ab1181ca5a73",
+    "title": "General Motors\u2019 Oshawa Plant Will Stop Production of the Chevrolet Silverado 1500",
+    "source": "Motor Illustrated",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbmF6dWNPd0t5WmR6QlNPc2pPVlM5NE1yV3VfT3FFUFBZS0lRMlRzMWtPQXZVbU1aaTRWLWdvcHotLWdkRzdWWUFCMnJwOTdjdVFEV3RZN0dLX29VR3FzUmxhSndiaG5vUFFuWXQzLUpiYkNPSEU1VGJiR1JaZmZMR3pkVlpNRlRmVTduY0Z4bWswYUJ3ZXNuM2g0cmM4akhoZ0pVWjVjbEVocUhILU9fLXA2MTdyRjNN0gG-AUFVX3lxTE52UXgwSlc3Q29yWVd2ZE41NjVBVEtBdFEtcFNLVmVmbUpsN0J3b0FHMTNJLXFLNWpqMXlCM2JaQkJiTUVwdDZUejlFbG14dEtSUXQxUTdPVGVVWWszY295TVlvU2pmQTFsVURHV29jQjNJbXg5YkdFWTM0aEZLUHF5QVdZTWZkYTlVUkxFMWlXUmRHd2RWQnF6cVBESEpVdTB5WUZwLUhyaFJzSGJtQ1podm5LWkZjTWlVSXplMVE?oc=5",
+    "published_at": "2026-10-09T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://motorillustrated.com/general-motors-oshawa-plant-will-stop-production-of-the-chevrolet-silverado-1500/198496/",
+    "domain": "motorillustrated.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "General Motors\u2019 Oshawa Plant Will Stop Production of the Chevrolet Silverado 1500",
+    "source_item_id": "d292ab1181ca5a73",
+    "resolved_at": "2026-10-30T16:32:41.606358+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.tikr.com/blog/general-motors-stock-is-up-7-in-october-while-ending-silverado-1500-production-in-canada-heres-where-the-stock-could-go-by-2030",
+    "attempts": 2,
+    "attempt_details": [
+      {
+        "url": "https://motorillustrated.com/general-motors-oshawa-plant-will-stop-production-of-the-chevrolet-silverado-1500/198496/",
+        "status": "error",
+        "http_status": null,
+        "title_score": null
+      },
+      {
+        "url": "https://www.tikr.com/blog/general-motors-stock-is-up-7-in-october-while-ending-silverado-1500-production-in-canada-heres-where-the-stock-could-go-by-2030",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.857
+      }
+    ],
+    "title": "General Motors Stock Is Up 7% in October While Ending Silverado 1500 Production in Canada. Here\u2019s Where the Stock Could Go by 2030 | TIKR.com",
+    "published_at_page": "2026-10-10T15:58:00.000Z",
+    "title_score": 0.857,
+    "text_chars": 5506,
+    "content_hash": "305ef625da17f55d",
+    "screenshot": "58caacdff132.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:55.433581+00:00"
+  },
+  "text": "Key Stats for General Motors Stock\n- Current Price: $82.73\n- Target Price (Mid): ~$100\n- Street Target: ~$105\n- Potential Total Return: ~21%\n- Annualized IRR: ~4.5% / year\nNow Live: Discover how much upside your favorite stocks could have using TIKR\u2019s new Valuation Model (It\u2019s free) >>>\nWhat Happened?\nGeneral Motors (GM) closed at $82.73 on October 9, 7.4% above its September 30 close of $77.00. On October 6, GM confirmed it will stop building the light-duty Silverado 1500 at Oshawa, Ontario, in November. That ends light-duty pickup assembly at its only operating Canadian assembly plant. Third-quarter results follow on October 20, with a conference call at 8:30 a.m. ET, according to its investor relations materials.\nOshawa Drops the Light-Duty Silverado as Its Sales Climb 13%\nGM will replace the lost 1500 volume by boosting heavy-duty Silverado output, and a spokesperson said employment levels will stay the same, according to The Globe and Mail. A GM spokesperson tied the timing to winding down current models ahead of the next generation. GM Authority has reported the redesigned 1500 will be built in Indiana and Mexico, which GM has not confirmed. AutoForecast Solutions estimates Oshawa will build about 114,000 trucks in 2026, split evenly between light-duty and heavy-duty models.\nThe shift runs against recent demand. In the third quarter, U.S. deliveries of the light-duty Silverado rose 13.3% to 100,221, while the heavy-duty Silverado fell 10.1% to 44,278, per GM\u2019s delivery data.\nCFO Paul Jacobson described GM\u2019s production stance at JPMorgan\u2019s U.S. All Stars Conference on September 23. Asked about excess U.S. capacity, he said GM has to \u201cmaintain our discipline, not get too excited about overproducing ourselves.\u201d He added that its discounting runs \u201canywhere from 150 to 250 basis points below industry average\u201d while it holds share. GM has not linked Oshawa to those remarks, but its remaining light-duty plants now carry that growing demand into the launch.\nSee historical and forward estimates for General Motors stock (It\u2019s free!) >>>\nEVs Explain the Sales Drop. Pricing Is the Harder Test\nTotal U.S. deliveries fell 5.5% to 670,974, which GM tied to a much smaller EV market and discontinued vehicles. EV deliveries fell by 41,028 units to 25,473, more than the entire 39,373-unit decline. The comparison is against a quarter when buyers rushed ahead of the September 30, 2025, expiry of federal EV tax credits. Ford (F) reported a 6.6% third-quarter sales decline.\nPricing is less certain. Jacobson said, \u201cI think we have to prepare for potentially more modest increases in pricing,\u201d and put commodity costs at levels \u201ceven higher than where we were earlier this year.\u201d Reported profit has already lagged. Adjusted EPS beat estimates in each of the last five quarters, while GAAP EPS missed in four, including by 48% in the second quarter of 2026.\nSuper Cruise adds a modest offset. Jacobson said 35,000 trials expired this year with 30% to 40% attaching new subscriptions, and that the number \u201cwill double next year.\u201d At the same rates, 2027 roll-offs imply roughly 21,000 to 28,000 new subscriptions. GM expects more than 850,000 Super Cruise subscriptions by the end of 2026, so the gain is incremental.\nSee how General Motors performs against its peers in TIKR (It\u2019s free!) >>>\nTIKR Advanced Model Analysis\n- Current Price: $82.73\n- Target Price (Mid): ~$100\n- Potential Total Return: ~21%\n- Annualized IRR: ~4.5% / year\nSee analysts\u2019 growth forecasts and price targets for General Motors stock (It\u2019s free!) >>>\nTIKR\u2019s mid-case, used here as the neutral scenario, values GM at around $100 by December 31, 2030. That is a total return of around 21% from $82.73, or around 4.5% a year. Its 2025 to 2035 assumptions call for revenue growth near 2% a year, net margins near 7%, and EPS growth near 6%, with the P/E ratio drifting lower. The target sits about $5 below the Street\u2019s mean of about $105.\n- Upside: Super Cruise subscriptions and steady truck pricing lift net margins above the model\u2019s ~7%.\n- Downside: Smaller price gains against higher commodity costs keep net margins below ~7%, slowing the EPS growth behind the target.\nConclusion\nAnalysts expect third-quarter GAAP EPS of around $3.60, nearly level with adjusted EPS of around $3.61, though only six analysts estimate the GAAP figure. After four GAAP misses in five quarters, another wide gap would suggest special charges are not finished. Commentary on 2027 pricing is the second test. A plan that leans on cost cuts over price increases would confirm Jacobson\u2019s warning.\nSee what stocks billionaire investors are buying so you can follow the smart money with TIKR.\nSo what is General Motors stock actually worth?\nTIKR lets you forecast the future price of any stock in less than a minute. Just enter a few assumptions into TIKR\u2019s valuation model and see what General Motors could be worth. Start from Wall Street consensus estimates, or adjust the inputs to reflect your own view of the business. It\u2019s free to use.\nAnalyze General Motors on TIKR Free \u2192\nDisclaimer:\nPlease note that the articles on TIKR are not intended to serve as investment or financial advice from TIKR or our content team, nor are they recommendations to buy or sell any stocks. We create our content based on TIKR Terminal\u2019s investment data and analysts\u2019 estimates. Our analysis might not include recent company news or important updates. TIKR has no position in any stocks mentioned. Thank you for reading, and happy investing!"
+}

@@ -1,0 +1,87 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "0b36dcd25ce5",
+  "bucket": "24h",
+  "score": 0.4834,
+  "label": {
+    "topic": "recalls_safety",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "a3832ca2c4511af3",
+    "title": "Ford Issues Massive Recall For Nearly 4.4 Million Trucks",
+    "source": "Motor1.com",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTVF5X1RlanhodGp1aVZPUXFnSmx0aUY2ZjRrYlJRQ3ZsMnFGX1FIVDRITDJzWHZVMXBBV1V6RlVSSjRvejZBZUxPdzlVUUY4anRkbnRMREJvVWYyZzZLSDdUZmZxU0k1VTdpZjF6MDQ4VVJuZkx4d2pSOUw0eVdobzZHV3Rha1p6SFZF?oc=5",
+    "published_at": "2026-10-31T20:07:42+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.motor1.com/news/788420/ford-recalls-f-series-maverick-software-trailer/",
+    "domain": "www.motor1.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford Issues Massive Recall For Nearly 4.4 Million Trucks",
+    "source_item_id": "a3832ca2c4511af3",
+    "resolved_at": "2026-11-01T15:28:37.521217+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.motor1.com/news/788420/ford-recalls-f-series-maverick-software-trailer/",
+    "attempts": 1,
+    "final_url": "https://www.motor1.com/news/788420/ford-recalls-f-series-maverick-software-trailer/",
+    "attempt_details": [
+      {
+        "url": "https://www.motor1.com/news/788420/ford-recalls-f-series-maverick-software-trailer/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://www.motor1.com/news/788420/ford-recalls-f-series-maverick-software-trailer/"
+      }
+    ],
+    "title": "Ford Truck Recall: 4.4 Million Trucks Affected",
+    "published_at_page": "2026-02-26T19:00:00Z",
+    "title_score": 1.0,
+    "text_chars": 3670,
+    "content_hash": "89a75f867d92eb1f",
+    "screenshot": "0b36dcd25ce5.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:30:59.789161+00:00"
+  },
+  "text": "Ford Issues Massive Recall For Nearly 4.4 Million Trucks\nA software issue could cause the trailer’s brake lights and indicators to not work.\nThe Breakdown:\n- Ford is recalling 4,380,609 vehicles for a software issue.\n- A trailer’s brake lights and indicators may fail to operate.\n- The recall affects popular models like the Ford F-150, Ford Maverick, and Ford Expedition.\nUpdate: The original version of this story stated that over-the-air updates would be deployed in May. Ford confirmed that those OTA updates will actually begin on March 17. The story has been updated.\nFord Motor Company is recalling over 4 million vehicles due to a software issue. Several models, including the automaker’s best-selling F-150 pickup, might have an integrated trailer module (ITM) that could lose communication capability with the vehicle. This could prevent a trailer’s brake lights and indicators from functioning.\nThe recall affects the 2022-2026 Ford F-250, the 2026 Ford E-Transit, the 2022-2026 Lincoln Navigator, the 2022-2026 Ford Expedition, the 2022-2026 Ford Maverick, the 2024-2026 Ford Ranger, and the 2021-2026 Ford F-150.\n2025 Ford Maverick\nThe Ford F-Series accounts for the bulk of the recall—3.4 million vehicles. Ford is recalling 412,105 Mavericks, 317,604 Expeditions, 129,836 Rangers, and 75,029 Navigators. The recall affects 4,380,609 models\nAccording to the recall report, a software vulnerability \"allows for a potential race condition\" to occur between the ITM and CAN Standby Control bit. A race condition occurs when multiple processes access shared data at the same time, with the results depending on execution order, and it’s this unpredictable timing that can cause the failure.\nIf this occurs, owners will see a pop-up message indicating a \"Trailer Brake Module Fault\" or a \"Blind Spot Assist System Fault.\" Ford first learned of a potential issue last October but closed its investigation a few weeks later.\n- 2026 Ford E-Transit — 13,115 Affected\n- 2022-2026 Lincoln Navigator — 75,209 Affected\n- 2024-2026 Ford Ranger — 129,836 Affected\n- 2022-2026 Ford Expedition — 317,604 Affected\n- 2022-2026 Ford Maverick — 412,105 Affected\n- 2022-2026 Ford F-250 — 1,135,063 Affected\n- 2021-2026 Ford F-150 — 2,297,857 Affected\n- Total — 4,380,609 Affected\nIn December, Ford discussed the issue with the National Highway Traffic Safety Administration during its monthly review, and the agency suggested it could constitute noncompliance with the Federal Motor Vehicle Safety Standards.\nA month later, Ford reopened its investigation, discovered 405 warranty claims potentially related to this problem, and issued a recall. The automaker says it is unaware of any accidents, injuries, or fires related to this problem\nFord will fix the issue with an over-the-air update that it will deploy to affected vehicles beginning on March 17. Ford issued a statement to Motor1 regarding timing, saying: \"Starting March 17, the update will be available for the majority of vehicles via Over-the-Air (OTA), dealership, or mobile service. OTA updates are expected to be deployed for all vehicles by May.\"\nOwners may also take their vehicle to a Ford Motor Company service center for the update. The company will begin notifying affected owners starting in late March.\nMotor1’s Take: Ford Motor Company has already issued 10 recalls so far this year, and this one is its biggest yet. It affects more than 3.0 million F-Series models dating back to 2021, but at least it is an easy fix with an OTA update. That’s far better than having to take your truck to a dealer and sit just for new software in the modern age.\nSource: National Highway Traffic Safety Administration"
+}

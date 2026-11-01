@@ -1,0 +1,87 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "f78827a4dfaf",
+  "bucket": "30d",
+  "score": 0.3575,
+  "label": {
+    "topic": "supply_chain_ops",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "e655b48582c05aff",
+    "title": "DTE brings a 100 MW Michigan solar farm online to help power Ford’s manufacturing footprint with more homegrown renewable electricity",
+    "source": "Energies Media",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9SWEw1ZGVrRnNUTkFTMkRONjcxWFFtZEFaMUxqMklTaEQyZ3NmNXV6bW91SDdZUGhOaFJUUklOUHV6Y3M2UDYtNzVTXzJuX2NfRXVmRERvTEN6MzQ4MkRPMWQ1Z0RpbVhHTjJBVGt0SllUNVZEWC1Z?oc=5",
+    "published_at": "2026-10-16T17:30:40+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://energiesmedia.com/dte-100-mw-michigan-solar-fords-renewable/",
+    "domain": "energiesmedia.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "DTE brings a 100 MW Michigan solar farm online to help power Ford’s manufacturing footprint with more homegrown renewable electricity",
+    "source_item_id": "e655b48582c05aff",
+    "resolved_at": "2026-11-01T15:28:37.521590+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://energiesmedia.com/dte-100-mw-michigan-solar-fords-renewable/",
+    "attempts": 1,
+    "final_url": "https://energiesmedia.com/dte-100-mw-michigan-solar-fords-renewable/",
+    "attempt_details": [
+      {
+        "url": "https://energiesmedia.com/dte-100-mw-michigan-solar-fords-renewable/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://energiesmedia.com/dte-100-mw-michigan-solar-fords-renewable/"
+      }
+    ],
+    "title": "DTE brings a 100 MW Michigan solar farm online to help power Ford’s manufacturing footprint with more homegrown renewable electricity",
+    "published_at_page": "2026-10-16T12:30:40-05:00",
+    "title_score": 1.0,
+    "text_chars": 4702,
+    "content_hash": "66548ca39aad13b4",
+    "screenshot": "f78827a4dfaf.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:30:41.319095+00:00"
+  },
+  "text": "DTE brings a 100 MW Michigan solar farm online to help power Ford’s manufacturing footprint with more homegrown renewable electricity\nIt is interesting to witness the number of massive companies that are outside the energy sector but are still willing to invest money in clean energy projects and assist in the reduction of carbon emissions. The most notable companies that are doing this are looking to ensure that they have a consistent energy supply for many years to come as they continue to adopt more advanced technology that demands more electricity. In 2026, companies like Meta and Microsoft have led the way in investing in massive solar energy initiatives. As of late, DTE brought a 100 MW Michigan solar farm online to help power Ford’s manufacturing footprint with more homegrown renewable electricity.\nDTE and Ford Motor Company collaborate in a solar energy project\nWhen energy companies associate themselves with notable companies like Ford, they have an increased amount of eyes on them, which means there is greater pressure for them to deliver in the energy projects that they pursue. Ford Motor Company is a global company that is based in Dearborn, Michigan, and is committed to building a better world, where everyone is free to move and pursue their dreams and aspirations.\nDTE Energy is a Detroit-based diversified energy company that is currently involved in the development and management of energy-related businesses and services nationwide. Its operating units include an electric company that serves 2.3 million customers in Southeast Michigan and a natural gas company serving 1.4 million customers across Michigan.\nThe DTE portfolio consists of energy businesses that are focused on custom energy solutions, renewable energy generation, and energy marketing and trading. The lane occupied by the company means that it is well positioned to be among the future pioneers within clean energy projects.\nDTE brings a 100 MW Michigan solar farm online to help power Ford’s manufacturing footprint\nA press release from DTE Energy revealed that the company has completed construction on the 100-megawatt Cold Creek Solar Park near Coldwater, MI. The park is a key milestone toward Ford Motor Company’s decarbonization goals.\nDTE has proceeded to accelerate its carbon reduction goals to meet aggressive targets and is committed to serving with its energy through volunteerism, education and employment initiatives, philanthropy, emission reductions and economic progress.\nFord agreed to acquire up to 650 megawatts of renewable energy through DTE’s CleanVision MIGreenPower program, which allows homes and businesses to attribute their energy use to clean, Michigan-made renewable power. By the end of 2027, every Ford vehicle manufactured in Michigan will be assembled with the equivalent of 100% carbon-free electricity.\nUnderstanding the significance of the initiative for DTE Energy’s reputation\nFord is establishing leadership positions in mobility solutions, including self-driving technology, and provides financial services through Ford Motor Credit Company. Matt Paul, president and chief operating officer of DTE Electric, stated the following after the project’s announcement:\n“Cold Creek Solar Park represents more than a new renewable energy project. It reflects what’s possible when customers and energy providers work together to accelerate Michigan’s clean energy future. Through MIGreenPower, we’re helping companies like Ford achieve their sustainability goals while building the renewable energy infrastructure that will power generations to come.”\nLooking ahead: DTE Electric set to play an integral role in future projects\nDTE’s MIGreenPower program is among the largest voluntary renewable energy programs in the country, which shows how committed the company is to clean energy initiatives. The program is accelerating the development of Michigan-based renewable energy projects like Cold Creek Solar, bringing more clean energy to the grid while generating tax revenue for host communities, creating local jobs, and helping customers such as Ford meet their sustainability targets.\nFord has a Ford+ plan for growth and value creation that combines existing strengths, new capabilities, and always-on relationships with customers to enrich experiences for and deepen the loyalty of those customers. The clean energy transition has created unity, which is seen through the number of companies that are looking to play their part in reducing carbon emissions.\nPrince is a versatile writer focused on energy, automotive, environmental, and general news topics. He makes complex technical and policy issues clear, engaging, and accessible for a broad audience."
+}

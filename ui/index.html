@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FinAnalyst</title>
+<style>
+:root{--bg:#f4f5f8;--card:#fff;--ink:#1b2333;--muted:#667085;--line:#e3e6ec;--brand:#2f5bea;--brand-d:#2347c0;--ok:#12805c;--okbg:#e7f6ef;--warn:#b54708;--warnbg:#fff4e5;--bad:#b42318;--badbg:#fdecea;--info:#175cd3;--infobg:#eaf1fe;--grey:#667085;--greybg:#eef0f4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+header.top{display:flex;align-items:center;gap:22px;padding:12px 28px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.2px;color:var(--ink)}.brand span{color:var(--brand)}
+header.top nav{display:flex;gap:6px;flex:1}
+header.top nav a{padding:6px 12px;border-radius:8px;color:var(--ink);font-weight:600}
+header.top nav a:hover{background:var(--greybg);text-decoration:none}
+.conn{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.conn i{width:8px;height:8px;border-radius:50%;background:var(--grey);display:inline-block}
+.conn.ok i{background:var(--ok)}.conn.bad i{background:var(--bad)}
+main{max-width:1180px;margin:0 auto;padding:26px 24px 80px}
+h1{font-size:24px;margin:0 0 4px;letter-spacing:-.3px}h2{font-size:18px;margin:26px 0 10px}h3{font-size:15px;margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px}
+.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.row.between{justify-content:space-between}.grow{flex:1}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;color:var(--ink);padding:8px 14px;border-radius:9px;font:inherit;font-weight:600;cursor:pointer}
+.btn:hover{background:var(--greybg);text-decoration:none}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}.btn.primary:hover{background:var(--brand-d)}
+.btn.danger{color:var(--bad);border-color:#f4c7c3}.btn.danger:hover{background:var(--badbg)}
+.btn.small{padding:4px 10px;font-size:13px;border-radius:7px}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.badge{display:inline-block;padding:2px 10px;border-radius:99px;font-size:12px;font-weight:700;background:var(--greybg);color:var(--grey);white-space:nowrap}
+.badge.ok,.badge.succeeded,.badge.complete{background:var(--okbg);color:var(--ok)}
+.badge.running{background:var(--infobg);color:var(--info)}
+.badge.waiting,.badge.awaiting_finance_approval,.badge.awaiting_swot_review{background:var(--warnbg);color:var(--warn)}
+.badge.failed,.badge.blocked,.badge.rejected,.badge.bad{background:var(--badbg);color:var(--bad)}
+.badge.pending,.badge.skipped,.badge.cancelled{background:var(--greybg);color:var(--grey)}
+.bar{height:8px;background:var(--greybg);border-radius:99px;overflow:hidden;min-width:120px}.bar>div{height:100%;background:var(--brand);transition:width .4s}
+.bar.done>div{background:var(--ok)}
+.muted{color:var(--muted)}.small{font-size:13px}.mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700}
+tr:last-child td{border-bottom:0}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:18px 0 18px;overflow-x:auto}
+.tab{padding:10px 16px;border:0;background:none;font:inherit;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}
+.tab.active{color:var(--brand);border-bottom-color:var(--brand)}
+.tab .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#f79009;margin-left:6px}.tab .dot.red{background:var(--bad)}
+.banner{border-radius:12px;padding:14px 18px;margin-bottom:16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.banner.warn{background:var(--warnbg);border:1px solid #fedf89}.banner.bad{background:var(--badbg);border:1px solid #f4c7c3}
+.banner.ok{background:var(--okbg);border:1px solid #abe3cb}.banner.info{background:var(--infobg);border:1px solid #c5d8fb}
+.stage{display:grid;grid-template-columns:22px 1fr auto;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.stage:last-child{border-bottom:0}
+.sdot{width:14px;height:14px;border-radius:50%;margin-top:4px;background:var(--grey)}
+.sdot.succeeded{background:var(--ok)}.sdot.running{background:var(--brand);animation:pulse 1.2s infinite}
+.sdot.waiting{background:#f79009}.sdot.failed,.sdot.blocked,.sdot.rejected{background:var(--bad)}.sdot.pending,.sdot.skipped,.sdot.cancelled{background:#cfd4dc}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,91,234,.5)}100%{box-shadow:0 0 0 9px rgba(47,91,234,0)}}
+pre.err{grid-column:2/4;background:var(--badbg);color:var(--bad);border-radius:8px;padding:8px 10px;white-space:pre-wrap;word-break:break-word;margin:4px 0 0;font-size:12.5px}
+pre.log{background:#0f172a;color:#d6e2ff;padding:14px;border-radius:10px;overflow:auto;max-height:60vh;font-size:12.5px;white-space:pre-wrap}
+form.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px 18px}
+label.f{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:13.5px}
+label.f small{font-weight:400;color:var(--muted)}
+input[type=text],input[type=number],select,textarea{font:inherit;padding:8px 10px;border:1px solid #cfd4dc;border-radius:8px;background:#fff;width:100%}
+textarea{min-height:64px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid #bcd0ff;border-color:var(--brand)}
+.files{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px 18px;margin-top:6px}
+.drop{border:2px dashed #cfd4dc;border-radius:10px;padding:14px;background:#fafbfc}
+.err-banner{background:var(--badbg);color:var(--bad);border:1px solid #f4c7c3;border-radius:10px;padding:10px 14px;margin-bottom:14px;white-space:pre-wrap}
+.chip{display:inline-block;padding:1px 8px;border-radius:6px;font-size:12px;font-weight:600;background:var(--greybg);color:var(--grey);margin-right:6px}
+.chip.blocking{background:var(--badbg);color:var(--bad)}.chip.decision{background:var(--warnbg);color:var(--warn)}.chip.warning{background:#fffaeb;color:#93370d}.chip.info{background:var(--infobg);color:var(--info)}
+.chip.strength{background:var(--okbg);color:var(--ok)}.chip.weakness{background:var(--badbg);color:var(--bad)}.chip.opportunity{background:var(--infobg);color:var(--info)}.chip.threat{background:var(--warnbg);color:var(--warn)}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer}
+.opt:hover{background:#fafbfc}.opt.sel{border-color:var(--brand);background:var(--infobg)}
+.opt input{margin-top:4px}
+.quads{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:14px}
+.qcol{border-radius:12px;border:1px solid var(--line);background:#fff;padding:14px 16px}
+.qcol h3{display:flex;align-items:center;gap:8px}
+.qcol.strength{border-top:4px solid var(--ok)}.qcol.weakness{border-top:4px solid var(--bad)}.qcol.opportunity{border-top:4px solid var(--info)}.qcol.threat{border-top:4px solid #f79009}
+.item{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.item.d-approve{border-left:5px solid var(--ok)}.item.d-edit{border-left:5px solid var(--info)}.item.d-reject{border-left:5px solid var(--bad);opacity:.75}
+.item .stmt{font-weight:600;margin:4px 0}
+.ev{background:#fafbfc;border-radius:8px;padding:6px 10px;margin:6px 0;font-size:13px;color:#344054}
+.ev q{color:#344054}
+.seg{display:inline-flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.sticky-bar{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--line);padding:12px 24px;margin:20px -24px -80px;display:flex;gap:12px;align-items:center;z-index:10}
+.sent{display:inline-block;min-width:54px;text-align:center;padding:2px 8px;border-radius:6px;font-weight:700;font-size:13px}
+.modal{position:fixed;inset:0;background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;z-index:50;padding:24px}
+.modal>div{background:#fff;border-radius:14px;max-width:960px;width:100%;max-height:90vh;overflow:auto;padding:18px 20px}
+#toast{position:fixed;right:20px;bottom:20px;display:flex;flex-direction:column;gap:8px;z-index:60}
+.toast{background:#1b2333;color:#fff;padding:10px 16px;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.2);max-width:420px;white-space:pre-wrap}
+.toast.bad{background:var(--bad)}.toast.ok{background:var(--ok)}
+details>summary{cursor:pointer;font-weight:600}
+.empty{text-align:center;padding:44px 20px;color:var(--muted)}
+.kv{display:flex;gap:26px;flex-wrap:wrap}.kv div{min-width:110px}.kv b{display:block;font-size:20px}
+.card{overflow-x:auto}
+.stmt,.ev,.opt,td,.banner,li,pre.err{overflow-wrap:anywhere}
+header.top{flex-wrap:wrap;gap:8px 16px}
+@media(max-width:700px){main{padding:18px 14px 80px}header.top{padding:10px 14px}.conn span{display:none}.quads{grid-template-columns:minmax(0,1fr)}.sticky-bar{margin:20px -14px -80px;flex-wrap:wrap}h1{font-size:21px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">Fin<span>Analyst</span></div>
+  <nav><a href="#/">All analyses</a><a href="#/new">New analysis</a></nav>
+  <div class="conn" id="conn"><i></i><span>connecting…</span></div>
+</header>
+<main id="app"></main>
+<div id="toast"></div>
+<script>
+
+"use strict";
+/* ---------- basics ---------- */
+const BASE = localStorage.getItem("fa_base") || (location.protocol.startsWith("http") ? "" : "http://127.0.0.1:8000");
+const app = document.getElementById("app");
+
+function h(tag, props, ...kids) {
+  const el = document.createElement(tag);
+  let deferredValue;
+  for (const [k, v] of Object.entries(props || {})) {
+    if (v === null || v === undefined || v === false) continue;
+    if (k === "class") el.className = v;
+    else if (k === "text") el.textContent = v;
+    else if (k === "value") deferredValue = v;
+    else if (k === "checked") el.checked = !!v;
+    else if (k === "disabled") el.disabled = !!v;
+    else if (k.startsWith("on") && typeof v === "function") el.addEventListener(k.slice(2), v);
+    else el.setAttribute(k, v === true ? "" : v);
+  }
+  for (const kid of kids.flat(Infinity)) {
+    if (kid === null || kid === undefined || kid === false) continue;
+    el.append(kid instanceof Node ? kid : document.createTextNode(String(kid)));
+  }
+  if (deferredValue !== undefined) el.value = deferredValue;
+  return el;
+}
+function safeUrl(u) {
+  try { const x = new URL(u); return (x.protocol === "http:" || x.protocol === "https:") ? x.href : null; } catch (e) { return null; }
+}
+function link(url, text) {
+  const s = safeUrl(url);
+  return s ? h("a", { href: s, target: "_blank", rel: "noopener noreferrer" }, text || s) : h("span", {}, text || "");
+}
+function apiUrl(path) { return BASE + path; }
+function fileUrl(jobId, rel) { return apiUrl(`/jobs/${jobId}/files/${rel.split("/").map(encodeURIComponent).join("/")}`); }
+
+class ApiError extends Error { constructor(status, message) { super(message); this.status = status; } }
+function detailText(d) {
+  if (typeof d === "string") return d;
+  if (Array.isArray(d)) return d.map(x => (x.loc ? x.loc.filter(p => p !== "body").join(".") + ": " : "") + (x.msg || JSON.stringify(x))).join("\n");
+  return JSON.stringify(d);
+}
+async function api(path, opts) {
+  let r;
+  try { r = await fetch(apiUrl(path), opts); } catch (e) { setConn(false); throw new ApiError(0, "Cannot reach the backend. Is it running?"); }
+  setConn(true);
+  const ct = r.headers.get("content-type") || "";
+  const body = ct.includes("json") ? await r.json() : await r.text();
+  if (!r.ok) throw new ApiError(r.status, body && body.detail ? detailText(body.detail) : (typeof body === "string" ? body.slice(0, 300) : "Request failed"));
+  return body;
+}
+function postJson(path, data) {
+  return api(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
+}
+function setConn(ok) {
+  const c = document.getElementById("conn");
+  c.className = "conn " + (ok ? "ok" : "bad");
+  c.lastChild.textContent = ok ? "backend connected" : "backend not reachable";
+}
+function toast(msg, kind) {
+  const t = h("div", { class: "toast " + (kind || "") }, msg);
+  document.getElementById("toast").append(t);
+  setTimeout(() => t.remove(), kind === "bad" ? 9000 : 4000);
+}
+function fail(e) { toast(e && e.message ? e.message : String(e), "bad"); }
+
+/* ---------- formatting ---------- */
+const PCT = new Set(["operating_margin", "net_margin", "gross_margin", "revenue_growth", "net_income_growth", "ppe_share_of_assets", "inventory_share_of_assets", "debt_ratio", "equity_ratio", "retained_earnings_to_equity"]);
+const fmtMetric = (m, v) => v === null || v === undefined ? "n/a" : (PCT.has(m) ? (v * 100).toFixed(1) + "%" : v.toFixed(2) + "x");
+const fmtNum = v => v === null || v === undefined ? "—" : Number(v).toLocaleString("en-US", { maximumFractionDigits: 2 });
+const fmtTime = iso => iso ? new Date(iso).toLocaleString() : "";
+function fmtDur(a, b) {
+  if (!a) return "";
+  const s = Math.max(0, Math.round(((b ? new Date(b) : new Date()) - new Date(a)) / 1000));
+  return s < 60 ? s + "s" : Math.floor(s / 60) + "m " + (s % 60) + "s";
+}
+const cap = s => s ? s[0].toUpperCase() + s.slice(1) : s;
+const humanize = s => String(s || "").replace(/_/g, " ");
+const STATUS_LABEL = { running: "Working", awaiting_finance_approval: "Needs your approval", awaiting_swot_review: "Ready for your review", complete: "Complete", failed: "Failed", blocked: "Blocked", cancelled: "Cancelled" };
+const STAGE_LABEL = { finance_preview: "Read the financial statements", finance_approve: "Your approval of the financials", discovery: "Find recent news", triage: "Pick the key events", resolve: "Find the original articles", verify: "Open and check the pages", sentiment: "Score the articles", swot_build: "Draft the SWOT", swot_review: "Your SWOT review" };
+const stageLabel = n => n.startsWith("rca_") ? "Root-cause analysis #" + n.split("_")[1] : (STAGE_LABEL[n] || n);
+function stageDetail(s) {
+  const m = s.meta || {};
+  switch (s.name) {
+    case "finance_preview": return m.proposal_status ? `Proposal: ${humanize(m.proposal_status)}, ${m.periods} periods` : "";
+    case "finance_approve": return m.periods ? `${m.periods} periods approved` : "";
+    case "discovery": return m.articles ? `${m.articles} articles found` : "";
+    case "triage": return m.selected_events ? `${m.selected_events} key events selected` : "";
+    case "resolve": return m.resolved != null ? `${m.resolved} links resolved, ${m.failed || 0} failed` : "";
+    case "verify": {
+      if (m.verified_articles == null) return "";
+      const skipped = Object.entries(m.statuses || {}).filter(([k]) => k !== "ok").map(([k, v]) => `${v} ${humanize(k)}`);
+      return `${m.verified_articles} pages verified` + (skipped.length ? ` (skipped: ${skipped.join(", ")})` : "");
+    }
+    case "sentiment": return m.quality && m.quality.llm_scored != null ? `${m.quality.llm_scored} articles scored by the AI` : "";
+    case "swot_build": { const c = Object.values(m.companies || {})[0]; return c ? `${c.items} proposals drafted` : ""; }
+    case "swot_review": { const c = Object.values(m.summary || {})[0]; return c ? `${c.pending} still pending, ${c.rejected} rejected` : ""; }
+    default: return "";
+  }
+}
+const stageMap = job => Object.fromEntries(job.stages.map(s => [s.name, s]));
+const badge = (status, text) => h("span", { class: "badge " + status }, text || STATUS_LABEL[status] || cap(humanize(status)));
+
+/* ---------- state & routing ---------- */
+const S = { token: 0, timer: null };
+function stopPolling() { S.token++; clearTimeout(S.timer); }
+function poll(fn, msFn) {
+  const tok = ++S.token;
+  (async function loop() {
+    if (tok !== S.token) return;
+    try { await fn(); } catch (e) { /* connection state is shown in the header */ }
+    if (tok === S.token) S.timer = setTimeout(loop, msFn());
+  })();
+}
+function route() {
+  stopPolling();
+  const hash = location.hash.replace(/^#/, "") || "/";
+  const m = hash.match(/^\/job\/([0-9a-f]{10})(?:\/(\w+))?$/);
+  if (m) return showJob(m[1], m[2]);
+  if (hash === "/new") return showNew();
+  return showList();
+}
+window.addEventListener("hashchange", route);
+
+/* ---------- job list ---------- */
+async function showList() {
+  app.replaceChildren(h("h1", {}, "Analyses"), h("p", { class: "sub" }, "Every company you have analysed. Open one to continue where you left off."), h("div", { id: "list" }));
+  const draw = async () => {
+    const jobs = await api("/jobs?limit=100");
+    const box = document.getElementById("list");
+    if (!box) return;
+    if (!jobs.length) {
+      box.replaceChildren(h("div", { class: "card empty" }, h("p", {}, "No analyses yet."), h("a", { class: "btn primary", href: "#/new" }, "Start the first one")));
+      return;
+    }
+    const rows = jobs.map(j => h("tr", {},
+      h("td", {}, h("a", { href: "#/job/" + j.id }, h("b", {}, j.company)), h("div", { class: "muted small" }, j.objective || "")),
+      h("td", {}, badge(j.status)),
+      h("td", {}, h("div", { class: "bar" + (j.progress >= 1 ? " done" : "") }, h("div", { style: `width:${Math.round(j.progress * 100)}%` }))),
+      h("td", { class: "muted small" }, fmtTime(j.created_at)),
+      h("td", {}, h("a", { class: "btn small", href: "#/job/" + j.id }, "Open"))));
+    box.replaceChildren(h("div", { class: "card" }, h("table", {}, h("thead", {}, h("tr", {}, ["Company", "Status", "Progress", "Started", ""].map(x => h("th", {}, x)))), h("tbody", {}, rows))));
+  };
+  poll(draw, () => 5000);
+}
+
+/* ---------- new analysis ---------- */
+function showNew() {
+  const err = h("div", { class: "err-banner", style: "display:none" });
+  const field = (label, name, hint, props) => h("label", { class: "f" }, label, h("input", Object.assign({ type: "text", name }, props || {})), hint ? h("small", {}, hint) : null);
+  const sel = (label, name, opts, hint) => h("label", { class: "f" }, label, h("select", { name }, opts.map(([v, t]) => h("option", { value: v }, t))), hint ? h("small", {}, hint) : null);
+  const form = h("form", { class: "card" },
+    h("div", { class: "grid" },
+      field("Company *", "company", "e.g. General Motors", { required: true, maxlength: 120 }),
+      field("Question this analysis should answer", "objective", "e.g. Assess expansion readiness", { maxlength: 500 }),
+      field("Stock ticker", "ticker", "optional, e.g. GM"),
+      field("Places to focus on", "location", "optional; separate several with ;  (empty = worldwide)"),
+      field("Other names used in headlines", "alias", "optional; separate with ;"),
+      field("Ignore headlines containing", "exclude", "optional; helps with look-alike names; separate with ;"),
+      h("label", { class: "f" }, "News period (days)", h("input", { type: "number", name: "days", value: "30", min: "1", max: "90" })),
+      sel("Units of the statements", "units", [["unknown", "Not sure"], ["units", "Plain units"], ["thousands", "Thousands"], ["millions", "Millions"], ["billions", "Billions"]]),
+      field("Currency", "currency", "optional, e.g. USD", { maxlength: 10 }),
+      sel("Statement frequency", "frequency", [["auto", "Detect automatically"], ["annual", "Annual"], ["quarterly", "Quarterly"]]),
+      field("Scope of the statements", "entity", 'optional, e.g. "consolidated group"')),
+    h("h3", { style: "margin-top:18px" }, "Financial statements (CSV)"),
+    h("p", { class: "muted small" }, "Upload both files, or neither (the SWOT then uses news only). First column = line items, other columns = periods."),
+    h("div", { class: "files" },
+      h("label", { class: "f drop" }, "Balance sheet", h("input", { type: "file", name: "balance", accept: ".csv" })),
+      h("label", { class: "f drop" }, "Income statement", h("input", { type: "file", name: "income", accept: ".csv" })),
+      h("label", { class: "f drop" }, "Peer benchmarks (optional JSON)", h("input", { type: "file", name: "peers", accept: ".json" }))),
+    h("label", { class: "row", style: "margin-top:16px" }, h("input", { type: "checkbox", name: "no_llm" }), h("span", {}, "Test run without AI calls (keyword scoring only; news will not appear in the SWOT)")),
+    h("div", { class: "row", style: "margin-top:18px" }, h("button", { class: "btn primary", type: "submit" }, "Start analysis"), h("a", { class: "btn", href: "#/" }, "Cancel")));
+  form.addEventListener("submit", async ev => {
+    ev.preventDefault();
+    err.style.display = "none";
+    const fd = new FormData();
+    for (const el of form.elements) {
+      if (!el.name || el.type === "file" || el.type === "checkbox" || el.type === "submit") continue;
+      if (el.value.trim() !== "") fd.append(el.name, el.value.trim());
+    }
+    fd.append("no_llm", form.elements.no_llm.checked ? "true" : "false");
+    const files = ["balance", "income", "peers"].map(n => [n, form.elements[n].files[0]]);
+    const has = Object.fromEntries(files.map(([n, f]) => [n, !!f]));
+    if (has.balance !== has.income) { err.textContent = "Upload both the balance sheet and the income statement, or neither."; err.style.display = "block"; return; }
+    files.forEach(([n, f]) => { if (f) fd.append(n, f); });
+    const btn = form.querySelector("button[type=submit]");
+    btn.disabled = true; btn.textContent = "Starting…";
+    try {
+      const job = await api("/jobs", { method: "POST", body: fd });
+      location.hash = "#/job/" + job.id;
+    } catch (e) {
+      err.textContent = e.message; err.style.display = "block";
+      btn.disabled = false; btn.textContent = "Start analysis";
+    }
+  });
+  app.replaceChildren(h("h1", {}, "New analysis"), h("p", { class: "sub" }, "Two things run side by side: the financial check and the news search. You will be asked to approve before anything is final."), err, form);
+}
+
+/* ---------- job page ---------- */
+const TABS = [["progress", "Progress"], ["finance", "Financials"], ["news", "News"], ["swot", "SWOT"], ["rca", "Root causes"]];
+const NEWS_STAGES = ["discovery", "triage", "resolve", "verify", "sentiment"];
+const J = {};
+const card = (...k) => h("div", { class: "card" }, ...k);
+const banner = (kind, text, ...btns) => h("div", { class: "banner " + kind }, h("div", { class: "grow" }, text), ...btns);
+
+function modal(title, ...content) {
+  const m = h("div", { class: "modal", onclick: e => { if (e.target === m) m.remove(); } },
+    h("div", {}, h("div", { class: "row between", style: "margin-bottom:10px" }, h("h2", { style: "margin:0" }, title), h("button", { class: "btn small", onclick: () => m.remove() }, "Close")), ...content));
+  document.body.append(m);
+  return m;
+}
+document.addEventListener("keydown", e => { if (e.key === "Escape") { const m = document.querySelector(".modal:last-of-type"); if (m) m.remove(); } });
+
+async function showJob(id, tab) {
+  Object.assign(J, { id, job: null, tab: TABS.some(t => t[0] === tab) ? tab : null, events: [], lastEvent: 0, fin: null, finChoices: {}, news: null, newsFilter: "all",
+    draft: null, final: null, rca: null, keys: {}, reviewing: false, bodyTok: 0, rcaSel: new Set() });
+  try { J.dec = JSON.parse(localStorage.getItem("fa_dec_" + id) || "{}"); } catch (e) { J.dec = {}; }
+  app.replaceChildren(h("div", { id: "jhead" }), h("div", { id: "jnext" }), h("div", { id: "jtabs" }), h("div", { id: "jbody" }));
+  try { await refreshJob(); }
+  catch (e) { app.replaceChildren(card(h("div", { class: "empty" }, h("p", {}, e.message), h("a", { class: "btn", href: "#/" }, "Back to the list")))); return; }
+  poll(refreshJob, () => J.job && ["running", "awaiting_finance_approval"].includes(J.job.status) ? 3000 : 6000);
+}
+function defaultTab(j) {
+  const st = stageMap(j);
+  if (j.actions.includes("approve_finance")) return "finance";
+  if (j.actions.includes("review_swot") && st.swot_review.status !== "succeeded") return "swot";
+  return "progress";
+}
+async function fetchEvents() {
+  const ev = await api(`/jobs/${J.id}/events?after=${J.lastEvent}&limit=200`);
+  for (const e of ev) { J.events.push(e); J.lastEvent = Math.max(J.lastEvent, e.id); }
+  if (J.events.length > 300) J.events = J.events.slice(-300);
+}
+function tabKey(t) {
+  const st = stageMap(J.job);
+  switch (t) {
+    case "finance": return st.finance_preview.status + "|" + st.finance_approve.status;
+    case "news": return st.sentiment.status;
+    case "swot": return st.swot_build.status + "|" + st.swot_review.status;
+    case "rca": return st.swot_build.status + "|" + J.job.stages.filter(s => s.name.startsWith("rca_")).map(s => s.name + s.status).join(",");
+    default: return Math.random().toString();
+  }
+}
+async function refreshJob() {
+  const job = await api("/jobs/" + J.id);
+  const first = !J.job;
+  J.job = job;
+  await fetchEvents();
+  if (first && !J.tab) J.tab = defaultTab(job);
+  renderHead(); renderNext(); renderTabs();
+  const key = tabKey(J.tab);
+  if (first || J.tab === "progress" || J.keys[J.tab] !== key) { J.keys[J.tab] = key; await renderBody(); }
+}
+async function act(name) {
+  try { await postJson(`/jobs/${J.id}/${name}`, {}); toast(name === "retry" ? "Retrying…" : "Stopping…", "ok"); await refreshJob(); } catch (e) { fail(e); }
+}
+async function delJob() {
+  if (!confirm("Delete this analysis and all its files?")) return;
+  try { await api("/jobs/" + J.id, { method: "DELETE" }); location.hash = "#/"; } catch (e) { fail(e); }
+}
+function setTab(t) {
+  J.tab = t;
+  history.replaceState(null, "", `#/job/${J.id}/${t}`);
+  J.keys[t] = tabKey(t);
+  renderTabs(); renderBody();
+}
+function renderHead() {
+  const j = J.job, a = j.actions, box = document.getElementById("jhead");
+  if (!box) return;
+  box.replaceChildren(
+    h("div", { class: "row between" },
+      h("div", {}, h("a", { class: "muted small", href: "#/" }, "← All analyses"), h("h1", {}, j.company), h("p", { class: "sub", style: "margin-bottom:10px" }, j.objective || "No question given")),
+      h("div", { class: "row" }, badge(j.status),
+        a.includes("retry") ? h("button", { class: "btn", onclick: () => act("retry") }, "Retry") : null,
+        a.includes("cancel") ? h("button", { class: "btn danger", onclick: () => { if (confirm("Stop this analysis?")) act("cancel"); } }, "Stop") : null,
+        h("button", { class: "btn danger", onclick: delJob }, "Delete"))),
+    h("div", { class: "row" }, h("div", { class: "bar grow" + (j.progress >= 1 ? " done" : "") }, h("div", { style: `width:${Math.round(j.progress * 100)}%` })), h("span", { class: "muted small" }, Math.round(j.progress * 100) + "%")));
+}
+function renderNext() {
+  const j = J.job, st = stageMap(j), a = j.actions, box = document.getElementById("jnext");
+  if (!box) return;
+  let b = null;
+  const failed = j.stages.find(s => s.status === "failed" && !s.name.startsWith("rca_"));
+  if (j.status === "cancelled") b = banner("info", "This analysis was stopped.", a.includes("retry") ? h("button", { class: "btn", onclick: () => act("retry") }, "Resume") : null);
+  else if (failed) b = banner("bad", `“${stageLabel(failed.name)}” failed: ${(failed.error || "").split("\n")[0]}`, h("button", { class: "btn", onclick: () => setTab("progress") }, "See details"), h("button", { class: "btn primary", onclick: () => act("retry") }, "Retry"));
+  else if (a.includes("approve_finance")) b = banner("warn", "The financial statements are waiting for your approval.", h("button", { class: "btn primary", onclick: () => setTab("finance") }, "Review and approve"));
+  else if (["blocked", "rejected"].includes(st.finance_approve.status)) b = banner("bad", "The financial statements need to be corrected before the analysis can continue.", h("button", { class: "btn primary", onclick: () => setTab("finance") }, "Fix the files"));
+  else if (a.includes("review_swot") && st.swot_review.status !== "succeeded") b = banner("warn", "The SWOT draft is ready. Approve, edit or reject each proposal.", h("button", { class: "btn primary", onclick: () => setTab("swot") }, "Open the review"));
+  else if (j.status === "complete") b = banner("ok", "Review saved. Pick any item and ask “why?” to run a root-cause analysis.", h("button", { class: "btn", onclick: () => setTab("swot") }, "See the SWOT"), h("button", { class: "btn", onclick: () => setTab("rca") }, "Root causes"));
+  else if (j.status === "running") b = banner("info", "Working. This page updates by itself; scoring the news articles is the slowest step.");
+  box.replaceChildren(b || "");
+}
+function tabDot(t) {
+  const st = stageMap(J.job), a = J.job.actions;
+  if (t === "finance") return ["blocked", "rejected", "failed"].includes(st.finance_approve.status) || st.finance_preview.status === "failed" ? "red" : (a.includes("approve_finance") ? "" : null);
+  if (t === "swot") return st.swot_build.status === "failed" ? "red" : (a.includes("review_swot") && st.swot_review.status !== "succeeded" ? "" : null);
+  if (t === "news") return NEWS_STAGES.some(n => st[n].status === "failed") ? "red" : null;
+  return null;
+}
+function renderTabs() {
+  const box = document.getElementById("jtabs");
+  if (!box) return;
+  box.replaceChildren(h("div", { class: "tabs" }, TABS.map(([k, label]) => {
+    const d = tabDot(k);
+    return h("button", { class: "tab" + (J.tab === k ? " active" : ""), onclick: () => setTab(k) }, label, d !== null ? h("span", { class: "dot " + d }) : null);
+  })));
+}
+async function renderBody() {
+  const box = document.getElementById("jbody");
+  if (!box) return;
+  const tok = ++J.bodyTok;
+  try {
+    if (J.tab === "progress") renderProgress(box);
+    else if (J.tab === "finance") await renderFinance(box, tok);
+    else if (J.tab === "news") await renderNews(box, tok);
+    else if (J.tab === "swot") await renderSwot(box, tok);
+    else if (J.tab === "rca") await renderRca(box, tok);
+  } catch (e) { if (tok === J.bodyTok) box.replaceChildren(h("div", { class: "err-banner" }, e.message)); }
+}
+
+/* ---------- progress tab ---------- */
+async function openLog(stage) {
+  try {
+    const t = await api(`/jobs/${J.id}/logs/${stage}?tail_kb=64`);
+    modal("Log: " + stageLabel(stage), h("pre", { class: "log" }, t || "(empty)"));
+  } catch (e) { fail(e); }
+}
+function renderProgress(box) {
+  const j = J.job;
+  const stages = j.stages.map(s => h("div", { class: "stage" },
+    h("div", { class: "sdot " + s.status }),
+    h("div", {}, h("b", {}, stageLabel(s.name)), h("div", { class: "muted small" }, stageDetail(s) || (s.status === "skipped" ? "Not needed for this analysis" : s.status === "waiting" ? "Waiting for you" : ""))),
+    h("div", { class: "row" }, s.started_at ? h("span", { class: "muted small" }, fmtDur(s.started_at, s.finished_at)) : null, badge(s.status),
+      s.started_at ? h("button", { class: "btn small", onclick: () => openLog(s.name) }, "Log") : null),
+    s.error ? h("pre", { class: "err" }, s.error) : null));
+  const ev = J.events.slice(-30).reverse().map(e => h("div", { class: "small", style: "padding:3px 0" },
+    h("span", { class: "muted mono" }, new Date(e.ts).toLocaleTimeString() + "  "), h("span", { class: e.level === "error" ? "badge bad" : e.level === "warning" ? "badge waiting" : "" }, e.level === "info" ? "" : e.level), " ", e.message.split("\n")[0]));
+  box.replaceChildren(card(h("h3", {}, "Steps"), stages), card(h("h3", {}, "Activity"), ev.length ? ev : h("p", { class: "muted" }, "Nothing yet.")));
+}
+
+/* ---------- financials tab ---------- */
+const FIELD_STATUS = { proposed_exact: "Matched exactly", proposed_pattern: "Matched by pattern", proposed_fuzzy: "Matched by similarity (check it)", llm_proposed: "Proposed by the AI", needs_choice: "Needs your choice", derived: "Calculated", missing: "Not found", chosen_by_user: "Your choice", default_accepted: "Default accepted" };
+function filesForm(title, onDone) {
+  const f = h("form", { class: "card" }, h("h3", {}, title),
+    h("div", { class: "files" }, h("label", { class: "f drop" }, "Balance sheet (CSV)", h("input", { type: "file", name: "balance", accept: ".csv", required: true })),
+      h("label", { class: "f drop" }, "Income statement (CSV)", h("input", { type: "file", name: "income", accept: ".csv", required: true }))),
+    h("div", { class: "row", style: "margin-top:12px" }, h("button", { class: "btn primary", type: "submit" }, "Upload and check again")));
+  f.addEventListener("submit", async ev => {
+    ev.preventDefault();
+    const fd = new FormData(); fd.append("balance", f.elements.balance.files[0]); fd.append("income", f.elements.income.files[0]);
+    try { await api(`/jobs/${J.id}/finance/files`, { method: "POST", body: fd }); toast("Files uploaded; checking them again", "ok"); J.fin = null; await refreshJob(); onDone && onDone(); } catch (e) { fail(e); }
+  });
+  return f;
+}
+async function renderFinance(box, tok) {
+  const j = J.job, st = stageMap(j), fp = st.finance_preview, fa = st.finance_approve;
+  if (fp.status === "skipped") { box.replaceChildren(card(h("p", {}, "No financial statements were uploaded, so the SWOT uses news only."), h("p", { class: "muted small" }, "You can add them now; the SWOT will be rebuilt after you approve them.")), filesForm("Add financial statements")); return; }
+  if (fp.status !== "succeeded") {
+    box.replaceChildren(card(h("div", { class: "row" }, h("b", {}, stageLabel("finance_preview")), badge(fp.status)), fp.error ? h("pre", { class: "err", style: "margin-top:10px" }, fp.error) : h("p", { class: "muted" }, "Reading the files…")));
+    return;
+  }
+  if (!J.fin) J.fin = await api(`/jobs/${j.id}/finance/report`);
+  if (tok !== J.bodyTok) return;
+  const R = J.fin, fields = Object.values(R.fields), needs = fields.filter(e => e.needs_choice);
+  const nodes = [];
+  if (fa.status === "succeeded") nodes.push(banner("ok", `Approved. ${fa.meta.accepted_warnings || 0} warnings were accepted with the limitations below.`));
+  if (["blocked", "rejected"].includes(fa.status)) nodes.push(banner("bad", fa.error || "These statements cannot be used as they are."));
+  if (fa.status === "failed") nodes.push(banner("bad", "Approval failed: " + (fa.error || "").split("\n")[0]));
+  nodes.push(card(h("div", { class: "kv" },
+    h("div", {}, h("span", { class: "muted small" }, "Proposal"), h("b", {}, cap(humanize(R.status)))),
+    h("div", {}, h("span", { class: "muted small" }, "Periods"), h("b", {}, `${R.periods.length}`), h("span", { class: "muted small" }, `${R.periods[R.periods.length - 1]} to ${R.periods[0]}`)),
+    h("div", {}, h("span", { class: "muted small" }, "Frequency"), h("b", {}, cap(R.frequency || "?"))),
+    h("div", {}, h("span", { class: "muted small" }, "Units"), h("b", {}, cap(R.units || "unknown"))),
+    h("div", {}, h("span", { class: "muted small" }, "Currency"), h("b", {}, R.currency || "—")))));
+  if (needs.length) {
+    nodes.push(h("h2", {}, "Your decisions"), h("p", { class: "muted" }, "Several rows in your file hold different numbers for the same item. Pick the one that is right."));
+    for (const e of needs) {
+      const opts = e.options && e.options.length ? e.options : e.candidates;
+      nodes.push(card(h("h3", {}, cap(humanize(e.field)), h("span", { class: "muted small", style: "font-weight:400" }, "  " + e.description)),
+        opts.map(o => h("label", { class: "opt" + (J.finChoices[e.field] === o.label ? " sel" : "") },
+          h("input", { type: "radio", name: "fc_" + e.field, checked: J.finChoices[e.field] === o.label, disabled: !j.actions.includes("approve_finance"), onchange: () => { J.finChoices[e.field] = o.label; renderBody(); } }),
+          h("div", {}, h("b", {}, o.label), h("div", { class: "muted small" }, `Latest value ${fmtNum(o.latest_value)} · ${o.periods_with_data} periods`),
+            e.llm_alternative && e.llm_alternative.row === o.label ? h("div", {}, h("span", { class: "chip info" }, "AI recommends this"), h("span", { class: "small muted" }, e.llm_alternative.reason)) : null)))));
+    }
+  }
+  const checks = R.checks || [];
+  const bySev = s => checks.filter(c => c.severity === s);
+  const sevBlock = (s, open) => bySev(s).length ? h("details", { open: open || null, style: "margin:8px 0" }, h("summary", {}, h("span", { class: "chip " + s }, s), `${bySev(s).length} ${s === "info" ? "notes" : s === "decision" ? "decisions" : s + "s"}`), h("ul", {}, bySev(s).map(c => h("li", { class: "small" }, c.message)))) : null;
+  nodes.push(h("h2", {}, "What the check found"), card(sevBlock("blocking", true), sevBlock("decision", true), sevBlock("warning", false), sevBlock("info", false), checks.length ? null : h("p", { class: "muted" }, "No warnings.")));
+  if ((R.limitations || []).length) nodes.push(card(h("h3", {}, "Limitations you accept by approving"), h("ul", {}, R.limitations.map(l => h("li", { class: "small" }, l)))));
+  nodes.push(h("h2", {}, "How each item was matched"), card(h("table", {}, h("thead", {}, h("tr", {}, ["Item", "Row used", "How", "Latest value"].map(x => h("th", {}, x)))),
+    h("tbody", {}, fields.map(e => {
+      const latest = e.series ? e.series[R.periods[0]] : null;
+      const row = (e.chain && e.chain[0]) || e.formula || "";
+      return h("tr", {}, h("td", {}, cap(humanize(e.field))), h("td", { class: "small" }, row || h("span", { class: "muted" }, "—")),
+        h("td", {}, h("span", { class: "badge " + (e.status === "missing" ? "bad" : e.status === "needs_choice" ? "waiting" : e.status === "derived" ? "pending" : "ok") }, FIELD_STATUS[e.status] || humanize(e.status))),
+        h("td", { class: "small" }, fmtNum(latest)));
+    })))));
+  if (j.actions.includes("approve_finance")) {
+    const missing = needs.filter(e => !J.finChoices[e.field]);
+    nodes.push(card(h("div", { class: "row" },
+      h("button", { class: "btn primary", disabled: missing.length > 0, onclick: approveFin }, "Approve and continue"),
+      h("button", { class: "btn danger", onclick: rejectFin }, "Reject"),
+      missing.length ? h("span", { class: "muted small" }, "Choose a row for: " + missing.map(e => humanize(e.field)).join(", ")) : null),
+      h("p", { class: "muted small", style: "margin:10px 0 0" }, "Approving records that you accept the matched rows and the limitations above. It does not prove the statements are correct.")));
+  }
+  if (["blocked", "rejected"].includes(fa.status)) nodes.push(filesForm("Upload corrected statements"));
+  box.replaceChildren(...nodes);
+}
+async function approveFin() {
+  try { await postJson(`/jobs/${J.id}/finance/approve`, { approved: true, choices: J.finChoices }); toast("Approved. Building the SWOT next.", "ok"); await refreshJob(); } catch (e) { fail(e); }
+}
+async function rejectFin() {
+  if (!confirm("Reject this proposal? You will need to upload corrected files.")) return;
+  try { await postJson(`/jobs/${J.id}/finance/approve`, { approved: false, choices: {} }); await refreshJob(); } catch (e) { fail(e); }
+}
+
+/* ---------- news tab ---------- */
+function sentPill(v) {
+  if (v === null || v === undefined) return h("span", { class: "muted" }, "n/a");
+  const c = v >= 0.25 ? ["#e7f6ef", "#12805c"] : v <= -0.25 ? ["#fdecea", "#b42318"] : ["#eef0f4", "#667085"];
+  return h("span", { class: "sent", style: `background:${c[0]};color:${c[1]}` }, (v > 0 ? "+" : "") + v.toFixed(2));
+}
+async function renderNews(box, tok) {
+  const st = stageMap(J.job);
+  if (st.sentiment.status !== "succeeded") {
+    const bad = NEWS_STAGES.find(n => st[n].status === "failed");
+    box.replaceChildren(card(h("p", {}, bad ? `The news step “${stageLabel(bad)}” failed. See the Progress tab.` : "The news is still being collected and scored. This tab fills in when the last step finishes.")));
+    return;
+  }
+  if (!J.news) J.news = await api(`/jobs/${J.id}/news`);
+  if (tok !== J.bodyTok) return;
+  const co = Object.values(J.news.company_sentiment.companies || {})[0] || {};
+  const counts = co.signal_counts || {}, cov = co.coverage || {};
+  const verifyDir = (st.verify.meta || {}).verify_dir;
+  const table = h("div", {});
+  const drawTable = () => {
+    const rows = J.news.articles.filter(a => J.newsFilter === "all" || a.signal === J.newsFilter).sort((a, b) => (b.weight || 0) - (a.weight || 0));
+    table.replaceChildren(h("table", {}, h("thead", {}, h("tr", {}, ["Score", "Article", "Signal", "Evidence", ""].map(x => h("th", {}, x)))),
+      h("tbody", {}, rows.map(a => h("tr", {}, h("td", {}, sentPill(a.sentiment)),
+        h("td", {}, a.url ? link(a.url, a.title) : a.title, h("div", { class: "muted small" }, `${a.source || ""} · ${(a.published_at || "").slice(0, 10)} · ${a.bucket || ""}`), h("div", { class: "small" }, a.summary || "")),
+        h("td", {}, h("span", { class: "chip " + (a.signal === "opportunity" ? "opportunity" : a.signal === "threat" ? "threat" : "") }, a.signal || "")),
+        h("td", { class: "small" }, a.evidence_verified ? h("span", { class: "badge ok" }, "quote verified") : h("span", { class: "badge pending" }, "unverified"), a.evidence ? h("div", { class: "muted" }, "“" + a.evidence.slice(0, 160) + (a.evidence.length > 160 ? "…" : "") + "”") : null),
+        h("td", {}, verifyDir && a.event_id ? h("a", { class: "btn small", href: fileUrl(J.id, `${verifyDir}/screenshots/${a.event_id}.png`), target: "_blank", rel: "noopener" }, "Page capture") : null))))));
+  };
+  drawTable();
+  box.replaceChildren(
+    card(h("div", { class: "kv" },
+      h("div", {}, h("span", { class: "muted small" }, "Net sentiment"), h("b", {}, co.net_sentiment != null ? (co.net_sentiment > 0 ? "+" : "") + co.net_sentiment.toFixed(2) : "n/a")),
+      h("div", {}, h("span", { class: "muted small" }, "Opportunities"), h("b", {}, counts.opportunity || 0)),
+      h("div", {}, h("span", { class: "muted small" }, "Threats"), h("b", {}, counts.threat || 0)),
+      h("div", {}, h("span", { class: "muted small" }, "Neutral"), h("b", {}, counts.neutral || 0)),
+      h("div", {}, h("span", { class: "muted small" }, "Read in full"), h("b", {}, cov.events_with_full_text != null ? `${cov.events_with_full_text}/${cov.events_selected}` : "—"))),
+      h("p", { class: "muted small", style: "margin:12px 0 0" }, "Scores run from −1 (bad for the company) to +1 (good). The articles are a selected sample of recent news, not a full market review.")),
+    h("div", { class: "row", style: "margin:10px 0" }, h("b", {}, "Articles"), h("select", { style: "width:auto", value: J.newsFilter, onchange: e => { J.newsFilter = e.target.value; drawTable(); } },
+      [["all", "All"], ["opportunity", "Opportunities"], ["threat", "Threats"], ["neutral", "Neutral"]].map(([v, t]) => h("option", { value: v }, t)))),
+    card(table));
+}
+
+/* ---------- SWOT tab ---------- */
+const QUADS = ["strength", "weakness", "opportunity", "threat"];
+const QUAD_TITLE = { strength: "Strengths", weakness: "Weaknesses", opportunity: "Opportunities", threat: "Threats", other: "Not placed by the model" };
+const QUAD_HINT = { strength: "internal, positive", weakness: "internal, negative", opportunity: "external, positive", threat: "external, negative", other: "the model judged these not relevant, or could not place them" };
+const decKey = (company, id) => company + "||" + id;
+const saveDec = () => localStorage.setItem("fa_dec_" + J.id, JSON.stringify(J.dec));
+
+function evidenceBlock(it) {
+  if (it.kind === "financial") {
+    const hist = Object.entries(it.history || {}).filter(([, v]) => v !== null).map(([p, v]) => `${p.slice(0, 4)}: ${fmtMetric(it.metric, v)}`).join("  ·  ");
+    return h("div", { class: "ev" }, h("div", {}, it.statement_rule || ""), hist ? h("div", { class: "muted" }, hist) : null);
+  }
+  return (it.evidence || []).slice(0, 3).map(e => h("div", { class: "ev" },
+    h("div", {}, link(e.url, e.source || e.url), h("span", { class: "muted" }, "  " + (e.published_at || "").slice(0, 10))),
+    e.quote ? h("div", { class: "muted" }, "“" + e.quote.slice(0, 260) + (e.quote.length > 260 ? "…" : "") + "”") : null));
+}
+function renderCard(company, it) {
+  const key = decKey(company, it.id), d = J.dec[key], p = it.proposal || {};
+  const hasQ = !!p.quadrant && !p.not_swot;
+  const qOptions = it.kind === "financial" ? ["strength", "weakness"] : QUADS;
+  const el = h("div", { class: "item" + (d ? " d-" + d.action : "") });
+  const redraw = () => { el.replaceWith(renderCard(company, it)); updateBar(); };
+  const set = (patch) => { J.dec[key] = Object.assign({ company, id: it.id }, J.dec[key] || {}, patch); saveDec(); redraw(); };
+  const clear = () => { delete J.dec[key]; saveDec(); redraw(); };
+  el.append(
+    h("div", { class: "row" },
+      h("span", { class: "chip" }, it.kind === "financial" ? "Financial" : "News"),
+      p.quadrant && !p.not_swot ? h("span", { class: "chip " + p.quadrant }, "model: " + p.quadrant) : h("span", { class: "chip" }, p.not_swot ? "model: not a SWOT item" : "model: unclassified"),
+      p.basis ? h("span", { class: "chip" }, p.basis) : null,
+      p.materiality ? h("span", { class: "chip" }, "importance " + p.materiality + "/3") : null,
+      it.n_articles > 1 ? h("span", { class: "chip" }, it.n_articles + " articles") : null),
+    h("div", { class: "stmt" }, p.statement || it.title || it.id),
+    p.why ? h("div", { class: "muted small" }, "Why: " + p.why) : null,
+    (it.notes || []).map(n => h("div", { class: "small", style: "color:var(--warn)" }, "Note: " + n)),
+    evidenceBlock(it));
+  const seg = h("div", { class: "seg" },
+    h("button", { class: "btn small" + (d && d.action === "approve" ? " primary" : ""), disabled: !hasQ, title: hasQ ? "" : "Nothing to approve: use Edit and choose a quadrant", onclick: () => set({ action: "approve" }) }, "Approve"),
+    h("button", { class: "btn small" + (d && d.action === "edit" ? " primary" : ""), onclick: () => set({ action: "edit", quadrant: (d && d.quadrant) || (hasQ ? p.quadrant : ""), statement: (d && d.statement) || p.statement || "" }) }, "Edit"),
+    h("button", { class: "btn small" + (d && d.action === "reject" ? " danger" : ""), onclick: () => set({ action: "reject" }) }, "Reject"),
+    d ? h("button", { class: "btn small", onclick: clear }, "Undo") : null);
+  el.append(seg);
+  if (d && d.action === "edit") {
+    el.append(h("div", { class: "row", style: "margin-top:8px" },
+      h("select", { style: "width:auto", value: d.quadrant || "", onchange: e => { J.dec[key].quadrant = e.target.value; saveDec(); updateBar(); } },
+        h("option", { value: "" }, "Choose a quadrant…"), qOptions.map(q => h("option", { value: q }, cap(q)))),
+      it.kind === "financial" ? h("span", { class: "muted small" }, "Financial items are internal: strength or weakness only.") : null),
+      h("textarea", { placeholder: "Statement", oninput: e => { J.dec[key].statement = e.target.value; saveDec(); } }, d.statement || ""));
+  }
+  if (d) el.append(h("input", { type: "text", placeholder: "Add a note (optional)", value: d.note || "", style: "margin-top:8px", oninput: e => { J.dec[key].note = e.target.value; saveDec(); } }));
+  return el;
+}
+function updateBar() {
+  const n = Object.keys(J.dec).length, total = J.draft ? Object.values(J.draft.companies).reduce((s, c) => s + c.items.length, 0) : 0;
+  const t = document.getElementById("decCount"), b = document.getElementById("saveBtn");
+  if (t) t.textContent = `${n} of ${total} items decided`;
+  if (b) b.disabled = n === 0;
+}
+function renderBoard(box) {
+  const nodes = [banner("info", J.job.stages.some(s => s.name === "swot_review" && s.status === "succeeded") ? "You are revising a saved review. Saving replaces it." : "Read each proposal and its evidence, then Approve, Edit or Reject. Anything you skip stays pending. Nothing is final until you save.")];
+  for (const [label, c] of Object.entries(J.draft.companies)) {
+    nodes.push(h("h2", {}, label), h("p", { class: "muted small" }, "Scope: " + c.scope));
+    if ((c.warnings || []).length) nodes.push(h("details", {}, h("summary", {}, "Limits of this draft"), h("ul", {}, c.warnings.map(w => h("li", { class: "small" }, w)))));
+    const groups = { strength: [], weakness: [], opportunity: [], threat: [], other: [] };
+    c.items.forEach(it => { const p = it.proposal || {}; (p.not_swot || !p.quadrant ? groups.other : groups[p.quadrant]).push(it); });
+    for (const q of [...QUADS, "other"]) {
+      if (!groups[q].length) continue;
+      nodes.push(h("h3", { style: "margin-top:20px" }, `${QUAD_TITLE[q]} (${groups[q].length})`, h("span", { class: "muted small", style: "font-weight:400" }, "  " + QUAD_HINT[q])), ...groups[q].map(it => renderCard(label, it)));
+    }
+    if ((c.excluded_news || []).length) nodes.push(h("details", { style: "margin-top:16px" }, h("summary", {}, `${c.excluded_news.length} news items were left out automatically`),
+      h("ul", {}, c.excluded_news.map(x => h("li", { class: "small" }, x.title + " — " + (x.reasons || []).join("; "))))));
+  }
+  const name = h("input", { type: "text", placeholder: "Your name", value: localStorage.getItem("fa_reviewer") || "", style: "width:160px", oninput: e => localStorage.setItem("fa_reviewer", e.target.value) });
+  nodes.push(h("div", { class: "sticky-bar" }, h("span", { id: "decCount", class: "grow" }), name,
+    h("button", { class: "btn", onclick: () => { Object.values(J.draft.companies).forEach(c => c.items.forEach(it => { const p = it.proposal || {}, k = decKey(Object.keys(J.draft.companies)[0], it.id); if (p.quadrant && !p.not_swot && !J.dec[k]) J.dec[k] = { company: Object.keys(J.draft.companies)[0], id: it.id, action: "approve" }; })); saveDec(); renderBody(); } }, "Accept all proposals"),
+    h("button", { class: "btn", onclick: () => { if (confirm("Clear all your decisions?")) { J.dec = {}; saveDec(); renderBody(); } } }, "Clear"),
+    h("button", { class: "btn primary", id: "saveBtn", onclick: saveReview }, "Save review")));
+  box.replaceChildren(...nodes);
+  updateBar();
+}
+async function saveReview() {
+  const decisions = Object.values(J.dec).map(d => {
+    const o = { company: d.company, id: d.id, action: d.action };
+    if (d.action === "edit") { if (d.quadrant) o.quadrant = d.quadrant; if ((d.statement || "").trim()) o.statement = d.statement.trim(); }
+    if ((d.note || "").trim()) o.note = d.note.trim();
+    return o;
+  });
+  if (!decisions.length) return toast("Decide on at least one item first.", "bad");
+  const noQ = decisions.filter(d => d.action === "edit" && !d.quadrant);
+  if (noQ.length) return toast(`Choose a quadrant for the edited item ${noQ[0].id}.`, "bad");
+  try {
+    await postJson(`/jobs/${J.id}/swot/review`, { decisions, reviewer: (localStorage.getItem("fa_reviewer") || "analyst").trim() || "analyst" });
+    toast("Review saved.", "ok"); J.reviewing = false; J.final = null;
+    await refreshJob(); J.keys.swot = tabKey("swot"); await renderBody();
+  } catch (e) { fail(e); }
+}
+async function reviseReview() {
+  try {
+    const m = J.job.stages.find(s => s.name === "swot_review").meta;
+    const dir = m.final.replace(/[^/]+$/, "");
+    const prev = await api(`/jobs/${J.id}/files/${dir}review_decisions.json`);
+    J.dec = {}; for (const d of prev) J.dec[decKey(d.company, d.id)] = d;
+    saveDec(); J.reviewing = true; renderBody();
+  } catch (e) { J.reviewing = true; renderBody(); }
+}
+async function startRca(ids, notes, maxWhys) {
+  try { await postJson(`/jobs/${J.id}/rca`, { items: ids, max_whys: maxWhys || 5, notes: notes || [] }); toast("Root-cause analysis started.", "ok"); await refreshJob(); setTab("rca"); } catch (e) { fail(e); }
+}
+function renderFinal(box) {
+  const nodes = [], st = stageMap(J.job), m = st.swot_review.meta || {};
+  for (const [label, c] of Object.entries(J.final.companies)) {
+    nodes.push(h("h2", { style: "margin-top:0" }, label), h("p", { class: "muted small" }, `Scope: ${c.scope} · reviewed by ${J.final.reviewer} · ${c.pending.length} pending, ${c.rejected.length} rejected`));
+    nodes.push(h("div", { class: "quads" }, QUADS.map(q => h("div", { class: "qcol " + q },
+      h("h3", {}, QUAD_TITLE[q], h("span", { class: "muted small", style: "font-weight:400" }, `${c.swot[q].length} · ${QUAD_HINT[q]}`)),
+      c.swot[q].length ? c.swot[q].map(x => h("div", { class: "item" },
+        h("div", { class: "stmt" }, x.statement),
+        h("div", { class: "row" }, x.basis ? h("span", { class: "chip" }, x.basis) : null, h("span", { class: "chip" }, "importance " + (x.materiality || "?") + "/3"), x.edited ? h("span", { class: "chip info" }, "edited") : null),
+        x.reviewer_note ? h("div", { class: "small muted" }, "Note: " + x.reviewer_note) : null,
+        (x.evidence || []).slice(0, 2).map(e => h("div", { class: "ev" }, e.type === "article" ? link(e.url, "Source article") : `Financial: ${humanize(e.metric || "")}`)),
+        h("button", { class: "btn small", onclick: () => startRca([x.id]) }, "Why? (Five Whys)"))) : h("p", { class: "muted small" }, "No approved items.")))));
+    if (c.pending.length) nodes.push(h("details", { style: "margin-top:14px" }, h("summary", {}, `${c.pending.length} proposals you have not decided on`), h("ul", {}, c.pending.map(x => h("li", { class: "small" }, (x.title || x.id) + (x.proposed_quadrant ? " (model: " + x.proposed_quadrant + ")" : ""))))));
+  }
+  const dl = m.final ? [h("a", { class: "btn", href: fileUrl(J.id, m.final), target: "_blank", rel: "noopener" }, "Download JSON"), h("a", { class: "btn", href: fileUrl(J.id, m.final.replace(/\.json$/, ".md")), target: "_blank", rel: "noopener" }, "Download Markdown")] : [];
+  nodes.push(h("div", { class: "row", style: "margin-top:18px" }, h("button", { class: "btn", onclick: reviseReview }, "Revise the review"), ...dl));
+  box.replaceChildren(...nodes);
+}
+async function renderSwot(box, tok) {
+  const st = stageMap(J.job);
+  if (st.swot_build.status !== "succeeded") {
+    box.replaceChildren(card(h("div", { class: "row" }, h("b", {}, stageLabel("swot_build")), badge(st.swot_build.status)),
+      st.swot_build.error ? h("pre", { class: "err", style: "margin-top:10px" }, st.swot_build.error) : h("p", { class: "muted" }, "The draft is built once both the news and the financial approval are done.")));
+    return;
+  }
+  if (!J.draft) J.draft = await api(`/jobs/${J.id}/swot/draft`);
+  const done = st.swot_review.status === "succeeded";
+  if (done && !J.reviewing && !J.final) J.final = await api(`/jobs/${J.id}/swot/final`);
+  if (tok !== J.bodyTok) return;
+  if (done && !J.reviewing) renderFinal(box); else renderBoard(box);
+}
+
+/* ---------- root cause tab ---------- */
+async function openRca(name) {
+  try {
+    const r = await api(`/jobs/${J.id}/rca/${name}`), sm = r.summary || {};
+    modal("Five Whys: " + r.item_id,
+      h("p", {}, h("b", {}, "Problem: "), r.problem), h("p", {}, badge(r.outcome === "root_cause_reached" ? "ok" : "waiting", humanize(r.outcome)), r.has_inference ? h("span", { class: "chip", style: "margin-left:8px" }, "contains inference") : null),
+      h("table", {}, h("thead", {}, h("tr", {}, ["#", "Why?", "Answer", "Evidence", "Basis"].map(x => h("th", {}, x)))),
+        h("tbody", {}, r.chain.map(s => h("tr", {}, h("td", {}, s.step), h("td", { class: "small" }, s.question), h("td", {}, s.answer, s.unverified_numbers && s.unverified_numbers.length ? h("div", { class: "small", style: "color:var(--bad)" }, "Unverified numbers: " + s.unverified_numbers.join(", ")) : null),
+          h("td", { class: "small" }, (s.evidence_ids || []).join(", ")), h("td", {}, h("span", { class: "chip" }, s.basis), s.status !== "supported" ? h("span", { class: "chip blocking" }, s.status) : null))))),
+      h("h3", { style: "margin-top:16px" }, "Root cause"), h("p", {}, r.root_cause || "Not determined from the evidence."),
+      sm.root_cause_type ? h("p", { class: "small" }, h("b", {}, "Type: "), humanize(sm.root_cause_type)) : null,
+      sm.validation_test ? h("p", { class: "small" }, h("b", {}, "Would fixing it solve the problem? "), sm.validation_test) : null,
+      (sm.corrective_actions || []).length ? [h("h3", {}, "Suggested actions (recommendations, not facts)"), h("ul", {}, sm.corrective_actions.map(a => h("li", {}, h("b", {}, a.action), " — ", a.rationale, a.evidence_ids && a.evidence_ids.length ? h("span", { class: "muted small" }, " [" + a.evidence_ids.join(", ") + "]") : null)))] : null,
+      (sm.evidence_gaps || []).length ? [h("h3", {}, "What is missing"), h("ul", {}, sm.evidence_gaps.map(g => h("li", { class: "small" }, g)))] : null,
+      (sm.caveats || []).length ? [h("h3", {}, "Caveats"), h("ul", {}, sm.caveats.map(g => h("li", { class: "small" }, g)))] : null,
+      h("details", { style: "margin-top:12px" }, h("summary", {}, "Evidence used"), Object.entries(r.evidence_used || {}).map(([k, e]) => h("div", { class: "ev" }, h("b", {}, k + ": "), e.text, (e.links || []).map(u => h("span", {}, " ", link(u, "source")))))),
+      h("p", { class: "muted small" }, (r.warnings || []).join(" ")));
+  } catch (e) { fail(e); }
+}
+async function renderRca(box, tok) {
+  const st = stageMap(J.job);
+  if (st.swot_build.status !== "succeeded") { box.replaceChildren(card(h("p", {}, "Root-cause analysis works on the SWOT items, so it opens once the SWOT draft exists."))); return; }
+  if (!J.draft) J.draft = await api(`/jobs/${J.id}/swot/draft`);
+  J.rca = await api(`/jobs/${J.id}/rca`);
+  if (tok !== J.bodyTok) return;
+  const company = Object.keys(J.draft.companies)[0], items = J.draft.companies[company].items.filter(it => it.proposal && !it.proposal.not_swot);
+  const notes = h("textarea", { placeholder: "Context for the analysis, one line per note. Example: GM statements include GM Financial." });
+  const whys = h("select", { style: "width:auto", value: "5" }, ["3", "5", "8"].map(n => h("option", { value: n }, n + " levels")));
+  const list = items.sort((a, b) => (a.proposal.quadrant === "weakness" || a.proposal.quadrant === "threat" ? 0 : 1) - (b.proposal.quadrant === "weakness" || b.proposal.quadrant === "threat" ? 0 : 1)).map(it =>
+    h("label", { class: "opt" + (J.rcaSel.has(it.id) ? " sel" : "") }, h("input", { type: "checkbox", checked: J.rcaSel.has(it.id), onchange: e => { e.target.checked ? J.rcaSel.add(it.id) : J.rcaSel.delete(it.id); e.target.closest("label").classList.toggle("sel", e.target.checked); } }),
+      h("div", {}, h("span", { class: "chip " + (it.proposal.quadrant || "") }, it.proposal.quadrant || "?"), h("b", {}, (it.proposal.statement || it.title || it.id).slice(0, 150)), h("div", { class: "muted small mono" }, it.id))));
+  const running = J.job.stages.filter(s => s.name.startsWith("rca_"));
+  box.replaceChildren(
+    card(h("h3", {}, "Ask “why?” about an item"), h("p", { class: "muted small" }, "The Five Whys follows one problem down to its cause, using only the evidence in this SWOT. Pick up to 10 items."),
+      list, h("div", { class: "row", style: "margin-top:10px" }, h("span", { class: "muted small" }, "Depth"), whys), h("div", { style: "margin-top:10px" }, notes),
+      h("div", { class: "row", style: "margin-top:10px" }, h("button", { class: "btn primary", onclick: () => { if (!J.rcaSel.size) return toast("Pick at least one item.", "bad"); startRca([...J.rcaSel].slice(0, 10), notes.value.split("\n").map(x => x.trim()).filter(Boolean), parseInt(whys.value, 10)); } }, "Run Five Whys"))),
+    running.length ? card(h("h3", {}, "Runs"), running.map(s => h("div", { class: "stage" }, h("div", { class: "sdot " + s.status }), h("div", {}, h("b", {}, stageLabel(s.name))),
+      h("div", { class: "row" }, badge(s.status), s.started_at ? h("button", { class: "btn small", onclick: () => openLog(s.name) }, "Log") : null), s.error ? h("pre", { class: "err" }, s.error) : null))) : null,
+    card(h("h3", {}, "Results"), J.rca.length ? h("table", {}, h("thead", {}, h("tr", {}, ["Item", "Outcome", "Root cause", ""].map(x => h("th", {}, x)))),
+      h("tbody", {}, J.rca.map(r => h("tr", {}, h("td", { class: "small mono" }, r.item_id), h("td", {}, badge(r.outcome === "root_cause_reached" ? "ok" : "waiting", humanize(r.outcome))), h("td", { class: "small" }, r.root_cause || "—"),
+        h("td", {}, h("button", { class: "btn small", onclick: () => openRca(r.name) }, "Open")))))) : h("p", { class: "muted" }, "No analysis yet.")));
+}
+
+/* ---------- start ---------- */
+route();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "173c6113173f",
+  "bucket": "7d",
+  "score": 0.573,
+  "label": {
+    "topic": "autonomy_ai",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 4,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "5223a55dd1a50632",
+    "title": "GM to switch listing from NYSE to Nasdaq as it accelerates AI push",
+    "source": "Financial Times",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdUZDSFdCeFNtTk16aWJJelI5RWZvaS1FdE05Zl8tV0pUdUg3MG9FRG5kQjJNdHZ3aGpuR0g1ZnlXTXY5azEwVFFEQUtLNE9Lb1otNWgxbFhEYkhUUEtVMVRXTXNYb3o2eG4td3lSSGlqYzk0blQxdVRhT3FsNFNiNnpOU3Q?oc=5",
+    "published_at": "2026-10-27T14:02:17+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.ft.com/content/01467514-66c1-4375-9906-45a47b949270?syn-25a6b1a6=1",
+    "domain": "www.ft.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM to switch listing from NYSE to Nasdaq as it accelerates AI push",
+    "source_item_id": "5223a55dd1a50632",
+    "resolved_at": "2026-10-29T20:52:20.065585+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.ft.com/content/01467514-66c1-4375-9906-45a47b949270?syn-25a6b1a6=1",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.ft.com/content/01467514-66c1-4375-9906-45a47b949270?syn-25a6b1a6=1",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "Subscribe to read",
+    "published_at_page": "2026-10-27T14:02:17.400Z",
+    "title_score": 1.0,
+    "text_chars": 1008,
+    "content_hash": "d78cc32a5468ea06",
+    "screenshot": "173c6113173f.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:55:59.484138+00:00"
+  },
+  "text": "GM to switch listing from NYSE to Nasdaq as it accelerates AI push \nSubscribe to unlock this article\nTry unlimited access\nOnly \u20ac1 for 4 weeks\nThen \u20ac69 per month. Complete digital access to quality FT journalism on any device. Cancel anytime during your trial.\nExplore more offers.\nStandard Digital\n\u20ac45 per month\nEssential digital access to quality FT journalism on any device. Pay a year upfront and save 20%.\nPremium Digital\nComplete coverage\n\u20ac69 per month\nComplete digital access to quality FT journalism with expert analysis from industry leaders. Pay a year upfront and save 20%.\nFT Digital Edition\n\u20ac19 per month\nOur digitised version of the FT newspaper, for easy reading on any device.\nCheck whether you already have free access via your university or organisation.\nTerms & Conditions apply\nExplore our full range of subscriptions.\nFor individuals\nDiscover all the plans currently available in your country\nFor multiple readers\nDigital access for organisations. Includes exclusive features and content."
+}

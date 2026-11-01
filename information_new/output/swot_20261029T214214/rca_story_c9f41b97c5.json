@@ -1,0 +1,116 @@
+{
+  "stage": "rca",
+  "prompt_version": "rca-v1.0",
+  "model": "openai/gpt-oss-120b",
+  "generated_at": "2026-10-29T22:13:29.553719+00:00",
+  "draft_sha256": "f99525a64ca10c68e8620047310b25dada8a369f2f5f37c928ea24d409baa868",
+  "objective": "assess expansion readiness",
+  "company": "General Motors",
+  "item_id": "story:c9f41b97c5",
+  "item_status": "proposed",
+  "quadrant": "weakness",
+  "problem": "GM cancels key magnet supply deal, reflecting broader EV retreat and a $6 billion charge, hurting its global EV outlook.",
+  "analyst_notes": [
+    "GM cancelled the magnet supply deal as part of a broader EV retreat after federal incentives disappeared"
+  ],
+  "outcome": "root_cause_reached",
+  "chain": [
+    {
+      "step": 1,
+      "question": "Why is this true: GM cancels key magnet supply deal, reflecting broader EV retreat and a $6 billion charge, hurting its global EV outlook.?",
+      "answer": "GM cancelled the magnet supply deal because it is scaling back its EV investments after federal EV incentives disappeared, which forced a $6 billion charge and triggered the broader EV retreat.",
+      "evidence_ids": [
+        "E0"
+      ],
+      "basis": "reported",
+      "status": "supported",
+      "unverified_numbers": [],
+      "dropped_invalid_ids": [],
+      "model_said_root": true,
+      "why_stop": ""
+    },
+    {
+      "step": 2,
+      "question": "Why is this true: GM cancelled the magnet supply deal because it is scaling back its EV investments after federal EV incentives disappeared, which forced a $6 billion charge and triggered the broader EV retreat.?",
+      "answer": "The cancellation was triggered because federal EV incentives and tax breaks disappeared, prompting GM to scale back its EV investments and incur a $6 billion charge, which led to the broader EV retreat and the termination of the magnet supply deal.",
+      "evidence_ids": [
+        "E0"
+      ],
+      "basis": "reported",
+      "status": "supported",
+      "unverified_numbers": [],
+      "dropped_invalid_ids": [],
+      "model_said_root": true,
+      "why_stop": "The evidence directly links the loss of incentives to the scaling back of EV investments and the deal cancellation; no further why can be derived from the supplied facts."
+    },
+    {
+      "step": 3,
+      "question": "Why is this true: The cancellation was triggered because federal EV incentives and tax breaks disappeared, prompting GM to scale back its EV investments and incur a $6 billion charge, which led to the broader EV retreat and the termination of the magnet supply deal.?",
+      "answer": "Because the federal EV incentives and tax breaks disappeared, removing market support and causing GM to scale back its EV investments and take a $6 billion charge, which triggered the broader EV retreat and the magnet supply deal cancellation.",
+      "evidence_ids": [
+        "E0"
+      ],
+      "basis": "reported",
+      "status": "supported",
+      "unverified_numbers": [],
+      "dropped_invalid_ids": [],
+      "model_said_root": true,
+      "why_stop": "The disappearance of federal incentives is the primary external policy change driving GM’s decision; further \"why\" questions would require evidence beyond the supplied pool."
+    }
+  ],
+  "root_cause": "Loss of federal EV incentives and tax breaks caused GM to scale back its EV investments, triggering a $6 billion charge and the cancellation of the magnet supply deal.",
+  "summary": {
+    "root_cause": "Loss of federal EV incentives and tax breaks caused GM to scale back its EV investments, triggering a $6 billion charge and the cancellation of the magnet supply deal.",
+    "root_cause_type": "mixed",
+    "validation_test": "If the federal incentives were restored and GM chose to maintain its EV investment pace, the immediate financial pressure that led to the $6 billion charge would be alleviated, making the magnet‑supply cancellation far less likely. However, lingering market weakness, internal cost structures, and competitive pressures could still prompt a retreat, so the problem might not disappear entirely.",
+    "corrective_actions": [
+      {
+        "action": "Lobby for reinstatement or replacement of federal EV incentives and explore alternative government subsidies",
+        "rationale": "Restoring market support would reduce the need for drastic EV investment cuts and the associated $6 billion charge, keeping the magnet supply deal viable.",
+        "evidence_ids": [
+          "E0"
+        ]
+      },
+      {
+        "action": "Diversify rare‑earth magnet sourcing and develop in‑house capabilities or alternative materials",
+        "rationale": "Reducing reliance on a single external supplier mitigates the impact of future strategic retreats and supply‑chain disruptions.",
+        "evidence_ids": [
+          "E0"
+        ]
+      },
+      {
+        "action": "Accelerate cost‑effective EV platform rollout (e.g., LMR battery technology) and focus on high‑margin EV segments",
+        "rationale": "Improving EV economics lowers the financial hit of scaling back, making large write‑offs less likely and supporting long‑term EV outlook.",
+        "evidence_ids": [
+          "E2",
+          "E10"
+        ]
+      }
+    ],
+    "evidence_gaps": [
+      "Detailed internal cost‑benefit analysis of the magnet supply deal and alternative sourcing options",
+      "Quantitative impact assessment of incentive removal on GM's EV demand forecasts",
+      "Information on any parallel strategic decisions unrelated to incentives that contributed to the $6 billion charge"
+    ],
+    "caveats": [
+      "The analysis is based primarily on a single Reuters report (E0); other internal or market factors may also drive the retreat",
+      "Restoring incentives does not guarantee a full recovery if consumer demand remains weak or if competitors gain advantage",
+      "The $6 billion charge may include accounting adjustments beyond the magnet deal, so fixing the incentive issue alone may not erase the entire financial impact"
+    ]
+  },
+  "has_inference": false,
+  "evidence_used": {
+    "E0": {
+      "item_id": "story:c9f41b97c5",
+      "text": "[E0] (PROBLEM EVIDENCE) NEWS | EXCLUSIVE: GM cancels deal with new US rare-earth magnet plant, documents say | summary: GM cancels key magnet supply deal, reflecting broader EV retreat and a $6 billion charge, hurting its global EV outlook. | source Reuters 2026-10-22 quote: \"The termination follows GM’s broader retreat from EV investments, as the automaker scaled back its EV plans after federal incentives and tax breaks that supported the market disappeared and took a $6 billion charge in January 2026 to unwind some of those investments.\"",
+      "links": [
+        "https://www.cbtnews.com/gm-cancels-magnet-supply/"
+      ]
+    }
+  },
+  "warnings": [
+    "Analysis rests only on items in the SWOT draft; it is not a complete causal study.",
+    "Inference steps are the model's reasoning over cited facts, not source claims.",
+    "Corrective actions are recommendations, not evidence."
+  ]
+}

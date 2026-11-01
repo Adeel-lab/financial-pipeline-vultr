@@ -1,0 +1,25 @@
+{
+  "stage": "verification",
+  "generated_at": "2026-10-29T20:56:41.291811+00:00",
+  "input": "output\\triage_44d23bebd27e",
+  "n_events": 40,
+  "statuses": {
+    "ok": 32,
+    "blocked": 4,
+    "thin_content": 3,
+    "title_mismatch": 1
+  },
+  "duplicates_removed": 0,
+  "by_company": {
+    "General Motors": {
+      "ok": 32,
+      "blocked": 4,
+      "thin_content": 3,
+      "title_mismatch": 1
+    }
+  },
+  "avg_text_chars": 4156,
+  "screenshots": 32,
+  "min_title_score": 0.34,
+  "require_location": false
+}

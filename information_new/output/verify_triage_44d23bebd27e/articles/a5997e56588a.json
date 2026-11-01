@@ -1,0 +1,96 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "a5997e56588a",
+  "bucket": "24h",
+  "score": 0.721,
+  "label": {
+    "topic": "regulation_legal",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 5,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "1fa5f30326241eb5",
+    "title": "Ohio to Get $8 Million From General Motors for Sharing Data on Drivers",
+    "source": "Ohio Attorney General (.gov)",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMmJ2N3NQbXNHa2ptS2NqbFN3TVFZNjdvNURmLTFhV05CZVRMUi1UNm91TlNNRzlXdWRsa1kwNktDM01ZRGg1NlIwcXlKNnZZX2FKSVdodjNXZVVDa29HZUhjUUt0emdSbE1KLVVFS053S3ZKWXdnM1E4V1lPU21BZ3ZZa0ZZNDdaZXpVWDYwOUxMNngtUVNjRGE5NzB6bF9uVDlQMmhDcnRSX24tZ3ExV1lRYkxNeHh3T0Zr?oc=5",
+    "published_at": "2026-10-29T16:11:20+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.ohioattorneygeneral.gov/Media/News-Releases/October-2026/Ohio-to-Get-$8-Million-From-General-Motors-for-Sha",
+    "domain": "www.ohioattorneygeneral.gov",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ohio to Get $8 Million From General Motors for Sharing Data on Drivers",
+    "source_item_id": "1fa5f30326241eb5",
+    "resolved_at": "2026-10-29T20:52:20.065435+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.tristatealert.com/attorney-general-sunday-secures-220-million-national-settlement-over-allegations-that-general-motors-shared-drivers-private-data",
+    "attempts": 3,
+    "attempt_details": [
+      {
+        "url": "https://www.ohioattorneygeneral.gov/Media/News-Releases/October-2026/Ohio-to-Get-$8-Million-From-General-Motors-for-Sha",
+        "status": "error",
+        "http_status": null,
+        "title_score": null
+      },
+      {
+        "url": "https://www.riverbender.com/news/details/attorney-general-raoul-announces-220-million-general-motors-settlement-for-sharing-drivers-private-data-97905.cfm",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://www.tristatealert.com/attorney-general-sunday-secures-220-million-national-settlement-over-allegations-that-general-motors-shared-drivers-private-data",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "Attorney General Sunday Secures $220 Million National Settlement over Allegations that General Motors Shared Drivers\u2019 Private Data \u2013 Tri-State Alert",
+    "published_at_page": "2026-10-29T14:01:38-04:00",
+    "title_score": 1.0,
+    "text_chars": 3395,
+    "content_hash": "d64075fd47402053",
+    "screenshot": "a5997e56588a.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:38.700918+00:00"
+  },
+  "text": "HARRISBURG \u2013 Attorney General Dave Sunday joined a coalition of 36 attorneys general in reaching a $220 million settlement with General Motors regarding consumer data-sharing. The settlement resolves allegations that General Motors illegally sold consumers\u2019 private driver behavior data and location information to third parties, including data brokers who then sold the data to insurance companies. For many consumers, this data was used by insurance companies in part to set insurance rates.\nPennsylvania is expected to receive $8.67 million through the settlement.\nAdditionally, the settlement requires General Motors to obtain affirmative express consent from consumers before collecting or disclosing consumer driving and location data.\n\u201cGeneral Motors promised consumers their personal driving data would not be shared, then turned around and essentially exploited that data by selling it to insurance providers,\u201d Attorney General Sunday said. \u201cThis bait-and-switch tactic betrayed consumers\u2019 trust and potentially impacted their insurance rates. Pennsylvanians deserve transparency and honesty about how their personal data is collected, shared, and used.\u201d\nFrom 2016 to 2024, GM enrolled millions of drivers in their Smart Driver program, which tracked their driving habits. GM pitched this tool as a way for drivers to improve their own driving safety and told drivers that they would not share their data with insurers without express consent.\nHowever, the coalition found that GM sold this information to data brokers under contracts that specified the data was to be used for insurance products. The data brokers sold the data to insurance companies, who could then change the driver\u2019s premium based on their driving habits. GM did not disclose to drivers that their data would be sold for this purpose.\nThe data GM sold was personal, identifiable, and specific. Insurers had data showing how many times a person drove their vehicle, the start and end times of each drive, how many times they braked or accelerated quickly, and whether they went faster than the speed limit. As documented in the New York Times, insurance companies then used this information to change rates, sometimes increasing their premiums. After the Times reported on these practices, GM discontinued the Smart Driver program.\nThe settlement also requires GM to limit the driving data it collects from consumers and protect their personal information going forward as part of a comprehensive data privacy program. The terms secured by the coalition are significantly stronger than any other resolution reached with GM for this conduct including by mandating internal and external data protection and privacy program assessments. GM also agreed to oversight and training requirements at their dealerships to protect consumers against being enrolled in data collection schemes without their consent.\nThe case was co-led by Washington and Oregon, assisted by the Executive Committee of Colorado, Connecticut, Delaware, Illinois, Kentucky, Maryland, Minnesota, New Jersey, Utah, and Vermont, and joined by the attorneys general of Alabama, Alaska, Arizona, the District Of Columbia, Florida, Hawai\u2019i, Idaho, Kansas, Maine, Massachusetts, Michigan, Mississippi, Nevada, New Hampshire, New York, North Carolina, North Dakota, Ohio, Oklahoma, South Carolina, South Dakota, Virginia, and Wisconsin.\nRead the settlement."
+}

@@ -1,0 +1,87 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "d266a8d98325",
+  "bucket": "30d",
+  "score": 0.4584,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "6972c0a2e049e6f6",
+    "title": "Ford Rolls Out 2027 Mustang Mach-E Trail Package",
+    "source": "autoevolution",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdWlXdHJpR3RUTGRmZEFLc0sxd3Z4cG91WmtVT2xaemtvQ3NfTmRONDZLeDJ2dGNra2JIV0NwT2dNc3A5dUJWR2tQZHdSM0RIYi1LUFc0SUlMdHM3TFNreENpUUVkcVZQY0kzMm9FUHRVTTBIVkFuck9xMnNQRDRQYi1zTDdUb3UzUVZXb05GQjZCbXd4c3NEV0hsWQ?oc=5",
+    "published_at": "2026-10-22T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.autoevolution.com/news/ford-rolls-out-2027-mustang-mach-e-trail-package-277406.html",
+    "domain": "www.autoevolution.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford Rolls Out 2027 Mustang Mach-E Trail Package",
+    "source_item_id": "6972c0a2e049e6f6",
+    "resolved_at": "2026-11-01T15:28:37.521310+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.autoevolution.com/news/ford-rolls-out-2027-mustang-mach-e-trail-package-277406.html",
+    "attempts": 1,
+    "final_url": "https://www.autoevolution.com/news/ford-rolls-out-2027-mustang-mach-e-trail-package-277406.html",
+    "attempt_details": [
+      {
+        "url": "https://www.autoevolution.com/news/ford-rolls-out-2027-mustang-mach-e-trail-package-277406.html",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://www.autoevolution.com/news/ford-rolls-out-2027-mustang-mach-e-trail-package-277406.html"
+      }
+    ],
+    "title": "Ford Rolls Out 2027 Mustang Mach-E Trail Package - autoevolution",
+    "published_at_page": "2026-10-22T16:13:00+0000",
+    "title_score": 1.0,
+    "text_chars": 2466,
+    "content_hash": "2fc4486f55269e08",
+    "screenshot": "d266a8d98325.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:31:06.036496+00:00"
+  },
+  "text": "Beyond this change, Ford has opened the order banks for the 2027 Mustang Mach-E line. Across the board, the extended-range battery is now standard. This, in turn, pushes the entry price to $39,995 as opposed to $37,795 for the 2026 model.\nHaving cleared that up, what's in the package? Specially tuned passive struts and springs open the list, with said components lifting the front and rear axles 10 and 15 millimeters compared to the Select and Premium grades. That would be 0.4 and 0.6 inches in American English, which is not quite sufficient for the Mustang Mach-E Select eAWD Trail to be considered a true all-road machine.\nIts 19-inch High Gloss Dark Carbonized Gray as-cast graphics wheels and Michelin CrossClimate 2 rubber are shared with the Mustang Mach-E Rally, ensuring proper control and grip across a wide variety of surfaces and conditions. Also shared with the Rally is the steering rack.\nThe Carbon Black lower fascia and Trail logo on the center armrest bring the point home. As for the reason why the Ford Motor Company decided to develop this package, bear in mind the Rally is a lot pricier. With the Trail, the Dearborn-based automaker hopes to attract customers that would have otherwise looked elsewhere due to the Rally's exorbitant starting price.\nThe Clamp On Cross Bar Kit by Thule is the niche option, carrying gear boxes, bicycles, and kayaks on top of the vehicle. That being said, most versions of the 2027 Mustang Mach-E for the US market ship with an 88-kWh battery. The GT and Rally level up to 91 kilowatt-hours.\n$2,200 more expensive than before for its least exciting of specifications, the Mustang Mach-E drops the old secondary drive unit for a new design. While this front-mounted electric motor may deliver the same performance, Ford claims it does so at a lower cost. BlueCruise 1.5 is an extra on lesser grades, while GT and Rally get the suite by default.\nRegardless of grade, BlueCruise 1.5 comes with one year plus 90 days of service included. Both the Connectivity and Security packages go standard, with a year of service included. Shadow Black and Desert Sand are the only no-extra-cost paint colors, while extra-cost options include Velocity Blue Metallic, Race Red, Star White Metallic Tri-coat, Eruption Green Metallic, Adriatic Blue Metallic, and Glacier Gray Metallic.\nFoMoCo expects Trail shipments to kick off in the first quarter of 2027. Unfortunately, EPA driving range estimates will be announced later."
+}

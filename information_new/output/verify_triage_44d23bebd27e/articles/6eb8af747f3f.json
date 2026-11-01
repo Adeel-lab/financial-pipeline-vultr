@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "6eb8af747f3f",
+  "bucket": "7d",
+  "score": 0.5258,
+  "label": {
+    "topic": "earnings_financials",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "094ba932acd6c78b",
+    "title": "Stellantis Surges 10% on Reaffirmed Guidance and Accelerating Cost Savings; Ford Inches Higher, General Motors and Tesla Hold Steady",
+    "source": "24/7 Wall St.",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPZ2FSVVVOU3dNTk9qMGN5U0oxZE1yQll3Wk95Ykd2M1ctUVBDbGk5dmxvR1lualpWV1RnS1d0c0RyM3MxQUdLQkRwODNnc0c0ckoyQlZVWkNucFFRZ1ZSUHpKWF96WVl6YnNWblVTdDUwWWVuVTdDOHQ5M3hWaDJqSGJIWXphWG9QemRRdVRFb1ZLVVlPR214TERINXVoeUw3MEJoSHhjLTVrYU14eUlhdFktTVNxc3NueTlOTlpnaHdqbXcyQnQtYjExWXJldXJwR0RCWjFfTFVSX3RHbmRKQXR0elJNd1BYM1phLWZBM1pHZXZUVG10TGtqY3V3WFp1NzFF?oc=5",
+    "published_at": "2026-10-28T15:04:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://247wallst.com/investing/2026/10/28/stellantis-surges-10-on-reaffirmed-guidance-and-accelerating-cost-savings-ford-inches-higher-general-motors-and-tesla-hold-steady/",
+    "domain": "247wallst.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Stellantis Surges 10% on Reaffirmed Guidance and Accelerating Cost Savings; Ford Inches Higher, General Motors and Tesla Hold Steady",
+    "source_item_id": "094ba932acd6c78b",
+    "resolved_at": "2026-10-29T20:52:20.065700+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://247wallst.com/investing/2026/10/28/stellantis-surges-10-on-reaffirmed-guidance-and-accelerating-cost-savings-ford-inches-higher-general-motors-and-tesla-hold-steady/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://247wallst.com/investing/2026/10/28/stellantis-surges-10-on-reaffirmed-guidance-and-accelerating-cost-savings-ford-inches-higher-general-motors-and-tesla-hold-steady/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "Stellantis Surges 10% on Reaffirmed Guidance and Accelerating Cost Savings; Ford Inches Higher, General Motors and Tesla Hold Steady - 24/7 Wall St.",
+    "published_at_page": "2026-10-28T14:04:56+00:00",
+    "title_score": 1.0,
+    "text_chars": 4794,
+    "content_hash": "b4222b46c977e679",
+    "screenshot": "6eb8af747f3f.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:55:56.165792+00:00"
+  },
+  "text": "Stellantis Surges 10% on Reaffirmed Guidance and Accelerating Cost Savings; Ford Inches Higher, General Motors and Tesla Hold Steady\nStellantis is surging while its Detroit rivals barely twitch, but a brutal cash flow miss and mounting European losses raise the question of whether this relief rally has any real foundation beneath it.\nA confirmed 2026 outlook and a cost-cutting program that\u2019s gaining speed are sending Stellantis (NYSE:STLA | STLA Price Prediction) sharply higher, even as its Detroit rivals barely move. Stellantis stock sits at $4.57 early in the session, up 10%.\nChecking in on the peers, Ford Motor (NYSE:F) stock trails Stellantis at $12, up 0.7%. General Motors (NYSE:GM) stock is at $81, up 0.3%.\nStellantis Holds Its 2026 Guidance as Cost Savings Speed Up\nOn October 28, Stellantis disclosed its Q3 2026 net revenues of \u20ac37.6 billion, up 1% from a year earlier. Stellantis\u2019s net loss narrowed sharply to \u20ac453 million, far smaller than the loss it posted in the year-earlier quarter. That mix of barely higher sales and much smaller losses points to a recovery built on cost discipline more than volume.\nAdjusted operating income at Stellantis rose to \u20ac256 million from \u20ac90 million a year earlier, and the company\u2019s margin improved to 0.7% from 0.2%. Chief executive Antonio Filosa reaffirmed Stellantis\u2019s 2026 guidance, along with its expectation of positive industrial free cash flow in 2027. Holding that outlook answers the biggest question Stellantis faced heading into the report.\nAntonio Filosa said Stellantis remains on track. The company aims to implement at least 40% of the \u20ac6 billion run-rate efficiency target in its Value Creation Program by year-end. Bloomberg reported that Stellantis guided savings from the overhaul to as much as \u20ac600 million in Q4 2026, up from roughly \u20ac300 million in Q3. Accelerating savings could give Stellantis a buffer as raw material costs climb.\nNorth America swung back to profit. Stellantis posted an adjusted operating profit of \u20ac64 million, reversing a year-earlier loss, helped by new models such as the Ram 1500 Hemi and the Jeep Cherokee hybrid. Ram 1500 U.S. sales at Stellantis jumped 73% from a year earlier. Tariffs are biting less, too, with Stellantis now estimating full-year net tariff expense at about \u20ac1 billion, below its prior estimate of as much as \u20ac1.2 billion.\nStellantis Moves Apart From Detroit as Europe and Cash Flow Lag\nEurope was the weak spot. Stellantis\u2019s Enlarged Europe region swung to an adjusted operating loss of \u20ac311 million on lower prices and a shift toward less-profitable electric vehicles. Competition from Chinese makers such as BYD, along with Volkswagen and Renault, kept pressure on Stellantis in the region. Heavy European exposure sets Stellantis apart from Ford and General Motors, whose profits lean on U.S. trucks and SUVs backed by in-house lending arms.\nCash was the bigger concern, as Stellantis posted industrial free cash flow of negative \u20ac4 billion, missing analyst expectations, according to Bloomberg. Citi analyst Harald Hendrikse called it \u201cvery weak.\u201d He wrote that \u201cthe key question remains how\u201d Stellantis will improve profitability in North America and Europe, adding \u201cwe don\u2019t believe that product will be enough.\u201d Management at Stellantis also noted incremental cost headwinds from memory chips and recalls in Q4.\nDetroit\u2019s automakers are barely moving by comparison, and the sector\u2019s electric vehicle leader is just as calm. Tesla (NASDAQ:TSLA) stock is at $409, up 0.5%. Ford stock is down 7% year to date (YTD), and Tesla stock is down 9% over the same stretch.\nGeneral Motors stock is essentially flat YTD. Stellantis stock, by contrast, is down 58% YTD, a far deeper slide that helps explain the size of the relief move.\nStellantis Turnaround Faces Its Next Tests\nStellantis will soon find out whether Value Creation Program savings actually double in Q4 as guided. Dealer inventory is another marker, with Stellantis ending September at 368,000 U.S. units and 84 days of supply, an improvement from June. Reaching the 320,000 to 350,000 units Stellantis expects by year-end could ease discounting pressure, while a miss could keep dealer lots full into 2027.\nEurope\u2019s losses are the swing factor. Stability there could strengthen the bull case for Stellantis while deeper losses would support Citi\u2019s view that new products alone may fall short. More detail on the FaSTLAne 2030 plan could come at Stellantis\u2019s Maserati Day event in Modena on December 10. Auto loan rates could also shape car demand for Stellantis and its rivals, with the Federal Reserve\u2019s policy decision due October 28. A conservative approach could make sense while the debate over Stellantis\u2019s cash flow plays out.\nContact editorial@247wallst.com for any questions or corrections."
+}

@@ -1,0 +1,88 @@
+{
+  "company": "Ford (Hungary)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "Hungary"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [
+      "Ford vs BMW"
+    ],
+    "exclude": [
+      "Ford\\ US"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (Hungary)",
+    "slug": "ford-hungary",
+    "query": "\"Ford\" (Hungary)",
+    "scope_text": "Hungary",
+    "all_aliases": [
+      "Ford",
+      "Ford vs BMW"
+    ]
+  },
+  "event_id": "c41b15adef3d",
+  "bucket": "7d",
+  "score": 0.4379,
+  "label": {
+    "topic": "macro_competition",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 1,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "f5d4b6efaf9e54ec",
+    "title": "BYD now has 1.02 million employees \u2013 more than Toyota, GM, Ford and Tesla combined",
+    "source": "Mezha.net",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5rVjhjTjlsdXNtbGtPdklsMmhkbzJ1MFowdXRjYVJhYmRsUHRBMWRqQWZNTGtFSnZMUTBKM1VndTJBTVFNSDZ3b1BMbHZPUk5uOGRRSy1QX1YtWkJyWGxMQkpqaWdCT085a3hoaG81UXJLbkdZeTdoR2R3?oc=5",
+    "published_at": "2026-10-29T01:04:46+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://mezha.net/eng/news/mezha-42ef63bd12f112c82f7ffe7f_byd_now_has/",
+    "domain": "mezha.net",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "BYD now has 1.02 million employees \u2013 more than Toyota, GM, Ford and Tesla combined",
+    "source_item_id": "f5d4b6efaf9e54ec",
+    "resolved_at": "2026-10-30T19:49:11.031068+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://mezha.net/eng/news/mezha-42ef63bd12f112c82f7ffe7f_byd_now_has/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://mezha.net/eng/news/mezha-42ef63bd12f112c82f7ffe7f_byd_now_has/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "BYD now has 1.02 million employees \u2013 more than Toyota, GM, Ford and Tesla combined",
+    "published_at_page": "2026-10-29T00:43:02+00:00",
+    "title_score": 1.0,
+    "text_chars": 4898,
+    "content_hash": "b7855e27f8280211",
+    "screenshot": "c41b15adef3d.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "Hungary"
+    ],
+    "retrieved_at": "2026-10-30T19:49:28.652461+00:00"
+  },
+  "text": "BYD now has 1.02 million employees \u2013 more than Toyota, GM, Ford and Tesla combined\nPhoto source: Electrek\nBYD says its workforce has topped 1.02 million, about 170,000 more people than Toyota, GM, Ford and Tesla employ combined. Most work in China, and the total includes the company\u2019s electronics, battery and other businesses as well as its car operations.\nBYD chairman Wang Chuanfu gave the latest headcount at the China Society of Automotive Engineers\u2019 33rd annual conference on Wednesday. He said about 960,000 employees are in China and 60,000 abroad, with up to 120,000 working as R&D engineers on battery cells, motors, electronic controls and semiconductors.\nThis is reported by Electrek.\nThe figure is roughly 150,000 higher than BYD\u2019s reported 869,600 employees at the end of 2025. Data compiled by S&P Global Market Intelligence put the company at 911,900 employees at the end of June, implying an increase of more than 100,000 in about four months.\nBYD\u2019s workforce has grown and contracted sharply in recent years. The company had about 570,100 employees at the end of 2022 and 703,500 at the end of 2023. It passed 900,000 in September 2024, when it also claimed the largest R&D workforce of any automaker, with more than 110,000 engineers. BYD ended 2024 with 968,900 employees, then cut about 99,000 by the end of 2025, mostly from frontline production jobs.\nWang credited vertical integration for BYD\u2019s scale, saying the company keeps batteries, chips and motors in-house. Founded in 1994 as a battery maker, BYD has become the world\u2019s top-selling new energy vehicle brand for several years running. Wang described the company\u2019s rise as a reflection of China\u2019s auto industry moving from follower to leader.\nBYD\u2019s headcount is larger than that of other major automakers. Volkswagen Group, including its Chinese joint ventures, reported 662,942 employees at the end of 2025. Toyota had 390,927 as of March 31, 2026, while Stellantis reported 258,668 at the end of 2025. Ford ended 2025 with 169,000 employees and GM with 156,000. Tesla\u2019s latest 10-K reported 134,785 employees worldwide. Toyota, GM, Ford and Tesla together had about 851,000.\nEmployee totals do not directly measure output. BYD sold about 4.6 million vehicles in 2025, or 5.3 per year-end employee. Tesla delivered 1,636,129 vehicles, about 12 per employee, and Volkswagen Group produced a ratio of about 13.5. Toyota sold 11.3 million vehicles, including Daihatsu and Hino, or roughly 29 per employee.\nThose comparisons do not account for the breadth of BYD\u2019s businesses. Its headcount includes BYD Electronic, a majority-owned contract manufacturer that assembles devices for other brands and reported 165,000 employees at the end of 2025. It also includes the battery business, which supplies other automakers, as well as operations in chips, motors, energy storage and rail transit. The company\u2019s vertical integration is a major reason its workforce is so large.\nBYD sold 3,131,576 vehicles in the first nine months of 2026, down 3.9% year over year. September was its best month of the year, with 463,561 sales, but the company has faced a price war in China and lost ground to competitors including Geely and Leapmotor. First-half revenue was 344.8 billion yuan and net profit was 12.3 billion yuan, both lower year over year.\nInternational sales reached 1,342,960 vehicles through September, up 92.7% year over year and about 43% of BYD\u2019s total volume. The company also again surpassed Tesla in pure electric vehicle deliveries in the second quarter. Despite that overseas growth, only about 60,000 of BYD\u2019s 1.02 million employees work outside China \u2013 around 6%. Its factories in Thailand, Brazil and Hungary are coming online as tariffs in Europe, Brazil, Mexico and elsewhere push the company toward local production.\nThe employee count alone is not a clear measure of strength. BYD\u2019s integrated model helps it sell the Seagull for around $10,000 in China while still making money, but it relies on a large workforce and relatively cheap, plentiful factory labor in China. As the company expands overseas, it remains to be seen whether local factories can deliver the same model. The scale of its R&D workforce \u2013 up to 120,000 people, nearly as many as Tesla\u2019s total headcount \u2013 is another notable part of the comparison.\nRead also:\n- Chinese car manufacturers are poised to enter the US market within the next decade, potentially boosting competition and lowering prices, especially in the electric vehicle segment.\n- South Africa\u2019s new 150% tax deduction seeks to attract electric vehicle manufacturing, but weak infrastructure, high costs, limited demand and uncertain policy threaten its position against Asian competitors.\n- Federal Reserve Chair Jerome Powell highlights the delicate balance between reducing inflation and supporting the labor market amid economic uncertainties and policy challenges."
+}

@@ -1,0 +1,87 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "230ab43ef700",
+  "bucket": "30d",
+  "score": 0.4271,
+  "label": {
+    "topic": "macro_competition",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "2a6df6b1f385fd88",
+    "title": "Ford Plans to Overtake Toyota in a Critical Business. Here's Why It Matters.",
+    "source": "The Motley Fool",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPV3Z6ZU82NXEwbUFuNDJFLTQ3SWZxeExrOXMzYU9fdDhKbV9SRWd5eVhrYVBYck1WaXBOd3o0cUpnUHo3RWdPS25aZmZVcXdhU2xmRkl4WVQ5aVdrS0FFczNGUXRtbVFfRW15cnJDTElEdUdaeW13cDRBQWppdmx0WGRRTHBuLXVieFY3b20xVVJoUmRIWVE?oc=5",
+    "published_at": "2026-10-22T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.fool.com/investing/2026/10/22/ford-plans-overtake-toyota-critical-business-cpo/",
+    "domain": "www.fool.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford Plans to Overtake Toyota in a Critical Business. Here's Why It Matters.",
+    "source_item_id": "2a6df6b1f385fd88",
+    "resolved_at": "2026-11-01T15:28:37.521353+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.fool.com/investing/2026/10/22/ford-plans-overtake-toyota-critical-business-cpo/",
+    "attempts": 1,
+    "final_url": "https://www.fool.com/investing/2026/10/22/ford-plans-overtake-toyota-critical-business-cpo/",
+    "attempt_details": [
+      {
+        "url": "https://www.fool.com/investing/2026/10/22/ford-plans-overtake-toyota-critical-business-cpo/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://www.fool.com/investing/2026/10/22/ford-plans-overtake-toyota-critical-business-cpo/"
+      }
+    ],
+    "title": "Ford Plans to Overtake Toyota in a Critical Business. Here's Why It Matters. | The Motley Fool",
+    "published_at_page": "2026-10-22T11:45:00.000Z",
+    "title_score": 1.0,
+    "text_chars": 3257,
+    "content_hash": "5c6dc4c38779225d",
+    "screenshot": "230ab43ef700.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:30:55.853969+00:00"
+  },
+  "text": "About a year ago, Ford Motor Company (F -0.89%) made an intriguing move by partnering with online retailer juggernaut Amazon (AMZN -1.41%) that many investors overlooked. That was when Ford announced it would sell Ford Blue Advantage vehicles, or certified pre-owned (CPO) vehicles, on Amazon Autos.\nLet's peel back the outer layers of this move, which has helped boost Ford's CPO sales by 44% during the third quarter and surpassed Toyota's (TM -0.47%) volume for the first time. Here's exactly why Ford's expanding CPO sales is a great thing for long-term investors.\nPedal to the metal\nFord is well on its way to topping its 500,000 CPO sales target for 2027, which will likely remove Toyota from its spot as the industry's top certified seller. Better still, Ford's impressive 44% gain in CPO sales during Q3 comes with the industry's CPO sales declining 2.5% through August, according to Automotive News Data Center. This is all great news, but let's explain exactly how and why this is great news for long-term investors.\nFord launched its dealer-led CPO program, Ford Blue Advantage, in 2021. About 70% of Ford's 2,800 U.S. dealerships participate in the program, which also launched a similar program for Ford Pro commercial vehicles. What's interesting about Ford's CPO business is that when consumers buy a non-certified used vehicle, they return to the manufacturer only about 30% of the time. When that sale is for a certified vehicle, the consumer remains loyal and returns to the brand more than half the time.\n\"The biggest part that I press on our dealers of why it's important to certify the vehicles is that connectivity back to the brand,\" according to Rob Kaffl, Ford's director of U.S. sales and dealer relations. \"You have an audience that we can now market to moving forward for a new vehicle or any of our other services.\"\nWhy CPO sales are important\nAnother big part of the CPO business for Ford is that after discontinuing the Escape and Lincoln Corsair last year, it has fewer entry-level options for consumers. CPO sales help the Detroit automaker fill this void for budget-conscious buyers and gives Ford another way for its dealers to retain and attract consumers.\nF Ford Motor Company\nNYSE · As of 4:00 PM ET 10/30/26\nKey data points\nCPO sales can also move the needle for Ford's overall sales, as it has started giving dealers certificates for each sale through its Ford Blue Advantage program, which effectively serves as an incentive to help lower new-vehicle prices. Ford's CPO sales have grown 96% since beginning in 2021 and are on pace to double its first six months of 2026 CPO sales during the second half of the year.\nInvestors shouldn't underestimate the importance of Ford's expanding CPO program because consumer loyalty in the automotive industry is incredibly powerful and \"conquesting\" consumers from a rival brand can be costly. Increasing loyalty, filling the void of entry-level options, and creating a new car sales pipeline through dealer certificates and incentives can move the needle for new vehicle purchases. All in all, if Ford executes and indeed surpasses Toyota in CPO sales next year, it's just one more reason to believe Ford is still turning into a well-rounded business for long-term investors."
+}

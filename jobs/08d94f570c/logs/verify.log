@@ -1,0 +1,45 @@
+
+===== 2026-10-30 17:33:07  verify: verify.py --input C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\news\triage_257c40182117 --base C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\news
+2026-10-30 17:33:18,025 WARNING discarding data: None
+2026-10-30 17:33:21,409 WARNING discarding data: None
+2026-10-30 17:33:22,883 WARNING discarding data: None
+2026-10-30 17:33:28,871 WARNING page error https://motorillustrated.com/general-motors-oshawa-plant-will-stop-production-of-the-chevrolet-silverado-1500/198496/: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://motorillustrated.com/general-motors-oshawa-plant-will-stop-production-of-the-chevrolet-silverado-1500/198496/
+Call log:
+  - navigating to "https://motorillustrated.com/general-motors-oshawa-plant-will-stop-production-of-the-chevrolet-silverado-1500/198496/", waiting until "domcontentloaded"
+
+  10/40 done
+2026-10-30 17:33:42,934 WARNING discarding data: None
+2026-10-30 17:33:44,742 WARNING discarding data: None
+  20/40 done
+2026-10-30 17:33:49,128 WARNING discarding data: None
+2026-10-30 17:33:52,361 WARNING discarding data: None
+  30/40 done
+2026-10-30 17:33:59,405 WARNING discarding data: None
+2026-10-30 17:34:02,648 WARNING discarding data: None
+  40/40 done
+{
+  "stage": "verification",
+  "generated_at": "2026-10-30T16:34:04.030655+00:00",
+  "input": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\news\\triage_257c40182117",
+  "n_events": 40,
+  "statuses": {
+    "ok": 33,
+    "paywall": 2,
+    "blocked": 3,
+    "thin_content": 2
+  },
+  "duplicates_removed": 0,
+  "by_company": {
+    "General Motors": {
+      "ok": 33,
+      "paywall": 2,
+      "blocked": 3,
+      "thin_content": 2
+    }
+  },
+  "avg_text_chars": 3713,
+  "screenshots": 33,
+  "min_title_score": 0.34,
+  "require_location": false
+}
+saved -> C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\news\verify_triage_257c40182117

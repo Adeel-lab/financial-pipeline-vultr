@@ -1,0 +1,25 @@
+{
+  "stage": "verification",
+  "generated_at": "2026-10-30T16:34:04.030655+00:00",
+  "input": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\news\\triage_257c40182117",
+  "n_events": 40,
+  "statuses": {
+    "ok": 33,
+    "paywall": 2,
+    "blocked": 3,
+    "thin_content": 2
+  },
+  "duplicates_removed": 0,
+  "by_company": {
+    "General Motors": {
+      "ok": 33,
+      "paywall": 2,
+      "blocked": 3,
+      "thin_content": 2
+    }
+  },
+  "avg_text_chars": 3713,
+  "screenshots": 33,
+  "min_title_score": 0.34,
+  "require_location": false
+}

@@ -1,0 +1,8 @@
+
+===== 2026-10-30 18:12:52  rca_1: rca.py run --draft C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\swot\swot_20261030T165041\swot_draft.json --company=General Motors --max-whys 5 --out C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\rca --item=fin:quick_ratio
+NOTE: fin:quick_ratio is still 'proposed' (not human-approved).
+RCA: fin:quick_ratio
+  Why 1 ...
+[llm] answered by: openai/gpt-oss-120b
+  outcome: stopped_insufficient_evidence
+  Saved -> C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\rca\rca_fin_quick_ratio.json / .md

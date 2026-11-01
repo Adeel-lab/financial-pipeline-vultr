@@ -1,0 +1,50 @@
+
+===== 2026-10-30 17:34:04  sentiment: sentiment.py --input C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\news\verify_triage_257c40182117 --base C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\news
+guard: 33 ok articles -> 33 kept (0 consent pages, 0 duplicate texts dropped)
+33 articles | mode: LLM openai/gpt-oss-120b
+[1/33] General Motors     -0.35 llm     GM's $220M Driving Data Deal: Do Drivers Get Paid?
+[2/33] General Motors     -0.20 llm     General Motors Reports 5% Drop in Q3 Vehicle Sales as EV Dem
+[3/33] General Motors     -0.80 llm     General Motors' 2026 sales down from last year
+[4/33] General Motors     +0.60 llm     GM to switch listing from NYSE to Nasdaq as it accelerates A
+[5/33] General Motors     +0.30 llm     GM investing $750 million to build hybrid crossovers at Mich
+[6/33] General Motors     -0.60 llm     Troy teen injured in e-bike crash sues GM; automaker withdra
+[7/33] General Motors     +0.00 llm     General Motors Fined $220 Million for Selling Drivers’ Data 
+[8/33] General Motors     +0.60 llm     GM Expands Hybrid SUV Production at Lansing Plant
+[9/33] General Motors     -0.70 llm     EXCLUSIVE: GM cancels deal with new US rare-earth magnet pla
+[10/33] General Motors     -0.65 llm     AG Mayes: General Motors to pay $220M for illegal sale of cu
+[11/33] General Motors     +0.80 llm     GM Forward: Engineering the intelligence-defined vehicle for
+[12/33] General Motors     -0.65 llm     Vermont AG announces settlement with General Motors
+[13/33] General Motors     -0.20 llm     General Motors beats Wall Street's Q3 earnings expectations,
+[14/33] General Motors     -0.60 llm     Maine to receive nearly $3M in multi-state data privacy sett
+[15/33] General Motors     -0.20 llm     General Motors’ Oshawa Plant Will Stop Production of the Che
+[16/33] General Motors     +0.40 llm     EXCLUSIVE: GM to offer hybrid SUVs in strategic pivot from e
+[17/33] General Motors     -0.60 llm     General Motors agrees to $220 million payout in Oregon-led d
+[18/33] General Motors     +0.20 llm     GM leaving NYSE for Nasdaq; Rimac on landing BMW’s battery b
+[19/33] General Motors     +0.80 llm     GM is turning to AI to slash vehicle development time. What 
+[20/33] General Motors     +0.00 llm     GM to close battery plant, repurpose hydrogen plant in Detro
+[21/33] General Motors     +0.40 llm     GM is giving OnStar an AI makeover
+[22/33] General Motors     +0.70 llm     GM, Cirba Solutions Extend Battery Recycling Partnership
+[23/33] General Motors     +0.70 llm     GM to put an ‘AI assistant’ in cars, betting on a ‘lifestyle
+[24/33] General Motors     +0.40 llm     GM says hybrid vehicles are coming: 'We're not tone deaf to 
+[25/33] General Motors     +0.20 llm     GM Mexico Announces Leadership Changes
+[26/33] General Motors     -0.20 llm     Mary Barra Pushes GM into A.I. and Autonomous Driving
+[27/33] General Motors     -0.40 llm     General Motors in two disputes over electric vehicle parts
+[28/33] General Motors     -0.30 llm     Hybrid-heavy Toyota closes in on GM’s U.S. sales lead
+[29/33] General Motors     +0.20 llm     GM Plans $20 Billion in Buybacks, but Warns of Bumpy 2027
+[30/33] General Motors     +0.20 llm     General Motors narrows 2026 outlook, approves US$20 bil shar
+[31/33] General Motors     -0.10 llm     General Motors chief accounting officer to retire in April 2
+[32/33] General Motors     +0.00 llm     GM's third-quarter US sales fall
+[33/33] General Motors     +0.00 llm     General Motors says to invest in Lansing Delta Township Asse
+
+=== General Motors === net sentiment 0.02 | {'threat': 10, 'neutral': 13, 'opportunity': 10} | coverage {'events_selected': 40, 'events_with_full_text': 33, 'events_headline_only': 7}
+  Opportunities:
+    +0.80  [30d] GM is turning to AI to slash vehicle development time. What it means
+    +0.40  [7d] EXCLUSIVE: GM to offer hybrid SUVs in strategic pivot from electric
+    +0.60  [7d] GM to switch listing from NYSE to Nasdaq as it accelerates AI push
+  Threats:
+    -0.80  [30d] General Motors' 2026 sales down from last year
+    -0.70  [7d] EXCLUSIVE: GM cancels deal with new US rare-earth magnet plant, documents say
+    -0.65  [24h] AG Mayes: General Motors to pay $220M for illegal sale of customer driving behavior to ins
+
+LLM ok/failed calls: 33/0
+saved -> C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\news\sentiment_triage_257c40182117

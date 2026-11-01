@@ -1,0 +1,85 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "6639f5b4a2d4",
+  "bucket": "7d",
+  "score": 0.8159,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 4,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "7d6f8e89a455f8f2",
+    "title": "EXCLUSIVE: GM to offer hybrid SUVs in strategic pivot from electric",
+    "source": "Reuters",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSEJFVWVjR3Y2ekp3X2hVSGVuOHplSWZiT296X3c0QnlWV2NQd1BfTjRqOFJNbGhLWk00cEJ2MERfUlJfQndsU2FFcGh6dTZTcFh0bUpWdlpaeUJUZ0VJMWRreFZ1YURfQndSc3Y2SkxsTklkNXNlNE9tanpjSVRZZWtWN290aTFIcXh5STh6RGs?oc=5",
+    "published_at": "2026-10-27T18:53:32+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.reuters.com/business/gm-plans-offer-hybrid-suvs-strategic-pivot-2026-10-27/",
+    "domain": "www.reuters.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "EXCLUSIVE: GM to offer hybrid SUVs in strategic pivot from electric",
+    "source_item_id": "7d6f8e89a455f8f2",
+    "resolved_at": "2026-10-30T16:32:41.606023+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.staradvertiser.com/2026/10/27/hawaii-news/gm-plans-to-offer-hybrid-suvs-in-strategic-pivot/",
+    "attempts": 2,
+    "attempt_details": [
+      {
+        "url": "https://www.reuters.com/business/gm-plans-offer-hybrid-suvs-strategic-pivot-2026-10-27/",
+        "status": "paywall",
+        "http_status": 401,
+        "title_score": null
+      },
+      {
+        "url": "https://www.staradvertiser.com/2026/10/27/hawaii-news/gm-plans-to-offer-hybrid-suvs-in-strategic-pivot/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.857
+      }
+    ],
+    "title": "GM plans to offer hybrid SUVs in strategic pivot | Honolulu Star-Advertiser",
+    "published_at_page": "2026-10-27T00:00:00-10:00",
+    "title_score": 0.857,
+    "text_chars": 2019,
+    "content_hash": "c6a15b2075ae6555",
+    "screenshot": "6639f5b4a2d4.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:52.670373+00:00"
+  },
+  "text": "GM plans to offer hybrid SUVs in strategic pivot\nDETROIT >> General Motors plans to introduce hybrid versions of its popular three-row SUVs, a strategic shift after heavily investing in electric vehicles, according to people familiar with the matter.\nThe automaker plans to build hybrid models of the Chevrolet Traverse, Buick Enclave and GMC Acadia at a factory in Lansing, Michigan, the people said. Combined, those mechanically similar models are among GM\u2019s strongest sellers in the U.S.\nSources did not provide a timeline for when the new hybrid models will hit the market.\nGM CEO Mary Barra told analysts during the company\u2019s earnings call last week that the automaker would have hybrids in multiple segments.\n\u201cWe will have hybrids. They\u2019ve already been added. It\u2019s not going to be additional (capital expenditures) and engineering,\u201d she said. \u201cWe\u2019ll talk more about them as we get closer to the launch.\u201d\nU.S. hybrid sales have taken off this year as car shoppers seek relief from higher gas prices. GM, which only sells a hybrid version of the Chevy Corvette in the U.S., has lost market share this year, while strong hybrid players like Toyota have gained.\nDon't miss out on what's happening!\nStay in touch with breaking news, as it happens, conveniently in your email inbox. It's FREE!\nGM dealers have complained about the automaker\u2019s lack of hybrids, which combine a gas engine with a lithium-ion battery and electric motor to conserve fuel and boost power.\nDealers have been pressing the company to add hybrids to its lineup, including during recent regional meetings between retailers and GM sales executives, according to dealers who have attended.\n\u201cWe\u2019ve been telling them every chance we get that we need hybrids,\u201d one dealer said.\nGM executives in the past have said that hybrids add too much cost and complexity, and that they preferred to invest in EVs.\nGM\u2019s U.S. market share dropped to 16.6% in the first nine months of the year, from 17.4% a year prior, while hybrid leaders Toyota and Honda gained."
+}

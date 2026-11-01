@@ -1,0 +1,44 @@
+
+===== 2026-11-01 16:23:42  finance_preview: financial_gate.py --company=Ford --balance C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\da143b749c\inputs\balance.csv --income C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\da143b749c\inputs\income.csv --outdir C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\da143b749c\finance --units millions --frequency auto --currency=USD --report-only
+
+=== Ford | annual | periods 2020-12-31 .. 2025-12-31 (6) | status: ready_for_review ===
+field                status             source row                                                 periods
+current_assets       proposed_exact     Assets, Current                                              6/6
+current_liabilities  proposed_exact     Liabilities, Current                                         6/6
+cash                 proposed_exact     Cash and Cash Equivalents, at Carrying Value                 6/6
+short_investments    proposed_exact     Marketable Securities, Current                               6/6
+inventory            proposed_exact     Inventory, Net                                               6/6
+receivables          proposed_exact     Accounts Receivable, after Allowance for Credit Lo           6/6
+ppe                  proposed_exact     Property, Plant and Equipment, Net                           6/6
+total_assets         proposed_exact     Assets                                                       6/6
+total_liabilities    proposed_exact     Liabilities                                                  6/6
+equity               proposed_exact     Stockholders' Equity Attributable to Parent                  6/6
+retained_earnings    proposed_exact     Retained Earnings (Accumulated Deficit)                      6/6
+short_debt           proposed_exact     DebtCurrent                                                  6/6
+long_debt            proposed_exact     LongTermDebtAndCapitalLeaseObligations                       6/6
+revenue              proposed_exact     Revenue from Contract with Customer, Excluding Ass           6/6
+cogs                 proposed_exact     Cost of Goods and Services Sold                              6/6
+gross_profit         derived            revenue - cogs                                               6/6
+operating_income     proposed_exact     Operating Income (Loss)                                      6/6
+net_income           llm_proposed       Net Income (Loss), Including Portion Attributable            6/6
+interest_expense     proposed_exact     Interest Expense, Debt                                       1/6
+total_debt           derived            short_debt + long_debt                                       6/6
+
+WARNING (9)
+  - short_debt: 2024-12-31 -> 2025-12-31 changes by -90%; check the row definition did not change
+  - short_debt: 2020-12-31 -> 2021-12-31 changes by +3796%; check the row definition did not change
+  - long_debt: 2024-12-31 -> 2025-12-31 changes by -81%; check the row definition did not change
+  - long_debt: 2020-12-31 -> 2021-12-31 changes by +24367%; check the row definition did not change
+  - interest_expense: no value for 2025-12-31, 2024-12-31, 2023-12-31, 2022-12-31, 2021-12-31
+  - total_debt: 2024-12-31 -> 2025-12-31 changes by -84%; check the row definition did not change
+  - total_debt: 2020-12-31 -> 2021-12-31 changes by +7827%; check the row definition did not change
+  - ppe: different source rows supply different periods: Property, Plant and Equipment, Net, Property, Plant, and Equipment and Finance Lease Right-of-Use Asset, after Accumulated Depreciation and Amortization. The definition may change between periods.
+  - long_debt: different source rows supply different periods: Long-term Debt, Excluding Current Maturities, LongTermDebtAndCapitalLeaseObligations. The definition may change between periods.
+
+INFO (1)
+  - net_income: row 'Net Income (Loss), Including Portion Attributable to Noncontrolling Interest' was proposed by the model (99%) - Total net income line
+
+LIMITATIONS (1):
+  - interest_coverage: not available for the latest period (2025-12-31)
+
+proposal saved -> C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\da143b749c\finance\financial_ford_20261101T152348\gate_report.json

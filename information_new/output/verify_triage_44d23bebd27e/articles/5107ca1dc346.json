@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "5107ca1dc346",
+  "bucket": "30d",
+  "score": 0.6956,
+  "label": {
+    "topic": "earnings_financials",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 4,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "7d41cd012aef9a84",
+    "title": "General Motors beats Wall Street's Q3 earnings expectations, narrows full-year guidance",
+    "source": "CNBC",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1IMWE1MVhZSW5sc0Q4NlFGbW1lek1Yclo2dVFGOGkwZnNUbk01ejNJYnZhNmFkaDBGVWNIS21jdUs0ZjBxYWg0TGh2QWlIQWpGQ3lLdm13T1BZTnAxT1VsWTdtbk5aUVlXeXlkd2xfM2I5Z2RVTzlrWWh6QdIBgAFBVV95cUxNNmMzUnhUbG10RmJRLW9BNlRfOVRyV1JYYWljWWFwbk05UGZQSGl2TFA3SHFEU2JpQW9vVDkzUW1aWi1NUGx1N21ZR3B4SG1UdkhpdGJ0dERIZG1HWWlaUnlFTHlyN0ppS1J1MnZJNzUwcXg5V2RYN25KdXF4a2Utcw?oc=5",
+    "published_at": "2026-10-20T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.cnbc.com/2026/10/20/general-motors-gm-earnings-q3-2026.html",
+    "domain": "www.cnbc.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "General Motors beats Wall Street's Q3 earnings expectations, narrows full-year guidance",
+    "source_item_id": "7d41cd012aef9a84",
+    "resolved_at": "2026-10-29T20:52:20.065450+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.cnbc.com/2026/10/20/general-motors-gm-earnings-q3-2026.html",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.cnbc.com/2026/10/20/general-motors-gm-earnings-q3-2026.html",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.7
+      }
+    ],
+    "title": "General Motors (GM) earnings Q3 2026",
+    "published_at_page": "2026-10-20T04:01:01+0000",
+    "title_score": 0.7,
+    "text_chars": 4109,
+    "content_hash": "1a00f55fd892d7fe",
+    "screenshot": "5107ca1dc346.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:13.434433+00:00"
+  },
+  "text": "DETROIT \u2014 General Motors narrowed its 2026 earnings guidance and raised its free cash flow expectations after beating Wall Street's third-quarter expectations.\nThe Detroit automaker also announced a new multiyear stock buyback of $20 billion after GM completed a $6 billion share repurchase program that was announced in January. GM did not disclose a specific time to complete the program.\nDespite the positive news, GM stock fell nearly 7% during trading Tuesday as the company's outlook missed Wall Street's expectations.\nWall Street analysts were mixed before the report on whether GM would raise its guidance Tuesday amid concerns of slowing sales and rising commodity costs. Analysts' expectations included a midpoint of $13.41 per share for the year compared with GM's new $13.25 per share midpoint, according to LSEG.\nSeveral analysts in investor notes Tuesday said GM's third-quarter results were solid, but raised concerns about whether higher costs and pressures on vehicle pricing would limit earnings growth next year.\nHere's how GM performed in the third quarter, compared with average estimates compiled by LSEG:\nEarnings per share: $3.70 adjusted vs. $3.63 expected\nRevenue: $50.02 billion vs. $48.7 billion expected\nGM's new guidance includes adjusted earnings before interest and taxes of between $14.5 billion and $15.5 billion, or $12.75 to $13.75 adjusted earnings per share, and adjusted automotive free cash flow of between $11.5 billion and $12.5 billion.\nThat compares with its raised guidance from July that included adjusted EBIT of between $14 billion and $16 billion, or $12 to $14 adjusted EPS, and adjusted automotive free cash flow of $9.5 billion to $11.5 billion.\n\"I think the market's been pretty consistent from what we've said all year,\" GM CFO Paul Jacobson told CNBC's Phil LeBeau. \"Our fourth quarter's going to be down sequentially. ... I think the fact that we're able to hold our guidance in the face of that late inflationary pressure in the year is another sign of the GM team executing really well.\"\nMary Barra, chair and chief executive officer of General Motors Co., during a news conference at the Hudson's building in Detroit, Michigan, US, on Monday, April 15, 2024.\nJeff Kowalsky | Bloomberg | Getty Images\nGM on Tuesday said it expects commodity inflation costs to be around $2 billion, which was the high end of its previous guidance. That includes higher costs for logistics and dynamic random-access memory, or DRAM, chips that are impacting multiple industries.\nWhile the inflationary costs were at the automaker's high end of guidance, GM said its gross tariff costs are expected to be at the low end of its expected $2.5 billion to $3.5 billion range. Warranty costs are expected to be at high end between $1 billion and $1.5 billion, GM said.\nJacobson said vehicle pricing is relatively flat as inflationary costs continue to increase. He said the company would assess where consumers are in the coming year when deciding if it should pass costs along by raising prices more than normal.\n\"GM is performing well, and we are working hard to continue our momentum despite growing inflationary pressures through strategic investments in new products and services, and through improved quality and operating efficiency,\" GM CEO Mary Barra said Tuesday in a letter to shareholders.\nThe automaker also said the costs of its pullback in all-electric vehicles announced last year were \"substantially completed,\" saying it has recorded $11.2 billion in such charges since the second half of last year, including paying $4.6 billion of $7.4 billion in cash through the third quarter.\nThe company's net income attributed to stockholders was $3.3 billion during the third quarter, up roughly $2 billion from a year earlier.\nGM's North American operations continued to lead the automaker's results, accounting for $3.6 billion of its $4.1 billion in adjusted EBIT results during the third quarter.\nGM's 2025 third-quarter results included $48.59 billion in revenue, net income attributable to stockholders of $1.3 billion and earnings per share of $2.80 adjusted."
+}

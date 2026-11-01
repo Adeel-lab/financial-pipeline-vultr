@@ -1,0 +1,85 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "e59631f0db93",
+  "bucket": "30d",
+  "score": 0.5942,
+  "label": {
+    "topic": "earnings_financials",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "931927ac4c4f7ded",
+    "title": "GM Plans $20 Billion in Buybacks, but Warns of Bumpy 2027",
+    "source": "WSJ",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcGZSd2xXLXlQSjl1UTNEUGRUSlhfdWg3dHBlMkNXS2p1US1JSG9KU1dnbS15SlBjV0Q5YUg5Z0xXZDlLdm5uOEpMQVhzSlg4MlMwNGhxQnoyYmFzcnNrNnowVjktdXlxamtxQ0VnOU5YdmtWSUQyVHRZTzZLdllxcTFvVXA5NkFUbnp6TFEtNk9mVE9vN0QxbzRyNmJ0cFdBVElfYWFMUzRJVkNkVlk3cg?oc=5",
+    "published_at": "2026-10-20T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.wsj.com/business/autos/general-motors-plans-20-billion-in-buybacks-to-shore-up-share-price-a857e6fe",
+    "domain": "www.wsj.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM Plans $20 Billion in Buybacks, but Warns of Bumpy 2027",
+    "source_item_id": "931927ac4c4f7ded",
+    "resolved_at": "2026-10-30T16:32:41.606143+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.moomoo.com/news/post/1001707705/dow-jones-top-company-headlines-at-7-am-et-general",
+    "attempts": 2,
+    "attempt_details": [
+      {
+        "url": "https://www.wsj.com/business/autos/general-motors-plans-20-billion-in-buybacks-to-shore-up-share-price-a857e6fe",
+        "status": "paywall",
+        "http_status": 401,
+        "title_score": null
+      },
+      {
+        "url": "https://www.moomoo.com/news/post/1001707705/dow-jones-top-company-headlines-at-7-am-et-general",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.6
+      }
+    ],
+    "title": "Dow Jones Top Company Headlines at 7 AM ET: General Motors Plans $20 Billion in Buybacks to Shore Up Share Price | Amazon ...",
+    "published_at_page": "2026-10-20T19:00:00+08:00",
+    "title_score": 0.6,
+    "text_chars": 6113,
+    "content_hash": "ddec0ebc97742813",
+    "screenshot": "e59631f0db93.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:53.077677+00:00"
+  },
+  "text": "Unity Software(U.US) reported fourth-quarter financial results after the market close on Monday. Here's a rundown of the report.Q4 Earnings: Unity said fourth-quarter revenue increased 35% year-over-year to $609 million, beating the consensus estimate of $562.71 million. The company reported a quarterly loss of 66 cents per share.\n-   Products\n  - Securities\n  - Prediction Markets\n  - Cash Management\n  - Agentic Trading\n-   Features\n-   Moomoo Engine\n-   Market Analysis\n  - Real-time Quotes\n  - Technical Tools\n  - Trading News\n-   Promotions\n-   Pricing\n-   Resources\n  - Strategies and Insights\n  - Moomoo Guide\n  - Moomoo Lessons\n  - Moomoo Community\n- Support\n-   About Us\n  - About moomoo\n  - Moomoo Highlights\n  - Influencer Program\n  - Investor RelationsYou will leave moomoo.com and for FUTU holdings Ltd. website.\n- English\n- \u4e2d\u6587\u7e41\u9ad4\n- \u4e2d\u6587\u7b80\u4f53\n- Dark\n- Light\nWe use cookies and other tracking technologies to improve your experience, analyse site performance, show customised ads, and measure the effectiveness of our ads. By accepting, you are agreeing to our and our partners\u2019 use of these technologies. Some of these technologies are essential for our site to work, but you can control how we use non-essential technologies. To opt out of non-essential marketing cookies, click the button \"Reject Non-essential\" position. You can manage your preferences at any time through settings. For more information, see our Privacy Policy and Your Privacy Choices.\n- Headlines\n- Dow Jones Top Company Headlines at 7 AM ET: General Motors Plans $20 Billion in Buybacks to Shore Up Share Price | Amazon ...\nDow Jones Top Company Headlines at 7 AM ET: General Motors Plans $20 Billion in Buybacks to Shore Up Share Price | Amazon ...\nDue to copyright issues, news from Dow Jones is temporarily unavailable for automatic translation.\nMoomoo is a financial information and trading app offered by Moomoo Technologies Inc.\nIn the U.S., investment products and services available through the moomoo app are offered by Moomoo Financial Inc., a broker-dealer registered with the U.S. Securities and Exchange Commission (SEC) and a member of Financial Industry Regulatory Authority (FINRA)/Securities Investor Protection Corporation (SIPC).\nIn Singapore, investment products and services available through the moomoo app are offered through Moomoo Financial Singapore Pte. Ltd. regulated by the Monetary Authority of Singapore (MAS). Moomoo Financial Singapore Pte. Ltd. is a Capital Markets Services Licence (License No. CMS101000) holder with the Exempt Financial Adviser Status. This advertisement has not been reviewed by the Monetary Authority of Singapore.\nIn Australia, financial products and services available through the moomoo app are provided by Moomoo Securities Australia Limited, an Australian Financial Services Licensee (AFSL No. 224663) regulated by the Australian Securities and Investment Commission (ASIC). Please read and understand our Financial Services Guide, Terms and Conditions, Privacy Policy and other disclosure documents which are available on our website https://www.moomoo.com/au.\nIn Canada, order-execution only services available through the moomoo app are provided by Moomoo Financial Canada Inc., regulated by the Canadian Investment Regulatory Organization (CIRO).\nIn Malaysia, investment products and services available through the moomoo app are offered through Moomoo Securities Malaysia Sdn. Bhd. (\"Moomoo MY\"regulated by the Securities Commission of Malaysia (SC). Moomoo Securities Malaysia Sdn. Bhd. is a Capital Markets Services Licence (License No. eCMSL/A0397/2024) holder. This advertisement has not been reviewed by the SC.\nMoomoo Technologies Inc., Moomoo Financial Inc., Moomoo Financial Singapore Pte. Ltd.\uff0cMoomoo Securities Australia Limited, Moomoo Financial Canada Inc., and Moomoo Securities Malaysia Sdn. Bhd. are affiliated companies.\nRisk Disclaimer\nMoomoo is a financial information and trading app offered by Moomoo Technologies Inc.\nIn the U.S., investment products and services available through the moomoo app are offered by Moomoo Financial Inc., a broker-dealer registered with the U.S. Securities and Exchange Commission (SEC) and a member of Financial Industry Regulatory Authority (FINRA)/Securities Investor Protection Corporation (SIPC).\nIn Singapore, investment products and services available through the moomoo app are offered through Moomoo Financial Singapore Pte. Ltd. regulated by the Monetary Authority of Singapore (MAS). Moomoo Financial Singapore Pte. Ltd. is a Capital Markets Services Licence (License No. CMS101000) holder with the Exempt Financial Adviser Status. This advertisement has not been reviewed by the Monetary Authority of Singapore.\nIn Australia, financial products and services available through the moomoo app are provided by Moomoo Securities Australia Limited, an Australian Financial Services Licensee (AFSL No. 224663) regulated by the Australian Securities and Investment Commission (ASIC). Please read and understand our Financial Services Guide, Terms and Conditions, Privacy Policy and other disclosure documents which are available on our website https://www.moomoo.com/au.\nIn Canada, order-execution only services available through the moomoo app are provided by Moomoo Financial Canada Inc., regulated by the Canadian Investment Regulatory Organization (CIRO).\nIn Malaysia, investment products and services available through the moomoo app are offered through Moomoo Securities Malaysia Sdn. Bhd. (\"Moomoo MY\"regulated by the Securities Commission of Malaysia (SC). Moomoo Securities Malaysia Sdn. Bhd. is a Capital Markets Services Licence (License No. eCMSL/A0397/2024) holder. This advertisement has not been reviewed by the SC.\nMoomoo Technologies Inc., Moomoo Financial Inc., Moomoo Financial Singapore Pte. Ltd.\uff0cMoomoo Securities Australia Limited, Moomoo Financial Canada Inc., and Moomoo Securities Malaysia Sdn. Bhd. are affiliated companies.\nRecommended\n- \u5206\u4eab\u5230weixin\n- \u5206\u4eab\u5230qq\n- \u5206\u4eab\u5230facebook\n- \u5206\u4eab\u5230twitter\n- \u5206\u4eab\u5230\u5fae\u535a\n- \u7c98\u8d34\u677f\nUse the share button in your browser \nto share the page with your friends\n- No more -"
+}

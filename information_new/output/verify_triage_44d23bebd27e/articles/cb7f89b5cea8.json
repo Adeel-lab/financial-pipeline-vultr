@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "cb7f89b5cea8",
+  "bucket": "7d",
+  "score": 0.5546,
+  "label": {
+    "topic": "earnings_financials",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "918a92562d5ac98c",
+    "title": "Stellantis Sinks 8% as Q3 Report Nears; Ford Drops 4%, General Motors Slides 3%",
+    "source": "24/7 Wall St.",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPT2N3VjI1a1MyNEFWdTh3QjhXMWg0YlAweXAyU0xKdVhOaUs4eXFnLUI3SExCaEJHUlExcnR3aUF0VGpaQ1Fvd2FDVm5vczZyOFVSVUdVaXljSWpKcEU2bFlJc0VDNVp3NWpQdXV1NWstLV9Zd1RrOE9ERXdYN1RObzV3Yks1M3pHQThFM011ek5TbVlEVkstdlRjUlV0UXVIc3FWR2NCdHAzLTctenhPU1ZOeWl4ZjExaWc?oc=5",
+    "published_at": "2026-10-23T14:56:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://247wallst.com/investing/2026/10/23/stellantis-sinks-8-as-q3-report-nears-ford-drops-4-general-motors-slides-3/",
+    "domain": "247wallst.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Stellantis Sinks 8% as Q3 Report Nears; Ford Drops 4%, General Motors Slides 3%",
+    "source_item_id": "918a92562d5ac98c",
+    "resolved_at": "2026-10-29T20:52:20.065637+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://247wallst.com/investing/2026/10/23/stellantis-sinks-8-as-q3-report-nears-ford-drops-4-general-motors-slides-3/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://247wallst.com/investing/2026/10/23/stellantis-sinks-8-as-q3-report-nears-ford-drops-4-general-motors-slides-3/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "Stellantis Sinks 8% as Q3 Report Nears; Ford Drops 4%, General Motors Slides 3% - 24/7 Wall St.",
+    "published_at_page": "2026-10-23T14:56:13+00:00",
+    "title_score": 1.0,
+    "text_chars": 4085,
+    "content_hash": "45dffe9cf716cd8d",
+    "screenshot": "cb7f89b5cea8.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:55:52.515295+00:00"
+  },
+  "text": "Stellantis Sinks 8% as Q3 Report Nears; Ford Drops 4%, General Motors Slides 3%\nStellantis shares are cratering ahead of a quarterly report that management already warned would be seasonally weak, and Ford and General Motors are getting dragged down with it. Whether next week's results steady the sector or deepen the rout depends\u2026\nSelling is sweeping through automaker stocks, and Stellantis N.V. (NYSE:STLA | STLA Price Prediction) shares are taking the biggest damage as the company\u2019s Q3 2026 report approaches next week. Stellantis shares have dropped 8%, recently at $3.94, leaving the stock 64% lower year to date (YTD).\nMeanwhile, Ford Motor (NYSE:F) stock is down 4% to $11.47. General Motors (NYSE:GM) shares are down 3% to $74.91, showing the pressure spans the automakers.\nThe Consumer Discretionary Select Sector SPDR ETF (NYSEARCA:XLY) is down 2% to $113.07, while the SPDR S&P 500 ETF Trust (NYSEARCA:SPY) is down 0.7% to $758.94. Thus, the aforementioned automotive stocks are trailing both the consumer discretionary sector and the overall market.\nStellantis Bears the Brunt of the Auto Selloff\nStellantis hasn\u2019t issued a guidance change or operational update that would account for the decline. Recent company releases center on product and brand news for Jeep, Dodge and Mopar, along with a Q3 sales report. With peers falling and earnings approaching, the move fits a sector pullback heading into results.\nA day earlier, Stellantis and Alumobility, an aluminum industry association, presented a joint study finding that an aluminum-intensive design could cut vehicle weight and allow a smaller battery with the same driving range. The findings are theoretical.\nStellantis Carries a Different Risk Profile Than Ford and General Motors\nStellantis earns much of its profit from Jeep and Ram in North America, and it also runs a large European business. Ford and General Motors are more concentrated in the U.S. market, which leaves Stellantis managing a wider set of regional challenges. Management highlighted pricing pressure in Europe on the Q2 2026 earnings call, and the region posted an adjusted operating loss for the quarter.\nStellantis\u2019s margins remain the weak spot. In Q2, the automaker posted a 1.8% adjusted operating margin. Progress showed up elsewhere, with Stellantis swinging to a net profit from a year-earlier loss and North America sales growing 6% in a fourth consecutive quarter of gains.\nAs of June 30, the consumer discretionary fund held Ford at 1.4% and General Motors at 1.7% of net assets. Stellantis didn\u2019t appear among its disclosed holdings, so the fund\u2019s drop draws on a much wider mix of retail, travel and restaurant stocks.\nOn the upside, management expects Stellantis\u2019s savings program to deliver \u20ac6 billion of annual run-rate cost reductions by 2028. The downside case centers on its credit profile, after S&P downgraded Stellantis to BBB- and Moody\u2019s cut it to Baa3.\nStellantis Turnaround Heads Into Its Q3 Test\nStellantis\u2019s third-quarter report next week may show whether its turnaround plan is gaining working. Joao Laranjo, the finance chief at the time of the Q2 call, stated that \u201cQ3 will be impacted by the summer shutdown and continued raw material inflation.\u201d Management expects Q4 2026 to benefit from higher volume and a stronger ramp of cost-saving initiatives, and it has reaffirmed full-year 2026 guidance for mid-single-digit revenue growth along with positive industrial free cash flow in 2027.\nAn open variable for Ford and General Motors is the tone of automaker trading once Stellantis reports. The question is whether the XLY consumer discretionary fund keeps lagging the SPDR S&P 500 ETF Trust as earnings season moves through the sector.\nA large YTD loss already weighs on Stellantis heading into a quarter management called seasonally weaker. Solid results could ease that pressure, while another soft quarter might extend the slide. Investors should consider keeping their position sizes modest until sentiment turns positive on STLA stock.\nContact editorial@247wallst.com for any questions or corrections."
+}

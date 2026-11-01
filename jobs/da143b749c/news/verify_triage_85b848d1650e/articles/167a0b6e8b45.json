@@ -1,0 +1,85 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "167a0b6e8b45",
+  "bucket": "24h",
+  "score": 0.4713,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "d10ff71e79980d66",
+    "title": "Ford Energy Says Most Battery Storage Capacity Filled Through 2028",
+    "source": "Ford Authority",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObkRQN2t1OGpRb2c0dTY3enB3Q2dKaEkxYUJiMHBYODdkb1cwWVNBeVp4OVZlVW41MFFPN09SeDItYUFRWTJYbHQwTEpBXy1fUHFBczFxdDZ1TkpHQ0s0S2UwY0dhbVpudjlHeDI1U1B4WXM4cTgwZjAwSllpS0ZkZEFXUnFHXzZjRW1PeFBxNFJKTVlqYVEyeTlRUmVUaHFHdi1v?oc=5",
+    "published_at": "2026-11-01T11:37:40+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://fordauthority.com/2026/11/ford-energy-says-most-battery-storage-capacity-filled-through-2028/",
+    "domain": "fordauthority.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford Energy Says Most Battery Storage Capacity Filled Through 2028",
+    "source_item_id": "d10ff71e79980d66",
+    "resolved_at": "2026-11-01T15:28:37.521289+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://fordauthority.com/2026/11/ford-energy-says-most-battery-storage-capacity-filled-through-2028/",
+    "attempts": 1,
+    "final_url": "https://fordauthority.com/2026/11/ford-energy-says-most-battery-storage-capacity-filled-through-2028/",
+    "attempt_details": [
+      {
+        "url": "https://fordauthority.com/2026/11/ford-energy-says-most-battery-storage-capacity-filled-through-2028/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://fordauthority.com/2026/11/ford-energy-says-most-battery-storage-capacity-filled-through-2028/"
+      }
+    ],
+    "title": "Ford Energy Says Most Battery Storage Capacity Filled Through 2028",
+    "published_at_page": "2026-11-01T06:35:37-05:00",
+    "title_score": 1.0,
+    "text_chars": 1933,
+    "content_hash": "d20d41015823a708",
+    "screenshot": "167a0b6e8b45.png",
+    "location_in_text": false,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T15:30:35.898184+00:00"
+  },
+  "text": "With electric vehicle demand waning as of late, The Blue Oval opted to repurpose one such plant for a brand new subsidiary and business unit - Ford Energy, which will soon build battery energy storage solutions (BESS) units for a variety of customers. Blue Oval CEO Jim Farley remains quite bullish on that division's prospects amid soaring demand for such things, but thus far, we were only aware of one customer Ford Energy had secured a deal with. Now, it seems like there are more to add to that list.\nFord Energy just revealed that it's facing strong customer demand for its U.S.-assembled grid-scale battery storage units, and in fact, has finalized contracts and late-stage negotiations that account for over 80 percent of its capacity in 2028. The unit also revealed that it's in the process of filling 2029 and 2030 capacity as well, engaging potential customers in negotiations that have it set up for success over the next few years.\n“We are building a diverse customer base across solar, grid support and those that service data centers, and we expect our 2028 capacity to be fully committed by Q1 next year,” said Ford Energy President Dave Carroll. “These customers need a domestic partner with the manufacturing scale and staying power to support them throughout the product’s life.”\nFord Energy expects to begin production in late 2027, with a capacity of around 20 GWh annually. Additionally, the company is also currently exploring the potential beyond its FE-250 and FE-450 DC block. “The DC block gives us a practical starting point to build broader capabilities,” Carroll said.\nThe Ford Energy Systems gigafactory in Glendale, Kentucky, has met every operational milestone on its timeline so far. The team completed trial runs of electrode mixing, the first step in producing prismatic lithium iron phosphate (LFP_ battery cells, using the same process as the company's EV BlueOval Battery Park site in Michigan."
+}

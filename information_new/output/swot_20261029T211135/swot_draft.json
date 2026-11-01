@@ -1,0 +1,691 @@
+{
+  "stage": "swot_draft",
+  "generated_at": "2026-10-29T21:10:50.872282+00:00",
+  "status": "proposals_need_review",
+  "objective": "assess expansion readiness",
+  "prompt_version": "swot-v1.1",
+  "sentiment_source": {
+    "file": "output\\sentiment_triage_44d23bebd27e\\company_sentiment.json",
+    "sha256": "c02a9864c7efaf492e432bc5c59d997950179ea783f736c43aa009597c06e0cc"
+  },
+  "llm": {
+    "enabled": true,
+    "model": "openai/gpt-oss-120b",
+    "chunk": 8,
+    "errors": []
+  },
+  "companies": {
+    "General Motors": {
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "scope": "global (whole company)",
+      "coverage": {
+        "events_selected": 40,
+        "events_with_full_text": 32,
+        "events_headline_only": 8
+      },
+      "financial": null,
+      "assessments": {
+        "absolute": false,
+        "historical": false,
+        "relative": false,
+        "strategic_significance": true
+      },
+      "story_grouping": "llm",
+      "items": [
+        {
+          "id": "story:c9f41b97c5",
+          "kind": "news",
+          "title": "EXCLUSIVE: GM cancels deal with new US rare-earth magnet plant, documents say",
+          "summary": "GM cancels key magnet supply deal, reflecting broader EV retreat and a $6 billion charge, hurting its global EV outlook.",
+          "sentiment": -0.7,
+          "bucket": "7d",
+          "weight": 0.6,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "3d6ec726f3f9"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.cbtnews.com/gm-cancels-magnet-supply/",
+              "content_hash": "b66ff1cc54e71291",
+              "quote": "The termination follows GM’s broader retreat from EV investments, as the automaker scaled back its EV plans after federal incentives and tax breaks that supported the market disappeared and took a $6 billion charge in January 2026 to unwind some of those investments.",
+              "source": "Reuters",
+              "published_at": "2026-10-22T21:41:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 0.95,
+            "statement": "GM cancels key magnet supply deal, reflecting broader EV retreat and a $6 billion charge, hurting its global EV outlook.",
+            "why": "Internal financial setback.",
+            "origin": "llm"
+          },
+          "notes": [
+            "statement had missing or unsupported numbers; replaced by the evidence summary"
+          ],
+          "status": "proposed"
+        },
+        {
+          "id": "story:f9b442ada5",
+          "kind": "news",
+          "title": "GM lifts cash-flow outlook, unveils $20 billion buyback after strong Q3",
+          "summary": "GM raises cash‑flow and earnings outlook, adds $20 bn buyback, indicating a strong global business outlook.",
+          "sentiment": 0.85,
+          "bucket": "30d",
+          "weight": 0.5333,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "5ec1e43c4d4d"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.theglobeandmail.com/investing/markets/stocks/GM/pressreleases/8294755/gm-lifts-cash-flow-outlook-unveils-20-billion-buyback-after-strong-q3/",
+              "content_hash": "ee83d872488ce775",
+              "quote": "GM raised its outlook for adjusted automotive free cash flow to between $11.5 billion and $12.5 billion and tightened its EPS-diluted-adjusted forecast to $12.75 to $13.75, signaling confidence in its earnings power as it balances capital returns with ongoing investments.",
+              "source": "The Globe and Mail",
+              "published_at": "2026-10-21T22:20:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "strength",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 0.0,
+            "statement": "GM raised its adjusted automotive free cash flow outlook to $11.5‑$12.5 billion and announced a $20 billion share buyback.",
+            "why": "Internal financial performance indicator",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:1e25a84e3d",
+          "kind": "news",
+          "title": "GM's next-generation EV platform detailed: LMR batteries only, fewer parts, mainstream focus",
+          "summary": "GM unveiled a fourth‑gen EV platform with cheaper lithium‑manganese batteries, promising lower costs, longer range and broader application, boosting its global outlook.",
+          "sentiment": 0.48,
+          "bucket": "7d",
+          "weight": 0.3248,
+          "n_articles": 3,
+          "n_domains": 3,
+          "member_event_ids": [
+            "00e9ac974fe2",
+            "72bf379f4223",
+            "921a93e11002"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.carexpert.com.au/car-news/gms-next-generation-ev-platform-detailed-lmr-batteries-only-fewer-parts-mainstream-focus",
+              "content_hash": "c3e9bb9807179225",
+              "quote": "Speaking at the GM Forward event in New York, GM president Mark Reuss said the new platform would underpin vehicles in the automaker's highest-volume segments, bringing \"lower costs, long range, and improved performance\" to mainstream EV buyers.",
+              "source": "CarExpert",
+              "published_at": "2026-10-21T21:34:00+00:00"
+            },
+            {
+              "type": "article",
+              "url": "https://www.ttnews.com/articles/gm-low-cost-ev-new-battery",
+              "content_hash": "70183740c901d425",
+              "quote": "- General Motors is developing lithium manganese-rich batteries for multiple affordable EVs, including a mainstream battery-powered SUV expected in about three years.",
+              "source": "Transport Topics",
+              "published_at": "2026-10-21T19:01:43+00:00"
+            },
+            {
+              "type": "article",
+              "url": "https://cleantechnica.com/2026/10/22/the-all-new-never-seen-anything-like-it-fourth-generation-ev-platform-from-gm/",
+              "content_hash": "c8faf07ff2852cf6",
+              "quote": "The LMR battery is designed to offer 33 percent more energy density than lithium iron phosphate, which is expected to translate into longer range from a smaller and lighter battery pack that costs about the same as one that uses LFP chemistry.",
+              "source": "General Motors",
+              "published_at": "2026-10-21T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "strength",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 0.0,
+            "statement": "GM unveiled a fourth‑gen EV platform using lithium‑manganese batteries that promises lower costs, longer range and broader application for mainstream EV buyers.",
+            "why": "Internal technological advancement",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:965681d5b3",
+          "kind": "news",
+          "title": "GM class action claims Chevy Traverse, other 2025 models have faulty brakes",
+          "summary": "Class action claims GM sold vehicles with faulty brakes and failed to recall, likely harming its global reputation and finances.",
+          "sentiment": -0.7,
+          "bucket": "30d",
+          "weight": 0.3248,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "622312ba290b"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/gm-class-action-claims-chevy-traverse-other-2025-models-have-faulty-brakes/",
+              "content_hash": "4dc3bf1bc058c671",
+              "quote": "The plaintiffs allege that GM has not issued a safety recall or instructed its dealerships to repair the defect despite the reported issues.",
+              "source": "Top Class Actions",
+              "published_at": "2026-10-13T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "threat",
+            "not_swot": false,
+            "basis": "allegation",
+            "materiality": 3,
+            "confidence": 0.0,
+            "statement": "Plaintiffs allege GM sold 2025 Chevy Traverse and other models with faulty brakes and did not issue a recall.",
+            "why": "External legal claim risking reputation and costs",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:8fb4182e6a",
+          "kind": "news",
+          "title": "Kourtel, General Motors discuss partnership opportunities in vehicle manufacturing",
+          "summary": "GM delegation met Algerian officials to explore automotive manufacturing partnerships, indicating potential expansion in Algeria.",
+          "sentiment": 0.6,
+          "bucket": "30d",
+          "weight": 0.3248,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "747b5e013bf4"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.aps.dz/en/economy/industry-energy-mining/mv7qf55j-kourtel-general-motors-discuss-partnership-opportunities-in-vehicle-manufacturing",
+              "content_hash": "a3c9a33738208b20",
+              "quote": "Industry Minister Farid Kourtel received a delegation from General Motors (GM) on Tuesday in Algiers, led by Rohan Fernandes, Chairman of the Board and General Manager for Egypt and Africa, to discuss prospects for cooperation in the automotive sector and opportunities for establishing industrial partnerships in Algeria.",
+              "source": "وكالة الأنباء الجزائرية",
+              "published_at": "2026-10-14T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "opportunity",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 0.9,
+            "statement": "GM delegation met Algerian officials to discuss automotive manufacturing partnerships in Algeria.",
+            "why": "External market expansion potential.",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:fed3bcbf14",
+          "kind": "news",
+          "title": "General Motors sold Smart Drive data, will pay New York millions, AG says",
+          "summary": "GM will pay over $12 million to New York and $220 million nationwide for illegally selling driver data, damaging its reputation.",
+          "sentiment": -0.65,
+          "bucket": "24h",
+          "weight": 0.3167,
+          "n_articles": 2,
+          "n_domains": 2,
+          "member_event_ids": [
+            "5b10df8037e9",
+            "a5997e56588a"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.newsday.com/business/wallet-watch/gm-smart-drive-data-insurance-mquqelna",
+              "content_hash": "4f54f51706db7f23",
+              "quote": "General Motors will pay more than $12 million to New York State following an investigation that found the company was illegally selling drivers' private data, the office of Attorney General Letitia James announced — and the sale of the data potentially impacted drivers' insurance rates.",
+              "source": "Newsday",
+              "published_at": "2026-10-29T19:21:13+00:00"
+            },
+            {
+              "type": "article",
+              "url": "https://www.tristatealert.com/attorney-general-sunday-secures-220-million-national-settlement-over-allegations-that-general-motors-shared-drivers-private-data",
+              "content_hash": "d64075fd47402053",
+              "quote": "Attorney General Dave Sunday joined a coalition of 36 attorneys general in reaching a $220 million settlement with General Motors regarding consumer data-sharing.",
+              "source": "Ohio Attorney General (.gov)",
+              "published_at": "2026-10-29T16:11:20+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "threat",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 0.0,
+            "statement": "GM will pay over $12 million to New York and $220 million nationwide for illegally selling driver data.",
+            "why": "External regulatory issue threatening reputation",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:3c3270f8f1",
+          "kind": "news",
+          "title": "GM is turning to AI to slash vehicle development time. What it means",
+          "summary": "GM plans to halve vehicle development time using AI, cutting costs and boosting quality across its global operations.",
+          "sentiment": 0.8,
+          "bucket": "7d",
+          "weight": 0.9195,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "835026ade8a1"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.roadandtrack.com/news/a74207702/general-motors-plan-speed-up-vehicle-development-using-a-i/",
+              "content_hash": "a45256fd2cbc7b20",
+              "quote": "The Detroit-based automaker aims to cut vehicle development timelines to two years—and it sees artificial intelligence as a key player in that mission.",
+              "source": "Detroit Free Press",
+              "published_at": "2026-10-21T18:38:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": null,
+            "not_swot": true,
+            "basis": "forecast",
+            "materiality": 2,
+            "confidence": 0.8,
+            "statement": "GM plans to cut vehicle development timelines to two years using artificial intelligence.",
+            "why": "Internal capability forecast, not yet realized.",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:48e75c5061",
+          "kind": "news",
+          "title": "GM to switch listing from NYSE to Nasdaq as it accelerates AI push",
+          "summary": "GM plans to move its stock listing to Nasdaq while accelerating its AI initiatives, signaling strategic growth.",
+          "sentiment": 0.62,
+          "bucket": "7d",
+          "weight": 0.5026,
+          "n_articles": 3,
+          "n_domains": 3,
+          "member_event_ids": [
+            "e0cc2fbbf7eb",
+            "7d268598e6ad",
+            "173c6113173f"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.ft.com/content/01467514-66c1-4375-9906-45a47b949270?syn-25a6b1a6=1",
+              "content_hash": "d78cc32a5468ea06",
+              "quote": "GM to switch listing from NYSE to Nasdaq as it accelerates AI push",
+              "source": "Financial Times",
+              "published_at": "2026-10-27T14:02:17+00:00"
+            },
+            {
+              "type": "article",
+              "url": "https://coinpaper.com/38009/gm-leaves-nyse-for-nasdaq-after-115-years-could-nasdaq-100-et-fs-be-next",
+              "content_hash": "94fcd9e3a68c5f39",
+              "quote": "GM recently disclosed that quarterly OnStar revenue exceeded $800 million, up 15% year over year, while Super Cruise revenue increased 60%, according to the Financial Times.",
+              "source": "Coinpaper",
+              "published_at": "2026-10-28T13:43:43+00:00"
+            },
+            {
+              "type": "article",
+              "url": "https://gvwire.com/2026/10/27/general-motors-will-move-its-stock-to-nasdaq-in-tech-driven-pivot/?nocache=1793267127&jet_blog_ajax=1",
+              "content_hash": "331cf6ef6b6caa0b",
+              "quote": "GM’s shares were up more than 6% around noon Tuesday after the announcement.",
+              "source": "GV Wire",
+              "published_at": "2026-10-27T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "strength",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 2,
+            "confidence": 0.0,
+            "statement": "GM plans to move its stock listing from NYSE to Nasdaq while accelerating AI initiatives.",
+            "why": "Internal strategic decision showing agility",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:995f92b689",
+          "kind": "news",
+          "title": "GM investing $750 million to build hybrid crossovers at Michigan plant",
+          "summary": "GM's $2B hybrid SUV investment expands its lineup and taps growing demand, improving its global outlook.",
+          "sentiment": 0.49,
+          "bucket": "7d",
+          "weight": 0.5026,
+          "n_articles": 2,
+          "n_domains": 2,
+          "member_event_ids": [
+            "8a7a363aeb91",
+            "27e3596eeece"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://qz.com/gm-hybrid-suvs-michigan-plant-lansing-102826",
+              "content_hash": "9d8995e78e67e6ef",
+              "quote": "GM intends to build hybrid SUVs at a facility in Lansing, Michigan, according to Bloomberg.",
+              "source": "Automotive News",
+              "published_at": "2026-10-27T19:10:00+00:00"
+            },
+            {
+              "type": "article",
+              "url": "https://www.motorbiscuit.com/gm-to-offer-hybrid-chevrolet-traverse-gmc-acadia-and-buick-enclave-according-to-reuters/",
+              "content_hash": "9c4c879488fe7d36",
+              "quote": "Following intense pressure from its own retail network, GM confirmed it will restructure a $500 million Department of Energy grant to prepare its Lansing Delta Township plant for future hybrid vehicle production.",
+              "source": "MotorBiscuit",
+              "published_at": "2026-10-29T12:01:48+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "strength",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 2,
+            "confidence": 0.0,
+            "statement": "GM intends to build hybrid SUVs at its Lansing, Michigan facility.",
+            "why": "Internal investment expanding product capability",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:68e01323a2",
+          "kind": "news",
+          "title": "GM’s 'Eyes Off' Autonomous Era is Just Around the Corner",
+          "summary": "GM unveils eyes‑off highway driving system for 2028, boosting autonomous capabilities across SUVs and trucks.",
+          "sentiment": 0.8,
+          "bucket": "7d",
+          "weight": 0.3958,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "49b3e847f582"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.autoguide.com/auto/manufacturers/cadillac/gms-eye-s-off-autonomous-era-is-just-around-the-corner-44640742",
+              "content_hash": "f06e5941b074c0bd",
+              "quote": "Scheduled to debut in 2028, the technology allows drivers to redirect their attention from the road during highway operation under specific conditions.",
+              "source": "Autoguide.com",
+              "published_at": "2026-10-21T18:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": null,
+            "not_swot": true,
+            "basis": "forecast",
+            "materiality": 2,
+            "confidence": 0.85,
+            "statement": "GM will debut an eyes‑off highway driving system in 2028 for SUVs and trucks.",
+            "why": "Future internal technology, not yet a capability.",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:4e280afd93",
+          "kind": "news",
+          "title": "GM Deepens Sodium-Ion Bet, Leads $108 Million Round in Peak Energy",
+          "summary": "GM Ventures invests $108 M in Peak Energy, boosting GM’s global push into stationary sodium‑ion battery storage.",
+          "sentiment": 0.7,
+          "bucket": "7d",
+          "weight": 0.3958,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "a8cd44f0abd7"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://eletric-vehicles.com/general-motors/gm-deepens-sodium-ion-bet-leads-108-million-round-in-peak-energy/",
+              "content_hash": "29c22b6d4b1c1b56",
+              "quote": "General Motors‘ venture arm led a $108 million Series B round in Peak Energy, a California developer of passively cooled sodium-ion battery systems for the grid, deepening the carmaker’s push into stationary energy storage.",
+              "source": "Electric Vehicles",
+              "published_at": "2026-10-22T12:31:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "opportunity",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 2,
+            "confidence": 0.9,
+            "statement": "GM Ventures led a $108 million Series B round in Peak Energy, a developer of sodium‑ion battery systems for the grid.",
+            "why": "External market entry into stationary energy storage.",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:6d312e9f12",
+          "kind": "news",
+          "title": "An Electric Corvette Is Still Coming. GM Won’t Say When",
+          "summary": "GM's promised electric Corvette remains delayed, raising concerns about its EV rollout and performance brand strategy.",
+          "sentiment": -0.3,
+          "bucket": "30d",
+          "weight": 0.325,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "dbfaa001449c"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.thedrive.com/news/an-electric-corvette-is-still-coming-gm-wont-say-when",
+              "content_hash": "d78e405f6730f669",
+              "quote": "When I went digging in 2025 asking Team Chevy where the electric Corvette was, I was met with dead air and then non-answer answers.",
+              "source": "The Drive",
+              "published_at": "2026-10-14T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 2,
+            "confidence": 0.0,
+            "statement": "GM’s promised electric Corvette remains delayed with no announced launch date.",
+            "why": "Internal product development delay",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:2b5b5c6c27",
+          "kind": "news",
+          "title": "GM plans $2 billion investment at Lansing plants",
+          "summary": "GM will invest $2 billion in its Lansing Grand River and Lansing Delta Township plants, boosting production and supporting jobs.",
+          "sentiment": 0.85,
+          "bucket": "24h",
+          "weight": 0.2445,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "b7fe47557b2d"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.wilx.com/2026/10/28/gm-plans-2-billion-investment-lansing-plants/",
+              "content_hash": "2c5443de40bfe420",
+              "quote": "GM plans $2 billion investment at Lansing plants",
+              "source": "WILX",
+              "published_at": "2026-10-28T21:29:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "strength",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 2,
+            "confidence": 0.0,
+            "statement": "GM will invest $2 billion in its Lansing Grand River and Lansing Delta Township plants to boost production and support jobs.",
+            "why": "Internal capital allocation to increase capacity",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        }
+      ],
+      "excluded_news": [
+        {
+          "event_id": "544a4ec295bc",
+          "title": "General Motors shifts to Nasdaq as it bets on hybrids, AI and autonomous driving",
+          "reasons": [
+            "evidence quote did not match the article text",
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "87f728c3363e",
+          "title": "GM aims to develop vehicles in as little as two years with AI, software push",
+          "reasons": [
+            "evidence quote did not match the article text"
+          ]
+        },
+        {
+          "event_id": "c982c0d2756e",
+          "title": "GM promises smarter cars, faster updates, and autonomous dry-cleaning runs",
+          "reasons": [
+            "evidence quote did not match the article text"
+          ]
+        },
+        {
+          "event_id": "5107ca1dc346",
+          "title": "General Motors beats Wall Street's Q3 earnings expectations, narrows full-year guidance",
+          "reasons": [
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "e327e8d4247d",
+          "title": "General Motors Is About to Bet Big on a New, Affordable Electric Vehicle Platform",
+          "reasons": [
+            "evidence quote did not match the article text"
+          ]
+        },
+        {
+          "event_id": "58caacdff132",
+          "title": "General Motors’ Oshawa Plant Will Stop Production of the Chevrolet Silverado 1500",
+          "reasons": [
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "fd16b5f16dd6",
+          "title": "GM's third-quarter US sales fall",
+          "reasons": [
+            "not materially about the company",
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "95a2e24924c9",
+          "title": "GM to bring highway autonomous driving to Escalade IQ in 2028, expand to combustion SUVs and pickups",
+          "reasons": [
+            "evidence quote did not match the article text"
+          ]
+        },
+        {
+          "event_id": "434ce9b76adb",
+          "title": "Forget Ford's Lucrative Dividend. GM Has a Different and Perhaps Better Way to Reward Investors.",
+          "reasons": [
+            "evidence quote did not match the article text"
+          ]
+        },
+        {
+          "event_id": "6a609345ac9a",
+          "title": "GM exec discusses the OnStar AI Assistant, data privacy and driver safety",
+          "reasons": [
+            "not materially about the company",
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "fe0c9e43938d",
+          "title": "General Motors says to invest in Lansing Delta Township Assembly",
+          "reasons": [
+            "not materially about the company",
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "cb7f89b5cea8",
+          "title": "Stellantis Sinks 8% as Q3 Report Nears; Ford Drops 4%, General Motors Slides 3%",
+          "reasons": [
+            "not materially about the company"
+          ]
+        },
+        {
+          "event_id": "6eb8af747f3f",
+          "title": "Stellantis Surges 10% on Reaffirmed Guidance and Accelerating Cost Savings; Ford Inches Higher, General Motors and Tesla Hold Steady",
+          "reasons": [
+            "not materially about the company",
+            "neutral or missing sentiment"
+          ]
+        }
+      ],
+      "warnings": [
+        "Opportunities and threats rest on a selected news sample, not a complete market review.",
+        "Quote matching checks text presence, not truth or support for an inference.",
+        "Every item is a proposal until the consultant approves it.",
+        "No approved financial dataset for this company: strengths and weaknesses can come from news only."
+      ]
+    }
+  }
+}

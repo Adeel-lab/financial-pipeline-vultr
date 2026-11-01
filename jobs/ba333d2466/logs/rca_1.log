@@ -1,0 +1,16 @@
+
+===== 2026-10-30 20:54:28  rca_1: rca.py run --draft C:\Users\adeel\Desktop\notebooks\vultr\jobs\ba333d2466\swot\swot_20261030T195047\swot_draft.json --company=Ford (Hungary) --max-whys 5 --out C:\Users\adeel\Desktop\notebooks\vultr\jobs\ba333d2466\rca --item=fin:debt_ratio --note=Why is debt ratio a weakness and debt to equity a strenght
+NOTE: fin:debt_ratio is still 'proposed' (not human-approved).
+RCA: fin:debt_ratio
+  Why 1 ...
+[llm] answered by: openai/gpt-oss-120b
+  Why 2 ...
+[llm] answered by: openai/gpt-oss-120b
+  Why 3 ...
+[llm] answered by: openai/gpt-oss-120b
+  Why 4 ...
+[llm] answered by: openai/gpt-oss-120b
+  Summarising ...
+[llm] answered by: openai/gpt-oss-120b
+  outcome: root_cause_reached
+  Saved -> C:\Users\adeel\Desktop\notebooks\vultr\jobs\ba333d2466\rca\rca_fin_debt_ratio.json / .md

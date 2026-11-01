@@ -1,0 +1,90 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "835026ade8a1",
+  "bucket": "7d",
+  "score": 0.927,
+  "label": {
+    "topic": "autonomy_ai",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 6,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "c6ae921b1f74c761",
+    "title": "GM is turning to AI to slash vehicle development time. What it means",
+    "source": "Detroit Free Press",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPX00tOTVWbDM5Q09td1RTZzV2VEdjSWFucU1pUllEYzljRjBOZ2d5OXN1cDVJaVhkZi1KYlF1dS1TQmd2QW1LTWtQSHpDc1J0Zm1DYTBaYXE3aTBpUU4xYUNHSzlCYnVPMmtlUkp1UTBYem93UDE4eENlZUZ0QkZrUHRJRTBPc3ZRRGJoSktLbDlHN2w4WlFaZnQxaDVaenI1SDFsNnNlckdCV1k2bi12VWdDNXZqcXJ3WkxTODFNZm9zeThLbnJfMDhCTWNNSWtRWnV4MlBkSTV5Y0Y3?oc=5",
+    "published_at": "2026-10-21T18:38:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.freep.com/story/money/cars/general-motors/2026/10/21/general-motors-says-ai-will-help-it-slash-vehicle-development-time/92361557007/",
+    "domain": "www.freep.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM is turning to AI to slash vehicle development time. What it means",
+    "source_item_id": "c6ae921b1f74c761",
+    "resolved_at": "2026-10-29T20:52:20.065381+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.roadandtrack.com/news/a74207702/general-motors-plan-speed-up-vehicle-development-using-a-i/",
+    "attempts": 2,
+    "attempt_details": [
+      {
+        "url": "https://www.freep.com/story/money/cars/general-motors/2026/10/21/general-motors-says-ai-will-help-it-slash-vehicle-development-time/92361557007/",
+        "status": "thin_content",
+        "http_status": 402,
+        "title_score": null
+      },
+      {
+        "url": "https://www.roadandtrack.com/news/a74207702/general-motors-plan-speed-up-vehicle-development-using-a-i/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.5
+      }
+    ],
+    "title": "How General Motors Plans to Speed Up Vehicle Development Using AI",
+    "published_at_page": "2026-10-21T16:41:39-04:00",
+    "title_score": 0.5,
+    "text_chars": 4763,
+    "content_hash": "a45256fd2cbc7b20",
+    "screenshot": "835026ade8a1.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:22.809367+00:00"
+  },
+  "text": "Producing an all-new vehicle has, historically, been something of a five-year-long relay race, at least for the world\u2019s major automakers. General Motors is hoping to change that, however. The Detroit-based automaker aims to cut vehicle development timelines to two years\u2014and it sees artificial intelligence as a key player in that mission.\nAt the GM Forward event in New York City on Wednesday, executives emphasized the importance of a concurrent engineering model that allows designers, engineers, and manufacturers to work simultaneously. Traditionally, the development process was a series of handoffs, like an informational baton passing; now, an internal AI system will underpin this while drawing from new and old development data at GM. Instead of a step-by-step process, the addition of machine learning, virtualization, and agentic engineering will not only improve communication but also speed up mechanical development, GM chief product officer Sterling Anderson explained.\n\u201cHistorically, designers and engineers have used wind tunnels and what's called computational fluid dynamics models, which is just a virtualized way of assessing how the air effectively flows in and around the vehicle. Wind tunnels take weeks to schedule. CFD models can take upwards of sixty hours to run. You get effectively one iteration per day,\u201d Anderson said. \u201c To change that, we developed a proprietary tool we call \u2018themed aero,\u2019 which\u2014instead of using these numerical techniques that are highly computationally intensive and temporally exhaustive\u2014uses [machine learning] models trained again on GM's data set to get results that are remarkably similar to CFD, in about 60 seconds. You can imagine what that does for the iteration speed. You can imagine what that does for design optimality.\u201d\nMachine learning models are helping GM speed up in other arenas, too. Anderson explained that traditional structural analysis processes take four months to complete; however, the new AI process only takes a few hours to dial in front-end stiffness, dynamic standards, and durability requirements. Similarly, developing GM\u2019s forthcoming lithium manganese-rich batteries would have typically required over 60,000 lab hours. Thanks to molecular-level modeling and machine learning processes, GM\u2019s battery engineers only needed 256 such lab hours, and a month from first concept to formal program approval.\nThese learnings aren\u2019t exclusive to EV development. The new 6.6-liter V-8 in the 2027 Chevrolet Silverado was reportedly developed in a third of the time required for a typical engine at 80 percent of the typical prototyping cost. It can have an immediate impact on real-world performance, too. \u201cWe tested [the Corvette ZR1] to 231 miles per hour top speed. Our virtual engineering said we ought to be closer to 233,\u201d Jason Fischer, executive director of virtual integration at GM, said. \u201cThat very same day that we had a test, we wrote back to our virtual engineering team and our powertrain team, and we respun our calibration. And we sent it to the test team the next day, and we got to 233 miles an hour.\u201d\nDeveloping a vehicle more quickly is only one part of the production process. Efficient production lines are also essential to GM\u2019s plan, and Anderson said bringing a software-first mindset to the factory floor is the first step toward success. GM promised improved robotic functions for stamping, casting, welding, painting, and final assembly processes, as well as 30 percent faster battery assembly.\nBut with all this speed, will quality be compromised? Anderson said that faster processes will only lead to higher-quality cars.\u201cThe second generation of anything is better than the first. The faster we can iterate, the better your car will get,\u201d Anderson said. \u201cSpeed is inherently virtuous. It's inherently good. I think, particularly in the context of a product and product development, the faster you go, the better your product gets. Period.\u201d\nWhen, precisely, this two-year development process will kick in has yet to be announced. GM didn\u2019t explicitly link these updated processes to any specific upcoming models, and it didn\u2019t provide a specific year when these production processes would be fully fleshed out. Whenever it happens, though, the desired impacts are clear: reduced hardware costs and decreased complexity.\nA New York transplant hailing from the Pacific Northwest, Emmet White has a passion for anything that goes: cars, bicycles, planes, and motorcycles. After learning to ride at 17, Emmet worked in the motorcycle industry before joining Autoweek in 2022 and Road & Track in 2024. The woes of alternate side parking have kept his fleet moderate, with a 2014 Volkswagen Jetta GLI and a BMW 318i E30 street parked in his Queens community."
+}

@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "5b10df8037e9",
+  "bucket": "24h",
+  "score": 0.6354,
+  "label": {
+    "topic": "regulation_legal",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "60dbbefa8c4aacf8",
+    "title": "General Motors sold Smart Drive data, will pay New York millions, AG says",
+    "source": "Newsday",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaE1RU21VbmJwQTRlMWxWMkVIMzhWN1VjNkZoSVNXdVZQMEVGSG9Fc1k4alo1d3gzZ0QzSWRZLUUyZHA3SzhCSVNGS0hyOGNhWUkwYS1TUHdxa3Q5ZmhodElzQms0Tm9GdDJnd1NmYnMxaHJ4OWpRU2FGRHl2RWp0M2F6SmE1Y3R6aV9yVw?oc=5",
+    "published_at": "2026-10-29T19:21:13+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.newsday.com/business/wallet-watch/gm-smart-drive-data-insurance-mquqelna",
+    "domain": "www.newsday.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "General Motors sold Smart Drive data, will pay New York millions, AG says",
+    "source_item_id": "60dbbefa8c4aacf8",
+    "resolved_at": "2026-10-29T20:52:20.065538+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.newsday.com/business/wallet-watch/gm-smart-drive-data-insurance-mquqelna",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.newsday.com/business/wallet-watch/gm-smart-drive-data-insurance-mquqelna",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "General Motors sold Smart Drive data, will pay New York millions, AG says - Newsday",
+    "published_at_page": "2026-10-29T19:00:52.472Z",
+    "title_score": 1.0,
+    "text_chars": 2502,
+    "content_hash": "4f54f51706db7f23",
+    "screenshot": "5b10df8037e9.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:55:48.509085+00:00"
+  },
+  "text": "General Motors sold Smart Drive data, will pay New York millions, AG says\nGeneral Motors will pay more than $12 million to New York State following an investigation that found the company was illegally selling drivers' private data, the office of Attorney General Letitia James announced \u2014 and the sale of the data potentially impacted drivers' insurance rates.\nJames, along with 35 other attorneys general nationwide, found that General Motors sold the driving and location data of its consumers to data brokers, who then sold it to insurance companies, according to a news release.\nThe release states that from 2016 to 2024, General Motors sold data collected through their Smart Driver program. The goal was for drivers to monitor and improve their habits behind the wheel, and the program would track information such as how often a person drove their vehicle, how many times they braked and whether they exceeded the speed limit.\nThe investigation found that General Motors sold this information to data brokers, to be used for insurance products, and that the brokers took the driving history data to insurance companies, who then had the ability to change a driver's premium based on their habits, according to the release.\nSome drivers saw significant increases to their premiums as a result, The New York Times reported. Drivers were not informed their data would be sold for this purpose, the release said, noting that more than 700,000 New Yorkers were enrolled in the Smart Driver program.\nAs part of the settlement, General Motors will pay $220 million total across the country, and \"limit the driving data it collects from consumers to protect their personal information as part of a comprehensive data privacy program,\" the release said.\nIn a statement to Newsday, a representative of General Motors said: \"This agreement addresses Smart Driver, a product we ended in 2024, and reinforces steps we've taken to strengthen our privacy practices. Safer, more helpful and personalized experiences are enabled by connected vehicle data, and GM is committed to being clear about what information is used, how it's protected and the choices customers have about what they share.\"\nGeneral Motors has taken other action related to protecting consumer privacy, including simplifying and updating their U.S. privacy statement, the company told Newsday.\n\"New Yorkers should never have to worry about a car company tracking their every move when they get behind the wheel,\" James said in a statement."
+}

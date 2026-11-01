@@ -1,0 +1,85 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "9ae870f44efd",
+  "bucket": "7d",
+  "score": 0.5146,
+  "label": {
+    "topic": "supply_chain_ops",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 4,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "068979c6effa61f4",
+    "title": "GM to close battery plant, repurpose hydrogen plant in Detroit",
+    "source": "Automotive News",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQXzN0VHIyUW4tVG5acWhUY0d3bDU4TmNsVlFGM3BwMnljNURVMTJLdGFwckxHaXkzMy1MbnBTY212UlN4T2liUWJxNURfcFU2Mm0xN0pVcUZ0RG9NdnRLM1ZsRlpxNE1zcDVYdnJxaFBMWnFJd2ctSkIwbHpETDBXN3c5ekxLTEpGTVE?oc=5",
+    "published_at": "2026-10-19T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.autonews.com/manufacturing/an-gm-eyes-new-use-for-hydrogen-plant-1019/",
+    "domain": "www.autonews.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM to close battery plant, repurpose hydrogen plant in Detroit",
+    "source_item_id": "068979c6effa61f4",
+    "resolved_at": "2026-10-30T16:32:41.606265+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://mezha.net/eng/news/mezha-eb38beeda4eefbf91ef51add_gm_to_close/",
+    "attempts": 2,
+    "attempt_details": [
+      {
+        "url": "https://www.autonews.com/manufacturing/an-gm-eyes-new-use-for-hydrogen-plant-1019/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://mezha.net/eng/news/mezha-eb38beeda4eefbf91ef51add_gm_to_close/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.5
+      }
+    ],
+    "title": "GM to close Brownstown battery plant as lease nears end",
+    "published_at_page": "2026-10-20T19:50:54+00:00",
+    "title_score": 0.5,
+    "text_chars": 4707,
+    "content_hash": "0a1e05a861dbf431",
+    "screenshot": "9ae870f44efd.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:57.577682+00:00"
+  },
+  "text": "Donald Trump is casting a Democratic takeover of Congress as a threat of national catastrophe, while promising $5,000 checks to American adults if Republicans retain control.\nTrump has long portrayed Democrats as an existential threat to the country. As he campaigns to preserve Republican control of Washington, he is warning of burning cities, economic collapse, harm to children and the destruction of Western civilization. Even if Democrats win control of Congress, Trump will remain president and retain veto power over legislation they pass.\nThis is reported by Axios.\nHe is also offering voters a financial incentive: $5,000 checks for every adult American citizen if Republicans keep control of Congress. The proposal would cost more than $1 trillion, and there is no clear path to making it happen.\nWhite House spokesman Davis Ingle told Axios in a statement:\nPresident Trump is the unequivocal leader, best messenger, and unmatched motivator for the Republican Party, and he is committed to maintaining Republican majorities in Congress.\n \u2013 Davis Ingle\nThe choice has never been more clear: doubling down on President Trump\u2019s winning, commonsense agenda or the Democrats\u2019 extreme liberal policies and obstruction.\n \u2013 Davis Ingle\nTrump says America will burn like France\nOn Monday night, Trump told voters in Kansas that the U.S. would burn like France under Democratic rule. France has faced widespread protests by students and unions over public spending cuts and deficit concerns.\nWhen you see burning steeples and raging fires in France, just remember that is what the radical Dumocrats want to do to America.\n \u2013 Donald Trump\nTrump has blamed unrest in France on immigration and suggested that Democratic border policies would bring similar chaos to the U.S. But the unrest has been driven by disputes over living costs and public funding. There is no evidence that U.S. Democrats want to pursue similar violence.\nTrump predicts another Great Depression\nTrump says Democrats would cause an economic catastrophe and trigger a depression like the one that began in 1929. Speaking to voters in Tennessee on Saturday, he said:\nIf the Democrats win you will have a 1929-style economic depression. I hope I\u2019m wrong on that.\n \u2013 Donald Trump\nUnemployment peaked at roughly 25% during the Great Depression, compared with about 4% today. If Democrats gain control of the House, they plan to repeal Trump\u2019s tariff policy, restore Affordable Care Act tax breaks and reverse Medicaid cuts as part of a broader affordability push.\nTrump says Democrats will \u201cmutilate your children\u201d\nIn Arizona last week, Trump warned that Democrats wanted to \u201cmutilate, cut your children.\u201d He said:\nI mean, they can do whatever they want, and they do. Your son leaves as Jimmy and comes back home in three days as Janet, and they don\u2019t even ask you,\n \u2013 Donald Trump\nThey can take your child out of school and do whatever the hell they want.\n \u2013 Donald Trump\nTrump\u2019s claims about schools secretly performing gender-transition procedures misrepresent how such medical care works. Schools cannot perform gender-transition surgeries; those operations take place in medical settings under relevant state laws.\nTrump says Democrats would \u201cget rid of the border\u201d\nTrump has warned that Democrats would dismantle the border and let criminals from around the world enter the U.S. Speaking to voters in Kansas, he said:\nthe Dumocrat agenda is a plan to extinguish Western civilization. They want to open the borders.\n \u2013 Donald Trump\nHe also claimed that prisons around the world would empty their prisoners into the United States. A coalition of Democrats has proposed using advanced technology to secure the border while rejecting mass deportation strategies.\nTrump warns Democrats will take guns\nTrump has warned that Democrats would \u201ctake away your guns\u201d if they control Congress. Speaking to voters in Montana, he added:\nYou know who would love that to happen? Some of the wild animals you have up here that like eating you,\n \u2013 Donald Trump\n\u2026 They would gain a lot of weight.\n \u2013 Donald Trump\nMainstream Democrats have not called for repealing the Second Amendment. While some support banning certain types of guns, that is different from eliminating the constitutional right to own firearms.\nTrump says Democrats would damage farms\nTrump has also warned that Democrats would \u201cdecimate Kansas farms.\u201d On Monday, his administration announced $8 billion in relief for farmers facing soaring fuel costs. Those costs have been driven in part by Trump\u2019s policies and the Iran war.\nDemocrats have been appealing to rural voters in Kansas and Iowa. House Democrats have also proposed expanding support for rural development and family farms."
+}

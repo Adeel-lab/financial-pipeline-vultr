@@ -1,0 +1,96 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "27e3596eeece",
+  "bucket": "7d",
+  "score": 0.7558,
+  "label": {
+    "topic": "supply_chain_ops",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 4,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "655974fb77d51720",
+    "title": "GM investing $750 million to build hybrid crossovers at Michigan plant",
+    "source": "Automotive News",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0wR2Y2a1ZfbkJ4dHZaOW95OGtpOXZFR0dFaDVMMDFtY1dBaWhReTdxNlUwbkxnWGRwbkJfVjNid2taTVQ2NVJpaEtoSXhTX3BKdmFORmNtSU5SVDNNNkZaS1JQMUVVdGxYR3BXQVFpQTNJQ1cyUWxtSlpPS0NYZVE?oc=5",
+    "published_at": "2026-10-27T19:10:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.autonews.com/general-motors/an-gm-hybrids-michigan-plant-1027/",
+    "domain": "www.autonews.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM investing $750 million to build hybrid crossovers at Michigan plant",
+    "source_item_id": "655974fb77d51720",
+    "resolved_at": "2026-10-29T20:52:20.065418+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://qz.com/gm-hybrid-suvs-michigan-plant-lansing-102826",
+    "attempts": 3,
+    "attempt_details": [
+      {
+        "url": "https://www.autonews.com/general-motors/an-gm-hybrids-michigan-plant-1027/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://eletric-vehicles.com/general-motors/gm-to-build-hybrid-three-row-suvs-in-michigan-redirecting-an-ev-grant/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://qz.com/gm-hybrid-suvs-michigan-plant-lansing-102826",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.714
+      }
+    ],
+    "title": "GM to build hybrid SUVs at Michigan plant in shift from EVs",
+    "published_at_page": "2026-10-28T11:43:15.879Z",
+    "title_score": 0.714,
+    "text_chars": 2307,
+    "content_hash": "9d8995e78e67e6ef",
+    "screenshot": "27e3596eeece.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:33.718014+00:00"
+  },
+  "text": "General Motors $GM intends to build hybrid SUVs at a facility in Lansing, Michigan, according to Bloomberg. The automaker said in a Tuesday announcement that it will ready the plant for hybrid production down the road, according to Bloomberg.\nThe work falls within a budget of over $2 billion that GM has earmarked for its operations around the state capital during the coming years, according to Bloomberg. That total covers $1.25 billion to get the Lansing Delta Township Assembly plant ready for \"future vehicle production,\" according to TechCrunch.\nGM will put gas-electric Buick Enclave, Chevrolet Traverse and GMC Acadia models into production at the plant, according to Bloomberg, which cited a person familiar with the matter. Production is slated to begin roughly three years from now, according to Bloomberg.\nGM did not provide a start date for hybrid production and sales, according to TechCrunch. The company said it will share specifics closer to launch, according to TechCrunch.\nThe plant currently builds gas-powered versions of the Enclave, Traverse and Acadia, according to TechCrunch. It set an all-time output high in 2025 with 291,000 vehicles, according to TechCrunch.\nGM is also collaborating with the U.S. Department of Energy to rework a $500 million Domestic Manufacturing Conversion Grant so the money can go toward building hybrids at the Lansing plant, according to TechCrunch. The grant was awarded under the Biden administration to convert a different Lansing factory to produce electric vehicles. GM said the funds were never released, according to TechCrunch.\nHybrid sales have grown in the U.S. as gasoline prices rose because of the war in Iran, according to Bloomberg. That has helped Toyota $TM and Hyundai gain market share, according to Bloomberg.\nGM has leaned heavily on large, V-8-powered pickups and SUVs, even as it sells a range of battery-electric models, according to Bloomberg. CEO Mary Barra said last week that GM would change course and add hybrids across several vehicle segments, according to Bloomberg.\nGM has not abandoned electric vehicles, according to TechCrunch. It still sells the Chevrolet Equinox EV, Blazer EV and Cadillac Escalade IQ, though its EV sales have fallen from a year earlier and the federal EV tax credit has ended, TechCrunch said."
+}

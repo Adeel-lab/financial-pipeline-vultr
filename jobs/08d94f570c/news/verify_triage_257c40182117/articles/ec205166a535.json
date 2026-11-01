@@ -1,0 +1,79 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "ec205166a535",
+  "bucket": "30d",
+  "score": 0.5515,
+  "label": {
+    "topic": "earnings_financials",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "2872aaa750577291",
+    "title": "General Motors narrows 2026 outlook, approves US$20 bil share buyback",
+    "source": "The Edge Malaysia",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE90b1gwWE1jMkpNODk5YW5hM0pyN1FGNWpHeVowVGpOT3NJb0hsXzI2WTFPbGFkeF9rRUp2cXI0XzB4TmdqUEV0ZktmSjFGY3Y3?oc=5",
+    "published_at": "2026-10-20T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://theedgemalaysia.com/node/822561",
+    "domain": "theedgemalaysia.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "General Motors narrows 2026 outlook, approves US$20 bil share buyback",
+    "source_item_id": "2872aaa750577291",
+    "resolved_at": "2026-10-30T16:32:41.606201+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://theedgemalaysia.com/node/822561",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://theedgemalaysia.com/node/822561",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "General Motors narrows 2026 outlook, approves US$20 bil share buyback",
+    "published_at_page": "2026-10-20T19:08:39+08:00",
+    "title_score": 1.0,
+    "text_chars": 2826,
+    "content_hash": "f251db68f2bd5bfa",
+    "screenshot": "ec205166a535.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:46.859677+00:00"
+  },
+  "text": "General Motors' board approved the new round of buybacks, which will be funded on an ongoing basis over a multi-year period of time.\n(Oct 20): General Motors Co narrowed its full-year profit forecast and said it will buy back another US$20 billion (RM82 billion) in stock, reflecting strong cash flows even as the carmaker\u2019s sales are softening.\nThe Detroit-based company on Tuesday raised the low end and cut the high end of its previous 2026 profit outlook. It now sees 2026 adjusted earnings before interest and taxes in a range of US$14.5 billion to US$15.5 billion, compared with the US$14 billion to US$16 billion range it projected in July.\nSteady income from high-margin SUVs and trucks is warring with a decline in the company\u2019s overall delivery volumes in the US, by far its largest and most lucrative market. Affluent and loyal customers show few signs of trading down from GM\u2019s biggest and priciest vehicles, even as the strain of fuel price spikes and rising interest rates weighs on sales of cheaper models.\nShares of the company fell 6.1% in premarket trading to US$77.70 as of 6.51am in New York.\nGM is betting that bifurcated trend is here to stay with the launch of all-new versions of its Chevrolet Silverado and GMC Sierra pickups later this year. The company plans to expand production of the trucks and also build more of them powered with premium V-8 engines.\nFollowing costly writedowns from ill-timed bets on electric vehicles and self-driving cars, chief executive officer Mary Barra has hewed close to GM\u2019s core business lines and rewarded shareholders with buybacks. The company\u2019s stock is trading near all-time highs and up 42% from a year ago, although it\u2019s gained only about 2% so far this year as of the close on Monday.\nGM\u2019s board approved the new round of buybacks, which will be funded on an ongoing basis over a multi-year period of time. It\u2019s the first share repurchase announcement since a US$6 billion plan disclosed in January and adds to the US$29.5 billion already spent by the company buying back its shares since 2023.\nInstead of chasing untested technologies or investing aggressively in overseas markets, GM is focused on growth in areas such as making parts for Lockheed Martin Corp\u2019s missiles and software-based systems like its OnStar Telematics unit and Super Cruise hands-free driving.\nThe company made US$4.1 billion in Ebit in the third quarter, slightly above a consensus estimate of US$4.02 billion. Earnings per share came to US$3.70 a share, also above the US$3.56 per share consensus estimate. Its revenue totalled US$50 billion in the three months to Sept 30.\nThe company\u2019s automotive free cash flow, which enables the share buyback plan, rose 40% to US$5.9 billion.\nGM made US$32 million in China in the quarter, down 60% from a year ago.\nUploaded by Chng Shear Lane"
+}

@@ -1,0 +1,2493 @@
+{
+  "stage": "triage",
+  "generated_at": "2026-10-29T20:49:37.096408+00:00",
+  "llm_batches_ok": 4,
+  "llm_batches_failed": 12,
+  "items": [
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "416a1efc608e",
+      "bucket": "24h",
+      "score": 1.0922,
+      "label": {
+        "topic": "regulation_legal",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 11,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "4cf864c32a2c6a9f",
+        "title": "General Motors Fined $220 Million for Selling Drivers\u2019 Data",
+        "source": "Bloomberg Law News",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcWRsWWJ2ZC1JV3lLMnFBQmZtQ1Z4QVZ1YTREWnIybEFlNGpWeGlJaXpiQ3Q1Xy1Dbnp5aFJTSUNVeE1FSkd5eHdwWTFLMExvSGZnaGxBZzJZdFJkTkM0NV9mZ0VjV0U3QWdEckIwVWU3TXNYM2huR1BDRlRMU0otM3k2cnp4WTBOU0tBUDJEOFZQSTNiYnk5TFZrbDltOURXWVRmOVd0aXlpeDZDeVBSQXhuTQ?oc=5",
+        "published_at": "2026-10-29T16:40:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "cb6c9a56f8f218b7",
+          "title": "GM to pay $220 million to settle allegations it violated drivers' privacy",
+          "source": "Reuters",
+          "source_tier": "major",
+          "google_link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPYlA1NGgtNnVlNzd6SHFDckpSQzFkdTNWcDBKRU1DNlNab29WVklQSTB6YWlFV3pTRlZQdWt0R19XdnJQb2VSaXlOT1dQdE9DUXJkbG1GQ2t0LWlNMWQ2M0oyOWdWZk13bmZMX28xRm1WRUMtclFvaVJfZ0FIWGtZWEFhMi1Ebms4SmNBZy1fNWE1dTlaYjZoNndEQkdxQ3JGMjVpWFJLeXJpZWxaQTI1V0FuXzdkcE0zNmN4d1plNW93ZXZfaW1BYlhPQWZydw?oc=5",
+          "published_at": "2026-10-29T18:02:29+00:00"
+        },
+        {
+          "item_id": "f93d61914c942c7a",
+          "title": "General Motors to pay $220 million in settlement with states over selling customer information",
+          "source": "Nonstop Local News",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxPbjVpZG9JQ3dQeEFMVE80ZG14UUpfNVp3YVI0VlEwa2FiUHNNd1NHTUVfVjdxNS0zMnJiNXJjSThRUUtJU1NZcjJUaF9fV0ZfcGlQZ1Zqd0puRkowRWdPbUVCR0szOXN0N0JyWFV6VW5DemsyRmFMZ3AxblZHYnNtTlQzSWVROUdWVE9XQzJ0ZkJnMHdvSDVUVENDY1RsTjVsam5xWF9xMXVyaHp6STc2cXp0YUFKWm4yTTZ0WUsxdFl2bjdZXzBMdEl2b2F5UUVrclZ6RmY0OXo3Rjh2OHlXSG01a3JwZzk4S0NTWFZjMUZXalJlUmN4ZjJmV2h5S3plMWVqaDlUZHE5RnpfZklxTHM2QVYyUEFDbU9FVklQOA?oc=5",
+          "published_at": "2026-10-29T16:28:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "835026ade8a1",
+      "bucket": "7d",
+      "score": 0.927,
+      "label": {
+        "topic": "autonomy_ai",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 6,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "c6ae921b1f74c761",
+        "title": "GM is turning to AI to slash vehicle development time. What it means",
+        "source": "Detroit Free Press",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPX00tOTVWbDM5Q09td1RTZzV2VEdjSWFucU1pUllEYzljRjBOZ2d5OXN1cDVJaVhkZi1KYlF1dS1TQmd2QW1LTWtQSHpDc1J0Zm1DYTBaYXE3aTBpUU4xYUNHSzlCYnVPMmtlUkp1UTBYem93UDE4eENlZUZ0QkZrUHRJRTBPc3ZRRGJoSktLbDlHN2w4WlFaZnQxaDVaenI1SDFsNnNlckdCV1k2bi12VWdDNXZqcXJ3WkxTODFNZm9zeThLbnJfMDhCTWNNSWtRWnV4MlBkSTV5Y0Y3?oc=5",
+        "published_at": "2026-10-21T18:38:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "f18e0dc43571add2",
+          "title": "Here\u2019s How General Motors Plans to Speed Up Vehicle Development Cycles Using AI",
+          "source": "Road & Track",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY1EyRmFtRDhwRXN0cnppbFU4WG80ZjVWNXJjVlhvUUdEdEIxSXdrWnc5OGRRQ3FlUGFwZk41bHdHVTYwQXBROEhHM2Q2dUxKRXVfbVpSV0pwZWlSdUNITllaRmRmNXZSajFiajhtMjI4ZzRMWDRxbDFTcm1fVkpKM2oxSjlqYkFYMmVDa2VpeFh2QXBkMFVXT1VyQVg5ZnRxMG9lSWR3?oc=5",
+          "published_at": "2026-10-21T20:41:00+00:00"
+        },
+        {
+          "item_id": "87bc3df61a0bb488",
+          "title": "General Motors accelerates vehicle development with artificial intelligence",
+          "source": "BGNES",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYmF3TzRrbHlXYThYenNwZHFCT0FWSVE1Z3NwLWVLQ0tTQ2ZzN3ZSaTdTc0gzeC1NQ1kweVh3OTFEdU5IMWxkVE9uVlBwN2xJaVg5OTJYNzhSVlVBY0haWVpQbFFaSHhqclRBNHc4bUYybV9uLWlfVlJubHpLQTlsNDlBYTRMZmV1cC1jRVlFMTZWSkQzNUpJOTdlNFA4cWRVRHcya2lQYUE?oc=5",
+          "published_at": "2026-10-21T23:18:27+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "3d6ec726f3f9",
+      "bucket": "7d",
+      "score": 0.8392,
+      "label": {
+        "topic": "mna_partnerships",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 10,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "84fe48ea52607fbb",
+        "title": "EXCLUSIVE: GM cancels deal with new US rare-earth magnet plant, documents say",
+        "source": "Reuters",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWWl1aGF0Qi1PSzVWNXlxQTN1cUhpZEJuT1pMZFAwY3FUbi1SV2tjaV9FYnFFY0ZEbGRlNGt3Vm5jb1FfcTVTTkE2RlNBMUlKanAteGZNak50d1l2djR0ZEhBc3NMbFA1MlVyYjNYX1Q2RWh4dUwzVXBUR3ZHYUlfcUFwNVMtLUJTRlRyekxaQ0VjcjU2WkYzVzJGUjh3YWpWMGE1ZGh5aTBTVWlyczNoNVhNaThOR2hGQkE?oc=5",
+        "published_at": "2026-10-22T21:41:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "4b70a61aaabfb965",
+          "title": "GM cancels rare-earth magnet supply deal as EV strategy shifts",
+          "source": "CBT News",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1RVGtVRmYteEowc0dWU2tkeUJscGFRbFJzQ3R4TGNLaFozbFIxdXVmSkxyeDNJRkpOaVdPanhILTloTmtFUWMzTFZfVnc5TWUyRkVzQll1aWFNRVlrd3c?oc=5",
+          "published_at": "2026-10-23T11:06:05+00:00"
+        },
+        {
+          "item_id": "b14a60f5661149b1",
+          "title": "General Motors Ends VAC Rare-Earth Magnet Long-Term Supply Deal as Arbitration Begins",
+          "source": "NAI500",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUFBqWnpiT3RkM1lhZDVVZUs1ZFRFOHpWcTlhcS1yckFWTGRkNHZPWVN4Wm9NTHYzSXN6ekNhejE3b2FvbWVzd0c4LTVIa1A5akMtaVJGVS0xVm52THRKTDd4cW43S0h3X293S2dERTBESDE4S0lTcjRiOWt3Q0tRNmV0MnhrNWRBN0p1Vmw0MER1b0xLTzZudTZLVWJuZmFOdmNRRDIwZXJYOWl3RTB0VDY5QTNLbUk0aEE?oc=5",
+          "published_at": "2026-10-23T12:08:18+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "27e3596eeece",
+      "bucket": "7d",
+      "score": 0.7558,
+      "label": {
+        "topic": "supply_chain_ops",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 4,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "655974fb77d51720",
+        "title": "GM investing $750 million to build hybrid crossovers at Michigan plant",
+        "source": "Automotive News",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0wR2Y2a1ZfbkJ4dHZaOW95OGtpOXZFR0dFaDVMMDFtY1dBaWhReTdxNlUwbkxnWGRwbkJfVjNid2taTVQ2NVJpaEtoSXhTX3BKdmFORmNtSU5SVDNNNkZaS1JQMUVVdGxYR3BXQVFpQTNJQ1cyUWxtSlpPS0NYZVE?oc=5",
+        "published_at": "2026-10-27T19:10:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "f2792c78624169b7",
+          "title": "GM to Build Hybrid Three-Row SUVs in Michigan, Redirecting an EV Grant",
+          "source": "Electric Vehicles",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbnQwa1p2eWZIWm5TTVY3eTh5NzFPMWpJNndFRUxfQzItSExWbGR0andSTlh1Q1hSMkk0MGpLaE1Ga0UwQl9aUmN5c213YTVraVJtUG8tOWFsVDdJcHVVdTJyLVRVN1dCNUZGa3FQczR2OGhBMC1Yclhna3FQOXlqMmstcUtFTzFVV25tdFZFazFHcGVBVGVnV1BuclMxcjZQUzVzQ2ZrVGh1b21JUktmQUFuZEc?oc=5",
+          "published_at": "2026-10-27T20:44:00+00:00"
+        },
+        {
+          "item_id": "fa9cd8d4609f829e",
+          "title": "General Motors will build hybrid SUVs at its Michigan plant in shift from EVs",
+          "source": "Quartz",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9FaVV6bVktMFRzMEtacnhYdGtkWTRpZXFxYnRuVVlzdDVaZnk0ZDVyR210RkxxX0ZuSktEcnB0aEZpTDNUT01MV3ZjZUxvNTZfUW9UYzM1SGI5SWllMnlNNGJ3NnA0VnY5U1JR?oc=5",
+          "published_at": "2026-10-28T11:43:36+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "a5997e56588a",
+      "bucket": "24h",
+      "score": 0.721,
+      "label": {
+        "topic": "regulation_legal",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 5,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "1fa5f30326241eb5",
+        "title": "Ohio to Get $8 Million From General Motors for Sharing Data on Drivers",
+        "source": "Ohio Attorney General (.gov)",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMmJ2N3NQbXNHa2ptS2NqbFN3TVFZNjdvNURmLTFhV05CZVRMUi1UNm91TlNNRzlXdWRsa1kwNktDM01ZRGg1NlIwcXlKNnZZX2FKSVdodjNXZVVDa29HZUhjUUt0emdSbE1KLVVFS053S3ZKWXdnM1E4V1lPU21BZ3ZZa0ZZNDdaZXpVWDYwOUxMNngtUVNjRGE5NzB6bF9uVDlQMmhDcnRSX24tZ3ExV1lRYkxNeHh3T0Zr?oc=5",
+        "published_at": "2026-10-29T16:11:20+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "f1c2a2bfa05b0be3",
+          "title": "Attorney General Raoul Announces $220 Million General Motors Settlement For Sharing Drivers\u2019 Private Data",
+          "source": "RiverBender.com",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQLUY5aWY0cm12Ti1PQ1dwd09OdzVNVjNsd2RBY1VSaVRQaVpUa3Z0SERqUUtNYlhXT203WVJqY2dhSEVBLWZpZndsRy1HUmE4Q0Zlellrc2M0R1Jna0dCZ0JaYWlwUjh5S0ZRUkk4elNZN01lM0VtUThBQW9SeGJoM3VlUGJDczY1eVU2RFNKOFZidC1FQkR1UnVPNjlLNkdFWEoyVXNyX2JydGV2WlZaaWxwY3JtWGFha3N4QWYteEhNVXFiSnZnUF85NjFmQ21mLVFsVEk5MHZWT19vd0dWZ1NHb1IzLWEwVXc?oc=5",
+          "published_at": "2026-10-29T16:50:00+00:00"
+        },
+        {
+          "item_id": "42a6e552b573a442",
+          "title": "Attorney General Sunday Secures $220 Million National Settlement over Allegations that General Motors Shared Drivers\u2019 Private Data",
+          "source": "Tri-State Alert",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPdEVTdjZ5eUI3aE95V1l1aGlsN0JSZkFJZEhzMXpDNHl2VlVFRVZJWDRNSnkxTEhFN3RuTk9HNE1DNWhnMTlyN0JkdGdZUzdoWHptTGlQRUFrX2d6dEQxVktPMVd1VXBJd21DVjRvLUpCUkFSeDg5OGg1ZExfM2h1aElrM3ZkSFBBS3RoS0xzMlBMWmozd3FYNnBxclcwaFcyRmI4ZnNPSno5aU1CMEhmanZDSlBYMzFmbjJRc1ZIc3JYcEhkcEI1UzQxSXNMY2VBWkh2OXJZc1FGMnlvUl9PN2h3X2JrNFBRQXpRSTZNaw?oc=5",
+          "published_at": "2026-10-29T18:01:38+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "5107ca1dc346",
+      "bucket": "30d",
+      "score": 0.6956,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 4,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "7d41cd012aef9a84",
+        "title": "General Motors beats Wall Street's Q3 earnings expectations, narrows full-year guidance",
+        "source": "CNBC",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1IMWE1MVhZSW5sc0Q4NlFGbW1lek1Yclo2dVFGOGkwZnNUbk01ejNJYnZhNmFkaDBGVWNIS21jdUs0ZjBxYWg0TGh2QWlIQWpGQ3lLdm13T1BZTnAxT1VsWTdtbk5aUVlXeXlkd2xfM2I5Z2RVTzlrWWh6QdIBgAFBVV95cUxNNmMzUnhUbG10RmJRLW9BNlRfOVRyV1JYYWljWWFwbk05UGZQSGl2TFA3SHFEU2JpQW9vVDkzUW1aWi1NUGx1N21ZR3B4SG1UdkhpdGJ0dERIZG1HWWlaUnlFTHlyN0ppS1J1MnZJNzUwcXg5V2RYN25KdXF4a2Utcw?oc=5",
+        "published_at": "2026-10-20T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "024f1be56587b383",
+          "title": "General Motors narrows full-year profit guidance",
+          "source": "BNN Bloomberg",
+          "source_tier": "major",
+          "google_link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVzVOdGFUd3R6Sk9FX3loTDUzQ0NURzUzM0Z5MlFPV1haZHhlaVJJc05hWERNNXdPanJjc3ZjZHBna2IyTVI1ekZuU25BeFJobHdKN1haQzdLcEt4Y1F6Zm5sSWdTWDBfbHhWRVVuYnhCQVVnMlRSUC1NLUo1dXRNekdWYkxUU0RwTnFrdFBtMl9RWTZGZ0FLSmVZSXdJSkFVblBMSFdlLS1PRWp4aVI4SnNpT084RlU?oc=5",
+          "published_at": "2026-10-20T07:00:00+00:00"
+        },
+        {
+          "item_id": "488de6b8efac1633",
+          "title": "General Motors (NYSE:GM) Raises Full-Year Targets As Tariff Pressures Ease",
+          "source": "Kalkine Media",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTUMyR0JtVTFRamFYSVVSQWUxb3R2a2pxRlZWT3U4OUlMTnNjYmFoektLRDlSZERzQjd5RTcyb3FNbV9XZDFsNUpMbHlocVVsWUlrSHVkWElISl9RRy1HRzhCR0VLTDJWcDFoS3NHcEpuamdJQUdnajJYSXJGcjRwUFJ0YjBIMzFNbmE0ZG12LThjYTFkZE13MG9qLVQwWGxVcE9XekJiUS12LU9iOWR0dGlKMnR2cERN?oc=5",
+          "published_at": "2026-10-19T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "fd16b5f16dd6",
+      "bucket": "30d",
+      "score": 0.6878,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 7,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "ca6827e4a89350fb",
+        "title": "GM's third-quarter US sales fall",
+        "source": "Reuters",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRGQyRlBJS3JwdnE1TU9fdENTazI4eXVsZFh1QlJPLTl0b3FuNWpqNldiaW55UlJMejhlZHJGQlZwLVVtN1dpZWRSUjE0M3U0NDl1bHZTV3FCR2VlZ0ZlQUc0dDRYbkczbF9lZlhRMnhaZkNZaUdSUGpzbUVOYkc4aVRlTlhwLWd5OE95eGJjWG13UUViNjg3ZjYtd2xPQQ?oc=5",
+        "published_at": "2026-10-01T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "b2ff8b313de3fd15",
+          "title": "General Motors Third-Quarter Vehicle Sales Fall 5.5%",
+          "source": "WSJ",
+          "source_tier": "major",
+          "google_link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaEY0LTRNQ05hU3dZenBPMFIyN3Z5a3AyYmJQOHNMVWNOTHpGVEhoUjJvaWwyZFJpcnVCenFSX0VGRFdyQXNJUUJiV2JQMmtpX1RTdFY0MHIxWHktaGJxOTkwZC1WWjE0YXRDZHUwUU15Wk9HUVViR3hNMjcyaHl5RnAxdW5uYWUtUlRTeG9mek83SDM5TVpjTU1rRQ?oc=5",
+          "published_at": "2026-10-01T07:00:00+00:00"
+        },
+        {
+          "item_id": "054e46c884390cfa",
+          "title": "General Motors auto sales fall 5.5% in Q3",
+          "source": "CNBC",
+          "source_tier": "major",
+          "google_link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOd0paUE9xRVd0ZjIwZ2pKb293MzJKWXJxVzc4OEJtY0N1RUt6N2JhNjdEUjJkTWtGcEVBcUFjd05oVjRJaVdjNkhuWlZYVTIwbjVLUFpxc1A4ejJia1E5OFBQMDFhUWZQUjh1VXhFZXZyaFdab25qRDFwVTVNTm5WVkdRQ1p5b21QeGJzVzJ4UkY1U1hiU2dpSDdFSjBKZw?oc=5",
+          "published_at": "2026-10-01T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "5ec1e43c4d4d",
+      "bucket": "30d",
+      "score": 0.674,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "71d63459675e8c79",
+        "title": "GM lifts cash-flow outlook, unveils $20 billion buyback after strong Q3",
+        "source": "The Globe and Mail",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQNGtmU3BBQVRyV2FFMExPNE9DSTA4S2pzdzc1VkVfcHlQdkMxT3JQTVZ0eWxKbWNnRG9pMXRDNlFyRXNBSEtpVEVDcW5tOW83c0hUbEc1Nkx4ZVlYWU41YlVjUHpyVEZTUFdTbzluUVRjYWFjTWFWN1hQTG1NUmdoS2VhZWV3S2txRkVCa1VUa3NmdEY2WU1LQzFkVUxDcU9LT3hsMVFGTTBkVjN6bTBuSXJ2Y2xRYUxTRUUwNkpyaXlGaUMtelVYRlBvT21maWZLanZydDNiVjFSNWt4WXlOTXVHRmdGS0U?oc=5",
+        "published_at": "2026-10-21T22:20:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "fa264916ff35fea7",
+          "title": "General Motors reports higher profits as cash flow outlook improves",
+          "source": "Proactive financial news",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRFhqUVJ1alpuVU9JUF9wcU1GdFMycW53aDVIeFFQdXN1QV9oYXMxU1JIU3ozRS1qeXlkOGRsQk1Bc1dqYTF1WnUwRWNZQW5xanJzMG5DTlJVSnVwUDUzYl9UZndoYnZFVkFQRklVM05tLWthaHB3SmFjaG5LWnhUaXRBVW5XTV9KY21GcXJTaVdTZ25sVWhzMW1WeVNZTzVxbFJWNjEzS0dnclZqa3F2cWJRQnJfY0ZnWENYY0Z4cE5BMUlLcFlRend1NzI5dy1nOFROQQ?oc=5",
+          "published_at": "2026-10-20T07:00:00+00:00"
+        },
+        {
+          "item_id": "489e798acdec9baa",
+          "title": "General Motors Beats Q3 Estimates, Narrows 2026 Earnings Guidance and Raises Automotive Free Cash Flow Outlook",
+          "source": "https://www.dars.gov.et/",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNbnpxN05LampQQk5xbW9NSGMxeTNhWUtfVGdRRjRlU3FpdDlTNjVreEllc2c1SU4yaTBNczgwbzhQTG5zeVZGeE0xckJsZnBRdEJmeHdKSEgtNThFVERETmxvalBGTXhaTzFVZ3pxekJ6bXVvdy1yRWZhWnFyRnJIZ2FRSkNnYmh5QXY5dENGb3BGa2N6QzhZMlhqRldfX2hjV2ZRbjFJci1EeHZGU2JGSm9yQzVuVXM3N3FhLVhDV0lFWFFEUTBZR3dqQUhMQm8tWmxYRkRpSzJpQTlYcWZxWnMxa2t3QQ?oc=5",
+          "published_at": "2026-10-20T10:42:23+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "78e62f0f7660",
+      "bucket": "30d",
+      "score": 0.6619,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "fe70aee3e7c9618d",
+        "title": "GM\u2019s China sales fall 24% in third quarter, a fourth straight decline",
+        "source": "Automotive News",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPc1RtUktDOVlsYjZYLXhmcnlDUUpuYmpsWl9MN2ZzeVpWUWRtcUdaUmI3REJFLUtzSlAwWmdGSnBmMFFCazRkX2pUZmVRYWxtSjUxQTVCR3dxLTJFOWkzY0NzN25xdjZKZFFPWWpQTC1pcmlQcFNrdV9rMG5USlNUZUpwNmF3MkpCUnRLelJtZw?oc=5",
+        "published_at": "2026-10-14T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "6760ab087871db7a",
+          "title": "GM China sales top 358,000 in third quarter as NEV share exceeds 60%",
+          "source": "Gasgoo",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQ2xrU3UtX0xCNGJubXNpanJyVjJzdXI5LUlLQUdBc05MT3hRLU1KQXlONVdHeFZIclBFZHg0TnhaeFRRbC1KRFBBVXk0ODhhcXFYVXdKZG9mVEFCWGNWb1NLQTNVZC1rZkNoRm8wX0Q1ZlpJdVBNV1VJenh0Um5GdmZQMk4wa1ZHZ1B1eG5VYy1aUnE4ZVhkOUtlUVhwano0TjhEclpJM180dVZ3QzhvWnQ5RDdld0VtaENVVnBqLVVFQ1Jx?oc=5",
+          "published_at": "2026-10-10T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "fe0c9e43938d",
+      "bucket": "7d",
+      "score": 0.6617,
+      "label": {
+        "topic": "mna_partnerships",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 4,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "cc125d00b42ee9aa",
+        "title": "General Motors says to invest in Lansing Delta Township Assembly",
+        "source": "TipRanks",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeHdLY0txTThGSDdqM1JXWEY5OUNMbXVkazlld3ZsQl9aelJFTUx4Q2R5WEVabGE2a1F5M2Fna2VsTE9rMzlYeUNXMVJCNS02TGoyZWVweE1SbURfQ093NWx6VEV5WmJGNk5yN1V0VzFZSUM5SzhHNXJSemZXUHVKdl9LbWtBdWJfUmltUC1LM014SjNyWFMtcWtpa0VKQmd6ZmpqeWR1Zk9Pby1Da1Q5WnE5eFU?oc=5",
+        "published_at": "2026-10-27T17:40:54+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "a20daf1e56a1aa53",
+          "title": "GM to invest in Lansing Delta Township\u2019s future",
+          "source": "General Motors",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNXZBck9GYU45eWxLd19QaHJBWEhkSk9UMnJ3ZG9JRkF2RzI5YkIxRmlBMDJBcEUyZV96dmdqdVYwbjJRUEZrWUlpX1FYT3ZaZ0REU0UzTHBBOEkzMGdhdWpRdjZPV1R4a0RQOVhKQnc4LVlWODBKeDJfdXVyTml6V3hKOG5vUDhPY2pOem83eEhrbHhoSGIxdWswaHNzWFQwaTJmaWtGRWM?oc=5",
+          "published_at": "2026-10-27T17:54:36+00:00"
+        },
+        {
+          "item_id": "b7f4b8891e00b31f",
+          "title": "GM Plans Hybrid Production at Lansing Delta Township Plant",
+          "source": "The EV Report",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1jOW5UT0VxVTFYcnZvb21NTzVyNEotYnJDaGJMbmNranNNY091YVBQN3k4T28zMEZnSXdqUDhvOGN3bmFxcGhlNUM1QVhGanNHaU5aXzRwb1prODJ5ZVRfWFRnbzd3WC1IS0Q4cUZKTTIzcDYtSGc?oc=5",
+          "published_at": "2026-10-28T10:33:59+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "43a575393021",
+      "bucket": "24h",
+      "score": 0.6534,
+      "label": {
+        "topic": "regulation_legal",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "17e851cbaf43abab",
+        "title": "General Motors agrees to $220M settlement over AG driver privacy lawsuit - update (GM:NYSE)",
+        "source": "Seeking Alpha",
+        "source_tier": "financial_aggregator",
+        "google_link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdzdwNnUwRTNRcFdFY1k3N1NKeFBTM3ZKUmZncE9QSnBQRWpiRkMzX2JIaV8wVnlHcFdDYkR6WnpVc1JzLTVUWHlsdEYwc1hwcUtmaE1IODlnTXIwMnB0Mlk0VTZzUXBHdmZSRzFTUlM0RFg1a01aY1pwY2VVMU1fY0c3V0NjVk5jUzNJdU14eEloOEhVMldsZFNYZXIxNm1rR2s4TS0zTG0yZDZudWc?oc=5",
+        "published_at": "2026-10-29T17:18:30+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "27b95d9310a648ee",
+          "title": "General Motors (GM) Settles $220M Data Privacy Lawsuit Amid Mode",
+          "source": "GuruFocus",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMDFaaEVUMHBDN1QwSXBCekx2cUwyNHJteG5ELWhlZGVBZGtSM3pPeGVJZm0zbHNINWVxdWVjUzVoQy1pWjJLV2xud3dxZGxTcG9hY1FYVTVkcmRaU3c4bnUycXFGMWpmZng1bm5tY1VEYWk5Z1NWMzdpTXNvOWJOekZBSkprb0NORU53Yk16bktmeW9XY2Nwb2RtdmNsaHJQNzIzbDB5R19jbmxLOWtZWW5lY2hSaXc?oc=5",
+          "published_at": "2026-10-29T18:02:05+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "49b3e847f582",
+      "bucket": "7d",
+      "score": 0.6404,
+      "label": {
+        "topic": "autonomy_ai",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "ff424b49daafc674",
+        "title": "GM\u2019s 'Eyes Off' Autonomous Era is Just Around the Corner",
+        "source": "Autoguide.com",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPd0ZRWmlMMFBvVlpsWXpYdHpvTzRCcEJ6bXB4cFNudm9UdXB3a3VnYUV2b2xobEhWYXZDUnNOSGlsTVZzRk00MnAxQ2RVM2JDTVp6QVJzbmw4VFlmakRRTWZLS3ZlMDhZX2J5YkFNbUN5dGpIQUhSa2w0dWxhVDU0cXFfSmZXM1NObjQ3S3hWdzJBYzBham45cXNqU2RZUWRkOEM2aDM4VkNXMmg1bjVPWE9wQmQwcUow?oc=5",
+        "published_at": "2026-10-21T18:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "17004479f366d90b",
+          "title": "GM expands \u2018eyes-off\u2019 autonomous driving plans to pickups and SUVs",
+          "source": "Fox Business",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVmNyMW44T2d0eVhvZERndEJXUUVBT3hQVzJpenUtZTNXa015d1pmVzVrTzE1dTVPOEE2SHZCTW9Wd1VIbXRVSzN1ODc1MW9kYU14U3ZnbHdMUmpIVm5UaTh0M2xlQWptMlZnWV9UWFpjaDdPSVhxdU0tZ0NTcC1YaU5Sb09acXFCMEtzVmpqa0FSTVJDRzNsOWk3eXbSAaIBQVVfeXFMTUozRVRtN0VJRTdNRGwxSnZRSjJQMHM2RlhSNEZhM21GenNrdUxSYk41WTlHV002eXVJQXZzM0twdzQ3Q2tOR3hBUUhNVjhBTk5IMndCX3JEYjJ4SFI2ZnVEMk5ZZnZlZHF3blJteExyRHY2V3ZUVU1mVmZaa1hiRmxFbHVSWG5hSVdJNG5LanNnSU15UTU3UUFkdUE2bHNNWjFB?oc=5",
+          "published_at": "2026-10-25T21:02:12+00:00"
+        },
+        {
+          "item_id": "35a70e32cab756e6",
+          "title": "General Motors (GM) Plans \u201cEyes-Off\u201d Autonomous Driving for Truc",
+          "source": "GuruFocus",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZ3IwLVhPRzRaeEpuUUZ2b1ZwUG1MaFpWcUFSMTNJUGZrWnd2ZFE2RWFReGNDeXg4aGtWaGhKa3Z3cGpMVWY0NDM2WnVDQ2RYeDFIR0Y2Y2V2UzRuRTJfWG1nME9sZzhER0U0SWRxcEdhQnBzby1PV3JWb2JLMkt4M3JmNmlNaUppdWg4SFBxVzVQSDhCRHFrZGdZZkdhOTFDUUR4SS1RM1dLVmVOaXZENGp4NGtuZEhpampXTVdSY3U?oc=5",
+          "published_at": "2026-10-22T11:54:59+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "5b10df8037e9",
+      "bucket": "24h",
+      "score": 0.6354,
+      "label": {
+        "topic": "regulation_legal",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "60dbbefa8c4aacf8",
+        "title": "General Motors sold Smart Drive data, will pay New York millions, AG says",
+        "source": "Newsday",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaE1RU21VbmJwQTRlMWxWMkVIMzhWN1VjNkZoSVNXdVZQMEVGSG9Fc1k4alo1d3gzZ0QzSWRZLUUyZHA3SzhCSVNGS0hyOGNhWUkwYS1TUHdxa3Q5ZmhodElzQms0Tm9GdDJnd1NmYnMxaHJ4OWpRU2FGRHl2RWp0M2F6SmE1Y3R6aV9yVw?oc=5",
+        "published_at": "2026-10-29T19:21:13+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "c982c0d2756e",
+      "bucket": "30d",
+      "score": 0.5875,
+      "label": {
+        "topic": "autonomy_ai",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "63a272fa913eae39",
+        "title": "GM promises smarter cars, faster updates, and autonomous dry-cleaning runs",
+        "source": "The Verge",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOazhub3hEQXJfTVF4S1lnZjdnZnN0Tmh6QnRfeVFiYnBTcm9wZmYyWFA1Wk5qTjVGWUk2SWlnQWJDTmRWT0U4b0RLLUpUR3VESDlueGtHUkNKTGNSN0MyR3lPUUNZU0pUbHpxWm11djR5MkQwVGlRdFNQSjgyOW5NZ2lQSHpmenNaY2c?oc=5",
+        "published_at": "2026-10-21T18:00:00+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "87f728c3363e",
+      "bucket": "30d",
+      "score": 0.5814,
+      "label": {
+        "topic": "autonomy_ai",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "70556fd75a4c5f98",
+        "title": "GM aims to develop vehicles in as little as two years with AI, software push",
+        "source": "CNBC",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5zZHBsWGlxdmVTbHJRV2VPTktvTnlJNm1hRmZXbDBScmRENVV2UVhjcFZLWVRhZm1Bb3BWa0ZoWTNqeC1MVU9YTmpKbTRkOHJjX01vOUJTdHI2R2JUSkszMld1UVJ1Y19TNE4xWW5CVUk5ZG5IRjdvSkVsUdIBgAFBVV95cUxOVnZYd0dsUTk5azZ0Y1dDdzRsai0wT0dPdXpSNEVVdU5OZnBwQUt0cnYxZjRRaWoyOFlCeG1UeHlVSlFuSjhkSEpaYVFNSU5kSG00dmo1NGw5LUtRN0tYRURLTkZyb1FYRWV4RFVmX0dtWS1Fb0RvUEc5Y0NfN2NOWg?oc=5",
+        "published_at": "2026-10-21T07:00:00+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "173c6113173f",
+      "bucket": "7d",
+      "score": 0.573,
+      "label": {
+        "topic": "autonomy_ai",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 4,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "5223a55dd1a50632",
+        "title": "GM to switch listing from NYSE to Nasdaq as it accelerates AI push",
+        "source": "Financial Times",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdUZDSFdCeFNtTk16aWJJelI5RWZvaS1FdE05Zl8tV0pUdUg3MG9FRG5kQjJNdHZ3aGpuR0g1ZnlXTXY5azEwVFFEQUtLNE9Lb1otNWgxbFhEYkhUUEtVMVRXTXNYb3o2eG4td3lSSGlqYzk0blQxdVRhT3FsNFNiNnpOU3Q?oc=5",
+        "published_at": "2026-10-27T14:02:17+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "2469606253e12ec9",
+          "title": "General Motors Stock (GM) Rises on Plan to Switch Listing \u2014 Why This Matters",
+          "source": "TipRanks",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUVBYa3ViUnhqcGV3QmhVWjJLc1ZJRUVrRHkwX1h3RnI1NFNyRGdZeFVLY2RCaGUyVmUxVGVkb2NTUXVxSVFWYnk1TFAwSE1hcVBnQmRQVWRjQTNUckJZWk1ERnNqdmRzRjdrN0loZFJ1akJJRjdZRWZ4ZnBVdXVWanhpbWNaYkVlakFla2VzSC1MTHJINURyQy1HYm5DaHJ5T1lacTBvODFBcTlDbi1McFMxMkZOdHVyY1VHbg?oc=5",
+          "published_at": "2026-10-27T11:29:45+00:00"
+        },
+        {
+          "item_id": "c1326eb00a766985",
+          "title": "General Motors Stock Rises as Nasdaq Listing Switch Gets a Date",
+          "source": "GuruFocus",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQejBZZkhodFZlRVhCOUt4dE0yWHpnak1vY1VMcC1faXl6LXB1SGhubS1nbTJ1NWdnZzZIc3BhYy1MNXNIekE5Ykk5SFF5SFZuN0RIS0xjR0FyblF2TmZxWm1Eek90VEphOGVnOU1MRkhidXRpb1htY21TSzEtRWl2dVpyZWhvTnBaNkhZR01lNWhXSEhQX29UcW4xZ2tGWGFBQVgxTg?oc=5",
+          "published_at": "2026-10-27T12:06:35+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "a8cd44f0abd7",
+      "bucket": "7d",
+      "score": 0.5714,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "1bbc91261c4e0117",
+        "title": "GM Deepens Sodium-Ion Bet, Leads $108 Million Round in Peak Energy",
+        "source": "Electric Vehicles",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWHk2TmQ0aVVSQjJUZHllQ1VlWXI0OXNtT2hRSzl2NXlQTl9zQnFHR292MmwyNkpnUjVOSlVXT3ZBU2Jjb0lrWTZNX3Nmc2ljV0dSakJudWFaTUhtSDhsdDRKNHBqb05lc0ZtNkVYcDFzdVpSQW90WDVCem9fR0YtcjFSTldFTS1jRmVkM0dyWTRWeThxODlHbFhHQTYxUmdkZmxDMzZMUDhRTEw5RFE?oc=5",
+        "published_at": "2026-10-22T12:31:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "877e87b39e057578",
+          "title": "Peak Energy raises $108 million in GM Ventures-led round \u2014 Electrek",
+          "source": "UA.NEWS",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTFhpWTY5WXdJQ1lwOW5jS2pWQXRDR3VFTkV4cXNIR1BlMTJKLUFJSzV4bHBBZy1XWGxUZzRkSG81YzV1TVMwLVdMcWJ1WHRzWFdTLVhmQnkwcXhlMUd3TkVZM05xVzduV1BuUGRIYll2a2RjY2pJYXF4RDBPazZvYlRlQTRsZVNHeHBTLXd6R2NPTmNuV1g2dWFGZnFoZDlPX2c?oc=5",
+          "published_at": "2026-10-24T00:13:12+00:00"
+        },
+        {
+          "item_id": "ad642438dfd31b0b",
+          "title": "General Motors Unit Leads $108 Million Funding Round for Peak Energy Battery Manufacturing Plant",
+          "source": "Yahoo Finance",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaUFlOENIUkJrX0lxcjJXTFZSZlJVLWF6S01JS0ZzM3dzSXlONUJkRXU1b2xlRmxjZWNlSmZ2MjJ1ZHpqMzBJajgya3hROG95aXlSaVB4ckxGRHI3WWpDY3FpX1NyMTA5dVQ2ZFNyelVKaFpLOWs2RlNnR2w2Unppbjc5RnZFaURYZFk0aW44UQ?oc=5",
+          "published_at": "2026-10-21T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "8a7a363aeb91",
+      "bucket": "24h",
+      "score": 0.5599,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "3dedb04b675f32af",
+        "title": "GM to Offer Hybrid Chevrolet Traverse, GMC Acadia, and Buick Enclave, According to Reuters",
+        "source": "MotorBiscuit",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSEctQ0pISDNCNHQ5RU1Ua0RPd0NvRElFdWJHeFRfQjJPYy1YekstUnFVdkdwSlIyeklrYkJlcWU0WFFBSGpJeldIZ2tpNmdLT2xEYi1fNmZJNUwyNmJ0NFFRakUtSF85ZDA3U3d2U2FCbnVnakg0aUYzaDhvTlVKSVBGek10cVd0aDFnejRpWmg1SkhQd0E3NzJtY1JjdTR0OEwwWTZibk9IS01NNTZxSzJSYkJHaHFa?oc=5",
+        "published_at": "2026-10-29T12:01:48+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "c77a95664fa9",
+      "bucket": "7d",
+      "score": 0.5562,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "12636848673e6176",
+        "title": "Wall Street applauds GM stock buyback plan. The UAW is far from happy",
+        "source": "Detroit Free Press",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYXRZYTVsN0ZxaTNJTDVxRElkQ0VsRHdVM1VualY2OV9YdUdna2xORkN6eGU5Ty1EYmg0OVNueFRwUUZnQ0tKQ0RsWW5ZM1d1SGZocjFUd3ZERElCVGtIUHZsZHMxODVpMmJlZEhLVGNHYXU3X0ExYlZNai0zQ3ZzTDNZdFVSdGNSaE81bDZMQVdZUk50YkN4Q2RjdF9wWW9lVVZ3YjdpSGVmNWd1UmpGbEh5ckZaRVV6QkRzS19HdmF1SjNXODRWRnZpWXp4ZXc?oc=5",
+        "published_at": "2026-10-20T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "d4006ff6b6005774",
+          "title": "Backlash to $20 billion GM stock buyback plan foreshadows contentious 2028 UAW talks",
+          "source": "Automotive News",
+          "source_tier": "major",
+          "google_link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9kMFdKS1BGV3Y3LWVJX1hveEJKUE9XXzVpb21OcjVQejM1ZlFLbGhMQUtyOHpLV212M2ozTjNZWjFjR00tV3RTZVdRRnA4RlBSWW1fMzJfV3lEdDFfSUZ4SGJMSGFEaWRGUVdlWXJGaG1JbXZpdjlPZ3pmTy0?oc=5",
+          "published_at": "2026-10-23T15:00:00+00:00"
+        },
+        {
+          "item_id": "6d0551b985966892",
+          "title": "Weekend Drive: Canada\u2019s $8.7 billion auto and steel plan; UAW warns GM over buyback",
+          "source": "Automotive News",
+          "source_tier": "major",
+          "google_link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZ04yRW1rRFdBS0o3X0VucWVLeXVJdFBHcnNiR1lKWG95cXFkbUp6LW5ZOUFPZUJJdkF6Y1R4TzU4eGlWZHR3M1hTOVNCVTNlcmZwX0h3WmVLc0pnLXd2Ul9uZE5TNHFKZ2RCaFFHbjFTVUQtc19nbUp4ZEpvWDF2WnBJdUV1bU5ZRl9qTWN2SGpwRXE3UDY2X3B0NWtPNjA?oc=5",
+          "published_at": "2026-10-24T10:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "cb7f89b5cea8",
+      "bucket": "7d",
+      "score": 0.5546,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "918a92562d5ac98c",
+        "title": "Stellantis Sinks 8% as Q3 Report Nears; Ford Drops 4%, General Motors Slides 3%",
+        "source": "24/7 Wall St.",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPT2N3VjI1a1MyNEFWdTh3QjhXMWg0YlAweXAyU0xKdVhOaUs4eXFnLUI3SExCaEJHUlExcnR3aUF0VGpaQ1Fvd2FDVm5vczZyOFVSVUdVaXljSWpKcEU2bFlJc0VDNVp3NWpQdXV1NWstLV9Zd1RrOE9ERXdYN1RObzV3Yks1M3pHQThFM011ek5TbVlEVkstdlRjUlV0UXVIc3FWR2NCdHAzLTctenhPU1ZOeWl4ZjExaWc?oc=5",
+        "published_at": "2026-10-23T14:56:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "86051d5ec0273478",
+          "title": "Stellantis shares plunge 8% ahead of Q3 report; Ford and GM also fall amid sector selloff",
+          "source": "Pluang",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQLWVvOWpkNnBQei1BRHdVeE9sZnJIZVJROXVSMnFWZUdsWWszOW9SSkNXa3JjUWxWRUZqUzV2Wng1Y1RIZ3dwM1FJbENFa21UU1lQRVozQmhtcHVhamdoOHZEOEtEUlZHZ0F5SXNXMUNZT24xTHZJWmxfMjh3MGJnZXRRTGRtNVdxUVVSRTYtbFlmazhsYWZJVlowRHR1d1FPNmRQelFsSEFBY21pQ0tJ?oc=5",
+          "published_at": "2026-10-23T15:28:38+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "b7fe47557b2d",
+      "bucket": "24h",
+      "score": 0.5467,
+      "label": {
+        "topic": "supply_chain_ops",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "43e134c0133a36cc",
+        "title": "GM plans $2 billion investment at Lansing plants",
+        "source": "WILX",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUGVBWUxuR19TNm5CRWhVbUlZcklMdHFlMC1PR1NVMEl1cE1NNUh1eDRodDNiQ3ZnRW5aQ2YxS1h4a3BMdFVVV0Vsck1SUWdIYWZsem5kNW85UVB4cW5OTTh5azhycDlFeGFuRVlVdlVoVy15T1NnQ2NVeGxibXNkd2lmRdIBlwFBVV95cUxOZGgxQnhQNEhZRWxqanRPSHhqakMyRXhsWFQ0UXhVdXlwaG1CMjlscXpqSWtMeG5fbmdCVDFlT2NvQkZSam84TW5MQVZ1Rm5CWlRDTnBPUEN1QTN5VGFCSFNkcHh6SmtkNXNTOUV5d180ZWZ2N3BvTDZYTEd1UTE2UmJhTWxuQ2ZRcUctZld2djV4SDhoOU1v?oc=5",
+        "published_at": "2026-10-28T21:29:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "8d3b5b3d815f50ff",
+          "title": "General Motors (GM) Commits Over $2 Billion to Lansing Plants, P",
+          "source": "GuruFocus",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNV1VSVm1ncTFMQ05SZ2R4QzhZbXVvbWEzZHM3M1V6bEJ1OWdOdlZQdHhFZW4xOE85Rzc1b1hRbC1uY0Zaak82T0ZGQ2hadW5JWW1jSU00Y2hvQ0FUVlYxRjF2LXE2ajlNakk3VHdYXzl0dXdBeUhpNzNiZEtEZ003WXZodjJkdzhBSERIVl96cTIxR0hwRDZpSTV4d1FKR2NXNXNIXzlScmJTakNsbmxOQlVRWkhsU1ZNT09tRXFIel9tbUNpZlZsWVlmVHQ3cThJS2c?oc=5",
+          "published_at": "2026-10-27T22:24:33+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "6a609345ac9a",
+      "bucket": "7d",
+      "score": 0.5416,
+      "label": {
+        "topic": "autonomy_ai",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 4,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "37d37faa1b083a94",
+        "title": "GM exec discusses the OnStar AI Assistant, data privacy and driver safety",
+        "source": "Fox Business",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5fOHNnVkt3RGI0bEplTDNPbTRLOU5YUVVpZ0NPR2I1OGZqT09VZ2VjTl9rUWEycXVtbFpaeVBkYTRSY01KcmdhaXhvcDdDc3RFaGNZUklZclJDU0E?oc=5",
+        "published_at": "2026-10-25T21:13:13+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "8d4758238bb5a687",
+          "title": "General Motors Expands Autonomous Driving Technology and Introduces OnStar AI Assistant",
+          "source": "SSBCrack",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPX2JsSWxOZjlkNmNwWno0MkhNUmF1ekFSSW9VaHRPVUtGcTdqS0liX1Q2RFpqaWlSWkR0SUdIQzgweWFFSGNSbTd2SXdjaTF4dXhhWnJpVDFjOXRSOHdMUjhnY3NUaUVtZXJ3ckk3dVdUUmR4QzhTVUpRT1FkTk5ZYmE5a2hxNmdEQjlNTU1uelRJbjE0UHJJc3RyVHk0YXFmUGwyTVFhWkR5aTBBUTNFcS1tYks?oc=5",
+          "published_at": "2026-10-26T05:14:50+00:00"
+        },
+        {
+          "item_id": "df3ca7daf8eaae1b",
+          "title": "General Motors (GM) Unveils OnStar AI Assistant for 2027 Cadilla",
+          "source": "GuruFocus",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZ2ZPd0JYa0ZQazdTWDlwOG5vRzRRd0F2eV91OEt2YndvSGNkbmQxSHA5b0pqUmhnZ1BXNE5KOUFYVXkwTDdJa25uZXktZ1c2NHpMaG9YSm96WFpYQ1JTQ2RfN0JOaVRwSm1hejJwZlJpRjZFYm5XaFlhSDAwdUZsV3JVYlVqS0QyMDlhZzdpMk9UUElrOHgtck5fc1cyMkNQLWFwakJpSldxdm0x?oc=5",
+          "published_at": "2026-10-21T21:01:25+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "376cb72a63a1",
+      "bucket": "7d",
+      "score": 0.5365,
+      "label": {
+        "topic": "supply_chain_ops",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "69dc392e80a1252e",
+        "title": "GM Expands Hybrid SUV Production at Lansing Plant",
+        "source": "Fuel Cells Works",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNU21oVTBDeWd5VGdMYUZKOUlKenJIZUE5NXExbmxVLV9nSTNDdlVCT3Npa2pjSWpKVTdFcnRGRGdNcE8zdGhSMnRFS2w4THNWRHNYblFvQnhMWkh4dklEbHpaVGFKY2xWN0ZXT0RfYkxON2JwcWxraEwyVGZEa0tLX0t5OFZfMmM5bWpoWW5kSWRrdWdlR3ZZM2FLeE5FdU9fdFlJSW1FaWN5dGo5R3ZJckZ4M1hkX0ljbDlySGlGS1hvQQ?oc=5",
+        "published_at": "2026-10-27T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "89c3ecad4e227563",
+          "title": "General Motors (GM) Invests $2 Billion in Lansing Hybrid SUV Pla",
+          "source": "GuruFocus",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaWtnenYxMURrMllNTXJId3BLLUlOMG1iTHREOHpyOTdSc3lMY1Z5eEdfNlpJT25SVDlCSjM1b3ZzVU5MSVBZamtvcWl5cWt1d1FmWXNfMFNGME4wNzRFbUo1TUFvYTRsYnNKSzA5RUJPemkxYXNBYzE5TXVSSVhfZjZuWWh3UzZUN1k2bW9HTGlLMjR5SzVqS3loRng4UlVwZkplYVBJTGRHSUIycTVoWjU0VXhuaFlz?oc=5",
+          "published_at": "2026-10-27T20:37:30+00:00"
+        },
+        {
+          "item_id": "40f00f986ceb70b2",
+          "title": "General Motors (GM) Invests Over $2 Billion in Lansing for Hybri",
+          "source": "GuruFocus",
+          "source_tier": "financial_aggregator",
+          "google_link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbFJxdjNyTGxiMEdsc2xjRXVORGNGZi1GeTQ0X0FVcXZSMVJWMlp3STcwV0dDTi1kcVhKUDBuUWIxSkE1Ym9QUmRKN24tU1lnVXhTVGJielhFcUEzMXI5ZWtyaTBZekYxNHh6RkFOeWgzQl90c29oUmlWWTJqQWZrbjJxVmVlWVlxNUxqREl2c1pwYjJTNTVDMXlnM2NFckt6V3NlWFc1T0hzbXozRHJHODUxcXVMcXVxZmNMRw?oc=5",
+          "published_at": "2026-10-28T10:40:44+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "434ce9b76adb",
+      "bucket": "7d",
+      "score": 0.5334,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "dc3d67a42341707d",
+        "title": "Forget Ford's Lucrative Dividend. GM Has a Different and Perhaps Better Way to Reward Investors.",
+        "source": "Yahoo Finance",
+        "source_tier": "financial_aggregator",
+        "google_link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZzlWcWxfdTZURFpOemJIX0dfUUw1UnlfekN3cEFPeWxGbjl1UDcwZkhkZVFaY3BCeDRqdGJEYTFiX0RqRzZDMjVQd2N5cm5EdE1jRnV1OEpxbENTeDd5ZVdrU3R1bTFRXzNDU0lja0dwaXpzRWp3R3YyTDU0WG50RVI5S3p5UEJUcERONk1fZzAyWE5ia2dHMTQ5OEUtZzJ1?oc=5",
+        "published_at": "2026-10-25T18:23:00+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "6eb8af747f3f",
+      "bucket": "7d",
+      "score": 0.5258,
+      "label": {
+        "topic": "earnings_financials",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "094ba932acd6c78b",
+        "title": "Stellantis Surges 10% on Reaffirmed Guidance and Accelerating Cost Savings; Ford Inches Higher, General Motors and Tesla Hold Steady",
+        "source": "24/7 Wall St.",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPZ2FSVVVOU3dNTk9qMGN5U0oxZE1yQll3Wk95Ykd2M1ctUVBDbGk5dmxvR1lualpWV1RnS1d0c0RyM3MxQUdLQkRwODNnc0c0ckoyQlZVWkNucFFRZ1ZSUHpKWF96WVl6YnNWblVTdDUwWWVuVTdDOHQ5M3hWaDJqSGJIWXphWG9QemRRdVRFb1ZLVVlPR214TERINXVoeUw3MEJoSHhjLTVrYU14eUlhdFktTVNxc3NueTlOTlpnaHdqbXcyQnQtYjExWXJldXJwR0RCWjFfTFVSX3RHbmRKQXR0elJNd1BYM1phLWZBM1pHZXZUVG10TGtqY3V3WFp1NzFF?oc=5",
+        "published_at": "2026-10-28T15:04:00+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "72bf379f4223",
+      "bucket": "7d",
+      "score": 0.5077,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "d86eea115deb701f",
+        "title": "GM's next-generation EV platform detailed: LMR batteries only, fewer parts, mainstream focus",
+        "source": "CarExpert",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWEtvYktMOU1YdkhfWlZ6QWwzUXVlbTVxZUlnNjZIeVJaMzE5X21BWklKeVhxWFd6amhSZDlfbUtNZ2llcjVOb3o4S0RXc3VUTnBWblFzQm9wR2lYMU9iMVd2aWk4UWJrV0xucDk1ZkhfcTZMRzQwZGl5a3NuS2d2a0V2aUd5X3hsLUZuQjhjaHNTYzBBRDFCUXRHdERZaDNKQTk5SEFSMUppMGE4WXZUY0RfQTI0Yl9DRlY0TjlRY0pNVzc3?oc=5",
+        "published_at": "2026-10-21T21:34:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "75067188c4d90f3e",
+          "title": "GM's New EV Platform: LMR Batteries, More Range And AI",
+          "source": "Vroom Head",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1VGhvNzUxUkNZOGotbWpOOEpjZUYyZ2ItWWZnNU92OTFHYVowZGI3eWhvc1h1cExwbkx5Rjd2a1E4WktncVJQdzlqQzViSWQzQmxUX1UtSnBUNll1cGp3UmVLdHJ4dU9WUUJ30gFzQVVfeXFMTkZ3M0ZyWTlZMDB2bnJVNWstUFhBbElqa0tiR1k5RU1EN1lFU201SDZDZFRwcnhCZml2ZlpJN1pabTZHZXV0ME8yWXV3V2M4ZXdHNDFHbVBLQmYyeWlxMkFpMXAyQjBXX1NPR255V1A4dVlXVQ?oc=5",
+          "published_at": "2026-10-23T09:30:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "00e9ac974fe2",
+      "bucket": "30d",
+      "score": 0.4968,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "f04586c72d6dcc91",
+        "title": "Speed and simplicity shape GM\u2019s fourth-generation EVs",
+        "source": "General Motors",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV1I3T1VmTTE0X2RVbTBFTTVUSTI1UGptLTFDOS0zZ29FTHhuajRSYm4xMnZmLWRiTlFCRzdSZ0RFUVAtSkQ4X2xKaV9Ybnd2c3l1RzhaRFRVTGVDVndveV9yclM1OWxuWkxhRTI0OUphRWtyZHMyeXQ4TzUzejVKSmFmdll6UDdPUEg3TW9ORHNfckdmREs5Vm4ydXFOcWhzcjFrbTdNcVQ?oc=5",
+        "published_at": "2026-10-21T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "26f389d783850dd4",
+          "title": "The All New, Never Seen Anything Like It, Fourth Generation EV Platform From GM",
+          "source": "CleanTechnica",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSE1vek45OUVIR2Z2Z25odlMyMmZYX19DT1FOZXVlSUdJel9LTm05ZzRObWhoRTZHVUpFWjBSNG0zSmJ2WlJuOV85REVDcnJIODNQLXZuQU14UzFYczNnRFFCcnFIYURfOEZJUzZLYzI1X0FxanZUQ2EzWHR0NEVkdXhFRFN2TFNCM183V084OWRWRW5xSFR1SHl1d0ktQmJURWtHdkd0NW1rWVR5VDJLdjdLTTAtQQ?oc=5",
+          "published_at": "2026-10-22T15:39:31+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "95a2e24924c9",
+      "bucket": "7d",
+      "score": 0.4872,
+      "label": {
+        "topic": "autonomy_ai",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 7d bucket",
+      "article": {
+        "item_id": "d29a32b51bf41890",
+        "title": "GM to bring highway autonomous driving to Escalade IQ in 2028, expand to combustion SUVs and pickups",
+        "source": "\ud5e4\ub7f4\ub4dc\uacbd\uc81c",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5CaUk5eV9ZTzZWMnJzUTYxN0RXZVFGYzBfZ05heHNxZXFyVnd0aXE3REVKenpqWEMwdEJQeGNtQk54VTJSNUhrUUJESUlSQXJ4cDg0d0h3?oc=5",
+        "published_at": "2026-10-22T23:21:51+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "aa75004b567c5c2e",
+          "title": "GM Plans Eyes-Off Self-Driving for Escalade IQ in 2028, Expands AI Features - News and Statistics",
+          "source": "IndexBox",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNnVxNWFhdGRZZFh3ekNicWtEWHJUaHhVb0NlM0pLTW1XZV9HYmdsMHRUYlZpdUthbG5PRm9IQ0Y2eEZOYm94U3lBOWtuVmxuSjFFc1BOZVUtRkw2MHF3WGROVUU2ek1ZaWFzSl9vS2RpZFRIcElDYjFOZTlTQ0Ryenpja2F0dEc2ZS1OU1dKNjgtZ2hYXzVZZ2h3eWRLRS1Bd2VjYVFULWEzUTcwMUZyWUtGNnB5bHlTNzI2WjVOQ2VQNm8?oc=5",
+          "published_at": "2026-10-25T22:40:37+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "b999dbf23b1a",
+      "bucket": "24h",
+      "score": 0.4837,
+      "label": {
+        "topic": "supply_chain_ops",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "9e9d7b26efb21e6c",
+        "title": "President Donald Trump in Michigan to tout manufacturing record at GM proving grounds",
+        "source": "fox56.com",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPc01nTkFEdFpsRU5GYXpDSjRCQ0p6YmpBM0duMG5uRjhGc0FlZ2R4VGlBa1NuVXdOTVpqNkpORzJlLWhHb28wU2NQazNnM2hBWjZ3VjVVNVc4YXUtTTFfck56TWtoNzItS3pIMjFXNG9QbE5ocXRkaXFlbHBQTF9yQkREM1ZMZEV6Rl80QjdVbkVGVndWM25ZVWxkcTh4SjRfZXdSQVhvWXE3cVVXM1N3S1llWDc4UXFJYkVKTUdFZUNVSVVMSHJZRGZaaFZSSkhOVC13?oc=5",
+        "published_at": "2026-10-29T01:55:28+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "dbfaa001449c",
+      "bucket": "30d",
+      "score": 0.4815,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "ee7c0bca6125ae26",
+        "title": "An Electric Corvette Is Still Coming. GM Won\u2019t Say When",
+        "source": "The Drive",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZWtGSnZWOVJRQnQ1Q09QWERXenk2QVRQcENEMDVHcFBZVWlsWUFHU2pZNmhTamhVam9Jc2lCdER6U2luRUc4a0kyeUtfcUpOOW8xZ05xelFlQlJxUWo3cHJDdE92Z09oaHZOWWNWc2FBY3V4UFhuMGVZOEdKSnQ2dHVoVFNWUHg5LUUw?oc=5",
+        "published_at": "2026-10-14T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "25b52adf90748e60",
+          "title": "GM Exec Says an Electric Corvette Will Come \u2018Someday\u2019",
+          "source": "Electric Vehicles",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTVgtNVVYelF4ZGlFODJ4Sy1oLUFYOTZ2a2VXR0F6LUJPdURmeWFpcnBmelVjcWpFV2xjNWRvMHdvZnVtYWdtS3Y0M2R0RVAwOFJad3poUG90TmM0UWhPLTgzeEFwYjc1NlZIeGJfTVIxWFhvOFBzYldkS3F1RkFGX0pMRklvRjgwd3pYT2xiTHZ0VnE5cnFVZVE0RWlGQnhqVmZnSTIyejY3QQ?oc=5",
+          "published_at": "2026-10-15T07:00:00+00:00"
+        },
+        {
+          "item_id": "e2fdfd01bc618f52",
+          "title": "GM Confirms Electric Corvette Is Coming\u2026 Someday An all-electric Corvette remains in General Motors' long-term plans, but the brand's executive chief engineer signals the V8 isn't going away anytime soon.",
+          "source": "Auto123",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOT05EUS1wNmtwVnNHTjNHSEUxR3hyTU82V1RjZVA2ZTFucmtKS05YVDI0TVNmODYwOWdXVThkTEFWc1NVc21ueHNkYkpGbDJJWndGUjF5WnU2MHZVLWRoeFZxcEt3d0s0N1IxUDFNQ1Z6bGRtUUM0RkhrZ0ZhZ1JzM3dtUF80a3duOVNqLUkwQ1QydWvSAZgBQVVfeXFMTkUtRzRPWDlNYXNSV1FNMk9hLWNrRnd5UFRXaEdNdHZYa3NadE9TUE5PODRjM1U5UFNlMDRzZzhpbnZKUVBpX01XVDNnM2MtUVZBLWkxYk14TGRpLXgwVVotV3QwRFoyUl9QUXZ3TlFhdnFhWVRueGl1V0s1RXZid1ZTS0RfV29PSnhDZ2hsTE1KWkpDM09uNm8?oc=5",
+          "published_at": "2026-10-15T23:36:34+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "747b5e013bf4",
+      "bucket": "30d",
+      "score": 0.4649,
+      "label": {
+        "topic": "mna_partnerships",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "34108ccd0d245893",
+        "title": "Kourtel, General Motors discuss partnership opportunities in vehicle manufacturing",
+        "source": "\u0648\u0643\u0627\u0644\u0629 \u0627\u0644\u0623\u0646\u0628\u0627\u0621 \u0627\u0644\u062c\u0632\u0627\u0626\u0631\u064a\u0629",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcmFwNzhUQ2RnSGR2X3lwVXVTTUR0V3JLYjBLTk1WWkNwVWFXNmp0MXM1LW5Kdlo2VWpWQlcyRkRLM0pMa2hidjZJNVVRNWVBamVYT3lRSF84NlNiTXdTRU9NSVZQVVVPMlFHMk1laExfdTZBM1hhTi16ZDJHb2Y3OGQzYmROZ2YwNDA2STRsZHVvLTgxY1hTTmtoajA4cWo2b2QyXy13QWhyampkbVc0X1JZZXpBZDdpRGpKbFJtSHBWME1JcUZfSE50NURqT1FmcGdRMXBvdzBYcmc?oc=5",
+        "published_at": "2026-10-14T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "4b0e03ea8c03d217",
+          "title": "General Motors Explores Potential Industrial Partnership in Algeria",
+          "source": "\u062f\u0632\u0627\u064a\u0631 \u062a\u064a\u0648\u0628",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVnRXZEJxcnRqTFBERFlFaGlSQnJFNHdoRV9wTW1Sa3ZFNkpiVDhBdlFMS3Y4SUVlc3FzZzZKN1NmMFp0bTQ2eFpOcVZwRXpWekxjOEtjdWd1Q2t4WUdvWWdOSnZmTTRBRjBtTk5hOUNEcmZoVnhKVzZ6QVNsUmR6ZmdudGdvd2NrSFVteXk1amhUWnd1eUUtTXRuckRXQQ?oc=5",
+          "published_at": "2026-10-14T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "622312ba290b",
+      "bucket": "30d",
+      "score": 0.455,
+      "label": {
+        "topic": "recalls_safety",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "fda37ca4bdfeb039",
+        "title": "GM class action claims Chevy Traverse, other 2025 models have faulty brakes",
+        "source": "Top Class Actions",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOd21kTllBSlRka2ZFZTdoUGtMWUZlaWxJNU1Zb0V1Uy0xQk51bVBDRi1OZGdzdVREN1A5SzRCQndzTTlpNGJ0cERhMldidVYtczJFeHlJbU5SQUpMYXNTZmVMMGdoeGJRSUtOSEJJOWhEMkxjMHZnclpTSHg2T25iYVF2MlRaVDNpMVhPMDV4RHNfRGlJSXhadU9heDR0U0pvRndhSzJrOTZwS05LakotY2tZaVZzVUVJT0xBbVdiSUJpU05yRE5ac1hHY1hXV3pRd1E?oc=5",
+        "published_at": "2026-10-13T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "e50c70b6878f48a0",
+          "title": "Class Action Lawsuit Accuses General Motors of Hiding Defect That Ruins Engines",
+          "source": "Yahoo Autos",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTjhUWnIwUWJFbFpXLTZwU0QzbFlNaHNrbEY3Vi1UT2o2STE3azU4d0ROTXZPWlpOTUNpdUFMYzVZUkQyOURCY2p5REE2Rkl5ZDJiNU96RWdKeWFQb1E5WXgwSGNrM19GUnJZZmFDbmluVl9tMHJaazhPeURmRzF5V1NMMkNOX1JKM1ZKN2dkbkJsUUhXSFV5M2s1Sm1kYzB5RmhJSXFn?oc=5",
+          "published_at": "2026-10-16T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "15371dd81135",
+      "bucket": "30d",
+      "score": 0.4464,
+      "label": {
+        "topic": "labor_org",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "884dd5227d946661",
+        "title": "GM and Ford tweak salaried workers' benefits. Here's the fallout",
+        "source": "Detroit Free Press",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNckN5YjM1Y1N2emlsOE1STTBqTmNFU2JlUmI2akhnaldoekxoU3JtaWJXTEpDTmRhQTNnUFhHS09MWE1mUl9EcjVteXJsWmJNRnBEb3VZT2lmNHFsSDVzYjI2VERNWkUxaDJxMGc5YjdLUFo4QmxRVlh6bXRTRFhnSWdfNXpzUEdpOGhJMWRwN0VUek1Rc2hZaTBHRXZyRC1wQk1N?oc=5",
+        "published_at": "2026-10-15T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "11922542ce96b15e",
+          "title": "Camaro\u2019s on Hiatus. GM Says Ford Proves Mustang Has a Market",
+          "source": "The Drive",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQb3dWUHAtNzlIY0lFUHdtODl0dUNranN0dFhmVW96bnhLT3FUb3gwWDF6QlpBTmVfWURVMVVIeEs1X19hb29JdlU5aS12SzJsNWRqbnlPeDFlQ012NkZIWG9TX2xSZEdTYWhlXzBvdE5RcHpCenFzNGw3b3BYT3JxQW9pc0lQNUJ3UUlUQzlta1JGUQ?oc=5",
+          "published_at": "2026-10-14T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "588bdbf54bef",
+      "bucket": "30d",
+      "score": 0.4214,
+      "label": {
+        "topic": "labor_org",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "ef6cb98106b0dc9f",
+        "title": "GM Slides as CEO Barra Warns of \u2018Intensifying\u2019 Challenges",
+        "source": "Bloomberg",
+        "source_tier": "major",
+        "google_link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbm5VbGxYTWd6UFlhYWV4dXhqcFBqNVJlclZCNU9jOEZYby04S0hGelFDbFJVQVdXTnl6bDZtUjRJZUJNRXdleDE4WVhQYnFPLTdwR3ZUMEw4MkwyR0RzcFVzZ3hQdG5SSXZnaGxxTDEydWtfcEFWX3JtWXF6LVlGdUhObXRZaVpua2d2N1Y3WTN6aktwT0JGQ3NLVDhwM2FfTXNlbkwzQ3ZfN3ZsclF1Wjdod0E?oc=5",
+        "published_at": "2026-10-20T07:00:00+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "58caacdff132",
+      "bucket": "30d",
+      "score": 0.4187,
+      "label": {
+        "topic": "supply_chain_ops",
+        "sentiment": -1,
+        "signal": "threat",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 2,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "d292ab1181ca5a73",
+        "title": "General Motors\u2019 Oshawa Plant Will Stop Production of the Chevrolet Silverado 1500",
+        "source": "Motor Illustrated",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbmF6dWNPd0t5WmR6QlNPc2pPVlM5NE1yV3VfT3FFUFBZS0lRMlRzMWtPQXZVbU1aaTRWLWdvcHotLWdkRzdWWUFCMnJwOTdjdVFEV3RZN0dLX29VR3FzUmxhSndiaG5vUFFuWXQzLUpiYkNPSEU1VGJiR1JaZmZMR3pkVlpNRlRmVTduY0Z4bWswYUJ3ZXNuM2g0cmM4akhoZ0pVWjVjbEVocUhILU9fLXA2MTdyRjNN0gG-AUFVX3lxTE52UXgwSlc3Q29yWVd2ZE41NjVBVEtBdFEtcFNLVmVmbUpsN0J3b0FHMTNJLXFLNWpqMXlCM2JaQkJiTUVwdDZUejlFbG14dEtSUXQxUTdPVGVVWWszY295TVlvU2pmQTFsVURHV29jQjNJbXg5YkdFWTM0aEZLUHF5QVdZTWZkYTlVUkxFMWlXUmRHd2RWQnF6cVBESEpVdTB5WUZwLUhyaFJzSGJtQ1podm5LWkZjTWlVSXplMVE?oc=5",
+        "published_at": "2026-10-09T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "ab2c0010b2446c14",
+          "title": "General Motors Stock Is Up 7% in October While Ending Silverado 1500 Production in Canada. Here\u2019s Where the Stock Could Go by 2030",
+          "source": "TIKR.com",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQVEc2LTA4OWI2dWU2ekxqc0Y5a2pXU2poc0FtWVJfVDdpV0E4dTVDSUJQWWpQMkIwaXp6dDNpNlhUR3dYejB6UEpBV2o3LTBoUFM4WVNxTEYtT1VDUDlWcXRvdFhSQnB0eGhiT0h2XzgtZ3lVWkc2ZUZ1MFZIODBreGUyZ29sRmtmZjVobzRhSzFQbDVGV0pLSkJNZ1Q0TTdkeFVSTkZFaFU1MjRKODhQNzRmcXZTNU5XODlsVlplNllFU3A0cS1raGIzZ0lmMkVWY2s3d1pyY2F5MTBqaGdER2dqOVhMaElI?oc=5",
+          "published_at": "2026-10-10T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "e0cc2fbbf7eb",
+      "bucket": "24h",
+      "score": 0.4145,
+      "label": {
+        "topic": "labor_org",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 3,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "ff62871f3815d8c0",
+        "title": "GM Leaves NYSE for Nasdaq After 115 Years: Could Nasdaq-100 ETFs Be Next?",
+        "source": "Coinpaper",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT085QUZSQnFCWU1zU0ZybDdfZmdCMXhuS1hrWlZKOEVib1lxWjduTGVzelhaRHh6RFROMzlXZzdzTTNyZTJINUFwYW83cmhVUjNUS3pCelBtZ25rTHpNeTFyMGtqZS1uY3F0TVBGX3Y2X01VelY3NDB2emFGSWtuTDlBUXNIT0FoWmxvc21TLWpsTnFIRFFrZmpqR2p6Q3JEWkE?oc=5",
+        "published_at": "2026-10-28T13:43:43+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "41c8ee665fa9f97d",
+          "title": "General Motors is leaving NYSE after 115 years, switching to Nasdaq",
+          "source": "Just The News",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTmg0ZUtuUDlVRWVoVGdlbHU1cUQ3dTdwSjE1bGJYQUZhYjByZ3dveUdIZVdmMHFtQ2JBZVFwUmZYNi1VcVg4SlhIR3I2eXVIWW9URU5MTnZtU1RfVHlnU3VXck41SHZNdkZXUHlQa21VZVdnczgtTjEzWFFBM19wLTlJSDdHcjhuMkxjZy1LbTc2NnFVTGplcUd3NWRNQk5OTGpLZFZQUm0yUmhC?oc=5",
+          "published_at": "2026-10-28T14:02:30+00:00"
+        },
+        {
+          "item_id": "ddf7762464c2d403",
+          "title": "General Motors Shifts to Nasdaq After 115 Years",
+          "source": "\uc870\uc120\uc77c\ubcf4",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOXBnMHR2TUF2UjhpSi1nQjJZVEFsQkVLa3dnY1RuMzM1NGZ2RldQdm9lV1Y4NHZZQmhFZFdnNHpsTkVHR05yV0MxREZqcEY0UnFESTh1YU1kTk1vSU16Y1BqOFBsNDZRWmVvcG9oU2FvLXpDb3FsSG5iaGNqcUp5clZFZkwzMTlUYWpSR0Zn?oc=5",
+          "published_at": "2026-10-28T22:59:29+00:00"
+        }
+      ]
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "921a93e11002",
+      "bucket": "30d",
+      "score": 0.4088,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "2970cb9c365435ab",
+        "title": "GM plans lower-cost EVs with new battery chemistry",
+        "source": "Transport Topics",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GTVJWY3d3VDBNVlA3VmRHdXJabTd0NzZZMXlOUmd2bGlSRnRKMkt4blktV2F5T09aajZJOFB5WXZWVm5yOXNkZ3RiX2RTWUJqcTgyVEhacndZeUlwVGlyR2o3cjNiRnFuc3c?oc=5",
+        "published_at": "2026-10-21T19:01:43+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "e327e8d4247d",
+      "bucket": "30d",
+      "score": 0.4082,
+      "label": {
+        "topic": "products_launch",
+        "sentiment": 1,
+        "signal": "opportunity",
+        "business_relevance": 3,
+        "chatter": false,
+        "method": "llm"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 30d bucket",
+      "article": {
+        "item_id": "029559e18969ba93",
+        "title": "General Motors Is About to Bet Big on a New, Affordable Electric Vehicle Platform",
+        "source": "Road & Track",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMFc5VHpSOFRXakl2bm5hV0FTemd3VFREdnJhUkhoZk80RlRmTXRyRElfSF9yZDFWcnRFLTRVd0tjTEc1SlFjYklLcjlVVTBPbjlQdHloZ0RwZUxLSVhKeHFMV0xRQ09zaE5qZG54RDhNdVI2RzdnWkxLQ251QWZmZlNOaGtGOThjMVk4aGdZMlE3TFpUTllZQmRYa0psSUJjTFJ6bw?oc=5",
+        "published_at": "2026-10-21T18:00:00+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "544a4ec295bc",
+      "bucket": "24h",
+      "score": 0.377,
+      "label": {
+        "topic": "autonomy_ai",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 2,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 1,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "105207d335e146f6",
+        "title": "General Motors shifts to Nasdaq as it bets on hybrids, AI and autonomous driving",
+        "source": "https://internationalfinance.com/",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMHN6VmtSWWlIa2dmZTlGbVpQaXgzUFRZVkx2eGhzT1l0QUlzQXFBU3U1dzVVYURxb05wY1VXcG5hLWJZQzZXaGVsOGxSNnBFaHdta0lrSGpZdW04LVpRWVo1a2piN2J4aHkzejJQTHdBZjZYbkxPcVlBalNJNURGMERCQ3VScjRaQWI1TlJGX0hZUERocXBpMDV4dUF4YTNQX0owSDRSZ3F3d2hyTlcyU2pQZDBOQWlQWE5Cb2RrdGc?oc=5",
+        "published_at": "2026-10-29T00:00:44+00:00"
+      },
+      "alternates": []
+    },
+    {
+      "company": "General Motors",
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [
+          "GM"
+        ],
+        "exclude": [
+          "genetically\\ modified"
+        ],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": true,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors",
+          "GM"
+        ]
+      },
+      "event_id": "7d268598e6ad",
+      "bucket": "24h",
+      "score": 0.174,
+      "label": {
+        "topic": "other",
+        "sentiment": 0,
+        "signal": "neutral",
+        "business_relevance": 1,
+        "chatter": false,
+        "method": "heuristic"
+      },
+      "n_sources": 15,
+      "location_hits": [],
+      "selection_reason": "top of 24h bucket",
+      "article": {
+        "item_id": "b5aad7398e098383",
+        "title": "General Motors Will Move Its Stock to Nasdaq in Tech-Driven Pivot",
+        "source": "GV Wire",
+        "source_tier": "other",
+        "google_link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcEZ1dkd3RWJkbUs0akxKc1o4Q2Znend6dWI3SUlXbXRJOGlYOHhkV1ZDY0kyWWREai0xUTFGQVV2TVZhanFpLWlBOGVReUJ5TV9FN2dfUnB0ajRGYVZZelRUVU95bFF3WXdSaldyZWl6b1d4dDNaTnBNX19Gb0NQTDUxVWFkXzhVQWxrSGFyT1NLMXNuTjFkdDdiVGY3UDFiWVVOQnNvMlRtUUdudFJORDIwOXpVZWdvR0VPbmF6Zk1GRFRVdlNWVHJ1NA?oc=5",
+        "published_at": "2026-10-27T07:00:00+00:00"
+      },
+      "alternates": [
+        {
+          "item_id": "1a5e035788f25c15",
+          "title": "General Motors to move stock listing from NYSE to Nasdaq",
+          "source": "StreetInsider",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORWVpX1RnY29QMzhhaUVGdlUwVjVVTklIbGJIeFFTalRIQXluWnBseUVDM0IwZnhhaFlXd2NsZHQzVHpRcXVmWHJBaWxodkM0RVZ5MWhSd2lPZHdJa280d0VZRkpPcnNSNUJqVFRaa0RKTTRFc01qcDMwVGJhMFJLb2JYME9jYk9Rb01DWk9qV3h2X2lNeHBRQW1PUU9vSHR5UDVjZ1FjRnUxWUhxZURtMV9YOEdQUQ?oc=5",
+          "published_at": "2026-10-27T10:36:42+00:00"
+        },
+        {
+          "item_id": "a068bdec23445170",
+          "title": "GM to Move Stock Listing to Nasdaq From NYSE, Eyes Nasdaq-100 Entry",
+          "source": "Electric Vehicles",
+          "source_tier": "other",
+          "google_link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWGY3SG1GVWE2SGQyZFJQT1JXZkFRVV9jdGpnaE40azhOcDNyYkJaaDBhS0xTYk9SaXA5ZElubzd3NGFqLWlYM1h2cGpVTmhxNXNqU1cyeS1OUUpEZzJtU1VsMm1CeXAyeUNubzdNZjRTM3dmZTlQTlM2dGlkLTZoN3FJdkktQ3JfbTF6SFVvQnRzeS13SlVVZnd6ZDNiM0pURDZLTlNtd21LcG9SWm5mdA?oc=5",
+          "published_at": "2026-10-27T11:57:00+00:00"
+        }
+      ]
+    }
+  ]
+}

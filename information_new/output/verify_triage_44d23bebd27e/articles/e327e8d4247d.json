@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "e327e8d4247d",
+  "bucket": "30d",
+  "score": 0.4082,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "029559e18969ba93",
+    "title": "General Motors Is About to Bet Big on a New, Affordable Electric Vehicle Platform",
+    "source": "Road & Track",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMFc5VHpSOFRXakl2bm5hV0FTemd3VFREdnJhUkhoZk80RlRmTXRyRElfSF9yZDFWcnRFLTRVd0tjTEc1SlFjYklLcjlVVTBPbjlQdHloZ0RwZUxLSVhKeHFMV0xRQ09zaE5qZG54RDhNdVI2RzdnWkxLQ251QWZmZlNOaGtGOThjMVk4aGdZMlE3TFpUTllZQmRYa0psSUJjTFJ6bw?oc=5",
+    "published_at": "2026-10-21T18:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.roadandtrack.com/news/a74197096/general-motors-new-electric-vehicle-strategy-announcement/",
+    "domain": "www.roadandtrack.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "General Motors Is About to Bet Big on a New, Affordable Electric Vehicle Platform",
+    "source_item_id": "029559e18969ba93",
+    "resolved_at": "2026-10-29T20:52:20.065866+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.roadandtrack.com/news/a74197096/general-motors-new-electric-vehicle-strategy-announcement/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.roadandtrack.com/news/a74197096/general-motors-new-electric-vehicle-strategy-announcement/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "General Motors Is About to Bet Big on a New, Affordable Electric Vehicle Platform",
+    "published_at_page": "2026-10-21T14:00:05-04:00",
+    "title_score": 1.0,
+    "text_chars": 5979,
+    "content_hash": "51e0647d16c0438a",
+    "screenshot": "e327e8d4247d.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:15.613380+00:00"
+  },
+  "text": "General Motors laid out its technology blueprint for the coming years on Wednesday, and it seems a new electric vehicle platform is on the horizon.\nThe Michigan-based manufacturer announced a slew of upcoming technologies at its GM Forward event in New York City on October 21. Artificial intelligence, renewed investment in autonomous driving technology, and new software-defined vehicles were all on the menu, but it was the plans for GM\u2019s fourth-generation electric vehicles that specifically caught our eye. Going forward, General Motors will focus on spreading EV ownership across its whole customer base.\nAll-new battery chemistry and redesigned drive motors make up the core of GM\u2019s future EV plans. New lithium manganese-rich batteries will underpin GM\u2019s highest-volume EV segments, targeting a balance of range, durability, and affordability. Produced in partnership with LG Energy Solution in Spring Hill, Tennessee, these batteries will be 33 percent more energy-dense than lithium iron phosphate; as such, they will offer longer driving range in a smaller, lighter battery pack at comparable prices to lithium iron phosphate ones. Overall, GM is targeting 20 percent more range from every kilowatt-hour of energy.\n\u201cThis technology will appear in our highest-volume segments, and it's a great example of how we're bringing battery innovation to mass-market EVs, with lower costs, long range, and improved performance,\u201d GM president Mark Reuss said on Wednesday. \u201cOne of every four vehicles sold around the world is an EV. That number is only rising. We're not walking away from that. We're embracing it. We continue to develop our future EVs and work to reduce battery costs. And when the U.S. market is ready for EVs in large numbers, we will be there for them.\u201d\nGM says developing a new battery chemistry typically takes years of building and physically testing hundreds or thousands of cell designs. This time, GM engineers used computer modeling to test more than 300,000 battery designs before building a single physical prototype. The time between the first LMR battery pack concept and formal program approval was just one month, thus speeding up GM\u2019s fourth-generation EV platform.\nSimplicity will be key to streamlining GM\u2019s future EV models. As a result, a new family of electric motors and power electronics trims the number of parts inside each drive unit by 40 percent; these smaller, lighter e-motors lower production costs and open up space for more people and cargo, GM said. Future GM EVs will also have fewer control modules and 30 percent less wiring than current-generation models. Perception, propulsion, active safety, and chassis controls will be consolidated into a single, high-speed \u201cCentral Compute Unit.\u201d The fourth-generation EV platform will feature 40 percent faster processing speeds as well.\nAn improved production process will also be key to GM\u2019s fourth-generation EVs. Future manufacturing teams can test production steps, review equipment placement, and identify safety or ergonomic concerns before new hardware is installed. A factory intelligence platform, called \u201cPlantBrAIn,\u201d will combine plant-floor data with computer models to improve quality on fourth-gen electric vehicles and battery packs. The renewed process is already working, too; battery packs at GM facilities are currently running through the process 30 percent faster than before.\nIn addition to cutting production costs, GM is razor-focused on reducing development time. Instead of the current five-year vehicle development timeline, GM wants to develop a car in two years. Of course, artificial intelligence is just the tool to do it: Designers, engineers, and manufacturers will now be connected on a unified digital thread from the very first day of development, and instant communication will allow for a concurrent engineering model that will, supposedly, speed up the development pace.\n\u201cWe're replacing this entirely sequential process with a new operating system built on large-scale data and concurrent development. What we're building collapses design, engineering, and manufacturing into a set of probabilistic optimizations that create better products in half the time,\u201d Sterling Anderson, chief product officer at GM, said. \u201cIn the age of AI, data is currency. Large companies like General Motors have a reputation for being large, for having a lot of inertia, for being slow. In the age of AI, the data and the scale that we have stops being a drag and becomes an advantage.\u201d\nFinally, GM is continuing to invest in autonomous drive systems. Last year, the automaker announced autonomous highway driving would arrive by 2028, and pre-production vehicles are now being tested. And it won\u2019t just be GM EV customers who benefit from hands-free highway driving; autonomous highway driving capabilities will soon expand to GM\u2019s most popular gas-powered vehicles. This system will also be powered by the Central Compute Unit.\n\u201cAs we move towards a more autonomous future, it becomes what you need it to be when you need it-a genuine thinking space, a planning space, a space to recharge. It really extends your life onto the road instead of pausing it until you get to your destination,\u201d Sebastian Bauer, head of human interface design at GM, said. \u201cNone of this works without trust, and trust is not a feature. It is a foundational design principle, and one that means adapting to your conditions and your needs, and being very transparent about the decisions that the vehicle is making so that you always understand why.\u201d\nA New York transplant hailing from the Pacific Northwest, Emmet White has a passion for anything that goes: cars, bicycles, planes, and motorcycles. After learning to ride at 17, Emmet worked in the motorcycle industry before joining Autoweek in 2022 and Road & Track in 2024. The woes of alternate side parking have kept his fleet moderate, with a 2014 Volkswagen Jetta GLI and a BMW 318i E30 street parked in his Queens community."
+}

@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "921a93e11002",
+  "bucket": "30d",
+  "score": 0.4088,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "2970cb9c365435ab",
+    "title": "GM plans lower-cost EVs with new battery chemistry",
+    "source": "Transport Topics",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GTVJWY3d3VDBNVlA3VmRHdXJabTd0NzZZMXlOUmd2bGlSRnRKMkt4blktV2F5T09aajZJOFB5WXZWVm5yOXNkZ3RiX2RTWUJqcTgyVEhacndZeUlwVGlyR2o3cjNiRnFuc3c?oc=5",
+    "published_at": "2026-10-21T19:01:43+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.ttnews.com/articles/gm-low-cost-ev-new-battery",
+    "domain": "www.ttnews.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM plans lower-cost EVs with new battery chemistry",
+    "source_item_id": "2970cb9c365435ab",
+    "resolved_at": "2026-10-29T20:52:20.065853+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.ttnews.com/articles/gm-low-cost-ev-new-battery",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.ttnews.com/articles/gm-low-cost-ev-new-battery",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM plans lower-cost EVs with new battery chemistry - TT",
+    "published_at_page": "2026-10-21T15:01:43-04:00",
+    "title_score": 1.0,
+    "text_chars": 3859,
+    "content_hash": "70183740c901d425",
+    "screenshot": "921a93e11002.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:00.579206+00:00"
+  },
+  "text": "[Stay on top of transportation news: Get TTNews in your inbox.]\nGM plans lower-cost EVs with new battery chemistry\nDespite EV sales slump, GM to debut lithium manganese-rich batteries, which will support upcoming SUV\nKey Takeaways:\n- General Motors is developing lithium manganese-rich batteries for multiple affordable EVs, including a mainstream battery-powered SUV expected in about three years.\n- GM's EV sales fell 43% to 82,000 through the third quarter, and GM wrote down more than $11 billion in investments.\n- GM plans to debut autonomous highway driving on the Cadillac Escalade IQ in 2028, then expand it to lower-priced models.\nGeneral Motors Co. is unfazed by the electric vehicle meltdown of the past few years, moving ahead with a new EV program expected to produce a new battery-powered mainstream SUV within about three years.\nThe automaker\u2019s latest effort aims to field multiple affordable EVs in high-volume vehicle segments, GM executives told reporters at an event in New York. At the center of it are batteries leveraging lithium manganese-rich (LMR) chemistry, which offers greater driving range at a lower cost than the technology in GM\u2019s offerings.\n\u201cOur end goal is profitable EVs,\u201d said Jaclyn McQuaid, GM\u2019s senior vice president for vehicle products. \u201cWe see data that says customers who spend time in EVs enjoy the experience.\u201d\nStaying the course by planning new EV models is a bold move for GM. Under CEO Mary Barra, the company invested $35 billion in electric drive and other technologies to field a lineup that now comprises 12 models.\nYet vast majority of car buyers in the U.S. \u2014 GM\u2019s biggest source of sales and profit \u2014 continue to purchase gasoline-powered models as well as hybrid-electric cars predominantly made by Asian rivals. That dynamic was magnified last year after President Donald Trump and Republican lawmakers slashed federal policies that had pushed carmakers to produce more EVs and incentivized consumers to buy them, including a $7,500 tax credit for EV purchasers.\nSo far this year, GM\u2019s electric vehicle sales have fallen 43% to 82,000 through the third quarter. The company has written down more than $11 billion in EV investments and sold stakes in battery plants to partners LG Energy Solution and Samsung SDI. It\u2019s also doubled down on internal combustion with new V-8 engines for its pickup trucks and SUVs.\nDespite those immediate challenges, the carmaker still sees electric drive as its long-term future that will eventually be embraced by consumers.\nMcQuaid said recent developments with LMR chemistry have made it possible to GM to develop a broad lineup of EV models. Its current EV batteries utilize nickel manganese cobalt chemistry, which offers long driving range but at a high cost. Chinese automakers use lithium iron phosphate (LFP) batteries, which are cheaper but don\u2019t go as far on a charge.\nGM said its LMR batteries are designed to carry 33% more energy density than LFP, and by reducing weight, should be able to deliver 20% longer range on every kilowatt-hour of energy.\nThe company is extracting additional cost savings with new battery packs that are lighter, have less wiring and 40% fewer parts than its current models, said GM Chief Product Officer Sterling Anderson. GM is using more AI tools to coordinate between its design, engineering and manufacturing operations to halve the nearly five-year process of developing new models, Anderson said.\nEVs also represent GM\u2019s opportunity to introduce GM\u2019s latest autonomous driving capabilities, which will debut on the electric Cadillac Escalade IQ in 2028 and then be added to lower-priced models, Anderson said. That system will allow drivers to take their hands off the wheel and eyes off the road on highways. The company is working to eventually have its vehicles capable of off-highway autonomous driving, Anderson said."
+}

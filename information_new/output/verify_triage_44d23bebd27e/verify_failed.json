@@ -1,0 +1,168 @@
+[
+  {
+    "company": "General Motors",
+    "event_id": "588bdbf54bef",
+    "title": "GM Slides as CEO Barra Warns of \u2018Intensifying\u2019 Challenges",
+    "status": "blocked",
+    "attempts": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-10-20/gm-announces-20-billion-share-buyback-as-profit-beats-estimates",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "b999dbf23b1a",
+    "title": "President Donald Trump in Michigan to tout manufacturing record at GM proving grounds",
+    "status": "thin_content",
+    "attempts": [
+      {
+        "url": "https://fox56.com/news/nation-world/gallery/president-donald-trump-in-michigan-to-tout-manufacturing-record-at-gm-proving-grounds?photo=2",
+        "status": "thin_content",
+        "http_status": 200,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "78e62f0f7660",
+    "title": "GM\u2019s China sales fall 24% in third quarter, a fourth straight decline",
+    "status": "thin_content",
+    "attempts": [
+      {
+        "url": "https://www.autonews.com/general-motors/an-general-motors-china-3q-sales-decline-1014/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://autonews.gasgoo.com/articles/ev/gm-china-sales-top-358000-in-third-quarter-as-nev-share-exceeds-60-2108750229603311617",
+        "status": "thin_content",
+        "http_status": 468,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "43a575393021",
+    "title": "General Motors agrees to $220M settlement over AG driver privacy lawsuit - update (GM:NYSE)",
+    "status": "blocked",
+    "attempts": [
+      {
+        "url": "https://seekingalpha.com/news/4660522-general-motors-agrees-to-220m-settlement-over-ag-driver-privacy-lawsuit",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://www.gurufocus.com/news/9152103/general-motors-gm-settles-220m-data-privacy-lawsuit-amid-modest-overvaluation",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "15371dd81135",
+    "title": "GM and Ford tweak salaried workers' benefits. Here's the fallout",
+    "status": "title_mismatch",
+    "attempts": [
+      {
+        "url": "https://www.freep.com/story/money/cars/ford/2026/10/15/gm-ford-changes-salaried-benefits/92221082007/",
+        "status": "thin_content",
+        "http_status": 402,
+        "title_score": null
+      },
+      {
+        "url": "https://www.thedrive.com/news/camaros-on-hiatus-gm-says-ford-proves-mustang-has-a-market",
+        "status": "title_mismatch",
+        "http_status": 200,
+        "title_score": 0.167
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "376cb72a63a1",
+    "title": "GM Expands Hybrid SUV Production at Lansing Plant",
+    "status": "blocked",
+    "attempts": [
+      {
+        "url": "https://fuelcellsworks.com/2026/10/27/electric/gm-plans-hybrid-suvs-as-it-broadens-strategy-beyond-battery-electric-vehicles",
+        "status": "thin_content",
+        "http_status": 200,
+        "title_score": null
+      },
+      {
+        "url": "https://www.gurufocus.com/news/9145223/general-motors-gm-invests-2-billion-in-lansing-hybrid-suv-plant-shares-surge-6",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://www.gurufocus.com/news/9146768/general-motors-gm-invests-over-2-billion-in-lansing-for-hybrid-vehicle-production",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "c77a95664fa9",
+    "title": "Wall Street applauds GM stock buyback plan. The UAW is far from happy",
+    "status": "blocked",
+    "attempts": [
+      {
+        "url": "https://www.freep.com/story/money/cars/general-motors/2026/10/20/gm-stock-repurchase-program-draws-rebuke-from-uaw-leader/92346794007/",
+        "status": "thin_content",
+        "http_status": 402,
+        "title_score": null
+      },
+      {
+        "url": "https://www.autonews.com/general-motors/an-gm-buyback-uaw-reaction-1023/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://www.autonews.com/podcasts/daily-drive/an-daily-drive-wd-canada-spending-uaw-warns-gm-1024/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "416a1efc608e",
+    "title": "General Motors Fined $220 Million for Selling Drivers\u2019 Data",
+    "status": "thin_content",
+    "attempts": [
+      {
+        "url": "https://news.bloomberglaw.com/privacy-and-data-security/general-motors-fined-220-million-for-selling-drivers-data",
+        "status": "paywall",
+        "http_status": 200,
+        "title_score": null
+      },
+      {
+        "url": "https://www.reuters.com/business/autos-transportation/gm-pay-220-million-settle-allegations-it-violated-consumers-privacy-2026-10-29/",
+        "status": "paywall",
+        "http_status": 401,
+        "title_score": null
+      },
+      {
+        "url": "https://www.nbcrightnow.com/yakima/news/syndicated/general-motors-to-pay-220-million-in-settlement-with-states-over-selling-customer-information/article_d24d6f79-5924-59be-ab1e-4006cd86776c.html",
+        "status": "thin_content",
+        "http_status": 451,
+        "title_score": null
+      }
+    ]
+  }
+]

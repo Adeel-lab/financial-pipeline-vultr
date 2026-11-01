@@ -1,0 +1,85 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "4433a1740b25",
+  "bucket": "30d",
+  "score": 0.3551,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "65ede683c39f2e9c",
+    "title": "Ford Scrapped Its Electric F-150, But Now The Truck's Selling Like Hot Cakes",
+    "source": "SlashGear",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTXMwZGJwSVN6YzZyaTl2YUxoVTB4dkJjcFl2TXZhcnZXZ0VIVVF3emFBQlFRXzlGVHhldlBTZXhiNUN0dWR0Sk13em1GZ3hkS2tkcXliX3lkc040bE1SMTNKQjlMYzBhX1RtaEIxNTR5WHpqaVBFdE5ieWlQaXZ2ZklQeHVIZ3I2U1JFOUdadFpjdw?oc=5",
+    "published_at": "2026-10-19T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.slashgear.com/2290257/lightning-ford-f-150-truck-50-percent-off-sales-spike/",
+    "domain": "www.slashgear.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford Scrapped Its Electric F-150, But Now The Truck's Selling Like Hot Cakes",
+    "source_item_id": "65ede683c39f2e9c",
+    "resolved_at": "2026-11-01T15:28:37.521611+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.slashgear.com/2290257/lightning-ford-f-150-truck-50-percent-off-sales-spike/",
+    "attempts": 1,
+    "final_url": "https://www.slashgear.com/2290257/lightning-ford-f-150-truck-50-percent-off-sales-spike/",
+    "attempt_details": [
+      {
+        "url": "https://www.slashgear.com/2290257/lightning-ford-f-150-truck-50-percent-off-sales-spike/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://www.slashgear.com/2290257/lightning-ford-f-150-truck-50-percent-off-sales-spike/"
+      }
+    ],
+    "title": "Ford Scrapped Its Electric F-150, But Now The Truck's Selling Like Hot Cakes",
+    "published_at_page": "2026-10-19T20:45:00+00:00",
+    "title_score": 1.0,
+    "text_chars": 2781,
+    "content_hash": "d0c82c71772831c3",
+    "screenshot": "4433a1740b25.png",
+    "location_in_text": false,
+    "location_terms_found": [],
+    "retrieved_at": "2026-11-01T15:30:32.588243+00:00"
+  },
+  "text": "Ford Scrapped Its Electric F-150, But Now The Truck's Selling Like Hot Cakes\nThe Ford F-150 Lightning, an all-electric version of one of the most popular trucks in the U.S., seemed like it'd do pretty well, but unfortunately fell short. One of its biggest draws should have been its sub-$40,000 starting price, well below the average price of a gas pickup in 2021. Ford, however, never really managed to deliver the F-150 Lightning at such affordable prices. Ford eventually ended production in December 2025, just four years after its initial reveal, primarily due to low demand. On top of that, the Lightning's costs stayed too high for it to make business sense.\nStrangely enough, however, demand for the F-150 Lightning has actually picked up since then. A USA Today report, citing data from EV marketing firm Recurrent, said that a used F-150 Lightning spends just 16 days on a dealer lot on average. That's much shorter than the 42 days that used EVs as a whole take to sell, according to Cox Automotive. Buyers are also now paying more. According to CarGurus, the listing for the average used F-150 Lightning has climbed about 5.5% over the past year, to roughly $47,500. Put simply, Lightnings are selling quickly and at higher prices, meaning shoppers are actively hunting for them.\nWhy used buyers want the Lightning\nThe thing is, that affordable entry price didn't even stay for long: Ford increased the F-150 Lightning's price three times by December 2022, up to nearly $60,000. And the pricier trims cost even more: By October 2022, the Lariat started at $74,474 while the range-topping Platinum went for $96,874, according to Kelley Blue Book.\nOn the used market, though, Lightnings now cost far less. For instance, 2023 models, the most common model year on Autotrader, average $46,621 on CarGurus – roughly half the original sticker price of the Platinum model. That said, they still cost about $5,500 more than a used 2023 gas F-150, which averages $41,169. That gap has also been widening, since pricing for used Lightning has climbed about 6% over the past year. At the same time, pricing for the gas F-150 has fallen about 5%.\nIt's also a case of supply and demand. Since Ford never sold more than 33,510 Lightnings in a single year – barely a fraction of the 765,649 F-Series trucks Ford sold that same year – these vehicles are in short supply. And in the used market, the differences are even greater, with Autotrader listing 568 used Lightnings against 54,621 used F-150s.\nAnother big reason for the F-150 Lightning's popularity is rising gas prices, which have also led to a surge in demand for hybrids. In mid-October, AAA put the national average at $4.33 a gallon. As a result, large pickups have not only seen lower demand but also lower resale values."
+}

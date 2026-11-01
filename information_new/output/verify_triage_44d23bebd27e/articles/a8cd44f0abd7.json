@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "a8cd44f0abd7",
+  "bucket": "7d",
+  "score": 0.5714,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "1bbc91261c4e0117",
+    "title": "GM Deepens Sodium-Ion Bet, Leads $108 Million Round in Peak Energy",
+    "source": "Electric Vehicles",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWHk2TmQ0aVVSQjJUZHllQ1VlWXI0OXNtT2hRSzl2NXlQTl9zQnFHR292MmwyNkpnUjVOSlVXT3ZBU2Jjb0lrWTZNX3Nmc2ljV0dSakJudWFaTUhtSDhsdDRKNHBqb05lc0ZtNkVYcDFzdVpSQW90WDVCem9fR0YtcjFSTldFTS1jRmVkM0dyWTRWeThxODlHbFhHQTYxUmdkZmxDMzZMUDhRTEw5RFE?oc=5",
+    "published_at": "2026-10-22T12:31:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://eletric-vehicles.com/general-motors/gm-deepens-sodium-ion-bet-leads-108-million-round-in-peak-energy/",
+    "domain": "eletric-vehicles.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM Deepens Sodium-Ion Bet, Leads $108 Million Round in Peak Energy",
+    "source_item_id": "1bbc91261c4e0117",
+    "resolved_at": "2026-10-29T20:52:20.065599+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://eletric-vehicles.com/general-motors/gm-deepens-sodium-ion-bet-leads-108-million-round-in-peak-energy/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://eletric-vehicles.com/general-motors/gm-deepens-sodium-ion-bet-leads-108-million-round-in-peak-energy/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM Deepens Sodium-Ion Bet, Leads $108 Million Round in Peak Energy",
+    "published_at_page": "2026-10-22T12:31:49+00:00",
+    "title_score": 1.0,
+    "text_chars": 7233,
+    "content_hash": "29c22b6d4b1c1b56",
+    "screenshot": "a8cd44f0abd7.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:55:45.774138+00:00"
+  },
+  "text": "General Motors\u2018 venture arm led a $108 million Series B round in Peak Energy, a California developer of passively cooled sodium-ion battery systems for the grid, deepening the carmaker\u2019s push into stationary energy storage.\nBurlingame-based Peak said on Wednesday the round was oversubscribed. Maverick Silicon, Infinite Capital, Eclipse, Xora Innovation and LG Technology Ventures also took part.\nNeither company disclosed Peak\u2019s valuation after the deal or how much GM Ventures contributed.\n\u201cGM Ventures is investing to help Peak Energy continue to scale this innovative technology because we believe it has significant potential in the energy storage market as a safe, cost-effective solution using abundant, domestically sourced materials,\u201d Kevin McCabe, President of GM Ventures, said in a statement.\nRelated coverage\nThe new round brings Peak\u2019s disclosed funding to at least $173 million. That includes a $10 million seed round led by Eclipse with TDK Ventures in October 2023 and a $55 million Series A led by Temasek\u2019s Xora Innovation in 2024.\nThe Series B is nearly twice the size of the Series A. Eclipse and Xora Innovation are the only investors named in both rounds.\nThe total excludes a strategic investment GM Ventures made in June, whose size was not disclosed. Peak did not say whether that stake was folded into the Series B.\n4 Months After the Cell Deal\nThe round comes four months after GM and Peak announced a partnership on June 9 to develop sodium-ion cells built for grid storage.\nUnder that agreement, GM develops the cell in its Michigan battery labs and keeps exclusive manufacturing rights, while Peak integrates it into its own storage systems, according to Peak.\n\u201cAt GM, we know that the application should determine the battery, and for grid-scale stationary storage, sodium-ion is the right solution,\u201d Kurt Kelty, GM\u2019s Vice President of Battery, Propulsion and Sustainability, said at the time.\nIn a blog post the same day, Kelty said GM would be \u201cprototyping sodium-ion cells purpose-built for stationary storage this year at our Wallace Battery Cell Innovation Center\u201d in Warren, Michigan.\n\u201cOur next-generation sodium-ion cell development will drive energy density higher, with the potential to outperform more mature chemistries, including LFP, over time,\u201d he wrote.\nIn September, Kelty told CNBC that GM was building a domestic supply chain for the cell over the next two to three years, and the broadcaster reported that GM did not expect commercial production until around 2029.\nKelty has framed the project as a way to \u201cleapfrog\u201d Chinese battery makers rather than license their technology, a path Ford took with CATL at its Marshall, Michigan, plant.\nWhat the Money Is For\nPeak said the funding will help it scale domestic manufacturing, fulfill \u201cover $1 billion in existing customer orders\u201d and launch its product for data centers, where it said access to power \u201chas become the primary constraint on growth.\u201d\nPeak\u2019s factory timeline has already moved. At its 2023 launch, the company said it planned to open a U.S. factory in 2026. With its Series A, it said the plant was \u201cslated to open in 2027.\u201d\nThe company announced in July that it would build its first factory in Sacramento, California. The 183,000-square-foot plant is designed to produce up to 4 GWh of battery systems a year and represents up to $71 million in capital investment, Peak said.\nThe company expects it to create 239 local jobs over 18 months, at an average annual wage of more than $90,000.\nProduction and shipments are expected to begin in the first quarter of 2027. Peak also received a $10.5 million CalCompetes tax credit from California in May.\nMost of Peak\u2019s orders come from two contracts, according to Bloomberg. Jupiter Power agreed in November 2025 to buy up to 4.75 GWh of Peak systems for deployment between 2027 and 2030. Energy Vault signed a definitive agreement in February for 1.5 GWh, aimed at data center operators.\nPeak has also agreed to pilot its system with RWE Americas at the utility\u2019s lab in eastern Wisconsin, in the MISO grid region.\nThe Pitch Against Lithium-Ion\nPeak\u2019s systems use sodium-ion cells based on NFPP (sodium iron phosphate pyrophosphate) chemistry and no active cooling.\nPeak says today\u2019s incumbent grid batteries are built around lithium iron phosphate (LFP) cells that require active cooling to stay at safe operating temperatures.\nPeak says removing cooling equipment and scheduled maintenance can cut the cost of energy by up to 20% compared with conventional storage. It also says its systems use no water and run almost silently.\nSodium-ion cells store less energy for their size and weight than lithium-ion cells, which is why they are being aimed at stationary storage rather than cars.\nPeak deployed what it called the first passively cooled, grid-scale sodium-ion system in Colorado in August 2025, according to its company timeline.\nPeak Leans on China for Now\nSodium-ion production remains concentrated in China. CATL said in September that deliveries of its large-scale sodium-ion storage system were beginning in China.\nPeak has been buying commercial sodium-ion cells from Chinese suppliers while it builds its US factory, IEEE Spectrumreported in July.\n\u201cIt\u2019s already catalyzed in China,\u201d Chief Executive Landon Mossburg told Bloomberg in an interview. \u201cYou just want to catalyze this supply chain as much as possible.\u201d\nPeak is shipping small volumes from a pilot line in San Francisco and puts its orders at about $1.1 billion, according to Bloomberg. The outlet cited a BloombergNEF forecast that sodium-ion demand will reach 257 GWh by 2035, from just over 1 GWh in 2025.\nGM\u2019s Storage Push\nFor GM, Peak is part of a broader bet on stationary storage as electric vehicle demand in the United States slows.\nGM\u2019s battery joint venture with LG Energy Solution, Ultium Cells, began making LFP storage cells at its Spring Hill, Tennessee, plant this year. Kelty said in June those cells would \u201cserve LG\u2019s commercial energy storage business.\u201d\nGM is also working with Redwood Materials to deploy \u201croughly 10,000 GM batteries into energy infrastructure,\u201d including at Crusoe\u2019s AI data center in Sparks, Nevada, Kelty wrote.\nPeak has drawn on GM\u2019s storage team as well. In August, it named Paul D. Menson its first Vice President of Sales.\nMenson had joined GM to lead its stationary battery storage strategy, after leading US grid-scale storage sales at Tesla, according to Peak. GM booked $238 million of \u201cEV strategic realignment\u201d charges in the third quarter, mainly tied to resizing its battery supply chain with joint venture partners.\nTesla and Northvolt\nPeak was set up in 2023. Mossburg, its co-founder, was previously President of North America at Northvolt and held leadership roles at Tesla.\nLiam O\u2019Connor, a co-founder and Chief Operations Officer, was Chief Operating Officer at Zipline and VP of Global Supply Management at Tesla. Cameron Dales, President and Chief Commercial Officer, was previously Chief Commercial Officer at Enovix.\n\u201cThe investment we announce today will supercharge Peak\u2019s ability to scale and deliver as the world increasingly turns to passively cooled sodium-ion storage to solve our energy needs,\u201d Mossburg said in the statement."
+}

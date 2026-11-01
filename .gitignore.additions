@@ -1,0 +1,7 @@
+jobs/
+.env
+planning/.env
+*.db
+*.db-wal
+*.db-shm
+__pycache__/

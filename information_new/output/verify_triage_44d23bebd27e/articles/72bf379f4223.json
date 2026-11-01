@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "72bf379f4223",
+  "bucket": "7d",
+  "score": 0.5077,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "d86eea115deb701f",
+    "title": "GM's next-generation EV platform detailed: LMR batteries only, fewer parts, mainstream focus",
+    "source": "CarExpert",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWEtvYktMOU1YdkhfWlZ6QWwzUXVlbTVxZUlnNjZIeVJaMzE5X21BWklKeVhxWFd6amhSZDlfbUtNZ2llcjVOb3o4S0RXc3VUTnBWblFzQm9wR2lYMU9iMVd2aWk4UWJrV0xucDk1ZkhfcTZMRzQwZGl5a3NuS2d2a0V2aUd5X3hsLUZuQjhjaHNTYzBBRDFCUXRHdERZaDNKQTk5SEFSMUppMGE4WXZUY0RfQTI0Yl9DRlY0TjlRY0pNVzc3?oc=5",
+    "published_at": "2026-10-21T21:34:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.carexpert.com.au/car-news/gms-next-generation-ev-platform-detailed-lmr-batteries-only-fewer-parts-mainstream-focus",
+    "domain": "www.carexpert.com.au",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM's next-generation EV platform detailed: LMR batteries only, fewer parts, mainstream focus",
+    "source_item_id": "d86eea115deb701f",
+    "resolved_at": "2026-10-29T20:52:20.065712+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.carexpert.com.au/car-news/gms-next-generation-ev-platform-detailed-lmr-batteries-only-fewer-parts-mainstream-focus",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.carexpert.com.au/car-news/gms-next-generation-ev-platform-detailed-lmr-batteries-only-fewer-parts-mainstream-focus",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM's next-generation EV platform detailed: LMR batteries only, fewer parts, mainstream focus | CarExpert",
+    "published_at_page": "2026-10-21T21:34:00.000Z",
+    "title_score": 1.0,
+    "text_chars": 3795,
+    "content_hash": "c3e9bb9807179225",
+    "screenshot": "72bf379f4223.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:19.392144+00:00"
+  },
+  "text": "Alborz Fallah\niCaur V25 EV to lead Chery brand's Australian launch, V27 and V25 EREVs to follow\n39 Seconds Ago\nGeneral Motors has given the first details of its fourth-generation electric vehicle platform, which will run exclusively on cheaper lithium manganese-rich batteries.\nFounder\nGeneral Motors has lifted the lid on its fourth-generation electric vehicle (EV) platform, confirming it will be launched exclusively with lithium manganese-rich (LMR) battery cells.\nSpeaking at the GM Forward event in New York, GM president Mark Reuss said the new platform would underpin vehicles in the automaker's highest-volume segments, bringing \"lower costs, long range, and improved performance\" to mainstream EV buyers.\n\"We will start off exclusively with LMR in this Gen Four,\" Mr Reuss said.\nThat wasn't always the plan. GM chief product officer Sterling Anderson said the team originally expected to need a second, long-range chemistry alongside LMR.\n\"When we started this fourth-gen platform, we weren't actually sure we could do all of [it on LMR]. We thought we'd have to have kind of a long-range version of something else,\" Mr Anderson said.\n\"[The team has] made tremendous gains in getting LMR to a place where it can be the exclusive battery of the platform, which helps with mass, helps with cost, and helps with range.\"\nLMR cells use more manganese and less of the expensive nickel and cobalt found in today's high-nickel batteries. Ultium Cells \u2013 GM's joint venture with LG Energy Solution \u2013 says LMR can offer up to 33 per cent more energy density than lithium iron phosphate (LFP) at a comparable cost.\nLast month, GM confirmed the Ultium Cells plant in Spring Hill, Tennessee, will be the first in the world to mass-produce prismatic LMR cells, with the first LMR-equipped vehicles due in 2028.\nGM leaned heavily on simulation to get there. Mr Reuss said the company simulated more than 300,000 LMR battery configurations before building a single prototype cell.\n\"This represented 300 million CPU hours \u2013 the equivalent of running one computer 24 hours a day for 34,000 years,\" he said.\nThe platform also gets more efficient motors and new power electronics that Mr Reuss said use around 40 per cent fewer parts and are smaller overall.\nMass is a big focus. When asked whether GM would address the weight of its current EVs, Mr Reuss acknowledged that \"mass begets mass\", and said the team is chasing weight savings everywhere from the battery down to the seats and steering wheel.\nImportantly, GM says the platform's software and electronics won't be exclusive to EVs, with the same technology set to flow into its petrol models.\nMr Reuss wouldn't say which vehicles would use the new platform, but he defended GM's decision to revive the Chevrolet Bolt as a stopgap until the new models arrive, which he said would be \"shortly\".\nGM's EV range here is entirely Cadillac \u2013 the Lyriq, Lyriq-V, Optiq, and Vistiq \u2013 and all of them currently use high-nickel batteries.\nAustralian-market Cadillacs use smaller batteries than their US counterparts. For example, the Lyriq has dropped down from a 102kWh to a 92kWh pack for 2027, with GM citing European regulations as the reason.\nGM hasn't confirmed whether any fourth-generation EVs will be built in right-hand drive. But if LMR does deliver on cost, it gives Cadillac a better shot at sharper pricing locally.\nMORE: Everything Cadillac \u2022 Everything Chevrolet \u2022 Everything GMC\nPaul Maric is a CarExpert co-founder and YouTube host, combining engineering expertise with two decades in automotive journalism.\nShane O'Donoghue\n1 Hour Ago\nPaul Maric\n2 Hours Ago\nDerek Fung\n7 Hours Ago\nWilliam Stopford\n14 Hours Ago\n17 Hours Ago\nAdd CarExpert as a Preferred Source on Google so your search results prioritise writing by actual experts, not AI."
+}

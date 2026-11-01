@@ -1,0 +1,90 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "00e9ac974fe2",
+  "bucket": "30d",
+  "score": 0.4968,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "f04586c72d6dcc91",
+    "title": "Speed and simplicity shape GM\u2019s fourth-generation EVs",
+    "source": "General Motors",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV1I3T1VmTTE0X2RVbTBFTTVUSTI1UGptLTFDOS0zZ29FTHhuajRSYm4xMnZmLWRiTlFCRzdSZ0RFUVAtSkQ4X2xKaV9Ybnd2c3l1RzhaRFRVTGVDVndveV9yclM1OWxuWkxhRTI0OUphRWtyZHMyeXQ4TzUzejVKSmFmdll6UDdPUEg3TW9ORHNfckdmREs5Vm4ydXFOcWhzcjFrbTdNcVQ?oc=5",
+    "published_at": "2026-10-21T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2026/oct/1021-gm-fourth-generation-ev-platform.html",
+    "domain": "news.gm.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Speed and simplicity shape GM\u2019s fourth-generation EVs",
+    "source_item_id": "f04586c72d6dcc91",
+    "resolved_at": "2026-10-29T20:52:20.065725+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://cleantechnica.com/2026/10/22/the-all-new-never-seen-anything-like-it-fourth-generation-ev-platform-from-gm/",
+    "attempts": 2,
+    "attempt_details": [
+      {
+        "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2026/oct/1021-gm-fourth-generation-ev-platform.html",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://cleantechnica.com/2026/10/22/the-all-new-never-seen-anything-like-it-fourth-generation-ev-platform-from-gm/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.6
+      }
+    ],
+    "title": "The All New, Never Seen Anything Like It, Fourth Generation EV Platform From GM - CleanTechnica",
+    "published_at_page": "2026-10-22T15:39:31+00:00",
+    "title_score": 0.6,
+    "text_chars": 8226,
+    "content_hash": "c8faf07ff2852cf6",
+    "screenshot": "00e9ac974fe2.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:28.316454+00:00"
+  },
+  "text": "The All New, Never Seen Anything Like It, Fourth Generation EV Platform From GM\nSupport CleanTechnica's work through a Substack subscription, on Patreon, or on Stripe. Help us produce all of the high-quality, original content we publish week after week despite the challenges of content-scraping AI, antisocial media, inflation, and other hurdles.\nAt a splashy GM Forward event in New York City on October 21, General Motors laid out its plans to remain relevant in the auto manufacturing business. (Never mind that the industry enjoys a walled garden status in the US, which has chosen to erect trade barriers that exclude sales of Chinese made cars.)\nThere were plenty of announcements at the GM Forward event, but the one that was probably the most important is that GM will pin its hopes on a new battery chemistry developed in partnership with LG Energy Solution called LMR, which stands for lithium manganese rich.\nIf you are not familiar with it, that is because no one else in the industry is using it, so far as we know. Everyone else is transitioning from nickel manganese cobalt (NMC) to less expensive iron batteries (LFP) or sodium batteries that eliminate the use of lithium completely. GM has decided to go in a different direction, and that decision will either pay dividends or push GM further down the slope that leads to bankruptcy.\nIt\u2019s a bold strategy and it signals that GM has not given up the pursuit of electric vehicles. But we have seen this video before from a company that has flip flopped several times on its EV strategy. Is this the time when GM sticks to its guns and fashions a successful EV strategy? Maybe\u2026..\nOne Third More Energy Density\nThe LMR battery is designed to offer 33 percent more energy density than lithium iron phosphate, which is expected to translate into longer range from a smaller and lighter battery pack that costs about the same as one that uses LFP chemistry. There was no discussion at the GM Forward event about cold weather performance or charging speeds.\nWe will have to wait for those details to emerge later.\nIn New York, GM President Mark Reuss told the assembled multitude, \u201cThis technology will appear in our highest volume segments, and it\u2019s a great example of how we\u2019re bringing battery innovation to mass market EVs, with lower costs, long range, and improved performance. One of every four vehicles sold around the world is an EV. That number is only rising. We\u2019re not walking away from that. We\u2019re embracing it. We continue to develop our future EVs and work to reduce battery costs. And when the US market is ready for EVs in large numbers, we will be there for them.\u201d\nReaders will note that GM doesn\u2019t seem to believe the US market is ready for EVs just yet. It has openly supported the recent exhaust emissions rollback mandated by the current administration, cancelled most marketing efforts for its existing electric cars, and decided to stop production of the second generation Chevy Bolt \u2014 again. In the meantime, it plans to introduce a new generation of V-8 engines for its lineup of gasoline powered behemoths. That\u2019s why our readers have learned to take anything GM says with a grain or two of salt.\nThe company said it would normally take years to design and test a new battery chemistry, but thanks to the wonders of AI, its engineers were able to use computer modeling to test more than 300,000 battery designs before building a physical prototype. \u201cThe time between the first LMR battery pack concept and formal program approval was just one month,\u201d the company said.\nFourth Generation EV Platform\nThe battery is only part of an electric vehicle. GM said this week future electric vehicles will be built on its fourth generation EV platform, which will use smaller, lighter electric motors. That will lower production costs and provide more space in the interior for people and their stuff. It claims to have reduced the number of parts in each drive unit by 40 percent, making it cheaper and lighter.\nZonal architecture is the latest industry buzzword. Basically, it reduces the number of computers needed to control all the functions of a vehicle, resulting in lower costs and more efficient operation. A typical passenger car today can have as many as 80 computers that control acceleration and braking, steering, heating and cooling, fuel injection, and so forth. Luxury models may have 150 or more computers. Rivian is a leader in designing zonal architecture systems and has scored a $5 billion contract with Volkswagen to teach they German company how to integrate the technology into its vehicles.\nGM is doing something similar. It told the press in New York that simplicity will be the key to streamlining its future EV models, which will have fewer control modules and 30 percent less wiring than current models. \u201cPerception, propulsion, active safety, and chassis controls will be consolidated into a single, high-speed \u201cCentral Compute Unit,\u201d the company said. It claims its fourth-generation EV platform will feature 40 percent faster processing speeds as well.\nAI Powered Production Process\nGM\u2019s new-found AI prowess is not reserved for its electric cars, however. Thanks to a new AI inspired production process, future manufacturing teams can test production steps, review equipment placement, and identify safety or ergonomic concerns before installing hardware on the assembly line. Called \u201cPlantBrAIn,\u201d it will combine data from the factory floor with computer models to improve quality on new electric vehicles and battery packs. The process has already cut the time needed to complete a battery pack by 30 percent.\nGM claims its new AI tools will allow it to slash development times for new vehicles from 5 years to 2 years. Designers, engineers, and manufacturing experts will now connected with each other digitally from the first day of development until the start of production.\n\u201cWe\u2019re replacing this entirely sequential process with a new operating system built on large scale data and concurrent development. What we\u2019re building collapses design, engineering, and manufacturing into a set of probabilistic optimizations that create better products in half the time,\u201d said Sterling Anderson, chief product officer at GM.\n\u201cIn the age of AI, data is currency. Large companies like General Motors have a reputation for being large, for having a lot of inertia, for being slow. In the age of AI, the data and the scale that we have stops being a drag and becomes an advantage.\u201d We certainly hope so, Sterling.\nCentral Compute Unit\nGeneral Motors is also in the thick of the race to develop autonomous vehicles, not just for EVs but for every model the company produces. Autonomy will be controlled by a newly developed Central Compute Unit.\n\u201cAs we move towards a more autonomous future, it becomes what you need it to be when you need it-a genuine thinking space, a planning space, a space to recharge. It really extends your life onto the road instead of pausing it until you get to your destination,\u201d said Sebastian Bauer, head of human interface design for the company. \u201cNone of this works without trust, and trust is not a feature. It is a foundational design principle, and one that means adapting to your conditions and your needs, and being very transparent about the decisions that the vehicle is making so that you always understand why.\u201d\nGM made a lot of promises in New York this week. Now we will see if it can deliver on them. Frankly, we have been burned too many times by the company to fully trust its pronouncements. Will it equal or even exceed its peers when it comes to making compelling cars, both conventional and electric? \u201cWe\u2019ll see,\u201d said the Zen master.\nSign up for CleanTechnica's Weekly Substack for Zach and Scott's in-depth analyses and high level summaries, sign up for our daily newsletter, and follow us on Google News!\nHave a tip for CleanTechnica? Want to advertise? Want to suggest a guest for our CleanTech Talk podcast? Contact us here.\nSign up for our daily newsletter for 10\u201315 new cleantech stories a day. Or sign up for our weekly one on top stories of the week if daily is too frequent.\nCleanTechnica uses affiliate links. See our policy here.\nCleanTechnica's Comment Policy"
+}

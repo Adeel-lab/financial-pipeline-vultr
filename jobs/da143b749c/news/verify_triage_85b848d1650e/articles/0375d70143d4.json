@@ -1,0 +1,87 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "0375d70143d4",
+  "bucket": "30d",
+  "score": 0.3543,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "a51151430c3683bc",
+    "title": "Jim Farley Reaffirms 2027 Launch for Ford’s $28K Cybertruck Rival, the Fathom EV — the Price Gap Could Buy You a Tesla Model Y",
+    "source": "Yahoo Autos",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdF9yQTVCYzJtd3RjRmc4SVZXNUNDZndFWmpTREZqWk9QbHN1eXhRcGszS1IwYmd3XzRfaEcwZk9UNkdqZGd2d0h1NWlEc29aQk5kV2FKU2xZS0p5VEx5X05LdVhONW4zVGF3d0hVdGNZRFhjNkdIcEZWTi1SOEpMbk14Y3hHak44WjJXcUZYU25fRU9odnNPdW9MX2ZPZ3U0?oc=5",
+    "published_at": "2026-09-03T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://autos.yahoo.com/ev-and-future-tech/articles/jim-farley-reaffirms-2027-launch-013122657.html",
+    "domain": "autos.yahoo.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Jim Farley Reaffirms 2027 Launch for Ford’s $28K Cybertruck Rival, the Fathom EV — the Price Gap Could Buy You a Tesla Model Y",
+    "source_item_id": "a51151430c3683bc",
+    "resolved_at": "2026-11-01T15:28:37.521632+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://autos.yahoo.com/ev-and-future-tech/articles/jim-farley-reaffirms-2027-launch-013122657.html",
+    "attempts": 1,
+    "final_url": "https://autos.yahoo.com/ev-and-future-tech/articles/jim-farley-reaffirms-2027-launch-013122657.html",
+    "attempt_details": [
+      {
+        "url": "https://autos.yahoo.com/ev-and-future-tech/articles/jim-farley-reaffirms-2027-launch-013122657.html",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://autos.yahoo.com/ev-and-future-tech/articles/jim-farley-reaffirms-2027-launch-013122657.html"
+      }
+    ],
+    "title": "Jim Farley Reaffirms 2027 Launch for Ford’s $28K Cybertruck Rival, the Fathom EV — the Price Gap Could Buy You a Tesla Model Y",
+    "published_at_page": "2026-09-04T01:31:22Z",
+    "title_score": 1.0,
+    "text_chars": 4710,
+    "content_hash": "ee8a9900cf7bc8fe",
+    "screenshot": "0375d70143d4.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:31:00.562329+00:00"
+  },
+  "text": "Jim Farley Reaffirms 2027 Launch for Ford’s $28K Cybertruck Rival, the Fathom EV — the Price Gap Could Buy You a Tesla Model Y\nBenzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.\nFord Motor Company CEO Jim Farley on Tuesday shared another look at the company's upcoming Fathom all-electric pickup truck based on the automaker's universal EV platform.\nHot Weather Testing in Las Vegas\nTaking to the social media platform X, Farley showed off a camouflaged unit of the pickup truck on the streets of Las Vegas. \"The team was out in the desert doing hot weather testing,\" before taking a detour to Las Vegas. \"Our new midsize electric truck. Coming 2027,\" he said.\nDon't Miss:\n- Still Learning the Market? These 50 Must-Know Terms Can Help You Catch Up Fast\nThe team was out in the desert doing hot weather testing on the new @Ford Fathom and took a detour through Las Vegas to share the new name. Our new midsize electric truck. Coming 2027. pic.twitter.com/OJO7WwVPCv\n— Jim Farley (@jimfarley98) September 1, 2026\nThe camouflage also features a QR code, which would direct you to the vehicle's landing page on the Ford website. Ford says the Fathom will start at $28,350 before destination and delivery charges, with the standard-range battery. The company added that pre-orders will begin early next year. Earlier, the vehicle was spotted testing in Arizona.\nTrending: Avoid the #1 Investing Mistake: How Your 'Safe' Holdings Could Be Costing You Big Time\nFathom Undercuts Cybertruck\nNotably, the Fathom, with its sub-$30,000 price, significantly undercuts the Tesla Inc. Cybertruck. Tesla recently hiked the Cybertruck prices in the U.S., with the base trim now availale for $74,990.\nBased on the Fathom's MSRP of $28,350, a Cybertruck is more than $46,000 pricier. Notably, a Tesla Model Y retails for $39,990 for the base trim in the U.S., meaning you could theoretically buy a Fathom and a Tesla Model Y for the price of one Cybertruck.\nTesla CEO Elon Musk had earlier said that the Cybertruck will be getting the automaker's Actually Smart Summon feature via a future update, saying that the truck could navigate a parking lot and drive itself to the owner using the feature. That feature landed following an update in June.\nPhoto courtesy: Shutterstock\nRead Next:\n- Think you're saving enough for your kids? You might be dangerously off — see why\nBuilding Wealth Across More Than Just the Market\nBuilding a resilient portfolio means thinking beyond a single asset or market trend. Economic cycles shift, sectors rise and fall, and no one investment performs well in every environment. That's why many investors look to diversify with platforms that provide access to real estate, fixed-income opportunities, precious metals, and even self-directed retirement accounts. By spreading exposure across multiple asset classes, it becomes easier to manage risk, capture steady returns, and create long-term wealth that isn't tied to the fortunes of just one company or industry.\nArrived\nBacked by Jeff Bezos, Arrived Homes makes real estate investing accessible with a low barrier to entry. Investors can buy fractional shares of single-family rentals and vacation homes starting with as little as $100. This allows everyday investors to diversify into real estate, collect rental income, and build long-term wealth without needing to manage properties directly.\nQnetic\nAs electricity demand rises alongside AI, data centers, and renewable energy, long-duration energy storage is becoming increasingly important. Qnetic is developing a kinetic energy storage system designed to provide long-lasting, chemical-free electricity storage, offering investors exposure to the infrastructure supporting a more resilient and reliable power grid.\nEquityMultiple\nFor accredited investors looking beyond stocks and bonds, EquityMultiple provides access to vetted commercial real estate deals starting at $5,000, with only ~5% of opportunities passing their due diligence process.\nFarmTogether\nFarmland has historically held its value through market volatility and delivered returns uncorrelated to stocks and bonds. For accredited investors, FarmTogether offers direct access to high-quality U.S. farmland starting at $15,000 — fully managed, with no landlord headaches.\nFundrise\nPrivate real estate and private credit can add income and stability to a stock-heavy portfolio. Fundrise offers access to diversified private real estate and credit strategies through an easy-to-use platform, with professionally managed portfolios designed to generate passive income and long-term growth.\n© 2026 Benzinga.com. Benzinga does not provide investment advice. All rights reserved."
+}

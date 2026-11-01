@@ -1,0 +1,35 @@
+
+===== 2026-10-30 17:49:21  finance_approve: financial_gate.py --company=General Motors --balance C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\inputs\balance.csv --income C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\inputs\income.csv --outdir C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\finance --units thousands --frequency auto --currency=USD --decisions C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\finance\decisions_latest.json
+
+=== General Motors | annual | periods 2020-12-31 .. 2025-12-31 (6) | status: ready_for_review ===
+field                status             source row                                                 periods
+current_assets       proposed_exact     Assets, Current                                              6/6
+current_liabilities  proposed_exact     Liabilities, Current                                         6/6
+cash                 proposed_exact     Cash and Cash Equivalents, at Carrying Value                 6/6
+short_investments    proposed_exact     Debt Securities, Available-for-sale, Current                 6/6
+inventory            proposed_exact     Inventory, Net                                               6/6
+receivables          proposed_exact     Accounts Receivable, after Allowance for Credit Lo           6/6
+ppe                  proposed_exact     Property, Plant and Equipment, Net                           6/6
+total_assets         proposed_exact     Assets                                                       6/6
+total_liabilities    proposed_exact     Liabilities                                                  6/6
+equity               chosen_by_user     Stockholders' Equity, Including Portion Attributab           6/6
+retained_earnings    proposed_exact     Retained Earnings (Accumulated Deficit)                      6/6
+short_debt           missing            -                                                            0/6
+long_debt            missing            -                                                            0/6
+revenue              chosen_by_user     Revenues                                                     6/6
+cogs                 proposed_exact     Cost of Goods and Services Sold                              6/6
+gross_profit         derived            revenue - cogs                                               6/6
+operating_income     proposed_exact     Operating Income (Loss)                                      6/6
+net_income           proposed_exact     Net Income (Loss) Attributable to Parent                     6/6
+interest_expense     missing            -                                                            0/6
+total_debt           missing            -                                                            0/6
+
+WARNING (1)
+  - net_income: the model would use 'Net Income (Loss), Including Portion Attributable to Noncontrolling Interest' instead of 'Net Income (Loss) Attributable to Parent' (Consolidated net income including non‑controlling interest.)
+
+LIMITATIONS (2):
+  - debt_to_equity: cannot be calculated (missing total_debt)
+  - interest_coverage: cannot be calculated (missing interest_expense)
+
+proposal saved -> C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\finance\financial_general-motors_20261030T164926\gate_report.json
+APPROVED -> C:\Users\adeel\Desktop\notebooks\vultr\jobs\08d94f570c\finance\financial_general-motors_20261030T164926\approved_financials.json

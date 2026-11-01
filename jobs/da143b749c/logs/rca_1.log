@@ -1,0 +1,15 @@
+
+===== 2026-11-01 16:39:19  rca_1: rca.py run --draft C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\da143b749c\swot\swot_20261101T153613\swot_draft.json --company=Ford (ford motor company) --max-whys 5 --out C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\da143b749c\rca --item=story:6d266f020e
+Article passages: 248 from verify_triage_85b848d1650e | aliases: ['Ford (ford motor company)']
+NOTE: story:6d266f020e is still 'proposed' (not human-approved).
+RCA: story:6d266f020e
+  Why 1 ... (+2 article passages)
+[llm] answered by: openai/gpt-oss-120b
+  Why 2 ... (+0 article passages)
+[llm] answered by: openai/gpt-oss-120b
+  (this answer repeats the previous step - stopping here)
+  Fix evidence: +0 article passages
+  Summarising ...
+[llm] answered by: openai/gpt-oss-120b
+  outcome: root_cause_reached
+  Saved -> C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\da143b749c\rca\rca_story_6d266f020e.json / .md

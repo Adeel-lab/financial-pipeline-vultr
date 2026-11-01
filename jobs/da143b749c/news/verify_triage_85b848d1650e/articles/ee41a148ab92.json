@@ -1,0 +1,87 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "ee41a148ab92",
+  "bucket": "30d",
+  "score": 0.364,
+  "label": {
+    "topic": "supply_chain_ops",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "1549f9a04a14706b",
+    "title": "Ford Motor Company Exports and Imports",
+    "source": "The Observatory of Economic Complexity",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9VMmFVdjROYmJaUF9MTkY2ZmJCSkFHWWNFM3c1RUxQNVRVeWVWUmszbktuejZhRmJXRzc2QkxxMGpDaXpSeFcta2xoX3BpSWtjUzFwS2J2Vk5ZVVYxdUdlSF9pWmpzdw?oc=5",
+    "published_at": "2026-10-22T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://oec.world/en/profile/company/ford-motor-company",
+    "domain": "oec.world",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford Motor Company Exports and Imports",
+    "source_item_id": "1549f9a04a14706b",
+    "resolved_at": "2026-11-01T15:28:37.521569+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://oec.world/en/profile/company/ford-motor-company",
+    "attempts": 1,
+    "final_url": "https://oec.world/en/profile/company/ford-motor-company",
+    "attempt_details": [
+      {
+        "url": "https://oec.world/en/profile/company/ford-motor-company",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://oec.world/en/profile/company/ford-motor-company"
+      }
+    ],
+    "title": "Ford Motor Company Exports and Imports | The Observatory of Economic Complexity",
+    "published_at_page": null,
+    "title_score": 1.0,
+    "text_chars": 897,
+    "content_hash": "1621ad367e16a098",
+    "screenshot": "ee41a148ab92.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:31:08.575825+00:00"
+  },
+  "text": "About\nOverview\nIn August 2026, Ford Motor Company received 812 shipments, a change of -22% from the same month of the previous year, when Ford Motor Company received 1,041 shipments. Over the past 3 years, the compound annual growth rate (CAGR) of shipments received by Ford Motor Company increased by approximately 5.88%.\nPhysical Trade\nIn 2026, the main physical products imported by Ford Motor Company in August were Air Conditioners with 248 shipments (30.5% of the total), Motor vehicles; parts and accessories (8701 to 8705) with 121 shipments (14.9% of the total), and Transmissions with 68 shipments (8.37% of the total).\nMain partners\nThe top trade partners of Ford Motor Company in August 2026 were China (350 shipments), South Korea (80 shipments), and Germany (64 shipments), while the main import origins were Texas (259 shipments),Virginia (183 shipments),California (130 shipments)."
+}

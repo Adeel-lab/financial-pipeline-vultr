@@ -1,0 +1,94 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "49a8e44de29e",
+  "bucket": "30d",
+  "score": 0.3738,
+  "label": {
+    "topic": "labor_org",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 4,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "733a398068f03b92",
+    "title": "Ford CEO Jim Farley defends automaker's ties to Chinese companies",
+    "source": "Detroit Free Press",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORDNXSnFFUlJUY3E5Wm9pSFFjbURmWXBZRDNwXy1PQmxNYUE2TlNNMDlRUnhwMGdrSXlNYUpYSFotRURneXZyYXA3Ym5DQkd0d2cyTTMwQS1sbkFlMUg0NXNBcmstalpLbTVkQ25feU13VnFEc2lHWm5yd0x1cnFNaV95dmRkZ1FRZnBtNHhheWFKZUU3dXcxc0RveDVSUFlsclJvMm1XQ25fZ09RRC1sNHdKMldQV3VuQUxLbG9iX0ppVWFpSlFhNkJrcG0?oc=5",
+    "published_at": "2026-09-29T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.freep.com/story/money/cars/ford/2026/09/29/ford-ceo-jim-farley-defends-automakers-ties-to-chinese-companies/92009550007/",
+    "domain": "www.freep.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford CEO Jim Farley defends automaker's ties to Chinese companies",
+    "source_item_id": "733a398068f03b92",
+    "resolved_at": "2026-11-01T15:28:37.521483+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.autoblog.com/news/ford-ceo-defends-chinese-partnerships-while-warning-about-chinese-cars",
+    "attempts": 2,
+    "final_url": "https://www.autoblog.com/news/ford-ceo-defends-chinese-partnerships-while-warning-about-chinese-cars",
+    "attempt_details": [
+      {
+        "url": "https://www.freep.com/story/money/cars/ford/2026/09/29/ford-ceo-jim-farley-defends-automakers-ties-to-chinese-companies/92009550007/",
+        "status": "thin_content",
+        "http_status": 402,
+        "title_score": null,
+        "final_url": "https://www.freep.com/story/money/cars/ford/2026/09/29/ford-ceo-jim-farley-defends-automakers-ties-to-chinese-companies/92009550007/"
+      },
+      {
+        "url": "https://www.autoblog.com/news/ford-ceo-defends-chinese-partnerships-while-warning-about-chinese-cars",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.667,
+        "final_url": "https://www.autoblog.com/news/ford-ceo-defends-chinese-partnerships-while-warning-about-chinese-cars"
+      }
+    ],
+    "title": "Ford CEO Defends Chinese Partnerships While Warning About Chinese Cars - Autoblog",
+    "published_at_page": "2026-09-30T17:30:00+00:00",
+    "title_score": 0.667,
+    "text_chars": 4009,
+    "content_hash": "85cd47bf7acb90c0",
+    "screenshot": "49a8e44de29e.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:31:11.731267+00:00"
+  },
+  "text": "Keep Chinese Cars Out of America\nIn recent years, China has been knocking on the door of the U.S. auto industry. Whether we’re talking about the full Chinese lineup of brands and cars or a catalog of parts, the U.S. auto industry remains steadfast in keeping Chinese cars out, even as the United States’ neighbors are allowing them in.\nAmong those brands, Ford is also siding with its compatriots, opposing the opening of the automotive industry to China. However, Jim Farley, Ford’s CEO, has been criticized for the Blue Oval’s partnerships and dealings with Chinese companies by none other than the Secretary of Transportation himself, Sean Duffy.\nChinese Cars Are Taking Over\nSome analysts believe that Chinese cars will inevitably come into the United States. Brands are still pushing back and appealing to the national government to grant them a hedge against foreign competition.\nThe thing is, their fears are not unfounded, as Chinese cars are eating up market share wherever they go. Jim Farley also noted that Chinese vehicles comprise 25% of all new car sales in Mexico. In other news, if Chinese cars are allowed in, up to 11% of U.S. Sales will be taken up by 2038 in a separate report.\nFarley urges the United States to be careful in considering Chinese vehicles, not just from the standpoint of the auto industry, but also from the standpoint of national security, as these cars are able to “take videos of everything,” citing privacy and security risks by allowing Chinese vehicles into the United States.\nNot Mutually Exclusive\nFarley made a statement in response to the criticism, stating that “we’re going to partner with the Chinese and we’re going to compete with them. Both can be totally fine; they are not mutually exclusive.” Ford has partnered with some Chinese brands, including in electric vehicle batteries and a joint venture in Europe.\nFord’s currently partnered with CATL for its EV battery development and battery energy storage systems. Other brands have also gone to China in order to make electric vehicle batteries. This is a common industry practice today, since China controls a majority share of the global EV battery supply.\nRecently, Ford partnered with Geely Automobile Holdings to form a joint venture at Ford’s Valencia, Spain, factory for the European market Kuga. In light of these partnerships, Farley has defended the company’s actions and dismissed the “issue” by stating, “Stop the drama. Just get on with designing good vehicles, great software, great experiences, and a great relationship with your owners and suppliers – and we can compete.”\nThe Letter from the Secretary\nSeptember 8, 2026, Secretary Duffy sent a letter to Farley, criticizing Ford’s reliance on foreign companies for critical manufacturing components. Add to that models and ventures in tandem with Chinese companies, and you could say that Ford’s being very hypocritical because it wants to keep doing business with foreign rivals while keeping them out of the United States at the same time.\nIn Duffy’s letter, he stated: “The profound concern of the U.S. Department of Transportation (DOT) regarding the strategic trajectory of Ford Motor Company (Ford or Company), specifically as it pertains to American national automotive manufacturing integrity, supply chain exposure, and reliance on technologies of foreign adversaries.”\nFarley defended his stance by saying that, again, partnership and competition are not mutually exclusive, and that partnering with foreign companies is not a new business strategy for Ford or for any other business. He also emphasized that “that’s our factory,” referring to the company’s partnership with CATL to fuel the company’s subsidiary, Ford Energy, in order to bring EV battery production back home at Blue Oval Park Michigan in Marshall. “[it’s] a good solution. It’s American jobs. We’re learning. We’re working with them. We’re solving problems together. It’s better than importing batteries,” Farley added.\nAbout the author\nEarl Lee\nNews Editor"
+}

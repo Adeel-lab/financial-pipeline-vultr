@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "95a2e24924c9",
+  "bucket": "7d",
+  "score": 0.4872,
+  "label": {
+    "topic": "autonomy_ai",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "d29a32b51bf41890",
+    "title": "GM to bring highway autonomous driving to Escalade IQ in 2028, expand to combustion SUVs and pickups",
+    "source": "\ud5e4\ub7f4\ub4dc\uacbd\uc81c",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5CaUk5eV9ZTzZWMnJzUTYxN0RXZVFGYzBfZ05heHNxZXFyVnd0aXE3REVKenpqWEMwdEJQeGNtQk54VTJSNUhrUUJESUlSQXJ4cDg0d0h3?oc=5",
+    "published_at": "2026-10-22T23:21:51+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://biz.heraldcorp.com/article/10912089",
+    "domain": "biz.heraldcorp.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM to bring highway autonomous driving to Escalade IQ in 2028, expand to combustion SUVs and pickups",
+    "source_item_id": "d29a32b51bf41890",
+    "resolved_at": "2026-10-29T20:52:20.065738+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://biz.heraldcorp.com/article/10912089",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://biz.heraldcorp.com/article/10912089",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM to bring highway autonomous driving to Escalade IQ in 2028, expand to combustion SUVs and pickups - The Herald Business",
+    "published_at_page": "2026-10-23T08:21:51+09:00",
+    "title_score": 1.0,
+    "text_chars": 3537,
+    "content_hash": "2d33a70a954925c0",
+    "screenshot": "95a2e24924c9.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:06.114597+00:00"
+  },
+  "text": "In-house computing unit delivers 40x performance boost\nReal-world driving data combined with simulation training\nExpansion to full-size SUVs, trucks and 4th-gen EVs planned\nGeneral Motors said it will introduce highway autonomous driving to the Cadillac Escalade IQ starting in 2028 and then extend the capability to major combustion-engine models. The company also unveiled a next-generation electric and computing architecture to underpin the effort.\nGM announced the autonomous driving expansion roadmap at its \"GM Forward\" event in New York on Wednesday (local time). The company is currently testing pre-production vehicles on closed courses and plans to roll out the feature to major SUVs and pickup trucks after the Escalade IQ launch.\nThe next-generation architecture centers on separating hardware from software and building a unified computing, networking, software and interface framework that works across both combustion-engine vehicles and electric vehicles. It is designed to apply a common technology base to a wide range of models while retaining the hardware and control functions each vehicle type requires.\nAt the heart of the system is a liquid-cooled central computing unit, or CCU, designed entirely in-house by GM. It delivers roughly 40 times the computing performance of current vehicles and integrates autonomous driving, active safety, and chassis and powertrain software into a single high-speed system. GM said the unit runs in-vehicle AI functions and the autonomous driving system simultaneously while reserving headroom for future capability expansion.\nZonal aggregators connected via high-speed Ethernet link sensors and actuators to a fast data network, handling 36 times more data than existing systems. The architecture also cuts wiring length and weight by 30 percent and boosts cellular connectivity speeds by up to 50 percent, improving in-vehicle communication and connected services.\nThe platform also supports continuous improvement for software-defined vehicles, allowing validated updates from one model to be pushed across the entire lineup via over-the-air updates. GM plans to debut the next-generation architecture in the 2028 Escalade IQ before expanding it to combustion full-size SUVs and trucks, three-row crossovers, and fourth-generation electric vehicles.\nGM is drawing on real-world driving experience and AI training to develop and validate its autonomous driving system. Customers using its Super Cruise hands-free driving feature have accumulated more than 1.2 billion miles (about 1.93 billion kilometers) of hands-free driving. In addition to data from consenting customers' vehicles, GM collects roughly 1 million miles (about 1.6 million kilometers) of full-rate multi-sensor data each month using hundreds of dedicated data-collection vehicles.\nThat real-world driving data feeds imitation learning, which is combined with self-play reinforcement learning and large-scale simulation to sharpen the system's responsiveness. The system generates new driving scenarios in simulation and refines its decision-making through repeated interactions. It virtually logs more than 3 billion miles (about 4.83 billion kilometers) per day to train on rare or difficult situations and to evaluate candidate driving behaviors before testing them on public roads.\nGM said it will use this combination of machine learning and real-world validation to confirm safety and responsiveness as it broadens autonomous driving coverage across its best-selling trucks and SUVs.\neyre@heraldcorp.com"
+}

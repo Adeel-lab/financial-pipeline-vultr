@@ -1,0 +1,79 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "2d3bc6d78528",
+  "bucket": "30d",
+  "score": 0.4409,
+  "label": {
+    "topic": "recalls_safety",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "5b06271fa6e945af",
+    "title": "Troy teen injured in e-bike crash sues GM; automaker withdraws countersuit",
+    "source": "WXYZ Channel 7",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZTdsVVpZMThMREVrcTlJMXJwQXVpRkttOGdvd3BNaUFaNHhPR202UjhmNzZqcU5NLVllMTBWTFdOWjgzbml4U01sRFBkLUd6RnYzT0xTTFUtNk9BMFM4bjhVYzl0MjFBd2VjQzdBVnd6Q1VqaEU2TlVxRFJsS0t6ZktTVHhVSXE5WlhZbDJTNnl1MlFqUGlLVlMzT2VtcThh?oc=5",
+    "published_at": "2026-10-20T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.wxyz.com/news/troy-teen-injured-in-e-bike-crash-sues-gm-automaker-withdraws-countersuit",
+    "domain": "www.wxyz.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Troy teen injured in e-bike crash sues GM; automaker withdraws countersuit",
+    "source_item_id": "5b06271fa6e945af",
+    "resolved_at": "2026-10-30T16:32:41.606336+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.wxyz.com/news/troy-teen-injured-in-e-bike-crash-sues-gm-automaker-withdraws-countersuit",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.wxyz.com/news/troy-teen-injured-in-e-bike-crash-sues-gm-automaker-withdraws-countersuit",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "Troy teen injured in e-bike crash sues GM; automaker withdraws countersuit",
+    "published_at_page": "2026-10-20T20:27:25-0400",
+    "title_score": 1.0,
+    "text_chars": 3734,
+    "content_hash": "03445929c55deb0a",
+    "screenshot": "2d3bc6d78528.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:40.935916+00:00"
+  },
+  "text": "TROY, Mich. - A teenager injured in an e-bike crash in Troy last summer is suing both the driver involved and General Motors, alleging they bear responsibility for the collision that left him seriously hurt.\nThe lawsuit stems from a crash captured on a dash camera by an off-duty Troy firefighter. The video shows then-14-year-old Johnathan Do riding his e-bike on the sidewalk along John R Road and crossing Square Lake Road when he was struck by a white GMC Canyon and pinned beneath the vehicle.\nWatch Jolie Sherman's report in the video player below:\nThe pickup was a GM-owned company vehicle, according to the family's attorney.\nThe case took another turn this month when General Motors filed a countersuit against the teen's parents. However, the automaker withdrew that countersuit Tuesday afternoon.\n\"I thought was already dead at that point,\" Do said. \"Even under the car I felt like I was already gone, and I couldn't really do anything about it. I was just lying there, accepting it.\"\nThe crash left the teen with multiple injuries, including six broken ribs, a partially collapsed lung and a bruised liver.\nMore than a year later, his mother, Bich Nguyen, said the moment she learned about the crash remains vivid.\n\"All in my mind is praying he's still alive; that's all my emotion. Even now, you're still able to feel it,\" Nguyen said.\nThe family recently watched the crash video together for the first time.\n\"I can't describe the feeling to see actually what happened to my kid,\" Nguyen said.\nEarlier this year, the family filed a lawsuit against both the driver and General Motors. Attorney Lawrence Kajy, who represents the family, said they are seeking damages for pain and suffering.\n\"This car was actually owned by GM and was driven by an employee who GM gave that car to as an employee perk, if you will,\" Kajy said.\nHe argues the crash had a lasting impact on the teen's life.\n\"Because GM owned the car, there is an owner\u2019s liability statute in Michigan, also negligent entrustment action for GM for giving a car to someone who was negligent and caused the accident,\" Kajy said.\n\"This is essentially how your life changed after the accident, and in this case, the teen was stuck under a car for 15 minutes until a firefighter had to hijack the car to get him out,\" he added.\nGeneral Motors originally pushed back against the family's claims, arguing the teen was riding an e-moto rather than an e-bike.\nThe distinction is significant because GM contends an e-moto requires registration and licensing and cannot legally be operated by someone under 18.\nIn a statement, GM said:\n\u201cWe are grateful that everyone involved is safe and send our well wishes to the entire family. We believe it is important to continue conversations about how children and teens can stay safe when riding e-bikes and similar motorized vehicles, and will respect the legal process as this matter proceeds through the court.\"\nKajy disputes GM's characterization, saying the vehicle was a Class 3 e-bike with a motor under 750 watts.\nAccording to Troy police, Class 3 e-bikes are treated similarly to bicycles and are permitted on sidewalks. Riders must be at least 14 years old and wear a helmet.\nPolice did not cite the teen, although he was not wearing a helmet at the time of the crash.\nKajy said the teen entered the crosswalk with the walk signal. The driver, meanwhile, was cited for careless driving.\nThe driver's attorney declined to comment, citing pending litigation.\nAs the legal battle continues, Nguyen said she hopes others will take the story as a reminder to stay alert and speak up when something isn't right.\n\"I want to send a message to everybody out there: just be careful, and at the same time, have a voice,\" she said."
+}

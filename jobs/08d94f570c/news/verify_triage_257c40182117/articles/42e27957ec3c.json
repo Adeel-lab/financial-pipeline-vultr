@@ -1,0 +1,85 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "42e27957ec3c",
+  "bucket": "24h",
+  "score": 0.7076,
+  "label": {
+    "topic": "regulation_legal",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "7bed4851edff0df9",
+    "title": "AG Mayes: General Motors to pay $220M for illegal sale of customer driving behavior to insurance companies",
+    "source": "12News",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOczA1dHBNaDlHb1VteFl0ZTdoVUw5U1hRbzNCdm05MkREX3g0OW5YWC1mUW1HMFR4TngtVXhBVk55c3U0SFZ2MU9jdHc2U1hfME1YblNBd1JIQzlVXzh2eVFJWDRKMU0wRlB3VTZJMFFZWWlIYjI1SnpRa25oRzc2T1pWNjBJdDJCdy1adnVsSENDbGlWUk81ZWRLVkp2TUo4LWcwZUNDQVlVQWRhdjJtRjlUM0N6c25WbDBTa25jRVNTUXY3ajcxWEsyVU5xNjUyTE9SVGp3Rm02TTVtYV96ZXVVZE55RDY2TENWWHBfR2FjbFJPcEozMTVyLWJVZURqVVU5ZEp3U2hCdw?oc=5",
+    "published_at": "2026-10-29T21:45:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.12news.com/article/money/ag-mayes-general-motors-to-pay-220m-for-illegal-sale-of-customer-driving-behavior-insurance-companies/75-c5f6ebfb-fc7b-4a16-9be8-63cc1b8b55ca",
+    "domain": "www.12news.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "AG Mayes: General Motors to pay $220M for illegal sale of customer driving behavior to insurance companies",
+    "source_item_id": "7bed4851edff0df9",
+    "resolved_at": "2026-10-30T16:32:41.606071+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.malaymail.com/news/money/2026/10/30/general-motors-to-pay-us220m-over-sale-of-drivers-data-used-to-raise-insurance-rates/241249",
+    "attempts": 2,
+    "attempt_details": [
+      {
+        "url": "https://www.12news.com/article/money/ag-mayes-general-motors-to-pay-220m-for-illegal-sale-of-customer-driving-behavior-insurance-companies/75-c5f6ebfb-fc7b-4a16-9be8-63cc1b8b55ca",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://www.malaymail.com/news/money/2026/10/30/general-motors-to-pay-us220m-over-sale-of-drivers-data-used-to-raise-insurance-rates/241249",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.7
+      }
+    ],
+    "title": "General Motors to pay US$220m over sale of drivers\u2019 data used to raise insurance rates | Malay Mail",
+    "published_at_page": "2026-10-30T13:01:13+08:00",
+    "title_score": 0.7,
+    "text_chars": 1597,
+    "content_hash": "716c58032d4a573b",
+    "screenshot": "42e27957ec3c.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:53.186376+00:00"
+  },
+  "text": "NEW YORK, Oct 30 \u2014 General Motors will pay US$220 million to settle litigation over the sale of drivers\u2019 driving data that was then used to raise insurance rates, New York\u2019s attorney general said today.\nThe payments resolves a suit brought by New York and 35 other states alleging GM shared the data of drivers enrolled in its Smart Driver program despite saying it would not be given to insurers without express consent, James\u2019s office said in a press release.\nThe program tracked actions such as sudden braking and whether drivers exceeded the speed limit. GM sold the data to data bankers who sold the info to insurers, who in some cases lifted premiums by significant levels, according to the press release.\n\u201cGeneral Motors collected data on their customers\u2019 personal driving habits without their knowledge and then sold it, potentially affecting their insurance rates,\u201d James said. \u201cToday, we are putting a stop to this illegal violation of drivers\u2019 privacy.\u201d\nThe case is part of a series of investigations and lawsuits over a GM program the automaker has ended.\nGM in January 2025 reached a settlement with the US Federal Trade Commission over allegations it improperly collected and sold consumer data that could be used to set insurance rates.\nGM announced in April 2024 that it was discontinuing the program, describing the move as a response to consumer feedback. It also announced the appointment of a new Chief Trust and Privacy Officer.\nGM said in an October 2026 securities filing that it set aside US$500 million in connection with investigations and litigation on the matter. \u2014 AFP"
+}

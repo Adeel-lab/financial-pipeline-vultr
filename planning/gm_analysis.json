@@ -1,0 +1,392 @@
+{
+  "client": "GM",
+  "generated_utc": "2026-10-29T21:07:47.255808+00:00",
+  "latest_period": "2025-12-31",
+  "periods_available": [
+    "2025-12-31",
+    "2024-12-31",
+    "2023-12-31",
+    "2022-12-31",
+    "2021-12-31",
+    "2020-12-31"
+  ],
+  "inputs_used_latest": {
+    "current_assets": 108767000.0,
+    "current_liabilities": 93342000.0,
+    "cash": 20945000.0,
+    "short_investments": 6724000.0,
+    "inventory": 14467000.0,
+    "receivables": 13054000.0,
+    "ppe": 51683000.0,
+    "total_assets": 281284000.0,
+    "total_liabilities": 218116000.0,
+    "equity": 61119000.0,
+    "retained_earnings": 51524000.0,
+    "short_debt": 656000.0,
+    "long_debt": 15591000.0,
+    "revenue": 185019000.0,
+    "cogs": 159128000.0,
+    "operating_income": 2909000.0,
+    "net_income": 2697000.0,
+    "interest_expense": null,
+    "gross_profit": 25891000.0,
+    "total_debt": 16247000.0
+  },
+  "metrics": {
+    "current_ratio": {
+      "as_of": "2025-12-31",
+      "latest_value": 1.1653,
+      "band": "neutral",
+      "flag": null,
+      "threshold": {
+        "weak": 1.0,
+        "strong": 1.5,
+        "higher_is_better": true,
+        "source": "General rule of thumb: <1.0 weak, 1.5-2.0 healthy"
+      },
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": 1.1653,
+        "2024-12-31": 1.1276,
+        "2023-12-31": 1.0759,
+        "2022-12-31": 1.1018,
+        "2021-12-31": 1.1034,
+        "2020-12-31": 1.0127
+      }
+    },
+    "quick_ratio": {
+      "as_of": "2025-12-31",
+      "latest_value": 1.0103,
+      "band": "strength",
+      "flag": null,
+      "threshold": {
+        "weak": 0.7,
+        "strong": 1.0,
+        "higher_is_better": true,
+        "source": "General rule of thumb: >=1.0 healthy"
+      },
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": 1.0103,
+        "2024-12-31": 0.9763,
+        "2023-12-31": 0.9017,
+        "2022-12-31": 0.9332,
+        "2021-12-31": 0.9289,
+        "2020-12-31": 0.8846
+      }
+    },
+    "cash_ratio": {
+      "as_of": "2025-12-31",
+      "latest_value": 0.2964,
+      "band": "neutral",
+      "flag": null,
+      "threshold": {
+        "weak": 0.2,
+        "strong": 0.5,
+        "higher_is_better": true,
+        "source": "General rule of thumb"
+      },
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": 0.2964,
+        "2024-12-31": 0.2819,
+        "2023-12-31": 0.2802,
+        "2022-12-31": 0.3433,
+        "2021-12-31": 0.3854,
+        "2020-12-31": 0.3634
+      }
+    },
+    "debt_to_equity": {
+      "as_of": "2025-12-31",
+      "latest_value": 0.2658,
+      "band": "needs_verification",
+      "flag": "data check failed: total_debt changes by more than 70% in a year - debt rows may be incomplete or redefined",
+      "threshold": {
+        "weak": 2.0,
+        "strong": 1.0,
+        "higher_is_better": false,
+        "source": "General rule of thumb: <1.0 conservative, >2.0 scrutiny"
+      },
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": 0.2658,
+        "2024-12-31": 0.2452,
+        "2023-12-31": 0.2553,
+        "2022-12-31": 1.4287,
+        "2021-12-31": 1.5493,
+        "2020-12-31": 2.0525
+      }
+    },
+    "debt_ratio": {
+      "as_of": "2025-12-31",
+      "latest_value": 0.7754,
+      "band": "weakness",
+      "flag": null,
+      "threshold": {
+        "weak": 0.7,
+        "strong": 0.5,
+        "higher_is_better": false,
+        "source": "General rule of thumb"
+      },
+      "trend": "rising_deteriorating",
+      "history": {
+        "2025-12-31": 0.7754,
+        "2024-12-31": 0.7655,
+        "2023-12-31": 0.7498,
+        "2022-12-31": 0.7262,
+        "2021-12-31": 0.7311,
+        "2020-12-31": 0.7888
+      }
+    },
+    "equity_ratio": {
+      "as_of": "2025-12-31",
+      "latest_value": 0.2173,
+      "band": "weakness",
+      "flag": null,
+      "threshold": {
+        "weak": 0.25,
+        "strong": 0.4,
+        "higher_is_better": true,
+        "source": "General rule of thumb"
+      },
+      "trend": "falling_deteriorating",
+      "history": {
+        "2025-12-31": 0.2173,
+        "2024-12-31": 0.2254,
+        "2023-12-31": 0.2354,
+        "2022-12-31": 0.2568,
+        "2021-12-31": 0.2441,
+        "2020-12-31": 0.1915
+      }
+    },
+    "ppe_share_of_assets": {
+      "as_of": "2025-12-31",
+      "latest_value": 0.1837,
+      "band": null,
+      "flag": null,
+      "threshold": null,
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": 0.1837,
+        "2024-12-31": 0.1855,
+        "2023-12-31": 0.1843,
+        "2022-12-31": 0.1714,
+        "2021-12-31": 0.168,
+        "2020-12-31": 0.16
+      }
+    },
+    "inventory_share_of_assets": {
+      "as_of": "2025-12-31",
+      "latest_value": 0.0514,
+      "band": null,
+      "flag": null,
+      "threshold": null,
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": 0.0514,
+        "2024-12-31": 0.0521,
+        "2023-12-31": 0.0603,
+        "2022-12-31": 0.0582,
+        "2021-12-31": 0.0531,
+        "2020-12-31": 0.0435
+      }
+    },
+    "asset_turnover": {
+      "as_of": "2025-12-31",
+      "latest_value": 0.6578,
+      "band": null,
+      "flag": null,
+      "threshold": null,
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": 0.6578,
+        "2024-12-31": 0.67,
+        "2023-12-31": 0.6293,
+        "2022-12-31": 0.5936,
+        "2021-12-31": 0.519,
+        "2020-12-31": 0.5208
+      }
+    },
+    "retained_earnings_to_equity": {
+      "as_of": "2025-12-31",
+      "latest_value": 0.843,
+      "band": null,
+      "flag": null,
+      "threshold": null,
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": 0.843,
+        "2024-12-31": 0.8478,
+        "2023-12-31": 0.8616,
+        "2022-12-31": 0.7265,
+        "2021-12-31": 0.7019,
+        "2020-12-31": 0.7098
+      }
+    },
+    "interest_coverage": {
+      "as_of": "2023-12-31",
+      "latest_value": 10.2064,
+      "band": "stale",
+      "flag": "latest data is from 2023-12-31, not 2025-12-31",
+      "threshold": {
+        "weak": 1.5,
+        "strong": 3.0,
+        "higher_is_better": true,
+        "source": "General: >=2 good, <1.5 red flag; manufacturing >=3"
+      },
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": null,
+        "2024-12-31": null,
+        "2023-12-31": 10.2064,
+        "2022-12-31": 10.4509,
+        "2021-12-31": 9.8147,
+        "2020-12-31": 1.6098
+      }
+    },
+    "gross_margin": {
+      "as_of": "2025-12-31",
+      "latest_value": 0.1399,
+      "band": "neutral",
+      "flag": null,
+      "threshold": {
+        "weak": 0.1,
+        "strong": 0.188,
+        "higher_is_better": true,
+        "source": "Auto industry 10-yr median ~18.8% (override per industry)"
+      },
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": 0.1399,
+        "2024-12-31": 0.1941,
+        "2023-12-31": 0.1776,
+        "2022-12-31": 0.1904,
+        "2021-12-31": 0.2083,
+        "2020-12-31": 0.2037
+      }
+    },
+    "operating_margin": {
+      "as_of": "2025-12-31",
+      "latest_value": 0.0157,
+      "band": "weakness",
+      "flag": null,
+      "threshold": {
+        "weak": 0.02,
+        "strong": 0.065,
+        "higher_is_better": true,
+        "source": "Auto industry 10-yr median ~6.5% (override per industry)"
+      },
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": 0.0157,
+        "2024-12-31": 0.0682,
+        "2023-12-31": 0.0541,
+        "2022-12-31": 0.0658,
+        "2021-12-31": 0.0734,
+        "2020-12-31": 0.0542
+      }
+    },
+    "net_margin": {
+      "as_of": "2025-12-31",
+      "latest_value": 0.0146,
+      "band": "neutral",
+      "flag": null,
+      "threshold": {
+        "weak": 0.0,
+        "strong": 0.05,
+        "higher_is_better": true,
+        "source": "General rule of thumb"
+      },
+      "trend": "falling_deteriorating",
+      "history": {
+        "2025-12-31": 0.0146,
+        "2024-12-31": 0.0321,
+        "2023-12-31": 0.0589,
+        "2022-12-31": 0.0634,
+        "2021-12-31": 0.0789,
+        "2020-12-31": 0.0525
+      }
+    },
+    "revenue_growth": {
+      "as_of": "2025-12-31",
+      "latest_value": -0.0129,
+      "band": "weakness",
+      "flag": null,
+      "threshold": {
+        "weak": 0.0,
+        "strong": 0.05,
+        "higher_is_better": true,
+        "source": "General rule of thumb"
+      },
+      "trend": "falling_deteriorating",
+      "history": {
+        "2025-12-31": -0.0129,
+        "2024-12-31": 0.0908,
+        "2023-12-31": 0.0964,
+        "2022-12-31": 0.2341,
+        "2021-12-31": 0.0369,
+        "2020-12-31": null
+      }
+    },
+    "net_income_growth": {
+      "as_of": "2025-12-31",
+      "latest_value": -0.5511,
+      "band": "weakness",
+      "flag": null,
+      "threshold": {
+        "weak": 0.0,
+        "strong": 0.05,
+        "higher_is_better": true,
+        "source": "General rule of thumb"
+      },
+      "trend": "mixed",
+      "history": {
+        "2025-12-31": -0.5511,
+        "2024-12-31": -0.4067,
+        "2023-12-31": 0.0194,
+        "2022-12-31": -0.0085,
+        "2021-12-31": 0.5589,
+        "2020-12-31": null
+      }
+    }
+  },
+  "summary": {
+    "strengths": [
+      "quick_ratio"
+    ],
+    "weaknesses": [
+      "debt_ratio",
+      "equity_ratio",
+      "operating_margin",
+      "revenue_growth",
+      "net_income_growth"
+    ],
+    "neutral": [
+      "current_ratio",
+      "cash_ratio",
+      "gross_margin",
+      "net_margin"
+    ],
+    "unbanded": [
+      "ppe_share_of_assets",
+      "inventory_share_of_assets",
+      "asset_turnover",
+      "retained_earnings_to_equity"
+    ],
+    "needs_verification": [
+      "debt_to_equity"
+    ],
+    "stale": [
+      "interest_coverage"
+    ]
+  },
+  "data_notes": [
+    "Statements are consolidated and include a captive finance arm (GM Financial); leverage and liquidity ratios are not comparable to pure manufacturers.",
+    "LLM mapped 'short_investments' to ['Debt Securities, Available-for-sale, Current'] (Short\u2011term marketable securities listed as current debt securities)",
+    "LLM mapped 'ppe' to ['Property, Plant and Equipment, Net', 'OperatingLeaseRightofuseAssetNoncurrent'] (Net PPE and operating\u2011lease right\u2011of\u2011use asset (non\u2011current))",
+    "LLM mapped 'cogs' to ['Cost of Goods and Services Sold'] (Exact label for cost of goods sold)",
+    "DATA CHECK FAILED: total_debt changes by more than 70% in a year - debt rows may be incomplete or redefined",
+    "gross_profit: not found in file",
+    "gross_profit derived = revenue - cogs"
+  ]
+}

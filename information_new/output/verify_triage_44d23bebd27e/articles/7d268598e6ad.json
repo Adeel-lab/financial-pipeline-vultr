@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "7d268598e6ad",
+  "bucket": "24h",
+  "score": 0.174,
+  "label": {
+    "topic": "other",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 1,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 15,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "b5aad7398e098383",
+    "title": "General Motors Will Move Its Stock to Nasdaq in Tech-Driven Pivot",
+    "source": "GV Wire",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcEZ1dkd3RWJkbUs0akxKc1o4Q2Znend6dWI3SUlXbXRJOGlYOHhkV1ZDY0kyWWREai0xUTFGQVV2TVZhanFpLWlBOGVReUJ5TV9FN2dfUnB0ajRGYVZZelRUVU95bFF3WXdSaldyZWl6b1d4dDNaTnBNX19Gb0NQTDUxVWFkXzhVQWxrSGFyT1NLMXNuTjFkdDdiVGY3UDFiWVVOQnNvMlRtUUdudFJORDIwOXpVZWdvR0VPbmF6Zk1GRFRVdlNWVHJ1NA?oc=5",
+    "published_at": "2026-10-27T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://gvwire.com/2026/10/27/general-motors-will-move-its-stock-to-nasdaq-in-tech-driven-pivot/?nocache=1793267127&jet_blog_ajax=1",
+    "domain": "gvwire.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "General Motors Will Move Its Stock to Nasdaq in Tech-Driven Pivot",
+    "source_item_id": "b5aad7398e098383",
+    "resolved_at": "2026-10-29T20:52:20.065892+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://gvwire.com/2026/10/27/general-motors-will-move-its-stock-to-nasdaq-in-tech-driven-pivot/?nocache=1793267127&jet_blog_ajax=1",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://gvwire.com/2026/10/27/general-motors-will-move-its-stock-to-nasdaq-in-tech-driven-pivot/?nocache=1793267127&jet_blog_ajax=1",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "General Motors Will Move Its Stock to Nasdaq in Tech-Driven Pivot - GV Wire",
+    "published_at_page": "2026-10-27T19:31:59+00:00",
+    "title_score": 1.0,
+    "text_chars": 2420,
+    "content_hash": "331cf6ef6b6caa0b",
+    "screenshot": "7d268598e6ad.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:19.872650+00:00"
+  },
+  "text": "Final inspection at a General Motors factory in Spring Hill, Tenn., Oct. 7, 2024. After more than 100 years on the New York Stock Exchange, the automaker is shifting its listing to the Nasdaq, which is home to many technology companies. (Brett Carlsen/The New York Times)\nShare\nGeneral Motors said Tuesday that it would move its stock listing to Nasdaq from the New York Stock Exchange in an effort to attract investors by casting itself as a technology-driven firm.\nThe automaker is the latest company to make the switch to Nasdaq, which is home to the stocks of some of the world\u2019s largest tech companies, including Nvidia and Apple.\nGM\u2019s chief financial officer, Paul Jacobson, said in a statement that Nasdaq was a \u201cnatural home\u201d for the company as the automaker pursues a \u201ccustomer-focused, technology-driven strategy.\u201d\nThe company has been working to pack its cars with new technologies, including systems that can allow drivers to take their hands off the wheel and eyes off the road in certain conditions.\nThe company\u2019s stock will stay on the New York Stock Exchange through the end of trading Nov. 16. GM first listed on that exchange in 1911.\nOther companies have left the New York Stock Exchange for Nasdaq in recent years, including Walmart and Palantir. The tech-focused exchange has also attracted companies like SpaceX and Anthropic that have recently completed or are attempting initial public offerings at trillion-dollar valuations.\nListing exclusively on the Nasdaq will make GM eligible for inclusion in the Nasdaq-100 index, something the company noted in its announcement. GM\u2019s shares were up more than 6% around noon Tuesday after the announcement.\nBeing included in the Nasdaq-100, which tracks the largest companies listed on the stock exchange, excluding financial firms, has a lot of advantages. Funds and portfolios tracking the Nasdaq-100 total $1.4 trillion, according to Nasdaq.\nIf GM was included in the index, managers of those funds and portfolios would have to buy the company\u2019s stock, which could push up the company\u2019s share price.\nGM has sought in recent years to burnish its standing with investors by, among other things, spending billions of dollars on buying back its stock. Last week, the company announced it would buy back $20 billion worth of its shares.\n\u2014\nThis article originally appeared in The New York Times.\nBy Aruni Soni/Brett Carlsen\nc. 2026 The New York Times Company"
+}

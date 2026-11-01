@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "87f728c3363e",
+  "bucket": "30d",
+  "score": 0.5814,
+  "label": {
+    "topic": "autonomy_ai",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "70556fd75a4c5f98",
+    "title": "GM aims to develop vehicles in as little as two years with AI, software push",
+    "source": "CNBC",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5zZHBsWGlxdmVTbHJRV2VPTktvTnlJNm1hRmZXbDBScmRENVV2UVhjcFZLWVRhZm1Bb3BWa0ZoWTNqeC1MVU9YTmpKbTRkOHJjX01vOUJTdHI2R2JUSkszMld1UVJ1Y19TNE4xWW5CVUk5ZG5IRjdvSkVsUdIBgAFBVV95cUxOVnZYd0dsUTk5azZ0Y1dDdzRsai0wT0dPdXpSNEVVdU5OZnBwQUt0cnYxZjRRaWoyOFlCeG1UeHlVSlFuSjhkSEpaYVFNSU5kSG00dmo1NGw5LUtRN0tYRURLTkZyb1FYRWV4RFVmX0dtWS1Fb0RvUEc5Y0NfN2NOWg?oc=5",
+    "published_at": "2026-10-21T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html",
+    "domain": "www.cnbc.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM aims to develop vehicles in as little as two years with AI, software push",
+    "source_item_id": "70556fd75a4c5f98",
+    "resolved_at": "2026-10-29T20:52:20.065569+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.857
+      }
+    ],
+    "title": "GM aims to shorten vehicle development time with AI, software push",
+    "published_at_page": "2026-10-21T18:00:01+0000",
+    "title_score": 0.857,
+    "text_chars": 6663,
+    "content_hash": "708f16b9ce24b7f0",
+    "screenshot": "87f728c3363e.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:55:52.820455+00:00"
+  },
+  "text": "NEW YORK \u2014 General Motors plans to lean into artificial intelligence and vehicle software for future growth and development amid increasing competition abroad from Chinese automakers and a tougher U.S. market.\nThe Detroit automaker on Wednesday shared new details about a proprietary AI agent it\u2019s releasing under its OnStar brand, plans for a fourth generation of more efficient all-electric vehicles and a target to cut its vehicle development time in half.\nGM also reconfirmed that by 2028, it wants to have eyes-off highway driving, or \u201cpersonal autonomy,\u201d that will let drivers take their attention off the road. The automaker said that technology would start with the Cadillac Escalade IQ EV before rolling out to other, more high-volume models.\n\u201cAll of these developments are building us the car of the future,\u201d CEO Mary Barra said Wednesday during an event laying out the plans, called \u201cGM Forward,\u201d in downtown Manhattan.\nThe initiatives, which Barra, Chief Product Officer Sterling Anderson and other executives discussed at the event, are designed to streamline the automaker\u2019s operations, while also improving the capabilities of its vehicles for customers.\n\u201cOver the last 12 months, we\u2019ve evolved how we design, engineer and build our vehicles,\u201d said Anderson, who led the event and who has been tasked with overseeing GM\u2019s latest technology transformation.\nGM said it is now targeting a vehicle development time of roughly two years from concept to production versus a traditional four- to five-year cycle. However, the company did not detail a timeline for reaching that goal.\nThe event comes as Chinese automakers are growing outside of the U.S. with rapid development times of new technologies and vehicles. Consulting firm AlixPartners said it believes China is currently bringing vehicles to market twice as fast as traditional automakers, with 40% to 50% less investment and a 30% cost advantage.\nGM also continues to play catch-up to U.S. EV leader Tesla when it comes to delivering technology advancements through over-the-air updates and automated driving capabilities.\nAnderson, a former Tesla executive, declined to speak specifically about how GM\u2019s technologies will compare to the EV maker, but said GM\u2019s systems will be able to visualize, or see, more things through the use of multiple types of sensors than a strictly camera-based system, which Tesla uses.\nHe also said the rapid development and new software architecture will help the company better compete against Chinese automakers abroad.\n\u201cThere\u2019s inherent virtue to speed,\u201d Anderson told CNBC during an interview after the event. \u201cNot just in being able to get a car out faster, it\u2019s being able to develop a system that\u2019s far more performant that you could have otherwise.\u201d\nNext-generation vehicles\nGM said Wednesday it has major plans for its next generation of EVs and traditional vehicles with internal combustion engines.\nThe company said those coming vehicles \u2014 regardless of type \u2014 will have 40 times the computing power and up to 50% faster cellular connectivity than prior systems.\nThat computing power is expected to help the automaker with over-the-air updates, onboard diagnostics and AI, as well as other technologies such as automated driving features.\nThe new brain of the vehicle will launch on the $130,000 Cadillac Escalade IQ EV in 2028 before rolling out to other models, including its next generation of EVs.\nGM said the forthcoming EVs are expected to be 25% more aerodynamic and 15% lighter and feature electric motors and battery packs that are more compact.\nGM President Mark Reuss said despite lackluster consumer adoption and the automaker pulling back billions of dollars in investments in EVs, it remains committed to producing them.\n\u201cWe continue to develop our future EVs and work to reduce battery costs,\u201d Reuss said during the event. \u201cAnd when the U.S. market is ready for EVs in large numbers, we will be there for them.\u201d\nAI development\nGM expects to achieve such targets through the use of AI in research and development.\nThe company said it is developing a \u201cnew operating approach for vehicle development\u201d that leans into enterprise AI and virtualization to increase speed.\n\u201cThis concurrent engineering model allows us to innovate faster, improve continuously, and scale new technologies across our lineup with incredible agility,\u201d the company said in a release.\nGM used the development of its next-generation vehicles, including a new battery chemistry, as an example of how the new technologies are reshaping its vehicle development.\nThe company said it virtually tested more than 300,000 battery designs using its recently announced lithium manganese rich battery chemistry, or LMR, before building a single physical prototype.\nAnderson said Wednesday that LMR will be the exclusive battery tech for its fourth-generation EVs. GM had previously said it wanted to use those batteries in full-size electric vehicles such as its Chevrolet Silverado and Escalade IQ beginning in 2028.\nAnderson said GM is uniquely positioned to use AI compared to other automotive companies because of its more than 100 years in the industry as well as 30 years of OnStar.\n\u201cIn the age of AI, data is currency,\u201d Anderson said. \u201cFor decades, GM\u2019s engineering, manufacturing and product teams have generated unparalleled body of data that we\u2019re now using to build industry-leading AI tools.\u201d\nIn-vehicle AI\nThe company is building on its internal use of AI to better shape its experiences for customers.\nGM on Wednesday reconfirmed that it plans to launch a proprietary in-vehicle AI assistant through its OnStar technology brand.\nThe OnStar AI assistant is expected to launch in the coming months on the 2027 Cadillac Lyriq EV through an over-the-air update before expanding to other models.\nGM currently uses Google\u2019s Gemini for its in-vehicle AI assistant. The company told CNBC earlier this year that the GM-developed AI will be more integrated with the vehicle.\nThe goal for OnStar AI, which will be available through a subscription, is to help customers be productive while in the car, especially if the vehicle has self-driving capabilities that don\u2019t require the driver or passengers to monitor the system.\nGM on Wednesday also reiterated its plans to launch eyes-off highway driving in 2028. The automaker said a year ago that it wanted to launch that technology. It\u2019s been five years since Barra said she expected the automaker to offer personal autonomous vehicles this decade.\n\u201cOur vision is that eventually every vehicle should drive itself or its occupants anywhere, and we\u2019re investing across the self-driving stack to make that real,\u201d Anderson said."
+}

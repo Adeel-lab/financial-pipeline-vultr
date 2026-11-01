@@ -1,0 +1,49 @@
+{
+  "aliases": {
+    "current_assets": [
+      "Assets, Current"
+    ],
+    "current_liabilities": [
+      "Liabilities, Current"
+    ],
+    "cash": [
+      "Cash and Cash Equivalents, at Carrying Value"
+    ],
+    "short_investments": [
+      "Debt Securities, Available-for-sale, Current"
+    ],
+    "inventory": [
+      "Inventory, Net"
+    ],
+    "receivables": [
+      "Accounts Receivable, after Allowance for Credit Loss, Current"
+    ],
+    "ppe": [
+      "Property, Plant and Equipment, Net"
+    ],
+    "total_assets": [
+      "Assets"
+    ],
+    "total_liabilities": [
+      "Liabilities"
+    ],
+    "equity": [
+      "Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest"
+    ],
+    "retained_earnings": [
+      "Retained Earnings (Accumulated Deficit)"
+    ],
+    "revenue": [
+      "Revenues"
+    ],
+    "cogs": [
+      "Cost of Goods and Services Sold"
+    ],
+    "operating_income": [
+      "Operating Income (Loss)"
+    ],
+    "net_income": [
+      "Net Income (Loss) Attributable to Parent"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "company": "Ford (Hungary)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "Hungary"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [
+      "Ford vs BMW"
+    ],
+    "exclude": [
+      "Ford\\ US"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (Hungary)",
+    "slug": "ford-hungary",
+    "query": "\"Ford\" (Hungary)",
+    "scope_text": "Hungary",
+    "all_aliases": [
+      "Ford",
+      "Ford vs BMW"
+    ]
+  },
+  "event_id": "4b6044a00469",
+  "bucket": "30d",
+  "score": 0.0136,
+  "label": {
+    "topic": "other",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 0,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "8bb858a9a4ab151e",
+    "title": "Ryan Gosling talks 'Blade Runner 2049' and working with Harrison Ford in compelling new interview",
+    "source": "Entertainment.ie",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWTFpWmEwN1ZFclRkNUVURkl4Tk42MzlzNjJhU2ZnaE41SlVMSEVfQnliS3UxQVpjTld5RkVpSkdERGM5ellnakcwQmtEWmM0b2doUU8wUTM3MkJvYjMwbEZ2NGMwYzRDU2FMVlpBNnNHSEVkdl9scnJDdDJVVU9icGUzQS1OdF9TcXBHM3BqR1VmbDFYWDhlU202NmRBcVhUN1Jib3RmcFUzdkM2Qk0zYi1pRlJTcXFGdW5MX0U0dUg0eWtaZjVfcWFub0F6X0VBYm1aUUN6SjcwR2hGLU9v?oc=5",
+    "published_at": "2026-10-23T16:57:44+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://entertainment.ie/movies/movie-news/ryan-gosling-talks-blade-runner-2049-and-working-with-harrison-ford-in-compelling-new-interview-229677/",
+    "domain": "entertainment.ie",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ryan Gosling talks 'Blade Runner 2049' and working with Harrison Ford in compelling new interview",
+    "source_item_id": "8bb858a9a4ab151e",
+    "resolved_at": "2026-10-30T19:49:11.031103+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://entertainment.ie/movies/movie-news/ryan-gosling-talks-blade-runner-2049-and-working-with-harrison-ford-in-compelling-new-interview-229677/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://entertainment.ie/movies/movie-news/ryan-gosling-talks-blade-runner-2049-and-working-with-harrison-ford-in-compelling-new-interview-229677/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "Ryan Gosling talks 'Blade Runner 2049' and working with Harrison Ford in compelling new interview",
+    "published_at_page": "2017-08-19T17:10:20+01:00",
+    "title_score": 1.0,
+    "text_chars": 1327,
+    "content_hash": "ac812eb9c587caeb",
+    "screenshot": "4b6044a00469.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "Hungary"
+    ],
+    "retrieved_at": "2026-10-30T19:49:24.790418+00:00"
+  },
+  "text": "In an interview with Entertainment Weekly, the actor also recalled the experience of filming in Budapest and working on his first 'big budget' movie.\nIn the movie Gosling plays a new Blade Runner called Officer K who tracks down Harrison Ford\u2019s Deck character thirty years after his disappearance.\n\"It was one of the first films that I saw that I didn't know how to feel when it was over. The line between heroes and villains was so blurred. It's not a hero's journey in any way. When I was a kid that was the storyline I had seen,\u201d he said, explaining what drew him to the remake.\nOf working with Harrison Ford, he said: \"The best part is that you hang out with him and you realize that all those iconic moments from his films that you love are his \u2014 like 'I love you,' 'I know' from Star Wars, or shooting the guy in Indiana Jones.\n\"He's just like that all the time. Normally I'd say there are hundreds of ways to play any scene. Unless you work with Harrison and you realise there's only one great way and he's already figured it out.\"\nHe also went on to talk about being served 'meat in a cone' while filming in Hungary. Sounds delicious.\nDirected by Canadian Denis Villeneuve, the sequel to the 1982 Ridley Scott cult movie is due for release on October 7th.\nYou can read the interview in full here.\nCheck out the trailer:"
+}

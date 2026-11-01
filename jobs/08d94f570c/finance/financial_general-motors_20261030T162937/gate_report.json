@@ -1,0 +1,1040 @@
+{
+  "schema_version": 2,
+  "company": "General Motors",
+  "currency": "USD",
+  "units": "thousands",
+  "frequency": "annual",
+  "entity_scope": "",
+  "created_at": "2026-10-30T16:29:37.259052+00:00",
+  "status": "needs_decisions",
+  "periods": [
+    "2025-12-31",
+    "2024-12-31",
+    "2023-12-31",
+    "2022-12-31",
+    "2021-12-31",
+    "2020-12-31"
+  ],
+  "llm": {
+    "used": true,
+    "model": "openai/gpt-oss-120b"
+  },
+  "source_files": {
+    "balance": {
+      "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\balance.csv",
+      "sha256": "e61a63f14559276876e6861bdb9e5b193004a9fc8cae40890b21f6755d02f0a4",
+      "rows": 32,
+      "periods": [
+        "2025-12-31",
+        "2024-12-31",
+        "2023-12-31",
+        "2022-12-31",
+        "2021-12-31",
+        "2020-12-31"
+      ]
+    },
+    "income": {
+      "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\income.csv",
+      "sha256": "8611479f1bdd2edd66af1a4fdd67427cca04cd0323ce420e26accc4f473d063c",
+      "rows": 27,
+      "periods": [
+        "2025-12-31",
+        "2024-12-31",
+        "2023-12-31",
+        "2022-12-31",
+        "2021-12-31",
+        "2020-12-31"
+      ]
+    }
+  },
+  "fields": {
+    "current_assets": {
+      "field": "current_assets",
+      "description": "total current assets (a subtotal)",
+      "statement": "balance",
+      "candidates": [
+        {
+          "label": "Assets, Current",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 108767000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Assets, Current"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 108767000.0,
+        "2024-12-31": 108545000.0,
+        "2023-12-31": 101618000.0,
+        "2022-12-31": 100451000.0,
+        "2021-12-31": 82103000.0,
+        "2020-12-31": 80924000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Assets, Current",
+        "2024-12-31": "Assets, Current",
+        "2023-12-31": "Assets, Current",
+        "2022-12-31": "Assets, Current",
+        "2021-12-31": "Assets, Current",
+        "2020-12-31": "Assets, Current"
+      }
+    },
+    "current_liabilities": {
+      "field": "current_liabilities",
+      "description": "total current liabilities (a subtotal)",
+      "statement": "balance",
+      "candidates": [
+        {
+          "label": "Liabilities, Current",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 93342000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Liabilities, Current"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 93342000.0,
+        "2024-12-31": 96265000.0,
+        "2023-12-31": 94445000.0,
+        "2022-12-31": 91173000.0,
+        "2021-12-31": 74408000.0,
+        "2020-12-31": 79910000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Liabilities, Current",
+        "2024-12-31": "Liabilities, Current",
+        "2023-12-31": "Liabilities, Current",
+        "2022-12-31": "Liabilities, Current",
+        "2021-12-31": "Liabilities, Current",
+        "2020-12-31": "Liabilities, Current"
+      }
+    },
+    "cash": {
+      "field": "cash",
+      "description": "cash and cash equivalents",
+      "statement": "balance",
+      "candidates": [
+        {
+          "label": "Cash and Cash Equivalents, at Carrying Value",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 20945000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Cash and Cash Equivalents, at Carrying Value"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 20945000.0,
+        "2024-12-31": 19872000.0,
+        "2023-12-31": 18853000.0,
+        "2022-12-31": 19153000.0,
+        "2021-12-31": 20067000.0,
+        "2020-12-31": 19992000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Cash and Cash Equivalents, at Carrying Value",
+        "2024-12-31": "Cash and Cash Equivalents, at Carrying Value",
+        "2023-12-31": "Cash and Cash Equivalents, at Carrying Value",
+        "2022-12-31": "Cash and Cash Equivalents, at Carrying Value",
+        "2021-12-31": "Cash and Cash Equivalents, at Carrying Value",
+        "2020-12-31": "Cash and Cash Equivalents, at Carrying Value"
+      }
+    },
+    "short_investments": {
+      "field": "short_investments",
+      "description": "short-term investments / marketable securities (current)",
+      "statement": "balance",
+      "candidates": [
+        {
+          "label": "Debt Securities, Available-for-sale, Current",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 6724000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Debt Securities, Available-for-sale, Current"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 6724000.0,
+        "2024-12-31": 7265000.0,
+        "2023-12-31": 7613000.0,
+        "2022-12-31": 12150000.0,
+        "2021-12-31": 8609000.0,
+        "2020-12-31": 9046000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Debt Securities, Available-for-sale, Current",
+        "2024-12-31": "Debt Securities, Available-for-sale, Current",
+        "2023-12-31": "Debt Securities, Available-for-sale, Current",
+        "2022-12-31": "Debt Securities, Available-for-sale, Current",
+        "2021-12-31": "Debt Securities, Available-for-sale, Current",
+        "2020-12-31": "Debt Securities, Available-for-sale, Current"
+      }
+    },
+    "inventory": {
+      "field": "inventory",
+      "description": "inventory",
+      "statement": "balance",
+      "candidates": [
+        {
+          "label": "Inventory, Net",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 14467000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Inventory, Net"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 14467000.0,
+        "2024-12-31": 14564000.0,
+        "2023-12-31": 16461000.0,
+        "2022-12-31": 15366000.0,
+        "2021-12-31": 12988000.0,
+        "2020-12-31": 10235000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Inventory, Net",
+        "2024-12-31": "Inventory, Net",
+        "2023-12-31": "Inventory, Net",
+        "2022-12-31": "Inventory, Net",
+        "2021-12-31": "Inventory, Net",
+        "2020-12-31": "Inventory, Net"
+      }
+    },
+    "receivables": {
+      "field": "receivables",
+      "description": "trade receivables (current)",
+      "statement": "balance",
+      "candidates": [
+        {
+          "label": "Accounts Receivable, after Allowance for Credit Loss, Current",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 13054000.0
+        },
+        {
+          "label": "Financing Receivable, after Allowance for Credit Loss, Current",
+          "method": "fuzzy",
+          "rank": 90,
+          "periods_with_data": 6,
+          "latest_value": 45266000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Accounts Receivable, after Allowance for Credit Loss, Current"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 13054000.0,
+        "2024-12-31": 12827000.0,
+        "2023-12-31": 12378000.0,
+        "2022-12-31": 13333000.0,
+        "2021-12-31": 7394000.0,
+        "2020-12-31": 8035000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Accounts Receivable, after Allowance for Credit Loss, Current",
+        "2024-12-31": "Accounts Receivable, after Allowance for Credit Loss, Current",
+        "2023-12-31": "Accounts Receivable, after Allowance for Credit Loss, Current",
+        "2022-12-31": "Accounts Receivable, after Allowance for Credit Loss, Current",
+        "2021-12-31": "Accounts Receivable, after Allowance for Credit Loss, Current",
+        "2020-12-31": "Accounts Receivable, after Allowance for Credit Loss, Current"
+      }
+    },
+    "ppe": {
+      "field": "ppe",
+      "description": "property, plant and equipment (net)",
+      "statement": "balance",
+      "candidates": [
+        {
+          "label": "Property, Plant and Equipment, Net",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 51683000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Property, Plant and Equipment, Net"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 51683000.0,
+        "2024-12-31": 51904000.0,
+        "2023-12-31": 50321000.0,
+        "2022-12-31": 45248000.0,
+        "2021-12-31": 41115000.0,
+        "2020-12-31": 37632000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Property, Plant and Equipment, Net",
+        "2024-12-31": "Property, Plant and Equipment, Net",
+        "2023-12-31": "Property, Plant and Equipment, Net",
+        "2022-12-31": "Property, Plant and Equipment, Net",
+        "2021-12-31": "Property, Plant and Equipment, Net",
+        "2020-12-31": "Property, Plant and Equipment, Net"
+      }
+    },
+    "total_assets": {
+      "field": "total_assets",
+      "description": "TOTAL assets (not current or noncurrent only)",
+      "statement": "balance",
+      "candidates": [
+        {
+          "label": "Assets",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 281284000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Assets"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 281284000.0,
+        "2024-12-31": 279761000.0,
+        "2023-12-31": 273064000.0,
+        "2022-12-31": 264037000.0,
+        "2021-12-31": 244718000.0,
+        "2020-12-31": 235194000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Assets",
+        "2024-12-31": "Assets",
+        "2023-12-31": "Assets",
+        "2022-12-31": "Assets",
+        "2021-12-31": "Assets",
+        "2020-12-31": "Assets"
+      }
+    },
+    "total_liabilities": {
+      "field": "total_liabilities",
+      "description": "TOTAL liabilities (not current only, not 'liabilities and equity')",
+      "statement": "balance",
+      "candidates": [
+        {
+          "label": "Liabilities",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 218116000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Liabilities"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 218116000.0,
+        "2024-12-31": 214171000.0,
+        "2023-12-31": 204757000.0,
+        "2022-12-31": 191752000.0,
+        "2021-12-31": 178903000.0,
+        "2020-12-31": 185517000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Liabilities",
+        "2024-12-31": "Liabilities",
+        "2023-12-31": "Liabilities",
+        "2022-12-31": "Liabilities",
+        "2021-12-31": "Liabilities",
+        "2020-12-31": "Liabilities"
+      }
+    },
+    "equity": {
+      "field": "equity",
+      "description": "total shareholders' equity",
+      "statement": "balance",
+      "candidates": [
+        {
+          "label": "Stockholders' Equity Attributable to Parent",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 61119000.0
+        },
+        {
+          "label": "Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest",
+          "method": "exact",
+          "rank": 3,
+          "periods_with_data": 6,
+          "latest_value": 63168000.0
+        }
+      ],
+      "status": "needs_choice",
+      "chain": [
+        "Stockholders' Equity Attributable to Parent"
+      ],
+      "needs_choice": true,
+      "notes": [
+        "several rows hold different numbers for the same period; using the first alias until you choose",
+        "model recommends 'Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest': Total shareholders' equity including noncontrolling interest"
+      ],
+      "series": {
+        "2025-12-31": 61119000.0,
+        "2024-12-31": 63072000.0,
+        "2023-12-31": 64286000.0,
+        "2022-12-31": 67792000.0,
+        "2021-12-31": 59744000.0,
+        "2020-12-31": 45030000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Stockholders' Equity Attributable to Parent",
+        "2024-12-31": "Stockholders' Equity Attributable to Parent",
+        "2023-12-31": "Stockholders' Equity Attributable to Parent",
+        "2022-12-31": "Stockholders' Equity Attributable to Parent",
+        "2021-12-31": "Stockholders' Equity Attributable to Parent",
+        "2020-12-31": "Stockholders' Equity Attributable to Parent"
+      },
+      "options": [
+        {
+          "label": "Stockholders' Equity Attributable to Parent",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 61119000.0
+        },
+        {
+          "label": "Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest",
+          "method": "exact",
+          "rank": 3,
+          "periods_with_data": 6,
+          "latest_value": 63168000.0
+        }
+      ],
+      "llm_alternative": {
+        "row": "Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest",
+        "confidence": 0.97,
+        "reason": "Total shareholders' equity including noncontrolling interest"
+      }
+    },
+    "retained_earnings": {
+      "field": "retained_earnings",
+      "description": "retained earnings",
+      "statement": "balance",
+      "candidates": [
+        {
+          "label": "Retained Earnings (Accumulated Deficit)",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 51524000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Retained Earnings (Accumulated Deficit)"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 51524000.0,
+        "2024-12-31": 53472000.0,
+        "2023-12-31": 55391000.0,
+        "2022-12-31": 49251000.0,
+        "2021-12-31": 41937000.0,
+        "2020-12-31": 31962000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Retained Earnings (Accumulated Deficit)",
+        "2024-12-31": "Retained Earnings (Accumulated Deficit)",
+        "2023-12-31": "Retained Earnings (Accumulated Deficit)",
+        "2022-12-31": "Retained Earnings (Accumulated Deficit)",
+        "2021-12-31": "Retained Earnings (Accumulated Deficit)",
+        "2020-12-31": "Retained Earnings (Accumulated Deficit)"
+      }
+    },
+    "short_debt": {
+      "field": "short_debt",
+      "description": "debt due within one year (current portion / short-term borrowings)",
+      "statement": "balance",
+      "candidates": [],
+      "status": "missing",
+      "chain": [],
+      "needs_choice": false,
+      "notes": [],
+      "suggestions": [
+        {
+          "label": "Debt Securities, Available-for-sale, Current",
+          "latest_value": 6724000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Cash and Cash Equivalents, at Carrying Value",
+          "latest_value": 20945000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Accounts Receivable, after Allowance for Credit Loss, Current",
+          "latest_value": 13054000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Other Assets, Current",
+          "latest_value": 8312000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Assets, Current",
+          "latest_value": 108767000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Property, Plant and Equipment, Net",
+          "latest_value": 51683000.0,
+          "periods_with_data": 6
+        }
+      ]
+    },
+    "long_debt": {
+      "field": "long_debt",
+      "description": "long-term debt due after one year",
+      "statement": "balance",
+      "candidates": [],
+      "status": "missing",
+      "chain": [],
+      "needs_choice": false,
+      "notes": [],
+      "suggestions": [
+        {
+          "label": "Debt Securities, Available-for-sale, Current",
+          "latest_value": 6724000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Accounts Receivable, after Allowance for Credit Loss, Current",
+          "latest_value": 13054000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "gm_OperatingLeaseRightofuseAssetNoncurrent",
+          "latest_value": 33686000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Financing Receivable, after Allowance for Credit Loss, Current",
+          "latest_value": 45266000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Financing Receivable, after Allowance for Credit Loss, Noncurrent",
+          "latest_value": 44384000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Cash and Cash Equivalents, at Carrying Value",
+          "latest_value": 20945000.0,
+          "periods_with_data": 6
+        }
+      ]
+    },
+    "revenue": {
+      "field": "revenue",
+      "description": "total revenue / net sales",
+      "statement": "income",
+      "candidates": [
+        {
+          "label": "Revenues",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 185019000.0
+        },
+        {
+          "label": "Revenue from Contract with Customer, Excluding Assessed Tax",
+          "method": "exact",
+          "rank": 1,
+          "periods_with_data": 6,
+          "latest_value": 167971000.0
+        }
+      ],
+      "status": "needs_choice",
+      "chain": [
+        "Revenues"
+      ],
+      "needs_choice": true,
+      "notes": [
+        "several rows hold different numbers for the same period; using the first alias until you choose"
+      ],
+      "series": {
+        "2025-12-31": 185019000.0,
+        "2024-12-31": 187442000.0,
+        "2023-12-31": 171842000.0,
+        "2022-12-31": 156735000.0,
+        "2021-12-31": 127004000.0,
+        "2020-12-31": 122485000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Revenues",
+        "2024-12-31": "Revenues",
+        "2023-12-31": "Revenues",
+        "2022-12-31": "Revenues",
+        "2021-12-31": "Revenues",
+        "2020-12-31": "Revenues"
+      },
+      "options": [
+        {
+          "label": "Revenues",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 185019000.0
+        },
+        {
+          "label": "Revenue from Contract with Customer, Excluding Assessed Tax",
+          "method": "exact",
+          "rank": 1,
+          "periods_with_data": 6,
+          "latest_value": 167971000.0
+        }
+      ]
+    },
+    "cogs": {
+      "field": "cogs",
+      "description": "cost of goods sold / cost of revenue",
+      "statement": "income",
+      "candidates": [
+        {
+          "label": "Cost of Goods and Services Sold",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 159128000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Cost of Goods and Services Sold"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 159128000.0,
+        "2024-12-31": 151065000.0,
+        "2023-12-31": 141330000.0,
+        "2022-12-31": 126892000.0,
+        "2021-12-31": 100544000.0,
+        "2020-12-31": 97539000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Cost of Goods and Services Sold",
+        "2024-12-31": "Cost of Goods and Services Sold",
+        "2023-12-31": "Cost of Goods and Services Sold",
+        "2022-12-31": "Cost of Goods and Services Sold",
+        "2021-12-31": "Cost of Goods and Services Sold",
+        "2020-12-31": "Cost of Goods and Services Sold"
+      }
+    },
+    "gross_profit": {
+      "field": "gross_profit",
+      "description": "revenue - cogs",
+      "statement": "derived",
+      "candidates": [],
+      "status": "derived",
+      "formula": "revenue - cogs",
+      "chain": [],
+      "needs_choice": false,
+      "series": {
+        "2025-12-31": 25891000.0,
+        "2024-12-31": 36377000.0,
+        "2023-12-31": 30512000.0,
+        "2022-12-31": 29843000.0,
+        "2021-12-31": 26460000.0,
+        "2020-12-31": 24946000.0
+      },
+      "partial": false,
+      "source_by_period": {
+        "2025-12-31": "revenue - cogs",
+        "2024-12-31": "revenue - cogs",
+        "2023-12-31": "revenue - cogs",
+        "2022-12-31": "revenue - cogs",
+        "2021-12-31": "revenue - cogs",
+        "2020-12-31": "revenue - cogs"
+      },
+      "notes": [
+        "derived, not read from a statement row"
+      ]
+    },
+    "operating_income": {
+      "field": "operating_income",
+      "description": "operating income",
+      "statement": "income",
+      "candidates": [
+        {
+          "label": "Operating Income (Loss)",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 2909000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Operating Income (Loss)"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 2909000.0,
+        "2024-12-31": 12784000.0,
+        "2023-12-31": 9298000.0,
+        "2022-12-31": 10315000.0,
+        "2021-12-31": 9324000.0,
+        "2020-12-31": 6634000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Operating Income (Loss)",
+        "2024-12-31": "Operating Income (Loss)",
+        "2023-12-31": "Operating Income (Loss)",
+        "2022-12-31": "Operating Income (Loss)",
+        "2021-12-31": "Operating Income (Loss)",
+        "2020-12-31": "Operating Income (Loss)"
+      }
+    },
+    "net_income": {
+      "field": "net_income",
+      "description": "net income",
+      "statement": "income",
+      "candidates": [
+        {
+          "label": "Net Income (Loss) Attributable to Parent",
+          "method": "exact",
+          "rank": 0,
+          "periods_with_data": 6,
+          "latest_value": 2697000.0
+        }
+      ],
+      "status": "proposed_exact",
+      "chain": [
+        "Net Income (Loss) Attributable to Parent"
+      ],
+      "needs_choice": false,
+      "notes": [],
+      "series": {
+        "2025-12-31": 2697000.0,
+        "2024-12-31": 6008000.0,
+        "2023-12-31": 10127000.0,
+        "2022-12-31": 9934000.0,
+        "2021-12-31": 10019000.0,
+        "2020-12-31": 6427000.0
+      },
+      "source_by_period": {
+        "2025-12-31": "Net Income (Loss) Attributable to Parent",
+        "2024-12-31": "Net Income (Loss) Attributable to Parent",
+        "2023-12-31": "Net Income (Loss) Attributable to Parent",
+        "2022-12-31": "Net Income (Loss) Attributable to Parent",
+        "2021-12-31": "Net Income (Loss) Attributable to Parent",
+        "2020-12-31": "Net Income (Loss) Attributable to Parent"
+      },
+      "llm_alternative": {
+        "row": "Net Income (Loss), Including Portion Attributable to Noncontrolling Interest",
+        "confidence": 0.98,
+        "reason": "Total net income including noncontrolling interest"
+      }
+    },
+    "interest_expense": {
+      "field": "interest_expense",
+      "description": "interest expense",
+      "statement": "income",
+      "candidates": [],
+      "status": "missing",
+      "chain": [],
+      "needs_choice": false,
+      "notes": [],
+      "suggestions": [
+        {
+          "label": "Selling, General and Administrative Expense",
+          "latest_value": 8687000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Operating Income (Loss)",
+          "latest_value": 2909000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Nonoperating Income (Expense)",
+          "latest_value": 1535000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Income (Loss) from Continuing Operations before Income Taxes, Noncontrolling Interest",
+          "latest_value": 3117000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Income Tax Expense (Benefit)",
+          "latest_value": 338000.0,
+          "periods_with_data": 6
+        },
+        {
+          "label": "Income (Loss) from Continuing Operations, Net of Tax, Including Portion Attributable to Noncontrolling Interest",
+          "latest_value": 6321000.0,
+          "periods_with_data": 1
+        }
+      ]
+    },
+    "total_debt": {
+      "field": "total_debt",
+      "description": "short_debt + long_debt",
+      "statement": "derived",
+      "candidates": [],
+      "status": "missing",
+      "chain": [],
+      "needs_choice": false,
+      "notes": []
+    }
+  },
+  "checks": [
+    {
+      "severity": "warning",
+      "code": "balance_identity",
+      "message": "2023-12-31: assets 273,064,000 differ from liabilities + equity 269,043,000 by 1.5%; it balances with the row 'Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest'",
+      "period": "2023-12-31"
+    },
+    {
+      "severity": "warning",
+      "code": "balance_identity",
+      "message": "2022-12-31: assets 264,037,000 differ from liabilities + equity 259,544,000 by 1.7%; it balances with the row 'Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest'",
+      "period": "2022-12-31"
+    },
+    {
+      "severity": "warning",
+      "code": "balance_identity",
+      "message": "2021-12-31: assets 244,718,000 differ from liabilities + equity 238,647,000 by 2.5%; it balances with the row 'Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest'",
+      "period": "2021-12-31"
+    },
+    {
+      "severity": "warning",
+      "code": "balance_identity",
+      "message": "2020-12-31: assets 235,194,000 differ from liabilities + equity 230,547,000 by 2.0%; it balances with the row 'Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest'",
+      "period": "2020-12-31"
+    },
+    {
+      "severity": "decision",
+      "code": "choose_row",
+      "message": "equity: several rows disagree (Stockholders' Equity Attributable to Parent = 61,119,000; Stockholders' Equity, Including Portion Attributable to Noncontrolling Interest = 63,168,000); pick the correct one",
+      "field": "equity"
+    },
+    {
+      "severity": "decision",
+      "code": "choose_row",
+      "message": "revenue: several rows disagree (Revenues = 185,019,000; Revenue from Contract with Customer, Excluding Assessed Tax = 167,971,000); pick the correct one",
+      "field": "revenue"
+    },
+    {
+      "severity": "warning",
+      "code": "llm_disagrees",
+      "field": "net_income",
+      "message": "net_income: the model would use 'Net Income (Loss), Including Portion Attributable to Noncontrolling Interest' instead of 'Net Income (Loss) Attributable to Parent' (Total net income including noncontrolling interest)"
+    }
+  ],
+  "metric_availability": {
+    "current_ratio": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "current_assets",
+        "current_liabilities"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "quick_ratio": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "current_assets",
+        "inventory",
+        "current_liabilities"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "cash_ratio": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "cash",
+        "current_liabilities"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "debt_to_equity": {
+      "periods_available": 0,
+      "latest_available": false,
+      "needs": [
+        "total_debt",
+        "equity"
+      ],
+      "missing_fields": [
+        "total_debt"
+      ],
+      "uses_partial": []
+    },
+    "debt_ratio": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "total_liabilities",
+        "total_assets"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "equity_ratio": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "equity",
+        "total_assets"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "ppe_share_of_assets": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "ppe",
+        "total_assets"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "inventory_share_of_assets": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "inventory",
+        "total_assets"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "asset_turnover": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "revenue",
+        "total_assets"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "retained_earnings_to_equity": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "retained_earnings",
+        "equity"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "interest_coverage": {
+      "periods_available": 0,
+      "latest_available": false,
+      "needs": [
+        "operating_income",
+        "interest_expense"
+      ],
+      "missing_fields": [
+        "interest_expense"
+      ],
+      "uses_partial": []
+    },
+    "gross_margin": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "revenue",
+        "gross_profit"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "operating_margin": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "revenue",
+        "operating_income"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "net_margin": {
+      "periods_available": 6,
+      "latest_available": true,
+      "needs": [
+        "revenue",
+        "net_income"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "revenue_growth": {
+      "periods_available": 5,
+      "latest_available": true,
+      "needs": [
+        "revenue"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    },
+    "net_income_growth": {
+      "periods_available": 5,
+      "latest_available": true,
+      "needs": [
+        "net_income"
+      ],
+      "missing_fields": [],
+      "uses_partial": []
+    }
+  },
+  "limitations": [
+    "debt_to_equity: cannot be calculated (missing total_debt)",
+    "interest_coverage: cannot be calculated (missing interest_expense)"
+  ],
+  "choices": {}
+}

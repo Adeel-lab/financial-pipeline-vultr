@@ -1,0 +1,87 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "dc9f61cdedac",
+  "bucket": "7d",
+  "score": 0.3161,
+  "label": {
+    "topic": "autonomy_ai",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "c3ca1373fd78d972",
+    "title": "Vehlo’s Total Customer Connect AI Receptionist Named a Preferred Partner by Ford Motor Company",
+    "source": "Yahoo Finance",
+    "source_tier": "financial_aggregator",
+    "google_link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNY3k5eTNYdFVvS0FwcnBBZHY0dmV6UGJxclotQzFaSWVJcG1QaGpZMzZKbWtuU29QTFhERHZJSUFkMW11OGJBaWU2dHkxVGlmZWtkY1pERGJrU2FKV2d3ZFV4OWdpT3hGalFRSzVwcTdBYUNPTC1fOEJ0SlpoTndLdTN4b214R1dIRTRhSXgzbDZmQmlsUU5uTERqTQ?oc=5",
+    "published_at": "2026-10-27T16:46:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://finance.yahoo.com/technology/ai/articles/vehlo-total-customer-connect-ai-164600165.html",
+    "domain": "finance.yahoo.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Vehlo’s Total Customer Connect AI Receptionist Named a Preferred Partner by Ford Motor Company",
+    "source_item_id": "c3ca1373fd78d972",
+    "resolved_at": "2026-11-01T15:28:37.521968+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://finance.yahoo.com/technology/ai/articles/vehlo-total-customer-connect-ai-164600165.html",
+    "attempts": 1,
+    "final_url": "https://finance.yahoo.com/technology/ai/articles/vehlo-total-customer-connect-ai-164600165.html",
+    "attempt_details": [
+      {
+        "url": "https://finance.yahoo.com/technology/ai/articles/vehlo-total-customer-connect-ai-164600165.html",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://finance.yahoo.com/technology/ai/articles/vehlo-total-customer-connect-ai-164600165.html"
+      }
+    ],
+    "title": "Vehlo’s Total Customer Connect AI Receptionist Named a Preferred Partner by Ford Motor Company",
+    "published_at_page": "2026-10-27T16:46:00Z",
+    "title_score": 1.0,
+    "text_chars": 2390,
+    "content_hash": "1a19b179dbe676c7",
+    "screenshot": "dc9f61cdedac.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:31:00.443931+00:00"
+  },
+  "text": "AI Lead Management tool provides 24/7 availability and personalized experiences to capture bookings and customer interactions\nKNOXVILLE, Tenn., October 27, 2026--(BUSINESS WIRE)--Vehlo's Total Customer Connect AI Receptionist(AIR) has been named a preferred partner by Ford Motor Company and is eligible for the Ford Dealer Advertising Co-Op Program and the Lincoln Brand Exclusive Advertising Program. AIR is an AI scheduling agent as part of TCC's Call Services Suite that is available at all times of day that has automated appointment bookings, customizable, human-like customer interactions, VIN-specific and personalized customer outreach, seamless human coordination, CRM integration, and automated service reminders. Dealers with TCC's AIR provides 24/7 customer interaction that helps improve speed to lead, strengthens follow-up, reduces manual workload, and uses integrated data to serve customers when they call.\n\"We designed our AI receptionist with one goal in mind, to help dealers be there for their customers when it fits their busy schedule. By being available 24/7, customers can reach the dealer on their schedule, and dealers can capture that information and respond to their customers, leading to increased customer satisfaction, revenue and retention,\" said Euwart Anderson, General Manager of Vehlo's Dealership Division. \"Vehlo is a partner to more than 15 OEMs and has at least 1 software solution in half of all U.S. dealerships, demonstrating that brands and dealers trust us to help them serve their customers and grow their revenue. We work hard to innovate every day to continue to earn and build that trust.\"\nTo learn more or view Vehlo's Total Customer Connect AI Receptionist, visit www.totalcustomerconnect.com.\nAbout Vehlo\nAt Vehlo, we're igniting vehicle service success with best-in-class software and financial solutions that connect the entire auto repair ecosystem. Our products are designed to make life easier for the people powering the vehicle service industry — from dealership service lanes to independent repair shops. Over 30,000 automotive businesses trust Vehlo to process $10B+ in annual payments while improving efficiency and enhancing profitability across more than 60 million repair orders. To learn more, visit www.Vehlo.com.\nView source version on businesswire.com: https://www.businesswire.com/news/home/20261027855979/en/\nContacts"
+}

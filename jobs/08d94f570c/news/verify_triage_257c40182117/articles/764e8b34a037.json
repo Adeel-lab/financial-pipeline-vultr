@@ -1,0 +1,79 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "764e8b34a037",
+  "bucket": "24h",
+  "score": 0.138,
+  "label": {
+    "topic": "other",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 1,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "69a8528f560de99c",
+    "title": "General Motors agrees to $220 million payout in Oregon-led data privacy case",
+    "source": "KTVZ",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcUI2Uk1HZDBNNTBlSTRmcmVCZkJfWGw0X3IwSFBRVGZXZ2RxVFZaSlRra0dmdDdtQmtxdUZXanlzeV9LOEpraUxFbnNJUkVzUUp6b21VSTExZHo2Qkw5eGlKQ3l0OTRiOW5vR0FFT0VNczNPTVRWbzhRcHhqZnFaeHRTWEN4SlJEWGhBeVVDYXNxeDF5azNibUs4V1BtRi05NV8zTlE0dU5zT0pIZmc?oc=5",
+    "published_at": "2026-10-29T19:28:22+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://ktvz.com/news/2026/10/29/general-motors-agrees-to-220-million-payout-in-oregon-led-data-privacy-case/",
+    "domain": "ktvz.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "General Motors agrees to $220 million payout in Oregon-led data privacy case",
+    "source_item_id": "69a8528f560de99c",
+    "resolved_at": "2026-10-30T16:32:41.606409+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://ktvz.com/news/2026/10/29/general-motors-agrees-to-220-million-payout-in-oregon-led-data-privacy-case/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://ktvz.com/news/2026/10/29/general-motors-agrees-to-220-million-payout-in-oregon-led-data-privacy-case/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "General Motors agrees to $220 million payout in Oregon-led data privacy case - KTVZ",
+    "published_at_page": "2026-10-29T19:26:52+00:00",
+    "title_score": 1.0,
+    "text_chars": 3159,
+    "content_hash": "e1ca0662a78506a8",
+    "screenshot": "764e8b34a037.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:35.728168+00:00"
+  },
+  "text": "General Motors agrees to $220 million payout in Oregon-led data privacy case\n(KTVZ) -- General Motors will pay $220 million to settle allegations from a 36-state coalition that the automaker sold drivers' private driving and location data to third-party brokers without customer permission.\nOregon, which co-led the multi-state coalition alongside Washington, will receive more than $10.4 million from the settlement.\nThe settlement addresses GM's Smart Driver program, which tracked driving habits for millions of vehicle owners between 2016 and 2024. State investigators found that GM pitched the program as a safety tool and promised not to share data with insurance companies without express consent, but sold the information to data brokers who then provided it to insurers to adjust rates.\nMost customers were enrolled in Smart Driver at dealerships through a unified sign-up process for GM's OnStar service. To meet corporate enrollment targets that tied sales bonuses to connected vehicle sign-ups, dealership employees frequently accepted terms and conditions on behalf of buyers without their knowledge.\nIn addition, GM's OnStar mobile application incorrectly informed more than 370,000 drivers that they were not enrolled in Smart Driver while continuing to collect and sell their data. GM later quietly unenrolled those drivers without notifying them of the error, leaving the previously collected information with data brokers and insurance providers.\nThe collected data was personal and specific, detailing trip start and end times, trip frequency, hard braking, rapid acceleration and speeding. GM ended the Smart Driver program after public reporting by The New York Times detailed how insurers used the information to adjust rates.\nOregon Attorney General Dan Rayfield co-led the multi-state investigation alongside Washington Attorney General Nick Brown. \u201cPeople bought a car, not a tracking device,\u201d Rayfield said. \u201cGM told drivers this program would help them drive more safely and promised it wouldn't share their data with insurers without permission. Our investigation found GM sold that data anyway and some drivers paid for it with higher premiums. This settlement puts people back in control of their own information.\u201d\nOregon filed its enforcement action under the state Unlawful Trade Practices Act because much of GM's conduct occurred before the Oregon Consumer Privacy Act took effect in July 2024. The newer privacy statute restricts all covered entities from selling precise geolocation data belonging to state residents.\nThe investigation was supported by an executive committee consisting of attorneys general from Colorado, Conn., Del., Ill., Ky., Md., Minn., N.J., Utah and Vermont, along with 24 other states and the District of Columbia.\nUnder the settlement terms, GM must obtain affirmative, express consent before collecting or sharing driver data, limit the driving information it gathers, establish a comprehensive data privacy program and undergo both internal and external privacy assessments. The automaker is also required to implement dealership oversight and training to prevent unauthorized customer sign-ups."
+}

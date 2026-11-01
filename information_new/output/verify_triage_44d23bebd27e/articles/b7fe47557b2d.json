@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "b7fe47557b2d",
+  "bucket": "24h",
+  "score": 0.5467,
+  "label": {
+    "topic": "supply_chain_ops",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "43e134c0133a36cc",
+    "title": "GM plans $2 billion investment at Lansing plants",
+    "source": "WILX",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUGVBWUxuR19TNm5CRWhVbUlZcklMdHFlMC1PR1NVMEl1cE1NNUh1eDRodDNiQ3ZnRW5aQ2YxS1h4a3BMdFVVV0Vsck1SUWdIYWZsem5kNW85UVB4cW5OTTh5azhycDlFeGFuRVlVdlVoVy15T1NnQ2NVeGxibXNkd2lmRdIBlwFBVV95cUxOZGgxQnhQNEhZRWxqanRPSHhqakMyRXhsWFQ0UXhVdXlwaG1CMjlscXpqSWtMeG5fbmdCVDFlT2NvQkZSam84TW5MQVZ1Rm5CWlRDTnBPUEN1QTN5VGFCSFNkcHh6SmtkNXNTOUV5d180ZWZ2N3BvTDZYTEd1UTE2UmJhTWxuQ2ZRcUctZld2djV4SDhoOU1v?oc=5",
+    "published_at": "2026-10-28T21:29:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.wilx.com/2026/10/28/gm-plans-2-billion-investment-lansing-plants/",
+    "domain": "www.wilx.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM plans $2 billion investment at Lansing plants",
+    "source_item_id": "43e134c0133a36cc",
+    "resolved_at": "2026-10-29T20:52:20.065649+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.wilx.com/2026/10/28/gm-plans-2-billion-investment-lansing-plants/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.wilx.com/2026/10/28/gm-plans-2-billion-investment-lansing-plants/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM plans $2 billion investment at Lansing plants",
+    "published_at_page": "2026-10-28T21:29:51.566Z",
+    "title_score": 1.0,
+    "text_chars": 914,
+    "content_hash": "2c5443de40bfe420",
+    "screenshot": "b7fe47557b2d.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:04.400751+00:00"
+  },
+  "text": "GM plans $2 billion investment at Lansing plants\nLANSING, Mich. (News 10) - he Lansing Regional Chamber of Commerce is celebrating a series of economic wins, including a $2 billion investment planned by General Motors.\nGM said the money will be spent across its Lansing Grand River and Lansing Delta Township manufacturing plants.\nIn a statement, Tim Daman, president and CEO of the Lansing Regional Chamber of Commerce, said the investments are about much more than building vehicles. He said they are about supporting thousands of hard-working men and women.\nStream News 10 Lansing on your favorite devices! Here\u2019s how to download the News 10+ app on Roku, Fire TV or Apple TV.\nBe the first to see the Mid-Michigan headlines you care about \u2013 download the News 10+ app and subscribe to our News 10 newsletter and YouTube page to receive the latest local news and weather.\nCopyright 2026 WILX. All rights reserved."
+}

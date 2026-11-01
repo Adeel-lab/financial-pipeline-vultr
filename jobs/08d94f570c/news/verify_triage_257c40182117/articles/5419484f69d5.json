@@ -1,0 +1,79 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "5419484f69d5",
+  "bucket": "24h",
+  "score": 0.7734,
+  "label": {
+    "topic": "regulation_legal",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "63e40aed8c329753",
+    "title": "Maine to receive nearly $3M in multi-state data privacy settlement with General Motors",
+    "source": "WABI",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSFRLWmhLSmFkMF9qSUhjTmQxeTlnTjRSOE5zVFhSZ2F5TW41VTAydHhMTTE0UUdoRUlJYTZWa3NtdTdxR1dTN3IzaURYVlBvU1NnTnM5cWFwRWUtTDBvRno5VWJHdGs0ZlZRZTFLYnZ3MWdfSk1nXzdHemZ4UFRuSjJaMVlWdDlkSl82eGhUNm9UVU1vMTNZRGpkdVQ5SFdYWEdhUmJXSjNNT05uZm1UONIBxAFBVV95cUxPczNld1FtZjRSSzRwWC1VRm1aaldoNi1iTWxMVVhpR1MyOXg5MTQ5MlQxOW8zOGVEYzNBeENnLWU2RjJMSE1rODZYZndIdDllMEgxMTVpZjYyLVRWalVicWxTVlNxcnA1RlA3UmNJNlRfNVpuTmlUMVM2dmxWeXNSRnFHQldxNjJVSTQzaTlBRnJLS0o0YzJ1eWdMZF9OTGdVRDRYMjhsVkZwM01pb3E1b29WandWTkN2X3pvd0VUUnRzUkda?oc=5",
+    "published_at": "2026-10-29T20:11:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.wabi.tv/2026/10/29/maine-receive-nearly-3m-multi-state-data-privacy-settlement-with-general-motors/",
+    "domain": "www.wabi.tv",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Maine to receive nearly $3M in multi-state data privacy settlement with General Motors",
+    "source_item_id": "63e40aed8c329753",
+    "resolved_at": "2026-10-30T16:32:41.606034+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.wabi.tv/2026/10/29/maine-receive-nearly-3m-multi-state-data-privacy-settlement-with-general-motors/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.wabi.tv/2026/10/29/maine-receive-nearly-3m-multi-state-data-privacy-settlement-with-general-motors/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "Maine to receive nearly $3M in multi-state data privacy settlement with General Motors",
+    "published_at_page": "2026-10-29T20:11:42.946Z",
+    "title_score": 1.0,
+    "text_chars": 1134,
+    "content_hash": "9eefab6ffec4e391",
+    "screenshot": "5419484f69d5.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:32.157155+00:00"
+  },
+  "text": "Maine to receive nearly $3M in multi-state data privacy settlement with General Motors\nAUGUSTA, Maine (WABI) - General Motors has agreed to pay $220 million to states following a lawsuit alleging the company mishandled customer data. Maine is set to receive nearly $3 million.\nA coalition of 36 Attorneys General, including Maine Attorney General Aaron Frey, claims General Motors sold data tracking the customer\u2019s driving habits to third parties and data brokers who then sold the data to insurance companies using its Smart Driver product.\nAs part of the settlement, General Motors is required to get explicit consent from customers before sharing their data.\nA spokesperson for General Motors said in a statement to WABI, \u201cThis agreement addresses Smart Driver, a product we ended in 2024, and reinforces steps we\u2019ve taken to strengthen our privacy practices. Safer, more helpful and personalized experiences are enabled by connected vehicle data, and GM is committed to being clear about what information is used, how it\u2019s protected, and the choices customers have about what they share.\u201d\nCopyright 2026 WABI. All rights reserved."
+}

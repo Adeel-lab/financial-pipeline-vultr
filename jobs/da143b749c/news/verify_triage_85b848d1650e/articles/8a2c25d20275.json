@@ -1,0 +1,87 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "8a2c25d20275",
+  "bucket": "7d",
+  "score": 0.4558,
+  "label": {
+    "topic": "recalls_safety",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "d530c1e774839b70",
+    "title": "Weekly Recalls: Audi *FIRE RISK*, Ford (2), Land Rover, Lexus, Toyota",
+    "source": "CarProUSA.com.",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSGxHNURDc01VMTlQTUdWMklWNHNlc0lKeDU3Y1lnVzhUMmdKdkUwazl5QmlpZ2ZBaUFwMlJWdUZFUVRtbmluUE5jYkY5RjB2XzREQ0lVQWFuRXk0RlhZbzBIZng1Z2F4SWtpN29jVHp4dEhVc2ZSSXZpWldhWG8tVFJrbEtsR0RqTDZyVE43UDdOUdIBogFBVV95cUxQTmRzbHREMjBxelVWRS1ZTTJaOVM2MjkxUjR2Z2toWUMwelNuRUxCWDFnOXhuNXVMeGNyWlZfN3h1Wi1kRFNXQVJhcEM4c3JYNHdXLWZ1MWU0Mk5VSWpGYVFHM1ZMRkdyZWtXWGh0U3VhdnNwZFljR2xJd2o5Sy03UFdrSmdoZGZMaGVOWkR3enhHZ0trc2otY29UY2hqNWxCV1E?oc=5",
+    "published_at": "2026-10-30T14:20:33+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.carpro.com/blog/weekly-recalls-audi-fire-risk-ford-2-land-rover-lexus-toyota",
+    "domain": "www.carpro.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Weekly Recalls: Audi *FIRE RISK*, Ford (2), Land Rover, Lexus, Toyota",
+    "source_item_id": "d530c1e774839b70",
+    "resolved_at": "2026-11-01T15:28:37.521331+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.carpro.com/blog/weekly-recalls-audi-fire-risk-ford-2-land-rover-lexus-toyota",
+    "attempts": 1,
+    "final_url": "https://www.carpro.com/blog/weekly-recalls-audi-fire-risk-ford-2-land-rover-lexus-toyota",
+    "attempt_details": [
+      {
+        "url": "https://www.carpro.com/blog/weekly-recalls-audi-fire-risk-ford-2-land-rover-lexus-toyota",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://www.carpro.com/blog/weekly-recalls-audi-fire-risk-ford-2-land-rover-lexus-toyota"
+      }
+    ],
+    "title": "Weekly Recalls: Audi *FIRE RISK*, Ford (2), Land Rover, Lexus, Toyota",
+    "published_at_page": "2026-10-30T13:45:53.000Z",
+    "title_score": 1.0,
+    "text_chars": 5780,
+    "content_hash": "0efc636de297703f",
+    "screenshot": "8a2c25d20275.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:31:03.181946+00:00"
+  },
+  "text": "**AUDI**\nHIGH VOLTAGE BATTERY MAY CATCH FIRE\nFIRE RISK\n- \nNHTSA ID Number: 26V698000\n- \nManufacturer Volkswagen Group of America, Inc.\n- \nComponents ELECTRICAL SYSTEM\n- \nPotential Number of Units Affected: 9048\nSummary\nVolkswagen Group of America, Inc. (Audi) is recalling certain 2024-2025 Q4 E-Tron and Q4 Sportback E-Tron vehicles. The high voltage battery may fail and cause a fire.\nRemedy\nOwners are advised to only charge their vehicles to a maximum of 80% capacity until the repair has been completed. The remedy is currently under development. Interim letters notifying owners of the safety risk are expected to be mailed December 18, 2026. Additional letters will be sent once the remedy is available. Owners may contact Audi customer service at 1-800-253-2834. Audi's number for this recall is 93SK. Vehicle Identification Numbers (VINs) involved in this recall became searchable on NHTSA.gov on October 23, 2026.\nClick Here For NHTSA Documents\n**FORD**\nINACCURATE SPEEDOMETER AND TACHOMETER DISPLAY\nCRASH RISK\n- \nNHTSA ID Number: 26V653000\n- \nManufacturer Ford Motor Company\n- \nComponents ELECTRICAL SYSTEM\n- \nPotential Number of Units Affected: 102159\nSummary\nFord Motor Company (Ford) is recalling certain 2025-2026 F-250 SD, F-350 SD, F-450 SD, F-550 SD, F-600, 2026 F-150, and F-750 SD vehicles. The analog cluster’s tachometer and speedometer may become stuck or move erratically, providing inaccurate readings to the driver. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) Number 101, \"Controls and Displays.\"\nRemedy\nDealers will replace the instrument cluster modules, free of charge. Interim letters, notifying owners of the safety risk, are expected to be mailed in October 26, 2026. Additional letters will be sent once the remedy is available, anticipated in December 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 26C46. Vehicle Identification Numbers (VINs) involved in this recall became searchable on NHTSA.gov on October 7, 2026.\nClick Here For NHTSA Documents\n#2\nTAILGATE CABLE MAY FAIL\n- \nNHTSA ID Number: 26V689000\n- \nManufacturer Ford Motor Company\n- \nComponents STRUCTURE\n- \nPotential Number of Units Affected: 30123\nSummary\nFord Motor Company (Ford) is recalling certain 2026-2027 F-150, 2026 F-250 SD, F-350 SD, and F-450 SD vehicles. The left-side tailgate cable may fail under certain heavy load conditions.\nRemedy\nDealers will replace the left-side tailgate cable, free of charge. Interim letters, notifying owners of the safety risk, are expected to be mailed December 14, 2026. Additional letters will be sent once the remedy is available, anticipated in January 2027. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 26S78. Vehicle Identification Numbers (VINs) involved in this recall will be searchable on NHTSA.gov beginning December 7, 2026.\nClick here for NHTSA Documents →\n**LAND ROVER**\nWATER MAY DAMAGE REARVIEW CAMERA\nCRASH RISK\n- \nNHTSA ID Number: 26V678000\n- \nManufacturer Jaguar Land Rover North America, LLC\n- \nComponents BACK OVER PREVENTION\n- \nPotential Number of Units Affected: 93997\nSummary\nJaguar Land Rover North America, LLC (Land Rover) is recalling certain 2022-2026 Land Rover Range Rover vehicles. Water may not be able to drain away from the rearview camera due to insufficient drain holes, which may result in damage to the rearview camera.\nRemedy\nDealers will drill additional drain holes in the underside of the tailgate trim. Additionally, dealers will inspect and replace the rearview camera as necessary. Repairs will be performed free of charge. Interim letters notifying owners of the safety risk are expected to be mailed December 11, 2026. Additional letters will be sent once the final remedy is available. Owners may contact Land Rover's customer service at 800-637-6837. Land Rover's number for this recall is D171.\nClick Here For NHTSA Documents\n**LEXUS**\nINSTRUMENT PANEL DISLAY FAILURE\nCRASH RISK\n- \nNHTSA ID Number: 26V687000\n- \nManufacturer Toyota Motor Engineering & Manufacturing\n- \nComponents ELECTRICAL SYSTEM\n- \nPotential Number of Units Affected: 68356\nSummary\nToyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2022-2024 Lexus NX250, NX350, NX350 Hybrid, and NX450h+ vehicles. The instrument panel cluster combination meter may fail to display certain warnings or indicators. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 101, \"Control and Displays.\"\nRemedy\nDealers will update the combination meter software, free of charge. Owner notification letters are expected to be mailed December 7, 2026. Owners may contact Toyota's customer service at 1-800-331-4331. Toyota's number for this recall is 26LA10.\nClick Here For NHTSA Documents\n**TOYOTA**\nSEAT BACK MAY UNLATCH DURING CRASH\n- \nNHTSA ID Number: 26V690000\n- \nManufacturer Toyota Motor Engineering & Manufacturing\n- \nComponents SEATS\n- \nPotential Number of Units Affected: 228367\nSummary\nToyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2022-2026 Sienna Hybrid 7-passenger vehicles. The second-row seat backs may fail to remain secured in the event of a crash.\nRemedy\nDealers will update the supplemental restraint system (SRS) electronic control unit (ECU) software. For vehicles equipped with the \"Mobility as a Service\" (MaaS) package, dealers will replace the two second-row seat backs. Repairs will be performed free of charge. Owner notification letters are expected to be mailed December 7, 2026. Owners may contact Toyota's customer service at 1-800-331-4331. Toyota's numbers for this recall are 26TB24 and 26TA24.\nPhoto Credit: iQoncept/Shutterstock.com."
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "company": "General Motors",
+    "event_id": "00e4e1707145",
+    "title": "Montana Sues General Motors Over Sale of Drivers\u2019 Data (1)",
+    "status": "paywall",
+    "attempts": [
+      {
+        "url": "https://news.bloomberglaw.com/privacy-and-data-security/montana-sues-general-motors-over-sale-of-drivers-personal-data",
+        "status": "paywall",
+        "http_status": 200,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "e9517963b8d8",
+    "title": "GM Slides as CEO Barra Warns of \u2018Intensifying\u2019 Challenges",
+    "status": "blocked",
+    "attempts": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-10-20/gm-announces-20-billion-share-buyback-as-profit-beats-estimates",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "8b44b3c9f63d",
+    "title": "General Motors Entrance One showroom is seen Friday, Jan. 16, 2026, at Hudson's Detroit.",
+    "status": "thin_content",
+    "attempts": [
+      {
+        "url": "https://www.stltoday.com/image_8c965010-5d02-5c12-88ee-9363a6d8f279.html",
+        "status": "thin_content",
+        "http_status": 200,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "0f7809e5788e",
+    "title": "Weekend Drive: Canada\u2019s $8.7 billion auto and steel plan; UAW warns GM over buyback",
+    "status": "blocked",
+    "attempts": [
+      {
+        "url": "https://www.autonews.com/podcasts/daily-drive/an-daily-drive-wd-canada-spending-uaw-warns-gm-1024/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "4847c0e9682b",
+    "title": "From \u2018hands-free\u2019 to \u2018eyes-off\u2019: how General Motors is simulating its way to autonomous driving",
+    "status": "blocked",
+    "attempts": [
+      {
+        "url": "https://www.bozemandailychronicle.com/wire/business/from-hands-free-to-eyes-off-how-general-motors-is-simulating-its-way-to-autonomous/article_4018b92a-a7c3-50b4-ac76-504d328200bb.html",
+        "status": "thin_content",
+        "http_status": 451,
+        "title_score": null
+      },
+      {
+        "url": "https://www.seattletimes.com/business/from-hands-free-to-eyes-off-how-general-motors-is-simulating-its-way-to-autonomous-driving/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "dd65ceb1358f",
+    "title": "GM CEO: We're making leaps and bounds toward 'eyes-off, hands-off' driving",
+    "status": "paywall",
+    "attempts": [
+      {
+        "url": "https://www.cnbc.com/2026/10/12/cramer-gm-eyes-off-driving-2028.html",
+        "status": "consent_wall",
+        "http_status": 200,
+        "title_score": null
+      },
+      {
+        "url": "https://www.autonews.com/general-motors/an-gm-forward-2026-1021/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://www.reuters.com/business/autos-transportation/gm-targets-eyes-off-autonomous-driving-pickups-suvs-2026-10-21/",
+        "status": "paywall",
+        "http_status": 401,
+        "title_score": null
+      }
+    ]
+  },
+  {
+    "company": "General Motors",
+    "event_id": "e2cf098771b2",
+    "title": "Ohio to get $8 million from General Motors for sharing data on drivers",
+    "status": "thin_content",
+    "attempts": [
+      {
+        "url": "https://www.wtrf.com/news/ohio-to-get-8-million-from-general-motors-for-sharing-data-on-drivers/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://www.wfmz.com/news/area/pennsylvania/pennsylvania-new-jersey-get-more-than-8-5-million-each-in-data-sharing-settlement-with/article_ea2665c4-6f4c-4b84-bc4b-be99d905fcfe.html",
+        "status": "thin_content",
+        "http_status": 200,
+        "title_score": null
+      },
+      {
+        "url": "https://www.wmur.com/article/multi-million-dollar-settlement-general-motors/74288393",
+        "status": "thin_content",
+        "http_status": 451,
+        "title_score": null
+      }
+    ]
+  }
+]

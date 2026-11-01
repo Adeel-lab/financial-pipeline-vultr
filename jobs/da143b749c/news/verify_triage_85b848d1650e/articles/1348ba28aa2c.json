@@ -1,0 +1,94 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "1348ba28aa2c",
+  "bucket": "30d",
+  "score": 0.3654,
+  "label": {
+    "topic": "regulation_legal",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "8507e85bb6566b56",
+    "title": "Judge OKs Class Action Lawsuit Against Ford for Faulty Fuel Pumps",
+    "source": "Pickup Truck +SUV Talk",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcmRBQTVwaXEzU01IZ0tISmpaMjVBTlVuaWhXZUJmbkduQWdYZ25JWTd6UkZjU2VIZ3RsX3JPVUVjNWVndmk0eVRwdWsxNmhSUmNoZUtNaHdObXVNWHdQQXVhdlNNYW5BaFg2YzBWU3N5eUg0ai1jcTFYX216ZDY5c3ZVV0JJSENBNHVqdmIyaWFSNHZKTFYtd1l0V2MyQW9HQl9FeA?oc=5",
+    "published_at": "2026-10-10T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://pickuptrucktalk.com/2026/10/judge-oks-class-action-lawsuit-against-ford-for-faulty-fuel-pumps/",
+    "domain": "pickuptrucktalk.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Judge OKs Class Action Lawsuit Against Ford for Faulty Fuel Pumps",
+    "source_item_id": "8507e85bb6566b56",
+    "resolved_at": "2026-11-01T15:28:37.521547+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.autoblog.com/news/ford-faces-class-action-over-diesel-fuel-pumps-and-9000-repairs",
+    "attempts": 2,
+    "final_url": "https://www.autoblog.com/news/ford-faces-class-action-over-diesel-fuel-pumps-and-9000-repairs",
+    "attempt_details": [
+      {
+        "url": "https://pickuptrucktalk.com/2026/10/judge-oks-class-action-lawsuit-against-ford-for-faulty-fuel-pumps/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null,
+        "final_url": "https://pickuptrucktalk.com/2026/10/judge-oks-class-action-lawsuit-against-ford-for-faulty-fuel-pumps/"
+      },
+      {
+        "url": "https://www.autoblog.com/news/ford-faces-class-action-over-diesel-fuel-pumps-and-9000-repairs",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.75,
+        "final_url": "https://www.autoblog.com/news/ford-faces-class-action-over-diesel-fuel-pumps-and-9000-repairs"
+      }
+    ],
+    "title": "Ford Faces Class Action Over Diesel Fuel Pumps and $9,000 Repairs - Autoblog",
+    "published_at_page": "2026-10-12T15:45:00+00:00",
+    "title_score": 0.75,
+    "text_chars": 2958,
+    "content_hash": "8aa98551418d2d86",
+    "screenshot": "1348ba28aa2c.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:31:10.496697+00:00"
+  },
+  "text": "The Courtroom Calls\nAmid ongoing quality concerns, Ford has faced not only repeated recalls but also lawsuits. One of its recent legal battles involves an alleged fuel pump defect in Power Stroke diesel engines, with a judge granting class-action status to the lawsuit on September 30, 2026.\nThis means that the lawsuit, Droesser et al. v. Ford Motor Company, originally filed in 2019, will proceed as a class action on behalf of qualifying truck owners in five U.S. states: California, Louisiana, Ohio, Pennsylvania, and South Carolina. It involves Ford trucks from 2011 through 2023 model years equipped with the 6.7-liter Power Stroke turbodiesel V8 engine. Plaintiffs allege that the automaker knew the high-pressure fuel pumps were unsuitable for diesel fuel sold in the U.S. but continued selling the affected trucks anyway.\nA Pumping Nightmare\nCompared to diesel fuel sold in Europe, diesel fuel sold in the U.S. generally has lower lubricity. Therefore, the plaintiffs argue that the high-pressure fuel pumps, which are Bosch CP4 units, can experience insufficient lubrication, leading to excessive friction and metal wear. This could allegedly produce metal shavings that contaminate the fuel system and lead to engine failure.\nAccording to court documents, such a failure could cost owners upwards of $9,000 in repairs. Plaintiffs also claimed that the alleged defect reduced the value of the affected trucks.\nIn response, Ford argued that pump failures can result from improper maintenance, driver error, or contaminated fuel, such as using fuel additives containing contaminants, rather than an inherent design flaw. The Blue Oval brand also claimed that design improvements across four versions of the CP4 fuel pump have reduced failure rates, while plaintiffs maintain that all versions retain the same allegedly defective design.\nFord issued a related high-pressure fuel pump recall in 2024 under NHTSA campaign number 24V957, affecting nearly 300,000 Power Stroke-equipped trucks due to potential biodiesel deposits. While the recall does not directly address the design flaws alleged by the plaintiffs, it shows that CP4 pump problems aren’t new for the automaker.\nNot an Isolated Incident\nEven Ford’s main rivals, General Motors and Ram, have dealt with Bosch CP4 fuel pump problems. GM reached a $50 million settlement over allegedly defective CP4 pumps in certain Duramax-powered trucks, while Ram issued a recall in 2021 affecting about 222,000 Cummins-equipped trucks over potential pump failures that could introduce debris into the fuel system and cause a loss of motive power.\nAs for Ford, the Droesser et al. v. Ford Motor Company case could bring renewed scrutiny to its diesel-powered lineup, although a trial date has yet to be confirmed. It doesn’t involve F-150 models, as the diesel versions, discontinued after the 2021 model year, were powered by a smaller 3.0-liter Power Stroke V6.\nAbout the author\nRex Sanchez\nNews Editor"
+}

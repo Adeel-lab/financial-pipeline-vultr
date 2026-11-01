@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "544a4ec295bc",
+  "bucket": "24h",
+  "score": 0.377,
+  "label": {
+    "topic": "autonomy_ai",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "105207d335e146f6",
+    "title": "General Motors shifts to Nasdaq as it bets on hybrids, AI and autonomous driving",
+    "source": "https://internationalfinance.com/",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMHN6VmtSWWlIa2dmZTlGbVpQaXgzUFRZVkx2eGhzT1l0QUlzQXFBU3U1dzVVYURxb05wY1VXcG5hLWJZQzZXaGVsOGxSNnBFaHdta0lrSGpZdW04LVpRWVo1a2piN2J4aHkzejJQTHdBZjZYbkxPcVlBalNJNURGMERCQ3VScjRaQWI1TlJGX0hZUERocXBpMDV4dUF4YTNQX0owSDRSZ3F3d2hyTlcyU2pQZDBOQWlQWE5Cb2RrdGc?oc=5",
+    "published_at": "2026-10-29T00:00:44+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://internationalfinance.com/transport/general-motors-shifts-to-nasdaq-as-it-bets-on-hybrids-ai-and-autonomous-driving/",
+    "domain": "internationalfinance.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "General Motors shifts to Nasdaq as it bets on hybrids, AI and autonomous driving",
+    "source_item_id": "105207d335e146f6",
+    "resolved_at": "2026-10-29T20:52:20.065879+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://internationalfinance.com/transport/general-motors-shifts-to-nasdaq-as-it-bets-on-hybrids-ai-and-autonomous-driving/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://internationalfinance.com/transport/general-motors-shifts-to-nasdaq-as-it-bets-on-hybrids-ai-and-autonomous-driving/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "General Motors shifts to Nasdaq as it bets on hybrids, AI and autonomous driving - International Finance",
+    "published_at_page": "2026-10-29T00:00:44+00:00",
+    "title_score": 1.0,
+    "text_chars": 11414,
+    "content_hash": "9d03430ad4ea2afd",
+    "screenshot": "544a4ec295bc.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:55:56.274631+00:00"
+  },
+  "text": "The Detroit-based automaker said on Tuesday it would transfer its common stock listing from the New York Stock Exchange to Nasdaq, joining a growing number of companies seeking closer association with the technology-heavy exchange as investors pour money into artificial intelligence (AI) infrastructure and related businesses.\nThe company, which had a market capitalisation of approximately USD 64.4 billion, according to LSEG data, expects to begin trading on Nasdaq on November 17 under its existing ticker symbol.\nThe move comes as GM expands its technology ambitions beyond electric vehicles (EVs), focusing on hybrid models, automated driving, and connected-car features that could generate recurring revenue. The company is also developing a new software architecture intended to give it greater control over vehicle functions and digital services.\nTogether, these initiatives reflect GM\u2019s efforts to respond to changing consumer preferences, growing competition from Chinese manufacturers, and the challenge of making substantial investments in new technology commercially profitable.\nGM\u2019s planned listing transfer places it among companies that have recently moved to Nasdaq, including Walmart, Hilton, and Palantir.\nThe exchange has increasingly attracted businesses seeking greater visibility alongside technology companies, particularly as investors focus on AI-related investment and the infrastructure needed to support its expansion.\nFor GM, the move also provides an opportunity to reinforce its identity as an automaker investing heavily in technology rather than one defined exclusively by vehicle manufacturing.\n\u201cGM\u2019s customer-focused, technology-driven strategy is creating value for our stockholders, making Nasdaq a natural home for our listing as we grow,\u201d finance chief Paul Jacobson said.\nTraditional automakers are known for generating much of their income from manufacturing and selling vehicles. However, they are now deploying equal focus on fronts like software and digital services as well to fend off the increasing global competition, partly caused by the massive influx of cheap yet feature-laden Chinese vehicles into the market.\nThe approach also offers these businesses the potential for higher margins and recurring payments.\nGM is attempting to capture that opportunity by developing vehicles capable of receiving remote software updates, supporting advanced driving systems, and offering digital features throughout their operating lives.\nAlongside its technology investments, GM is preparing to expand its hybrid vehicle lineup, marking a strategic adjustment after years of prioritising electric vehicles.\nThe company plans to build hybrid versions of three popular three-row SUVs\u2014the Chevrolet Traverse, Buick Enclave, and GMC Acadia\u2014at its Lansing Delta Township assembly plant in Michigan, as per the reports.\nGM confirmed that it would invest in the factory to prepare for hybrid production after Reuters reported the plans, although it did not disclose the models\u2019 launch dates or provide further production details.\nThe proposed vehicles are mechanically similar and rank among GM\u2019s stronger sellers in the US market. Introducing hybrid versions would give the company another way to address demand from customers seeking better fuel economy without committing entirely to battery-powered vehicles.\nUS hybrid sales have gained momentum as motorists investigate how to reduce fuel expenses. Hybrids combine a petrol engine with a battery and electric motor, allowing vehicles to conserve fuel while maintaining the convenience of conventional refueling.\nGM has faced criticism from dealers over its limited hybrid offering. The company currently sells a hybrid version of the Chevrolet Corvette in the US, while competitors such as Toyota have established stronger positions in the segment.\nDealers have repeatedly pressed GM executives to expand the range, with some telling Reuters that they raised the issue during recent regional meetings with the company\u2019s sales leadership.\n\u201cWe\u2019ve been telling them every chance we get that we need hybrids,\u201d one dealer said.\nThe shift comes as GM attempts to reverse a decline in its US market share.\nThe company\u2019s share fell to 16.6% in the first nine months of the year, from 17.4% during the same period a year earlier, while Toyota and Honda gained ground.\nGM chief executive Mary Barra addressed the company\u2019s hybrid ambitions during an earnings call last week, saying it would offer hybrid vehicles across multiple segments.\n\u201cIt\u2019s not going to be additional (capital expenditures) and engineering,\u201d Barra said, adding that the company would provide further details closer to launch.\nGM executives have previously argued that hybrids add cost and engineering complexity, preferring to direct investments toward EVs.\nHybrids also offered less assistance in meeting the emissions requirements pursued under former President Joe Biden, which the Trump administration has since upended.\nThe planned expansion therefore represents a change in emphasis as GM responds to market demand and reassesses how to deploy its manufacturing capacity.\nGM\u2019s hybrid plans have emerged shortly before the November 3 US midterm congressional elections, with several closely contested seats in Michigan drawing attention to the state\u2019s automotive industry.\nPresident Donald Trump has sought to highlight his support for domestic manufacturing, making investment decisions by major automakers politically significant.\nEnergy Department Assistant Secretary Audrey Robertson was scheduled to tour GM\u2019s Lansing factory on Tuesday, where the company plans to manufacture the hybrid SUVs.\nThe Energy Department is also restructuring a previously awarded grant to support hybrid production rather than electric vehicle manufacturing at a nearby Lansing facility.\nIn 2024, under the Democrat Joe Biden administration, the department awarded GM USD 500 million to retool another Michigan assembly plant for EV production.\nThe funding had not been released, and GM said the money would instead support future hybrid production at Lansing Delta Township.\nGM is also preparing to introduce eyes-off autonomous driving on some of its highest-selling and most profitable vehicles, including large pickup trucks and SUVs.\nLast year, the company said it planned to offer autonomous highway driving in 2028 on the Cadillac Escalade IQ, an electric SUV that has attracted relatively limited sales compared with GM\u2019s mainstream vehicles.\nThe automaker has since expanded its ambitions, saying it intends to bring the service to pickup trucks and other large SUVs. It has not specified when those models will receive the technology.\nMost existing driver-assistance systems still require motorists to remain attentive, even when a vehicle can manage steering and speed in certain conditions. GM\u2019s Super Cruise system and Tesla\u2019s Full Self-Driving (Supervised) feature fall into this category.\nEyes-off driving goes further by allowing drivers to stop continuously monitoring the road under approved conditions.\nHowever, only a handful of automakers have introduced such systems, and geography, speed, or traffic conditions often restrict their availability.\nMercedes-Benz is among the companies offering limited eyes-off capabilities.\nThe technology also raises questions about safety, liability, and whether enough customers will pay for the convenience. Systems that transfer control between a vehicle and its driver must manage the transition safely, particularly when circumstances require the driver to take over.\nSterling Anderson, GM\u2019s chief product officer and a former executive at autonomous-truck company Aurora, said the company was developing \u201can autonomous system that operates safely on highways that actually gives you your time back.\u201d\nGM eventually intends to expand the service to other roads.\nOffering the technology on popular trucks and SUVs could give GM access to a larger customer base than a strategy focused primarily on premium electric models. It also provides an opportunity to turn advanced driving capabilities into paid services.\nUnderpinning GM\u2019s autonomous-driving plans is a new software architecture designed to give the company greater control over vehicle functions and digital features.\nThe system will use a central computer as the vehicle\u2019s main computing platform, allowing cars to receive remote software updates in a manner similar to smartphones.\nTesla, Rivian, and several Chinese automakers have moved ahead of many traditional manufacturers in developing vehicles that can receive software updates remotely.\nEstablished automakers have often relied on suppliers for substantial portions of their software development, making it harder to coordinate updates and digital functions across different systems.\nAnderson said GM was developing its central computing model in-house, giving the company more control over the way vehicle systems communicate and how new features are delivered.\n\u201cThe world opens up when you control the software across the system in a way that it never was when various suppliers controlled the car\u2019s digital connections,\u201d Anderson said.\nThe company increasingly views future vehicles as software platforms rather than products whose capabilities remain largely fixed after purchase.\nAnderson said he refers to the new vehicles internally as \u201crobots,\u201d reflecting the company\u2019s ambitions to make cars more responsive to their owners\u2019 needs.\n\u201cWe\u2019re thinking a lot about the ways your life can be better \u2026 because your vehicle just knows what you need before you need it,\u201d he told Reuters.\nThe strategy is becoming more important as traditional manufacturers compete with Chinese automakers and EV-focused companies that have built software capabilities into their products from the outset.\nThe economics of software also drive GM\u2019s technology push.\nAutomakers generate average profit margins of around 10% from vehicle sales, while software-related services can achieve margins of 30% to 40%, according to analysis firm PwC.\nThat difference creates a financial incentive for manufacturers to develop subscription services, advanced driving systems, and other digital products that can generate income after a vehicle has been sold.\nUBS estimated in a report last month that GM\u2019s digital revenue would rise to USD 9.6 billion by 2036, from USD 3.2 billion this year.\nThe bank described the company\u2019s digital capabilities as an underappreciated and undervalued opportunity.\nGM nevertheless faces a challenge in persuading customers to pay for features they may regard as standard equipment.\nEd Nightingale, the company\u2019s vice president of digital products, said GM needed to offer features that customers found genuinely appealing.\nThe company could not simply begin charging for elements of the driving experience that owners had always received as part of the vehicle.\nGM plans to introduce an AI assistant on the Cadillac Lyriq SUV in the coming months, adding another digital feature to its expanding technology portfolio.\nThe assistant, the central computing platform, and the planned autonomous-driving services form part of a broader effort to integrate software more deeply into the ownership experience.\nGM\u2019s challenge will be to turn those investments into products that attract customers while maintaining the affordability and practicality that underpin its mainstream vehicle business."
+}

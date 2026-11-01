@@ -1,0 +1,87 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "a058e83f7e33",
+  "bucket": "30d",
+  "score": 0.4769,
+  "label": {
+    "topic": "recalls_safety",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 8,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "8909d25f77052a12",
+    "title": "Ford to recall over 223K vehicles over fuel tank issue",
+    "source": "Breakingthenews.net",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdUxQX0Z1V0ROZURldWdINjJGTmlQLXNmdU9uNHNVOVFrTzN1MDAwV1FpTUZlYlFaYk0xcHVIUzJrdTk4OUI3cF9MdkswUGw4a1VRUkxrVlJ6Ny1jdlFhRHl0di1aQ2JjdDhhYkNBVDV3QktxUTloUG5UZXZQWXB4NmRyY3M4cUVhREpSN2N5MjRfYUFudmdMbVdJVUNPa19V?oc=5",
+    "published_at": "2026-09-12T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://breakingthenews.net/Article/Ford-to-recall-over-223K-vehicles-over-fuel-tank-issue/67093487",
+    "domain": "breakingthenews.net",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ford to recall over 223K vehicles over fuel tank issue",
+    "source_item_id": "8909d25f77052a12",
+    "resolved_at": "2026-11-01T15:28:37.521268+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://breakingthenews.net/Article/Ford-to-recall-over-223K-vehicles-over-fuel-tank-issue/67093487",
+    "attempts": 1,
+    "final_url": "https://breakingthenews.net/Article/Ford-to-recall-over-223K-vehicles-over-fuel-tank-issue/67093487",
+    "attempt_details": [
+      {
+        "url": "https://breakingthenews.net/Article/Ford-to-recall-over-223K-vehicles-over-fuel-tank-issue/67093487",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://breakingthenews.net/Article/Ford-to-recall-over-223K-vehicles-over-fuel-tank-issue/67093487"
+      }
+    ],
+    "title": "Ford to recall over 223K vehicles over fuel tank issue - Breaking The News",
+    "published_at_page": "1789202160000",
+    "title_score": 1.0,
+    "text_chars": 649,
+    "content_hash": "306274f4e421789a",
+    "screenshot": "a058e83f7e33.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:30:41.851735+00:00"
+  },
+  "text": "Ford Motor Company is recalling 223,472 vehicles in the United States over an issue with the fuel tank that could result in a leak, the US National Highway Traffic Safety Administration (NHTSA) said on Saturday.\nThe recall will include certain n 2023-2027 F-150 vehicles. \"The fuel tank may be improperly secured and leak fuel, or detach from the vehicle while driving,\" the agency stated and added that a \"detached tank can create a road hazard, increasing the risk of a crash. In addition, a fuel leak can cause an engine stall or increase the risk of a fire.\"\nDealers will inspect the part and, if necessary, replace the fuel tank free of charge."
+}

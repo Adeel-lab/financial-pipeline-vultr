@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "49b3e847f582",
+  "bucket": "7d",
+  "score": 0.6404,
+  "label": {
+    "topic": "autonomy_ai",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "ff424b49daafc674",
+    "title": "GM\u2019s 'Eyes Off' Autonomous Era is Just Around the Corner",
+    "source": "Autoguide.com",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPd0ZRWmlMMFBvVlpsWXpYdHpvTzRCcEJ6bXB4cFNudm9UdXB3a3VnYUV2b2xobEhWYXZDUnNOSGlsTVZzRk00MnAxQ2RVM2JDTVp6QVJzbmw4VFlmakRRTWZLS3ZlMDhZX2J5YkFNbUN5dGpIQUhSa2w0dWxhVDU0cXFfSmZXM1NObjQ3S3hWdzJBYzBham45cXNqU2RZUWRkOEM2aDM4VkNXMmg1bjVPWE9wQmQwcUow?oc=5",
+    "published_at": "2026-10-21T18:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.autoguide.com/auto/manufacturers/cadillac/gms-eye-s-off-autonomous-era-is-just-around-the-corner-44640742",
+    "domain": "www.autoguide.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM\u2019s 'Eyes Off' Autonomous Era is Just Around the Corner",
+    "source_item_id": "ff424b49daafc674",
+    "resolved_at": "2026-10-29T20:52:20.065526+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.autoguide.com/auto/manufacturers/cadillac/gms-eye-s-off-autonomous-era-is-just-around-the-corner-44640742",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.autoguide.com/auto/manufacturers/cadillac/gms-eye-s-off-autonomous-era-is-just-around-the-corner-44640742",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM\u2019s 'Eyes Off' Autonomous Era is Just Around the Corner | AutoGuide.com",
+    "published_at_page": "2026-10-21T14:00:00-04:00",
+    "title_score": 1.0,
+    "text_chars": 5215,
+    "content_hash": "f06e5941b074c0bd",
+    "screenshot": "49b3e847f582.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:11.192286+00:00"
+  },
+  "text": "GM\u2019s 'Eyes Off' Autonomous Era is Just Around the Corner\nNew York \u2013 General Motors is preparing a major transition in its driver-assistance technology with the introduction of an \"eyes-off, hands-off\" autonomous highway driving system, announced today at the brand's GM Forward event in Manhattan.\nScheduled to debut in 2028, the technology allows drivers to redirect their attention from the road during highway operation under specific conditions.\nThe system builds on the foundation established by GM's Super Cruise driver-assist software, which has recorded over 1.2 billion hands-free miles across nearly 750,000 vehicles. However, unlike Super Cruise (which requires driver eyes on the road at all times) this new system takes over active driving responsibility, allowing drivers to engage in secondary tasks such as checking messages or reading while the system remains active. Following its debut on the flagship Escalade IQ EV, GM plans to roll out the system across its high-volume full-size SUVs and light-duty pickup trucks.\nWhile essentially a Level 4 system, it's not technically L4 because it is highway only. GM says it's goals are for valuable tools that help customers in the real world, not living up to categorizations they can't control. \"I get annoyed every time I hear someone say L3,\" said Sterling Anderson, Chief Product Officer at GM during the GM Forward event. In short, Sterling says General Motors is charting its own path.\nThis is a modal window.\nBeginning of dialog window. Escape will cancel and close the window.\nEnd of dialog window.\nWhat's Behind the Technology\nTransitioning from hands-free to true eyes-off driving requires updates across hardware, processing power, and vehicle computing architecture, which GM walked us through at the brand's event in Manhattan today.\nFor starters, unlike vision-only autonomous approaches, GM\u2019s system relies on full sensor redundancy. The suite combines vehicle-mounted lidar, newly developed ultra-high-resolution radar, as well as optical cameras. Lidar projects light pulses to create three-dimensional spatial maps, radar measures velocity and distance, and cameras identify visual markers such as lanes and signage. A \"perception layer\" compares inputs from all three sensor types simultaneously to confirm environmental data before taking driving actions.\nThe system is powered by a liquid-cooled Central Compute Unit (CCU) delivering roughly 40 times the processing power of GM\u2019s current vehicle electronics. Representative told us it has roughly the power of 30 laptops.\nGetting further into the weeds, the system makes use of \"zonal hubs\" which replace traditional wiring harnesses with a high-speed Ethernet network capable of handling 36 times more data traffic. This network structure decouples driving software from physical components, allowing system updates to be deployed across gas and electric vehicles via over-the-air (OTA) software updates.\nAnd in addition to all this, in order to meet Level 3 autonomous safety requirements, the system includes backup paths for steering, braking, low-voltage power, and compute processing, so that the vehicle can still operate if there's a major error.\nPlaying With Itself\nPerhaps the most interesting reason that all of this is possible, is the system's reliance on not just real world data, but vast simulations. So the car isn't just taught how to operate, it's continuously re-teaching itself. Here's how it works. GM operates fleet collection vehicles gathering approximately one million miles of data monthly across varying traffic and weather conditions. To go beyond models that just imitate observed human behaviour, GM uses virtual environments where autonomous driving agents run through scenarios using what is termed \"self-play.\" In these simulations, opposing AI models control both the primary vehicle and surrounding road traffic, continually adjusting parameters during complex maneuvers such as high-density highway merges or abrupt lane changes. The idea is to continuously test for edge cases, such as obstacles on the road or extreme weather shifts, in a controlled environment.\nThe advantages of virtual testing are immense. In addition to one million real world miles, GM can run three billion miles per day of simulated driving.\nFrom there, GM will take more steps. Speaking at the GM Forward event, Anderson said that the future will include off-highway autonomy and finally what the company calls \"mission mode.\" This concept will allow vehicles to handle tedious tasks on your behalf, like performing your grocery pickup without you having to leave your home.\nWith AutoGuide from its launch, Colum previously acted as Editor-in-Chief of Modified Luxury & Exotics magazine where he became a certifiable car snob driving supercars like the Koenigsegg CCX and racing down the autobahn in anything over 500 hp. He has won numerous automotive journalism awards including the Best Video Journalism Award in 2014 and 2015 from the Automotive Journalists Association of Canada (AJAC). Colum founded Geared Content Studios, VerticalScope's in-house branded content division and works to find ways to integrate brands organically into content.\nMore by Colum Wood"
+}

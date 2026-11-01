@@ -1,0 +1,19 @@
+{
+  "stage": "verification",
+  "generated_at": "2026-10-30T19:49:30.077251+00:00",
+  "input": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\ba333d2466\\news\\triage_6f789c0b910d",
+  "n_events": 8,
+  "statuses": {
+    "ok": 8
+  },
+  "duplicates_removed": 0,
+  "by_company": {
+    "Ford (Hungary)": {
+      "ok": 8
+    }
+  },
+  "avg_text_chars": 2951,
+  "screenshots": 8,
+  "min_title_score": 0.34,
+  "require_location": false
+}

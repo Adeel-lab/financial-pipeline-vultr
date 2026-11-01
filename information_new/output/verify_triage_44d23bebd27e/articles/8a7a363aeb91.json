@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "8a7a363aeb91",
+  "bucket": "24h",
+  "score": 0.5599,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "3dedb04b675f32af",
+    "title": "GM to Offer Hybrid Chevrolet Traverse, GMC Acadia, and Buick Enclave, According to Reuters",
+    "source": "MotorBiscuit",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSEctQ0pISDNCNHQ5RU1Ua0RPd0NvRElFdWJHeFRfQjJPYy1YekstUnFVdkdwSlIyeklrYkJlcWU0WFFBSGpJeldIZ2tpNmdLT2xEYi1fNmZJNUwyNmJ0NFFRakUtSF85ZDA3U3d2U2FCbnVnakg0aUYzaDhvTlVKSVBGek10cVd0aDFnejRpWmg1SkhQd0E3NzJtY1JjdTR0OEwwWTZibk9IS01NNTZxSzJSYkJHaHFa?oc=5",
+    "published_at": "2026-10-29T12:01:48+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.motorbiscuit.com/gm-to-offer-hybrid-chevrolet-traverse-gmc-acadia-and-buick-enclave-according-to-reuters/",
+    "domain": "www.motorbiscuit.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM to Offer Hybrid Chevrolet Traverse, GMC Acadia, and Buick Enclave, According to Reuters",
+    "source_item_id": "3dedb04b675f32af",
+    "resolved_at": "2026-10-29T20:52:20.065611+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.motorbiscuit.com/gm-to-offer-hybrid-chevrolet-traverse-gmc-acadia-and-buick-enclave-according-to-reuters/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.motorbiscuit.com/gm-to-offer-hybrid-chevrolet-traverse-gmc-acadia-and-buick-enclave-according-to-reuters/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM to Offer Hybrid Chevrolet Traverse, GMC Acadia, and Buick Enclave, According to Reuters - MotorBiscuit",
+    "published_at_page": "2026-10-29T12:00:00+00:00",
+    "title_score": 1.0,
+    "text_chars": 3409,
+    "content_hash": "9c4c879488fe7d36",
+    "screenshot": "8a7a363aeb91.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:13.440454+00:00"
+  },
+  "text": "After years of strictly pushing a fully electric future, General Motors is officially walking back its EV-only mandate and returning to gas-electric hybrids.\nFollowing intense pressure from its own retail network, GM confirmed it will restructure a $500 million Department of Energy grant to prepare its Lansing Delta Township plant for future hybrid vehicle production. While GM declined to provide details on timing or specific models, a new report from Reuters states the Lansing facility will build hybrid versions of GM\u2019s heavy-hitting three-row SUVs: the Chevrolet Traverse, Buick Enclave, and GMC Acadia.\nThe move represents a massive strategic pivot for an automaker that currently only sells one hybrid vehicle in the United States\u2014the Chevrolet Corvette E-Ray.\nGM Yielding to Dealer Pressure and Market Realities\nThe decision to hybridize GM\u2019s largest crossovers is a direct response to shifting market demands. Over the first nine months of 2026, GM saw its U.S. market share drop to 16.6% from 17.4% a year earlier. Meanwhile, automakers that heavily invested in hybrid lineups, namely Toyota and Honda, gained ground.\nThis loss in market share sparked intense frustration among GM\u2019s retail network.\n\u201cWe\u2019ve been telling them every chance we get that we need hybrids,\u201d one dealer told Reuters, noting that retailers explicitly pressed GM sales executives for hybrid options during recent regional meetings.\nGM executives previously dismissed hybrids as an unnecessary cost and complexity, preferring to funnel billions directly into battery-electric platforms. However, CEO Mary Barra officially confirmed the reversal during an earnings call last week.\n\u201cIt\u2019s not going to be additional [capital expenditures] and engineering. We\u2019ll talk more about them as we get closer to the launch,\u201d Barra confirmed as per Reuters.\nThe Current Three-Row Gas Lineup\nCurrently, GM\u2019s three-row crossovers rely entirely on internal combustion engines, primarily utilizing turbocharged 2.5-liter four-cylinder powerplants. Adding a hybrid option would provide a much-needed boost to their fuel efficiency, which currently sits firmly in the middle of the pack.\nFor the 2025 model year, the current gas-powered models break down as follows:\n- Chevrolet Traverse: Starts at $40,800. The standard front-wheel-drive (FWD) model achieves an EPA-estimated 23 MPG combined (20 city / 27 highway).\n- GMC Acadia: Starts at $43,700. The FWD configuration yields an EPA-estimated 23 MPG combined (20 city / 27 highway).\n- Buick Enclave: Starts at $45,200. The FWD version also returns an EPA-estimated 23 MPG combined (20 city / 27 highway).\nTaking the Fight to Toyota\nBy electrifying the Traverse, Enclave, and Acadia, GM will finally give buyers a domestic alternative to the heavyweights of the three-row hybrid segment.\nThe most obvious targets are Toyota\u2019s incredibly popular Highlander Hybrid and the larger Grand Highlander Hybrid, both of which have dominated the family-hauler hybrid space. A hybrid Traverse or Acadia will also have to contend with the Kia Sorento Hybrid (which currently achieves up to 36 MPG combined), the Hyundai Santa Fe Hybrid, and the plug-in hybrid (PHEV) variant of the Mazda CX-90.\nWhile GM has not confirmed when these Lansing-built hybrids will hit dealership lots, the strategic pivot ensures that the automaker will not cede the lucrative family-hauler market to its electrified rivals."
+}

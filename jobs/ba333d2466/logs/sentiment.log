@@ -1,0 +1,20 @@
+
+===== 2026-10-30 20:49:30  sentiment: sentiment.py --input C:\Users\adeel\Desktop\notebooks\vultr\jobs\ba333d2466\news\verify_triage_6f789c0b910d --base C:\Users\adeel\Desktop\notebooks\vultr\jobs\ba333d2466\news
+guard: 8 ok articles -> 8 kept (0 consent pages, 0 duplicate texts dropped)
+8 articles | mode: LLM openai/gpt-oss-120b
+[1/8] Ford (Hungary)     +0.00 llm     SK On’s Iváncsa Battery Plant in Hungary Receives Ford Q1 Ce
+[2/8] Ford (Hungary)     +0.70 llm     SK On’s Hungary plant earns Ford’s top Q1 quality certificat
+[3/8] Ford (Hungary)     +0.00 llm     Ryan Gosling talks 'Blade Runner 2049' and working with Harr
+[4/8] Ford (Hungary)     +0.00 llm     Eris Ford – Lifeline | Bless The Mic
+[5/8] Ford (Hungary)     +0.00 llm     TOM FORD to Open First Store in Armenia
+[6/8] Ford (Hungary)     -0.30 llm     BYD now has 1.02 million employees – more than Toyota, GM, F
+[7/8] Ford (Hungary)     +0.20 llm     Red Bull Ford Had F1’s Yardstick Engine All Year. Sepang Fin
+[8/8] Ford (Hungary)     +0.00 llm     Jiří Štěpnička, Czech voice of Harrison Ford and theater vet
+
+=== Ford (Hungary) === net sentiment 0.517 | {'opportunity': 1, 'neutral': 6, 'threat': 1} | coverage {'events_selected': 8, 'events_with_full_text': 8, 'events_headline_only': 0}
+  Opportunities:
+    +0.70  [30d] SK On’s Hungary plant earns Ford’s top Q1 quality certification
+  Threats:
+
+LLM ok/failed calls: 8/0
+saved -> C:\Users\adeel\Desktop\notebooks\vultr\jobs\ba333d2466\news\sentiment_triage_6f789c0b910d

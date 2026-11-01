@@ -1,0 +1,85 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "27e3596eeece",
+  "bucket": "7d",
+  "score": 0.7376,
+  "label": {
+    "topic": "supply_chain_ops",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 4,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "655974fb77d51720",
+    "title": "GM investing $750 million to build hybrid crossovers at Michigan plant",
+    "source": "Automotive News",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0wR2Y2a1ZfbkJ4dHZaOW95OGtpOXZFR0dFaDVMMDFtY1dBaWhReTdxNlUwbkxnWGRwbkJfVjNid2taTVQ2NVJpaEtoSXhTX3BKdmFORmNtSU5SVDNNNkZaS1JQMUVVdGxYR3BXQVFpQTNJQ1cyUWxtSlpPS0NYZVE?oc=5",
+    "published_at": "2026-10-27T19:10:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.autonews.com/general-motors/an-gm-hybrids-michigan-plant-1027/",
+    "domain": "www.autonews.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM investing $750 million to build hybrid crossovers at Michigan plant",
+    "source_item_id": "655974fb77d51720",
+    "resolved_at": "2026-10-30T16:32:41.606046+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://eletric-vehicles.com/general-motors/gm-to-build-hybrid-three-row-suvs-in-michigan-redirecting-an-ev-grant/",
+    "attempts": 2,
+    "attempt_details": [
+      {
+        "url": "https://www.autonews.com/general-motors/an-gm-hybrids-michigan-plant-1027/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://eletric-vehicles.com/general-motors/gm-to-build-hybrid-three-row-suvs-in-michigan-redirecting-an-ev-grant/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM to Build Hybrid Three-Row SUVs in Michigan, Redirecting an EV Grant",
+    "published_at_page": "2026-10-27T19:44:56+00:00",
+    "title_score": 1.0,
+    "text_chars": 5580,
+    "content_hash": "e30d7fb5990011bc",
+    "screenshot": "27e3596eeece.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:57.974159+00:00"
+  },
+  "text": "General Motors said on Tuesday it would prepare its Lansing Delta Township assembly plant in Michigan to build hybrid vehicles, redirecting a federal grant first awarded to convert another Lansing factory to electric vehicles.\nThe plant builds the Chevrolet Traverse, Buick Enclave and GMC Acadia three-row SUVs. GM did not name the hybrid models or say when production would begin. \u201cDetails about nameplates and timing will be shared closer to launch,\u201d the company said.\nGM plans to invest $750 million to build hybrid three-row crossovers at the plant, Automotive News reported. GM\u2019s release gave no figure for the plant itself.\nHybrid versions of the Traverse, Enclave and Acadia are planned for the factory, Reuters reported, citing people familiar with the matter. GM did not confirm the models.\nRelated coverage\nA redirected EV grant\nGM and the US Department of Energy are restructuring a previously awarded Domestic Manufacturing Conversion Grant, \u201cwith those funds going to Lansing Delta Township for future hybrid production,\u201d GM said.\nThe Energy Department awarded GM $500 million under that program in July 2024 to prepare its nearby Lansing Grand River plant for electrification. The program funds conversions to hybrid, plug-in hybrid, electric and fuel-cell vehicle production.\nGM later dropped the electric plan for Grand River. It said in October 2025 it would invest $1.25 billion there to build the next-generation Cadillac CT5 with a gasoline engine. The Energy Department did not respond to Reuters\u2018 request for comment on the restructured grant.\nGM said its investments in the Lansing region would exceed $2 billion over the next several years, including the $1.25 billion for Grand River.\nA record-setting plant\nLansing Delta Township marks its 20th anniversary this year. It built more than 291,000 vehicles in 2025, the most in its history, GM said.\nAll three SUVs are running at full capacity, and production of the 2027 model year began on July 20, according to the production tracker kept by the website GM Authority.\n\u201cWe\u2019re building on what this team does well today while preparing for what customers will need in the years ahead,\u201d Mike Trevorrow, GM\u2019s Senior Vice President of Global Manufacturing, said. \u201cThat means investing in our people, our facilities, and the ability to build a broad range of vehicles.\u201d\nGM said it would spend about $9 billion across its US manufacturing footprint this year and more than $7 billion on US research and development. Investments at Orion Assembly in Michigan, Spring Hill Assembly in Tennessee and Fairfax Assembly in Kansas will lift its domestic production capacity to more than 2 million vehicles once fully scaled, it said.\nEleven US sites, one hybrid line\nA map GM released with the announcement lists 11 US sites where it has announced investments since 2025. Lansing Delta Township is the only one tagged for \u201chybrid vehicles.\u201d\nMost of the rest are tied to gasoline trucks, engines and transmissions.\nOrion Assembly is listed for the Cadillac Escalade, Chevrolet Silverado and GMC Sierra, and the Saginaw and Tonawanda plants for sixth-generation V-8 engine parts and engines. Romulus and Toledo are listed for eight- and 10-speed transmissions, and Lansing Grand River for the Cadillac CT5.\nElectric models appear at two sites. Fairfax Assembly in Kansas is listed for the Chevrolet Equinox and the Chevrolet Bolt EV, and Spring Hill in Tennessee for the Cadillac Lyriq and Vistiq alongside the Chevrolet Blazer, the Cadillac XT5 and turbocharged four-cylinder engines.\nThe same tracker lists the next-generation CT5 at Grand River for the second half of 2028, as a 2029 model, and also shows a Buick sedan and a Chevrolet Camaro as planned for the plant. GM\u2019s release and map mention neither.\nThe map also includes the Parma Metal Center in Ohio for stampings and Wentzville Assembly in Missouri for paint and modernization work. \u201cVehicles are assembled with U.S. and globally sourced parts,\u201d it notes.\nA late turn to hybrids\nThe move puts hybrids into some of GM\u2019s best-selling SUVs. Its only hybrid on sale in the US today is a version of the Chevrolet Corvette, Reuters reported, while Toyota and Honda have gained share with hybrids.\nGM\u2019s US market share fell to 16.6% in the first nine months of the year from 17.4% a year earlier, according to the agency. GM executives had long argued that hybrids added cost and complexity and that they preferred to invest in EVs.\nChair and Chief Executive Officer Mary Barra signaled the shift on the company\u2019s third-quarter call on October 20. \u201cFrom a hybrid perspective, we will have hybrids in our portfolio in multiple segments,\u201d she said.\nBarra said much of the hybrid demand sits in compact cars, midsize cars and minivans, \u201cthree segments we are not a part of right now,\u201d and that the Equinox compact SUV \u201cis fully maxed out even without a hybrid.\u201d She said the hybrids were already in GM\u2019s plans. \u201cIt is not going to be additional CapEx and engineering,\u201d she said.\nGM has recorded $11.2 billion in EV-related charges since last year and has scaled back electric production, Reutersreported. Honda is moving the other way on capacity, nearing a $2.5 billion hybrid plant in Ohio after scrapping US EV plans.\nThe announcement came a week after GM unveiled a $20 billion share buyback, which drew criticism from both the United Auto Workers and Michigan Republican Senate candidate Mike Rogers ahead of the November 3 midterm elections.\nThe UAW called the buyback \u201coutrageous.\u201d GM said its \u201cfirst priority is investing in our business and our employees.\u201d"
+}

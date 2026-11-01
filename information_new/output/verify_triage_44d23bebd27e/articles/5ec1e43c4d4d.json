@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "5ec1e43c4d4d",
+  "bucket": "30d",
+  "score": 0.674,
+  "label": {
+    "topic": "earnings_financials",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "71d63459675e8c79",
+    "title": "GM lifts cash-flow outlook, unveils $20 billion buyback after strong Q3",
+    "source": "The Globe and Mail",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQNGtmU3BBQVRyV2FFMExPNE9DSTA4S2pzdzc1VkVfcHlQdkMxT3JQTVZ0eWxKbWNnRG9pMXRDNlFyRXNBSEtpVEVDcW5tOW83c0hUbEc1Nkx4ZVlYWU41YlVjUHpyVEZTUFdTbzluUVRjYWFjTWFWN1hQTG1NUmdoS2VhZWV3S2txRkVCa1VUa3NmdEY2WU1LQzFkVUxDcU9LT3hsMVFGTTBkVjN6bTBuSXJ2Y2xRYUxTRUUwNkpyaXlGaUMtelVYRlBvT21maWZLanZydDNiVjFSNWt4WXlOTXVHRmdGS0U?oc=5",
+    "published_at": "2026-10-21T22:20:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.theglobeandmail.com/investing/markets/stocks/GM/pressreleases/8294755/gm-lifts-cash-flow-outlook-unveils-20-billion-buyback-after-strong-q3/",
+    "domain": "www.theglobeandmail.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM lifts cash-flow outlook, unveils $20 billion buyback after strong Q3",
+    "source_item_id": "71d63459675e8c79",
+    "resolved_at": "2026-10-29T20:52:20.065476+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.theglobeandmail.com/investing/markets/stocks/GM/pressreleases/8294755/gm-lifts-cash-flow-outlook-unveils-20-billion-buyback-after-strong-q3/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/GM/pressreleases/8294755/gm-lifts-cash-flow-outlook-unveils-20-billion-buyback-after-strong-q3/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM lifts cash-flow outlook, unveils $20 billion buyback after strong Q3 - The Globe and Mail",
+    "published_at_page": "Wed Oct 21, 5:20PM CDT",
+    "title_score": 1.0,
+    "text_chars": 2509,
+    "content_hash": "ee83d872488ce775",
+    "screenshot": "5ec1e43c4d4d.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:09.137443+00:00"
+  },
+  "text": "GM lifts cash-flow outlook, unveils $20 billion buyback after strong Q3\nGeneral Motors ( (GM) ) has shared an announcement.\nGeneral Motors reported third-quarter 2026 revenue of $50.0 billion, net income attributable to stockholders of $3.3 billion and EBIT-adjusted of $4.1 billion. The Detroit-based automaker also released updated full-year 2026 guidance, narrowing its projected ranges for key performance metrics.\nThe company now expects full-year net income attributable to stockholders between $8.9 billion and $9.5 billion and automotive operating cash flow of $17.3 billion to $20.3 billion. GM raised its outlook for adjusted automotive free cash flow to between $11.5 billion and $12.5 billion and tightened its EPS-diluted-adjusted forecast to $12.75 to $13.75, signaling confidence in its earnings power as it balances capital returns with ongoing investments.\nGM\u2019s Board of Directors approved a new $20 billion share repurchase authorization, adding a significant capital-return lever for shareholders. The board also declared a quarterly dividend, underscoring management\u2019s emphasis on returning cash to investors alongside its operational performance improvements and updated guidance trajectory.\nThe most recent analyst rating on (GM) stock is a Buy\nwith a $107.00 price target.\nTo see the full list of analyst forecasts on General Motors stock,\nsee the GM Stock Forecast page.\nSpark\u2019s Take on GM Stock\nAccording to Spark, TipRanks\u2019 AI Analyst, GM is a Neutral.\nThe score is held back primarily by weakened current profitability and elevated leverage in the financial statements, alongside a valuation headwind from a high P/E and low dividend yield. These are partially offset by a strong and upbeat earnings call (record results, improved North America margins, and higher free cash flow guidance), while technical indicators suggest a mostly neutral setup rather than a strong trend.\nTo see Spark\u2019s full report on GM stock,\nclick here.\nMore about General Motors\nGeneral Motors is a leading U.S. automotive manufacturer that designs, builds and sells cars, trucks and SUVs under brands including Chevrolet, GMC, Buick and Cadillac. The company focuses on large-scale global vehicle production, automotive financing and related mobility services, competing in both mass-market and higher-margin segments worldwide.\nAverage Trading Volume: 6,792,487\nTechnical Sentiment Signal: Strong Buy\nCurrent Market Cap: $72.61B\nFor a thorough assessment of GM stock, go to TipRanks\u2019 Stock Analysis page."
+}

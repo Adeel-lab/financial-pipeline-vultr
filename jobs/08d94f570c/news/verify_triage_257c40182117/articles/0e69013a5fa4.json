@@ -1,0 +1,85 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "0e69013a5fa4",
+  "bucket": "30d",
+  "score": 0.6109,
+  "label": {
+    "topic": "earnings_financials",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "3794f2ced6bcf2f5",
+    "title": "General Motors' 2026 sales down from last year",
+    "source": "The Detroit News",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQSm9VZV9YYWlTN1E1WXFtX1RBOWpWOV8yNFRRbHhaWFdBRnRfSVRHVGl3V01fZ2tZTnc0R2J5S3hmTTdmdXhRMWNxUURFZUROOXEzdU15ODFoQ1Q4MEhIdWJYNVUzTXU2d21rV2tPa2lNRTQyN21sQ2poSG1WREQ1eXZPWGh5a1J1Ti1TTVpGR2F5S0ljUWY0U25aQzktcDlSMzZCS3RrZFp1dnJtVEJiLUZnQm1DZXhLWDFCU3hfdENmV01RT1JDWnZ4ZkUxOEFLWUgwemFEQ1RONGd0dDhYYU00eThvLUU4?oc=5",
+    "published_at": "2026-10-01T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.detroitnews.com/story/business/autos/general-motors/2026/10/01/general-motors-vehicle-sales-down-in-first-three-quarters-of-2026/92038144007/",
+    "domain": "www.detroitnews.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "General Motors' 2026 sales down from last year",
+    "source_item_id": "3794f2ced6bcf2f5",
+    "resolved_at": "2026-10-30T16:32:41.606114+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.carscoops.com/2026/10/gms-electric-vehicle-sales-fell-off-a-cliff-last-quarter/",
+    "attempts": 2,
+    "attempt_details": [
+      {
+        "url": "https://www.detroitnews.com/story/business/autos/general-motors/2026/10/01/general-motors-vehicle-sales-down-in-first-three-quarters-of-2026/92038144007/",
+        "status": "thin_content",
+        "http_status": 402,
+        "title_score": null
+      },
+      {
+        "url": "https://www.carscoops.com/2026/10/gms-electric-vehicle-sales-fell-off-a-cliff-last-quarter/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM's Electric Vehicle Sales Fell Off A Cliff Last Quarter | Carscoops",
+    "published_at_page": "2026-10-03T17:00:00+00:00",
+    "title_score": 1.0,
+    "text_chars": 2754,
+    "content_hash": "12843a4649528dfc",
+    "screenshot": "0e69013a5fa4.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:55.807604+00:00"
+  },
+  "text": "GM's Electric Vehicle Sales Fell Off A Cliff Last Quarter\nGM sales were down 5.5% in Q3 compared to last year, but EV sales dropped even worse\n- Sales of every single EV from General Motors fell last quarter.\n- In Q3, Chevrolet Equinox EV sales were down 92.4% compared to last year.\n- Cadillac, GMC, and Chevrolet have all reported significant EV sales declines.\nNewly released sales data from General Motors shows demand for its EVs has fallen off a cliff in the United States, contributing to a company-wide sales decline across the third quarter and through the first nine months of this year.\nIt's no secret that EV sales in the US have dropped since the Trump administration axed the $7,500 federal tax credit last September. However, we suspect even GM couldn't have anticipated just how far sales would decline.\nRead: GM Keeps 70 Cents Of Every Subscription Dollar And Just 4 Cents On A Car Sale\nThe bad news starts at Cadillac. In Q3, sales of the Escalade IQ and IQL dropped 29.2% to 1,604 units. In addition, Cadillac Lyriq sales are down 50.2% to 3,617 units, Optiq sales have declined 6.9% to 4,550, and sales of the Vistiq fell 34.1% to 2,587 units. Total sales at the Cadillac brand were down 30% to 32,650.\nChevrolet Suffers\nThen there's Chevrolet, which saw its sales decline 4.6% to 437,321 vehicles. The Blazer EV suffered an 84.4% fall in sales to just 1,261 units. In addition, sales of the axed BrightDrop 400 and 600 vans were down 43.6% to 1,344. The biggest loser was the Equinox EV, with sales declining 92.4% from 25,085 in Q3 2025 to just 1,905 last quarter. Year-to-date sales are down 65.6% to 18,154.\nDemand for the Silverado EV has also dried up. Across July, August, and September, just 1,655 were sold, down 58% from 3,940. Year-to-date, just 5,327 have been sold, a 43.2% reduction from the previous year.\nThings aren't any better at GMC. Sales of the Hummer EV SUV and Pickup declined 72.9% in Q3 to just 1,423 units. In addition, Sierra EV sales declined 50.8% from 3,374 to just 1,661 units. Total sales across the GMC brand dropped 4.7% to 157,103.\nIn total, GM ended the third quarter having sold 670,974 vehicles, 5.5% fewer than the 710,347 it sold in Q3 2025. Through the first nine months of the year, total sales have fallen 6.4% to 2,012,299.\nA handful of models did enjoy a jump in sales in the third quarter. For example, sales of the Buick Enclave, Encore GX, and Envista rose 3.4%, 5.4%, and 18.4%, respectively. In addition, Cadillac CT5 sales were up 4.1%, Chevrolet Colorado sales rose 2.4%, and Corvette sales were up 28.5%. Chevrolet also reported a 51.1% jump in Trailblazer sales. At GMC, Acadia sales rose 7.7%, Canyon sales were up 17.9%, Sierra LD sales climbed 2.9%, and Yukon sales jumped 8%."
+}

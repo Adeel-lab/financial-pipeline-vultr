@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "c982c0d2756e",
+  "bucket": "30d",
+  "score": 0.5875,
+  "label": {
+    "topic": "autonomy_ai",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "63a272fa913eae39",
+    "title": "GM promises smarter cars, faster updates, and autonomous dry-cleaning runs",
+    "source": "The Verge",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOazhub3hEQXJfTVF4S1lnZjdnZnN0Tmh6QnRfeVFiYnBTcm9wZmYyWFA1Wk5qTjVGWUk2SWlnQWJDTmRWT0U4b0RLLUpUR3VESDlueGtHUkNKTGNSN0MyR3lPUUNZU0pUbHpxWm11djR5MkQwVGlRdFNQSjgyOW5NZ2lQSHpmenNaY2c?oc=5",
+    "published_at": "2026-10-21T18:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.theverge.com/transportation/1014322/gm-onward-ai-ev-battery-compute-av",
+    "domain": "www.theverge.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM promises smarter cars, faster updates, and autonomous dry-cleaning runs",
+    "source_item_id": "63a272fa913eae39",
+    "resolved_at": "2026-10-29T20:52:20.065556+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.theverge.com/transportation/1014322/gm-onward-ai-ev-battery-compute-av",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.theverge.com/transportation/1014322/gm-onward-ai-ev-battery-compute-av",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM promises smarter cars, faster updates, and autonomous dry-cleaning runs | The Verge",
+    "published_at_page": "2026-10-21T18:00:00+00:00",
+    "title_score": 1.0,
+    "text_chars": 7506,
+    "content_hash": "664fbb2b1f5b25dc",
+    "screenshot": "c982c0d2756e.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:18.829288+00:00"
+  },
+  "text": "General Motors is still very much in the business of selling gas-guzzling trucks and massive SUVs. But if you listen to its leadership, the Detroit giant is rapidly transforming into a nimble, software-defined tech player with a tightened grip on AI.\nGM promises smarter cars, faster updates, and autonomous dry-cleaning runs\nGeneral Motors is cutting development times in half, introducing a 40x more powerful central compute unit, and rolling out autonomous driving to its highest-volume trucks and SUVs.\nThat was the pitch today, when GM hosted its tech-focused Forward event to unveil a wide-ranging slate of EV, autonomous vehicle, and AI initiatives \u2014 all aimed at fending off the rising threat of tech-heavy Chinese automakers.\nThe promises are big: GM claims it will use AI to cut vehicle development times in half, introduce compute units up to 40 times more powerful than its current hardware, model next-gen battery chemistries in record time, and bring eyes-off autonomous driving to its top-selling trucks and SUVs.\nIn short, GM wants to transition from a legacy automaker into an AI-driven tech enterprise, leveraging its massive scale across both electric and gas-powered fleets. It\u2019s a bold strategy, even if we\u2019ve heard variations of it before.\nFaster R&D and digital factory twins\nFor decades, GM has wrestled with sluggish four- to five-year vehicle development cycles that lag behind the light-speed pace of consumer tech. The company tried to bridge that divide with aggressive EV targets and software like Super Cruise. But as software-defined architecture evolved from an industry buzzword into a table-stakes requirement, maintaining fragmented vehicle platforms and dozens of disparate control units began to severely drag down engineering efforts.\nNow, GM says it\u2019s aiming to slice that development cycle down to just two years using \u201cdigital thread virtualization.\u201d Instead of operating in silos or relying on slow, step-by-step handoffs, the company says it will unify design, engineering, and manufacturing digitally from day one. (We\u2019ve already reported on GM\u2019s efforts to inject AI directly into its vehicle design process.)\nGM points to its new battery development program as proof of concept. The automaker tested over 300,000 virtual battery designs before building a single physical prototype, eventually settling on a lithium manganese rich (LMR) chemistry. That virtual process let GM\u2019s battery team go from initial concept to formal approval in just one month.\nThese new LMR cells will power GM\u2019s fourth-generation EV platform. The company claims the cells offer 33 percent higher energy density than traditional lithium iron phosphate cells at a comparable cost alongside a 20 percent boost in efficiency per kilowatt-hour, yielding longer-range EVs without forcing drivers to haul around a heavier pack. The batteries will be produced by Ultium Cells, GM\u2019s joint venture with LG Energy Solution, at its factory in Spring Hill, Tennessee.\nBeyond the battery, GM engineered the entire powertrain as a single integrated system. The new drive units feature 40 percent fewer internal parts than current hardware. Because the drivetrain is lighter and takes up significantly less space, future cabins theoretically should offer more room for passengers and cargo.\nA single, liquid-cooled brain\nTo fix its messy electronic setup, GM is replacing dozens of small, scattered electronic control units and heavy wiring harnesses with a single central computer. GM claims this unified unit \u2014 which is liquid-cooled and connected by high-speed lines \u2014 delivers 40 times the computing power while stripping out 30 percent of the physical wiring.\nThat extra horsepower should translate into snappier screens, smarter voice controls, and seamless over-the-air (OTA) updates for automated driving features and battery management.\nGranted, GM has been promising smarter cars and faster software updates for years. The automaker launched a \u201cdigital nerve system\u201d in the 2020 Cadillac CT5 and later rolled out its Ultifi software platform with big promises about OTA capabilities. While drivers generally give GM high marks for hardware dependability, the company\u2019s software rollout has faced its fair share of stumbles and consumer frustration over unnecessary complexity. (Remember the disastrous Chevy Blazer rollout?)\nGM is extending this digital integration to the factory floor with a project dubbed \u2014 and capitalized rather oddly \u2014 \u201cPlantBrAIn.\u201d By pairing real-time factory floor data with digital-twin simulations across stamping, casting, welding, painting, and assembly, GM hopes workers can catch physical errors and equipment bottlenecks in a virtual model before they disrupt actual production.\nPersonal autonomy \u2014 and an autonomous dry-cleaning pickup?\nGM\u2019s newly upgraded compute platform will make its production debut in 2028 on the Cadillac Escalade IQ \u2014 the same vehicle GM announced last year would be the first to receive its hands-free, eyes-off highway driving system. (Given that GM teased this centralized compute platform last year, today\u2019s hardware announcement is a bit of a retread.)\nHowever, GM isn\u2019t keeping its eyes-off tech locked behind the price tag of a $120,000 luxury SUV. The automaker confirmed plans to roll out hands-free, eyes-off highway driving across its broader lineup, spanning both EVs and gas-powered models.\nAs GM puts it:\nOur vision is to build vehicles that can drive themselves or their occupants anywhere they need to be. This includes a future where your vehicle can handle mundane tasks for you, like heading out into bumper-to-bumper traffic to pick up groceries or dry cleaning, giving you valuable time back.\nAn uncrewed pickup truck executing a dry-cleaning run through morning traffic is certainly a vision, though one we\u2019ll need to see to believe.\nGM also teased a futuristic vision for autonomous cabins called \u201cConcept Horizon,\u201d which reimagines the interior as an open space purely dedicated to relaxing, working, or unwinding.\nOverhauling OnStar for its 30th birthday\nFinally, GM is celebrating OnStar\u2019s 30th anniversary by giving the iconic service a massive AI overhaul. Rather than acting strictly as a backup button for roadside emergencies, OnStar is being rebranded as an active, AI-driven intelligence platform.\nDrivers can trigger the new OnStar AI Assistant by saying, \u201cHey OnStar\u201d to tweak cabin temperatures, open the glove box, pop the EV charge port, or check tire pressure and battery diagnostics. The assistant will debut on the 2027 Cadillac Lyriq through an OTA update before expanding to other models.\nWhile GM previously rolled out Google\u2019s Gemini-powered voice assistant to 2022 and newer models, this new OnStar assistant operates at a deeper system level. Unlike Gemini, it can execute physical vehicle functions and run hardware-level diagnostics, such as managing specific HVAC zones, interpreting dashboard warning lights, or running battery health checks on the fly.\nGM\u2019s vision of a central, AI-driven vehicle architecture is undeniably ambitious, and if it works, it could genuinely streamline how cars are built and updated. But for an automaker that has spent years pitching software transformations while occasionally stumbling, execution remains everything. Until an uncrewed Silverado actually pulls into a suburban driveway with a load of fresh dry cleaning, drivers will likely treat these grand AI promises like any other product roadmap: best taken with a healthy dose of patience."
+}

@@ -1,0 +1,86 @@
+{
+  "company": "Ford (Hungary)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "Hungary"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [
+      "Ford vs BMW"
+    ],
+    "exclude": [
+      "Ford\\ US"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (Hungary)",
+    "slug": "ford-hungary",
+    "query": "\"Ford\" (Hungary)",
+    "scope_text": "Hungary",
+    "all_aliases": [
+      "Ford",
+      "Ford vs BMW"
+    ]
+  },
+  "event_id": "7d46acba960e",
+  "bucket": "30d",
+  "score": 0.0094,
+  "label": {
+    "topic": "other",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 0,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "1ed9cd8eac739df9",
+    "title": "Eris Ford \u2013 Lifeline | Bless The Mic",
+    "source": "Rapzilla",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Uc3ZEZFZ5cVFJT2ZTYzJnRk9aU1Y3VFFNSzF4U1ZVYXY1M0RqT1lvNTU1RmpzSGQ1T1MwODVZZ180WVczeDRuZmdydllQMUxRdmJCU0RQb3RQdWZXQ1VOS0ZHekE1R2hLQ2VYX0gySQ?oc=5",
+    "published_at": "2026-10-01T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://rapzilla.com/2026-10-eris-ford-lifeline-bless-the-mic/",
+    "domain": "rapzilla.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Eris Ford \u2013 Lifeline | Bless The Mic",
+    "source_item_id": "1ed9cd8eac739df9",
+    "resolved_at": "2026-10-30T19:49:11.031148+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://rapzilla.com/2026-10-eris-ford-lifeline-bless-the-mic/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://rapzilla.com/2026-10-eris-ford-lifeline-bless-the-mic/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "Eris Ford - Lifeline | Bless The Mic - Rapzilla",
+    "published_at_page": "2026-10-01T18:06:12+00:00",
+    "title_score": 1.0,
+    "text_chars": 1366,
+    "content_hash": "037d83b153be0538",
+    "screenshot": "7d46acba960e.png",
+    "location_in_text": false,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T19:49:23.002631+00:00"
+  },
+  "text": "Eris Ford came through to Bless The Mic with her song \u201cLifeline.\u201d Filmed in Nashville, TN, by Will Thomas and 5Five Spoke Media.\nWatch Eris Ford Below:\nAbout Bless the Mic\nBless the Mic highlights faith-driven musical artists across all genres. The platform launched in 2026 as an independent offshoot of Rapzilla.com. It bridges the gap between modern music culture and faith. The show provides artists with a premium space to showcase their craft.\nJustin is the Editor-in-Chief of Rapzilla.com and the project manager for Rapzilla Artists Distribution. He has been a journalist for 15 years and has written or edited for Relevant, Common Good Magazine, Christian Post, BREATHEcast, CCM Magazine, & more. He's written close to 15,000 articles, done over 1,500 interviews, and has written and researched for several documentaries. Justin enjoys working with indie artists to develop their brands and marketing strategies, and published his first book, \"Survival of the Artist: Tips & Strategies to Help Indies Succeed,\" in 2023. He has done several speaking engagements and courses based on the book. In 2025, he launched his own distribution label called Friends With Faces that caters to rock and out-of-the-box music. Musically, Justin has been in several bands as a vocalist, rapper, or drummer for 25 years. His current project is with the Saints in Exile band."
+}

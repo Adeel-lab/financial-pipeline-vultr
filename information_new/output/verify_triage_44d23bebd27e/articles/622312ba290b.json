@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "622312ba290b",
+  "bucket": "30d",
+  "score": 0.455,
+  "label": {
+    "topic": "recalls_safety",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "fda37ca4bdfeb039",
+    "title": "GM class action claims Chevy Traverse, other 2025 models have faulty brakes",
+    "source": "Top Class Actions",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOd21kTllBSlRka2ZFZTdoUGtMWUZlaWxJNU1Zb0V1Uy0xQk51bVBDRi1OZGdzdVREN1A5SzRCQndzTTlpNGJ0cERhMldidVYtczJFeHlJbU5SQUpMYXNTZmVMMGdoeGJRSUtOSEJJOWhEMkxjMHZnclpTSHg2T25iYVF2MlRaVDNpMVhPMDV4RHNfRGlJSXhadU9heDR0U0pvRndhSzJrOTZwS05LakotY2tZaVZzVUVJT0xBbVdiSUJpU05yRE5ac1hHY1hXV3pRd1E?oc=5",
+    "published_at": "2026-10-13T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/gm-class-action-claims-chevy-traverse-other-2025-models-have-faulty-brakes/",
+    "domain": "topclassactions.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM class action claims Chevy Traverse, other 2025 models have faulty brakes",
+    "source_item_id": "fda37ca4bdfeb039",
+    "resolved_at": "2026-10-29T20:52:20.065790+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/gm-class-action-claims-chevy-traverse-other-2025-models-have-faulty-brakes/",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/gm-class-action-claims-chevy-traverse-other-2025-models-have-faulty-brakes/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM class action claims Chevy Traverse, other 2025 models have faulty brakes",
+    "published_at_page": "2026-10-13T15:00:00+00:00",
+    "title_score": 1.0,
+    "text_chars": 3937,
+    "content_hash": "4dc3bf1bc058c671",
+    "screenshot": "622312ba290b.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:55:52.956650+00:00"
+  },
+  "text": "GM class action lawsuit overview:\n- Who: A group of six plaintiffs filed a class action lawsuit against General Motors LLC.\n- Why: They claim GM sold vehicles with faulty brake systems and failed to issue a recall.\n- Where: The GM brake defect class action lawsuit was filed in Pennsylvania federal court.\nA new class action lawsuit alleges General Motors sold vehicles with faulty brake systems that can lead to a partial or total loss of braking.\nPlaintiff Stephanie Fehrmann and five others filed the class action complaint against GM on Oct. 6 in Pennsylvania federal court, alleging violations of state and federal consumer laws.\nAccording to the lawsuit, GM sold 2025 Chevrolet Traverse, 2025 GMC Acadia, 2025 Buick Enclave, 2025 Chevrolet Colorado and 2025 GMC Canyon vehicles that had defective master brake cylinder assemblies.\nThe plaintiffs say the defective brake systems fail abruptly and without warning soon after vehicle delivery, leading to a partial or total loss of braking.\nWhen the defect manifests, the vehicle\u2019s instrument cluster displays numerous warning lights, including a red brake warning light and an anti-lock brake system (ABS) warning light, and displays a \u201cService Brake System\u201d message, the lawsuit says.\nMany owners, including the plaintiffs, allegedly experienced partial or total loss of braking, where the brake pedal either becomes stiff and hard to press or sinks into the floor, making drivers unsafe and increasing the likelihood of a vehicle collision or accident.\nOwners also report resorting to all manner of gimmicks to get the brakes to work, such as shutting the vehicle off and restarting, and pumping the brake pedal, they claim.\nGM failed to issue recall when it should have, lawsuit claims\nAccording to the class action lawsuit, GM had knowledge of the common defect before selling the vehicles to the plaintiffs and class members.\nThe plaintiffs argue that the 2024 Chevrolet Traverse also had defective master brake cylinder assemblies with a missing internal cartridge seal in the eBoost Module. They say GM acknowledged the defect in a service update issued before the class vehicles were sold.\nThey claim the defect substantially impairs the vehicles\u2019 ability to provide safe and reliable transportation and renders the vehicles unmerchantable and worth less money at the time of sale or lease.\nNonetheless, GM failed to repair the defect under its new vehicle limited warranty within a reasonable period of time, the plaintiffs claim.\nThe complaint continues that \u201c[GM] did not issue any bulletin to its dealers regarding the defect and issued only a service update on Dec. 9, 2024, for the 2025 Buick Enclave vehicles only.\u201d The plaintiffs allege that GM has not issued a safety recall or instructed its dealerships to repair the defect despite the reported issues.\nThe plaintiffs are looking to represent anyone who purchased or leased a 2025 Chevrolet Traverse, 2025 GMC Acadia, 2025 Buick Enclave, 2025 Chevrolet Colorado or 2025 GMC Canyon vehicle in the states of Illinois, Kentucky, Michigan, Ohio or Texas.\nThey are suing for violations of state consumer laws and are seeking certification of the GM class action, damages, fees, costs and a jury trial.\nIn another recent GM class action, consumers accuse the company of hiding a defect in the oil coolers of its heavy-duty diesel pickups and refusing to cover the resulting engine damage under warranty.\nWhat do you think of the allegations made in this GM class action lawsuit? Let us know in the comments.\nThe plaintiffs are represented by Sergei Lemberg of Lemberg Law LLC.\nThe GM class action lawsuit is Fehrmann, et al. v. General Motors LLC, Case No. 2:26-cv-07669, in the U.S. District Court for the Eastern District of Pennsylvania.\nDon\u2019t Miss Out!\nCheck out our list of Class Action Lawsuits and Class Action Settlements you may qualify to join!\nRead About More Class Action Lawsuits & Class Action Settlements:"
+}

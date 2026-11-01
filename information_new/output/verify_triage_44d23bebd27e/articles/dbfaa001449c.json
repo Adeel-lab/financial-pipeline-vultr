@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "dbfaa001449c",
+  "bucket": "30d",
+  "score": 0.4815,
+  "label": {
+    "topic": "products_launch",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "ee7c0bca6125ae26",
+    "title": "An Electric Corvette Is Still Coming. GM Won\u2019t Say When",
+    "source": "The Drive",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZWtGSnZWOVJRQnQ1Q09QWERXenk2QVRQcENEMDVHcFBZVWlsWUFHU2pZNmhTamhVam9Jc2lCdER6U2luRUc4a0kyeUtfcUpOOW8xZ05xelFlQlJxUWo3cHJDdE92Z09oaHZOWWNWc2FBY3V4UFhuMGVZOEdKSnQ2dHVoVFNWUHg5LUUw?oc=5",
+    "published_at": "2026-10-14T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.thedrive.com/news/an-electric-corvette-is-still-coming-gm-wont-say-when",
+    "domain": "www.thedrive.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "An Electric Corvette Is Still Coming. GM Won\u2019t Say When",
+    "source_item_id": "ee7c0bca6125ae26",
+    "resolved_at": "2026-10-29T20:52:20.065765+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.thedrive.com/news/an-electric-corvette-is-still-coming-gm-wont-say-when",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.thedrive.com/news/an-electric-corvette-is-still-coming-gm-wont-say-when",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "An Electric Corvette Is Still Coming. GM Won't Say When",
+    "published_at_page": "2026-10-14T14:14:40-04:00",
+    "title_score": 1.0,
+    "text_chars": 2119,
+    "content_hash": "d78e405f6730f669",
+    "screenshot": "dbfaa001449c.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:02.208195+00:00"
+  },
+  "text": "Where is the electric Chevrolet Corvette that General Motors President Mark Reuss announced on CNBC in 2022? That\u2019s the question I\u2019ve been asking for years, and the answer is it\u2019s still coming, someday.\nOn the latest episode of The Drivecast, Tony Roma, who is now the Executive Chief Engineer for the Chevy Corvette and Performance Cars at General Motors, told The Drive, \u201cThe electric cars are the end game, so someday there will be an electric Corvette, and I think that\u2019s what Mark was trying to say.\u201d\nListen below to the moment that Roma addresses the electric Corvette.\nWhile Mark Reuss was clear in that announcement in 2022, which accompanied a teaser of the then upcoming Corvette E-Ray, no electric Corvette materialized in the following four years.\nWhen I went digging in 2025 asking Team Chevy where the electric Corvette was, I was met with dead air and then non-answer answers.\nWhen Reuss made the comments in 2022 it was implied, though not explicitly stated, that an electric Corvette would be part of this C8 generation. The C8 generation is now well into its later chapters with the arrival of the Grand Sport model. While the C9 is years off, we are much closer to it and the end of the C8 than the beginning of this mid-engine Corvette era.\nAcross the pond Porsche\u2019s new CEO Michael Leiters has been saying at every turn and opportunity that the iconic 911 will never go electric. Never is a long time, and quite the opposite of what Roma just said while backing Reuss\u2019 statement from 2022.\nFor now there are two electrified, though not electric, Corvettes. The Corvette E-Ray morphed into the Grand Sport X for 2027 and the ZR1X also features a hybrid powertrain with an electric motor sitting up in a cradle between the front wheels. Whether that\u2019s the end of the hybrid C8 Corvette story or not is yet to be seen.\nFor now, Roma was clear, \u201cYeah, someday we will announce something to the world, but yeah, I\u2019m not going to take anything away from Mark\u2019s statement, it stands on its own, and someday we will fully electrify Corvette. But not today.\u201d\nGot a story? Send us a line at tips@thedrive.com"
+}

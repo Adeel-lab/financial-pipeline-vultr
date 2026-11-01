@@ -1,0 +1,85 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "835026ade8a1",
+  "bucket": "30d",
+  "score": 0.4801,
+  "label": {
+    "topic": "autonomy_ai",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "c6ae921b1f74c761",
+    "title": "GM is turning to AI to slash vehicle development time. What it means",
+    "source": "Detroit Free Press",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPX00tOTVWbDM5Q09td1RTZzV2VEdjSWFucU1pUllEYzljRjBOZ2d5OXN1cDVJaVhkZi1KYlF1dS1TQmd2QW1LTWtQSHpDc1J0Zm1DYTBaYXE3aTBpUU4xYUNHSzlCYnVPMmtlUkp1UTBYem93UDE4eENlZUZ0QkZrUHRJRTBPc3ZRRGJoSktLbDlHN2w4WlFaZnQxaDVaenI1SDFsNnNlckdCV1k2bi12VWdDNXZqcXJ3WkxTODFNZm9zeThLbnJfMDhCTWNNSWtRWnV4MlBkSTV5Y0Y3?oc=5",
+    "published_at": "2026-10-21T18:38:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.freep.com/story/money/cars/general-motors/2026/10/21/general-motors-says-ai-will-help-it-slash-vehicle-development-time/92361557007/",
+    "domain": "www.freep.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM is turning to AI to slash vehicle development time. What it means",
+    "source_item_id": "c6ae921b1f74c761",
+    "resolved_at": "2026-10-30T16:32:41.606296+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://carbuzz.com/gm-forward-tech-ev-architecture-october-2026/",
+    "attempts": 2,
+    "attempt_details": [
+      {
+        "url": "https://www.freep.com/story/money/cars/general-motors/2026/10/21/general-motors-says-ai-will-help-it-slash-vehicle-development-time/92361557007/",
+        "status": "thin_content",
+        "http_status": 402,
+        "title_score": null
+      },
+      {
+        "url": "https://carbuzz.com/gm-forward-tech-ev-architecture-october-2026/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.5
+      }
+    ],
+    "title": "GM Bets Big On AI And New Batteries To Cut EV Development Time In Half",
+    "published_at_page": "2026-10-21T23:29:48Z",
+    "title_score": 0.5,
+    "text_chars": 4023,
+    "content_hash": "4b22af84bdc94abb",
+    "screenshot": "835026ade8a1.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:57.454262+00:00"
+  },
+  "text": "General Motors will launch a new battery-electric vehicle platform (pictured above), cut in half the time necessary to develop a new vehicle, and rewire future cars with one mega-controller with 40 times more computing power that works for everything from gas-powered to battery-electric vehicles. And that's just the begining.\nGM shared details on its future, including some aggressive technology plans, at the GM Forward event held today in New York City.\nLeveraging New Tech To Work Faster\nSpecifically, GM says it is leveraging advanced artificial intelligence and virtualization to cut in half the traditional four-to-five-year vehicle development timeframe. The auto industry has been talking for 20 years about shortening this development cycle because new smartphones come to market much faster, and because car technology is becoming outdated more quickly these days.\nBut what automakers didn't have 20 years ago was digital tools that now allow the design, engineering, and manufacturing teams to work concurrently and innovate faster, rather than each team waiting for the other to finish its work.\nGM says it can now move from concept sketch to production with unprecedented speed, while achieving scale across the vehicle lineup. For instance, the automaker plans to use lithium manganese-rich (LMR) battery chemistry for the new fourth-generation EVs, and it tested more than 300,000 battery designs virtually before building a single physical prototype. That meant the team went from a battery pack concept to formal program approval in just one month, a process that used to take much longer.\nHow Much Cheaper Could GM's EVs Become?\nGM chose LMR for its next battery chemistry because manganese is more readily available than nickel and cobalt \u2013 two key elements in the NMC batteries GM has been using for most of its current BEVs. While LMR might not deliver the longest range, GM says it represents \"exceptional range-to-cost ratio, improved performance, and enhanced durability,\" all while making BEVs more affordable.\nIt's too early for the automaker to specify sticker prices for the fourth-generation EVs, but redesigned drive units with smaller motors and power electronics reduce parts count by 40% compared to today, while freeing up space and cutting weight.\nPropulsion-Agnostic Electrical Architecture\nCentralized computing also factors into GM's future with a new electrical architecture that will underpin the next-generation EVs, but only after it debuts in 2028 on the all-electric Cadillac Escalade IQ. GM says this new architecture consolidates the function of several individual controllers into a single high-speed Central Compute Unit with enough power to run both sophisticated in-cabin AI and autonomous driving simultaneously. Software updates should be quick and easy.\nThis new propulsion-agnostic electrical architecture isn't just for EVs but will also be folded into high-volume gas-powered full-size SUVs, trucks, and three-row crossovers. GM promises the architecture will provide \"massive headroom for future growth\" and deliver 40 times more computing power, 30% less wiring mass, and up to 50% faster cellular connectivity than GM's previous systems.\nCarBuzz Insight \u2013 Why This Matters:\nCan a 118-year-old company proclaim its agility on the cutting edge of ground-breaking tech? Chief Product Officer Sterling Anderson, who left Silicon Valley for GM barely a year ago, doesn't see the automaker as too big to keep pace with new mobility concepts. Despite what critics might think, he says GM is moving fast and is leveraging the decades of valuable data it has collected while launching new vehicles.\nAll that data \"is a huge opportunity for us right now, unique from any other time in human history, frankly,\" Anderson says. \"Large companies have an opportunity to turn that into speed and turn that into progress that hasn't been possible before.\" Let's see how much fruit this technology bears for GM in the next few years.\n                        Source: General Motors"
+}

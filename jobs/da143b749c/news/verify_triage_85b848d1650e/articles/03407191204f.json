@@ -1,0 +1,87 @@
+{
+  "company": "Ford (ford motor company)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "ford motor company"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [],
+    "exclude": [
+      "tom\\ ford"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (ford motor company)",
+    "slug": "ford-ford-motor-company",
+    "query": "\"Ford\" (\"ford motor company\")",
+    "scope_text": "ford motor company",
+    "all_aliases": [
+      "Ford"
+    ]
+  },
+  "event_id": "03407191204f",
+  "bucket": "24h",
+  "score": 0.1208,
+  "label": {
+    "topic": "other",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 1,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "bda0c1a487e7c7b4",
+    "title": "Pick of the Day: 1957 Ford Fairlane 500 Sunliner Convertible",
+    "source": "The ClassicCars.com Journal",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZ3R4MnRWMFp2QmNpVjI3amJYUWZSeVRQdEhpR2R0UExpcDk4UTBkY1hKZC1GOFBlXzJpOFBBR3F0cWhWYmh2VVJ4NGFsUEdoRnlXRWlsTWdhTmZRa1BNS1NybkJMOEFGczRET00tOTFrVk9CTmp3T2x5bEUwSjg5MEppcHVYYWpveFFmTTBxVnV5VEdMNG5yQ0g5N1JhZ0x5d2plekdR?oc=5",
+    "published_at": "2026-11-01T08:59:34+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://journal.classiccars.com/2026/11/01/pick-of-the-day-1957-ford-fairlane-500-sunliner-convertible/",
+    "domain": "journal.classiccars.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Pick of the Day: 1957 Ford Fairlane 500 Sunliner Convertible",
+    "source_item_id": "bda0c1a487e7c7b4",
+    "resolved_at": "2026-11-01T15:28:37.522228+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://journal.classiccars.com/2026/11/01/pick-of-the-day-1957-ford-fairlane-500-sunliner-convertible/",
+    "attempts": 1,
+    "final_url": "https://journal.classiccars.com/2026/11/01/pick-of-the-day-1957-ford-fairlane-500-sunliner-convertible/",
+    "attempt_details": [
+      {
+        "url": "https://journal.classiccars.com/2026/11/01/pick-of-the-day-1957-ford-fairlane-500-sunliner-convertible/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0,
+        "final_url": "https://journal.classiccars.com/2026/11/01/pick-of-the-day-1957-ford-fairlane-500-sunliner-convertible/"
+      }
+    ],
+    "title": "Pick of the Day: 1957 Ford Fairlane 500 Sunliner Convertible | The ClassicCars.com Journal",
+    "published_at_page": "2026-11-01T09:00:00+00:00",
+    "title_score": 1.0,
+    "text_chars": 2803,
+    "content_hash": "941c2cfe20c55157",
+    "screenshot": "03407191204f.png",
+    "location_in_text": true,
+    "location_terms_found": [
+      "ford motor company"
+    ],
+    "retrieved_at": "2026-11-01T15:30:35.109695+00:00"
+  },
+  "text": "Every automotive enthusiast has a very personal definition of what reflects his or her “dream machine.” And to someone out there, a fully-restored Ford convertible with plentiful power, sexy lines, and modern creature comforts is bound to present a compelling opportunity. The Pick of the Day is a 1957 Ford Fairlane 500 Sunliner Convertible listed for sale on ClassicCars.com by a private seller in Minot, North Dakota.\n“Absolutely stunning,” the listing says. From front to back, inside and out, the car (which was lovingly dubbed “Dream Baby” by its prior owner) was reimagined as a modernized interpretation of Ford’s crown jewel from the ‘50s. The complete build took 11 years to come to fruition and required the collaborative effort of multiple resources to bring together. Key to the process were Master Restorations LLC in Minot and Dale’s Auto Restoration and Performance in Bismarck. Every nut, bolt, and stitch was perfected.\nThe Fairlane 500 Sunliner was a huge point of pride for Ford Motor Company in 1957. Advertisements said, “Step to the head of the class in the New Kind of Ford.” It went on to say, “The ’57 Ford has a new kind of solid balance, the firm low-center road-holding feel that Americans want in a car, the kind of feel that used to be the mark only of the finest of fine cars. Every detail of the New Kind of Ford is a Mark of Tomorrow.”\nThe body rides on a newer chassis from Scott’s Hotrods, with exterior features including Ruby Red paint, a newer power-retractable top, dual antennas, dual side mirrors, fender skirts, and wide whitewall tires. The paint finish has been ceramic-coated for long-lasting protection — not that this parade-ready ragtop is likely to spend much time in inclement weather.\nThe cabin was professionally reupholstered in two-tone burgundy and ivory, complete with bucket seats, center console, power steering, power disc brakes, Dakota Digital gauges, cruise control, air conditioning, and retro-look audio system.\nThe heart of 2015 Ford Mustang GT resides under the hood, blending old and new in seamless fashion. The 5.0-liter DOHC Coyote V-8 was rated at 435 horsepower and 400 lb-ft of torque when new, providing more than enough muscle to move this classic Fairlane with confidence and authority. It features a forged steel crankshaft, aluminum block, composite intake manifold, and 80mm electronic throttle body. Just 1,276 miles have been added to the odometer since the build was completed.\nIf this 1957 Ford Fairlane 500 Sunliner captures your heart and soul like it did for the original builder, now is your opportunity to give Dream Baby a new home. The asking price is $168,000 or best offer, and the car will come with extensive restoration documentation to back it up.\nClick here to view this Pick of the Day on ClassicCars.com"
+}

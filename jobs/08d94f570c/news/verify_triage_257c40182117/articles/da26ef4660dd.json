@@ -1,0 +1,91 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "da26ef4660dd",
+  "bucket": "30d",
+  "score": 0.4882,
+  "label": {
+    "topic": "macro_competition",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "f6b54c2282558455",
+    "title": "Hybrid-heavy Toyota closes in on GM\u2019s U.S. sales lead",
+    "source": "Automotive News",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1iMmJWMExYNWFKZThPS3RyQ2Z6dHY0LWdQRHpYNExBTzFaN2ZpTEs0T1RqaVFXVnlSeVQ1YlRyNUFTSEV0TlN4NG94RUhkTUdHTEoyT0gyUXExaXJrT0pMTkhoeU1HNnhSRnN5eFZOOA?oc=5",
+    "published_at": "2026-10-08T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.autonews.com/general-motors/an-gm-sales-race-1008/",
+    "domain": "www.autonews.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Hybrid-heavy Toyota closes in on GM\u2019s U.S. sales lead",
+    "source_item_id": "f6b54c2282558455",
+    "resolved_at": "2026-10-30T16:32:41.606286+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://kalkinemedia.com/us/stocks/automobile/why-are-general-motors-nysegm-sales-slipping-as-electric-demand-drops",
+    "attempts": 3,
+    "attempt_details": [
+      {
+        "url": "https://www.autonews.com/general-motors/an-gm-sales-race-1008/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://www.dbusiness.com/daily-news/stellantis-sales-tick-up-3-in-q3-gm-sales-down-6-ford-sales-slip-6-6/",
+        "status": "blocked",
+        "http_status": 403,
+        "title_score": null
+      },
+      {
+        "url": "https://kalkinemedia.com/us/stocks/automobile/why-are-general-motors-nysegm-sales-slipping-as-electric-demand-drops",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.833
+      }
+    ],
+    "title": "Why Are General Motors (NYSE:GM) Sales Slipping as Electric Demand Drops?",
+    "published_at_page": "2026-10-06T07:06:00-07:00",
+    "title_score": 0.833,
+    "text_chars": 6292,
+    "content_hash": "5be7417982981a0d",
+    "screenshot": "da26ef4660dd.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:34:02.651165+00:00"
+  },
+  "text": "Highlights\n- General Motors (NYSE:GM) Consumer Cyclical General Motors Company (NYSE:GM) 87.00 USD +1.280 1.493% Last Updated at: 2026-10-30T15:24:00Z quarterly sales declined as electric demand cooled sharply.\n- Affordable small sport utility vehicles and Buick moved higher.\n- Full financial results are expected later this month.\nGeneral Motors (NYSE:GM) Consumer Cyclical General Motors Company (NYSE:GM) 87.00 USD +1.280 1.493% Last Updated at: 2026-10-30T15:24:00Z reported a decline in third-quarter American sales as demand for electric vehicles dropped sharply following the end of the federal credit, even as sales of affordable small sport utility vehicles and the Buick brand moved higher. The report, released at the start of October, showed total deliveries falling by a mid-single-digit percentage from the same quarter a year earlier, when buyers had rushed to lock in incentives before they disappeared.\nThe result landed amid a week of quarterly updates from Detroit and beyond, each highlighting how differently manufacturers are coping with a market that has moved away from heavy incentives. Toyota and Hyundai gained ground in the same period, while General Motors, the largest domestic seller, saw its share trimmed even though its gasoline-powered lineup continued to perform well.\nSales Report Details\nThe weakest pocket was electric. The Chevrolet Equinox EV, which had been among the best-selling non-Tesla electric models a year earlier, saw volume collapse to a sliver of its prior level. The Blazer EV and the GMC Hummer EV also fell steeply, and several Cadillac electric models lost momentum, dragging the luxury brand to a double-digit decline.\nOffsetting that weakness were small crossovers. The Chevrolet Trax, the Trailblazer and the Buick Envista all posted gains, and the combined category of affordable small sport utility vehicles climbed by more than a quarter. Buick as a whole rose, a notable result for a brand that has spent years repositioning itself around imported compact models and value-oriented trims.\nWhy Electric Demand Dropped\nElectric vehicles lost their federal credit at the end of last September, which removed thousands of dollars in savings from the cost equation. The prior-year quarter was inflated by buyers who accelerated decisions to claim the credit, which makes the comparison unusually steep. The year-over-year decline therefore overstates the underlying weakness, though sequential trends also point to a cooler market.\nSector Background\nThe American auto industry is in a period of recalibration, with manufacturers adjusting electric ambitions to match what customers are actually choosing. Automobile Stocks have moved with those developments, as market participants weigh how quickly electric capacity should be trimmed and whether hybrid programs can fill the gap.\nCompany Operations\nThe business is organized around its North American automotive operations, a financing arm and an autonomous driving unit that has been scaled back from earlier plans. Chevrolet, Buick, GMC and Cadillac make up the American brand portfolio, and full-size trucks and sport utility vehicles produce the lion's share of the earnings generated by those brands.\nTariffs and Cost Pressures\nTariffs have been a persistent headwind. The company imports a meaningful share of vehicles and components from Korea and Mexico, and levies on those flows add to costs that must be absorbed or passed through. Management has said it is shifting some production to American plants and working with suppliers to localize parts, but those changes take time.\nCompetitive Landscape\nCompetition is fierce across segments. Ford is a close rival in trucks and has leaned on hybrids, while Toyota continues to benefit from hybrid dominance and a reputation for reliability. Hyundai and Kia have been gaining with value-focused offerings and a wide spread of electrified models, and Tesla remains the electric volume leader.\nAutonomy and Software Ambitions\nThe company has reorganized its autonomous efforts, shifting focus from a standalone robotaxi service toward driver-assistance systems in personal vehicles. Its hands-free Super Cruise feature is already offered across much of the lineup, and management has talked about extending it to more roads and adding eyes-off functionality in coming years.\nMarket Environment\nEquity markets are trading near record territory, and General Motors sits within the S&P 500. Its shares have been supported by large buyback programs and a dividend, and the stock tends to react to tariff news, interest rate expectations and updates on electric vehicle strategy.\nRecent Developments\nBeyond sales, the company has announced moves to repurpose battery capacity for energy storage applications and to shift some electric vehicle production lines toward gasoline or hybrid models. These steps recognize that factories must remain busy and that flexibility is more valuable than rigid commitments to a single technology.\nOperational Focus Areas\nManagement has laid out priorities that include cost reductions, quality improvements and capital discipline. The company wants to reduce structural costs through simpler vehicle architectures and fewer variants, while maintaining pricing power on trucks and sport utility vehicles. Progress on those goals will be on display when full results are released later this month.\nIndustry Challenges\nThe industry faces a challenging mix. Electric demand is unsettled, tariffs are unpredictable, labor costs are elevated and customers are more sensitive to price. Regulatory shifts, including relaxed fuel economy rules and changes to emissions credit markets, have altered the compliance landscape in ways that benefit gasoline-focused manufacturers but complicate long-term electric planning.\nBroader Market Relevance\nGeneral Motors is one of the most important employers and exporters in American manufacturing, so its sales trends ripple widely. Suppliers from Michigan to Tennessee, dealerships across the country and communities that host assembly plants all follow its quarterly figures. A softening in electric demand has already led to temporary layoffs and shift reductions at certain facilities.\nThis content is for general information only and is not financial advice."
+}

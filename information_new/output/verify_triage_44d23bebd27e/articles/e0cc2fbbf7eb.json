@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "e0cc2fbbf7eb",
+  "bucket": "24h",
+  "score": 0.4145,
+  "label": {
+    "topic": "labor_org",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 3,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "ff62871f3815d8c0",
+    "title": "GM Leaves NYSE for Nasdaq After 115 Years: Could Nasdaq-100 ETFs Be Next?",
+    "source": "Coinpaper",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT085QUZSQnFCWU1zU0ZybDdfZmdCMXhuS1hrWlZKOEVib1lxWjduTGVzelhaRHh6RFROMzlXZzdzTTNyZTJINUFwYW83cmhVUjNUS3pCelBtZ25rTHpNeTFyMGtqZS1uY3F0TVBGX3Y2X01VelY3NDB2emFGSWtuTDlBUXNIT0FoWmxvc21TLWpsTnFIRFFrZmpqR2p6Q3JEWkE?oc=5",
+    "published_at": "2026-10-28T13:43:43+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://coinpaper.com/38009/gm-leaves-nyse-for-nasdaq-after-115-years-could-nasdaq-100-et-fs-be-next",
+    "domain": "coinpaper.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM Leaves NYSE for Nasdaq After 115 Years: Could Nasdaq-100 ETFs Be Next?",
+    "source_item_id": "ff62871f3815d8c0",
+    "resolved_at": "2026-10-29T20:52:20.065840+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://coinpaper.com/38009/gm-leaves-nyse-for-nasdaq-after-115-years-could-nasdaq-100-et-fs-be-next",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://coinpaper.com/38009/gm-leaves-nyse-for-nasdaq-after-115-years-could-nasdaq-100-et-fs-be-next",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM Leaves NYSE for Nasdaq After 115 Years: Could Nasdaq-100 ETFs Be Next?",
+    "published_at_page": "2026-10-28T13:43:30.377Z",
+    "title_score": 1.0,
+    "text_chars": 3636,
+    "content_hash": "94fcd9e3a68c5f39",
+    "screenshot": "e0cc2fbbf7eb.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:55:48.861759+00:00"
+  },
+  "text": "Key takeaways\n- General Motors will begin Nasdaq trading November 17\n- Nasdaq listing creates potential eligibility for Nasdaq-100 inclusion\n- ETF buying depends on index selection, not relocation\nGeneral Motors is leaving the New York Stock Exchange for Nasdaq, ending a listing relationship that began in 1911 and potentially opening the door to one of Wall Street's most closely followed stock indexes.\nThe Detroit automaker announced on October 27 that its shares will trade on the NYSE through November 16 before moving to Nasdaq on November 17, retaining the GM ticker.\nAccording to the company's official announcement, the transfer provides eligibility for possible inclusion in the Nasdaq-100, an index tracked by major exchange-traded funds including Invesco QQQ.\nGM Moves to Nasdaq as Its Technology Business Expands\nGeneral Motors first joined the NYSE in 1911, although its listing history was interrupted by the company's 2009 bankruptcy. The reorganized automaker returned to the exchange following its 2010 IPO.\nThe new move reflects management's growing emphasis on software, autonomous driving and connected vehicles.\nGM recently disclosed that quarterly OnStar revenue exceeded $800 million, up 15% year over year, while Super Cruise revenue increased 60%, according to the Financial Times.\nThe company is also investing in automated-driving technology and software subscriptions, increasingly competing for investor attention beyond traditional vehicle manufacturing.\nIts latest quarterly earnings demonstrated the financial scale of that transformation. GM generated $50 billion in revenue and $4.11 billion in adjusted operating profit while authorizing a $20 billion share-repurchase program.\nHowever, the Nasdaq move does not change GM's underlying business, outstanding shares or ownership structure.\nCould GM Join the Nasdaq-100 and Attract QQQ Buying?\nThe more interesting financial consequence involves index eligibility.\nThe Nasdaq-100 tracks 100 of the largest eligible non-financial companies listed on Nasdaq, using a modified market-capitalization weighting methodology.\nGM's move satisfies the exchange-listing requirement once completed, but membership is not automatic. Nasdaq also considers company size, liquidity, eligibility rules and its scheduled selection process.\nAs Coinpaper's explanation of ETF weights details, passive fund managers generally follow an index provider's methodology rather than independently choosing which companies deserve inclusion.\nThe distinction matters for investors in QQQ and QQQM, two funds designed to track the Nasdaq-100.\nIf Nasdaq eventually adds GM, funds tracking the benchmark would generally need to adjust their portfolios to reflect its assigned weight.\nWhy Nasdaq-100 Inclusion Is Far From Guaranteed\nNasdaq updated its methodology in May 2026, introducing faster entry opportunities for exceptionally large companies and revising how certain securities are weighted.\nThose changes helped reshape index inclusion for newly listed businesses.\nFor example, SpaceX's Nasdaq-100 entry showed how index additions can generate buying requirements for passive funds without guaranteeing higher share prices.\nThe index's growing influence extends beyond conventional ETFs. Janus Henderson recently launched a tokenized Nasdaq-100 fund, demonstrating expanding demand for products linked to the benchmark.\nYet index membership depends on more than choosing Nasdaq as a trading venue.\nThe distinction between index funds and ETFs also matters: both can follow benchmarks, but neither creates guaranteed buying pressure merely because a company changes exchanges."
+}

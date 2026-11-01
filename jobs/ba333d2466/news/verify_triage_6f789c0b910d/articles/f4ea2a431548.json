@@ -1,0 +1,86 @@
+{
+  "company": "Ford (Hungary)",
+  "profile": {
+    "name": "Ford",
+    "scope": "local",
+    "locations": [
+      "Hungary"
+    ],
+    "tickers": [
+      "F"
+    ],
+    "aliases": [
+      "Ford vs BMW"
+    ],
+    "exclude": [
+      "Ford\\ US"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "Ford (Hungary)",
+    "slug": "ford-hungary",
+    "query": "\"Ford\" (Hungary)",
+    "scope_text": "Hungary",
+    "all_aliases": [
+      "Ford",
+      "Ford vs BMW"
+    ]
+  },
+  "event_id": "f4ea2a431548",
+  "bucket": "30d",
+  "score": 0.0103,
+  "label": {
+    "topic": "other",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 0,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 1,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "126bef76a5e1c380",
+    "title": "Ji\u0159\u00ed \u0160t\u011bpni\u010dka, Czech voice of Harrison Ford and theater veteran, dies at 79",
+    "source": "Expats.cz",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWlA1M1ZHQmNUQjJ4dDdNMnpZN25Oc3B3VnRwa0lpY2U2NjNvV0FrM2JLVzVaUjRaMFktdjYyUUJtS1p0WVg4cFVEWTRkY2tUNU1vR21DYlJaRkJ3OEpjNGkxX2RzVVVyRkQwTUVnZm1fTEV0QVpTN0d6VHA1TENONVNfN0g3QmxKUjVnTnBncWtid0l3UUtleVJrRXRqMWV1QWdjVUxFOW5lR2Vkdzlyb0JnbEJ0Zw?oc=5",
+    "published_at": "2026-10-11T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.expats.cz/czech-news/article/jiri-stepnicka-czech-voice-of-harrison-ford-and-theater-veteran-dies-at-79",
+    "domain": "www.expats.cz",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Ji\u0159\u00ed \u0160t\u011bpni\u010dka, Czech voice of Harrison Ford and theater veteran, dies at 79",
+    "source_item_id": "126bef76a5e1c380",
+    "resolved_at": "2026-10-30T19:49:11.031134+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.expats.cz/czech-news/article/jiri-stepnicka-czech-voice-of-harrison-ford-and-theater-veteran-dies-at-79",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.expats.cz/czech-news/article/jiri-stepnicka-czech-voice-of-harrison-ford-and-theater-veteran-dies-at-79",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "Ji\u0159\u00ed \u0160t\u011bpni\u010dka, Czech voice of Harrison Ford and theater veteran, dies at 79 - Prague, Czech Republic",
+    "published_at_page": "2026-10-11T19:38:00+02:00",
+    "title_score": 1.0,
+    "text_chars": 2747,
+    "content_hash": "f03353b5935ddbde",
+    "screenshot": "f4ea2a431548.png",
+    "location_in_text": false,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T19:49:20.813382+00:00"
+  },
+  "text": "Ji\u0159\u00ed \u0160t\u011bpni\u010dka, the Czech actor whose voice became closely associated with Harrison Ford and whose stage career spanned five decades at Prague\u2019s National Theatre, died Sunday, Oct. 11. He was 79.\nThe National Theatre announced his death, with spokesman Tom\u00e1\u0161 Stan\u011bk telling \u010cTK that \u0160t\u011bpni\u010dka died in a medical facility. No cause of death was disclosed.\nColleagues remembered an unusually versatile performer whose work extended across theater, film, television, radio and dubbing. For many Czech viewers, his voice was as familiar as his face.\nA voice inseparable from Hollywood\u2019s leading men\nActors\u2019 Association President Ond\u0159ej Kepka described \u0160t\u011bpni\u010dka as \u201cthe Czech Harrison Ford,\u201d saying his distinctive delivery had become inseparable from Ford\u2019s characters for local audiences.\n\u201cHe is one of the greatest icons of dubbing,\u201d Kepka told \u010cTK.\n\u0160t\u011bpni\u010dka also voiced Michael Douglas, Steven Seagal, Jeff Bridges and G\u00e9rard Depardieu. His work helped shape how Czech-speaking audiences experienced some of Hollywood\u2019s most recognizable performers.\nIn 2002, he received the Franti\u0161ek Filipovsk\u00fd Award, a leading Czech dubbing honor, for voicing Mel Gibson in What Women Want. The Actors\u2019 Association recognized his longstanding mastery of dubbing in 2023, followed by the Life of an Artist Foundation\u2019s Master Prix in 2024.\nKepka also recalled their collaboration at Czech Radio in the 1990s, describing \u0160t\u011bpni\u010dka as a phenomenal radio actor.\nBorn in London on April 16, 1947, \u0160t\u011bpni\u010dka lived and built his career in Czechoslovakia and later Czechia. Before joining the National Theatre in 1975, he worked at the Klicpera Theatre in Hradec Kr\u00e1lov\u00e9 and the State Theatre in Brno.\nFive decades on the national stage\nAt the National Theatre, \u0160t\u011bpni\u010dka played roles ranging from Petruchio in The Taming of the Shrew and Shylock in The Merchant of Venice to the Duke of Cornwall in King Lear.\nHis repertoire also included major Czech works, among them Mary\u0161a, The Strakonice Bagpiper and Our Swaggerers. He won the 2010 Th\u00e1lie Award, one of Czechia\u2019s principal performing arts honors, for playing Raymond in Blackbird.\nNational Theatre Director Jan Burian remembered him as an outstanding actor and friend who found happiness in theater and deeply valued his family.\n\u0160t\u011bpni\u010dka first appeared on film at 14 in Ta\u017en\u00ed pt\u00e1ci. Later audiences knew him from David Ond\u0159\u00ed\u010dek\u2019s In the Shadow, in which he played a secret police colonel, and television series including Vypr\u00e1v\u011bj and Terapie.\nIn a 2017 interview marking his 70th birthday, \u0160t\u011bpni\u010dka recalled lines he had written as a schoolboy about his love of red wine, women and, above all, sunshine\u2014which gave wine its flavor, women their beauty and him life. That, he said, could serve as his life\u2019s credo."
+}

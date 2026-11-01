@@ -1,0 +1,1246 @@
+{
+  "stage": "swot_draft",
+  "generated_at": "2026-10-30T16:49:27.161699+00:00",
+  "status": "proposals_need_review",
+  "objective": "Assess expansion readiness",
+  "prompt_version": "swot-v1.1",
+  "sentiment_source": {
+    "file": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\news\\sentiment_triage_257c40182117\\company_sentiment.json",
+    "sha256": "0f7c3c87ef797e8987742794f6e56a38771b81375ac6d4e87002f283158a9763"
+  },
+  "llm": {
+    "enabled": true,
+    "model": "openai/gpt-oss-120b",
+    "chunk": 8,
+    "errors": []
+  },
+  "companies": {
+    "General Motors": {
+      "profile": {
+        "name": "General Motors",
+        "scope": "global",
+        "locations": [],
+        "tickers": [
+          "GM"
+        ],
+        "aliases": [],
+        "exclude": [],
+        "extra_queries": [],
+        "strict_location": false,
+        "edition": "hl=en-US&gl=US&ceid=US:en",
+        "scope_explicit": false,
+        "label": "General Motors",
+        "slug": "general-motors",
+        "query": "\"General Motors\"",
+        "scope_text": "global (whole company)",
+        "all_aliases": [
+          "General Motors"
+        ]
+      },
+      "scope": "global (whole company)",
+      "coverage": {
+        "events_selected": 40,
+        "events_with_full_text": 33,
+        "events_headline_only": 7
+      },
+      "financial": {
+        "file": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\finance\\financial_general-motors_20261030T164926\\approved_financials.json",
+        "company_in_file": "General Motors",
+        "frequency": "annual",
+        "periods": 6,
+        "latest_period": "2025-12-31",
+        "absolute": 9,
+        "historical": 11,
+        "relative": 0,
+        "unavailable": [
+          "debt_to_equity",
+          "interest_coverage"
+        ],
+        "partial": []
+      },
+      "assessments": {
+        "absolute": true,
+        "historical": true,
+        "relative": false,
+        "strategic_significance": true
+      },
+      "story_grouping": "llm",
+      "items": [
+        {
+          "id": "story:e1cf0fda42",
+          "kind": "news",
+          "title": "General Motors' 2026 sales down from last year",
+          "summary": "GM's EV sales plummeted and overall Q3 sales fell, signaling a negative global outlook.",
+          "sentiment": -0.8,
+          "bucket": "30d",
+          "weight": 0.726,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "0e69013a5fa4"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.carscoops.com/2026/10/gms-electric-vehicle-sales-fell-off-a-cliff-last-quarter/",
+              "content_hash": "12843a4649528dfc",
+              "quote": "In total, GM ended the third quarter having sold 670,974 vehicles, 5.5% fewer than the 710,347 it sold in Q3 2025.",
+              "source": "The Detroit News",
+              "published_at": "2026-10-01T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 0.9,
+            "statement": "GM's EV sales plummeted and overall Q3 sales fell, signaling a negative global outlook.",
+            "why": "Internal sales performance declined.",
+            "origin": "llm"
+          },
+          "notes": [
+            "statement had missing or unsupported numbers; replaced by the evidence summary"
+          ],
+          "status": "proposed"
+        },
+        {
+          "id": "story:e62a305478",
+          "kind": "news",
+          "title": "GM says hybrid vehicles are coming: 'We're not tone deaf to our customers'",
+          "summary": "GM plans to add hybrids to its U.S. lineup, addressing growing demand and improving its global outlook.",
+          "sentiment": 0.4,
+          "bucket": "30d",
+          "weight": 0.6495,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "ba3e11202a88"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.cnbc.com/2026/10/05/gm-hybrid-vehicles.html",
+              "content_hash": "0da0ee97bb7a842c",
+              "quote": "“It’s fair to say that [hybrids are] part of the plan,” Anderson, a 35-year GM veteran, told CNBC during an interview.",
+              "source": "CNBC",
+              "published_at": "2026-10-05T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "opportunity",
+            "not_swot": false,
+            "basis": "forecast",
+            "materiality": 3,
+            "confidence": 0.9,
+            "statement": "GM plans to add hybrid models to its U.S. lineup, responding to growing customer demand.",
+            "why": "External market demand creates growth potential.",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:c9f41b97c5",
+          "kind": "news",
+          "title": "EXCLUSIVE: GM cancels deal with new US rare-earth magnet plant, documents say",
+          "summary": "GM cancels key magnet supply deal, reflecting a broader EV retreat and $6 bn charge, worsening its global EV outlook.",
+          "sentiment": -0.7,
+          "bucket": "7d",
+          "weight": 0.6,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "3d6ec726f3f9"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.cbtnews.com/gm-cancels-magnet-supply/",
+              "content_hash": "b66ff1cc54e71291",
+              "quote": "The termination follows GM’s broader retreat from EV investments, as the automaker scaled back its EV plans after federal incentives and tax breaks that supported the market disappeared and took a $6 billion charge in January 2026 to unwind some of those investments.",
+              "source": "Reuters",
+              "published_at": "2026-10-22T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 1.0,
+            "statement": "GM cancels key magnet supply deal, reflecting a broader EV retreat and $6 bn charge, worsening its global EV outlook.",
+            "why": "internal strategic retreat and large charge",
+            "origin": "llm"
+          },
+          "notes": [
+            "statement had missing or unsupported numbers; replaced by the evidence summary"
+          ],
+          "status": "proposed"
+        },
+        {
+          "id": "story:98c88ccf75",
+          "kind": "news",
+          "title": "AG Mayes: General Motors to pay $220M for illegal sale of customer driving behavior to insurance companies",
+          "summary": "GM to pay $220 million settlement and set aside $500 million over driver‑data privacy violations, hurting reputation and finances.",
+          "sentiment": -0.59,
+          "bucket": "24h",
+          "weight": 0.3668,
+          "n_articles": 5,
+          "n_domains": 5,
+          "member_event_ids": [
+            "42e27957ec3c",
+            "46f9d532a083",
+            "5419484f69d5",
+            "0269c658341d",
+            "764e8b34a037"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.malaymail.com/news/money/2026/10/30/general-motors-to-pay-us220m-over-sale-of-drivers-data-used-to-raise-insurance-rates/241249",
+              "content_hash": "716c58032d4a573b",
+              "quote": "General Motors will pay US$220 million to settle litigation over the sale of drivers’ driving data that was then used to raise insurance rates, New York’s attorney general said today.",
+              "source": "12News",
+              "published_at": "2026-10-29T21:45:00+00:00"
+            },
+            {
+              "type": "article",
+              "url": "https://www.yahoo.com/news/us/articles/vermont-ag-announces-settlement-general-195420237.html",
+              "content_hash": "22d065578c2a9851",
+              "quote": "On Thursday, the settlement was signed, which orders General Motors to pay a total of $220 million to settle their allegations.",
+              "source": "Yahoo",
+              "published_at": "2026-10-29T19:54:20+00:00"
+            },
+            {
+              "type": "article",
+              "url": "https://www.wabi.tv/2026/10/29/maine-receive-nearly-3m-multi-state-data-privacy-settlement-with-general-motors/",
+              "content_hash": "9eefab6ffec4e391",
+              "quote": "General Motors has agreed to pay $220 million to states following a lawsuit alleging the company mishandled customer data.",
+              "source": "WABI",
+              "published_at": "2026-10-29T20:11:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 1.0,
+            "statement": "GM to pay $220 million settlement and set aside $500 million over driver‑data privacy violations, hurting reputation and finances.",
+            "why": "internal legal and financial liability",
+            "origin": "llm"
+          },
+          "notes": [
+            "statement had missing or unsupported numbers; replaced by the evidence summary"
+          ],
+          "status": "proposed"
+        },
+        {
+          "id": "fin:quick_ratio",
+          "kind": "financial",
+          "metric": "quick_ratio",
+          "title": "Quick ratio",
+          "statement_rule": "Quick ratio is 1.01x as of 2025-12-31; strength against a generic threshold (0.70x weak / 1.00x strong); trend stable",
+          "latest": 1.010263332690536,
+          "as_of": "2025-12-31",
+          "absolute_band": "strength",
+          "trend": "stable",
+          "relative": null,
+          "partial": false,
+          "history": {
+            "2025-12-31": 1.010263332690536,
+            "2024-12-31": 0.9762738274554615,
+            "2023-12-31": 0.9016570490761819,
+            "2022-12-31": 0.9332258453708883,
+            "2021-12-31": 0.9288651757875497,
+            "2020-12-31": 0.8846076836440996
+          },
+          "rule_quadrant": "strength",
+          "evidence": [
+            {
+              "type": "financial",
+              "file": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\finance\\financial_general-motors_20261030T164926\\approved_financials.json",
+              "file_sha256": "2d2cd3e87d5e9de684644b53e169e04a83593b24e3785dcbc3038de801b7a4bb",
+              "approved_at": "2026-10-30T16:49:26.849648+00:00",
+              "source_files": {
+                "balance": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\balance.csv",
+                  "sha256": "e61a63f14559276876e6861bdb9e5b193004a9fc8cae40890b21f6755d02f0a4",
+                  "rows": 32,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                },
+                "income": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\income.csv",
+                  "sha256": "8611479f1bdd2edd66af1a4fdd67427cca04cd0323ce420e26accc4f473d063c",
+                  "rows": 27,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                }
+              },
+              "metric": "quick_ratio",
+              "definition": "(current assets - inventory) / current liabilities"
+            }
+          ],
+          "proposal": {
+            "quadrant": "strength",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 1.0,
+            "statement": "Quick ratio is 1.01x as of 2025-12-31; strength against a generic threshold (0.70x weak / 1.00x strong); trend stable",
+            "why": "Liquidity ratio is internal financial health",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "fin:debt_ratio",
+          "kind": "financial",
+          "metric": "debt_ratio",
+          "title": "Debt ratio",
+          "statement_rule": "Debt ratio is 77.5% as of 2025-12-31; weakness against a generic threshold (70.0% weak / 50.0% strong); trend stable",
+          "latest": 0.7754298147068444,
+          "as_of": "2025-12-31",
+          "absolute_band": "weakness",
+          "trend": "stable",
+          "relative": null,
+          "partial": false,
+          "history": {
+            "2025-12-31": 0.7754298147068444,
+            "2024-12-31": 0.765549880076208,
+            "2023-12-31": 0.7498498520493364,
+            "2022-12-31": 0.7262315508811266,
+            "2021-12-31": 0.731057788965258,
+            "2020-12-31": 0.7887828771142121
+          },
+          "rule_quadrant": "weakness",
+          "evidence": [
+            {
+              "type": "financial",
+              "file": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\finance\\financial_general-motors_20261030T164926\\approved_financials.json",
+              "file_sha256": "2d2cd3e87d5e9de684644b53e169e04a83593b24e3785dcbc3038de801b7a4bb",
+              "approved_at": "2026-10-30T16:49:26.849648+00:00",
+              "source_files": {
+                "balance": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\balance.csv",
+                  "sha256": "e61a63f14559276876e6861bdb9e5b193004a9fc8cae40890b21f6755d02f0a4",
+                  "rows": 32,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                },
+                "income": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\income.csv",
+                  "sha256": "8611479f1bdd2edd66af1a4fdd67427cca04cd0323ce420e26accc4f473d063c",
+                  "rows": 27,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                }
+              },
+              "metric": "debt_ratio",
+              "definition": "total liabilities / total assets"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 1.0,
+            "statement": "Debt ratio is 77.5% as of 2025-12-31; weakness against a generic threshold (70.0% weak / 50.0% strong); trend stable",
+            "why": "Leverage ratio reflects internal debt burden",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "fin:equity_ratio",
+          "kind": "financial",
+          "metric": "equity_ratio",
+          "title": "Equity ratio",
+          "statement_rule": "Equity ratio is 22.5% as of 2025-12-31; weakness against a generic threshold (25.0% weak / 40.0% strong); trend deteriorating",
+          "latest": 0.22457018529315567,
+          "as_of": "2025-12-31",
+          "absolute_band": "weakness",
+          "trend": "deteriorating",
+          "relative": null,
+          "partial": false,
+          "history": {
+            "2025-12-31": 0.22457018529315567,
+            "2024-12-31": 0.23445011992379208,
+            "2023-12-31": 0.2497180148243635,
+            "2022-12-31": 0.27241257854012885,
+            "2021-12-31": 0.26894221103474203,
+            "2020-12-31": 0.2112171228857879
+          },
+          "rule_quadrant": "weakness",
+          "evidence": [
+            {
+              "type": "financial",
+              "file": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\finance\\financial_general-motors_20261030T164926\\approved_financials.json",
+              "file_sha256": "2d2cd3e87d5e9de684644b53e169e04a83593b24e3785dcbc3038de801b7a4bb",
+              "approved_at": "2026-10-30T16:49:26.849648+00:00",
+              "source_files": {
+                "balance": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\balance.csv",
+                  "sha256": "e61a63f14559276876e6861bdb9e5b193004a9fc8cae40890b21f6755d02f0a4",
+                  "rows": 32,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                },
+                "income": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\income.csv",
+                  "sha256": "8611479f1bdd2edd66af1a4fdd67427cca04cd0323ce420e26accc4f473d063c",
+                  "rows": 27,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                }
+              },
+              "metric": "equity_ratio",
+              "definition": "equity / total assets"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 1.0,
+            "statement": "Equity ratio is 22.5% as of 2025-12-31; weakness against a generic threshold (25.0% weak / 40.0% strong); trend deteriorating",
+            "why": "Equity proportion shows internal capital structure weakness",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "fin:gross_margin",
+          "kind": "financial",
+          "metric": "gross_margin",
+          "title": "Gross margin",
+          "statement_rule": "Gross margin is 14.0% as of 2025-12-31; trend deteriorating",
+          "latest": 0.13993697944535427,
+          "as_of": "2025-12-31",
+          "absolute_band": null,
+          "trend": "deteriorating",
+          "relative": null,
+          "partial": false,
+          "history": {
+            "2025-12-31": 0.13993697944535427,
+            "2024-12-31": 0.19407069920295345,
+            "2023-12-31": 0.1775584548596967,
+            "2022-12-31": 0.19040418540849205,
+            "2021-12-31": 0.20833989480646278,
+            "2020-12-31": 0.20366575499040698
+          },
+          "rule_quadrant": null,
+          "evidence": [
+            {
+              "type": "financial",
+              "file": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\finance\\financial_general-motors_20261030T164926\\approved_financials.json",
+              "file_sha256": "2d2cd3e87d5e9de684644b53e169e04a83593b24e3785dcbc3038de801b7a4bb",
+              "approved_at": "2026-10-30T16:49:26.849648+00:00",
+              "source_files": {
+                "balance": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\balance.csv",
+                  "sha256": "e61a63f14559276876e6861bdb9e5b193004a9fc8cae40890b21f6755d02f0a4",
+                  "rows": 32,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                },
+                "income": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\income.csv",
+                  "sha256": "8611479f1bdd2edd66af1a4fdd67427cca04cd0323ce420e26accc4f473d063c",
+                  "rows": 27,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                }
+              },
+              "metric": "gross_margin",
+              "definition": "gross profit / revenue (industry-specific, no generic threshold)"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 1.0,
+            "statement": "Gross margin is 14.0% as of 2025-12-31; trend deteriorating",
+            "why": "Declining margin indicates internal profitability issue",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "fin:operating_margin",
+          "kind": "financial",
+          "metric": "operating_margin",
+          "title": "Operating margin",
+          "statement_rule": "Operating margin is 1.6% as of 2025-12-31; weakness against a generic threshold (3.0% weak / 10.0% strong); trend deteriorating",
+          "latest": 0.015722709559558748,
+          "as_of": "2025-12-31",
+          "absolute_band": "weakness",
+          "trend": "deteriorating",
+          "relative": null,
+          "partial": false,
+          "history": {
+            "2025-12-31": 0.015722709559558748,
+            "2024-12-31": 0.068202430618538,
+            "2023-12-31": 0.054107843251358805,
+            "2022-12-31": 0.0658117204198169,
+            "2021-12-31": 0.07341501055084879,
+            "2020-12-31": 0.05416173408988856
+          },
+          "rule_quadrant": "weakness",
+          "evidence": [
+            {
+              "type": "financial",
+              "file": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\finance\\financial_general-motors_20261030T164926\\approved_financials.json",
+              "file_sha256": "2d2cd3e87d5e9de684644b53e169e04a83593b24e3785dcbc3038de801b7a4bb",
+              "approved_at": "2026-10-30T16:49:26.849648+00:00",
+              "source_files": {
+                "balance": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\balance.csv",
+                  "sha256": "e61a63f14559276876e6861bdb9e5b193004a9fc8cae40890b21f6755d02f0a4",
+                  "rows": 32,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                },
+                "income": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\income.csv",
+                  "sha256": "8611479f1bdd2edd66af1a4fdd67427cca04cd0323ce420e26accc4f473d063c",
+                  "rows": 27,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                }
+              },
+              "metric": "operating_margin",
+              "definition": "operating income / revenue"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 1.0,
+            "statement": "Operating margin is 1.6% as of 2025-12-31; weakness against a generic threshold (3.0% weak / 10.0% strong); trend deteriorating",
+            "why": "Operating margin below threshold shows internal cost inefficiency",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "fin:revenue_growth",
+          "kind": "financial",
+          "metric": "revenue_growth",
+          "title": "Revenue growth",
+          "statement_rule": "Revenue growth is -1.3% as of 2025-12-31; weakness against a generic threshold (0.0% weak / 5.0% strong); trend deteriorating",
+          "latest": -0.012926665315137482,
+          "as_of": "2025-12-31",
+          "absolute_band": "weakness",
+          "trend": "deteriorating",
+          "relative": null,
+          "partial": false,
+          "history": {
+            "2025-12-31": -0.012926665315137482,
+            "2024-12-31": 0.09078106632837141,
+            "2023-12-31": 0.09638561903850448,
+            "2022-12-31": 0.2340949891342005,
+            "2021-12-31": 0.036894313589419116,
+            "2020-12-31": null
+          },
+          "rule_quadrant": "weakness",
+          "evidence": [
+            {
+              "type": "financial",
+              "file": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\finance\\financial_general-motors_20261030T164926\\approved_financials.json",
+              "file_sha256": "2d2cd3e87d5e9de684644b53e169e04a83593b24e3785dcbc3038de801b7a4bb",
+              "approved_at": "2026-10-30T16:49:26.849648+00:00",
+              "source_files": {
+                "balance": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\balance.csv",
+                  "sha256": "e61a63f14559276876e6861bdb9e5b193004a9fc8cae40890b21f6755d02f0a4",
+                  "rows": 32,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                },
+                "income": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\income.csv",
+                  "sha256": "8611479f1bdd2edd66af1a4fdd67427cca04cd0323ce420e26accc4f473d063c",
+                  "rows": 27,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                }
+              },
+              "metric": "revenue_growth",
+              "definition": "revenue change vs prior year"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 1.0,
+            "statement": "Revenue growth is -1.3% as of 2025-12-31; weakness against a generic threshold (0.0% weak / 5.0% strong); trend deteriorating",
+            "why": "Negative growth reflects internal sales performance decline",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "fin:net_income_growth",
+          "kind": "financial",
+          "metric": "net_income_growth",
+          "title": "Net income growth",
+          "statement_rule": "Net income growth is -55.1% as of 2025-12-31; weakness against a generic threshold (0.0% weak / 5.0% strong); trend deteriorating",
+          "latest": -0.5510985352862849,
+          "as_of": "2025-12-31",
+          "absolute_band": "weakness",
+          "trend": "deteriorating",
+          "relative": null,
+          "partial": false,
+          "history": {
+            "2025-12-31": -0.5510985352862849,
+            "2024-12-31": -0.4067344722030216,
+            "2023-12-31": 0.019428226293537347,
+            "2022-12-31": -0.008483880626809062,
+            "2021-12-31": 0.5588921736424459,
+            "2020-12-31": null
+          },
+          "rule_quadrant": "weakness",
+          "evidence": [
+            {
+              "type": "financial",
+              "file": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\finance\\financial_general-motors_20261030T164926\\approved_financials.json",
+              "file_sha256": "2d2cd3e87d5e9de684644b53e169e04a83593b24e3785dcbc3038de801b7a4bb",
+              "approved_at": "2026-10-30T16:49:26.849648+00:00",
+              "source_files": {
+                "balance": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\balance.csv",
+                  "sha256": "e61a63f14559276876e6861bdb9e5b193004a9fc8cae40890b21f6755d02f0a4",
+                  "rows": 32,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                },
+                "income": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\income.csv",
+                  "sha256": "8611479f1bdd2edd66af1a4fdd67427cca04cd0323ce420e26accc4f473d063c",
+                  "rows": 27,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                }
+              },
+              "metric": "net_income_growth",
+              "definition": "net_income change vs prior year"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 3,
+            "confidence": 1.0,
+            "statement": "Net income growth is -55.1% as of 2025-12-31; weakness against a generic threshold (0.0% weak / 5.0% strong); trend deteriorating",
+            "why": "Sharp income decline signals internal profitability weakness",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:bb8c932201",
+          "kind": "news",
+          "title": "GM is giving OnStar an AI makeover",
+          "summary": "GM adds AI-powered OnStar assistant, boosting its subscription services and revenue prospects despite recent data‑privacy fines.",
+          "sentiment": 0.51,
+          "bucket": "7d",
+          "weight": 0.5667,
+          "n_articles": 2,
+          "n_domains": 2,
+          "member_event_ids": [
+            "a1acbe374b31",
+            "b722ae903e95"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://techcrunch.com/2026/10/21/gm-is-giving-onstar-an-ai-makeover/",
+              "content_hash": "afa9e78f039ff9f6",
+              "quote": "all part of GM’s plan to build a $25 billion subscription business by 2030.",
+              "source": "TechCrunch",
+              "published_at": "2026-10-21T07:00:00+00:00"
+            },
+            {
+              "type": "article",
+              "url": "https://en.fnnews.com/news/202610260830033929",
+              "content_hash": "54ee8056e4f03526",
+              "quote": "General Motors (GM) is using artificial intelligence (AI) to turn cars from simple means of transportation into lifestyle platforms.",
+              "source": "파이낸셜뉴스",
+              "published_at": "2026-10-25T23:31:52+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": null,
+            "not_swot": true,
+            "basis": "forecast",
+            "materiality": 2,
+            "confidence": 1.0,
+            "statement": "GM adds AI‑powered OnStar assistant as part of its plan to build a $25 billion subscription business by 2030.",
+            "why": "internal revenue‑growth initiative",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:457c0b5805",
+          "kind": "news",
+          "title": "GM is turning to AI to slash vehicle development time. What it means",
+          "summary": "GM unveils aggressive tech plans to speed vehicle development, cut costs, and launch advanced EV architecture globally.",
+          "sentiment": 0.8,
+          "bucket": "30d",
+          "weight": 0.5278,
+          "n_articles": 2,
+          "n_domains": 2,
+          "member_event_ids": [
+            "835026ade8a1",
+            "43b5b99b113d"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://carbuzz.com/gm-forward-tech-ev-architecture-october-2026/",
+              "content_hash": "4b22af84bdc94abb",
+              "quote": "GM says it can now move from concept sketch to production with unprecedented speed, while achieving scale across the vehicle lineup.",
+              "source": "Detroit Free Press",
+              "published_at": "2026-10-21T18:38:00+00:00"
+            },
+            {
+              "type": "article",
+              "url": "https://www.autoevolution.com/news/general-motors-is-looking-forward-to-engineering-the-intelligence-defined-vehicle-for-everyone-277371.html",
+              "content_hash": "009562d8bd2b609b",
+              "quote": "First and foremost, they will seek to have enterprise AI that helps them reduce development times – up to cutting them in half.",
+              "source": "General Motors",
+              "published_at": "2026-10-21T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": null,
+            "not_swot": true,
+            "basis": "forecast",
+            "materiality": 2,
+            "confidence": 1.0,
+            "statement": "GM says it can now move from concept sketch to production with unprecedented speed, while achieving scale across the vehicle lineup.",
+            "why": "internal planned capability",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:ca335eca07",
+          "kind": "news",
+          "title": "GM investing $750 million to build hybrid crossovers at Michigan plant",
+          "summary": "GM invests $750 M to add hybrid SUVs, expanding its lineup and signaling a positive shift for its global outlook.",
+          "sentiment": 0.3,
+          "bucket": "7d",
+          "weight": 0.5026,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "27e3596eeece"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://eletric-vehicles.com/general-motors/gm-to-build-hybrid-three-row-suvs-in-michigan-redirecting-an-ev-grant/",
+              "content_hash": "e30d7fb5990011bc",
+              "quote": "GM plans to invest $750 million to build hybrid three-row crossovers at the plant, Automotive News reported.",
+              "source": "Automotive News",
+              "published_at": "2026-10-27T19:10:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": null,
+            "not_swot": true,
+            "basis": "forecast",
+            "materiality": 2,
+            "confidence": 1.0,
+            "statement": "GM invests $750 M to add hybrid SUVs, expanding its lineup and signaling a positive shift for its global outlook.",
+            "why": "internal planned investment",
+            "origin": "llm"
+          },
+          "notes": [
+            "statement had missing or unsupported numbers; replaced by the evidence summary"
+          ],
+          "status": "proposed"
+        },
+        {
+          "id": "story:b3842c5bff",
+          "kind": "news",
+          "title": "GM Expands Hybrid SUV Production at Lansing Plant",
+          "summary": "GM will launch hybrid versions of three SUVs, backed by a $500M grant, to broaden its powertrain lineup and regain market share.",
+          "sentiment": 0.6,
+          "bucket": "7d",
+          "weight": 0.3439,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "376cb72a63a1"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://fuelcellsworks.com/2026/10/27/electric/gm-plans-hybrid-suvs-as-it-broadens-strategy-beyond-battery-electric-vehicles",
+              "content_hash": "b751340cf98cdce6",
+              "quote": "The Energy Department is restructuring a previously awarded $500 million Domestic Manufacturing Conversion Grant, with the funds now set to support future hybrid production at Lansing Delta Township.",
+              "source": "Fuel Cells Works",
+              "published_at": "2026-10-27T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": null,
+            "not_swot": true,
+            "basis": "fact",
+            "materiality": 2,
+            "confidence": 1.0,
+            "statement": "GM will launch hybrid versions of three SUVs, backed by a $500M grant, to broaden its powertrain lineup and regain market share.",
+            "why": "internal production expansion funded by grant",
+            "origin": "llm"
+          },
+          "notes": [
+            "statement had missing or unsupported numbers; replaced by the evidence summary"
+          ],
+          "status": "proposed"
+        },
+        {
+          "id": "story:07669f7f61",
+          "kind": "news",
+          "title": "GM, Cirba Solutions Extend Battery Recycling Partnership",
+          "summary": "GM extends battery recycling partnership, boosting sustainability and supply chain for EV growth.",
+          "sentiment": 0.7,
+          "bucket": "7d",
+          "weight": 0.3167,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "aaa84b726704"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.environmentenergyleader.com/articles/8122-gm-cirba-solutions-extend-battery-recycling-partnership",
+              "content_hash": "f8acff336199c5bd",
+              "quote": "The partnership calls for Cirba Solutions to recycle lithium-ion battery and cell scrap generated by manufacturing and research at certain GM facilities through 2024.",
+              "source": "Environmental Leader",
+              "published_at": "2026-10-27T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "strength",
+            "not_swot": false,
+            "basis": "fact",
+            "materiality": 2,
+            "confidence": 0.9,
+            "statement": "GM extended its partnership with Cirba Solutions to recycle lithium‑ion battery scrap at select facilities through 2024.",
+            "why": "Internal supply‑chain capability enhanced.",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:7355456863",
+          "kind": "news",
+          "title": "General Motors in two disputes over electric vehicle parts",
+          "summary": "GM faces arbitration and claims over EV parts supply, indicating legal challenges that may affect its electric vehicle plans.",
+          "sentiment": -0.4,
+          "bucket": "7d",
+          "weight": 0.24,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "d837b7cdbf42"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://globalarbitrationreview.com/article/general-motors-in-two-disputes-over-electric-vehicle-parts",
+              "content_hash": "0c79ea17fdb1aac1",
+              "quote": "A German company has filed an arbitration against General Motors over a terminated agreement to supply magnets for electric vehicles, while the US carmaker has launched a claim against its partner in a battery materials joint venture.",
+              "source": "Global Arbitration Review",
+              "published_at": "2026-10-26T17:02:32+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "threat",
+            "not_swot": false,
+            "basis": "allegation",
+            "materiality": 2,
+            "confidence": 0.9,
+            "statement": "GM faces arbitration over EV magnet supply and a claim against a battery‑materials partner, creating legal challenges for its EV programs.",
+            "why": "External legal disputes could impede expansion.",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:599e612f1e",
+          "kind": "news",
+          "title": "Troy teen injured in e-bike crash sues GM; automaker withdraws countersuit",
+          "summary": "GM faces lawsuit over teen e‑bike crash involving a company vehicle, raising liability and reputational concerns.",
+          "sentiment": -0.6,
+          "bucket": "30d",
+          "weight": 0.2165,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "2d3bc6d78528"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.wxyz.com/news/troy-teen-injured-in-e-bike-crash-sues-gm-automaker-withdraws-countersuit",
+              "content_hash": "03445929c55deb0a",
+              "quote": "The pickup was a GM-owned company vehicle, according to the family's attorney.",
+              "source": "WXYZ Channel 7",
+              "published_at": "2026-10-20T07:00:00+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": "weakness",
+            "not_swot": false,
+            "basis": "allegation",
+            "materiality": 2,
+            "confidence": 1.0,
+            "statement": "A GM‑owned company vehicle was involved in a teen e‑bike crash, leading the family to file a lawsuit.",
+            "why": "internal legal exposure",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "fin:net_margin",
+          "kind": "financial",
+          "metric": "net_margin",
+          "title": "Net margin",
+          "statement_rule": "Net margin is 1.5% as of 2025-12-31; neutral against a generic threshold (0.0% weak / 5.0% strong); trend deteriorating",
+          "latest": 0.014576881293272583,
+          "as_of": "2025-12-31",
+          "absolute_band": "neutral",
+          "trend": "deteriorating",
+          "relative": null,
+          "partial": false,
+          "history": {
+            "2025-12-31": 0.014576881293272583,
+            "2024-12-31": 0.03205258159857449,
+            "2023-12-31": 0.05893204222483444,
+            "2022-12-31": 0.06338086579257983,
+            "2021-12-31": 0.07888727914081446,
+            "2020-12-31": 0.052471731232395805
+          },
+          "rule_quadrant": null,
+          "evidence": [
+            {
+              "type": "financial",
+              "file": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\finance\\financial_general-motors_20261030T164926\\approved_financials.json",
+              "file_sha256": "2d2cd3e87d5e9de684644b53e169e04a83593b24e3785dcbc3038de801b7a4bb",
+              "approved_at": "2026-10-30T16:49:26.849648+00:00",
+              "source_files": {
+                "balance": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\balance.csv",
+                  "sha256": "e61a63f14559276876e6861bdb9e5b193004a9fc8cae40890b21f6755d02f0a4",
+                  "rows": 32,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                },
+                "income": {
+                  "path": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr\\jobs\\08d94f570c\\inputs\\income.csv",
+                  "sha256": "8611479f1bdd2edd66af1a4fdd67427cca04cd0323ce420e26accc4f473d063c",
+                  "rows": 27,
+                  "periods": [
+                    "2025-12-31",
+                    "2024-12-31",
+                    "2023-12-31",
+                    "2022-12-31",
+                    "2021-12-31",
+                    "2020-12-31"
+                  ]
+                }
+              },
+              "metric": "net_margin",
+              "definition": "net income / revenue"
+            }
+          ],
+          "proposal": {
+            "quadrant": null,
+            "not_swot": true,
+            "basis": "fact",
+            "materiality": 2,
+            "confidence": 1.0,
+            "statement": "Net margin is 1.5% as of 2025-12-31; neutral against a generic threshold (0.0% weak / 5.0% strong); trend deteriorating",
+            "why": "Net margin is neutral, not clearly a strength or weakness",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        },
+        {
+          "id": "story:ea9a15b729",
+          "kind": "news",
+          "title": "GM to switch listing from NYSE to Nasdaq as it accelerates AI push",
+          "summary": "GM will move its listing to Nasdaq and accelerate AI, indicating a strategic growth push.",
+          "sentiment": 0.6,
+          "bucket": "7d",
+          "weight": 0.4731,
+          "n_articles": 1,
+          "n_domains": 1,
+          "member_event_ids": [
+            "173c6113173f"
+          ],
+          "evidence": [
+            {
+              "type": "article",
+              "url": "https://www.ft.com/content/01467514-66c1-4375-9906-45a47b949270?syn-25a6b1a6=1",
+              "content_hash": "d78cc32a5468ea06",
+              "quote": "GM to switch listing from NYSE to Nasdaq as it accelerates AI push",
+              "source": "Financial Times",
+              "published_at": "2026-10-27T14:02:17+00:00"
+            }
+          ],
+          "proposal": {
+            "quadrant": null,
+            "not_swot": true,
+            "basis": "fact",
+            "materiality": 1,
+            "confidence": 1.0,
+            "statement": "GM will move its listing from NYSE to Nasdaq as it accelerates its AI push.",
+            "why": "internal corporate‑finance decision",
+            "origin": "llm"
+          },
+          "notes": [],
+          "status": "proposed"
+        }
+      ],
+      "excluded_news": [
+        {
+          "event_id": "319370d292d2",
+          "title": "General Motors Fined $220 Million for Selling Drivers’ Data (1)",
+          "reasons": [
+            "not materially about the company",
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "bcbe6221f550",
+          "title": "GM Mexico Announces Leadership Changes",
+          "reasons": [
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "f30e8249f47b",
+          "title": "General Motors chief accounting officer to retire in April 2027",
+          "reasons": [
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "da26ef4660dd",
+          "title": "Hybrid-heavy Toyota closes in on GM’s U.S. sales lead",
+          "reasons": [
+            "evidence quote did not match the article text"
+          ]
+        },
+        {
+          "event_id": "5107ca1dc346",
+          "title": "General Motors beats Wall Street's Q3 earnings expectations, narrows full-year guidance",
+          "reasons": [
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "05f8183dd9aa",
+          "title": "General Motors Reports 5% Drop in Q3 Vehicle Sales as EV Demand Wanes",
+          "reasons": [
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "ec205166a535",
+          "title": "General Motors narrows 2026 outlook, approves US$20 bil share buyback",
+          "reasons": [
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "fd16b5f16dd6",
+          "title": "GM's third-quarter US sales fall",
+          "reasons": [
+            "not materially about the company",
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "58caacdff132",
+          "title": "General Motors’ Oshawa Plant Will Stop Production of the Chevrolet Silverado 1500",
+          "reasons": [
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "e59631f0db93",
+          "title": "GM Plans $20 Billion in Buybacks, but Warns of Bumpy 2027",
+          "reasons": [
+            "not materially about the company",
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "6639f5b4a2d4",
+          "title": "EXCLUSIVE: GM to offer hybrid SUVs in strategic pivot from electric",
+          "reasons": [
+            "evidence quote did not match the article text"
+          ]
+        },
+        {
+          "event_id": "7658b896d374",
+          "title": "GM leaving NYSE for Nasdaq; Rimac on landing BMW’s battery business",
+          "reasons": [
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "c24870971f52",
+          "title": "Mary Barra Pushes GM into A.I. and Autonomous Driving",
+          "reasons": [
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "9ae870f44efd",
+          "title": "GM to close battery plant, repurpose hydrogen plant in Detroit",
+          "reasons": [
+            "not materially about the company",
+            "neutral or missing sentiment"
+          ]
+        },
+        {
+          "event_id": "fe0c9e43938d",
+          "title": "General Motors says to invest in Lansing Delta Township Assembly",
+          "reasons": [
+            "not materially about the company",
+            "neutral or missing sentiment"
+          ]
+        }
+      ],
+      "warnings": [
+        "Opportunities and threats rest on a selected news sample, not a complete market review.",
+        "Quote matching checks text presence, not truth or support for an inference.",
+        "Every item is a proposal until the consultant approves it.",
+        "No peer benchmark supplied: relative (vs competitors) assessment is not available."
+      ]
+    }
+  }
+}

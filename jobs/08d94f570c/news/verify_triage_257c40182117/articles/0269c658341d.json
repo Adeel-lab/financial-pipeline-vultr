@@ -1,0 +1,79 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "0269c658341d",
+  "bucket": "24h",
+  "score": 0.5643,
+  "label": {
+    "topic": "autonomy_ai",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "a11435e49159e61c",
+    "title": "GM's $220M Driving Data Deal: Do Drivers Get Paid?",
+    "source": "openclassactions.com",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQT1FSTXFSNi1HLWRkeGRodHJLQ0hVUDhZV09DLXA4RHZsT1JWRnpDQmJBQ0hoeDNwUDNEczBxSjJUbGlJREhWd05kZ0NFOW1aN0VtWExLcEZvUTh5b3hWWUVCNGladnJYWTNSVHNLSTNURWlFR05QSkVQeDlBQzJ5UjVpdFhJSjJFaGRDbFNVZXk?oc=5",
+    "published_at": "2026-10-30T10:45:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://openclassactions.com/news/gm-smart-driver-220-million-multistate-settlement.php",
+    "domain": "openclassactions.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM's $220M Driving Data Deal: Do Drivers Get Paid?",
+    "source_item_id": "a11435e49159e61c",
+    "resolved_at": "2026-10-30T16:32:41.606187+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://openclassactions.com/news/gm-smart-driver-220-million-multistate-settlement.php",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://openclassactions.com/news/gm-smart-driver-220-million-multistate-settlement.php",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.833
+      }
+    ],
+    "title": "GM's $220M Smart Driver Settlement: Do Drivers Get Money?",
+    "published_at_page": "2026-10-30T03:45:00-07:00",
+    "title_score": 0.833,
+    "text_chars": 9484,
+    "content_hash": "098983bcabf7d0ac",
+    "screenshot": "0269c658341d.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:41.180902+00:00"
+  },
+  "text": "General Motors agreed on October 29, 2026 to pay $220 million to settle claims by a coalition of 36 attorneys general, from 35 states and the District of Columbia, that it sold drivers\u2019 driving and location data without their knowledge. Washington and Oregon led the coalition. Washington filed its complaint and a consent decree the same day in King County Superior Court, State of Washington v. General Motors LLC, No. 26-2-35496-1 SEA, and each of the other states is entering a similar judgment of its own.\n            \nGM agreed to the settlement without admitting any violation or liability. In a statement, the company said the agreement \u201caddresses Smart Driver, a product we ended in 2024, and reinforces steps we\u2019ve taken to strengthen our privacy practices.\u201d\n            \nFree settlement alerts\nGet notified when new class actions open to claims\nJoin thousands of readers who get the latest class action settlements you may qualify for \u2014 delivered straight to your inbox.\n                    Status\n                    State Settlement Announced \u00b7 October 29, 2026\n                    Effective November 30, 2026 \u00b7 payment due within 30 days after that\n                \n                    Who Gets the $220 Million\n                    The States\n                    Divided among 35 states and D.C. \u00b7 no consumer restitution\n                \n                    Can I Claim?\n                    No \u2014 no claim form\n                    A separate driver class action is still pending in federal court\n                \nThe states do. The consent decree requires GM to pay $220 million, \u201cto be divided by and among the participating states,\u201d within 30 days after the settlement takes effect on November 30, 2026. Some of the announced shares:\n            \n                - Washington: $12,311,819\n- New York: $12,054,341\n- Oregon: more than $10.4 million\n- Pennsylvania: $8.67 million\n- Michigan: $7,205,319\n- Connecticut: more than $6 million\nWashington\u2019s decree lets its attorney general use the money for investigation costs and attorneys\u2019 fees, future enforcement, or other lawful purposes at the attorney general\u2019s discretion. Other states\u2019 shares are governed by their own judgments and laws.\nNone of it is set aside for drivers. Michigan Attorney General Dana Nessel\u2019s office put it plainly: \u201cConsumer restitution is not provided for by the settlement, though a nationwide private class-action lawsuit seeking monetary relief remains pending.\u201d No state announced a claim process or payments to drivers.\n            \nAccording to Washington\u2019s complaint, GM launched Smart Driver in 2015 as part of OnStar, pitching it as a way for drivers to see and improve their driving habits. The program tracked trips, hard braking, hard acceleration, speeding and late-night driving. The states allege GM sold Smart Driver data to Verisk starting in 2015 and to LexisNexis Risk Solutions starting in 2019, and that those brokers built driver reports and ratings they sold to insurance companies. The complaint alleges GM made more than $20 million from the sales.\n            \nThe states also allege:\n            \n                - GM told drivers it would share only anonymous data with insurers, but sold identifiable data for all Smart Driver participants.\n- GM paid dealership employees incentives tied to signing customers up at the point of sale, and in many cases dealership staff allegedly accepted OnStar terms on customers\u2019 behalf.\n- GM\u2019s apps told more than 370,000 people they were not enrolled in Smart Driver while their data was being collected and sold. After The New York Times reported on the data sales in 2024, GM quietly unenrolled them without telling them about the error.\n- GM collected precise location data from many vehicles every three seconds and licensed it to other companies.\nNew York said more than 700,000 New York drivers were enrolled in Smart Driver, and Connecticut\u2019s attorney general said more than 10.28 million Americans were affected. GM discontinued Smart Driver in April 2024. These are the states\u2019 allegations; GM did not admit them.\nMost of the settlement is about how GM handles driving data going forward, with obligations running as late as January 2046. GM must:\n            \n                - Collect only the driving data reasonably necessary for the purpose it discloses, and get drivers\u2019 affirmative express consent before collecting, using or sharing covered driving and location data, with limited exceptions such as emergencies and safety recalls.\n- Ask the companies it shared driving data with before January 16, 2025 to delete it, and delete the driving data it kept from before that date within 180 days, unless the driver consents by email to GM keeping it.\n- Let drivers request deletion of their data and a copy of what GM holds, including the categories of companies it was shared with.\n- Have customers enroll in OnStar themselves instead of at the dealership counter, train dealers on consent, and monitor for unusual dealer enrollment patterns.\n- Run a written privacy program with a chief privacy officer, and hire an independent assessor to review it.\nGM must also email people enrolled in OnStar since January 1, 2018 about their deletion and copy rights, once a litigation hold on the data expires.\nThe state settlement does not end drivers\u2019 own claims. Washington\u2019s decree says nothing in it creates, waives or limits \u201cany private right of action.\u201d\n            \nDrivers\u2019 claims are being pursued in a nationwide class action, In re Consumer Vehicle Driving Data Tracking Litigation, MDL No. 3115, before Judge Thomas W. Thrash Jr. in federal court in Atlanta. The suits allege that GM, OnStar, LexisNexis Risk Solutions and Verisk collected and sold driving data without consent; the defendants deny the claims. In April 2026 the judge let much of the case go forward, and in September he ordered GM to produce the named plaintiffs\u2019 driving data. There is no settlement, no certified class and no claim form. Details are on OCA\u2019s GM OnStar Smart Driver lawsuit page.\n            \nTwo other government cases sit outside this coalition. California settled separately in May 2026 for $12.75 million in civil penalties, which also paid nothing to drivers, and Texas\u2019s 2024 lawsuit against GM is still pending. The Federal Trade Commission finalized an order in January 2026 barring GM from sharing driving data with consumer reporting agencies for five years.\n            \n                Will GM drivers get money from the $220 million settlement?\nThe settlement pays the $220 million to the participating states, not to drivers, and there is no claim form. Michigan\u2019s attorney general said consumer restitution is not provided for by the settlement. Each state uses its share as state law allows, such as for investigation costs and future consumer protection enforcement.\n            \n                Which states are part of the GM $220 million settlement?\nWashington and Oregon co-led a coalition of 36 attorneys general: Alabama, Alaska, Arizona, Colorado, Connecticut, Delaware, the District of Columbia, Florida, Hawaii, Idaho, Illinois, Kansas, Kentucky, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Nevada, New Hampshire, New Jersey, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, South Dakota, Utah, Vermont, Virginia, Washington and Wisconsin. Texas and California are not in the coalition; each has its own case against GM.\n            \n                Can GM drivers still get money from the Smart Driver class action?\nThe nationwide class action, In re Consumer Vehicle Driving Data Tracking Litigation, MDL No. 3115 in federal court in Georgia, is still pending and seeks money for drivers. The state settlement says it does not create, waive or limit any private right of action. The class action has no settlement, certified class or claim form as of October 30, 2026.\n            \n                What do GM drivers get from the settlement?\nThe settlement gives drivers privacy rights rather than cash. GM must get drivers\u2019 express consent before collecting or sharing covered driving data, delete driving data it kept from before January 16, 2025 or ask drivers for consent to keep it, ask the data brokers it sold to delete that data, honor deletion requests, and give drivers a copy of their data on request.\n            \n            \u2022 Washington Attorney General: GM to Pay $220M for Sharing Drivers\u2019 Private Data\n\u2022 Washington v. General Motors LLC: Complaint and Consent Decree (PDF)\n\u2022 New York Attorney General: $220 Million From General Motors\n\u2022 Michigan Attorney General: Coalition Reaches $220 Million Settlement With GM\n\u2022 Oregon Department of Justice: $220M Settlement With GM\n\u2022 TechCrunch: GM Reaches $220M Settlement Over Selling Drivers\u2019 Private Data\n                For more class actions keep scrolling below.\n            \n        Status\n        \n            State Settlement Announced \u00b7 Effective Nov. 30, 2026        \n    \n        Case Title\n        \n            State of Washington v. General Motors LLC, et al.        \n    \n        Case Number\n        \n            26-2-35496-1 SEA        \n    \n        Court\n        \n            King County Superior Court, Washington        \n    \n        Date Filed\n        \n            October 29, 2026        \n    \n        Amount\n        \n            $220 million to 35 states and D.C.        \n    \n        Can I Claim?\n        \n            No \u2014 no consumer restitution"
+}

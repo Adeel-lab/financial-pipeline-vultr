@@ -1,0 +1,79 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [],
+    "exclude": [],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": false,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors"
+    ]
+  },
+  "event_id": "46f9d532a083",
+  "bucket": "24h",
+  "score": 0.6981,
+  "label": {
+    "topic": "regulation_legal",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 24h bucket",
+  "article": {
+    "item_id": "70c26558b5431f42",
+    "title": "Vermont AG announces settlement with General Motors",
+    "source": "Yahoo",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMEUwSzBESklUNWxDdzkzUEY4TGRsaEZJSjY0ZXhsWHhwdEJQdlNfMnJSUFJhX3NCYnd6N2R4SkRhVXJ1aFRvcmF2RDZuUVRSeE5BYW9yd3Qwd1lRTHdWRUl0S0liOWdjUy0yN0xxTUIyNmVsdXRkaFhpTkw4bktUQTRnUmJmSU5lU09sVlRPS3p3bkN5WnZSZA?oc=5",
+    "published_at": "2026-10-29T19:54:20+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.yahoo.com/news/us/articles/vermont-ag-announces-settlement-general-195420237.html",
+    "domain": "www.yahoo.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Vermont AG announces settlement with General Motors",
+    "source_item_id": "70c26558b5431f42",
+    "resolved_at": "2026-10-30T16:32:41.606082+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.yahoo.com/news/us/articles/vermont-ag-announces-settlement-general-195420237.html",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.yahoo.com/news/us/articles/vermont-ag-announces-settlement-general-195420237.html",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "Vermont AG announces settlement with General Motors",
+    "published_at_page": "2026-10-29T19:54:20Z",
+    "title_score": 1.0,
+    "text_chars": 1285,
+    "content_hash": "22d065578c2a9851",
+    "screenshot": "46f9d532a083.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-30T16:33:43.180352+00:00"
+  },
+  "text": "Vermont AG announces settlement with General Motors\nMONTPELIER, Vt. (ABC22/FOX44) \u2013 Since March of 2024, Vermont Attorney General Charity Clark and a bipartisan coalition of 35 other attorneys general have been working on a settlement with General Motors after finding out the company illegally sold consumers' private driver behavior data and location information to third parties.\nOn Thursday, the settlement was signed, which orders General Motors to pay a total of $220 million to settle their allegations.\nClark says Vermont will receive $4.5 million, which will go into the state's general fund in December, which the legislature will then decide how it will be used.\nOther states in the northeast that were also part of the coalition include New York and New Hampshire. As for their settlements, New York will receive more than $12 million and New Hampshire will receive a little more than $2.8 million.\nClark also says that your data is your data, not a resource to be bought and sold without consent. She hopes that today's settlement puts corporations on notice.\nCopyright 2026 Nexstar Media, Inc. All rights reserved. This material may not be published, broadcast, rewritten, or redistributed.For the latest news, weather, sports, and streaming video, head to ABC22 & FOX44."
+}

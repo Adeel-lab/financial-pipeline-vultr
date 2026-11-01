@@ -1,0 +1,90 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "3d6ec726f3f9",
+  "bucket": "7d",
+  "score": 0.8392,
+  "label": {
+    "topic": "mna_partnerships",
+    "sentiment": -1,
+    "signal": "threat",
+    "business_relevance": 2,
+    "chatter": false,
+    "method": "heuristic"
+  },
+  "n_sources": 10,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "84fe48ea52607fbb",
+    "title": "EXCLUSIVE: GM cancels deal with new US rare-earth magnet plant, documents say",
+    "source": "Reuters",
+    "source_tier": "major",
+    "google_link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWWl1aGF0Qi1PSzVWNXlxQTN1cUhpZEJuT1pMZFAwY3FUbi1SV2tjaV9FYnFFY0ZEbGRlNGt3Vm5jb1FfcTVTTkE2RlNBMUlKanAteGZNak50d1l2djR0ZEhBc3NMbFA1MlVyYjNYX1Q2RWh4dUwzVXBUR3ZHYUlfcUFwNVMtLUJTRlRyekxaQ0VjcjU2WkYzVzJGUjh3YWpWMGE1ZGh5aTBTVWlyczNoNVhNaThOR2hGQkE?oc=5",
+    "published_at": "2026-10-22T21:41:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.reuters.com/legal/litigation/gm-cancels-deal-with-new-us-rare-earth-magnet-plant-documents-say-2026-10-22/",
+    "domain": "www.reuters.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "EXCLUSIVE: GM cancels deal with new US rare-earth magnet plant, documents say",
+    "source_item_id": "84fe48ea52607fbb",
+    "resolved_at": "2026-10-29T20:52:20.065402+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.cbtnews.com/gm-cancels-magnet-supply/",
+    "attempts": 2,
+    "attempt_details": [
+      {
+        "url": "https://www.reuters.com/legal/litigation/gm-cancels-deal-with-new-us-rare-earth-magnet-plant-documents-say-2026-10-22/",
+        "status": "paywall",
+        "http_status": 401,
+        "title_score": null
+      },
+      {
+        "url": "https://www.cbtnews.com/gm-cancels-magnet-supply/",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 0.875
+      }
+    ],
+    "title": "GM cancels rare-earth magnet supply deal as EV strategy shifts",
+    "published_at_page": "2026-10-23T07:06:05-04:00",
+    "title_score": 0.875,
+    "text_chars": 2602,
+    "content_hash": "b66ff1cc54e71291",
+    "screenshot": "3d6ec726f3f9.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:56:30.031993+00:00"
+  },
+  "text": "On the Dash:\n- GM canceled a long-term supply agreement with e-VAC Magnetics, which planned to provide 90% of its U.S. plant\u2019s output to the automaker.\n- The dispute reflects GM\u2019s broader EV pullback, including a $6 billion charge in January 2026 to unwind some electric vehicle investments.\n- The arbitration highlights the challenges of building U.S. rare-earth magnet production as automakers reassess EV demand and supply commitments.\nAccording to regulatory documents filed with the Securities and Exchange Commission, which first arose in April, General Motors (GM) has terminated a long-term magnet supply agreement with e-VAC Magnetics, the U.S. division of Germany\u2019s Vacuumschmelze (VAC).\nGM disclosed in its own filing that a supplier of a component used in EV traction motors has initiated arbitration seeking damages after GM terminated a strategic sourcing agreement.\nEnergy Fuels, which agreed in June to acquire VAC for $1.9 billion, disclosed in its own filings that a customer terminated its agreement effective July 1 and that VAC began arbitration proceedings several days later. Energy Fuels didn\u2019t name the customer, but a person familiar with the situation confirmed that GM was the customer.\nSpotlight on domestic magnet production plans\nVAC launched its $500 million magnet plant in South Carolina in late 2025 with annual capacity of just under 2,000 metric tons. VAC CEO Erik Eschen told Reuters in September 2025 that VAC planned to sell 90% of the plant\u2019s output to GM and supply the remainder to the U.S. government.\nWhen VAC and GM announced the agreement in 2023, VAC said the plant would support GM for at least 10 years and supply magnets for a wide range of EV models. VAC\u2019s U.S. unit now alleges wrongful termination and seeks damages in arbitration.\nThe termination follows GM\u2019s broader retreat from EV investments, as the automaker scaled back its EV plans after federal incentives and tax breaks that supported the market disappeared and took a $6 billion charge in January 2026 to unwind some of those investments. According to SEC filings, the dispute with e-VAC first emerged in April 2026.\nAcquisition adds uncertainty\nEnergy Fuels, primarily a uranium producer for the nuclear power industry, plans to acquire VAC to become one of the world\u2019s largest non-Chinese producers of rare-earth magnets used in the aerospace, defense and renewable energy sectors. Energy Fuels amended the merger agreement in October to allow purchase-price adjustments tied to the arbitration outcome, and the company said it knew about the dispute while negotiating the acquisition."
+}

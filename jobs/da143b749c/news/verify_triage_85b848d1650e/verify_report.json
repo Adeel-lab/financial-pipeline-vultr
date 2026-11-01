@@ -1,0 +1,27 @@
+{
+  "stage": "verification",
+  "generated_at": "2026-11-01T15:31:14.201569+00:00",
+  "input": "C:\\Users\\adeel\\Desktop\\notebooks\\vultr - Copy\\jobs\\da143b749c\\news\\triage_85b848d1650e",
+  "n_events": 40,
+  "statuses": {
+    "thin_content": 3,
+    "ok": 27,
+    "blocked": 8,
+    "consent_wall": 1,
+    "title_mismatch": 1
+  },
+  "duplicates_removed": 0,
+  "by_company": {
+    "Ford (ford motor company)": {
+      "thin_content": 3,
+      "ok": 27,
+      "blocked": 8,
+      "consent_wall": 1,
+      "title_mismatch": 1
+    }
+  },
+  "avg_text_chars": 3866,
+  "screenshots": 27,
+  "min_title_score": 0.34,
+  "require_location": false
+}

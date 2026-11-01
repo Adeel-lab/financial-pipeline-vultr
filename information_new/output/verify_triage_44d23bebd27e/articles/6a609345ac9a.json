@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "6a609345ac9a",
+  "bucket": "7d",
+  "score": 0.5416,
+  "label": {
+    "topic": "autonomy_ai",
+    "sentiment": 0,
+    "signal": "neutral",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 4,
+  "selection_reason": "top of 7d bucket",
+  "article": {
+    "item_id": "37d37faa1b083a94",
+    "title": "GM exec discusses the OnStar AI Assistant, data privacy and driver safety",
+    "source": "Fox Business",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5fOHNnVkt3RGI0bEplTDNPbTRLOU5YUVVpZ0NPR2I1OGZqT09VZ2VjTl9rUWEycXVtbFpaeVBkYTRSY01KcmdhaXhvcDdDc3RFaGNZUklZclJDU0E?oc=5",
+    "published_at": "2026-10-25T21:13:13+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.foxbusiness.com/video/6407393503112",
+    "domain": "www.foxbusiness.com",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "GM exec discusses the OnStar AI Assistant, data privacy and driver safety",
+    "source_item_id": "37d37faa1b083a94",
+    "resolved_at": "2026-10-29T20:52:20.065661+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.foxbusiness.com/video/6407393503112",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.foxbusiness.com/video/6407393503112",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "GM exec discusses the OnStar AI Assistant, data privacy and driver safety | Fox Business Video",
+    "published_at_page": "2026-10-25T17:02:12-04:00",
+    "title_score": 1.0,
+    "text_chars": 464,
+    "content_hash": "f2b9b9f27ffe08b0",
+    "screenshot": "6a609345ac9a.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:55:56.828744+00:00"
+  },
+  "text": "Live Now\nAll times eastern\nNOW - 5:00 PM\n5:00 PM\n5:30 PM\n6:00 PM\n6:30 PM\n7:00 PM\n        Fox Business Channel\n      \nThe Evening Edit with Elizabeth Macdonald\n5:00 PM - 6:00 PM\nKudlow\n6:00 PM - 7:00 PM\nCOPS\n7:00 PM - 7:30 PM\n        Fox News Channel\n      \nThe Five\n5:00 PM - 6:00 PM\nSpecial Report with Bret Baier\n6:00 PM - 7:00 PM\nThe Ingraham Angle\n7:00 PM - 7:30 PM\n        Fox Weather Channel\n      \n        Fox News Radio\n      \n        Fox News Channel Live"
+}

@@ -1,0 +1,21 @@
+
+===== 2026-11-01 16:23:57  triage: triage.py --input C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\da143b749c\news\85b848d1650e --base C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\da143b749c\news
+embedding model: none found -> TF-IDF fallback
+chat model: openai/gpt-oss-120b  base: https://api.groq.com/openai/v1
+
+=== Ford (ford motor company) ===
+392 articles -> 285 events [tfidf, sim>=0.35]  singletons: 220  chatter: 44  heuristic-labelled: 141
+largest events:
+    14  Ford Motor vs. General Motors: Which Automotive Stock Is a Better Buy in 2026?
+     9  Ford to recall over 223K vehicles over fuel tank issue
+     9  2 Revolutionary Developments That Should Change Your Investing Thesis on Ford and General Motor
+     8  Ford Q3 Earnings Call Highlights Cost Pressures & EV Strategy
+     8  Ford CEO Jim Farley defends automaker's ties to Chinese companies
+     8  Ford Motor Company awards Dutro's for 50 years in Zanesville - WHIZ - Fox 5 / Marquee Broadcast
+selected 40 of a 40-event budget: by bucket {'24h': 10, '30d': 15, '7d': 15}
+  by signal {'threat': 13, 'neutral': 17, 'opportunity': 10}
+  by topic  {'earnings_financials': 8, 'recalls_safety': 8, 'products_launch': 5, 'macro_competition': 2, 'mna_partnerships': 1, 'regulation_legal': 2, 'labor_org': 1, 'supply_chain_ops': 3, 'autonomy_ai': 2, 'other': 8}
+  by tier   {'major': 4, 'other': 30, 'financial_aggregator': 6}
+
+LLM batches ok/failed: 7/7
+40 events selected -> C:\Users\adeel\Desktop\notebooks\vultr - Copy\jobs\da143b749c\news\triage_85b848d1650e\selected_for_resolution.json

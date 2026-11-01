@@ -1,0 +1,84 @@
+{
+  "company": "General Motors",
+  "profile": {
+    "name": "General Motors",
+    "scope": "global",
+    "locations": [],
+    "tickers": [
+      "GM"
+    ],
+    "aliases": [
+      "GM"
+    ],
+    "exclude": [
+      "genetically\\ modified"
+    ],
+    "extra_queries": [],
+    "strict_location": false,
+    "edition": "hl=en-US&gl=US&ceid=US:en",
+    "scope_explicit": true,
+    "label": "General Motors",
+    "slug": "general-motors",
+    "query": "\"General Motors\"",
+    "scope_text": "global (whole company)",
+    "all_aliases": [
+      "General Motors",
+      "GM"
+    ]
+  },
+  "event_id": "747b5e013bf4",
+  "bucket": "30d",
+  "score": 0.4649,
+  "label": {
+    "topic": "mna_partnerships",
+    "sentiment": 1,
+    "signal": "opportunity",
+    "business_relevance": 3,
+    "chatter": false,
+    "method": "llm"
+  },
+  "n_sources": 2,
+  "selection_reason": "top of 30d bucket",
+  "article": {
+    "item_id": "34108ccd0d245893",
+    "title": "Kourtel, General Motors discuss partnership opportunities in vehicle manufacturing",
+    "source": "\u0648\u0643\u0627\u0644\u0629 \u0627\u0644\u0623\u0646\u0628\u0627\u0621 \u0627\u0644\u062c\u0632\u0627\u0626\u0631\u064a\u0629",
+    "source_tier": "other",
+    "google_link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOcmFwNzhUQ2RnSGR2X3lwVXVTTUR0V3JLYjBLTk1WWkNwVWFXNmp0MXM1LW5Kdlo2VWpWQlcyRkRLM0pMa2hidjZJNVVRNWVBamVYT3lRSF84NlNiTXdTRU9NSVZQVVVPMlFHMk1laExfdTZBM1hhTi16ZDJHb2Y3OGQzYmROZ2YwNDA2STRsZHVvLTgxY1hTTmtoajA4cWo2b2QyXy13QWhyampkbVc0X1JZZXpBZDdpRGpKbFJtSHBWME1JcUZfSE50NURqT1FmcGdRMXBvdzBYcmc?oc=5",
+    "published_at": "2026-10-14T07:00:00+00:00"
+  },
+  "resolved": {
+    "status": "ok",
+    "url": "https://www.aps.dz/en/economy/industry-energy-mining/mv7qf55j-kourtel-general-motors-discuss-partnership-opportunities-in-vehicle-manufacturing",
+    "domain": "www.aps.dz",
+    "method": "rpc",
+    "used_alternate": 0,
+    "source_title": "Kourtel, General Motors discuss partnership opportunities in vehicle manufacturing",
+    "source_item_id": "34108ccd0d245893",
+    "resolved_at": "2026-10-29T20:52:20.065777+00:00"
+  },
+  "verification": {
+    "status": "ok",
+    "http_status": 200,
+    "url_used": "https://www.aps.dz/en/economy/industry-energy-mining/mv7qf55j-kourtel-general-motors-discuss-partnership-opportunities-in-vehicle-manufacturing",
+    "attempts": 1,
+    "attempt_details": [
+      {
+        "url": "https://www.aps.dz/en/economy/industry-energy-mining/mv7qf55j-kourtel-general-motors-discuss-partnership-opportunities-in-vehicle-manufacturing",
+        "status": "ok",
+        "http_status": 200,
+        "title_score": 1.0
+      }
+    ],
+    "title": "Kourtel, General Motors discuss partnership opportunities in vehicle manufacturing | Alg\u00e9rie Presse Service",
+    "published_at_page": null,
+    "title_score": 1.0,
+    "text_chars": 553,
+    "content_hash": "a3c9a33738208b20",
+    "screenshot": "747b5e013bf4.png",
+    "location_in_text": null,
+    "location_terms_found": [],
+    "retrieved_at": "2026-10-29T20:55:56.011953+00:00"
+  },
+  "text": "Kourtel, General Motors discuss partnership opportunities in vehicle manufacturing\nWednesday, October 14, 2026 07:31\nALGIERS - Industry Minister Farid Kourtel received a delegation from General Motors (GM) on Tuesday in Algiers, led by Rohan Fernandes, Chairman of the Board and General Manager for Egypt and Africa, to discuss prospects for cooperation in the automotive sector and opportunities for establishing industrial partnerships in Algeria.\nSubscriber-Only Content\nTo continue reading this article, please sign in or subscribe.\nRelated articles"
+}
