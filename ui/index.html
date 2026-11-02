@@ -5,16 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FinAnalyst</title>
 <style>
-:root{--bg:#f4f5f8;--card:#fff;--ink:#1b2333;--muted:#667085;--line:#e3e6ec;--brand:#2f5bea;--brand-d:#2347c0;--ok:#12805c;--okbg:#e7f6ef;--warn:#b54708;--warnbg:#fff4e5;--bad:#b42318;--badbg:#fdecea;--info:#175cd3;--infobg:#eaf1fe;--grey:#667085;--greybg:#eef0f4}
+:root{
+  --bg:#f3f6f6;
+  --card:#ffffff;
+  --ink:#0b0f14;
+  --muted:#5a6a6d;
+  --line:#dfe7e8;
+  --brand:#12b5a5;
+  --brand-d:#0d9688;
+  --fin:#0b0f14;
+  --fin-soft:#182028;
+  --teal-soft:#e2f7f4;
+  --ok:#0d9668;
+  --okbg:#e4f6ee;
+  --warn:#a35c07;
+  --warnbg:#fff4e0;
+  --bad:#b42318;
+  --badbg:#fdecea;
+  --info:#0d9688;
+  --infobg:#e2f7f4;
+  --grey:#5a6a6d;
+  --greybg:#eef2f2;
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
 a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
-header.top{display:flex;align-items:center;gap:22px;padding:12px 28px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
-.brand{font-weight:800;font-size:18px;letter-spacing:-.2px;color:var(--ink)}.brand span{color:var(--brand)}
+header.top{display:flex;align-items:center;gap:22px;padding:12px 28px;background:var(--fin);border-bottom:3px solid var(--brand);position:sticky;top:0;z-index:20}
+header.top nav a{color:#e6f4f2}
+header.top nav a:hover{background:var(--fin-soft)}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.2px;color:var(--fin)}.brand span{color:var(--brand)}
 header.top nav{display:flex;gap:6px;flex:1}
-header.top nav a{padding:6px 12px;border-radius:8px;color:var(--ink);font-weight:600}
-header.top nav a:hover{background:var(--greybg);text-decoration:none}
+header.top nav a{padding:6px 12px;border-radius:8px;color:#e6f4f2;font-weight:600}
+header.top nav a:hover{background:var(--fin-soft);text-decoration:none}
 .conn{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px}
 .conn i{width:8px;height:8px;border-radius:50%;background:var(--grey);display:inline-block}
 .conn.ok i{background:var(--ok)}.conn.bad i{background:var(--bad)}
@@ -25,7 +48,8 @@ h1{font-size:24px;margin:0 0 4px;letter-spacing:-.3px}h2{font-size:18px;margin:2
 .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.row.between{justify-content:space-between}.grow{flex:1}
 .btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;color:var(--ink);padding:8px 14px;border-radius:9px;font:inherit;font-weight:600;cursor:pointer}
 .btn:hover{background:var(--greybg);text-decoration:none}
-.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}.btn.primary:hover{background:var(--brand-d)}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:#04211e}
+.btn.primary:hover{background:var(--brand-d);color:#ffffff}
 .btn.danger{color:var(--bad);border-color:#f4c7c3}.btn.danger:hover{background:var(--badbg)}
 .btn.small{padding:4px 10px;font-size:13px;border-radius:7px}
 .btn[disabled]{opacity:.45;cursor:not-allowed}
@@ -47,13 +71,12 @@ tr:last-child td{border-bottom:0}
 .tab .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#f79009;margin-left:6px}.tab .dot.red{background:var(--bad)}
 .banner{border-radius:12px;padding:14px 18px;margin-bottom:16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .banner.warn{background:var(--warnbg);border:1px solid #fedf89}.banner.bad{background:var(--badbg);border:1px solid #f4c7c3}
-.banner.ok{background:var(--okbg);border:1px solid #abe3cb}.banner.info{background:var(--infobg);border:1px solid #c5d8fb}
-.stage{display:grid;grid-template-columns:22px 1fr auto;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.banner.info{background:var(--infobg);border:1px solid #a9e3dc}.stage{display:grid;grid-template-columns:22px 1fr auto;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--line)}
 .stage:last-child{border-bottom:0}
 .sdot{width:14px;height:14px;border-radius:50%;margin-top:4px;background:var(--grey)}
 .sdot.succeeded{background:var(--ok)}.sdot.running{background:var(--brand);animation:pulse 1.2s infinite}
 .sdot.waiting{background:#f79009}.sdot.failed,.sdot.blocked,.sdot.rejected{background:var(--bad)}.sdot.pending,.sdot.skipped,.sdot.cancelled{background:#cfd4dc}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,91,234,.5)}100%{box-shadow:0 0 0 9px rgba(47,91,234,0)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(18,181,165,.5)}100%{box-shadow:0 0 0 9px rgba(18,181,165,0)}}
 pre.err{grid-column:2/4;background:var(--badbg);color:var(--bad);border-radius:8px;padding:8px 10px;white-space:pre-wrap;word-break:break-word;margin:4px 0 0;font-size:12.5px}
 pre.log{background:#0f172a;color:#d6e2ff;padding:14px;border-radius:10px;overflow:auto;max-height:60vh;font-size:12.5px;white-space:pre-wrap}
 form.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px 18px}
@@ -61,8 +84,7 @@ label.f{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:13.
 label.f small{font-weight:400;color:var(--muted)}
 input[type=text],input[type=number],select,textarea{font:inherit;padding:8px 10px;border:1px solid #cfd4dc;border-radius:8px;background:#fff;width:100%}
 textarea{min-height:64px;resize:vertical}
-input:focus,select:focus,textarea:focus{outline:2px solid #bcd0ff;border-color:var(--brand)}
-.files{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px 18px;margin-top:6px}
+input:focus,select:focus,textarea:focus{outline:2px solid #9adcd4;border-color:var(--brand)}.files{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px 18px;margin-top:6px}
 .drop{border:2px dashed #cfd4dc;border-radius:10px;padding:14px;background:#fafbfc}
 .err-banner{background:var(--badbg);color:var(--bad);border:1px solid #f4c7c3;border-radius:10px;padding:10px 14px;margin-bottom:14px;white-space:pre-wrap}
 .chip{display:inline-block;padding:1px 8px;border-radius:6px;font-size:12px;font-weight:600;background:var(--greybg);color:var(--grey);margin-right:6px}
@@ -99,8 +121,7 @@ header.top{flex-wrap:wrap;gap:8px 16px}
 </head>
 <body>
 <header class="top">
-  <div class="brand">Fin<span>Analyst</span></div>
-  <nav><a href="#/">All analyses</a><a href="#/new">New analysis</a></nav>
+<div class="brand"><span class="fin">Fin</span><span class="analyst">Analyst</span></div>  <nav><a href="#/">All analyses</a><a href="#/new">New analysis</a></nav>
   <div class="conn" id="conn"><i></i><span>connecting…</span></div>
 </header>
 <main id="app"></main>
