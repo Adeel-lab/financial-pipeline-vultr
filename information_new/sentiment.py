@@ -23,6 +23,7 @@ import os
 import random
 import re
 import sys
+import time
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -40,6 +41,10 @@ CHAT_MODEL = os.environ.get("VULTR_CHAT_MODEL", "deepseek-v4.1-flash")
 LLM_CONCURRENCY = int(os.environ.get("SENTIMENT_CONCURRENCY", "1"))
 LLM_DELAY = float(os.environ.get("SENTIMENT_DELAY", "0"))
 MAX_OUT_TOKENS = int(os.environ.get("SENTIMENT_MAX_TOKENS", "1500"))   # reasoning models need headroom
+
+SENTIMENT_REASONING = os.environ.get("SENTIMENT_REASONING", "").strip()     # e.g. low (gpt-oss on Groq)
+MAX_WAIT = float(os.environ.get("SENTIMENT_MAX_WAIT", "90"))                # longer waits = daily limit, stop
+_last_call = 0.0
 CONSENT_MARKERS = ("develop and improve new services", "before you continue to google", "consent.google.com")
 MAX_TEXT = 6000            # characters of article body sent to the model
 OPP_THRESHOLD = 0.25       # score >= this -> opportunity, <= -this -> threat
@@ -102,10 +107,39 @@ def find_verify_dir(arg: Path | None, base: Path) -> Path:
 
 
 def save_json_atomic(path: Path, data) -> None:
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(json.dumps(data), encoding="utf-8")
-    tmp.replace(path)
+    import tempfile
+    import time
 
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = json.dumps(data, ensure_ascii=False)
+
+    fd, temp_name = tempfile.mkstemp(
+        prefix=path.name + ".",
+        suffix=".tmp",
+        dir=str(path.parent),
+    )
+    tmp = Path(temp_name)
+
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            f.write(payload)
+            f.flush()
+            os.fsync(f.fileno())
+
+        for attempt in range(6):
+            try:
+                os.replace(tmp, path)
+                return
+            except PermissionError:
+                if attempt == 5:
+                    raise
+                time.sleep(min(0.1 * (2 ** attempt), 1.0))
+    finally:
+        try:
+            tmp.unlink(missing_ok=True)
+        except OSError:
+            pass
 
 # ---------------------------------------------------------------- keyword scorer (offline, English only)
 def keyword_score(text: str) -> dict:
@@ -130,23 +164,63 @@ class LLMState:
     failed = 0
 
 
+def parse_reset(s):
+    tot = 0.0
+    for num, unit in re.findall(r"([\d.]+)(ms|h|m|s)", s or ""):
+        tot += float(num) / 1000 if unit == "ms" else float(num) * {"h": 3600, "m": 60, "s": 1}[unit]
+    return tot
+
+
 async def chat(client: httpx.AsyncClient, messages: list[dict]) -> str | None:
+    global _last_call
+    payload = {"model": CHAT_MODEL, "messages": messages, "temperature": 0, "max_tokens": MAX_OUT_TOKENS}
+    if SENTIMENT_REASONING:
+        payload["reasoning_effort"] = SENTIMENT_REASONING
     for attempt in range(6):
+        gap = LLM_DELAY - (time.monotonic() - _last_call)
+        if gap > 0:
+            await asyncio.sleep(gap)
+        _last_call = time.monotonic()
         try:
-            r = await client.post(f"{API_BASE}/chat/completions",
-                                  json={"model": CHAT_MODEL, "messages": messages,
-                                        "temperature": 0, "max_tokens": MAX_OUT_TOKENS})
+            r = await client.post(f"{API_BASE}/chat/completions", json=payload)
         except (httpx.TimeoutException, httpx.TransportError):
-            await asyncio.sleep(2 ** attempt)
+            wait = 2 ** attempt * 2
+            print(f"   network error, retry {attempt + 1}/6 in {wait}s", flush=True)
+            await asyncio.sleep(wait)
             continue
         if r.status_code == 200:
+            try:
+                left = int(r.headers.get("x-ratelimit-remaining-tokens", "999999"))
+            except ValueError:
+                left = 999999
+            if left < 3000:
+                await asyncio.sleep(min(parse_reset(r.headers.get("x-ratelimit-reset-tokens")), MAX_WAIT))
             return r.json()["choices"][0]["message"]["content"]
+        if r.status_code == 400 and "reasoning_effort" in payload:
+            payload.pop("reasoning_effort")
+            print("   provider rejected reasoning_effort, continuing without it", flush=True)
+            continue
         if r.status_code in (429, 500, 502, 503, 504):
             try:
                 wait = float(r.headers.get("retry-after", 0))
             except ValueError:
                 wait = 0.0
-            await asyncio.sleep(max(wait, 2 ** attempt * 3) + random.random())
+
+            if r.status_code == 429 and wait > MAX_WAIT:
+                LLMState.dead = True
+                print(
+                    f"!! Groq requested a {wait:.0f}s wait. "
+                    "Stopping this stage rather than using keyword scores.",
+                    flush=True,
+                )
+                print(f"!! Groq error: {r.text[:2000]}", flush=True)
+                raise RuntimeError(
+                    f"Groq rate limit requires waiting {wait:.0f}s; "
+                    "see the error details above, then retry this stage."
+                )
+            wait = max(wait, 2 ** attempt * 2) + random.random()
+            print(f"   HTTP {r.status_code}, retry {attempt + 1}/6 in {wait:.0f}s", flush=True)
+            await asyncio.sleep(wait)
             continue
         LLMState.dead = True
         log.error("Chat API fatal HTTP %s %s", r.status_code, r.text[:300])
@@ -187,11 +261,23 @@ def validate_llm(raw: dict, article_text: str, local_scope: bool) -> dict | None
 
 
 async def llm_score(client, sem, company: str, scope_text: str, local_scope: bool, text: str) -> dict | None:
+
     if LLMState.dead:
-        return None
+        raise RuntimeError(
+            "LLM scoring stopped after a provider error; "
+            "retry when quota is available."
+        )
     msgs = [{"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": f"Company: {company}\nScope: {scope_text}\n\nARTICLE:\n{text[:MAX_TEXT]}"}]
+
     async with sem:
+
+        if LLMState.dead:
+            raise RuntimeError(
+                "LLM scoring stopped after a provider error; "
+                "retry when quota is available."
+            )
+
         out = await chat(client, msgs)
         if LLM_DELAY:
             await asyncio.sleep(LLM_DELAY)
@@ -343,7 +429,7 @@ async def run(args) -> None:
             done += 1
             print(f"[{done}/{len(recs)}] {row['company'][:18]:18} {row['sentiment']:+.2f} "
                   f"{row['method']:7} {(row['title'] or '')[:60]}", flush=True)
-            if use_llm and done % 5 == 0:
+            if use_llm:
                 save_json_atomic(cache_path, cache)
             return row
         rows = await asyncio.gather(*(one(r) for r in recs))

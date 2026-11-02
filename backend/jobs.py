@@ -13,6 +13,7 @@ import json
 import logging
 import re
 import shutil
+import subprocess
 import threading
 import uuid
 from collections import Counter
@@ -45,6 +46,8 @@ ARTIFACT_PATTERNS = [
     ("swot_draft_md", "swot/*/swot_draft.md"),
     ("swot_final", "swot/*/swot_final.json"),
     ("swot_final_md", "swot/*/swot_final.md"),
+    ("filing_explanations", "filings/filing_explanations.json"),
+    ("federal_register", "regulatory/federal_register.json"),
     ("rca", "rca/*.json"),
     ("rca_md", "rca/*.md"),
     ("screenshot", "news/verify_*/screenshots/*.png"),
@@ -191,7 +194,9 @@ class JobManager:
         self._set_stage(job_id, stage, "running", started_at=now(), finished_at=None, error=None, meta={})
         self._event(job_id, "info", f"{stage} started")
         spec = CommandSpec(stage=stage, script=config.SCRIPTS[script_key], args=[str(a) for a in args], cwd=cwd,
-                           env=build_env(), timeout=config.timeout_for(stage), job_dir=jd)
+                           env=build_env({"FILINGS_JSON": str(jd / "filings" / "filing_explanations.json"),
+                                          "FEDERAL_JSON": str(jd / "regulatory" / "federal_register.json")}),
+                           timeout=config.timeout_for(stage), job_dir=jd)
         try:
             res = get_runner(stage).run(spec, jd / "logs" / f"{stage}.log", cancel)
             if res.cancelled:
@@ -487,6 +492,8 @@ class JobManager:
     def _run_swot_build(self, job_id: str) -> None:
         p, jd = self.db.get_job(job_id)["params"], self.job_dir(job_id)
         sdir = self._abs(job_id, self._meta(job_id, "sentiment")["sentiment_dir"])
+        self._filing_explanations(job_id)
+        self._federal_register(job_id)
         root = jd / "swot"
         before = {d.name for d in root.iterdir()}
         args = ["build", "--sentiment", sdir, "--outdir", root]
@@ -525,6 +532,55 @@ class JobManager:
 
         self._run_stage(job_id, "swot_build", script_key="swot_builder", args=args, cwd=config.INFO_DIR, validate=validate)
         self._event(job_id, "info", "SWOT draft is ready for review.")
+
+    def _filing_explanations(self, job_id: str) -> None:
+        # Optional step: management explanations quoted from the latest SEC 10-K / 10-Q. Never fails the job.
+        p, jd = self.db.get_job(job_id)["params"], self.job_dir(job_id)
+        tickers = p.get("tickers") or []
+        if not tickers:
+            self._event(job_id, "info", "No ticker given: filing explanations skipped.")
+            return
+        out = jd / "filings"
+        out.mkdir(parents=True, exist_ok=True)
+        try:
+            r = subprocess.run([config.PYTHON, str(config.SCRIPTS["filing_explanations"]), "--company", p["company"],
+                                "--ticker", str(tickers[0]), "--outdir", str(out)],
+                               cwd=config.INFO_DIR, env=build_env(), capture_output=True, text=True,
+                               encoding="utf-8", errors="replace", timeout=300)
+            (jd / "logs").mkdir(parents=True, exist_ok=True)
+            (jd / "logs" / "filing_explanations.log").write_text(r.stdout + r.stderr, encoding="utf-8")
+            if r.returncode == 0:
+                self._event(job_id, "info", "Filing explanations ready.")
+            else:
+                self._event(job_id, "warning", "Filing explanations failed (the job continues): " + (r.stderr or r.stdout)[-300:])
+        except Exception as e:
+            self._event(job_id, "warning", f"Filing explanations skipped: {type(e).__name__}: {e}")
+
+    def _federal_register(self, job_id: str) -> None:
+        # Optional step: official Federal Register documents about the company and its industry. Never fails the job.
+        p, jd = self.db.get_job(job_id)["params"], self.job_dir(job_id)
+        out = jd / "regulatory"
+        out.mkdir(parents=True, exist_ok=True)
+        cmd = [config.PYTHON, str(config.SCRIPTS["federal_register"]), "--company", p["company"], "--outdir", str(out),
+               "--cache-dir", str(config.JOBS_DIR / "_sec_cache")]
+        for a in p.get("aliases") or []:
+            cmd += ["--alias", str(a)]
+        tickers = p.get("tickers") or []
+        if tickers:
+            cmd += ["--ticker", str(tickers[0])]
+        for t in p.get("regulatory_topics") or []:
+            cmd += ["--topic", str(t)]
+        try:
+            r = subprocess.run(cmd, cwd=config.INFO_DIR, env=build_env(), capture_output=True, text=True,
+                               encoding="utf-8", errors="replace", timeout=240)
+            (jd / "logs").mkdir(parents=True, exist_ok=True)
+            (jd / "logs" / "federal_register.log").write_text(r.stdout + r.stderr, encoding="utf-8")
+            if r.returncode == 0:
+                self._event(job_id, "info", "Federal Register documents ready.")
+            else:
+                self._event(job_id, "warning", "Federal Register step failed (the job continues): " + (r.stderr or r.stdout)[-300:])
+        except Exception as e:
+            self._event(job_id, "warning", f"Federal Register step skipped: {type(e).__name__}: {e}")
 
     def _run_peers(self, job_id: str, p: dict) -> Optional[Path]:
         """Peer numbers from SEC filings for the tickers the user entered. Optional: it never fails the job.

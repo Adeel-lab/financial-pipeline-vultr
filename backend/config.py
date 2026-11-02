@@ -26,6 +26,8 @@ SCRIPTS = {
     "resolve": INFO_DIR / "resolve.py",
     "verify": INFO_DIR / "verify.py",
     "sentiment": INFO_DIR / "sentiment.py",
+    "filing_explanations": INFO_DIR / "filing_explanations.py",
+    "federal_register": INFO_DIR / "federal_register.py",
     "swot_builder": INFO_DIR / "swot_builder.py",
     "rca": INFO_DIR / "rca.py",
     "sec_peers": INFO_DIR / "sec_peers.py",
@@ -33,7 +35,7 @@ SCRIPTS = {
 }
 
 MAX_WORKERS = _int("FINANALYST_MAX_WORKERS", 6)          # background tasks at once
-NEWS_CONCURRENCY = _int("FINANALYST_NEWS_CONCURRENCY", 2)  # news pipelines at once (browser + rate limits)
+NEWS_CONCURRENCY = _int("FINANALYST_NEWS_CONCURRENCY", 1)  # news pipelines at once (browser + rate limits)
 MAX_UPLOAD_BYTES = _int("FINANALYST_MAX_UPLOAD_BYTES", 10 * 1024 * 1024)
 
 # seconds a stage may run before it is killed

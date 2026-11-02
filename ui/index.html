@@ -601,8 +601,10 @@ function renderCard(company, it) {
       it.n_articles > 1 ? h("span", { class: "chip" }, it.n_articles + " articles") : null),
     h("div", { class: "stmt" }, p.statement || it.title || it.id),
     p.why ? h("div", { class: "muted small" }, "Why: " + p.why) : null,
-    (it.notes || []).map(n => h("div", { class: "small", style: "color:var(--warn)" }, "Note: " + n)),
-    evidenceBlock(it));
+    ...(it.notes || []).map(n =>
+      h("div", { class: "small", style: "color:var(--warn)" }, "Note: " + n)
+    ),
+    ...[evidenceBlock(it)].flat(Infinity));
   const seg = h("div", { class: "seg" },
     h("button", { class: "btn small" + (d && d.action === "approve" ? " primary" : ""), disabled: !hasQ, title: hasQ ? "" : "Nothing to approve: use Edit and choose a quadrant", onclick: () => set({ action: "approve" }) }, "Approve"),
     h("button", { class: "btn small" + (d && d.action === "edit" ? " primary" : ""), onclick: () => set({ action: "edit", quadrant: (d && d.quadrant) || (hasQ ? p.quadrant : ""), statement: (d && d.statement) || p.statement || "" }) }, "Edit"),

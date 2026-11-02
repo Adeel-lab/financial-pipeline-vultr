@@ -36,6 +36,32 @@ try:
 except ImportError:
     HAVE_FACTS = False
 
+try:
+    from evidence_filings import FilingIndex
+    HAVE_FILINGS = True
+except ImportError:
+    HAVE_FILINGS = False
+
+FILINGS = None
+if HAVE_FILINGS and os.getenv("FILINGS_JSON") and Path(os.getenv("FILINGS_JSON")).exists():
+    try:
+        FILINGS = FilingIndex(os.getenv("FILINGS_JSON"))
+    except Exception as _e:
+        print(f"  (filing explanations not loaded: {_e})")
+
+try:
+    from evidence_regulatory import RegulatoryIndex
+    HAVE_REG = True
+except ImportError:
+    HAVE_REG = False
+
+REGS = None
+if HAVE_REG and os.getenv("FEDERAL_JSON") and Path(os.getenv("FEDERAL_JSON")).exists():
+    try:
+        REGS = RegulatoryIndex(os.getenv("FEDERAL_JSON"))
+    except Exception as _e:
+        print(f"  (Federal Register documents not loaded: {_e})")
+
 PROMPT_VERSION = "rca-v1.2"
 DELAY = float(os.getenv("SWOT_DELAY", "0"))
 NON_PCT = {"quick_ratio", "current_ratio", "cash_ratio"}
@@ -277,6 +303,49 @@ def add_facts(pool, facts, query, k, seen, counter):
 
 
 
+def add_filings(pool, filings, query, k, seen, counter):
+    # Management explanations quoted from the company's own SEC filings, added as C1, C2...
+    added = []
+    if filings is None:
+        return added
+    for h in filings.search(query, k=k, exclude=seen):
+        seen.add(h["id"])
+        counter[0] += 1
+        eid = f"C{counter[0]}"
+        pseudo = {"id": h["id"], "kind": "filing", "content_hash": filings.sha256[:16],
+                  "evidence": [{"url": h["url"], "source": f"SEC {h['form']}", "published_at": h["filing_date"],
+                                "quote": h["quote"]}]}
+        text = (f"[{eid}] MANAGEMENT EXPLANATION (company's own SEC {h['form']}, period {h['period']}; "
+                f"a claim by management, not a proven fact) | topic: {h['topic']} | quote: " + chr(34) + h["quote"] + chr(34))
+        pool[eid] = (pseudo, text)
+        added.append(eid)
+    return added
+
+
+def add_regulations(pool, regs, query, k, seen, counter):
+    # Official Federal Register documents, added as R1, R2... A document shows what the government published or proposed.
+    added = []
+    if regs is None:
+        return added
+    for h in regs.search(query, k=k, exclude=seen):
+        seen.add(h["id"])
+        counter[0] += 1
+        eid = f"R{counter[0]}"
+        pseudo = {"id": h["id"], "kind": "regulatory", "content_hash": regs.sha256[:16],
+                  "evidence": [{"url": h["url"], "source": "Federal Register", "published_at": h["published"], "quote": h["quote"]}]}
+        extra = ""
+        if h.get("effective_on"):
+            extra += f", effective {h['effective_on']}"
+        if h.get("comments_close_on"):
+            extra += f", comments close {h['comments_close_on']}"
+        text = (f"[{eid}] FEDERAL REGISTER {h['type'].upper()} ({', '.join(h['agencies'][:2]) or 'agency not stated'}, "
+                f"published {h['published']}{extra}; an official document, not proof of any effect on the company) | "
+                f"title: {h['title']} | quote: " + chr(34) + h["quote"] + chr(34))
+        pool[eid] = (pseudo, text)
+        added.append(eid)
+    return added
+
+
 # ---------- LLM ----------
 def call_llm(prompt, tries=5):
 
@@ -313,7 +382,7 @@ ANALYST NOTES (context from the human reviewer):
 {note_txt}
 
 
-EVIDENCE POOL (the only facts you may use). Items E* are SWOT draft items. Items P* are word-for-word passages from the full text of verified articles. Items F* are facts computed by code from the approved financial statements: numbers only. They show THAT a number changed, never WHY:
+EVIDENCE POOL (the only facts you may use). Items E* are SWOT draft items. Items P* are word-for-word passages from the full text of verified articles. Items C* are quotes from the company's own SEC filings: management's explanations, which are claims by management and not proven facts. Items R* are official U.S. Federal Register documents (rules, proposed rules, notices): they show what the government published or proposed, not that it affected the company. Items F* are facts computed by code from the approved financial statements: numbers only. They show THAT a number changed, never WHY:
 {pool_text}
 
 
@@ -337,6 +406,8 @@ RULES:
 9. "competing_explanations": list any other explanation the pool points to (id plus one line). If a competing explanation is better supported than your answer, use it as your answer instead.
 10. The item marked (PROBLEM EVIDENCE) restates the problem. Do not use it as the cause.
 11. F* items never prove a cause. Join a number to a cause only with a news item or passage that states the cause, and word the link "consistent with". If an F* item carries a data caution, repeat the caution.
+12. C* items show what management says. Cite them as management's explanation (management attributes this to ...), never as established fact. They count as a separate source type.
+13. R* items are government documents. Cite them as what the document says or proposes (the proposed rule would ...). A document existing is not evidence that it affected the company unless a cited news item or filing says so.
 
 
 Return JSON: {{"answer": str, "evidence_ids": [str], "basis": "reported|inference|unknown", "support": [{{"id": str, "quote": str}}], "competing_explanations": [str], "is_root_cause": bool, "why_stop": str}}"""
@@ -415,6 +486,9 @@ def sources_of(it):
     kind = it.get("kind")
     if kind == "financial":
         return [("financial", "financial statements")]
+    if kind == "regulatory":
+        evs = ev_list(it)
+        return [("regulatory", _domain((evs[0] if evs else {}).get("url")) or "federalregister.gov")]
     if kind == "filing":
         evs = ev_list(it)
         return [("filing", _domain((evs[0] if evs else {}).get("url")) or "filing")]
@@ -481,12 +555,16 @@ def run_rca(item, items, company, objective, notes, max_whys, draft_sha, model,
     problem = statement(item)
     seen, counter = set(), [0]
     fseen, fcounter = set(), [0]
+    cseen, ccounter = set(), [0]
+    rseen, rcounter = set(), [0]
     chain, outcome = [], "max_depth_reached"
     for n in range(1, max_whys + 1):
         premise = chain[-1]["answer"] if chain else problem
         added = add_passages(pool, index, premise, aliases, company, per_step, seen, counter, links) if index is not None else []
         fadded = add_facts(pool, facts, premise, 3, fseen, fcounter)
-        print(f"  Why {n} ... (+{len(added)} article passages, +{len(fadded)} financial facts)")
+        cadded = add_filings(pool, FILINGS, premise, 2, cseen, ccounter)
+        radded = add_regulations(pool, REGS, premise, 2, rseen, rcounter)
+        print(f"  Why {n} ... (+{len(added)} article passages, +{len(fadded)} financial facts, +{len(cadded)} filing quotes, +{len(radded)} regulatory documents)")
         r = call_llm(step_prompt(problem, chain, pool, notes, n, max_whys))
         ans = (r.get("answer") or "").strip()
         if chain and ans and HAVE_ARTICLES and similar(ans, chain[-1]["answer"]) >= REPEAT_AT:

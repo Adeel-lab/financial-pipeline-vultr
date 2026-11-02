@@ -2,3 +2,24 @@ __pycache__/
 .env
 information_new/output/verify_triage_44d23bebd27e/raw/
 information_new/output/verify_triage_44d23bebd27e/screenshots/
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python-generated files
+__pycache__/
+*.pyc
+
+# Patch backups
+*.bak
+*.bak2
+
+# Generated analysis and test outputs
+jobs/
+information_new/output/
+planning/output/
+information_new/test_fr/
+information_new/test_gm/
+information_new/test_peers/
+information_new/sec_cache/
