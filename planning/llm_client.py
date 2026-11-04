@@ -1,12 +1,27 @@
-import os, json
+import os
+import json
 from openai import OpenAI
 
-MODEL = os.getenv("LLM_MODEL", "openai/gpt-oss-120b")
+BASE_URL = "https://api.vultrinference.com/v1"
+MODEL = "deepseek-v4.1-flash-1017"
+
+API_KEY = os.environ.get("VULTR_INFERENCE_API_KEY", "").strip()
+
+if not API_KEY:
+    raise RuntimeError(
+        "VULTR_INFERENCE_API_KEY is missing in the RCA process. "
+        "Start the backend from the terminal where the key is configured."
+    )
+
 _client = OpenAI(
-    base_url=os.getenv("LLM_BASE_URL", "https://api.groq.com/openai/v1"),
-    api_key=os.getenv("LLM_API_KEY") or os.environ["GROQ_API_KEY"],
+    base_url=BASE_URL,
+    api_key=API_KEY,
 )
 
+print(
+    f"[llm] provider=Vultr endpoint={BASE_URL} model={MODEL}",
+    flush=True,
+)
 def llm_json(prompt, system="You return only valid JSON.", retries=2):
     last = None
     for _ in range(retries + 1):
