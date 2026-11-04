@@ -29,7 +29,7 @@ METRIC_DEFS = {
     "debt_to_equity": (["total_debt", "equity"], lambda v: _div(v["total_debt"], v["equity"]), 2.0, 1.0, False, "total debt / equity"),
     "debt_ratio": (["total_liabilities", "total_assets"], lambda v: _div(v["total_liabilities"], v["total_assets"]), 0.7, 0.5, False, "total liabilities / total assets"),
     "equity_ratio": (["equity", "total_assets"], lambda v: _div(v["equity"], v["total_assets"]), 0.25, 0.4, True, "equity / total assets"),
-    "interest_coverage": (["operating_income", "interest_expense"], lambda v: _div(v["operating_income"], v["interest_expense"]), 1.5, 3.0, True, "operating income / interest expense"),
+    "interest_coverage": (["operating_income", "interest_expense"], lambda v: _div(v["operating_income"], abs(v["interest_expense"])), 1.5, 3.0, True, "operating income / interest expense"),
     "gross_margin": (["revenue", "gross_profit"], lambda v: _div(v["gross_profit"], v["revenue"]), None, None, True, "gross profit / revenue (industry-specific, no generic threshold)"),
     "operating_margin": (["revenue", "operating_income"], lambda v: _div(v["operating_income"], v["revenue"]), 0.03, 0.10, True, "operating income / revenue"),
     "net_margin": (["revenue", "net_income"], lambda v: _div(v["net_income"], v["revenue"]), 0.0, 0.05, True, "net income / revenue"),
@@ -95,7 +95,7 @@ def compute(approved: dict, peers: dict | None = None) -> dict:
                "history": {p: values.get(p) for p in periods}, "higher_is_better": hib,
                "absolute_band": band(latest, weak, strong, hib) if latest_p == periods[0] else None,
                "threshold": ({"weak": weak, "strong": strong, "source": THRESHOLD_SOURCE} if weak is not None else None),
-               "trend": trend(hist, hib), "uses_partial_input": sorted(set(uses) & partial), "relative": None}
+               "trend": trend(hist, hib) if latest_p == periods[0] else "insufficient_history", "uses_partial_input": sorted(set(uses) & partial), "relative": None}
         pr = peers.get(name)
         if pr and latest is not None and hib is not None:
             ref = pr["value"]
@@ -105,12 +105,24 @@ def compute(approved: dict, peers: dict | None = None) -> dict:
             rec["relative"] = {"peer_value": ref, "n_peers": pr["n_peers"], "source": pr["source"], "position": rel, "favourable": favourable}
         out[name] = rec
 
+
+
     for name, (needs, fn, weak, strong, hib, definition) in METRIC_DEFS.items():
         values = {}
-        for p in periods:
+        ttm = name == "asset_turnover" and lag == 4
+        for i, p in enumerate(periods):
+            if ttm:
+                last4 = [ser.get("revenue", {}).get(q) for q in periods[i:i + 4]]
+                assets = ser.get("total_assets", {}).get(p)
+                values[p] = sum(last4) / assets if len(last4) == 4 and None not in last4 and assets else None
+                continue
             vs = {f: ser.get(f, {}).get(p) for f in needs + ["short_investments"]}
             values[p] = fn(vs) if all(vs[f] is not None for f in needs) else None
+        if ttm:
+            definition = "revenue of the last four quarters / total assets (industry-specific)"
         finish(name, values, definition, weak, strong, hib, needs)
+
+
     for name, (field, weak, strong) in GROWTH.items():
         values = {}
         for i, p in enumerate(periods):

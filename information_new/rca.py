@@ -62,9 +62,17 @@ if HAVE_REG and os.getenv("FEDERAL_JSON") and Path(os.getenv("FEDERAL_JSON")).ex
     except Exception as _e:
         print(f"  (Federal Register documents not loaded: {_e})")
 
+try:
+    from evidence_peers import peer_facts
+    HAVE_PEERS = True
+except ImportError:
+    HAVE_PEERS = False
+
+PEER_SOURCE = {"path": None, "sha256": None}
+
 PROMPT_VERSION = "rca-v1.2"
 DELAY = float(os.getenv("SWOT_DELAY", "0"))
-NON_PCT = {"quick_ratio", "current_ratio", "cash_ratio"}
+NON_PCT = {"quick_ratio", "current_ratio", "cash_ratio", "asset_turnover", "debt_to_equity", "interest_coverage"}
 SYSTEM = "You are a careful root-cause analyst. You return only valid JSON."
 REPEAT_AT = 0.6          # a new answer this similar to the last one counts as a repeat
 FIX_FACT_CUES = "what if would have been lever sensitivity cost of sales share of revenue operating income"
@@ -295,9 +303,15 @@ def add_facts(pool, facts, query, k, seen, counter):
         seen.add(h["id"])
         counter[0] += 1
         eid = f"F{counter[0]}"
-        pseudo = {"id": h["id"], "kind": "financial", "fact": True, "computed": True, "data_caution": h.get("caution"),
-                  "evidence": [{"type": "financial", "file": str(facts.path), "file_sha256": facts.sha256, "quote": h["text"]}]}
-        pool[eid] = (pseudo, f"[{eid}] FINANCIAL FACT (computed from the approved statements: numbers only, not causes) | {h['text']}")
+        peer = h.get("kind") == "peer"
+        src_file = PEER_SOURCE["path"] if peer else str(facts.path)
+        src_sha = PEER_SOURCE["sha256"] if peer else facts.sha256
+        pseudo = {"id": h["id"], "kind": "financial", "fact": True, "computed": True,
+                  "data_caution": h.get("caution"),
+                  "evidence": [{"type": "financial", "file": src_file, "file_sha256": src_sha, "quote": h["text"]}]}
+        label = ("PEER COMPARISON FACT (computed from the peers' SEC filings and the approved statements: numbers only)"
+                 if peer else "FINANCIAL FACT (computed from the approved statements: numbers only, not causes)")
+        pool[eid] = (pseudo, f"[{eid}] {label} | {h['text']}")
         added.append(eid)
     return added
 
@@ -348,24 +362,63 @@ def add_regulations(pool, regs, query, k, seen, counter):
 
 # ---------- LLM ----------
 def call_llm(prompt, tries=5):
-
-
     llm_json = llm_client.llm_json
-    for a in range(tries):
+
+    for attempt in range(tries):
         try:
             out = llm_json(prompt, system=SYSTEM)
             if DELAY:
                 time.sleep(DELAY)
             return out
-        except Exception as e:
-            msg = str(e)
-            if "429" in msg or "rate" in msg.lower():
-                wait = 15 * (a + 1)
-                print(f"  (rate limit, waiting {wait}s)")
-                time.sleep(wait)
-                continue
-            raise
-    raise RuntimeError("LLM rate-limited too many times")
+
+        except Exception as exc:
+            response = getattr(exc, "response", None)
+            status_code = getattr(exc, "status_code", None)
+            if status_code is None and response is not None:
+                status_code = getattr(response, "status_code", None)
+
+            request = getattr(exc, "request", None)
+            if request is None and response is not None:
+                request = getattr(response, "request", None)
+
+            url = getattr(request, "url", None)
+            endpoint = (
+                f"{url.scheme}://{url.host}{url.path}"
+                if url is not None
+                and all(hasattr(url, part) for part in ("scheme", "host", "path"))
+                else "(unavailable)"
+            )
+
+            print(
+                f"  LLM failure: {type(exc).__name__}; "
+                f"HTTP status: {status_code}; endpoint: {endpoint}",
+                flush=True,
+            )
+            print(f"  Error details: {str(exc)[:3000]}", flush=True)
+
+            if status_code != 429:
+                raise
+
+            if attempt == tries - 1:
+                raise
+
+            retry_after = (
+                response.headers.get("retry-after")
+                if response is not None
+                else None
+            )
+
+            try:
+                wait = max(1.0, float(retry_after))
+            except (TypeError, ValueError):
+                wait = min(60, 15 * (attempt + 1))
+
+            print(
+                f"  Confirmed HTTP 429; waiting {wait:g}s "
+                f"before retry {attempt + 2}/{tries}",
+                flush=True,
+            )
+            time.sleep(wait)
 
 
 
@@ -567,9 +620,10 @@ def run_rca(item, items, company, objective, notes, max_whys, draft_sha, model,
         print(f"  Why {n} ... (+{len(added)} article passages, +{len(fadded)} financial facts, +{len(cadded)} filing quotes, +{len(radded)} regulatory documents)")
         r = call_llm(step_prompt(problem, chain, pool, notes, n, max_whys))
         ans = (r.get("answer") or "").strip()
+
         if chain and ans and HAVE_ARTICLES and similar(ans, chain[-1]["answer"]) >= REPEAT_AT:
-            print("  (this answer repeats the previous step - stopping here)")
-            outcome = "root_cause_reached"
+            print("  (no deeper supported explanation; stopping here)")
+            outcome = "stopped_no_deeper_supported_explanation"
             break
         ids = [str(i).strip().upper() for i in (r.get("evidence_ids") or [])]
         valid = [i for i in ids if i in pool]
@@ -696,6 +750,8 @@ def to_md(r):
          f"{d['quotes_rejected']} rejected, {d.get('facts_cited', 0)} financial facts",
          _strength_line(r), "",
          "| # | Question | Answer | Evidence | Basis | Check |", "|---|---|---|---|---|---|"]
+    if r.get("analyst_notes"):
+        L[4:4] = ["**Analyst question:** " + " | ".join(r["analyst_notes"]), ""]
     for s in r["chain"]:
         chk = s["status"] + (f"; unverified numbers: {', '.join(s['unverified_numbers'])}"
                              if s["unverified_numbers"] else "")
@@ -821,6 +877,20 @@ def main():
         facts = FactIndex.from_items(items, a.draft)
         print(f"Financial facts: {len(facts.facts)} from {facts.path.name}" if facts else "Financial facts: none (no approved statements found)")
 
+    if not a.no_facts and HAVE_FACTS and HAVE_PEERS:
+        peer_path = Path(os.getenv("PEERS_JSON") or
+                         Path(a.draft).resolve().parents[2] / "peers" / "peer_comparison.json")
+        if peer_path.is_file():
+            raw = peer_path.read_bytes()
+            pf = peer_facts(json.loads(raw.decode("utf-8-sig")))
+            if pf:
+                PEER_SOURCE.update(path=str(peer_path), sha256=hashlib.sha256(raw).hexdigest())
+                base = list(facts.facts.values()) if facts else []
+                facts = FactIndex(base + pf,
+                                  facts.path if facts else peer_path,
+                                  facts.sha256 if facts else PEER_SOURCE["sha256"])
+                print(f"Peer comparison facts: {len(pf)} from {peer_path.name}")
+
 
     import importlib.util
     _llm_path = os.path.join(
@@ -831,6 +901,14 @@ def main():
     llm_client = importlib.util.module_from_spec(_spec)
     _spec.loader.exec_module(llm_client)
 
+    print(f"RCA client file: {_llm_path}", flush=True)
+    print(f"RCA model: {llm_client.MODEL}", flush=True)
+
+    _client = getattr(llm_client, "_client", None)
+    print(
+        f"RCA client endpoint: {getattr(_client, 'base_url', '(unavailable)')}",
+        flush=True,
+    )
 
     out_dir = Path(a.out) if a.out else Path(a.draft).parent
     out_dir.mkdir(parents=True, exist_ok=True)

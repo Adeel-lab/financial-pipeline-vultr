@@ -240,7 +240,7 @@ def run(tickers, outdir, target_name, target_path, sec) -> list:
     tgt = {"company": target_name or (target or {}).get("company") or "The company", "metrics": {}}
     if target:
         for m, r in fin_metrics.compute(target).items():
-            if r["latest"] is None:
+            if r["latest"] is None or not r.get("latest_is_current_period", True):
                 continue
             row = {"latest": r["latest"], "as_of": r["as_of"], "trend": r["trend"], "higher_is_better": r["higher_is_better"],
                    "uses_partial_input": r["uses_partial_input"], "definition": r["definition"]}
