@@ -404,6 +404,7 @@ function renderHead() {
       h("div", { class: "row" }, badge(j.status),
         a.includes("retry") ? h("button", { class: "btn", onclick: () => act("retry") }, "Retry") : null,
         a.includes("cancel") ? h("button", { class: "btn danger", onclick: () => { if (confirm("Stop this analysis?")) act("cancel"); } }, "Stop") : null,
+        h("a", { class: "btn", href: apiUrl(`/jobs/${j.id}/report.pdf`), target: "_blank", rel: "noopener" }, "Download PDF"),
         h("button", { class: "btn danger", onclick: delJob }, "Delete"))),
     h("div", { class: "row" }, h("div", { class: "bar grow" + (j.progress >= 1 ? " done" : "") }, h("div", { style: `width:${Math.round(j.progress * 100)}%` })), h("span", { class: "muted small" }, Math.round(j.progress * 100) + "%")));
 }

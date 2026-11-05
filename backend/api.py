@@ -294,4 +294,20 @@ def create_app() -> FastAPI:
         media = EXTRA_TYPES.get(p.suffix.lower()) or mimetypes.guess_type(p.name)[0] or "application/octet-stream"
         return FileResponse(p, media_type=media)
 
+    @app.get("/jobs/{job_id}/report.pdf", tags=["files"])
+    def report_pdf(job_id: str, request: Request):
+        from backend.report import build_report
+        m = mgr(request)
+        j = m.get_job(job_id) or {}
+        prm = j.get("params") or {}
+        meta = {"job_id": job_id, "status": j.get("status"),
+                "created": j.get("created_at") or j.get("started_at") or j.get("created"),
+                "company": prm.get("company") or prm.get("name"),
+                "objective": prm.get("objective")}
+        meta = {k: v for k, v in meta.items() if v}
+        jd = m.job_dir(job_id)
+        out = build_report(jd, jd / "report.pdf", meta)
+        name = (meta.get("company") or job_id).replace(" ", "_")
+        return FileResponse(out, media_type="application/pdf", filename=f"{name}_report.pdf")
+
     return app

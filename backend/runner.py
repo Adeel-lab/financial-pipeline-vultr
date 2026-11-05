@@ -149,7 +149,7 @@ class DockerRunner(Runner):
                 args.append(f"{k}={self._to_container(v, spec.job_dir, code_dir)}")
             else:
                 args.append(self._to_container(a, spec.job_dir, code_dir))
-        cmd = ["docker", "run", "--rm", "--name", name, "--init", "--ipc=host",
+        cmd = ["docker", "run", "--rm", "--name", name, "--init", "--shm-size=1g",
                "--memory", config.DOCKER_MEMORY, "--cpus", config.DOCKER_CPUS, "--pids-limit", config.DOCKER_PIDS,
                "--cap-drop", "ALL", "--security-opt", "no-new-privileges",
                "--tmpfs", "/tmp:rw,size=512m",

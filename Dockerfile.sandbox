@@ -1,6 +1,6 @@
 # Sandbox image for the browser verification stage (verify.py).
 # Build:  docker build -f Dockerfile.sandbox -t finanalyst-sandbox .
 # Check that this tag exists on mcr.microsoft.com/playwright/python and that it matches the Playwright version you use.
-FROM mcr.microsoft.com/playwright/python:v1.49.0-noble
-RUN pip install --no-cache-dir trafilatura httpx
+FROM mcr.microsoft.com/playwright/python:v1.64.1-noble
+RUN pip install --no-cache-dir playwright==1.64.1 trafilatura httpx
 WORKDIR /app

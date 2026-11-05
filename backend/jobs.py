@@ -495,6 +495,7 @@ class JobManager:
         self._filing_explanations(job_id)
         self._federal_register(job_id)
         root = jd / "swot"
+        root.mkdir(parents=True, exist_ok=True)
         before = {d.name for d in root.iterdir()}
         args = ["build", "--sentiment", sdir, "--outdir", root]
         if p.get("objective"):

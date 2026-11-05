@@ -15,6 +15,10 @@ def _int(name, default):
 ROOT = Path(os.environ.get("FINANALYST_ROOT") or Path(__file__).resolve().parent.parent).resolve()
 INFO_DIR = Path(os.environ.get("FINANALYST_INFO_DIR") or ROOT / "information_new").resolve()
 PLAN_DIR = Path(os.environ.get("FINANALYST_PLAN_DIR") or ROOT / "planning").resolve()
+
+from .env import load_dotenv_files  # noqa: E402
+
+load_dotenv_files()  # .env must be loaded before the settings below are read
 JOBS_DIR = Path(os.environ.get("FINANALYST_JOBS_DIR") or ROOT / "jobs").resolve()
 DB_PATH = JOBS_DIR / "jobs.db"
 PYTHON = os.environ.get("FINANALYST_PYTHON") or sys.executable
