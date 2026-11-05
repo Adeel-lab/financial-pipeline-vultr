@@ -23,3 +23,5 @@ information_new/test_fr/
 information_new/test_gm/
 information_new/test_peers/
 information_new/sec_cache/
+
+.venv/
