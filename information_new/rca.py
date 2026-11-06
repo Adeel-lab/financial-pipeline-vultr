@@ -10,6 +10,7 @@ v1.2: quotes found in another pool item are re-attributed instead of rejected; r
 chain; passage links are checked against the draft by content hash; fix evidence is searched before the
 summary; corrective actions need a verified quote to count as supported.
 """
+
 import argparse, hashlib, json, os, re, sys, time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -70,7 +71,7 @@ except ImportError:
 
 PEER_SOURCE = {"path": None, "sha256": None}
 
-PROMPT_VERSION = "rca-v1.2"
+PROMPT_VERSION = "rca-v1.3"
 DELAY = float(os.getenv("SWOT_DELAY", "0"))
 NON_PCT = {"quick_ratio", "current_ratio", "cash_ratio", "asset_turnover", "debt_to_equity", "interest_coverage"}
 SYSTEM = "You are a careful root-cause analyst. You return only valid JSON."
@@ -468,8 +469,10 @@ Return JSON: {{"answer": str, "evidence_ids": [str], "basis": "reported|inferenc
 
 
 def final_prompt(problem, chain, pool, notes):
-    steps = "\n".join(f"Why {s['step']}: {s['answer']} [{', '.join(s['evidence_ids'])}] ({s['basis']})"
-                      for s in chain if s["status"] == "supported")
+    steps = "\n".join(
+        f"Why {s['step']}: {s['answer']} [{', '.join(s['evidence_ids'])}] ({s['basis']})"
+        for s in chain if s["status"] == "supported"
+    )
     pool_text = "\n".join(t for _, t in pool.values())
     return f"""PROBLEM: {problem}
 ANALYST NOTES: {'; '.join(notes) or '(none)'}
@@ -478,14 +481,56 @@ SUPPORTED CHAIN:
 EVIDENCE POOL:
 {pool_text}
 
+Summarise the causal analysis and recommend practical responses.
+Use the chain and pool as the factual foundation. You may reason across
+items and propose actions that no individual source explicitly recommends.
 
-Summarise the analysis. Use only the chain and pool. Corrective actions are recommendations, not facts.
-Every corrective action must include "support": [{{"id": str, "quote": str}}] copying, word for word, a sentence from a pool item that shows the action addresses the cause, that the company or a peer has already done it, or how large the lever is. If the pool has no such sentence, leave support empty and start the rationale with "Hypothesis (no supporting evidence in pool):". Do not cite an item that does not say this.
-Return JSON: {{"root_cause": str, "root_cause_type": "management_controllable|external|mixed|unknown",
-"validation_test": str (if this root cause were fixed, would the problem go away? answer honestly, including doubts),
-"corrective_actions": [{{"action": str, "rationale": str, "evidence_ids": [str], "support": [{{"id": str, "quote": str}}]}}],
-"evidence_gaps": [str], "caveats": [str]}}"""
+ANALYSIS RULES:
+1. Distinguish source-reported facts, management explanations, analyst
+   inferences, and unresolved hypotheses. Never invent facts or figures.
+2. Identify the best-supported contributing causes. Do not force a single
+   root cause when evidence supports multiple causes or only a partial explanation.
+3. Explain the causal reasoning rather than repeating the problem. Financial
+   changes show what changed, not necessarily why. Use them alongside other
+   evidence for explicitly labelled inferences, not proof of causation.
+4. Consider relevant SEC filings, regulatory documents, news, financial facts,
+   and peer comparisons without forcing irrelevant sources into the answer.
+5. Attribute management explanations to management. Distinguish proposed rules
+   from effective requirements and possible effects from demonstrated impacts.
+6. Respect differences in periods, business segments, definitions, and source
+   quality. Describe evidence boundaries rather than claiming a proven root.
 
+RECOMMENDATION RULES:
+1. Recommend specific practical actions addressing supported contributing
+   factors or material risks. Prefer a few useful actions over generic advice.
+2. Sources do NOT need to recommend the action explicitly. Derive actions
+   through transparent reasoning from cited evidence.
+3. Cite evidence for the underlying diagnosis; explain how the action could
+   address it. Include assumptions, trade-offs, and a practical success indicator
+   or test. Do not invent numerical targets or promise outcomes.
+4. Begin each rationale with one label:
+   "Source-reported action:" if a source explicitly describes the action;
+   "Analyst recommendation:" if you derive it from cited evidence;
+   "Exploratory hypothesis:" if the connection is uncertain and needs testing.
+5. Verbatim support quotes are OPTIONAL. Copy accurately if useful; otherwise
+   return "support": []. Missing quotes do not invalidate recommendations.
+6. Do not imply a source endorses your action unless it does. Citation presence
+   alone does not prove the reasoning or the recommendation's effectiveness.
+
+VALIDATION:
+Explain whether addressing the causes would resolve the problem, reduce part
+of it, or leave major uncertainties. Say what observations could confirm or
+weaken the explanation.
+
+Return only valid JSON with existing fields:
+{{"root_cause": str,
+"root_cause_type": "management_controllable|external|mixed|unknown",
+"validation_test": str,
+"corrective_actions": [{{"action": str, "rationale": str,
+"evidence_ids": [str], "support": [{{"id": str, "quote": str}}]}}],
+"evidence_gaps": [str], "caveats": [str]}}
+Only cite evidence IDs present in the pool.
+"""
 
 
 # ---------- validation ----------
@@ -602,7 +647,9 @@ def strength_summary(chain, pool):
 
 # ---------- core ----------
 def run_rca(item, items, company, objective, notes, max_whys, draft_sha, model,
-            index=None, aliases=None, per_step=4, verify_dir=None, facts=None):
+            index=None, aliases=None, per_step=4, verify_dir=None, facts=None, min_whys=3):
+    if not 1 <= min_whys <= max_whys:
+        raise ValueError("Require 1 <= min_whys <= max_whys")
     pool = build_pool(items, item)
     links = hash_links(items)
     problem = statement(item)
@@ -650,12 +697,27 @@ def run_rca(item, items, company, objective, notes, max_whys, draft_sha, model,
                 "dropped_invalid_ids": dropped, "model_said_root": bool(r.get("is_root_cause")),
                 "why_stop": r.get("why_stop", "")}
         chain.append(step)
+
+
         if not ok:
-            outcome = "stopped_insufficient_evidence"
+            if any(s["status"] == "supported" for s in chain):
+                outcome = "supported_analysis_evidence_boundary"
+            else:
+                outcome = "stopped_insufficient_evidence"
             break
-        if step["model_said_root"] and n >= 2:
+        if step["model_said_root"] and n >= min_whys:
             outcome = "root_cause_reached"
             break
+
+    warnings = []
+
+    if outcome == "supported_analysis_evidence_boundary":
+        warnings.append(
+            "The analysis reached the boundary of the supplied evidence after one or more supported explanations. "
+            "This does not mean that the supported explanations lack evidence; it means the available evidence did not "
+            "support a further, distinct causal explanation."
+        )
+
     supported = [s for s in chain if s["status"] == "supported"]
     summary = {}
     if supported:
@@ -679,8 +741,16 @@ def run_rca(item, items, company, objective, notes, max_whys, draft_sha, model,
         keep = [i for i in ids_ if i in pool] + [q["id"] for q in g["verified"]]
         act["evidence_ids"] = list(dict.fromkeys(keep))
         act["support_verified"], act["support_rejected"] = g["verified"], g["rejected"]
-        act["evidence_status"] = ("supported" if g["verified"] else
-                                  "cited_unverified" if act["evidence_ids"] else "hypothesis")
+        act["quote_verification"] = (
+            "verified" if g["verified"] else
+            "rejected" if g["rejected"] else "not_provided"
+        )
+        act["evidence_status"] = (
+            "analyst_recommendation" if act["evidence_ids"] else "hypothesis"
+        )
+        act["citation_caution"] = (
+            "Citations identify the factual basis; they do not validate reasoning or effectiveness."
+        )
         act["strength"] = rate_evidence(act["evidence_ids"], pool, g["verified"])
         action_ids.update(act["evidence_ids"])
     used = sorted({i for s in chain for i in s["evidence_ids"]} | action_ids | {"E0"}, key=_eid_key)
@@ -695,6 +765,7 @@ def run_rca(item, items, company, objective, notes, max_whys, draft_sha, model,
                             "links": [e.get("url") for e in ev_list(it) if e.get("url")]}
     urls = {u for e in evidence_used.values() for u in e["links"]}
     domains = {urlparse(u).netloc.lower().removeprefix("www.") for u in urls if u}
+
     return {
         "stage": "rca", "prompt_version": PROMPT_VERSION, "model": model,
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -717,12 +788,12 @@ def run_rca(item, items, company, objective, notes, max_whys, draft_sha, model,
                            "quotes_rejected": sum(len(s["support_rejected"]) for s in chain)},
         "evidence_used": evidence_used,
         "evidence_strength": strength_summary(chain, pool),
-        "warnings": ["Analysis rests on the SWOT draft items plus passages retrieved from verified article texts; it is not a complete causal study.",
+        "warnings": warnings +  ["Analysis rests on the SWOT draft items plus passages retrieved from verified article texts; it is not a complete causal study.",
                      "Inference steps are the model's reasoning over cited facts, not source claims.",
                      "A verified quote proves the words are in the saved article text, not that the source proves the cause. Read the quotes and open the links.",
                      "Passages marked 'link not confirmed' may come from a different page than the link shown.",
                      "Financial facts (F items) are numbers calculated from the approved statements. They show that something changed, not why, and statements only say they were approved, not that they are correct.",
-                     "Corrective actions are recommendations, not evidence. Only actions marked supported have a verified quote."],
+                     "Corrective actions are recommendations, not established facts. Quotes are optional and verified separately; citations do not validate reasoning or effectiveness."],
     }
 
 
@@ -787,6 +858,7 @@ def to_md(r):
         L += [f"**Type:** {sm.get('root_cause_type','unknown')}", "",
               f"**Validation test:** {sm.get('validation_test','')}", "", "## Corrective actions (recommendations)", ""]
         tag = {"supported": "", "cited_unverified": " (cited, but no verified quote)",
+               "analyst_recommendation": " (analyst recommendation with cited evidence; not independently validated)",
                "hypothesis": " (hypothesis: no cited support)"}
         for a in sm.get("corrective_actions", []):
             L.append(f"- {a.get('action')} - {a.get('rationale')} [{', '.join(a.get('evidence_ids') or [])}]"
@@ -827,6 +899,8 @@ def main():
     r = sub.choices["run"]
     r.add_argument("--item", action="append", default=[])
     r.add_argument("--quadrant", choices=["weakness", "threat", "strength", "opportunity"])
+    r.add_argument("--min-whys", type=int, default=3,
+                   help="Minimum depth before root acceptance; evidence limits may stop earlier")
     r.add_argument("--max-whys", type=int, default=5)
     r.add_argument("--note", action="append", default=[])
     r.add_argument("--out")
@@ -835,6 +909,8 @@ def main():
     r.add_argument("--no-passages", action="store_true", help="run without article passages")
     r.add_argument("--no-facts", action="store_true", help="run without computed financial facts")
     a = ap.parse_args()
+    if a.cmd == "run" and not 1 <= a.min_whys <= a.max_whys:
+        ap.error("require 1 <= --min-whys <= --max-whys")
 
 
     draft, sha = load(a.draft)
@@ -917,7 +993,7 @@ def main():
             print(f"NOTE: {it.get('id')} is still 'proposed' (not human-approved).")
         print(f"RCA: {it.get('id')}")
         res = run_rca(it, items, company, draft.get("objective", ""), a.note, a.max_whys, sha, llm_client.MODEL,
-                      index=index, aliases=aliases, per_step=a.passages_per_step, verify_dir=vdir, facts=facts)
+                      index=index, aliases=aliases, per_step=a.passages_per_step, verify_dir=vdir, facts=facts, min_whys=a.min_whys)
         safe_id = str(it.get('id')).replace(":", "_")
         base = out_dir / f"rca_{safe_id}"
         base.with_suffix(".json").write_text(json.dumps(res, indent=2, ensure_ascii=False), encoding="utf-8")
