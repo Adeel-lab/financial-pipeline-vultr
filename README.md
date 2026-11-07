@@ -22,6 +22,17 @@ Both branches converge at an AI-generated SWOT draft. Once reviewed and adjusted
 
 ---
 
+## Data Sources & Provenance
+
+FinAnalyst prioritizes auditability and open financial data standards:
+
+- **Sample Financial Statements (Balance Sheet & Income Statement):** The demonstration statements used across testing and the demo video (e.g., Google, Amazon, Ford, General Motors) were downloaded via [GetSECData](https://www.getsecdata.com/), which exports clean, multi-year standardized SEC 10-K financial statement tables.
+- **Peer Financial Filings:** Directly pulled from official SEC EDGAR public XBRL / company facts endpoints (`data.sec.gov`).
+- **Regulatory Notices:** Queried live from the official US Government Federal Register API (`federalregister.gov`).
+- **News Coverage:** Aggregated across top-tier business outlets and canonical publishers, verified by capturing full-page text and screenshot receipts.
+
+---
+
 ## Powered by Vultr
 
 FinAnalyst is designed around Vultr's infrastructure:
@@ -78,6 +89,9 @@ export VULTR_CHAT_MODEL="deepseek-v4.1-flash-1017"
 export VULTR_EMBED_MODEL="qwen3-embedding-4b"
 export FINANALYST_SANDBOX="docker"  # or "local"
 export SEC_USER_AGENT="Yourname you@example.com"
+
+> **Note on Public Data APIs:** SEC filings (`data.sec.gov`) and Federal Register documents (`federalregister.gov`) are free public APIs and do not require paid API keys. The SEC only requires a standard descriptive `SEC_USER_AGENT` string as shown above.
+
 ```
 
 ### 4. Run
