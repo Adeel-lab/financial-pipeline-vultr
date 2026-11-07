@@ -1,191 +1,176 @@
-# FinAnalyst backend orchestration
+# FinAnalyst — Evidence-Grounded Financial Intelligence
 
-Runs the whole FinAnalyst pipeline as **jobs**. One job = one company.
+> **AI does the analytical laundry — you keep the judgment.**
 
+Built solo by **Adeel Kamal** for the **Vultr: Agent Rush Hackathon** on [lablab.ai](https://lablab.ai/event/vultr-agent-rush-hackathon).
+
+- **Live Application:** [https://finanalyst.duckdns.org/ui](https://finanalyst.duckdns.org/ui)
+- **Demo Video:** Included in submission (`finanalyst-demo.mp4`)
+
+---
+
+## What is FinAnalyst?
+
+Financial analysis traditionally demands hours of manual, repetitive work: cleaning financial statements, scraping scattered news, verifying paywalled sources, mapping peer ratios, and attempting to diagnose why metrics moved.
+
+**FinAnalyst** removes that heavy lifting. It assembles an evidence-grounded starting position by running two parallel branches:
+
+1. **Financial Branch:** Ingests balance sheets and income statements, normalizes rows into standardized accounting fields, computes key ratios, flags anomalies, and awaits human sign-off.
+2. **News & Market Branch:** Discovers thousands of recent articles, clusters them via embeddings, resolves original publisher URLs, verifies text and captures screenshots inside a sandboxed browser, and scores business sentiment.
+
+Both branches converge at an AI-generated SWOT draft. Once reviewed and adjusted by the analyst, any item can be selected for a **Five Whys root-cause analysis** backed by verified article excerpts, SEC filing explanations, and peer filings.
+
+---
+
+## Powered by Vultr
+
+FinAnalyst is designed around Vultr's infrastructure:
+
+- **Vultr Cloud Compute:** Hosts the FastAPI orchestration engine, SQLite state machine, and a Docker sandbox container (`finanalyst-sandbox`) that safely visits publisher URLs and captures page screenshots.
+- **Vultr Serverless Inference (`https://api.vultrinference.com/v1`):**
+  - **`qwen3-embedding-4b`:** Dense semantic embeddings to cluster raw news articles into discrete news events.
+  - **`deepseek-v4.1-flash-1017`:** Event labeling, article sentiment scoring, SWOT draft proposal, and Five Whys causal reasoning.
+
+---
+
+## Architecture & Pipeline Flow
+
+```text
+ Upload Financial Statements + Company + Objective
+         |
+         +--> financial_gate --report-only --> [Human Approval] --> approved_financials.json
+         |
+         +--> discovery -> triage -> resolve -> verify (Docker) -> sentiment
+                                          |
+                              [Both Branches Converge]
+                                          |
+                                   swot_builder build
+                                          |
+                                 [Human SWOT Review]
+                                          |
+                               Five Whys RCA (rca.py)
+                                          |
+                               Downloadable PDF Report
 ```
- upload 2 CSVs + company + question
-        |
-        +--> financial_gate --report-only --> [YOU approve] --> financial_gate --decisions --> approved_financials.json
-        |
-        +--> discovery -> triage -> resolve -> verify -> sentiment                           --> sentiment folder
-                                         both branches done
-                                                |
-                                      swot_builder build  --> swot_draft.json --> [YOU review] --> swot_final.json
-                                                                                         |
-                                                                                  rca.py (items you pick)
-```
 
-The two branches run at the same time. The SWOT build starts by itself as soon as both are ready.
-The two human steps (approve the financial mapping, review the SWOT) are real pauses: nothing is auto-approved.
+---
 
-## 1. Install
+## Quick Start (Local Setup)
 
-Copy `app.py`, `requirements-backend.txt` and the `backend/` folder into your project root
-(`C:\Users\adeel\Desktop\notebooks\vultr`, next to `information_new/` and `planning/`). Then:
+### 1. Requirements
+- Python 3.10+
+- Playwright Chromium (`python -m playwright install chromium`)
+- Optional: Docker (for sandboxed article verification)
 
-```powershell
-cd C:\Users\adeel\Desktop\notebooks\vultr
+### 2. Installation
+```bash
+git clone [https://github.com/Adeel-lab/financial-pipeline-vultr.git](https://github.com/Adeel-lab/financial-pipeline-vultr.git)
+cd financial-pipeline-vultr
 pip install -r requirements-backend.txt
 ```
 
-Add the lines from `.gitignore.additions` to your `.gitignore` (job folders, databases and `.env` must not be committed).
+### 3. Environment Variables
+Create a `.env` file or export in terminal:
+```bash
+export VULTR_INFERENCE_BASE="[https://api.vultrinference.com/v1](https://api.vultrinference.com/v1)"
+export VULTR_INFERENCE_API_KEY="your-vultr-api-key"
+export VULTR_CHAT_MODEL="deepseek-v4.1-flash-1017"
+export VULTR_EMBED_MODEL="qwen3-embedding-4b"
+export FINANALYST_SANDBOX="docker"  # or "local"
+export SEC_USER_AGENT="Yourname you@example.com"
+```
 
-## 2. Run
-
-```powershell
-$env:VULTR_INFERENCE_BASE    = "https://api.groq.com/openai/v1"     # at the hackathon: https://api.vultrinference.com/v1
-$env:VULTR_INFERENCE_API_KEY = "<your key>"
-$env:VULTR_CHAT_MODEL        = "openai/gpt-oss-120b"
+### 4. Run
+```bash
 python app.py
 ```
+Visit `http://localhost:8000/ui` for the web interface or `http://localhost:8000/docs` for Swagger API docs.
 
-Open http://127.0.0.1:8000/docs for interactive docs and http://127.0.0.1:8000/health to check the setup
-(all eight scripts should show `true`, and `llm_key_configured` should be `true`).
+# FinAnalyst — Repository File Directory & System Architecture
 
-The orchestrator copies your three `VULTR_*` settings to the names `rca.py` needs (`GROQ_API_KEY`, `LLM_API_KEY`,
-`LLM_BASE_URL`, `LLM_MODEL`), so RCA uses the same key and model as everything else. If `planning\.env` or a root `.env`
-exists it is read too; variables set in the terminal always win.
+This document outlines the purpose, role, and execution stage of every core file across the `financial-pipeline-vultr` repository.
 
-## 3. Use it (step by step)
+---
 
-Every command below also exists in the interactive docs. `<id>` is the job id returned by step 1.
+## 1. Root Level
 
-**1. Start a job** (multipart form; the CSVs are optional, but give both or neither)
-
-```powershell
-curl.exe -X POST http://127.0.0.1:8000/jobs `
-  -F "company=General Motors" -F "ticker=GM" -F "objective=Assess expansion readiness" `
-  -F "units=thousands" -F "currency=USD" `
-  -F "balance=@assets\GM_balance_sheet_annual_2020_2026.csv" `
-  -F "income=@assets\GM_income_statement_annual_2020_2026.csv"
-```
-
-Other optional fields: `location` (places separated by `;`), `alias`, `exclude`, `days` (1-90), `strict_location`, `edition`,
-`frequency`, `entity`, `no_llm`, `peers` (a JSON file of peer benchmark values).
-
-**2. Watch progress**
-
-```powershell
-curl.exe http://127.0.0.1:8000/jobs/<id>                 # status, progress, every stage, and which actions are available
-curl.exe http://127.0.0.1:8000/jobs/<id>/events          # timeline
-curl.exe http://127.0.0.1:8000/jobs/<id>/logs/verify     # raw log of one stage
-```
-
-**3. Approve the financial mapping.** When `status` is `awaiting_finance_approval`:
-
-```powershell
-curl.exe http://127.0.0.1:8000/jobs/<id>/finance/report
-```
-
-Fields with `"needs_choice": true` need a decision (several rows disagree). Send the exact row label you pick:
-
-```powershell
-$body = @{ approved = $true; choices = @{ short_debt = "DebtCurrent" } } | ConvertTo-Json
-Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/jobs/<id>/finance/approve -ContentType "application/json" -Body $body
-```
-
-If the report is `blocked`, upload corrected files with `POST /jobs/<id>/finance/files` (fields `balance`, `income`).
-
-**4. Review the SWOT.** When `status` is `awaiting_swot_review`: `GET /jobs/<id>/swot/draft`, then send decisions
-(`approve`, `edit` with a `quadrant`, or `reject`) for the items you have judged. Items you skip stay `pending`.
-
-```powershell
-$body = @{ reviewer = "adeel"; decisions = @(
-  @{ company = "General Motors"; id = "fin:operating_margin"; action = "approve" },
-  @{ company = "General Motors"; id = "story:abc123"; action = "edit"; quadrant = "threat"; note = "external risk" }
-) } | ConvertTo-Json -Depth 5
-Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/jobs/<id>/swot/review -ContentType "application/json" -Body $body
-```
-
-**5. Root-cause analysis on items you choose** (runs in the background, one stage `rca_1`, `rca_2`, ...)
-
-```powershell
-$body = @{ items = @("fin:operating_margin"); max_whys = 5; notes = @("GM statements include GM Financial") } | ConvertTo-Json
-Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/jobs/<id>/rca -ContentType "application/json" -Body $body
-curl.exe http://127.0.0.1:8000/jobs/<id>/rca             # results
-```
-
-**6. Get everything.** `GET /jobs/<id>/artifacts` lists every file; `GET /jobs/<id>/files/<path>` downloads one
-(including the verification screenshots, which are the "receipts" for each news item).
-
-## 4. Endpoints
-
-| Method and path | Purpose |
+| File | Purpose |
 |---|---|
-| `GET /health` | Setup check |
-| `POST /jobs` | Start a job |
-| `GET /jobs`, `GET /jobs/{id}` | List jobs, job detail with stages and available actions |
-| `POST /jobs/{id}/retry` | Re-run from the failed stage (earlier finished stages are kept) |
-| `POST /jobs/{id}/cancel` | Stop the job (running processes are killed) |
-| `DELETE /jobs/{id}` | Delete a finished or cancelled job and its folder |
-| `GET /jobs/{id}/events`, `GET /jobs/{id}/logs/{stage}` | Timeline and raw logs (poll `events?after=<last id>`) |
-| `GET /jobs/{id}/finance/report` | The gate's proposal |
-| `POST /jobs/{id}/finance/approve` | Approve or reject, with row choices |
-| `POST /jobs/{id}/finance/files` | Replace the CSVs and run the gate again |
-| `GET /jobs/{id}/news` | Company sentiment and scored articles |
-| `GET /jobs/{id}/swot/draft`, `POST .../swot/review`, `GET .../swot/final` | SWOT draft, review, final |
-| `POST /jobs/{id}/rca`, `GET .../rca`, `GET .../rca/{name}` | Five Whys |
-| `GET /jobs/{id}/artifacts`, `GET /jobs/{id}/files/{path}` | List and download files |
+| `app.py` | Primary FastAPI application entrypoint. Initializes routing, CORS, static UI mounts (`/ui`), and runs the Uvicorn web server. |
+| `Dockerfile.sandbox` | Dockerfile for `finanalyst-sandbox`. Builds an isolated Linux container with Playwright/Chromium to safely open, scrape, and capture screenshots of publisher news pages without exposing host environment credentials. |
+| `requirements-backend.txt` | Minimal Python dependency definitions for the FastAPI orchestrator and background services (`fastapi`, `uvicorn`, `httpx`, `jinja2`). |
+| `.gitignore` | Prevents local SQLite databases (`jobs.db`), individual job directories (`jobs/`), and secrets (`.env`) from being committed. |
+| `README.md` | Primary hackathon overview, architecture diagrams, live demo URLs, and quick-start instructions. |
 
-**Job status:** `running`, `awaiting_finance_approval`, `awaiting_swot_review`, `complete`, `failed`, `blocked`, `cancelled`.
-**Stage status:** `pending`, `running`, `succeeded`, `failed`, `waiting` (for you), `blocked`, `rejected`, `skipped`, `cancelled`.
-Each job's `actions` list tells a UI which buttons to show (`approve_finance`, `replace_finance_files`, `review_swot`, `run_rca`, `retry`, `cancel`).
+---
 
-## 5. What it does for you
+## 2. `backend/` — Orchestration & Web API
 
-- Gives every job its own folder, so runs never mix and nothing depends on "newest folder".
-- Passes explicit `--input`, `--base` and `--outdir` to every stage and runs each from the right folder (`information_new/` or `planning/`).
-- Never lets a script wait for keyboard input; a stage that would prompt gets an empty answer instead of hanging.
-- Checks every stage's output (for example: discovery found articles, at least one page was verified) and stops with a readable error, plus the last lines of the log.
-- Kills a stage that runs past its time limit (`FINANALYST_TIMEOUT_<STAGE>` seconds, defaults in `backend/config.py`).
-- Survives a restart: interrupted stages are marked failed so you can retry them; queued work restarts.
-- Refuses an approval that skips a row choice (the gate would otherwise silently take the first candidate).
-- Refuses path tricks in file downloads and values that start with `-` where they could be read as options.
+The orchestration engine manages jobs asynchronously, schedules background tasks, and enforces human approval pauses.
 
-## 6. Settings
+| File | Purpose |
+|---|---|
+| `api.py` | FastAPI endpoint routers for starting jobs (`POST /jobs`), querying progress (`GET /jobs/{id}`), approving financial mappings (`POST /jobs/{id}/finance/approve`), reviewing SWOT drafts (`POST /jobs/{id}/swot/review`), running Five Whys (`POST /jobs/{id}/rca`), and downloading artifacts. |
+| `jobs.py` | Core pipeline state machine. Manages concurrency semaphores, transitions stages, monitors cancellations/timeouts, mounts Docker containers for verification, and triggers the Five Whys RCA. |
+| `runner.py` | Standardized runner interfaces (`LocalRunner` and `DockerRunner`). Manages subprocess lifecycles, execution timeouts, stdout/stderr logging, and process group isolation. |
+| `report.py` | Generates the consolidated, multi-page downloadable PDF report summarizing financial metrics, verified news, SWOT tables, and root-cause trees. |
+| `db.py` | Thread-safe SQLite database interface managing job states, pipeline event logs, and stage execution timestamps. |
+| `config.py` | Central configuration file. Resolves directories (`jobs/`, `information_new/`, `planning/`), stage timeouts, worker pool sizes, and Docker limits from environment variables. |
+| `env.py` | Environment variable loader. Ingests `.env` files and aliases `VULTR_*` credentials into standard keys (`LLM_API_KEY`, `LLM_BASE_URL`, `LLM_MODEL`) used across pipeline scripts. |
 
-| Variable | Default | Meaning |
-|---|---|---|
-| `VULTR_INFERENCE_BASE`, `VULTR_INFERENCE_API_KEY`, `VULTR_CHAT_MODEL` | none | LLM settings used by every stage |
-| `FINANALYST_JOBS_DIR` | `<root>/jobs` | Where jobs and the SQLite database live |
-| `FINANALYST_MAX_WORKERS` | 6 | Background tasks at once |
-| `FINANALYST_NEWS_CONCURRENCY` | 2 | News pipelines at once (each opens a browser and calls the model) |
-| `FINANALYST_TIMEOUT_<STAGE>` | see config | Seconds before a stage is killed, e.g. `FINANALYST_TIMEOUT_VERIFY=3600` |
-| `FINANALYST_CORS_ORIGINS` | localhost:3000, localhost:5173 | Comma-separated origins the UI may call from |
-| `FINANALYST_SANDBOX` | `local` | `docker` runs the stages in `FINANALYST_SANDBOX_STAGES` inside containers |
-| `FINANALYST_SANDBOX_STAGES` | `verify` | Comma-separated stage names for the sandbox |
-| `HOST`, `PORT` | 127.0.0.1, 8000 | Where `python app.py` listens (use `HOST=0.0.0.0` on a server) |
+---
 
-## 7. Sandbox (optional, off by default)
+## 3. `information_new/` — News, Market & RCA Engine
 
-The browser stage opens pages from the open internet, so it is the one worth isolating. With
-`FINANALYST_SANDBOX=docker` that stage runs in a throwaway container that gets: no API keys, a read-only copy of the code,
-write access to the one job folder only, and limits on memory, CPUs and processes (`FINANALYST_DOCKER_*`). Cancelling or timing out
-kills the container.
+Handles news aggregation, semantic clustering, web page verification, sentiment scoring, SEC filings, and the Five Whys causal reasoning.
 
-```powershell
-docker build -f Dockerfile.sandbox -t finanalyst-sandbox .
-$env:FINANALYST_SANDBOX = "docker"
-python app.py
-```
+| File | Purpose |
+|---|---|
+| `discovery.py` | **News Discovery Stage:** Searches and deduplicates news coverage across major business tiers, general media, and financial aggregators over a 1–90 day window. |
+| `triage.py` | **Event Clustering & Ranking:** Converts articles into embeddings via Vultr Inference (`qwen3-embedding-4b`), performs leader clustering, labels event topics, and selects balanced opportunity/threat quotas across time buckets (24h, 7d, 30d). |
+| `resolve.py` | **Publisher URL Resolution:** Traces aggregator links back to canonical publisher domains (Reuters, WSJ, CNBC, The Verge, etc.) and captures alternative source URLs. |
+| `verify.py` | **Browser Verification (Sandboxed):** Executes in an isolated headless browser (or Docker sandbox). Opens resolved URLs, bypasses consent dialogs, extracts article text, validates title similarity, and saves full-page screenshot receipts. |
+| `sentiment.py` | **AI Sentiment & Materiality:** Evaluates verified article texts with DeepSeek via Vultr Inference. Assigns sentiment scores (-1.0 to +1.0), detects market chatter, and tags corporate opportunities vs. threats. |
+| `swot_builder.py` | **SWOT Drafting & Review:** Merges approved financial metrics, scored news events, SEC filing facts, and peer comparisons into 4 quadrants (Strengths, Weaknesses, Opportunities, Threats) guided by the user's objective. Also handles human review decisions (`approve`, `edit`, `reject`). |
+| `rca.py` | **Five Whys Root-Cause Engine:** Investigates a chosen SWOT problem down through recursive "Why" cycles. Cross-examines verified news passages, SEC filing quotations, and financial ratios; isolates supported causes from hypotheses; and proposes actionable corrective steps. |
+| `sec_peers.py` | **SEC EDGAR Peer Benchmarking:** Pulls 10-K US-GAAP numbers directly from the SEC EDGAR API (`data.sec.gov`) for peer tickers, normalizes balance sheets and income statements, and computes matching financial ratios. |
+| `filing_explanations.py` | Extracts management discussions and explanations (MD&A) directly from recent SEC 10-K/10-Q filings. |
+| `federal_register.py` | Queries the public Federal Register API (`federalregister.gov`) for relevant regulatory filings, antitrust inquiries, and compliance notices affecting the company. |
+| `fin_metrics.py` | Mathematical calculations for standardized financial ratios (margins, liquidity, debt ratios, turnover, growth rates). |
+| `company_profile.py` | Company metadata and entity alias resolver (e.g., mapping Google to Alphabet Inc. and ticker GOOGL). |
+| `evidence_articles.py` | BM25-based lexical and passage retriever for matching verified news text against Five Whys queries. |
+| `evidence_financials.py` | Converts approved financial statements into queryable factual assertions for root-cause reasoning. |
+| `evidence_peers.py` | Formats peer comparison metrics into structured evidence blocks for the RCA prompt. |
+| `evidence_filings.py` | Indexes and retrieves verbatim SEC filing quotes supporting specific "Why" steps. |
+| `evidence_regulatory.py` | Extracts relevant government agency actions and Federal Register notices as RCA evidence. |
 
-`LocalRunner` and `DockerRunner` in `backend/runner.py` share one interface, so another runner (for example one that starts a throwaway
-Vultr instance) is one new class plus one line in `get_runner`.
+---
 
-## 8. If something fails
+## 4. `planning/` — Financial Ingestion & Statement Validation
 
-- **`/health` shows a script as `false`:** the folder layout differs from `information_new/` + `planning/`. Set `FINANALYST_INFO_DIR` and `FINANALYST_PLAN_DIR`.
-- **A stage is `failed`:** `GET /jobs/<id>` shows the error with the last log lines; the full log is `GET /jobs/<id>/logs/<stage>`. Fix the cause, then `POST /jobs/<id>/retry`.
-- **`verify` fails to start:** run `python -m playwright install chromium` once in the same Python environment.
-- **News items are missing from the SWOT:** the SWOT builder only accepts model-scored articles. Check that `VULTR_INFERENCE_API_KEY` was set when the job was created (a warning appears in the job's events).
-- **Status stays `awaiting_finance_approval`:** that is correct; it is waiting for your approval.
+Validates raw financial CSVs, derives missing figures, and enforces accounting consistency.
 
-## 9. What was tested
+| File | Purpose |
+|---|---|
+| `financial_gate.py` | **Financial Statement Gate:** Ingests raw balance sheets and income statements, normalizes accounting line items, calculates derivative rows, checks consistency across fiscal periods, and produces the human approval proposal. |
+| `label_mapper.py` | Fuzzy and exact label matcher mapping diverse accounting taxonomies (US-GAAP, IFRS, custom internal labels) into standardized FinAnalyst fields. |
+| `planning.py` | Contextual analysis and planning logic for structured financial summaries. |
+| `llm_client.py` | HTTP client communicating with OpenAI-compatible endpoints (Vultr Serverless Inference) for structured JSON generation. |
 
-Tested by running jobs through the orchestration engine against stand-in scripts that copy your scripts' command-line flags and
-output folders: both branches in parallel, a crash and retry, the approval rules, SWOT review rules, RCA, cancel (about 0.6 s), timeout,
-blocked statements and file replacement, restart recovery, path-traversal blocking, no API keys in the sandbox environment.
-The HTTP layer was exercised with a stand-in for FastAPI (validation, errors, routing logic).
+---
 
-**Not tested here, so check on first run:** your real scripts end to end, FastAPI's own request parsing under Python 3.14, the Docker runner,
-and process killing on Windows. Start with `/health`, then one job with `no_llm=true` to confirm the plumbing before spending model calls.
+## 5. `ui/` — Web Interface
+
+| File | Purpose |
+|---|---|
+| `index.html` | Single-page web dashboard providing the full interactive interface: job creation forms, parallel progress timelines, financial approval gates, news exploration with screenshot receipts, SWOT revision controls, interactive Five Whys trees, and PDF export buttons. |
+
+
+## Contact & Live Support
+
+Built solo by **Adeel Kamal** for the Vultr: Agent Rush Hackathon.
+
+If you encounter any issues accessing the live demo, running a test job, or have questions about the implementation, feel free to reach out directly:
+
+- **Email:** adeelkamal97@gmail.com
+- **GitHub Issues:** [github.com/Adeel-lab/financial-pipeline-vultr/issues](https://github.com/Adeel-lab/financial-pipeline-vultr/issues)
