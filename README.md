@@ -43,6 +43,225 @@ FinAnalyst is designed around Vultr's infrastructure:
   - **`deepseek-v4.1-flash-1017`:** Event labeling, article sentiment scoring, SWOT draft proposal, and Five Whys causal reasoning.
 
 ---
+# FinAnalyst — Judge Quick Start
+
+## HOW TO USE.
+
+## Option A: Inspect an Existing Analysis
+
+Open All analyses and select the completed GOOGLE analysis if it is still available.
+
+Explore these tabs:
+
+- Financials
+- News
+- SWOT
+- Comparison
+- Root causes
+
+Then download the PDF report.
+
+This is the quickest walkthrough and avoids waiting for a fresh news run.
+
+> Do not delete shared demonstration jobs.
+
+## Option B: Run a New Analysis
+
+### 1. Download the Sample Files
+
+Open the repository’s [assets directory](https://github.com/Adeel-lab/financial-pipeline-vultr/tree/main/assets).
+
+Open each CSV in GitHub and use Download raw file. Upload the downloaded CSV—not the GitHub HTML page.
+
+### 2. Open New Analysis
+
+Enter the following example details:
+
+| Field | Value |
+|---|---|
+| Company | Alphabet |
+| Ticker | GOOGL |
+| Aliases | Google |
+| Peer tickers | META, AMZN |
+| Statement frequency | Annual |
+
+Suggested objective:
+
+> Assess Alphabet’s current strategic position, key risks, and readiness for future growth in AI, cloud, advertising, and regulatory pressure.
+
+### 3. Upload the Financial Statements
+
+Upload these two files into their corresponding fields:
+
+| Upload Field | File |
+|---|---|
+| Balance sheet | `GOOGL_balance_sheet_annual_2016_2025_cleaned.csv` |
+| Income statement | `GOOGL_income_statement_annual_2016_2025_cleaned.csv` |
+
+Configure the remaining settings:
+
+- Set currency and units to match the source data.
+- Do not assume the scale from the filename.
+- If the scale is unclear, select Not sure and inspect the resulting warnings.
+- Leave the optional peer JSON empty when using peer tickers.
+- Keep AI enabled.
+- Leave other settings at their defaults unless needed.
+
+### 4. Start the Analysis
+
+Start the analysis and monitor Progress.
+
+Financial validation and news collection begin in parallel.
+
+### 5. Review and Approve the Financials
+
+In Financials:
+
+1. Inspect the proposed mappings.
+2. Review warnings.
+3. Resolve any ambiguous row choices.
+4. Approve only after checking the results.
+
+If the financial gate is blocked, correct and replace both files.
+
+> A financial-approval pause is expected—not a crash.
+
+### 6. Wait for the SWOT Draft
+
+The news pipeline and approved financials converge into a SWOT draft.
+
+Browser restrictions may prevent some publisher pages from being verified. Inspect stage logs and recorded statuses for details.
+
+### 7. Review the SWOT
+
+In SWOT, you can:
+
+- Approve proposals.
+- Edit statements.
+- Reject proposals.
+- Reclassify items.
+
+Enter a reviewer name, add notes as needed, and save the review.
+
+### 8. Run a Root-Cause Investigation
+
+Select an accepted SWOT issue, request a Why/root-cause investigation, and choose the analysis depth.
+
+Inspect:
+
+- The Five Whys chain.
+- Supporting citations.
+- Stated uncertainty.
+- Labelled recommendations.
+
+### 9. Download the Report
+
+Download the PDF report after the desired investigation is finished.
+
+## Required File Format for the Financial Branch
+
+Upload **two** UTF-8 text CSV files for the same company:
+
+1. A balance sheet.
+2. An income statement.
+
+Do not upload PDF reports, screenshots, or XLSX files into these fields. Use the supplied samples first.
+
+### CSV Structure
+
+- Rows represent financial line items.
+- Column headers represent period dates.
+- Cells contain numeric values.
+- Labels containing commas must remain quoted.
+- Missing values should remain blank.
+- Currency, units, scope, and period frequency should be consistent.
+- Do not combine different companies or mix annual and quarterly statements in a pair.
+
+Example layout, using illustrative values only:
+
+```csv
+Line Item,2025-12-31,2024-12-31
+Revenue,1000,900
+Cost of Goods and Services Sold,600,550
+```
+
+> The API permits both statement files or neither, but rejects a single-file upload. Omitting both skips the uploaded-financial branch. Upload both to test the full financial-plus-news workflow.
+
+## Available Sample Pairs in `assets/`
+
+### Alphabet
+
+- Balance sheet: `GOOGL_balance_sheet_annual_2016_2025_cleaned.csv`
+- Income statement: `GOOGL_income_statement_annual_2016_2025_cleaned.csv`
+
+### Amazon
+
+- Balance sheet: `AMZN_balance_sheet_annual_2020_2026 (1).csv`
+- Income statement: `AMZN_income_statement_annual_2020_2026.csv`
+
+### Ford
+
+- Balance sheet: `F_balance_sheet_annual_2020_2026_cleaned.csv`
+- Income statement: `F_income_statement_annual_2020_2026_cleaned.csv`
+
+### General Motors
+
+- Balance sheet: `GM_balance_sheet_annual_2020_2026_cleaned.csv`
+- Income statement: `GM_income_statement_annual_2020_2026_cleaned.csv`
+
+### Tesla
+
+- Balance sheet: `TSLA_balance_sheet_annual_2020_2026.csv`
+- Income statement: `TSLA_income_statement_annual_2020_2026.csv`
+
+## Reviewer Requirements and Limitations
+
+- The hosted demo requires a browser and sample files—not a local Python/Docker setup or personal API keys.
+- Hosting credentials are configured server-side.
+- New runs use recent coverage, so counts and conclusions may differ from the recorded demo.
+- There is no guaranteed runtime. News volume, publisher access, inference availability, and human review affect completion.
+
+## Data Provenance and Support
+
+| Data | Source |
+|---|---|
+| Statement inputs | GetSECData |
+| Peer filings | SEC EDGAR |
+| Regulatory context | Federal Register |
+
+
+
+Contact: [adeelkamal97@gmail.com](mailto:adeelkamal97@gmail.com)
+
+## Architecture Diagram
+
+The accompanying diagram covers:
+
+- Browser → Caddy → FastAPI → JobManager.
+- Parallel financial and news workflows.
+- Human approval and review gates.
+- Supporting public-data modules.
+- Vultr inference.
+- Docker browser verification.
+- SQLite job state.
+- Per-job evidence files.
+- PDF output.
+
+The optional no-upload path is not expanded in the main diagram.
+
+Supporting evidence retrieval is shown as a logical component—not as a claim that every module is a separately scheduled service.
+
+## Verification Basis
+
+| Area | Verification Source |
+|---|---|
+| Sample filenames | GitHub `assets/` directory |
+| Upload validation | `backend/api.py` |
+| Workflow and artifact handling | `backend/jobs.py` |
+| Sandbox boundaries | `backend/runner.py` |
+| UI fields | Supplied `ui/index.html` |
+
+Deployment and supporting-module context are based on the supplied project materials. This is not a fresh uptime or end-to-end execution test.
 
 ## Architecture & Pipeline Flow
 
@@ -65,7 +284,19 @@ FinAnalyst is designed around Vultr's infrastructure:
 ```
 
 ---
+## System Architecture
 
+FinAnalyst runs on Vultr Cloud Compute, with two parallel workflows:
+financial statement validation and evidence-based news analysis.
+
+The workflows converge into an objective-guided SWOT draft after
+financial approval. The analyst reviews the SWOT and selects issues
+for Five Whys root-cause analysis.
+
+![FinAnalyst system architecture](assets/FinAnalyst_architecture.png)
+
+[Open the full-size diagram](assets/FinAnalyst_architecture.png)
+· [View the PDF version](assets/FinAnalyst_architecture.pdf)
 ## Quick Start (Local Setup)
 
 ### 1. Requirements
