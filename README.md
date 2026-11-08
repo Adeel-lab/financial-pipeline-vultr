@@ -6,7 +6,7 @@ Built solo by **Adeel Kamal** for the **Vultr: Agent Rush Hackathon** on [lablab
 
 - **Live Application:** [https://finanalyst.duckdns.org/ui](https://finanalyst.duckdns.org/ui)
 - **Demo Video:** Included in submission (`finanalyst-demo.mp4`)
-- **Check below on HOW TO USE.
+- **Check below on:** HOW TO USE.
 - **STARY BY:** Goto assets in the repository and select a income sheet and balance sheet.
 ---
 
