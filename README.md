@@ -1,5 +1,9 @@
-# FinAnalyst — Evidence-Grounded Financial Intelligence
 
+
+
+
+# FinAnalyst — Evidence-Grounded Financial Intelligence
+https://github.com/user-attachments/assets/f5b23243-024c-44b2-a8d5-40b7a2a561bd
 > **AI does the analytical laundry — you keep the judgment.**
 
 Built solo by **Adeel Kamal** for the **Vultr: Agent Rush Hackathon** on [lablab.ai](https://lablab.ai/event/vultr-agent-rush-hackathon).
